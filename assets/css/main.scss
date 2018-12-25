@@ -1,0 +1,204 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "bootstrap.scss",
+  "fa.scss"
+;
+
+// Enable animation for navbar and font awesome
+.navbar, .fas, .fab, .far {
+transition: all 0.5s ease 0s;
+}
+
+// Change color to #fc466b (clr1 of default theme) on hovering anchored FontAwesome
+a .fas:hover, a .fab:hover, a .far:hover {
+color: #fc466b;
+}
+
+// text-gradient- for brand name
+.tg {
+background: -webkit-linear-gradient(36deg, #fc466b 0%, #3f5efb 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+// Styling popover to make it a little cozy
+.popover {
+border: 0;
+box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.popover-header {
+background-color: #ffffff; 
+color: #000000; 
+font-size: 1.25rem;
+text-align: center;
+}
+
+.popover-body {
+background-color: white;
+color: #000000;
+padding: 1.25rem;
+}
+
+// Theme specific classes
+{% assign theme = site.data.themes.a %}
+
+.main-gradient {
+background: {{ theme.clr1 }};
+background: linear-gradient(36deg, {{ theme.clr1 }} 0%, {{ theme.clr2 }} 100%);
+}
+
+.main-gradient-light {
+background: {{ theme.clr1-light }};
+background: linear-gradient(36deg, {{ theme.clr1-light }} 20%, {{ theme.clr2-light }} 100%); 
+}
+
+.text-clr1 {
+color: {{ theme.clr1 }};
+}
+
+.text-clr2 {
+color: {{ theme.clr2 }};
+}
+
+.text-clr1-light {
+color: {{ theme.clr1-light }};
+}
+
+.text-clr2-light {
+color: {{ theme.clr2-light }};
+}
+
+.btn-grad {
+background-image: linear-gradient(90deg,  {{ theme.clr1 }} 0%, {{ theme.clr2 }} 100%);
+}
+.btn-grad:hover {
+background-position: right center;
+}
+
+.bg-mat {
+background: {{ theme.mat }};
+}
+
+.bg-clr1 {
+background: {{ theme.clr1 }};
+}
+
+.bg-clr2 {
+background: {{ theme.clr2 }};
+}
+
+.bg-clr1-light {
+background: {{ theme.clr1-light }};
+}
+
+.bg-clr2-light {
+background: {{ theme.clr2-light }};
+}
+
+.bg-nav {
+background: {{ theme.nav }};
+}
+
+// Lighten class and its usage along with btn class
+.lighten-sm {
+background: rgba(255,255,255,0.05);
+}
+
+.lighten-md {
+background: rgba(255,255,255,0.1);
+}
+
+.lighten {
+background: rgba(255,255,255,0.15);
+}
+
+.lighten-lg {
+background: rgba(255,255,255,0.2);
+}
+
+.lighten-xlg {
+background: rgba(255,255,255,0.25);
+}
+
+.btn.lighten-sm:hover {
+background: rgba(255,255,255,0.1);
+}
+
+.btn.lighten-md:hover {
+background: rgba(255,255,255,0.15);
+}
+
+.btn.lighten:hover {
+background: rgba(255,255,255,0.2);
+}
+
+.btn.lighten-lg:hover {
+background: rgba(255,255,255,0.25);
+}
+
+.btn.lighten-xlg:hover {
+background: rgba(255,255,255,0.3);
+}
+
+.btn.lighten-sm:focus {
+background: rgba(255,255,255,0.2);
+}
+
+.btn.lighten-md:focus {
+background: rgba(255,255,255,0.25);
+}
+
+.btn.lighten:focus {
+background: rgba(255,255,255,0.3);
+}
+
+.btn.lighten-lg:focus {
+background: rgba(255,255,255,0.35);
+}
+
+.btn.lighten-xlg:focus {
+background: rgba(255,255,255,0.4);
+}
+
+// Colouring Font-Awesome icons
+.fa-gitlab {
+color: #fca326;
+}
+
+.fa-twitter {
+color: #1da1f2;
+}
+
+.fa-facebook {
+color: #3b5998;
+}
+
+.fa-youtube {
+color: #ff0000;
+}
+
+.fa-pinterest {
+color: #bd081c;
+}
+
+.fa-google-plus {
+color: #dd4b39;
+}
+
+.fa-tumblr {
+color: #35465c;
+}
+
+.fa-wikipedia-w {
+color: #000000;
+}
+
+.fa-whatsapp {
+color: #25d366;
+}
+// windows, android, apple, freebsd, linux remaining

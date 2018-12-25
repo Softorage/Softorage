@@ -1,0 +1,49 @@
+---
+title: "OpenCog"
+
+info: "A project that aims to build an artificial general intelligence (AGI) framework. OpenCog Prime is a specific set of interacting components designed to give rise to human-equivalent artificial general intelligence."
+
+status: "Active"
+
+website: "https://opencog.org/"
+
+get_it:
+  - ["Authentic","https://wiki.opencog.org/w/Hands_On_With_OpenCog/"]
+
+description: |
+  OpenCog is a project that aims to build an open source artificial intelligence framework. OpenCog Prime is an architecture for robot and virtual embodied cognition that defines a set of interacting components designed to give rise to human-equivalent artificial general intelligence (AGI) as an emergent phenomenon of the whole system. OpenCog Prime's design is primarily the work of Ben Goertzel while the OpenCog framework is intended as a generic framework for broad-based AGI research. Research utilizing OpenCog has been published in journals and presented at conferences and workshops including the annual Conference on Artificial General Intelligence. OpenCog is released under the terms of the GNU Affero General Public License.
+  OpenCog is in use by more than 50 companies, including Huawei and Cisco.
+
+developer: "OpenCog Foundation and developers"
+
+initial_release: "21 January 2008"
+
+repository: ["https://github.com/opencog/atomspace","https://github.com/opencog/opencog"]
+
+written_in: ["C++", "Python", "Scheme", "Haskell"]
+
+platform: 
+  - dskp:
+      - ["Linux","o"]
+
+categories: ["Artificial Intelligence"]
+
+license: "GNU AGPL 3"
+
+social:
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/OpenCog"
+  - name: "Blog"
+    url: "https://blog.opencog.org/"
+
+source:
+  description: ["https://web.archive.org/web/20090306053354/http://www.cybertechnews.org/?p=915","https://venturebeat.com/2017/12/07/singularitynet-talks-collaborative-ai-as-its-token-sale-hits-400-oversubscription/"]
+  developer: ["https://github.com/opencog/opencog/graphs/contributors/", "https://opencog.org/", "https://en.wikipedia.org/wiki/OpenCog"]
+  initial_release: "https://www.blendernation.com/2014/01/02/happy-birthday-blender/#comment-629004"
+  repository: ["https://en.wikipedia.org/wiki/OpenCog","https://github.com/opencog"]
+  written_in: "https://wiki.opencog.org/w/The_Open_Cognition_Project#Participate"
+  platform:
+    - dskp: ["https://wiki.opencog.org/w/Building_OpenCog/"]
+  sys_req: "https://www.blender.org/download/requirements/"
+  license: ["https://en.wikipedia.org/wiki/OpenCog","https://github.com/opencog/atomspace","https://github.com/opencog/opencog"]
+---

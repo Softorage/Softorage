@@ -1,0 +1,631 @@
+---
+layout: default
+---
+<!-- Tell Jekyll whether in 'System Requirements' Minimum or Recomended or Optimal data fields are present -->
+<!-- We want the whole Minimum column to exist even if one specification has Minimum specification stated in data file. Same goes for recommended and optimal. -->
+{% assign recommended = false %}
+{% assign optimal = false %}
+{% assign minimum = false %}
+{% if page.sysreq %}
+{% for spec in page.sysreq %}
+{% if spec.min %}
+{% assign minimum = true %}
+{% break %}
+{% else %}
+{% continue %}
+{% endif %}
+{% endfor %}
+{% for spec in page.sysreq %}
+{% if spec.recm %}
+{% assign recommended = true %}
+{% break %}
+{% else %}
+{% continue %}
+{% endif %}
+{% endfor %}
+{% for spec in page.sysreq %}
+{% if spec.optm %}
+{% assign optimal = true %}
+{% break %}
+{% else %}
+{% continue %}
+{% endif %}
+{% endfor %}
+{% endif %}
+<div class="container-fluid bg-clr2 text-white py-3">
+  <div style="height:3.5rem;"></div>
+  <div class="row">
+    <div class="col-md-8">
+      <h1>{% if page.image %}<img class="bg-white rounded shadow-sm p-1" style="height:3rem;" src="{{ page.image }}" alt="{{ page.title }} logo">  {% endif %}{{ page.title }}</h1>
+      {% if page.info %}
+      <p>{{ page.info }}</p>
+      {% endif %}
+      {% if page.status %}
+      <span class="lighten-md p-2">{{ page.status }}</span>
+      {% endif %}
+    </div>
+    <div class="col-md-4">
+      {% if page.get_it %}
+      <a role="button" class="btn lighten-sm shadow-sm text-white my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
+      {% for getit in page.get_it %} 
+      <a href='{{ getit[1] }}' class='
+      btn
+      {% if getit[0] == "Authentic" %}
+      btn-success
+      {% else %}
+      btn-light
+      {% endif %} 
+      btn-sm shadow-sm'>{{ getit[0] }}</a> 
+      {% endfor %}
+      "><span class="fas fa-arrow-alt-circle-down"></span>  Get it</a>
+      {% endif %}
+      {% if page.website %}
+      <a class="btn lighten-sm shadow-sm text-white my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe"></span>  Visit</a> <br>
+      {% endif %}
+      <div class="bg-white text-dark shadow-sm rounded my-2 p-2">
+        <span class="fas fa-share-alt-square fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}&quote={{ page.title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fab fa-facebook fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/intent/tweet?source={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fab fa-twitter fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="whatsapp://send?text={{ page.url | prepend: site.baseurl | prepend: site.url }}%20{{ page.title }}" data-text="{{ page.title }}" data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fab fa-whatsapp fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="mailto:?subject={{ page.title }}&body={{ page.description }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via email"><span class="far fa-envelope fa-2x"></span></a>
+      </div>
+      <a href="#to-proper-page-source" class="btn btn-sm btn-dark shadow-sm my-2" target="_blank">Help improve this page</a>
+      <a href="#to-proper-page-source" class="btn btn-sm btn-dark shadow-sm my-2" target="_blank">&#60;/source&#62;</a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-clr1-light py-3">
+  <div class="row">
+    <div class="col-md-8 mb-3">
+      <!-- #7 Description -->
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <span class="card-title h4">Description</span>
+          <span class="float-right">
+          {% if page.source.description %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+          {% for src in page.source.description %}
+          '{{ src }}' 
+          {% endfor %}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {% endif %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+          </span>
+          <p class="card-text mt-3">{{ page.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <!-- #13 Platform -->
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <span class="card-title h4">Platform</span>
+          <span class="float-right">
+          {% if page.source.platform %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+          {% for src in page.source.platform %}
+          {% if src.dskp %}
+          <span class='fas fa-desktop'></span> : <br>
+          {% for s in src.dskp %}
+          {{ forloop.index }} {{ s }} 
+          {% endfor %} <hr>
+          {% elsif src.smptb %}
+          <span class='fas fa-mobile-alt'></span> / <span class='fas fa-tablet-alt'></span> : <br>
+          {% for s in src.smptb %}
+          {{ forloop.index }} {{ s }} 
+          {% endfor %} <hr>
+          {% elsif src.else %}
+          <span class='fas fa-bars'></span> : <br>
+          {% for s in src.else %}
+          {{ forloop.index }} {{ s }} 
+          {% endfor %} <hr>
+          {% endif %}
+          {% endfor %}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {% endif %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+          </span>
+          <p class="card-text mt-3">
+          
+          {% for env in page.platform %}
+          {% if env.dskp %}
+          
+          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
+          {% for os in env.dskp %}
+          {% if os[0] == "Windows" %}
+          {% if os[1] == "n" %}
+          <span class='fab fa-windows border border-warning'></span>
+          {% else %}
+          <span class='fab fa-windows'></span>
+          {% endif %}
+          {% elsif os[0] == "Linux" %}
+          {% if os[1] == "n" %}
+          <span class='fab fa-linux border border-warning'></span>
+          {% else %}
+          <span class='fab fa-linux'></span>
+          {% endif %}
+          {% elsif os[0] == "MacOS" %}
+          {% if os[1] == "n" %}
+          <span class='fab fa-apple border border-warning'></span>
+          {% else %}
+          <span class='fab fa-apple'></span>
+          {% endif %}
+          {% elsif os[0] == "FreeBSD" %}
+          {% if os[1] == "n" %}
+          <span class='fab fa-freebsd border border-warning'></span>
+          {% else %}
+          <span class='fab fa-freebsd'></span>
+          {% endif %}
+          {% else %}
+          {% if os[1] == "n" %}
+          <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+          {% else %}
+          <span class='shadow-sm p-1'>{{ os[1] }}</span>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          "><span class="fas fa-desktop"></span></a>
+          
+          {% elsif env.smp %} 
+                   
+          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
+          {% for os in env.smp %}
+          {% if os[0] == "Android" %}
+          {% if os[1] == "n" %}
+          <span class='fab fa-android border border-warning'></span>
+          {% else %}
+          <span class='fab fa-android'></span>
+          {% endif %}
+          {% elsif os[0] == "iOS" %}
+          {% if os[1] == "n" %}
+          <span class='fab fa-apple border border-warning'></span>
+          {% else %}
+          <span class='fab fa-apple'></span>
+          {% endif %}
+          {% else %}
+          {% if os[1] == "n" %}
+          <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+          {% else %}
+          <span class='shadow-sm p-1'>{{ os[1] }}</span>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          "><span class="fas fa-mobile-alt"></span></a>          
+          
+          {% elsif env.tab %} 
+          
+          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+          {% for os in env.tab %}
+          {% if os[0] == "Android" %}
+          {% if os[1] == "n" %}
+          <span class='fab fa-android border border-warning'></span>
+          {% else %}
+          <span class='fab fa-android'></span>
+          {% endif %}
+          {% elsif os[0] == "iOS" %}
+          {% if os[1] == "n" %}
+          <span class='fab fa-apple border border-warning'></span>
+          {% else %}
+          <span class='fab fa-apple'></span>
+          {% endif %}
+          {% else %}
+          {% if os[1] == "n" %}
+          <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+          {% else %}
+          <span class='shadow-sm p-1'>{{ os[1] }}</span>
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          "><span class="fas fa-tablet-alt"></span></a>
+          
+          {% else %} 
+          
+          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+          {% for item in env.else %}
+          {% if item[1] == "n" %}
+          <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+          {% else %}
+          <span class='shadow-sm p-1'>{{ os[1] }}</span>
+          {% endif %}
+          {% endfor %}
+          "><span class="fas fa-bars"></span></a>
+          
+          {% endif %}
+          {% endfor %}
+          
+          </p>
+        </div>
+      </div>
+      <!-- #16 Social -->
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <span class="card-title h4">Social</span>
+          <span class="float-right">
+          {% if page.source.social %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+          {% for src in page.source.social %}
+          '{{ src }}' 
+          {% endfor %}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {% endif %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+          </span>
+          <p class="card-text mt-3">
+            {% for social in page.social %}
+            {% if forloop.last == false %}
+            {% if social.name == "Wikipedia" %}
+            <a href="{{ social.url }}"><span class="fab fa-wikipedia-w fa-2x"></span></a>
+            {% elsif social.name == "Youtube" %}
+            <a href="{{ social.url }}"><span class="fab fa-youtube fa-2x"></span></a>
+            {% elsif social.name == "Facebook" %}
+            <a href="{{ social.url }}"><span class="fab fa-facebook fa-2x"></span></a>
+            {% elsif social.name == "Twitter" %}
+            <a href="{{ social.url }}"><span class="fab fa-twitter fa-2x"></span></a>
+            {% elsif social.name == "Pinterest" %}
+            <a href="{{ social.url }}"><span class="fab fa-pinterest fa-2x"></span></a>
+            {% elsif social.name == "Blog" %}
+            <a href="{{ social.url }}"><span class="fab fa-rss fa-2x"></span></a>
+            {% else %}
+            <a class="border p-1" href="{{ social.url }}"><span>{{ social.name }}</span></a>
+            {% endif %}&nbsp;
+            {% else %}
+            {% if social.name == "Wikipedia" %}
+            <a href="{{ social.url }}"><span class="fab fa-wikipedia-w fa-2x"></span></a>
+            {% elsif social.name == "Youtube" %}
+            <a href="{{ social.url }}"><span class="fab fa-youtube fa-2x"></span></a>
+            {% elsif social.name == "Facebook" %}
+            <a href="{{ social.url }}"><span class="fab fa-facebook fa-2x"></span></a>
+            {% elsif social.name == "Twitter" %}
+            <a href="{{ social.url }}"><span class="fab fa-twitter fa-2x"></span></a>
+            {% elsif social.name == "Pinterest" %}
+            <a href="{{ social.url }}"><span class="fab fa-pinterest fa-2x"></span></a>
+            {% elsif social.name == "Blog" %}
+            <a href="{{ social.url }}"><span class="fas fa-rss fa-2x"></span></a>
+            {% else %}
+            <a class="border p-1" href="{{ social.url }}"><span>{{ social.name }}</span></a>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 mb-3">
+      <!-- #8 System Requirements -->
+      {% if minimum or recommended or optimal %}
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <span class="card-title h4">System Requirements</span>
+          <span class="float-right">
+          {% if page.source.sysreq %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+          {% for src in page.source.sysreq %}
+          '{{ src }}' 
+          {% endfor %}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+          </span>
+          <div class="card-text mt-3">
+            <div class="table-responsive-md">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    {% if minimum %}
+                    <th scope="col">Minimum</th>
+                    {% endif %}
+                    {% if recommended %}
+                    <th scope="col">Recommended</th>
+                    {% endif %}
+                    {% if optimal %}
+                    <th scope="col">Optimal</th>
+                    {% endif %}
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for spec in page.sysreq %}
+                  <tr>
+                    <th scope="row">{{ forloop.index }}</th>
+                    {% if minimum %}
+                    <td>
+                      {% if spec.min %}
+                      {{ spec.min }}
+                      {% endif %}
+                    </td>
+                    {% endif %}
+                    {% if recommended %}
+                    <td>
+                      {% if spec.recm %}
+                      {{ spec.recm }}
+                      {% endif %}
+                    </td>
+                    {% endif %}
+                    {% if optimal %}
+                    <td>
+                      {% if spec.optm %}
+                      {{ spec.optm }}
+                      {% endif %}
+                    </td>
+                    {% endif %}
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <!-- /table-responsive -->
+          </div>
+          <!-- /card-text -->
+        </div>
+        <!-- /card-body -->
+      </div>
+      <!-- /card -->
+      {% endif %}
+    </div>
+    <!-- /col-md-8 -->
+    <div class="col-md-4 mb-3">
+      <!-- Rating -->
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <span class="card-title h4">Ratings</span>
+          <span class="float-right">
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+          </span>
+          <p class="card-text mt-3">
+          
+          {% for rt in page.rating %}
+          <!-- in case it isn't last forloop, break line after each rating -->
+          {% if forloop.last == false %}
+          <div>
+          {{ rt.name }}: {{ rt.rate[0] }}/{{ rt.rate[1] }}
+          {% if rt.num %} &nbsp;<span class="text-muted">based on {{ rt.num }} reviews</span>{% else %} &nbsp;<span class="text-muted">based on professional's opinion</span>{% endif %}
+          <span class="float-right">
+          {% for src_rating in page.source.rating %}
+          <!-- check whether 0th element of array which is name of reviewer is same as the concerned rating's reviewer -->
+          {% if src_rating[0] == rt.name %}
+          <!-- whether the review is based on a number of user opinions --> 
+          {% if rt.num %}
+          <!-- check whether the array of 'src_rating' has 2nd element "u", which corresponds to "based on a number of users' opinion" -->
+          {% if src_rating[1] == "u" %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+          {{ src_rating[2] }}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {% endif %}
+          <!-- in case rating is based on a professsional's opinion -->
+          {% else %}
+          {% if src_rating[1] == "e" %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+          {{ src_rating[2] }}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {% endif %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          </span>
+          </div>
+          <br>
+          {% else %}
+          <div>
+          {{ rt.name }}: {{ rt.rate[0] }}/{{ rt.rate[1] }}
+          {% if rt.num %} &nbsp;<span class="text-muted">based on {{ rt.num }} reviews</span>{% else %} &nbsp;<span class="text-muted">based on professional's opinion</span>{% endif %}
+          <span class="float-right">
+          {% for src_rating in page.source.rating %}
+          {% if src_rating[0] == rt.name %}
+          {% if rt.num %}
+          {% if src_rating[1] == "u" %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+          {{ src_rating[2] }}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {% endif %}
+          {% else %}
+          {% if src_rating[1] == "e" %}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+          {{ src_rating[2] }}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {% endif %}
+          {% endif %}
+          {% endif %}
+          {% endfor %}
+          </span>
+          </div>
+          {% endif %}
+          {% endfor %}
+          
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /col-md-4 -->
+  </div>
+  <!-- /row -->
+  {% if page.developer or page.written_in or page.initial_release %}
+  <div class="card-deck mb-3">
+    <!-- #9 Developer -->
+    {% if page.developer %}
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <span class="card-title h4">Developer</span>
+        <span class="float-right">
+        {% if page.source.developer %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+        {% for src in page.source.developer %}
+        '{{ src }}' 
+        {% endfor %}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+        </span>
+        <p class="card-text mt-3">
+        {% for dev in page.developer %}
+        {% if forloop.last == false %}
+        {{ dev }}, 
+        {% else %}
+        {{ dev }}
+        {% endif %}
+        {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+    <!-- #12 Written In -->
+    {% if page.written_in %}
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <span class="card-title h4">Written in</span>
+        <span class="float-right">
+        {% if page.source.written_in %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+        {% for src in page.source.written_in %}
+        '{{ src }}' 
+        {% endfor %}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+        </span>
+        <p class="card-text mt-3">
+        {% for wr_in in page.written_in %}
+        {% if forloop.last == false %}
+        {{ wr_in }}, 
+        {% else %}
+        {{ wr_in }}
+        {% endif %}
+        {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+    <!-- #10 Initial Release -->
+    {% if page.initial_release %}
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <span class="card-title h4">Initial Release</span>
+        <span class="float-right">
+        {% if page.source.initial_release %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+        {% for src in page.source.initial_release %}
+        '{{ src }}' 
+        {% endfor %}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+        {% endif %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+        </span>
+        <p class="card-text mt-3">
+        {% for in_re in page.initial_release %}
+        {% if forloop.last == false %}
+        {{ in_re }}, 
+        {% else %}
+        {{ in_re }}
+        {% endif %}
+        {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% if page.repository or page.license or page.categories %}
+  <div class="card-deck mb-3">
+    <!-- #11 Repository -->
+    {% if page.repository %}
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <span class="card-title h4">Repository</span>
+        <span class="float-right">
+        {% if page.source.repository %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+        {% for src in page.source.repository %}
+        '{{ src }}' 
+        {% endfor %}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+        </span>
+        <p class="card-text mt-3">
+        {% for repo in page.repository %}
+        {% if forloop.last == false %}
+        {{ repo }}, 
+        {% else %}
+        {{ repo }}
+        {% endif %}
+        {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+    <!-- #15 License -->
+    {% if page.license %}
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <span class="card-title h4">License</span>
+        <span class="float-right">
+        {% if page.source.license %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+        {% for src in page.source.license %}
+        '{{ src }}' 
+        {% endfor %}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+        </span>
+        <p class="card-text mt-3">
+        {% for lic in page.license %}
+        {% if forloop.last == false %}
+        {{ lic }}, 
+        {% else %}
+        {{ lic }}
+        {% endif %}
+        {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+    <!-- #14 Categories -->
+    {% if page.categories %}
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <span class="card-title h4">Categories</span>
+        <span class="float-right">
+        {% if page.source.categories %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
+        {% for src in page.source.categories %}
+        '{{ src }}' 
+        {% endfor %}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+        {% endif %}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
+        </span>
+        <p class="card-text mt-3">
+        {% for category in page.categories %}
+        {% if forloop.last == false %}
+        {{ category }}, 
+        {% else %}
+        {{ category }}
+        {% endif %}
+        {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+  <!-- You may try -->
+  <div class="card shadow-sm border-0">
+    <div class="card-body">
+      <span class="card-title h4">You may try</span>
+      <p class="card-text mt-3">
+        {% for category in page.categories %}
+        <span class="h6">{{ category }}</span><br>
+        {% for soft in site.software %}
+        {% if soft.categories contains category %}
+        <a class="btn btn-sm btn-light shadow-sm" href="{{ soft.url | prepend: site.baseurl | prepend: site.url }}">{{ soft.title }}</a> 
+        {% endif %}
+        {% endfor %}
+        <br><br>
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Initialize Popovers -->
+<!-- 
+  " $(function(){$('[data-toggle="popover"]').popover()}); " has been converted into base64 format using https://www.base64encode.org/ and included as 'src' so that adding 'defer' attribute to <script> tag is allowed.
+  This allows to place jQuery at the end of the document. Credit for idea to: https://stackoverflow.com/a/46088817
+   -->
+<script src="data:text/javascript;base64,JChmdW5jdGlvbigpeyQoJ1tkYXRhLXRvZ2dsZT0icG9wb3ZlciJdJykucG9wb3ZlcigpfSk7" defer></script>

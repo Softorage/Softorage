@@ -1,0 +1,43 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html style="scroll-behavior:smooth;">
+
+  {% include head.html %}
+
+  <body{% if page.no-navbar-overlap %} style="padding-top:3.5rem;"{% endif %}>
+    
+    {% include header.html %}
+    
+    {{ content }}
+
+    {% include footer.html %}
+    
+    <!-- SCRIPTS -->
+    <!-- Combined JavaScript file -->
+    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+
+    
+<!-- 
+Unminified JS to turn navbar solid on scroll
+
+$(document).ready(function() {
+  /* Transition effect for navbar */
+  $(window).scroll(function() {
+    /* checks if window is scrolled more than 30px, adds/removes bg-white and shadow class */
+    if ($(this).scrollTop() > 30) {
+      $('.navbar').addClass('bg-nav shadow');
+    } else {
+      $('.navbar').removeClass('bg-nav shadow');
+    }
+  });
+});
+
+ -->
+ 
+    <script>$(document).ready(function(){$(window).scroll(function(){$(this).scrollTop()>30?$(".navbar").addClass("bg-nav shadow"):$(".navbar").removeClass("bg-nav shadow")})});</script>
+
+  </body>
+
+</html>
