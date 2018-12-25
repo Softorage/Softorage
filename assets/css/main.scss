@@ -8,19 +8,29 @@
   "fa.scss"
 ;
 
+// Theme specific classes
+{% assign theme = site.data.themes.a %}
+
+$clr1: {{ theme.clr1 }};
+$clr2: {{ theme.clr2 }};
+$nav: {{ theme.nav }};
+$antinav: {{ theme.antinav }};
+$clr1-light: mix($clr1, $nav, 12%);
+$clr2-light: mix($clr2, $nav, 12%);
+
 // Enable animation for navbar and font awesome
 .navbar, .fas, .fab, .far {
 transition: all 0.5s ease 0s;
 }
 
-// Change color to #fc466b (clr1 of default theme) on hovering anchored FontAwesome
+// Change color to clr1 on hovering anchored FontAwesome
 a .fas:hover, a .fab:hover, a .far:hover {
-color: #fc466b;
+color: $clr1;
 }
 
 // text-gradient- for brand name
 .tg {
-background: -webkit-linear-gradient(36deg, #fc466b 0%, #3f5efb 100%);
+background: -webkit-linear-gradient(36deg, $clr1 0%, $clr2 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -28,53 +38,51 @@ background: -webkit-linear-gradient(36deg, #fc466b 0%, #3f5efb 100%);
 // Styling popover to make it a little cozy
 .popover {
 border: 0;
-box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+box-shadow: 0 0.5rem 1rem rgba($antinav, 0.15);
 }
 
 .popover-header {
-background-color: #ffffff; 
-color: #000000; 
+background-color: $nav; 
+color: $antinav; 
 font-size: 1.25rem;
 text-align: center;
 }
 
 .popover-body {
-background-color: white;
-color: #000000;
+background-color: $nav;
+color: $antinav;
 padding: 1.25rem;
 }
 
-// Theme specific classes
-{% assign theme = site.data.themes.a %}
-
+//
 .main-gradient {
-background: {{ theme.clr1 }};
-background: linear-gradient(36deg, {{ theme.clr1 }} 0%, {{ theme.clr2 }} 100%);
+background: $clr1;
+background: linear-gradient(36deg, $clr1 0%, $clr2 100%);
 }
 
 .main-gradient-light {
-background: {{ theme.clr1-light }};
-background: linear-gradient(36deg, {{ theme.clr1-light }} 20%, {{ theme.clr2-light }} 100%); 
+background: $clr1-light;
+background: linear-gradient(36deg, $clr1-light 20%, $clr2-light 100%); 
 }
 
 .text-clr1 {
-color: {{ theme.clr1 }};
+color: $clr1;
 }
 
 .text-clr2 {
-color: {{ theme.clr2 }};
+color: $clr2;
 }
 
 .text-clr1-light {
-color: {{ theme.clr1-light }};
+color: $clr1-light;
 }
 
 .text-clr2-light {
-color: {{ theme.clr2-light }};
+color: $clr2-light;
 }
 
 .btn-grad {
-background-image: linear-gradient(90deg,  {{ theme.clr1 }} 0%, {{ theme.clr2 }} 100%);
+background-image: linear-gradient(90deg,  $clr1 0%, $clr2 100%);
 }
 .btn-grad:hover {
 background-position: right center;
@@ -85,84 +93,84 @@ background: {{ theme.mat }};
 }
 
 .bg-clr1 {
-background: {{ theme.clr1 }};
+background: mix($clr1, $clr2, 95%);
 }
 
 .bg-clr2 {
-background: {{ theme.clr2 }};
+background: mix($clr1, $clr2, 5%);
 }
 
 .bg-clr1-light {
-background: {{ theme.clr1-light }};
+background: $clr1-light;
 }
 
 .bg-clr2-light {
-background: {{ theme.clr2-light }};
+background: $clr2-light;
 }
 
 .bg-nav {
-background: {{ theme.nav }};
+background: $nav;
 }
 
 // Lighten class and its usage along with btn class
 .lighten-sm {
-background: rgba(255,255,255,0.05);
+background: rgba($nav, 0.05);
 }
 
 .lighten-md {
-background: rgba(255,255,255,0.1);
+background: rgba($nav, 0.1);
 }
 
 .lighten {
-background: rgba(255,255,255,0.15);
+background: rgba($nav, 0.15);
 }
 
 .lighten-lg {
-background: rgba(255,255,255,0.2);
+background: rgba($nav, 0.2);
 }
 
 .lighten-xlg {
-background: rgba(255,255,255,0.25);
+background: rgba($nav, 0.25);
 }
 
 .btn.lighten-sm:hover {
-background: rgba(255,255,255,0.1);
+background: rgba($nav, 0.1);
 }
 
 .btn.lighten-md:hover {
-background: rgba(255,255,255,0.15);
+background: rgba($nav, 0.15);
 }
 
 .btn.lighten:hover {
-background: rgba(255,255,255,0.2);
+background: rgba($nav, 0.2);
 }
 
 .btn.lighten-lg:hover {
-background: rgba(255,255,255,0.25);
+background: rgba($nav, 0.25);
 }
 
 .btn.lighten-xlg:hover {
-background: rgba(255,255,255,0.3);
+background: rgba($nav, 0.3);
 }
 
 .btn.lighten-sm:focus {
-background: rgba(255,255,255,0.2);
+background: rgba($nav, 0.2);
 }
 
 .btn.lighten-md:focus {
-background: rgba(255,255,255,0.25);
+background: rgba($nav, 0.25);
 }
 
 .btn.lighten:focus {
-background: rgba(255,255,255,0.3);
+background: rgba($nav, 0.3);
 }
 
 .btn.lighten-lg:focus {
-background: rgba(255,255,255,0.35);
+background: rgba($nav, 0.35);
 }
 
 .btn.lighten-xlg:focus {
-background: rgba(255,255,255,0.4);
+background: rgba($nav, 0.4);
 }
 
 // Colouring Font-Awesome icons
@@ -201,4 +209,23 @@ color: #000000;
 .fa-whatsapp {
 color: #25d366;
 }
-// windows, android, apple, freebsd, linux remaining
+
+.fa-apple {
+color: #666666;
+}
+
+.fa-android {
+color: #a4c639;
+}
+
+.fa-freebsd {
+color: #B50011;
+}
+
+.fa-linux {
+color: #000000;
+}
+
+.fa-windows {
+color: #0078d7;
+}
