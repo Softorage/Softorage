@@ -14,7 +14,7 @@ permalink: /search/
 </div>
 <div class="container-fluid bg-clr2-light py-3">
   {% for categ in categs %}
-  <div class="card shadow-sm mb-3">
+  <div class="card mb-3">
     <div class="card-body">
       <h4 class="card-title">{{ categ }}</h4>
       <div class="card-text">

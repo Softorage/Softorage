@@ -1,0 +1,12 @@
+{% comment %}
+Credits: Ketrel - https://gist.github.com/Ketrel/1f36fca6b4148f7263b3ee8fdb0923e7
+{% endcomment %}
+
+{% assign relBase = '' %}
+{% assign tempDepth = page.url | split: '/' | size | minus: 1 %}
+{% for i in (1..tempDepth) %}
+    {% assign relBase = relBase | append: "../" %}
+{% endfor %}
+{% if relBase == '' %}
+    {% assign relBase = './' %}
+{% endif %}

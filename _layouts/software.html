@@ -46,7 +46,7 @@ layout: default
     </div>
     <div class="col-md-4">
       {% if page.get_it %}
-      <a role="button" class="btn lighten-sm shadow-sm text-white my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
+      <a role="button" class="btn lighten-sm text-white my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
       {% for getit in page.get_it %} 
       <a href='{{ getit[1] }}' class='
       btn
@@ -55,12 +55,12 @@ layout: default
       {% else %}
       btn-light
       {% endif %} 
-      btn-sm shadow-sm'>{{ getit[0] }}</a> 
+      btn-sm'>{{ getit[0] }}</a> 
       {% endfor %}
       "><span class="fas fa-arrow-alt-circle-down"></span>  Get it</a>
       {% endif %}
       {% if page.website %}
-      <a class="btn lighten-sm shadow-sm text-white my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe"></span>  Visit</a> <br>
+      <a class="btn lighten-sm text-white my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe"></span>  Visit</a> <br>
       {% endif %}
       <div class="bg-white text-dark shadow-sm rounded my-2 p-2">
         <span class="fas fa-share-alt-square fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -69,8 +69,8 @@ layout: default
         <a href="whatsapp://send?text={{ page.url | prepend: site.baseurl | prepend: site.url }}%20{{ page.title }}" data-text="{{ page.title }}" data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fab fa-whatsapp fa-2x"></span></a>&nbsp;&nbsp;
         <a href="mailto:?subject={{ page.title }}&body={{ page.description }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via email"><span class="far fa-envelope fa-2x"></span></a>
       </div>
-      <a href="#to-proper-page-source" class="btn btn-sm btn-dark shadow-sm my-2" target="_blank">Help improve this page</a>
-      <a href="#to-proper-page-source" class="btn btn-sm btn-dark shadow-sm my-2" target="_blank">&#60;/source&#62;</a>
+      <a href="#to-proper-page-source" class="btn btn-sm btn-dark my-2" target="_blank">Help improve this page</a>
+      <a href="#to-proper-page-source" class="btn btn-sm btn-dark my-2" target="_blank">&#60;/source&#62;</a>
     </div>
   </div>
 </div>
@@ -78,7 +78,7 @@ layout: default
   <div class="row">
     <div class="col-md-8 mb-3">
       <!-- #7 Description -->
-      <div class="card shadow-sm border-0">
+      <div class="card">
         <div class="card-body">
           <span class="card-title h4">Description</span>
           <span class="float-right">
@@ -97,7 +97,7 @@ layout: default
     </div>
     <div class="col-md-4 mb-3">
       <!-- #13 Platform -->
-      <div class="card shadow-sm border-0 mb-3">
+      <div class="card mb-3">
         <div class="card-body">
           <span class="card-title h4">Platform</span>
           <span class="float-right">
@@ -237,7 +237,7 @@ layout: default
         </div>
       </div>
       <!-- #16 Social -->
-      <div class="card shadow-sm border-0">
+      <div class="card">
         <div class="card-body">
           <span class="card-title h4">Social</span>
           <span class="float-right">
@@ -295,7 +295,7 @@ layout: default
     <div class="col-md-8 mb-3">
       <!-- #8 System Requirements -->
       {% if minimum or recommended or optimal %}
-      <div class="card shadow-sm border-0 mb-3">
+      <div class="card mb-3">
         <div class="card-body">
           <span class="card-title h4">System Requirements</span>
           <span class="float-right">
@@ -366,7 +366,7 @@ layout: default
     <!-- /col-md-8 -->
     <div class="col-md-4 mb-3">
       <!-- Rating -->
-      <div class="card shadow-sm border-0">
+      <div class="card">
         <div class="card-body">
           <span class="card-title h4">Ratings</span>
           <span class="float-right">
@@ -443,7 +443,7 @@ layout: default
   <div class="card-deck mb-3">
     <!-- #9 Developer -->
     {% if page.developer %}
-    <div class="card shadow-sm border-0">
+    <div class="card">
       <div class="card-body">
         <span class="card-title h4">Developer</span>
         <span class="float-right">
@@ -469,7 +469,7 @@ layout: default
     {% endif %}
     <!-- #12 Written In -->
     {% if page.written_in %}
-    <div class="card shadow-sm border-0">
+    <div class="card">
       <div class="card-body">
         <span class="card-title h4">Written in</span>
         <span class="float-right">
@@ -495,7 +495,7 @@ layout: default
     {% endif %}
     <!-- #10 Initial Release -->
     {% if page.initial_release %}
-    <div class="card shadow-sm border-0">
+    <div class="card">
       <div class="card-body">
         <span class="card-title h4">Initial Release</span>
         <span class="float-right">
@@ -526,7 +526,7 @@ layout: default
   <div class="card-deck mb-3">
     <!-- #11 Repository -->
     {% if page.repository %}
-    <div class="card shadow-sm border-0">
+    <div class="card">
       <div class="card-body">
         <span class="card-title h4">Repository</span>
         <span class="float-right">
@@ -552,7 +552,7 @@ layout: default
     {% endif %}
     <!-- #15 License -->
     {% if page.license %}
-    <div class="card shadow-sm border-0">
+    <div class="card">
       <div class="card-body">
         <span class="card-title h4">License</span>
         <span class="float-right">
@@ -578,7 +578,7 @@ layout: default
     {% endif %}
     <!-- #14 Categories -->
     {% if page.categories %}
-    <div class="card shadow-sm border-0">
+    <div class="card">
       <div class="card-body">
         <span class="card-title h4">Categories</span>
         <span class="float-right">
@@ -606,7 +606,7 @@ layout: default
   </div>
   {% endif %}
   <!-- You may try -->
-  <div class="card shadow-sm border-0">
+  <div class="card">
     <div class="card-body">
       <span class="card-title h4">You may try</span>
       <p class="card-text mt-3">

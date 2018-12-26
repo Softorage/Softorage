@@ -28,6 +28,22 @@ a .fas:hover, a .fab:hover, a .far:hover {
 color: $clr1;
 }
 
+//
+.btn {
+@extend .shadow-sm;
+}
+
+//
+input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
+@extend .shadow;
+transition: all 0.5s ease 0s;
+}
+
+//
+.card {
+@extend .shadow-sm, .border-0;
+}
+
 // text-gradient- for brand name
 .tg {
 background: -webkit-linear-gradient(36deg, $clr1 0%, $clr2 100%);
