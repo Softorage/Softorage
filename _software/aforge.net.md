@@ -45,8 +45,8 @@ source:
     - else: ["https://en.wikipedia.org/wiki/AForge.NET"]
   license: ["https://en.wikipedia.org/wiki/AForge.NET", "http://www.aforgenet.com/framework/license.html"]
   rating:
-    - ["G2CROWD", "u", "https://www.g2crowd.com/products/aforge-machinelearning/reviews]
-    - ["DiscoverSDK", "u", "http://www.discoversdk.com/products/aforge.net-framework-2.2.5#/overview]
+    - ["G2CROWD", "u", "https://www.g2crowd.com/products/aforge-machinelearning/reviews"]
+    - ["DiscoverSDK", "u", "http://www.discoversdk.com/products/aforge.net-framework-2.2.5#/overview"]
   status: ["http://crsouza.com/2010/05/20/accord-net-framework-an-extension-to-aforge-net/"]
 
 rating:

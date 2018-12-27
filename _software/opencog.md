@@ -28,7 +28,7 @@ platform:
 
 categories: ["Artificial Intelligence"]
 
-license: "GNU AGPL 3"
+license: "AGPL 3"
 
 social:
   - name: "Wikipedia"

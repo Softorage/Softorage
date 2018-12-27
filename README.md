@@ -19,7 +19,7 @@ You can get a copy of project up and running on your local machine for developem
 * [__Jekyll__](https://jekyllrb.com/)
 * [__Font Awesome__](https://fontawesome.com/)
 * [__Compress Layout__ for Jekyll](https://jch.penibelst.de/)
-* [__asti__](https://invirds.gitlab.io/asti/)
+* [__ASTi__](https://gitlab.com/invirds/asti)
 <!-- * UnCSS or CriticalCSS : yet to be implemented -->
 <!-- * loadCSS : yet to be implemented -->
 

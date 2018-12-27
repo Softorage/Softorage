@@ -30,7 +30,7 @@ categories: ["Document Viewer"]
 
 initial_release: "January 2005"
 
-license: "GNU GPL v2"
+license: "GPL v2"
 
 social:
   - name: "Wikipedia"
