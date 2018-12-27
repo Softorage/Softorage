@@ -17,7 +17,7 @@ description: |
 
 developer: "The Evince Team"
 
-repository: "https://git.gnome.org/browse/evince"
+repository: "https://gitlab.gnome.org/GNOME/evince"
 
 written_in: ["C", "C++"]
 
@@ -39,7 +39,6 @@ social:
 source:
   description: ["http://projects.gnome.org/evince/","https://wiki.gnome.org/Apps/Evince/FrequentlyAskedQuestions","https://en.wikipedia.org/wiki/Evince"]
   developer: "https://wiki.gnome.org/Apps/Evince/Team/"
-  repository: "https://gitlab.gnome.org/GNOME/evince/"
   written_in: "https://en.wikipedia.org/wiki/Evince/"
   platform:
     - dskp: ["https://wiki.gnome.org/Apps/Evince/Downloads/"]

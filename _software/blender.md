@@ -108,7 +108,6 @@ source:
   description: "https://en.wikipedia.org/wiki/Blender_(software)"
   developer: ["https://www.blender.org/foundation/", "https://en.wikipedia.org/wiki/Blender_Foundation"]
   initial_release: "https://www.blendernation.com/2014/01/02/happy-birthday-blender/#comment-629004"
-  repository: "https://en.wikipedia.org/wiki/Blender_(software)"
   written_in: "https://www.blender.org/get-involved/"
   platform:
     - dskp: ["https://www.blender.org/download/"]

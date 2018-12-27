@@ -67,7 +67,7 @@ layout: default
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}&quote={{ page.title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fab fa-facebook fa-2x"></span></a>&nbsp;&nbsp;
         <a href="https://twitter.com/intent/tweet?source={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fab fa-twitter fa-2x"></span></a>&nbsp;&nbsp;
         <a href="whatsapp://send?text={{ page.url | prepend: site.baseurl | prepend: site.url }}%20{{ page.title }}" data-text="{{ page.title }}" data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fab fa-whatsapp fa-2x"></span></a>&nbsp;&nbsp;
-        <a href="mailto:?subject={{ page.title }}&body={{ page.description }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via email"><span class="far fa-envelope fa-2x"></span></a>
+        <a href="mailto:?subject={{ page.title }}&body={{ page.info }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via email"><span class="far fa-envelope fa-2x"></span></a>
       </div>
       <a href="#to-proper-page-source" class="btn btn-sm btn-dark my-2" target="_blank">Help improve this page</a>
       <a href="#to-proper-page-source" class="btn btn-sm btn-dark my-2" target="_blank">&#60;/source&#62;</a>
@@ -158,9 +158,9 @@ layout: default
           {% endif %}
           {% else %}
           {% if os[1] == "n" %}
-          <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+          <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
           {% else %}
-          <span class='shadow-sm p-1'>{{ os[1] }}</span>
+          <span class='shadow-sm p-1'>{{ os[0] }}</span>
           {% endif %}
           {% endif %}
           {% endfor %}
@@ -184,9 +184,9 @@ layout: default
           {% endif %}
           {% else %}
           {% if os[1] == "n" %}
-          <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+          <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
           {% else %}
-          <span class='shadow-sm p-1'>{{ os[1] }}</span>
+          <span class='shadow-sm p-1'>{{ os[0] }}</span>
           {% endif %}
           {% endif %}
           {% endfor %}
@@ -210,9 +210,9 @@ layout: default
           {% endif %}
           {% else %}
           {% if os[1] == "n" %}
-          <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+          <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
           {% else %}
-          <span class='shadow-sm p-1'>{{ os[1] }}</span>
+          <span class='shadow-sm p-1'>{{ os[0] }}</span>
           {% endif %}
           {% endif %}
           {% endfor %}
@@ -220,12 +220,12 @@ layout: default
           
           {% else %} 
           
-          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
           {% for item in env.else %}
           {% if item[1] == "n" %}
-          <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+          <span class='border border-warning shadow-sm p-1'>{{ item[0] }}</span>
           {% else %}
-          <span class='shadow-sm p-1'>{{ os[1] }}</span>
+          <span class='shadow-sm p-1'>{{ item[0] }}</span>
           {% endif %}
           {% endfor %}
           "><span class="fas fa-bars"></span></a>
@@ -241,13 +241,6 @@ layout: default
         <div class="card-body">
           <span class="card-title h4">Social</span>
           <span class="float-right">
-          {% if page.source.social %}
-          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
-          {% for src in page.source.social %}
-          '{{ src }}' 
-          {% endfor %}
-          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
-          {% endif %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
           </span>
           <p class="card-text mt-3">
@@ -530,12 +523,6 @@ layout: default
       <div class="card-body">
         <span class="card-title h4">Repository</span>
         <span class="float-right">
-        {% if page.source.repository %}
-        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
-        {% for src in page.source.repository %}
-        '{{ src }}' 
-        {% endfor %}
-        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
         </span>
         <p class="card-text mt-3">
@@ -582,13 +569,6 @@ layout: default
       <div class="card-body">
         <span class="card-title h4">Categories</span>
         <span class="float-right">
-        {% if page.source.categories %}
-        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-original-title="Source(s)" data-content="
-        {% for src in page.source.categories %}
-        '{{ src }}' 
-        {% endfor %}
-        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
-        {% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info-circle small"></span></a>
         </span>
         <p class="card-text mt-3">

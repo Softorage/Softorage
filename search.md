@@ -76,9 +76,9 @@ permalink: /search/
                   {% endif %}
                   {% else %}
                   {% if os[1] == "n" %}
-                  <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+                  <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
                   {% else %}
-                  <span class='shadow-sm p-1'>{{ os[1] }}</span>
+                  <span class='shadow-sm p-1'>{{ os[0] }}</span>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
@@ -100,9 +100,9 @@ permalink: /search/
                   {% endif %}
                   {% else %}
                   {% if os[1] == "n" %}
-                  <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+                  <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
                   {% else %}
-                  <span class='shadow-sm p-1'>{{ os[1] }}</span>
+                  <span class='shadow-sm p-1'>{{ os[0] }}</span>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
@@ -124,20 +124,20 @@ permalink: /search/
                   {% endif %}
                   {% else %}
                   {% if os[1] == "n" %}
-                  <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+                  <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
                   {% else %}
-                  <span class='shadow-sm p-1'>{{ os[1] }}</span>
+                  <span class='shadow-sm p-1'>{{ os[0] }}</span>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
                   "><span class="fas fa-tablet-alt"></span></a>
                   {% else %} 
-                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
                   {% for item in env.else %}
                   {% if item[1] == "n" %}
-                  <span class='border border-warning shadow-sm p-1'>{{ os[1] }}</span>
+                  <span class='border border-warning shadow-sm p-1'>{{ item[0] }}</span>
                   {% else %}
-                  <span class='shadow-sm p-1'>{{ os[1] }}</span>
+                  <span class='shadow-sm p-1'>{{ item[0] }}</span>
                   {% endif %}
                   {% endfor %}
                   "><span class="fas fa-bars"></span></a>
