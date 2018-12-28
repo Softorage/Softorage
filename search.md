@@ -16,6 +16,7 @@ permalink: /search/
   {% for categ in categs %}
   <div class="card mb-3">
     <div class="card-body">
+      <span class="anchor" id ="{{ categ | replace: " ", "_" | downcase }}"></span>
       <h4 class="card-title">{{ categ }}</h4>
       <div class="card-text">
         <div class="table-responsive-md">

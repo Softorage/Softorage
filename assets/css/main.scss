@@ -8,6 +8,16 @@
   "fa.scss"
 ;
 
+// adding .anchor class to anchor makes `element hiding behind fixed-top-navbar` problem go.
+// just that a distinct anchor shall be created (preferably with <span>) as its visibility is hidden.
+// https://stackoverflow.com/a/13184714
+.anchor {
+    display: block;
+    position: relative;
+    top: -5.45rem;
+    visibility: hidden;
+}
+
 // Theme specific classes
 {% assign theme = site.data.themes.a %}
 
@@ -39,7 +49,7 @@ input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:foc
 transition: all 0.5s ease 0s;
 }
 
-//
+// *
 .card {
 @extend .shadow-sm, .border-0;
 }

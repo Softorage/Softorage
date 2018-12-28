@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<!-- Including relBase.html again, as for some reason just including it in just default layout doesn't seem to work for layouts using default layout -->
+{% include relBase.html %}
 <!-- Tell Jekyll whether in 'System Requirements' Minimum or Recomended or Optimal data fields are present -->
 <!-- We want the whole Minimum column to exist even if one specification has Minimum specification stated in data file. Same goes for recommended and optimal. -->
 {% assign recommended = false %}
@@ -590,9 +592,9 @@ layout: default
         <p class="card-text mt-3">
         {% for category in page.categories %}
         {% if forloop.last == false %}
-        {{ category }}, 
+        <a href="{{ relBase }}search#{{ category | replace: " ", "_" | downcase }}">{{ category }}</a>, 
         {% else %}
-        {{ category }}
+        <a href="{{ relBase }}search#{{ category | replace: " ", "_" | downcase }}">{{ category }}</a>
         {% endif %}
         {% endfor %}
         </p>
@@ -618,6 +620,19 @@ layout: default
       </p>
     </div>
   </div>
+  {% assign content_temp = content | strip_newlines %}
+  {% if content_temp != "" %}
+  <hr>
+  <!-- Notes -->
+  <div class="card">
+    <div class="card-body">
+      <span class="card-title h4">Notes</span>
+      <p class="card-text mt-3">
+        {{ content }}
+      </p>
+    </div>
+  </div>
+  {% endif %}
 </div>
 <!-- Initialize Popovers -->
 <!-- 
