@@ -33,6 +33,8 @@ categories: ["Artificial Intelligence", "Computer Vision"]
 license: ["LGPL v3", "GPL v3"]
 
 social:
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/AForge.NET"
   - name: "Facebook"
     url: "https://www.facebook.com/aforge.net/"
 

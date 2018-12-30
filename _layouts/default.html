@@ -1,7 +1,7 @@
 ---
 layout: compress
 ---
-{% include relBase.html %}
+{%- include relBase.html -%}
 <!DOCTYPE html>
 <html style="scroll-behavior:smooth;">
 
@@ -14,12 +14,11 @@ layout: compress
     {{ content }}
 
     {% include footer.html %}
+    {%- comment -%}use tag include_cached for footer and for such elements which are common for all pages like header but not head, once the jekyll-include-cache plugin is activated{%- endcomment -%}
     
     <!-- SCRIPTS -->
     <!-- Combined JavaScript file -->
     <script src="{{ relBase }}assets/js/main.js"></script>
-
-    
 <!-- 
 Unminified JS to turn navbar solid on scroll
 
@@ -36,7 +35,6 @@ $(document).ready(function() {
 });
 
  -->
- 
     <script>$(document).ready(function(){$(window).scroll(function(){$(this).scrollTop()>30?$(".navbar").addClass("bg-nav shadow"):$(".navbar").removeClass("bg-nav shadow")})});</script>
 
   </body>

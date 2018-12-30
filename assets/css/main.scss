@@ -4,7 +4,7 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "bootstrap.scss",
+  "bootstrap/bootstrap",
   "fa.scss"
 ;
 
@@ -28,12 +28,25 @@ $antinav: {{ theme.antinav }};
 $clr1-light: mix($clr1, $nav, 12%);
 $clr2-light: mix($clr2, $nav, 12%);
 
+// 
+.bg-warning-light {
+background: mix($warning, $nav, 15%);
+}
+
+.bg-success-light {
+background: mix($success, $nav, 25%);
+}
+
+.bg-danger-light {
+background: mix($danger, $nav, 25%);
+}
+
 // Enable animation for navbar and font awesome
 .navbar, .fas, .fab, .far {
 transition: all 0.5s ease 0s;
 }
 
-// Change color to clr1 on hovering anchored FontAwesome
+// Change color to $clr1 on hovering anchored FontAwesome
 a .fas:hover, a .fab:hover, a .far:hover {
 color: $clr1;
 }
@@ -110,6 +123,7 @@ color: $clr2-light;
 .btn-grad {
 background-image: linear-gradient(90deg,  $clr1 0%, $clr2 100%);
 }
+
 .btn-grad:hover {
 background-position: right center;
 }
@@ -200,8 +214,22 @@ background: rgba($nav, 0.4);
 }
 
 // Colouring Font-Awesome icons
+.fa-shoe-prints, .fa-info, .fa-desktop, .fa-mobile-alt, .fa-tablet-alt, .fa-bars {
+color: $clr2;
+}
+
+// general icons to be shown in black, even when they are used in anchored tags
+.fa-rss, .fa-comments {
+color: #000000;
+}
+
+// brands
 .fa-gitlab {
 color: #fca326;
+}
+
+.fa-github {
+color: #333333;
 }
 
 .fa-twitter {
@@ -222,6 +250,26 @@ color: #bd081c;
 
 .fa-google-plus {
 color: #dd4b39;
+}
+
+.fa-linkedin {
+color: #0077b5;
+}
+
+.fa-reddit {
+color: #ff4500;
+}
+
+.fa-deviantart {
+color: #05cc47;
+}
+
+.fa-vk {
+color: #45668e;
+}
+
+.fa-mastodon {
+color: #2A8FDD;
 }
 
 .fa-tumblr {

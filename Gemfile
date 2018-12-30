@@ -9,5 +9,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Plugins required
 # group :jekyll_plugins do
-#    gem "jekyll-seo-tag"
+#     gem "jekyll-seo-tag"
+#     gem "jekyll-sitemap" # took more time than liquid version almost twice actually... checked with the help of `--profile` option
+#     gem "jekyll-include-cache"
 #  end

@@ -63,4 +63,6 @@ compress_html:
   comments: ["<!-- ", " -->"]
 
 # plugins:
+#   - jekyll-sitemap
 #   - jekyll-seo-tag
+#   - jekyll-include-cache

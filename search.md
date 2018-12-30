@@ -53,33 +53,33 @@ permalink: /search/
                   {% for os in env.dskp %}
                   {% if os[0] == "Windows" %}
                   {% if os[1] == "n" %}
-                  <span class='fab fa-windows border border-warning'></span>
+                  <span class='fab fa-windows border border-warning p-1'></span>
                   {% else %}
                   <span class='fab fa-windows'></span>
                   {% endif %}
                   {% elsif os[0] == "Linux" %}
                   {% if os[1] == "n" %}
-                  <span class='fab fa-linux border border-warning'></span>
+                  <span class='fab fa-linux border border-warning p-1'></span>
                   {% else %}
                   <span class='fab fa-linux'></span>
                   {% endif %}
                   {% elsif os[0] == "MacOS" %}
                   {% if os[1] == "n" %}
-                  <span class='fab fa-apple border border-warning'></span>
+                  <span class='fab fa-apple border border-warning p-1'></span>
                   {% else %}
                   <span class='fab fa-apple'></span>
                   {% endif %}
                   {% elsif os[0] == "FreeBSD" %}
                   {% if os[1] == "n" %}
-                  <span class='fab fa-freebsd border border-warning'></span>
+                  <span class='fab fa-freebsd border border-warning p-1'></span>
                   {% else %}
                   <span class='fab fa-freebsd'></span>
                   {% endif %}
                   {% else %}
                   {% if os[1] == "n" %}
-                  <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
+                  <span class='border border-warning shadow-sm p-2'>{{ os[0] }}</span>
                   {% else %}
-                  <span class='shadow-sm p-1'>{{ os[0] }}</span>
+                  <span class='shadow-sm p-2'>{{ os[0] }}</span>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
@@ -89,21 +89,21 @@ permalink: /search/
                   {% for os in env.smp %}
                   {% if os[0] == "Android" %}
                   {% if os[1] == "n" %}
-                  <span class='fab fa-android border border-warning'></span>
+                  <span class='fab fa-android border border-warning p-1'></span>
                   {% else %}
                   <span class='fab fa-android'></span>
                   {% endif %}
                   {% elsif os[0] == "iOS" %}
                   {% if os[1] == "n" %}
-                  <span class='fab fa-apple border border-warning'></span>
+                  <span class='fab fa-apple border border-warning p-1'></span>
                   {% else %}
                   <span class='fab fa-apple'></span>
                   {% endif %}
                   {% else %}
                   {% if os[1] == "n" %}
-                  <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
+                  <span class='border border-warning shadow-sm p-2'>{{ os[0] }}</span>
                   {% else %}
-                  <span class='shadow-sm p-1'>{{ os[0] }}</span>
+                  <span class='shadow-sm p-2'>{{ os[0] }}</span>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
@@ -113,21 +113,21 @@ permalink: /search/
                   {% for os in env.tab %}
                   {% if os[0] == "Android" %}
                   {% if os[1] == "n" %}
-                  <span class='fab fa-android border border-warning'></span>
+                  <span class='fab fa-android border border-warning p-1'></span>
                   {% else %}
                   <span class='fab fa-android'></span>
                   {% endif %}
                   {% elsif os[0] == "iOS" %}
                   {% if os[1] == "n" %}
-                  <span class='fab fa-apple border border-warning'></span>
+                  <span class='fab fa-apple border border-warning p-1'></span>
                   {% else %}
                   <span class='fab fa-apple'></span>
                   {% endif %}
                   {% else %}
                   {% if os[1] == "n" %}
-                  <span class='border border-warning shadow-sm p-1'>{{ os[0] }}</span>
+                  <span class='border border-warning shadow-sm p-2'>{{ os[0] }}</span>
                   {% else %}
-                  <span class='shadow-sm p-1'>{{ os[0] }}</span>
+                  <span class='shadow-sm p-2'>{{ os[0] }}</span>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
@@ -136,9 +136,9 @@ permalink: /search/
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
                   {% for item in env.else %}
                   {% if item[1] == "n" %}
-                  <span class='border border-warning shadow-sm p-1'>{{ item[0] }}</span>
+                  <span class='border border-warning shadow-sm p-2'>{{ item[0] }}</span>
                   {% else %}
-                  <span class='shadow-sm p-1'>{{ item[0] }}</span>
+                  <span class='shadow-sm p-2'>{{ item[0] }}</span>
                   {% endif %}
                   {% endfor %}
                   "><span class="fas fa-bars"></span></a>
