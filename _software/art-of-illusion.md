@@ -39,7 +39,7 @@ platform:
   - dskp:
       - ["Windows", "o"]
       - ["Linux", "o"]
-      - ["MacOS", "o"]
+      - ["macOS", "o"]
       - ["Unix/other", "o"]
 
 categories: ["3D Computing Graphics Software"]

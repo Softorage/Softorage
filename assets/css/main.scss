@@ -43,7 +43,7 @@ background: mix($danger, $nav, 25%);
 
 // Enable animation for navbar and font awesome
 .navbar, .fas, .fab, .far {
-transition: all 0.5s ease 0s;
+transition: all 0.3s ease 0s;
 }
 
 // Change color to $clr1 on hovering anchored FontAwesome
@@ -59,7 +59,7 @@ color: $clr1;
 //
 input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
 @extend .shadow;
-transition: all 0.5s ease 0s;
+transition: all 0.3s ease 0s;
 }
 
 // *
@@ -190,7 +190,7 @@ background: rgba($nav, 0.25);
 }
 
 .btn.lighten-xlg:hover {
-background: rgba($nav, 0.3);
+background: rgba($nav, 0.7);
 }
 
 .btn.lighten-sm:focus {
@@ -210,7 +210,7 @@ background: rgba($nav, 0.35);
 }
 
 .btn.lighten-xlg:focus {
-background: rgba($nav, 0.4);
+background: rgba($nav, 1);
 }
 
 // Colouring Font-Awesome icons

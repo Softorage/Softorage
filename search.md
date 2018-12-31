@@ -63,7 +63,7 @@ permalink: /search/
                   {% else %}
                   <span class='fab fa-linux'></span>
                   {% endif %}
-                  {% elsif os[0] == "MacOS" %}
+                  {% elsif os[0] == "macOS" %}
                   {% if os[1] == "n" %}
                   <span class='fab fa-apple border border-warning p-1'></span>
                   {% else %}

@@ -2,59 +2,59 @@
 layout: default
 ---
 <!-- Including relBase.html again, as for some reason just including it in just default layout doesn't seem to work for layouts using default layout -->
-{% include relBase.html %}
+{%- include relBase.html -%}
 <!-- Tell Jekyll whether in 'System Requirements' Minimum or Recomended or Optimal data fields are present -->
 <!-- We want the whole Minimum column to exist even if one specification has Minimum specification stated in data file. Same goes for recommended and optimal. -->
-{% assign recommended = false %}
-{% assign optimal = false %}
-{% assign minimum = false %}
-{% if page.sysreq %}
-{% for spec in page.sysreq %}
-{% if spec.min %}
-{% assign minimum = true %}
-{% break %}
-{% else %}
-{% continue %}
-{% endif %}
-{% endfor %}
-{% for spec in page.sysreq %}
-{% if spec.recm %}
-{% assign recommended = true %}
-{% break %}
-{% else %}
-{% continue %}
-{% endif %}
-{% endfor %}
-{% for spec in page.sysreq %}
-{% if spec.optm %}
-{% assign optimal = true %}
-{% break %}
-{% else %}
-{% continue %}
-{% endif %}
-{% endfor %}
-{% endif %}
-<div class="container-fluid bg-clr2 text-white py-3">
+{%- assign recommended = false -%}
+{%- assign optimal = false -%}
+{%- assign minimum = false -%}
+{%- if page.sysreq -%}
+  {%- for spec in page.sysreq -%}
+    {%- if spec.min -%}
+      {%- assign minimum = true -%}
+      {%- break -%}
+    {%- else -%}
+      {%- continue -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- for spec in page.sysreq -%}
+    {%- if spec.recm -%}
+      {%- assign recommended = true -%}
+      {%- break -%}
+    {%- else -%}
+      {%- continue -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- for spec in page.sysreq -%}
+    {%- if spec.optm -%}
+      {%- assign optimal = true -%}
+      {%- break -%}
+    {%- else -%}
+      {%- continue -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+<div class="container-fluid bg-clr2-light text-white py-3">
   <div style="height:3.5rem;"></div>
   <div class="row">
     <div class="col-md-8">
-      <h1>{% if page.image %}<img class="bg-nav rounded shadow-sm p-2" style="height:3rem;" src="{{ page.image }}" alt="{{ page.title }} logo">  {% endif %}{{ page.title }}</h1>
+      <h1 class="text-clr2">{% if page.image %}<img class="bg-nav rounded shadow-sm p-2" style="height:3rem;" src="{{ page.image }}" alt="{{ page.title }} logo">  {% endif %}{{ page.title }}</h1>
       {% if page.info %}
-      <p>{{ page.info }}</p>
+      <p class="text-clr2">{{ page.info }}</p>
       {% endif %}
       {% if page.status %}
       {% if page.status == "Active" %}
-      <span class="bg-success-light text-success rounded p-2">{{ page.status }}</span>
+      <span class="bg-success-light text-success rounded h6 p-2">{{ page.status }}</span>
       {% elsif page.status == "Discontinued" %}
-      <span class="bg-danger-light text-danger rounded p-2">{{ page.status }}</span>
+      <span class="bg-danger-light text-danger rounded h6 p-2">{{ page.status }}</span>
       {% else %}
-      <span class="bg-warning-light text-warning rounded p-2">{{ page.status }}</span>
+      <span class="bg-warning-light text-warning rounded h6 p-2">{{ page.status }}</span>
       {% endif %}
       {% endif %}
     </div>
     <div class="col-md-4">
       {% if page.get_it %}
-      <a role="button" class="btn lighten-sm text-white my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
+      <a role="button" class="btn lighten-xlg text-primary my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
       {% for getit in page.get_it %} 
       <a href='{{ getit[1] }}' class='
       btn
@@ -68,7 +68,7 @@ layout: default
       "><span class="fas fa-arrow-alt-circle-down"></span>  Get it</a>
       {% endif %}
       {% if page.website %}
-      <a class="btn lighten-sm text-white my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe"></span>  Visit</a> <br>
+      <a class="btn lighten-xlg text-primary my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe"></span>  Visit</a> <br>
       {% endif %}
       <div class="bg-white text-dark shadow-sm rounded my-2 p-2">
         <span class="fas fa-share-alt-square fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -82,6 +82,10 @@ layout: default
     </div>
   </div>
 </div>
+
+<!-- separator for banner and content -->
+<div class="bg-nav py-1 position-relative shadow"></div>
+
 <div class="container-fluid bg-clr1-light py-3">
   <div class="row">
     <div class="col-md-8">
@@ -157,7 +161,7 @@ layout: default
           {% else %}
           <span class='fab fa-linux'></span>
           {% endif %}
-          {% elsif os[0] == "MacOS" %}
+          {% elsif os[0] == "macOS" %}
           {% if os[1] == "n" %}
           <span class='fab fa-apple border border-warning p-1'></span>
           {% else %}
@@ -531,7 +535,7 @@ layout: default
         {% endfor %}
         "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
         {% endif %}
-        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released."><span class="fas fa-info small"></span></a>
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released. Elder the software, more trustworthy it is."><span class="fas fa-info small"></span></a>
         </span>
         <p class="card-text mt-3">
         {% for in_re in page.initial_release %}

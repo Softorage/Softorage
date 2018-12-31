@@ -59,7 +59,7 @@ platform:
   - dskp:
       - ["Windows","o"]
       - ["Linux","o"]
-      - ["MacOS","o"]
+      - ["macOS","o"]
       - ["FreeBSD","o"]
   - smp:
       - ["Android","n"]
