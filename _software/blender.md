@@ -20,7 +20,7 @@ get_it:
 
 # 7 'description': Description of software, in brief but not in short. It's mandatory.
 description: |
-  Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.
+  Blender is a professional, free and open-source [3D computer graphics](/search#3d_computing_graphics) software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.
 
 # 8 'sysreq':
 sysreq:
@@ -60,14 +60,14 @@ platform:
       - ["Windows","o"]
       - ["Linux","o"]
       - ["macOS","o"]
-      - ["FreeBSD","o"]
+      - ["Unix(like)","o"]
   - smp:
       - ["Android","n"]
 #  dskp:
 #    windows
 #    linux
 #    macos
-#    freebsd
+#    Unix(like)
 #  smp:
 #    android
 #    ios
@@ -78,7 +78,7 @@ platform:
 #    languages, frameworks, builders, environments, etc especially for libraries etc
 
 # 14 'categories':
-categories: ["3D Computing Graphics Software", "Computer Simulation"]
+categories: ["3D Computing Graphics", "Computer Simulation"]
 
 # 15 'license':
 license: "GPL v2 or later"

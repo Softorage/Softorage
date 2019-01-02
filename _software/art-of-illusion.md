@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "http://www.artofillusion.org/downloads"]
 
 description: |
-  Art of Illusion is a 3D-graphics software, with similar intent of use as for example 3DS-Max or Maya of the commercial software packages or Blender or Wings 3D on the freeware side. Though some sources seem to confuse 3D-modeling with CAD, Art of Illusion does not provide any CAD-features.
+  Art of Illusion is a [3D-graphics software](/search#3d_computing_graphics), with similar intent of use as for example 3DS-Max or Maya of the commercial software packages or [Blender](/softwares/blender/) or [Wings 3D](/softwares/wings-3d/) on the freeware side. Though some sources seem to confuse 3D-modeling with CAD, Art of Illusion does not provide any CAD-features.
   
   Some user reviews describe Art of Illusion as 'intuitive', 'straight forward to learn' and 'good candidate for the first 3D modelling tool', while some characterize it as 'software for experienced CAD users' or taking plenty of time to figure out. For its capabilities it has been described 'powerful, comprehensive and extensible'.
   
@@ -40,9 +40,9 @@ platform:
       - ["Windows", "o"]
       - ["Linux", "o"]
       - ["macOS", "o"]
-      - ["Unix/other", "o"]
+      - ["Unix(like)", "o"]
 
-categories: ["3D Computing Graphics Software"]
+categories: ["3D Computing Graphics"]
 
 license: ["GPL v2"]
 
@@ -64,7 +64,7 @@ source:
     - ["SourceForge", "u", "https://sourceforge.net/projects/aoi/reviews/"]
     - ["CNET", "u", "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"]
     - ["CNET", "e", "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"]
-    - ["Softpedia", "u", "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Art-of-Illusion.shtml"]
+    - ["SOFTPEDIA", "u", "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Art-of-Illusion.shtml"]
   status: ["https://sourceforge.net/p/aoi/activity/?page=0&limit=100#5c21dbd6ee24ca4d526b7563"]
 
 rating:
@@ -79,9 +79,9 @@ rating:
     num: 3
   - name: "CNET"
     rate: [5, 5]
-  - name: "Softpedia"
+  - name: "SOFTPEDIA"
     rate: [3.2, 5]
     num: 6
 
 ---
-* Absolute minimum requirements or recommendations for the hardware have not been informed.
+* Absolute minimum requirements or recommendations for the system hardware have not been informed.

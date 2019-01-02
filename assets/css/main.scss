@@ -42,7 +42,7 @@ background: mix($danger, $nav, 25%);
 }
 
 // Enable animation for navbar and font awesome
-.navbar, .fas, .fab, .far {
+.navbar, a, .fas, .fab, .far {
 transition: all 0.3s ease 0s;
 }
 
@@ -219,8 +219,12 @@ color: $clr2;
 }
 
 // general icons to be shown in black, even when they are used in anchored tags
-.fa-rss, .fa-comments {
+.fa-comments {
 color: #000000;
+}
+
+.fa-rss {
+color: #f26522;
 }
 
 // brands
@@ -260,6 +264,10 @@ color: #0077b5;
 color: #ff4500;
 }
 
+.fa-flickr {
+color: #ff4500; // proper color
+}
+
 .fa-deviantart {
 color: #05cc47;
 }
@@ -290,10 +298,6 @@ color: #666666;
 
 .fa-android {
 color: #a4c639;
-}
-
-.fa-freebsd {
-color: #B50011;
 }
 
 .fa-linux {
