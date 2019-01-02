@@ -103,7 +103,7 @@ layout: default
           </span>
           <p class="card-text mt-3">
           {% if page.description %}
-          {{ page.description }}
+          {{ page.description | markdownify }}
           {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
           {% endif %}
           </p>

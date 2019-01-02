@@ -47,7 +47,7 @@ permalink: /search/
                   {% endif %}
                   <br>
                   {% for soft_categ in software.categories %}
-                  <a href="#{{ soft_categ | replace: " ", "_" | downcase }}"><span class="fas btn btn-light btn-sm text-clr2">{{ soft_categ }}</span></a> 
+                  <a href="#{{ soft_categ | replace: " ", "_" | downcase }}"><span class="btn bg-clr2-light btn-sm text-clr2 font-weight-bold my-2">{{ soft_categ }}</span></a> 
                   {% endfor %}
                 </td>
                 <td>
