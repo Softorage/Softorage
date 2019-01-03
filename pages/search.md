@@ -5,7 +5,7 @@ description: Search through massive yet intelligently organised database
 permalink: /search/
 ---
 {% assign forcount = 1 %}
-{% assign categs =  site.software | map: 'categories' | join: ','  | split: ',' | uniq %}
+{% assign categs =  site.software | map: "categories" | join: ","  | split: "," | uniq %}
 
 <div class="container-fluid bg-clr1 text-white text-center py-3">
   <div style="height:3.5rem;"></div>
@@ -45,6 +45,10 @@ permalink: /search/
                   {% else %}
                   <p>Not available</p>
                   {% endif %}
+                  <br>
+                  {% for soft_categ in software.categories %}
+                  <a href="#{{ soft_categ | replace: " ", "_" | downcase }}"><span class="btn bg-clr2-light btn-sm text-clr2 font-weight-bold my-2">{{ soft_categ }}</span></a> 
+                  {% endfor %}
                 </td>
                 <td>
                   {% for env in software.platform %}

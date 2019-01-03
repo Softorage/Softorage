@@ -14,7 +14,7 @@ get_it:
   - ["Google Code | Archive", "https://code.google.com/archive/p/aforge/downloads"]
 
 description: |
-  AForge.NET is a computer vision and artificial intelligence library originally developed by Andrew Kirillov for the .NET Framework. The source code and binaries of the project are available under the terms of the Lesser GPL and the GPL (GNU General Public License). Another (unaffiliated) project called <a href="https://invirds.gitlab.io/softwares/accord.net/">Accord.NET</a> was created to extend the features of the original AForge.NET library.
+  AForge.NET is a [computer vision](/search#computer_vision) and [artificial intelligence](/search#artificial_intelligence) library originally developed by Andrew Kirillov for the .NET Framework. The source code and binaries of the project are available under the terms of the Lesser GPL and the GPL (GNU General Public License). Another (unaffiliated) project called [Accord.NET](https://invirds.gitlab.io/softwares/accord.net/) was created to extend the features of the original AForge.NET library.
 
 developer: ["Andrew Kirillov"]
 
