@@ -18,6 +18,8 @@ description: |
   LibreOffice uses the international ISO/IEC standard OpenDocument file format (ODF) as its native format to save documents for all of its applications. LibreOffice also supports the file formats of most other major office suites, including Microsoft Office(.doc, .docx, .xls, .xlsx, .ppt, .pptx), through a variety of import/export filters. You can export your work in many different formats including PDF.
   
    It is available in 115 languages.
+   
+   [Blog](https://blog.documentfoundation.org/) I [Forum](https://ask.libreoffice.org/en/questions/) I [Wiki](https://wiki.documentfoundation.org/Main_Page) I [Documentation](https://wiki.documentfoundation.org/Documentation/Publications) I [IRC](https://irc.documentfoundation.org/) I [Planet](https://planet.documentfoundation.org/) I [Mailing lists](https://www.libreoffice.org/get-help/mailing-lists/) I [FAQ](https://www.libreoffice.org/get-help/frequently-asked-questions/)
 
 sysreq:
   -
@@ -67,12 +69,6 @@ social:
     url: "https://www.reddit.com/r/libreoffice"
   - name: "Twitter"
     url: "https://twitter.com/libreoffice"
-  - name: "Blog"
-    url: "https://blog.documentfoundation.org/"
-  - name: "Forum"
-    url: "https://ask.libreoffice.org/en/questions/"
-  - name: "IRC"
-    url: "https://irc.documentfoundation.org/"
 
 source:
   description: ["https://help.libreoffice.org/Common/About_Converting_Microsoft_Office_Documents", "https://www.libreoffice.org/discover/libreoffice/", "https://www.libreoffice.org/download/libreoffice-fresh/?lang=pick"]
@@ -92,7 +88,7 @@ source:
   status: ["https://blog.documentfoundation.org/", "https://gerrit.libreoffice.org/#/q/status:open"]
 
 rating:
-  - name: "techradar"
+  - name: "TechRadar"
     rate: [4.5, 5]
   - name: "PCWorld"
     rate: [4, 5]

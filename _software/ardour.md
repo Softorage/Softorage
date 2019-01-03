@@ -16,6 +16,8 @@ description: |
   Ardour is a hard disk recorder and [digital audio workstation](/seacr#digital_audio_workstation) application. It runs on Linux, macOS, FreeBSD and Microsoft Windows. Its primary author is Paul Davis, who is also responsible for the JACK Audio Connection Kit. Ardour is intended to be digital audio workstation software suitable for professional use.
   
   Released under the terms of the GNU General Public License (version two or any later version), Ardour is free software. Users who download from the project's website are asked to pay at least $1 for downloading prebuilt binaries of Ardour; those users then have the right to obtain minor updates until the next major release. Another option is to subscribe, paying $1, $4 or $10 per month. Subscribers can download prebuilt binaries of all updates during the subscription period. (This makes Ardour an example of commercial free-libre software.) Without paying, users can download the full source code for all platforms, or a prebuilt demo binary which ceases playback after various time periods. Several Linux distributions also provide prebuilt binaries, free of any software restrictions, as part of their repositories.
+  
+  [IRC](http://webchat.freenode.net/?channels=ardour) I [Blog](https://discourse.ardour.org/c/blog) I [News](https://community.ardour.org/news) I [Forum](https://discourse.ardour.org/) I [Manual](http://manual.ardour.org/toc/) I [FAQ](https://community.ardour.org/realfaq) I [Mailing lists](https://ardour.org/community.html#mailinglists)
 
 sysreq:
   -
@@ -57,12 +59,8 @@ categories: ["Digital Audio Workstation"]
 license: ["GPL v2"]
 
 social:
-  - name: "IRC"
-    url: "http://webchat.freenode.net/?channels=ardour"
-  - name: "Blog"
-    url: "https://discourse.ardour.org/c/blog"
-  - name: "Forum"
-    url: "https://discourse.ardour.org/"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Ardour_(software)"
 
 source:
   description: ["http://ardour.org/system_requirements", "http://www.freshports.org/audio/ardour/", "https://community.ardour.org/download"]

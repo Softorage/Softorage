@@ -14,6 +14,8 @@ description: |
   Audacity imports sounds and music, puts sound effects against individual tracks and mixes things like music tracks and podcasts together. Audacity comes with many professional editing and recording functions. It's possible to create both live recordings as well as cut tracks. In addition, Audacity has an audio toolbox with countless effects, an equalizer and frequency analysis on board.
   
   Audacity is a [digital audio editor](/search#digital_audio_editor) with 1500+ stars on GitHub and is present in Software Repositories of major Linux distributions.
+  
+  [Blog](https://www.audacityteam.org/posts/) I [Forum](https://forum.audacityteam.org/) I [News](https://www.audacityteam.org/about/news/) I [Manual](https://manual.audacityteam.org/) I [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page) I [Documentation](https://www.audacityteam.org/help/documentation/) I [FAQ](https://manual.audacityteam.org/man/faq.html)
 
 sysreq:
   -
@@ -48,10 +50,6 @@ social:
     url: "https://plus.google.com/+audacity"
   - name: "Twitter"
     url: "https://twitter.com/getaudacity"
-  - name: "Forum"
-    url: "https://forum.audacityteam.org/"
-  - name: "Blog"
-    url: "https://www.audacityteam.org/posts/"
 
 source:
   description: ["https://audacity.en.softonic.com/#app-softonic-review", "https://github.com/audacity/audacity"]
@@ -72,7 +70,7 @@ source:
   status: ["https://www.audacityteam.org/posts/"]
 
 rating:
-  - name: "techradar"
+  - name: "TechRadar"
     rate: [4.5, 5]
   - name: "TopTenReviews"
     rate: [9.5, 10]

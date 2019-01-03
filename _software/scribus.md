@@ -18,6 +18,8 @@ description: |
   Underneath a modern and user-friendly interface, Scribus supports professional [desktop publishing](/search#desktop_publishing) features, such as color separations, CMYK and spot colors, ICC color management, and versatile PDF creation.
   
   Books about Scribus are available in several languages, including an official manual for v1.3, published through FLES Books in 2009.
+  
+  [Blog](https://rants.scribus.net/) I [Forum](http://forums.scribus.net/) I [News](https://www.scribus.net/category/news/) I [Wiki](https://wiki.scribus.net/canvas/Scribus) I [Video Tutorials](https://wiki.scribus.net/canvas/Scribus_Video_Tutorials) I [Get Stated](https://wiki.scribus.net/canvas/Get_Started_with_Scribus) I [Docs](https://wiki.scribus.net/canvas/Help:TOC) I [Mailing list](http://lists.scribus.net/mailman/listinfo) I [FAQ](https://wiki.scribus.net/canvas/Category:FAQ) I [IRC](https://webchat.freenode.net/?channels=scribus)
 
 sysreq:
   -
@@ -55,10 +57,6 @@ license: ["GPL v2 or later"]
 social:
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/Scribus"
-  - name: "Forum"
-    url: "http://forums.scribus.net/"
-  - name: "Blog"
-    url: "https://rants.scribus.net/"
 
 source:
   description: ["https://sourceforge.net/projects/scribus/", "https://wiki.scribus.net/canvas/Books", "https://web.archive.org/web/20100106230447/http://www.flesbooks.com/scribus1.3manual/"]
@@ -78,7 +76,7 @@ source:
   status: ["https://wiki.scribus.net/canvas/Announcements", "https://sourceforge.net/p/scribus/activity/?page=0&limit=100#5c16e3f7ee24ca0774041f9f"]
 
 rating:
-  - name: "techradar"
+  - name: "TechRadar"
     rate: [4.5, 5]
   - name: "SourceForge"
     rate: [4.7, 5]

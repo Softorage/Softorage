@@ -14,6 +14,8 @@ get_it:
 
 description: |
   Mozilla Firefox (or simply Firefox) is a free and open-source [web browser](/search#web_browser) developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox is available for Windows, macOS, Linux, BSD illumos and Solaris operating systems. Its sibling, Firefox for Android, is also available. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards. In 2017, Firefox began incorporating new technology under the code name Quantum to promote parallelism and a more intuitive user interface. An additional version, Firefox for iOS, was released on November 12, 2015. Due to platform restrictions, it uses the WebKit layout engine instead of Gecko, as with all other iOS web browsers.
+  
+  [Blog](https://blog.mozilla.org/) I [Forum](https://support.mozilla.org/en-US/questions) I [News/Announcements](https://blog.mozilla.org/press/) I [Wiki](https://wiki.mozilla.org/Firefox) I [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding) I [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
 
 sysreq:
   -
@@ -64,10 +66,6 @@ social:
     url: "https://twitter.com/firefox"
   - name: "Youtube"
     url: "https://www.youtube.com/firefoxchannel"
-  - name: "Forum"
-    url: "https://support.mozilla.org/en-US/questions"
-  - name: "Blog"
-    url: "https://blog.mozilla.org/"
 
 source:
   description: ["https://lwn.net/Articles/118268/", "https://www.mozilla.org/en-US/foundation/licensing/", "https://www.mozilla.org/en-US/about/legal/eula/", "https://blog.mozilla.org/blog/2017/11/14/introducing-firefox-quantum/", "https://web.archive.org/web/20100615131607/http://download-firefox.org/spread-firefox/gecko-layout-engine-and-mozilla-firefox/", "https://svnweb.freebsd.org/ports/head/www/firefox/", "http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/www/mozilla-firefox/", "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/www/firefox/", "https://wiki.openindiana.org/oi/Firefox", "https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox"]

@@ -17,6 +17,8 @@ description: |
   The framework comprises a set of libraries that are available in source code as well as via executable installers and NuGet packages. The main areas covered include numerical linear algebra, numerical optimization, statistics, machine learning, artificial neural networks, signal and image processing, and support libraries (such as graph plotting and visualization). The project was originally created to extend the capabilities of the [AForge.NET](/softwares/aforge.net/) Framework, but has since incorporated [AForge.NET](/softwares/aforge.net/) inside itself. Newer releases have united both frameworks under the Accord.NET name.
   
   The Accord.NET Framework has been featured in multiple books such as [Mastering.NET Machine Learning](https://www.packtpub.com/big-data-and-business-intelligence/mastering-net-machine-learning) by PACKT publishing and [F# for Machine Learning Applications](https://www.packtpub.com/big-data-and-business-intelligence/f-machine-learning), featured in [QCON San Francisco](https://www.infoq.com/presentations/accord-net-machine-learning), and currently accumulates more than 1,500 forks in GitHub.
+  
+  [Documentation](http://accord-framework.net/docs/html/R_Project_Accord_NET.htm) I [Wiki](https://github.com/accord-net/framework/wiki) I [Publications](http://accord-framework.net/publications.html) I [Sample Applications](http://accord-framework.net/samples.html)
 
 sysreq:
   -

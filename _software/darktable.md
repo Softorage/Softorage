@@ -16,6 +16,8 @@ description: |
   darktable is a free and open-source [photography workflow](/search#photography_workflow) application and raw developer. Rather than being a [raster graphics editor](/search#raster_graphics_editor) like Adobe Photoshop or GIMP, it comprises a subset of image editing operations specifically aimed at non-destructive raw [photo post-production](/search#photo_post-production). It is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
   
   All editing is fully non-destructive and only operates on cached image buffers for display. The full image is only converted during export. Raw image loading is done using rawspeed, high-dynamic range and standard image formats such as jpeg are also supported. The core operates completely on floating point values, so darktable can not only be used for photography but also for scientifically acquired images or output of renderers (high dynamic range).
+  
+  [Blog](https://www.darktable.org/blog/) I [Forum](https://discuss.pixls.us/c/software/darktable) I [User Manual](http://www.darktable.org/usermanual/en/) I [News](https://www.darktable.org/news/) I [Users' Wiki](https://redmine.darktable.org/projects/users/wiki) I [Development Wiki](https://redmine.darktable.org/projects/darktable/wiki) I [FAQ](https://www.darktable.org/about/faq/) I [Mailing list](https://www.darktable.org/contact/)
 
 sysreq:
   -
@@ -54,10 +56,6 @@ social:
     url: "http://www.flickr.com/groups/darktable/"
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/Darktable"
-  - name: "Forum"
-    url: "https://discuss.pixls.us/c/software/darktable"
-  - name: "Blog"
-    url: "https://www.darktable.org/blog/"
 
 source:
   description: ["https://www.darktable.org/about/"]

@@ -16,6 +16,8 @@ description: |
   Krita is a free-software and an open-source [raster graphics editor](/search#raster_graphics_editor), designed primarily for digital painting and animation purposes. It features a low-distract UI, high-quality OpenGL accelerated canvas, color management support, advanced brush engine, non-destructive layers and masks, group-based layer management, vector artwork support and switchable customization profiles.
   
   Krita is a FREE and open source painting tool designed for concept artists, illustrators, matte and texture artists, and the VFX industry. Krita has been in development for over 10 years and has had an explosion in growth recently. It offers many common and innovative features to help the amateur and professional alike.
+  
+  [Forum](https://forum.kde.org/viewforum.php?f=136) I [Documentation(Manual)](https://docs.krita.org/en/) I [Wiki](https://userbase.kde.org/Krita/en) I [News](https://krita.org/en/news/) I [FAQ](https://docs.krita.org/en/KritaFAQ.html) I [Mailing list](https://krita.org/en/mailing-lists/) I [IRC](https://krita.org/en/irc/)
 
 sysreq:
   -
@@ -46,8 +48,6 @@ categories: ["Raster Graphics Editor"]
 license: ["GPL v3"]
 
 social:
-  - name: "Forum"
-    url: "https://forum.kde.org/viewforum.php?f=136"
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/Krita"
   - name: "Facebook"

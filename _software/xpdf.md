@@ -19,10 +19,14 @@ description: |
   Xpdf runs on nearly any Unix-like operating system, but binaries are also available for Windows. Xpdf can decode LZW and read encrypted PDFs. The official version obeys the DRM restrictions of PDF files, which can prevent copying, printing, or converting some PDF files. There are patches that make Xpdf ignore these DRM restrictions, and these restrictions are patched out by the Debian distribution.
   
   Xpdf is also used as a back-end for other PDF readers frontends such as KPDF and GPDF, and its engine, without the X11 display components, is used for PDF viewers including BePDF on BeOS, '!PDF' on RISC OS, on PalmPDF on Palm OS and on Windows Mobile.
+  
+  [Forum](http://forum.xpdfreader.com/)
 
 developer: ["Glyph & Cog", "Derek Noonburg"]
 
 initial_release: "12 December 1995"
+
+repository: ["https://github.com/kermitt2/xpdf-4.00"]
 
 written_in: ["C++", "C", "Shell", "Qt"]
 
@@ -39,11 +43,8 @@ categories: ["Document Viewer"]
 license: ["GPL v2", "GPL v3"]
 
 social:
-  - name: "Forum"
-    url: "http://forum.xpdfreader.com/"
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/Xpdf"
-    
 
 source:
   description: ["https://www.linux.com/learn/survey-linux-pdf-viewers", "https://www.xpdfreader.com/", "http://www.cs.cmu.edu/~dst/Adobe/Gallery/xpdf-generic-patch.html", "https://lwn.net/Articles/335415/", "http://pocketxpdf.sourceforge.net/"]
@@ -68,4 +69,4 @@ rating:
     num: 1
 
 ---
-* [Repository](https://github.com/tmyroadctfig/xpdf) hasn't been updated after 2012, hence not included.
+* Repository - https://github.com/tmyroadctfig/xpdf hasn't been updated after 2012, hence not included.

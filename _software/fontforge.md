@@ -25,6 +25,8 @@ description: |
   Parts of FontForge code are used by the [LuaTeX](/softwares/luatex/) typesetting engine for reading and parsing OpenType fonts.
   
   The FontForge source code includes a number of utility programs, including 'showttf' which shows the contents of binary font files, and a WOFF converter and deconverter.
+  
+  [Online Book](http://designwithfontforge.com/) I [Documentation](https://fontforge.github.io/en-US/documentation/) I [FAQ](https://fontforge.github.io/en-US/faq/) I [Wiki](https://github.com/fontforge/fontforge/wiki) I [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
 
 sysreq:
   -
