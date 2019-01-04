@@ -89,5 +89,5 @@ rating:
     rate: [9.85, 10]
 
 ---
-* Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#system_requirements)
-* Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#system_requirements)
+* Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
+* Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)

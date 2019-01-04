@@ -71,4 +71,4 @@ source:
   status: ["https://www.darktable.org/news/", "https://www.darktable.org/blog/"]
 
 ---
-* Detailed synopsis regarding [System Requirements](#system_requirements) can be found at [this link](https://www.darktable.org/2012/03/darktable-and-memory/).
+* Detailed synopsis regarding [System Requirements](#sysreq) can be found at [this link](https://www.darktable.org/2012/03/darktable-and-memory/).

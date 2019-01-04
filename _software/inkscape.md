@@ -84,5 +84,5 @@ rating:
     num: 47
 
 ---
-* Although [System Requirements](#system_requirements) have not been specifically disclosed on the [official website](#website), it is recommended to have at least 2GB RAM and a modern CPU. See [here](https://forum.inkscapecommunity.com/index.php?PHPSESSID=iit20pe7v0u5o89lc41bihb216&action=articles;sa=view;article=35) for more info.
+* Although [System Requirements](#sysreq) have not been specifically disclosed on the [official website](https://inkscape.org/), it is recommended to have at least 2GB RAM and a modern CPU. See [here](https://forum.inkscapecommunity.com/index.php?PHPSESSID=iit20pe7v0u5o89lc41bihb216&action=articles;sa=view;article=35) for more info.
 * Most of Inkscape's code is available under GPL v2, but because of license(s) of other softwares used, [license is given as GPL v3 or later](#license). See [here](https://gitlab.com/inkscape/inkscape/blob/master/COPYING).
