@@ -32,13 +32,13 @@ layout: default
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
-<div class="container-fluid bg-clr2-light text-white py-3">
+<div class="container-fluid bg-clr2-light text-clr2 py-3">
   <div style="height:3.5rem;"></div>
   <div class="row">
     <div class="col-md-8">
-      <h1 class="text-clr2">{% if page.image %}<img class="bg-nav rounded shadow-sm p-2" style="height:3rem;" src="{{ page.image }}" alt="{{ page.title }} logo">  {% endif %}{{ page.title }}</h1>
+      <h1>{% if page.image %}<img class="bg-nav rounded shadow-sm p-2" style="height:3rem;" src="{{ page.image }}" alt="{{ page.title }} logo">  {% endif %}{{ page.title }}</h1>
       {% if page.info %}
-      <p class="text-clr2">{{ page.info }}</p>
+      <p>{{ page.info }}</p>
       {% endif %}
       {% if page.status %}
       {% if page.status == "Active" %}
@@ -618,7 +618,7 @@ layout: default
         <span class="h6">{{ category }}</span><br>
         {% for soft in site.software %}
         {% if soft.categories contains category %}
-        <a class="btn btn-sm btn-light shadow-sm" href="{{ soft.url | prepend: site.baseurl | prepend: site.url }}">{{ soft.title }}</a> 
+        <a class="btn btn-sm btn-light shadow-sm" href="{{ soft.url }}">{{ soft.title }}</a> 
         {% endif %}
         {% endfor %}
         <br><br>

@@ -4,14 +4,18 @@ title: Search the invirds
 description: Search through massive yet intelligently organised database
 permalink: /search/
 ---
-{% assign forcount = 1 %}
-{% assign categs =  site.software | map: "categories" | join: ","  | split: "," | uniq %}
+{%- assign forcount = 1 -%}
+{%- assign categs =  site.software | map: "categories" | join: ","  | split: "," | uniq -%}
 
-<div class="container-fluid bg-clr1 text-white text-center py-3">
+<div class="container-fluid bg-clr1-light text-clr1 text-center py-3">
   <div style="height:3.5rem;"></div>
   <h1>{{ page.title }}</h1>
   <p>{{ page.description }}</p>
 </div>
+
+<!-- separator for banner and content -->
+<div class="bg-nav px-2"><div class="bg-nav py-1 position-relative shadow"></div></div>
+
 <div class="container-fluid bg-clr2-light py-3">
   {% for categ in categs %}
   <div class="card mb-3">
@@ -31,9 +35,9 @@ permalink: /search/
             </thead>
             <tbody>
               <!-- Ensure that variable forcount has value 1 for each category and such category's card -->
-              {% if forcount != 1 %}
-              {% assign forcount = 1 %}
-              {% endif %}
+              {%- if forcount != 1 -%}
+              {%- assign forcount = 1 -%}
+              {%- endif -%}
               {% for software in site.software %}
               {% if software.categories contains categ %}
               <tr>
@@ -145,7 +149,7 @@ permalink: /search/
                 </td>
               </tr>
               <!-- Increment forcount by 1 for each software printed on a category's card -->
-              {% assign forcount = forcount | plus: 1 %}
+              {%- assign forcount = forcount | plus: 1 -%}
               {% endif %}
               {% endfor %}
             </tbody>
