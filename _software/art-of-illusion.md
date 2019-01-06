@@ -20,6 +20,8 @@ description: |
   Models, that are created in Art of Illusion, can also be exported for 3D-printing in .stl format.
   
   Art of Illusion has been entirely written in Java.
+  
+  [Forum](https://sourceforge.net/p/aoi/discussion/) I [Documentation](http://www.artofillusion.org/documentation) I [FAQ](http://www.artofillusion.org/faq)
 
 sys_req:
   -

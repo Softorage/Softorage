@@ -1,0 +1,72 @@
+---
+title: "Apache Mahout"
+
+info: "A project of the Apache Software Foundation to produce free implementations of distributed or otherwise scalable machine learning algorithms"
+
+status: "Active"
+
+website: ["https://mahout.apache.org/"]
+
+get_it:
+  - ["Authentic", "https://mahout.apache.org/general/downloads"]
+
+description: |
+  Apache Mahout(TM) is an open source project that is primarily used for creating scalable [machine learning](/search#machine_learning) algorithms. It implements [machine learning](/search#machine_learning) techniques such as, collaborative filtering, clustering, recommendation and classification.
+  
+  It also provides Java libraries for common math operations (focused on linear algebra and statistics) and primitive Java collections.
+  
+  A *mahout* is a word used in South Asian countries to describe one who drives an elephant as its master. The name comes from its close association with [Apache Hadoop](/softwares/apache-hadoop/) which uses an elephant as its logo. Many of the implementations use the [Apache Hadoop](/softwares/apache-hadoop/) platform.
+  
+  [Documentation](https://mahout.apache.org/docs/latest/index.html) I [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists) I [FAQ](https://mahout.apache.org/general/faq.html) I [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
+
+sysreq:
+  -
+    min: "Java 1.6.x"
+  -
+    min: "Maven 3.x to build the source code"
+  -
+    min: "If implemented to work on Apache Hadoop clusters, Hadoop 0.20.0"
+
+developer: ["Apache Software Foundation"]
+
+initial_release: "7 April 2009"
+
+repository: ["git://git.apache.org/mahout.git", "https://github.com/apache/mahout"]
+
+written_in: ["Java", "Scala", "Perl 6"]
+
+platform:
+  - dskp:
+      - ["Linux", "o"]
+      - ["macOS", "o"]
+
+categories: ["Machine Learning"]
+
+license: ["Apache License v2"]
+
+social:
+  - name: "Twitter"
+    url: "https://twitter.com/ApacheMahout"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Apache_Mahout"
+
+source:
+  description: ["https://en.wikipedia.org/wiki/Apache_Mahout", "https://www.tutorialspoint.com/mahout/mahout_introduction.htm"]
+  developer: ["https://mahout.apache.org"]
+  initial_release: ["http://mail-archives.apache.org/mod_mbox/www-announce/200904.mbox/%3C7EDF8CB8-388C-4A44-974E-6977E7AEB396@apache.org%3E"]
+  written_in: ["https://github.com/apache/mahout"]
+  platform:
+    - dskp: ["https://mahout.apache.org/general/downloads#environment", "https://github.com/apache/mahout#setting-up-your-environment"]
+  sysreq: ["https://mahout.apache.org/users/basics/system-requirements.html"]
+  license: ["https://github.com/apache/mahout/blob/master/LICENSE.txt"]
+  rating:
+    - ["G2CROWD", "u", "https://www.g2crowd.com/products/mahout/reviews"]
+  status: ["https://mahout.apache.org/", "https://github.com/apache/mahout/graphs/code-frequency"]
+
+rating:
+  - name: "G2CROWD"
+    rate: [5, 5]
+    num: 1
+
+---
+* Apache, Apache Mahout name and logo are trademarks of Apache Software Foudation.

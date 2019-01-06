@@ -21,6 +21,8 @@ get_it:
 # 7 'description': Description of software, in brief but not in short. It's mandatory.
 description: |
   Blender is a professional, free and open-source [3D computer graphics](/search#3d_computing_graphics) software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.
+  
+  [Reference Manual](https://docs.blender.org/manual/en/latest/index.html) I [News](https://www.blender.org/news/) I [Community](https://www.blender.org/community/) I [Stack Exchange(QA)](https://blender.stackexchange.com/) I [Wiki](https://wiki.blender.org/wiki/Main_Page) I [Discord(community-managed)](https://discordapp.com/invite/blender) I [Developers Blog](https://code.blender.org/) I [Developers Forum](https://devtalk.blender.org/) I [IRC](https://wiki.blender.org/wiki/Communication/Contact/IRC)
 
 # 8 'sysreq':
 sysreq:
@@ -93,6 +95,8 @@ social:
     url: "https://twitter.com/blender_org"
   - name: "Facebook"
     url: "https://www.facebook.com/YourOwn3DSoftware/"
+  - name: "reddit"
+    url: "https://www.reddit.com/r/blender/"
 
 # 17 'source': 
 # {10 Initial Release} Sources for information shall be included wherever relevant. In case some information has been used from a source such as a website or a book, website address or its URL in case of website and book name in case of book (and page number from such book, if feasible, on which information may be found) may be treated as source.
@@ -107,7 +111,7 @@ social:
 source:
   description: "https://en.wikipedia.org/wiki/Blender_(software)"
   developer: ["https://www.blender.org/foundation/", "https://en.wikipedia.org/wiki/Blender_Foundation"]
-  initial_release: "https://www.blendernation.com/2014/01/02/happy-birthday-blender/#comment-629004"
+  initial_release: ["https://www.blendernation.com/2014/01/02/happy-birthday-blender/#comment-629004", "https://docs.blender.org/manual/en/latest/getting_started/about/history.html#version-revision-milestones"]
   written_in: "https://www.blender.org/get-involved/"
   platform:
     - dskp: ["https://www.blender.org/download/"]

@@ -13,6 +13,8 @@ get_it:
 description: |
   OpenCog is a project that aims to build an open source [artificial intelligence](/search#artificial_intelligence) framework. OpenCog Prime is an architecture for robot and virtual embodied cognition that defines a set of interacting components designed to give rise to human-equivalent artificial general intelligence (AGI) as an emergent phenomenon of the whole system. OpenCog Prime's design is primarily the work of Ben Goertzel while the OpenCog framework is intended as a generic framework for broad-based AGI research. Research utilizing OpenCog has been published in journals and presented at conferences and workshops including the annual Conference on Artificial General Intelligence. OpenCog is released under the terms of the GNU Affero General Public License.
   OpenCog is in use by more than 50 companies, including Huawei and Cisco.
+  
+  [OpenCog Brainwave Blog](https://blog.opencog.org/) I [OpenCog Foundation Feed](https://opencog.org/feed/) I [AI Documentation](https://wiki.opencog.org/w/AI_Documentation) I [Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project) I [FAQ](https://opencog.org/faq/) I [Mailing list](https://groups.google.com/forum/#!forum/opencog) I [IRC](https://webchat.freenode.net/?channels=opencog)
 
 developer: "OpenCog Foundation and developers"
 
@@ -33,8 +35,6 @@ license: "AGPL 3"
 social:
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/OpenCog"
-  - name: "Blog"
-    url: "https://blog.opencog.org/"
 
 source:
   description: ["https://web.archive.org/web/20090306053354/http://www.cybertechnews.org/?p=915","https://venturebeat.com/2017/12/07/singularitynet-talks-collaborative-ai-as-its-token-sale-hits-400-oversubscription/"]
