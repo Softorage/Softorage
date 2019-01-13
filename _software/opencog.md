@@ -28,9 +28,9 @@ platform:
   - dskp:
       - ["Linux","o"]
 
-categories: ["Artificial Intelligence"]
+categories: ["Artificial Intelligence", "Framework"]
 
-license: "AGPL 3"
+license: "AGPL v3"
 
 social:
   - name: "Wikipedia"

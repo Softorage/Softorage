@@ -52,7 +52,7 @@ platform:
 
 categories: ["Desktop Publishing"]
 
-license: ["GPL v2 or later"]
+license: ["GPL v2+"]
 
 social:
   - name: "Wikipedia"

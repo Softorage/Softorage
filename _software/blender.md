@@ -83,7 +83,7 @@ platform:
 categories: ["3D Computing Graphics", "Computer Simulation"]
 
 # 15 'license':
-license: "GPL v2 or later"
+license: "GPL v2+"
 
 # 16 'social': Social presence of software or community behind it. Supported parameters are(case-sensetive, watch for typos): wikipedia, youtube, facebook, twitter, pinterest. In case a non-supported parameter is used, it will shown as formatted text on website.
 social:

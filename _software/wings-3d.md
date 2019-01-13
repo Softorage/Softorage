@@ -44,7 +44,7 @@ platform:
 
 categories: ["3D Computing Graphics", "Subdivision Modeler"]
 
-license: ["BSD"]
+license: ["Tcl/Tk"]
 
 social:
   - name: "Wikipedia"

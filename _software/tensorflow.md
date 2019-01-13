@@ -49,9 +49,9 @@ platform:
       - ["Windows", "o"]
       - ["macOS", "o"]
 
-categories: ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Library"]
+categories: ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Framework"]
 
-license: ["Apache License v2"]
+license: ["Apache v2"]
 
 social:
   - name: "Twitter"
@@ -60,6 +60,8 @@ social:
     url: "http://youtube.com/tensorflow/"
   - name: "reddit"
     url: "https://www.reddit.com/r/tensorflow/"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/TensorFlow"
 
 source:
   description: ["https://www.tensorflow.org/"]

@@ -56,6 +56,8 @@ social:
     url: "https://www.youtube.com/c/GodotEngineOfficial"
   - name: "Steam"
     url: "https://steamcommunity.com/app/404790"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Godot_(game_engine)"
 
 source:
   description: ["https://80.lv/articles/godot2-interview/", "https://docs.godotengine.org/en/3.0/getting_started/step_by_step/filesystem.html", "https://godotengine.org/download"]

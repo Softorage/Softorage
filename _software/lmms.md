@@ -45,7 +45,7 @@ platform:
 
 categories: ["Digital Audio Workstation"]
 
-license: ["GPL v2 or later"]
+license: ["GPL v2+"]
 
 social:
   - name: "Facebook"
@@ -54,6 +54,8 @@ social:
     url: "https://www.youtube.com/user/LMMSOfficial"
   - name: "Bandcamp"
     url: "https://lmmsartists.bandcamp.com/"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/LMMS"
 
 source:
   description: ["https://lmms.io/"]

@@ -35,7 +35,7 @@ platform:
 
 categories: ["Vector Graphics Editor"]
 
-license: ["GPL v3 or later"]
+license: ["GPL v3+"]
 
 social:
   - name: "Twitter"

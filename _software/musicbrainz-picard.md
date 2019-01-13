@@ -35,7 +35,7 @@ platform:
 
 categories: ["Tag Editor", "Acoustic Fingerprinter"]
 
-license: ["GPL v2 or later"]
+license: ["GPL v2+"]
 
 social:
   - name: "Wikipedia"

@@ -42,7 +42,7 @@ platform:
 
 categories: ["Machine Learning"]
 
-license: ["Apache License v2"]
+license: ["Apache v2"]
 
 social:
   - name: "Twitter"

@@ -28,6 +28,14 @@ $antinav: {{ theme.antinav }};
 $clr1-light: mix($clr1, $nav, 12%);
 $clr2-light: mix($clr2, $nav, 12%);
 
+//
+blockquote {
+@extend .p-2;
+font-weight: 250;
+background: #f9f9f9;
+border-left: 10px solid #ccc;
+}
+
 // 
 .bg-warning-light {
 background: mix($warning, $nav, 15%);
@@ -57,7 +65,7 @@ color: $clr1;
 }
 
 //
-input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
+input[type="url"]:hover, input[type="url"]:focus, input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
 @extend .shadow;
 transition: all 0.3s ease 0s;
 }

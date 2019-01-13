@@ -42,7 +42,7 @@ platform:
 
 categories: ["Raster Graphics Editor"]
 
-license: ["GPL v3 or later"]
+license: ["GPL v3+"]
 
 social:
   - name: "Twitter"
@@ -51,6 +51,8 @@ social:
     url: "https://plus.google.com/+gimp"
   - name: "Facebook"
     url: "https://www.facebook.com/gimpofficial/"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/GIMP"
 
 source:
   description: ["https://the-gimp.en.softonic.com/#app-softonic-review", "https://en.wikipedia.org/wiki/GIMP"]

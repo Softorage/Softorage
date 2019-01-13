@@ -30,7 +30,7 @@ platform:
   - else:
       - ["Cross Platform", "o"]
 
-categories: ["Artificial Intelligence", "Computer Vision"]
+categories: ["Artificial Intelligence", "Computer Vision", "Framework"]
 
 license: ["LGPL v3", "GPL v3"]
 

@@ -40,7 +40,7 @@ platform:
 
 categories: ["Machine Learning", "Data Mining", "Data Analysis", "Data Visualization"]
 
-license: ["GPL v3 or later"]
+license: ["GPL v3+"]
 
 social:
   - name: "Facebook"
@@ -49,6 +49,8 @@ social:
     url: "https://twitter.com/orangedataminer"
   - name: "Youtube"
     url: "https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Orange_(software)"
 
 source:
   description: ["https://www.myassignmenthelp.net/orange-data-mining", "https://en.wikipedia.org/wiki/Orange_(software)"]

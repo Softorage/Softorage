@@ -15,8 +15,8 @@ get_it:
 description: |
   Apache(TM) Hadoop(R) is a library framework that facilitate using a network of many computers to solve problems involving massive amounts of data and computation providing for [distributed storage](/search#distributed_file_system) and processing of big data using the MapReduce programming model.
   
-  > It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.
-  - official website
+  > It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.  
+  > \- [Official website](https://hadoop.apache.org/)
   
   When a node fails, processing is re-directed to the remaining nodes in the cluster and data is automatically re-replicated in preparation for future node failures, making Apache Hadoop resilient.
   
@@ -49,9 +49,9 @@ platform:
       - ["Linux", "o"]
       - ["Windows", "o"]
 
-categories: ["Distributed File System"]
+categories: ["Distributed File System", "Framework"]
 
-license: ["Apache License v2"]
+license: ["Apache v2"]
 
 social:
   - name: "Wikipedia"

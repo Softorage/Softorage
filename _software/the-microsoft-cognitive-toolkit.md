@@ -52,13 +52,15 @@ platform:
       - ["Linux", "o"]
       - ["Windows", "o"]
 
-categories: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Library"]
+categories: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Framework"]
 
 license: ["MIT"]
 
 social:
   - name: "GitHub"
     url: "https://github.com/Microsoft/CNTK"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Microsoft_Cognitive_Toolkit"
 
 source:
   description: ["https://www.microsoft.com/en-us/cognitive-toolkit/"]

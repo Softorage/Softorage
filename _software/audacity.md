@@ -41,7 +41,7 @@ platform:
 
 categories: ["Digital Audio Editor"]
 
-license: ["GPL v2 or later for code", "CC BY v3 for documentation"]
+license: ["GPL v2+"]
 
 social:
   - name: "Facebook"
@@ -50,6 +50,8 @@ social:
     url: "https://plus.google.com/+audacity"
   - name: "Twitter"
     url: "https://twitter.com/getaudacity"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"
 
 source:
   description: ["https://audacity.en.softonic.com/#app-softonic-review", "https://github.com/audacity/audacity"]

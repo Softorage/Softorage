@@ -43,7 +43,7 @@ platform:
 
 categories: ["Photo post-Production", "Photography Workflow"]
 
-license: ["GPL v3 or later"]
+license: ["GPL v3+"]
 
 social:
   - name: "Facebook"

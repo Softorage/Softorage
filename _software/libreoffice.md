@@ -56,7 +56,7 @@ platform:
 
 categories: ["Office Suite"]
 
-license: ["Mozilla Public License v2", "Apache License v2", "LGPL v3 or later"]
+license: ["MPL v2", "Apache v2", "LGPL v3+"]
 
 social:
   - name: "Facebook"
@@ -69,6 +69,8 @@ social:
     url: "https://www.reddit.com/r/libreoffice"
   - name: "Twitter"
     url: "https://twitter.com/libreoffice"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/LibreOffice"
 
 source:
   description: ["https://help.libreoffice.org/Common/About_Converting_Microsoft_Office_Documents", "https://www.libreoffice.org/discover/libreoffice/", "https://www.libreoffice.org/download/libreoffice-fresh/?lang=pick"]

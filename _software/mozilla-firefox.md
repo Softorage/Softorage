@@ -57,7 +57,7 @@ platform:
 
 categories: ["Web Browser"]
 
-license: ["Mozilla Public License v2"]
+license: ["MPL v2"]
 
 social:
   - name: "Wikipedia"

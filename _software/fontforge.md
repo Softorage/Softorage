@@ -52,7 +52,7 @@ platform:
 
 categories: ["Font Editor"]
 
-license: ["GPL v3", "BSD License"]
+license: ["GPL v3", "BSD-3"]
 
 social:
   - name: "GitHub"
