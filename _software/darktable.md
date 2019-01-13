@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://www.darktable.org/install/"]
 
 description: |
-  darktable is a free and open-source [photography workflow](/search#photography_workflow) application and raw developer. Rather than being a [raster graphics editor](/search#raster_graphics_editor) like Adobe Photoshop or GIMP, it comprises a subset of image editing operations specifically aimed at non-destructive raw [photo post-production](/search#photo_post-production). It is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
+  darktable is a free and open-source [photography workflow](/search#photography_workflow) application and raw developer. Rather than being a [raster graphics editor](/search#raster_graphics_editor) like Adobe Photoshop or [GIMP](/softwares/gimp/), it comprises a subset of image editing operations specifically aimed at non-destructive raw [photo post-production](/search#photo_post-production). It is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
   
   All editing is fully non-destructive and only operates on cached image buffers for display. The full image is only converted during export. Raw image loading is done using rawspeed, high-dynamic range and standard image formats such as jpeg are also supported. The core operates completely on floating point values, so darktable can not only be used for photography but also for scientifically acquired images or output of renderers (high dynamic range).
   
