@@ -54,12 +54,12 @@ social:
 
 source:
   description: ["http://ccm.net/faq/245-3d-graphics-software", "https://www.3dprinter.net/art-illusion-review", "https://www.sculpteo.com/blog/2017/04/05/top-19-of-the-best-free-cad-software/", "http://reprap.org/wiki/Art_of_illusion", "http://www.artofillusion.org/docs/AoI%20Manual/contents.html", "http://saisa.eu/blogs/Guidance/?p=1244", "http://www.macworld.co.uk/download/audio-video-photo/art-illusion-303-3330331/", "https://sourceforge.net/p/aoi/wiki/Home/"]
-  developer: ["https://en.wikipedia.org/wiki/Art_of_Illusion", "https://sourceforge.net/projects/aoi/", "https://github.com/ArtOfIllusion/ArtOfIllusion/graphs/contributors", "https://sourceforge.net/p/aoi/wiki/Home/"]
-  initial_release: ["https://en.wikipedia.org/wiki/Art_of_Illusion", "https://sourceforge.net/projects/aoi/files/ArtOfIllusion/", "http://www.artofillusion.org/history"]
-  written_in: ["https://github.com/ArtOfIllusion/ArtOfIllusion", "https://en.wikipedia.org/wiki/Art_of_Illusion", ""]
+  developer: ["https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872", "https://sourceforge.net/projects/aoi/", "https://github.com/ArtOfIllusion/ArtOfIllusion/graphs/contributors", "https://sourceforge.net/p/aoi/wiki/Home/"]
+  initial_release: ["https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872", "https://sourceforge.net/projects/aoi/files/ArtOfIllusion/", "http://www.artofillusion.org/history"]
+  written_in: ["https://github.com/ArtOfIllusion/ArtOfIllusion", "https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872"]
   platform:
-    - dskp: ["http://www.artofillusion.org/downloads", "https://en.wikipedia.org/wiki/Art_of_Illusion"]
-  sysreq: ["https://en.wikipedia.org/wiki/Art_of_Illusion"]
+    - dskp: ["http://www.artofillusion.org/downloads", "https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872"]
+  sysreq: ["https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872"]
   license: ["http://www.artofillusion.org/license"]
   rating:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/art-of-illusion/reviews"]
@@ -86,4 +86,4 @@ rating:
     num: 6
 
 ---
-* Absolute minimum requirements or recommendations for the system hardware have not been informed.
+  * Absolute minimum requirements or recommendations for the system hardware have not been informed.

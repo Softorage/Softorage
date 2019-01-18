@@ -61,14 +61,14 @@ social:
 source:
   description: ["https://sourceforge.net/projects/scribus/", "https://wiki.scribus.net/canvas/Books", "https://web.archive.org/web/20100106230447/http://www.flesbooks.com/scribus1.3manual/"]
   developer: ["https://wiki.scribus.net/canvas/Help:About_Scribus_Copyright"]
-  initial_release: ["https://wiki.scribus.net/canvas/Help:About_Releases", "https://en.wikipedia.org/wiki/Scribus"]
+  initial_release: ["https://wiki.scribus.net/canvas/Help:About_Releases", "https://en.wikipedia.org/w/index.php?title=Scribus&oldid=877865744"]
   written_in: ["https://www.scribus.net/contribute/"]
   platform:
     - dskp: ["https://www.scribus.net/downloads/stable-branch/"]
   sysreq: ["https://wiki.scribus.net/canvas/Official:Windows", "https://wiki.scribus.net/canvas/Official:MacOS_Readme"]
   license: ["https://wiki.scribus.net/canvas/Help:About_Scribus_Copyright"]
   rating:
-    - ["techradar", "e", "https://www.techradar.com/reviews/scribus"]
+    - ["TechRadar", "e", "https://www.techradar.com/reviews/scribus"]
     - ["SourceForge", "u", "https://sourceforge.net/projects/scribus/reviews"]
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/scribus/reviews"]
     - ["CNET", "u", "https://download.cnet.com/Scribus/3000-6675_4-10655204.html"]

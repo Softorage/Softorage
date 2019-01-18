@@ -73,7 +73,7 @@ source:
   license: ["https://community.ardour.org/download", "https://ardour.org/copying.html"]
   rating:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/ardour/reviews"]
-  status: ["https://en.wikipedia.org/wiki/Ardour_(software)", "https://discourse.ardour.org/c/blog"]
+  status: ["https://en.wikipedia.org/w/index.php?title=Ardour_(software)&oldid=877631152", "https://discourse.ardour.org/c/blog"]
 
 rating:
   - name: "G2CROWD"
@@ -81,5 +81,5 @@ rating:
     num: 5
 
 ---
-* [System Requirements](#sysreq) in detail can be seen [here](https://community.ardour.org/linux_system_requirements) & [here](https://ardour.org/requirements.html)
-* Ardour is an "unsigned application", so OS X and later might ask for extra confirmation the first time you run it.
+  * [System Requirements](#sysreq) in detail can be seen [here](https://community.ardour.org/linux_system_requirements) & [here](https://ardour.org/requirements.html)
+  * Ardour is an "unsigned application", so OS X and later might ask for extra confirmation the first time you run it.

@@ -109,8 +109,8 @@ social:
 # In case the rating is based on a number of user reviews, format for source is ["name of reviewer","u","url of source"]. In case a rating has 'num' attribute, such rating is taken to be based on a number of user's review.
 # source for desktop platforms shall be under dskp, smartphone or tablet under smptb, and others under else. Array can contain multiple sources.
 source:
-  description: "https://en.wikipedia.org/wiki/Blender_(software)"
-  developer: ["https://www.blender.org/foundation/", "https://en.wikipedia.org/wiki/Blender_Foundation"]
+  description: "https://en.wikipedia.org/w/index.php?title=Blender_(software)&oldid=878309153"
+  developer: ["https://www.blender.org/foundation/", "https://en.wikipedia.org/w/index.php?title=Blender_(software)&oldid=878309153"]
   initial_release: ["https://www.blendernation.com/2014/01/02/happy-birthday-blender/#comment-629004", "https://docs.blender.org/manual/en/latest/getting_started/about/history.html#version-revision-milestones"]
   written_in: "https://www.blender.org/get-involved/"
   platform:

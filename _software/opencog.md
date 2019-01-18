@@ -38,11 +38,11 @@ social:
 
 source:
   description: ["https://web.archive.org/web/20090306053354/http://www.cybertechnews.org/?p=915","https://venturebeat.com/2017/12/07/singularitynet-talks-collaborative-ai-as-its-token-sale-hits-400-oversubscription/"]
-  developer: ["https://github.com/opencog/opencog/graphs/contributors/", "https://opencog.org/", "https://en.wikipedia.org/wiki/OpenCog"]
+  developer: ["https://github.com/opencog/opencog/graphs/contributors/", "https://opencog.org/", "https://en.wikipedia.org/w/index.php?title=OpenCog&oldid=846548094"]
   initial_release: "https://www.blendernation.com/2014/01/02/happy-birthday-blender/#comment-629004"
   written_in: "https://wiki.opencog.org/w/The_Open_Cognition_Project#Participate"
   platform:
     - dskp: ["https://wiki.opencog.org/w/Building_OpenCog/"]
-  sys_req: "https://www.blender.org/download/requirements/"
-  license: ["https://en.wikipedia.org/wiki/OpenCog","https://github.com/opencog/atomspace","https://github.com/opencog/opencog"]
+  license: ["https://en.wikipedia.org/w/index.php?title=OpenCog&oldid=846548094","https://github.com/opencog/atomspace","https://github.com/opencog/opencog"]
+  status: ["https://github.com/opencog/atomspace/graphs/contributors", "https://github.com/opencog/opencog/graphs/contributors"]
 ---

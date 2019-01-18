@@ -49,11 +49,11 @@ social:
 source:
   description: ["https://www.linux.com/learn/survey-linux-pdf-viewers", "https://www.xpdfreader.com/", "http://www.cs.cmu.edu/~dst/Adobe/Gallery/xpdf-generic-patch.html", "https://lwn.net/Articles/335415/", "http://pocketxpdf.sourceforge.net/"]
   developer: ["https://www.xpdfreader.com/about.html"]
-  initial_release: ["https://www.xpdfreader.com/about.html", "https://en.wikipedia.org/wiki/Xpdf", "http://www.glyphandcog.com/opensource.html"]
+  initial_release: ["https://www.xpdfreader.com/about.html", "https://en.wikipedia.org/w/index.php?title=Xpdf&oldid=875122479", "http://www.glyphandcog.com/opensource.html"]
   written_in: ["https://github.com/tmyroadctfig/xpdf"]
   platform:
     - dskp: ["https://www.xpdfreader.com/download.html"]
-    - else: ["https://en.wikipedia.org/wiki/Xpdf"]
+    - else: ["https://en.wikipedia.org/w/index.php?title=Xpdf&oldid=875122479"]
   license: ["http://www.glyphandcog.com/opensource.html", "https://www.xpdfreader.com/opensource.html"]
   rating:
     - ["CandianContent", "u", "http://www.canadiancontent.net/tech/download/Xpdf.html"]
@@ -69,4 +69,4 @@ rating:
     num: 1
 
 ---
-* Repository - https://github.com/tmyroadctfig/xpdf hasn't been updated after 2012, hence not included.
+  * Repository - https://github.com/tmyroadctfig/xpdf hasn't been updated after 2012, hence not included.

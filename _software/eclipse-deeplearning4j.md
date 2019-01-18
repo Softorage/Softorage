@@ -54,7 +54,7 @@ social:
 
 source:
   description: ["https://deeplearning4j.org/about", "https://www.youtube.com/watch?v=LCsc1hFuNac"]
-  developer: ["https://en.wikipedia.org/wiki/Deeplearning4j", "https://github.com/deeplearning4j/deeplearning4j/graphs/contributors"]
+  developer: ["https://en.wikipedia.org/w/index.php?title=Deeplearning4j&oldid=875142026", "https://github.com/deeplearning4j/deeplearning4j/graphs/contributors"]
   initial_release: ["https://github.com/deeplearning4j/deeplearning4j/releases/tag/deeplearning4j-parent-0.0.0.1"]
   written_in: ["https://github.com/deeplearning4j/deeplearning4j/"]
   platform:
@@ -65,7 +65,7 @@ source:
     - ["PAT RESEARCH", "u", "https://www.predictiveanalyticstoday.com/deeplearning4j/"]
     - ["PAT RESEARCH", "e", "https://www.predictiveanalyticstoday.com/deeplearning4j/"]
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/deeplearning4j/reviews"]
-  status: ["https://github.com/deeplearning4j/deeplearning4j/graphs/code-frequency", "https://deeplearning4j.org/release-notes"]
+  status: ["https://github.com/deeplearning4j/deeplearning4j/graphs/contributors", "https://deeplearning4j.org/release-notes"]
 
 rating:
   - name: "PAT RESEARCH"
@@ -78,9 +78,9 @@ rating:
     num: 1
 
 ---
-* Please read the docs [here](https://deeplearning4j.org/docs/latest/deeplearning4j-config-gpu-cpu) completely for proper understanding of [system requirements and configuration](#sysreq).
-* Eclipse Deeplearning4j will work on [platform](#platform) where you can have the [prerequisites](https://deeplearning4j.org/docs/latest/deeplearning4j-quickstart#prerequisites):
-  * Java (developer version) 1.7 or later (Only 64-Bit versions supported)
-  * Apache Maven (automated build and dependency manager)
-  * IntelliJ IDEA or Eclipse
-  * Git
+  * Please read the docs [here](https://deeplearning4j.org/docs/latest/deeplearning4j-config-gpu-cpu) completely for proper understanding of [system requirements and configuration](#sysreq).
+  * Eclipse Deeplearning4j will work on [platform](#platform) where you can have the [prerequisites](https://deeplearning4j.org/docs/latest/deeplearning4j-quickstart#prerequisites):
+    * Java (developer version) 1.7 or later (Only 64-Bit versions supported)
+    * Apache Maven (automated build and dependency manager)
+    * IntelliJ IDEA or Eclipse
+    * Git

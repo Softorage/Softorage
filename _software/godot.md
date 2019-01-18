@@ -71,7 +71,7 @@ source:
   rating:
     - ["Steam", "u", "https://store.steampowered.com/app/404790/Godot_Engine/"]
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/godot/reviews"]
-  status: ["https://godotengine.org/news", "https://github.com/godotengine/godot/pulse"]
+  status: ["https://godotengine.org/news", "https://github.com/godotengine/godot/graphs/contributors"]
 
 rating:
   - name: "Steam"

@@ -54,7 +54,7 @@ source:
     - ["Gizmo's Freeware", "e", "https://www.techsupportalert.com/content/musicbrainz-picard.htm-0"]
     - ["ghacks", "u", "https://www.ghacks.net/2017/02/15/picard-1-4-music-tagger-is-out/"]
     - ["CNET", "u", "https://download.cnet.com/MusicBrainz-Picard/3000-2170_4-166444.html"]
-  status: ["https://github.com/metabrainz/picard", "https://community.metabrainz.org/c/picard"]
+  status: ["https://github.com/metabrainz/picard/graphs/contributors", "https://community.metabrainz.org/c/picard"]
 
 rating:
   - name: "PCWorld"

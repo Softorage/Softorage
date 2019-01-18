@@ -39,9 +39,9 @@ social:
     url: "https://en.wikipedia.org/wiki/Evince"
 
 source:
-  description: ["http://projects.gnome.org/evince/","https://wiki.gnome.org/Apps/Evince/FrequentlyAskedQuestions","https://en.wikipedia.org/wiki/Evince"]
+  description: ["http://projects.gnome.org/evince/","https://wiki.gnome.org/Apps/Evince/FrequentlyAskedQuestions","https://en.wikipedia.org/w/index.php?title=Evince&oldid=875121552"]
   developer: "https://wiki.gnome.org/Apps/Evince/Team/"
-  written_in: "https://en.wikipedia.org/wiki/Evince/"
+  written_in: ["https://gitlab.gnome.org/GNOME/evince/graphs/master/charts", "https://en.wikipedia.org/w/index.php?title=Evince&oldid=875121552"]
   platform:
     - dskp: ["https://wiki.gnome.org/Apps/Evince/Downloads/"]
   license: "https://gitlab.gnome.org/GNOME/evince/"

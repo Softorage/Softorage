@@ -53,12 +53,12 @@ source:
   initial_release: ["https://github.com/Artelnics/OpenNN/releases/tag/0.1"]
   written_in: ["https://github.com/Artelnics/OpenNN", "http://www.opennn.net/documentation/opennn_start.html"]
   platform:
-    - dskp: ["http://www.opennn.net/documentation/building_opennn.html", "https://en.wikipedia.org/wiki/OpenNN"]
+    - dskp: ["http://www.opennn.net/documentation/building_opennn.html", "https://en.wikipedia.org/w/index.php?title=OpenNN&oldid=875141876"]
   license: ["https://github.com/Artelnics/OpenNN/blob/master/LICENSE.txt"]
   rating:
     - ["PAT RESEARCH", "e", "https://www.predictiveanalyticstoday.com/opennn/"]
     - ["PAT RESEARCH", "u", "https://www.predictiveanalyticstoday.com/opennn/"]
-  status: ["https://github.com/Artelnics/OpenNN/graphs/code-frequency"]
+  status: ["https://github.com/Artelnics/OpenNN/graphs/contributors"]
 
 rating:
   - name: "PAT RESEARCH"

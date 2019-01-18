@@ -74,9 +74,9 @@ social:
 
 source:
   description: ["https://help.libreoffice.org/Common/About_Converting_Microsoft_Office_Documents", "https://www.libreoffice.org/discover/libreoffice/", "https://www.libreoffice.org/download/libreoffice-fresh/?lang=pick"]
-  developer: ["https://www.libreoffice.org/discover/libreoffice/", "https://en.wikipedia.org/wiki/LibreOffice"]
-  initial_release: ["https://www.libreoffice.org/about-us/libreoffice-timeline/", "https://en.wikipedia.org/wiki/LibreOffice"]
-  written_in: ["https://en.wikipedia.org/wiki/LibreOffice", "https://wiki.documentfoundation.org/ReleaseNotes/4.0"]
+  developer: ["https://www.libreoffice.org/discover/libreoffice/", "https://en.wikipedia.org/w/index.php?title=LibreOffice&oldid=877694401"]
+  initial_release: ["https://www.libreoffice.org/about-us/libreoffice-timeline/", "https://en.wikipedia.org/w/index.php?title=LibreOffice&oldid=877694401"]
+  written_in: ["https://en.wikipedia.org/w/index.php?title=LibreOffice&oldid=877694401", "https://wiki.documentfoundation.org/ReleaseNotes/4.0"]
   platform:
     - dskp: ["https://www.libreoffice.org/download/download/"]
     - smptb: ["https://www.libreoffice.org/download/android-viewer/"]
@@ -102,4 +102,4 @@ rating:
     num: 96
 
 ---
-* [LibreOffice website](https://www.libreoffice.org/) mentions twitter handles [@tdforg](https://twitter.com/tdforg), [@libreoffice](https://twitter.com/libreoffice), [@AskLibreOffice](https://twitter.com/AskLibreOffice), [@LibreOfficeBugs](https://twitter.com/LibreOfficeBugs).
+  * [LibreOffice website](https://www.libreoffice.org/) mentions twitter handles [@tdforg](https://twitter.com/tdforg), [@libreoffice](https://twitter.com/libreoffice), [@AskLibreOffice](https://twitter.com/AskLibreOffice), [@LibreOfficeBugs](https://twitter.com/LibreOfficeBugs).

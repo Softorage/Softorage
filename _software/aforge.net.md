@@ -42,12 +42,12 @@ social:
 
 source:
   description: ["https://channel9.msdn.com/coding4fun/blog/Portable-Image-and-Video-processing-with-help-from-AForgeNET-and-AccordNET", "https://web.archive.org/web/20181126145651/https://www.amazon.co.uk/AForge-NET-Ronald-Cohn-Jesse-Russell/dp/B007PN9QJQ", "http://crsouza.com/2010/05/20/accord-net-framework-an-extension-to-aforge-net/"]
-  developer: ["https://en.wikipedia.org/wiki/AForge.NET"]
-  initial_release: ["http://aforgenet.com/news/2011.12.21.five_years_framework.html", "https://en.wikipedia.org/wiki/AForge.NET"]
-  written_in: ["https://github.com/andrewkirillov/AForge.NET", "https://en.wikipedia.org/wiki/AForge.NET"]
+  developer: ["https://en.wikipedia.org/w/index.php?title=AForge.NET&oldid=870709389"]
+  initial_release: ["http://aforgenet.com/news/2011.12.21.five_years_framework.html", "https://en.wikipedia.org/w/index.php?title=AForge.NET&oldid=870709389"]
+  written_in: ["https://github.com/andrewkirillov/AForge.NET", "https://en.wikipedia.org/w/index.php?title=AForge.NET&oldid=870709389"]
   platform:
-    - else: ["https://en.wikipedia.org/wiki/AForge.NET"]
-  license: ["https://en.wikipedia.org/wiki/AForge.NET", "http://www.aforgenet.com/framework/license.html"]
+    - else: ["https://en.wikipedia.org/w/index.php?title=AForge.NET&oldid=870709389"]
+  license: ["https://en.wikipedia.org/w/index.php?title=AForge.NET&oldid=870709389", "http://www.aforgenet.com/framework/license.html"]
   rating:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/aforge-machinelearning/reviews"]
     - ["DiscoverSDK", "u", "http://www.discoversdk.com/products/aforge.net-framework-2.2.5#/overview"]

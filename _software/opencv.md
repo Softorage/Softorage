@@ -67,8 +67,8 @@ social:
 
 source:
   description: ["https://opencv.org/about.html", "https://github.com/opencv/opencv/wiki/Deep-Learning-in-OpenCV"]
-  developer: ["https://en.wikipedia.org/wiki/OpenCV"]
-  initial_release: ["https://en.wikipedia.org/wiki/OpenCV", "https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_intro/py_intro.html"]
+  developer: ["https://en.wikipedia.org/w/index.php?title=OpenCV&oldid=879001758"]
+  initial_release: ["https://en.wikipedia.org/w/index.php?title=OpenCV&oldid=879001758", "https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_setup/py_intro/py_intro.html"]
   written_in: ["https://github.com/opencv/opencv", "https://opencv.org/about.html"]
   platform:
     - dskp: ["https://opencv.org/platforms/", "https://opencv.org/releases.html"]
@@ -79,7 +79,7 @@ source:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/opencv/reviews"]
     - ["SourceForge", "u", "https://sourceforge.net/projects/opencvlibrary/reviews/"]
     - ["DiscoverSDK", "u", "http://www.discoversdk.com/products/opencv"]
-  status: ["https://opencv.org/news.html/", "https://github.com/opencv/opencv/graphs/code-frequency"]
+  status: ["https://opencv.org/news.html/", "https://github.com/opencv/opencv/graphs/contributors"]
 
 rating:
   - name: "G2CROWD"
@@ -93,4 +93,4 @@ rating:
     num: 1
 
 ---
-* [System requirements](#sysreq): System optimal for you depends on your use.
+  * [System requirements](#sysreq): System optimal for you depends on your use.

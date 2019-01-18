@@ -53,10 +53,10 @@ social:
     url: "https://en.wikipedia.org/wiki/Orange_(software)"
 
 source:
-  description: ["https://www.myassignmenthelp.net/orange-data-mining", "https://en.wikipedia.org/wiki/Orange_(software)"]
+  description: ["https://www.myassignmenthelp.net/orange-data-mining", "https://en.wikipedia.org/w/index.php?title=Orange_(software)&oldid=877016206"]
   developer: ["https://orange.biolab.si/citation/"]
-  initial_release: ["https://github.com/biolab/orange3/blob/master/CHANGELOG.md#01---1996-10-10", "https://en.wikipedia.org/wiki/Orange_(software)"]
-  written_in: ["https://github.com/biolab/orange3", "https://en.wikipedia.org/wiki/Orange_(software)"]
+  initial_release: ["https://github.com/biolab/orange3/blob/master/CHANGELOG.md#01---1996-10-10", "https://en.wikipedia.org/w/index.php?title=Orange_(software)&oldid=877016206"]
+  written_in: ["https://github.com/biolab/orange3", "https://en.wikipedia.org/w/index.php?title=Orange_(software)&oldid=877016206"]
   platform:
     - dskp: ["https://orange.biolab.si/download/"]
   sysreq: ["https://github.com/biolab/orange3/blob/master/README.md"]
@@ -65,7 +65,7 @@ source:
     - ["PAT RESEARCH", "e", "https://www.predictiveanalyticstoday.com/orange-data-mining/"]
     - ["Capterra", "u", "https://www.capterra.com/p/164505/Orange/"]
     - ["My Assignment Help", "u", "https://www.myassignmenthelp.net/orange-data-mining"]
-  status: ["https://github.com/biolab/orange3/pulse", "https://blog.biolab.si/"]
+  status: ["https://github.com/biolab/orange3/graphs/contributors", "https://blog.biolab.si/"]
 
 rating:
   - name: "PAT RESEARCH"

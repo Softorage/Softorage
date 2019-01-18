@@ -11,7 +11,7 @@ get_it:
 description: |
   Yooreeka is a library for [data mining](/search#data_mining), [machine learning](/search#machine_learning), soft computing, and mathematical analysis. It also provides examples.
   
-  [Google Code | Archive](https://code.google.com/archive/p/yooreeka/)
+  [Google Code I Archive](https://code.google.com/archive/p/yooreeka/)
 
 developer: ["H. Marmanis"]
 
@@ -39,10 +39,10 @@ source:
   description: ["https://github.com/marmanis/yooreeka#quick-guide-for-running-the-examples"]
   developer: ["https://github.com/marmanis/yooreeka", "https://github.com/marmanis"]
   initial_release: ["https://code.google.com/archive/p/yooreeka/downloads"]
-  written_in: ["https://github.com/marmanis/yooreeka", "https://en.wikipedia.org/wiki/Yooreeka"]
+  written_in: ["https://github.com/marmanis/yooreeka", "https://en.wikipedia.org/w/index.php?title=Yooreeka&oldid=857164396"]
   platform:
     - else: ["https://github.com/marmanis/yooreeka#quick-guide-for-running-the-examples"]
   license: ["https://github.com/marmanis/yooreeka/blob/master/LICENSES.txt"]
 
 ---
-* Repository has [not seen a commit since 13 May 2016](https://github.com/marmanis/yooreeka/graphs/code-frequency), nor has it been announced as discontinued.
+  * Repository has [not seen a commit since 13 May 2016](https://github.com/marmanis/yooreeka/graphs/contributors), nor has it been announced as discontinued.

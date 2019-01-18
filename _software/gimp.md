@@ -55,10 +55,10 @@ social:
     url: "https://en.wikipedia.org/wiki/GIMP"
 
 source:
-  description: ["https://the-gimp.en.softonic.com/#app-softonic-review", "https://en.wikipedia.org/wiki/GIMP"]
-  developer: ["https://en.wikipedia.org/wiki/GIMP", "https://www.gimp.org/about/authors.html"]
+  description: ["https://the-gimp.en.softonic.com/#app-softonic-review", "https://en.wikipedia.org/w/index.php?title=GIMP&oldid=878448884"]
+  developer: ["https://en.wikipedia.org/w/index.php?title=GIMP&oldid=878448884", "https://www.gimp.org/about/authors.html"]
   initial_release: ["https://www.gimp.org/about/prehistory.html"]
-  written_in: ["https://gitlab.gnome.org/GNOME/gimp", "https://www.gimp.org/about/ancient_history.html"]
+  written_in: ["https://gitlab.gnome.org/GNOME/gimp/graphs/master/charts", "https://gitlab.gnome.org/GNOME/gimp", "https://www.gimp.org/about/ancient_history.html"]
   platform:
     - dskp: ["https://www.gimp.org/downloads/"]
   sysreq: ["https://www.unixmen.com/13-reasons-to-choose-gimp-over-photoshop/"]
@@ -70,7 +70,7 @@ source:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/gimp/reviews"]
     - ["CNET", "u", "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"]
     - ["CNET", "e", "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"]
-  status: ["https://www.gimp.org/news/", "https://gitlab.gnome.org/GNOME/gimp/graphs/master/charts"]
+  status: ["https://www.gimp.org/news/", "https://gitlab.gnome.org/GNOME/gimp/graphs/master"]
 
 rating:
   - name: "TechRadar"
@@ -91,4 +91,4 @@ rating:
     rate: [5, 5]
 
 ---
-* [System Requirements](#sysreq) could not be found on the [official website](https://www.gimp.org/). [System Requirements](#sysreq) stated [here](#sysreq) are from a page of 2011(see source).
+  * [System Requirements](#sysreq) could not be found on the [official website](https://www.gimp.org/). [System Requirements](#sysreq) stated [here](#sysreq) are from a page of 2011(see source).

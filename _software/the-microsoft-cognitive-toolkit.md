@@ -64,7 +64,7 @@ social:
 
 source:
   description: ["https://www.microsoft.com/en-us/cognitive-toolkit/"]
-  developer: ["https://en.wikipedia.org/wiki/Microsoft_Cognitive_Toolkit"]
+  developer: ["https://en.wikipedia.org/w/index.php?title=Microsoft_Cognitive_Toolkit&oldid=868040263"]
   initial_release: ["https://github.com/Microsoft/CNTK/releases?after=v1.7.1"]
   written_in: ["https://www.microsoft.com/en-us/cognitive-toolkit/", "https://github.com/Microsoft/CNTK"]
   platform:
@@ -74,7 +74,7 @@ source:
   rating:
     - ["Capterra", "u", "https://www.capterra.com/p/121790/False/"]
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/microsoft-cognitive-toolkit-formerly-cntk/reviews"]
-  status: ["https://github.com/Microsoft/CNTK/pulse"]
+  status: ["https://github.com/Microsoft/CNTK/graphs/contributors"]
 
 rating:
   - name: "Capterra"
@@ -85,4 +85,4 @@ rating:
     num: 4
 
 ---
-* In [System Requirements](#sysreq), the presented set of product versions is not restrictive, i.e. CNTK may well work in many other configurations.
+  * In [System Requirements](#sysreq), the presented set of product versions is not restrictive, i.e. CNTK may well work in many other configurations.

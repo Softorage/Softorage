@@ -67,7 +67,7 @@ source:
   description: ["https://www.tensorflow.org/"]
   developer: ["https://www.tensorflow.org/"]
   initial_release: ["https://www.wired.com/2015/11/google-open-sources-its-artificial-intelligence-engine/"]
-  written_in: ["https://github.com/tensorflow/tensorflow", "https://en.wikipedia.org/wiki/TensorFlow"]
+  written_in: ["https://github.com/tensorflow/tensorflow", "https://en.wikipedia.org/w/index.php?title=TensorFlow&oldid=878912059"]
   platform:
     - dskp: ["https://www.tensorflow.org/install/"]
   sysreq: ["https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781786469786/2/ch02lvl1sec18/requirements-for-running-tensorflow-with-gpu-from-nvidia", "https://www.tensorflow.org/install/gpu"]
@@ -76,7 +76,7 @@ source:
     - ["InfoWorld", "e", "https://www.infoworld.com/article/3250165/tensorflow/tensorflow-review-the-best-deep-learning-library-gets-better.html"]
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/tensorflow/reviews"]
     - ["Capterra", "u", "https://www.capterra.com/p/171057/TensorFlow/"]
-  status: ["https://github.com/tensorflow/tensorflow/pulse", "https://medium.com/tensorflow"]
+  status: ["https://github.com/tensorflow/tensorflow/graphs/contributors", "https://medium.com/tensorflow"]
 
 rating:
   - name: "InfoWorld"
@@ -89,4 +89,4 @@ rating:
     num: 43
 
 ---
-* TensorFlow, the TensorFlow logo and any related marks are trademarks of Google Inc.
+  * TensorFlow, the TensorFlow logo and any related marks are trademarks of Google Inc.

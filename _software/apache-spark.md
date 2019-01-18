@@ -72,7 +72,7 @@ source:
     - ["TrustRadius", "u", "https://www.trustradius.com/products/apache-spark/reviews"]
     - ["PAT RESEARCH", "e", "https://www.predictiveanalyticstoday.com/apache-spark/"]
     - ["PAT RESEARCH", "u", "https://www.predictiveanalyticstoday.com/apache-spark/"]
-  status: ["https://spark.apache.org/news/", "https://github.com/apache/spark/graphs/code-frequency"]
+  status: ["https://spark.apache.org/news/", "https://github.com/apache/spark/graphs/contributors"]
 
 rating:
   - name: "TrustRadius"

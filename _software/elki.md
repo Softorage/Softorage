@@ -50,17 +50,17 @@ social:
     url: "https://github.com/elki-project/elki"
 
 source:
-  description: ["https://elki-project.github.io/", "https://en.wikipedia.org/wiki/ELKI", "https://stackoverflow.com/tags/elki/info"]
+  description: ["https://elki-project.github.io/", "https://en.wikipedia.org/w/index.php?title=ELKI&oldid=876660240", "https://stackoverflow.com/tags/elki/info"]
   developer: ["https://elki-project.github.io/team"]
   initial_release: ["https://elki-project.github.io/releases/"]
   written_in: ["https://github.com/elki-project/elki", "https://elki-project.github.io/"]
   platform:
-    - dskp: ["https://en.wikipedia.org/wiki/ELKI"]
+    - dskp: ["https://en.wikipedia.org/w/index.php?title=ELKI&oldid=876660240"]
   license: ["https://elki-project.github.io/license", "https://github.com/elki-project/elki/blob/master/LICENSE.md"]
   rating:
     - ["PAT RESEARCH", "e", "https://www.predictiveanalyticstoday.com/elki/"]
     - ["PAT RESEARCH", "u", "https://www.predictiveanalyticstoday.com/elki/"]
-  status: ["https://github.com/elki-project/elki/graphs/code-frequency"]
+  status: ["https://github.com/elki-project/elki/graphs/contributors"]
 
 rating:
   - name: "PAT RESEARCH"
@@ -70,4 +70,4 @@ rating:
     num: 1
 
 ---
-* ELKI should run on [platforms](#platform) which run Java.
+  * ELKI should run on [platforms](#platform) which run Java.

@@ -51,7 +51,7 @@ social:
     url: "https://en.wikipedia.org/wiki/Apache_Mahout"
 
 source:
-  description: ["https://en.wikipedia.org/wiki/Apache_Mahout", "https://www.tutorialspoint.com/mahout/mahout_introduction.htm"]
+  description: ["https://en.wikipedia.org/w/index.php?title=Apache_Mahout&oldid=877076538", "https://www.tutorialspoint.com/mahout/mahout_introduction.htm"]
   developer: ["https://mahout.apache.org"]
   initial_release: ["http://mail-archives.apache.org/mod_mbox/www-announce/200904.mbox/%3C7EDF8CB8-388C-4A44-974E-6977E7AEB396@apache.org%3E"]
   written_in: ["https://github.com/apache/mahout"]
@@ -61,7 +61,7 @@ source:
   license: ["https://github.com/apache/mahout/blob/master/LICENSE.txt"]
   rating:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/mahout/reviews"]
-  status: ["https://mahout.apache.org/", "https://github.com/apache/mahout/graphs/code-frequency"]
+  status: ["https://mahout.apache.org/", "https://github.com/apache/mahout/graphs/contributors"]
 
 rating:
   - name: "G2CROWD"
@@ -69,4 +69,4 @@ rating:
     num: 1
 
 ---
-* Apache, Apache Mahout name and logo are trademarks of Apache Software Foudation.
+  * Apache, Apache Mahout name and logo are trademarks of Apache Software Foudation.

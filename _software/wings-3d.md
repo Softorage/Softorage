@@ -51,21 +51,21 @@ social:
     url: "https://en.wikipedia.org/wiki/Wings_3D"
 
 source:
-  description: ["https://wings-3d.en.softonic.com/#app-softonic-review", "https://en.wikipedia.org/wiki/Wings_3D"]
+  description: ["https://wings-3d.en.softonic.com/#app-softonic-review", "https://en.wikipedia.org/w/index.php?title=Wings_3D&oldid=875117731"]
   developer: ["https://github.com/dgud/wings/graphs/contributors"]
   initial_release: ["https://sourceforge.net/projects/wings/files/wings/"]
   written_in: ["https://github.com/dgud/wings"]
   platform:
     - dskp: ["http://www.wings3d.com/?page_id=84"]
   sysreq: ["http://www.wings3d.com/?page_id=84"]
-  license: ["https://github.com/dgud/wings/blob/master/license.terms", "https://en.wikipedia.org/wiki/Wings_3D"]
+  license: ["https://github.com/dgud/wings/blob/master/license.terms", "https://en.wikipedia.org/w/index.php?title=Wings_3D&oldid=875117731"]
   rating:
     - ["SourceForge", "u", "https://sourceforge.net/projects/wings/reviews/"]
     - ["Softonic", "u", "https://wings-3d.en.softonic.com/"]
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/wings-3d/reviews"]
     - ["CNET", "u", "https://download.cnet.com/Wings-3D/3000-6677_4-10514566.html"]
     - ["alternativeTo", "u", "https://alternativeto.net/software/wings-3d/reviews/"]
-  status: ["https://sourceforge.net/projects/wings/files/wings/", "http://www.wings3d.com/forum/"]
+  status: ["https://sourceforge.net/projects/wings/files/wings/", "http://www.wings3d.com/forum/", "https://github.com/dgud/wings/graphs/contributors"]
 
 rating:
   - name: "SourceForge"
@@ -85,4 +85,4 @@ rating:
     num: 2
 
 ---
-* To run Wing 3D on Unix(like) systems, it needs to built from source.[[source]](http://www.wings3d.com/?page_id=84)
+  * To run Wing 3D on Unix(like) systems, it needs to built from source code.[[source]](http://www.wings3d.com/?page_id=84)

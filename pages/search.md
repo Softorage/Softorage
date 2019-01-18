@@ -5,7 +5,7 @@ description: Search through massive yet intelligently organised database
 permalink: /search/
 ---
 {%- assign forcount = 1 -%}
-{%- assign categs =  site.software | map: "categories" | join: ","  | split: "," | uniq -%}
+{%- assign categs =  site.software | map: "categories" | join: ","  | split: "," | uniq | sort -%}
 
 <div class="container-fluid bg-clr1-light text-clr1 text-center py-3">
   <div style="height:3.5rem;"></div>

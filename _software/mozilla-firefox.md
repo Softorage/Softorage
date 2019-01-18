@@ -69,17 +69,17 @@ social:
 
 source:
   description: ["https://lwn.net/Articles/118268/", "https://www.mozilla.org/en-US/foundation/licensing/", "https://www.mozilla.org/en-US/about/legal/eula/", "https://blog.mozilla.org/blog/2017/11/14/introducing-firefox-quantum/", "https://web.archive.org/web/20100615131607/http://download-firefox.org/spread-firefox/gecko-layout-engine-and-mozilla-firefox/", "https://svnweb.freebsd.org/ports/head/www/firefox/", "http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/www/mozilla-firefox/", "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/www/firefox/", "https://wiki.openindiana.org/oi/Firefox", "https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox"]
-  initial_release: ["https://en.wikipedia.org/wiki/Firefox"]
-  written_in: ["https://en.wikipedia.org/wiki/Firefox", "http://www.infoworld.com/article/3165424/web-browsers/mozilla-binds-firefoxs-fate-to-the-rust-language.html"]
+  initial_release: ["https://en.wikipedia.org/w/index.php?title=Firefox&oldid=878328541"]
+  written_in: ["https://en.wikipedia.org/w/index.php?title=Firefox&oldid=878328541", "http://www.infoworld.com/article/3165424/web-browsers/mozilla-binds-firefoxs-fate-to-the-rust-language.html"]
   platform:
-    - dskp: ["https://www.mozilla.org/en-US/firefox/new/", "https://en.wikipedia.org/wiki/Firefox", "https://svnweb.freebsd.org/ports/head/www/firefox/", "http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/www/mozilla-firefox/", "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/www/firefox/", "https://wiki.openindiana.org/oi/Firefox", "https://pkgsrc.joyent.com/install-on-illumos/", "https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox", "https://ftp.mozilla.org/pub/firefox/releases/52.0esr/contrib/solaris_pkgadd/README.txt"]
+    - dskp: ["https://www.mozilla.org/en-US/firefox/new/", "https://en.wikipedia.org/w/index.php?title=Firefox&oldid=878328541", "https://svnweb.freebsd.org/ports/head/www/firefox/", "http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/www/mozilla-firefox/", "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/www/firefox/", "https://wiki.openindiana.org/oi/Firefox", "https://pkgsrc.joyent.com/install-on-illumos/", "https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox", "https://ftp.mozilla.org/pub/firefox/releases/52.0esr/contrib/solaris_pkgadd/README.txt"]
     - smptb: ["https://www.mozilla.org/en-US/firefox/new/"]
   sysreq: ["https://www.mozilla.org/en-US/firefox/62.0/system-requirements/"]
   license: ["https://www.mozilla.org/foundation/licensing.html", "https://www.mozilla.org/en-US/about/legal/eula/"]
   rating:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/mozilla-firefox/reviews"]
     - ["TopTenReviews", "e", "https://www.toptenreviews.com/software/internet/best-internet-browser-software/mozilla-firefox-review/"]
-  status: ["https://hg.mozilla.org/mozilla-central/log", "https://github.com/mozilla/gecko-dev"]
+  status: ["https://hg.mozilla.org/mozilla-central/log", "https://github.com/mozilla/gecko-dev/graphs/contributors"]
 
 rating:
   - name: "G2CROWD"
@@ -89,5 +89,5 @@ rating:
     rate: [9.85, 10]
 
 ---
-* Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
-* Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)
+  * Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
+  * Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)

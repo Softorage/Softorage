@@ -66,7 +66,7 @@ social:
 
 source:
   description: ["http://fontforge.github.io/en-US/documentation/scripting/", "http://fontforge.sourceforge.net/scripting.html", "http://fontforge.github.io/en-US/documentation/scripting/python/", "http://fontforge.sourceforge.net/python.html", "http://fontforge.github.io/featurefile.html", "http://fontforge.sourceforge.net/math.html", "http://fontforge.sourceforge.net/source-build.html#Dependencies", "https://github.com/fontforge/fontforge/releases", "http://fontforge.sourceforge.net/changelog.html", "http://www.luatex.org/talks/tug2008-taco-luatex.pdf", "https://fontforge.github.io/en-US/documentation/utilities/"]
-  developer: ["https://en.wikipedia.org/wiki/FontForge", "http://fontforge.github.io/en-US/project/acknowledgements/"]
+  developer: ["https://en.wikipedia.org/w/index.php?title=FontForge&oldid=875122964", "http://fontforge.github.io/en-US/project/acknowledgements/"]
   initial_release: ["http://fontforge.github.io/oldchangelog.html"]
   written_in: ["https://github.com/fontforge/fontforge"]
   platform:
@@ -76,7 +76,7 @@ source:
   rating:
     - ["OSDN", "u", "https://osdn.net/projects/sfnet_fontforge/reviews/"]
     - ["SourceForge", "u", "https://sourceforge.net/projects/fontforge/"]
-  status: ["https://github.com/fontforge/fontforge", "https://github.com/fontforge/fontforge/graphs/code-frequency", "https://github.com/fontforge/fontforge/releases"]
+  status: ["https://github.com/fontforge/fontforge", "https://github.com/fontforge/fontforge/graphs/contributors", "https://github.com/fontforge/fontforge/releases"]
 
 rating:
   - name: "OSDN"

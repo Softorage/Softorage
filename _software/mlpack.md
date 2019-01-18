@@ -59,7 +59,7 @@ source:
   rating:
     - ["OpenReview", "u", "https://openreview.net/forum?id=ByltfevYt7"]
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/mlpack/reviews"]
-  status: ["https://github.com/mlpack/mlpack/graphs/code-frequency", "https://www.mlpack.org/gsocblog/"]
+  status: ["https://github.com/mlpack/mlpack/graphs/contributors", "https://www.mlpack.org/gsocblog/"]
 
 rating:
   - name: "OpenReview"

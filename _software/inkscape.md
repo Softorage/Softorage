@@ -52,8 +52,8 @@ social:
 source:
   description: ["https://inkscape.org/about/", "https://inkscape.org/about/overview/"]
   developer: ["https://inkscape.org/*developer/"]
-  initial_release: ["http://wiki.inkscape.org/wiki/index.php/Release_notes/0.35", "https://en.wikipedia.org/wiki/Inkscape", "http://wiki.inkscape.org/wiki/index.php/InkscapeHistory"]
-  written_in: ["https://gitlab.com/inkscape/inkscape", "https://en.wikipedia.org/wiki/Inkscape"]
+  initial_release: ["http://wiki.inkscape.org/wiki/index.php/Release_notes/0.35", "https://en.wikipedia.org/w/index.php?title=Inkscape&oldid=878990429", "http://wiki.inkscape.org/wiki/index.php/InkscapeHistory"]
+  written_in: ["https://gitlab.com/inkscape/inkscapegraphs/master/charts", "https://en.wikipedia.org/w/index.php?title=Inkscape&oldid=878990429"]
   platform:
     - dskp: ["https://inkscape.org/release/"]
   license: ["https://gitlab.com/inkscape/inkscape/blob/master/COPYING"]
@@ -64,7 +64,7 @@ source:
     - ["CNET", "e", "https://download.cnet.com/Inkscape/3000-2191_4-10527269.html"]
     - ["CNET", "u", "https://download.cnet.com/Inkscape/3000-2191_4-10527269.html"]
     - ["GetApp", "u", "https://www.getapp.com/collaboration-software/a/inkscape-business-graphics-software/reviews/"]
-  status: ["https://inkscape.org/news/"]
+  status: ["https://inkscape.org/news/", "https://gitlab.com/inkscape/inkscape/graphs/master/"]
 
 rating:
   - name: "G2CROWD"
@@ -84,5 +84,5 @@ rating:
     num: 47
 
 ---
-* Although [System Requirements](#sysreq) have not been specifically disclosed on the [official website](https://inkscape.org/), it is recommended to have at least 2GB RAM and a modern CPU. See [here](https://forum.inkscapecommunity.com/index.php?PHPSESSID=iit20pe7v0u5o89lc41bihb216&action=articles;sa=view;article=35) for more info.
-* Most of Inkscape's code is available under GPL v2, but because of license(s) of other softwares used, [license is given as GPL v3 or later](#license). See [here](https://gitlab.com/inkscape/inkscape/blob/master/COPYING).
+  * Although [System Requirements](#sysreq) have not been specifically disclosed on the [official website](https://inkscape.org/), it is recommended to have at least 2GB RAM and a modern CPU. See [here](https://forum.inkscapecommunity.com/index.php?PHPSESSID=iit20pe7v0u5o89lc41bihb216&action=articles;sa=view;article=35) for more info.
+  * Most of Inkscape's code is available under GPL v2, but because of license(s) of other softwares used, [license is given as GPL v3 or later](#license). See [here](https://gitlab.com/inkscape/inkscape/blob/master/COPYING).

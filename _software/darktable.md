@@ -60,15 +60,13 @@ social:
 source:
   description: ["https://www.darktable.org/about/"]
   developer: ["https://www.darktable.org/contact/"]
-  initial_release: ["https://en.wikipedia.org/wiki/Darktable", "http://www.darktable.org/news/8/", "http://www.darktable.org/blog/11/"]
+  initial_release: ["https://en.wikipedia.org/w/index.php?title=Darktable&oldid=878467735", "http://www.darktable.org/news/8/", "http://www.darktable.org/blog/11/"]
   written_in: ["https://github.com/darktable-org/darktable"]
   platform:
     - dskp: ["https://www.darktable.org/install/"]
   sysreq: ["https://www.darktable.org/about/faq/#faq-sigill", "https://www.darktable.org/2012/03/darktable-and-memory/", "https://lewiscollard.com/computar/darktable-linux-review/"]
   license: ["https://www.darktable.org/about/"]
-  rating:
-    - ["", "u", ""]
   status: ["https://www.darktable.org/news/", "https://www.darktable.org/blog/"]
 
 ---
-* Detailed synopsis regarding [System Requirements](#sysreq) can be found at [this link](https://www.darktable.org/2012/03/darktable-and-memory/).
+  * Detailed synopsis regarding [System Requirements](#sysreq) can be found at [this link](https://www.darktable.org/2012/03/darktable-and-memory/).

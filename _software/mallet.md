@@ -55,7 +55,7 @@ source:
     - ["PAT RESEARCH", "e", "https://www.predictiveanalyticstoday.com/mallet/"]
     - ["PAT RESEARCH", "u", "https://www.predictiveanalyticstoday.com/mallet/"]
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/mallet/reviews"]
-  status: ["https://github.com/mimno/Mallet/graphs/code-frequency"]
+  status: ["https://github.com/mimno/Mallet/graphs/contributors"]
 
 rating:
   - name: "PAT RESEARCH"
@@ -68,4 +68,4 @@ rating:
     num: 1
 
 ---
-* On [official website](http://mallet.cs.umass.edu), [license](#license) for code is stated to be Common Public License v1, while at the repository on GitHub, it is Apache v2. The license is taken as Apache v2 considering [this commit on GitHub](https://github.com/mimno/Mallet/commit/35ea9c69ff566bb7975fdb84868da2e989292219).
+  * On [official website](http://mallet.cs.umass.edu), [license](#license) for code is stated to be Common Public License v1, while at the repository on GitHub, it is Apache v2. The license is taken as Apache v2 considering [this commit on GitHub](https://github.com/mimno/Mallet/commit/35ea9c69ff566bb7975fdb84868da2e989292219).

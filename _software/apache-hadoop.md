@@ -60,7 +60,7 @@ social:
     url: "https://twitter.com/hadoop"
 
 source:
-  description: ["https://en.wikipedia.org/wiki/Apache_Hadoop", "https://hadoop.apache.org/", "https://hortonworks.com/apache/hadoop/"]
+  description: ["https://en.wikipedia.org/w/index.php?title=Apache_Hadoop&oldid=878713646", "https://hadoop.apache.org/", "https://hortonworks.com/apache/hadoop/"]
   developer: ["https://hadoop.apache.org/"]
   initial_release: ["https://archive.apache.org/dist/hadoop/common/"]
   written_in: ["https://github.com/apache/hadoop"]
@@ -82,5 +82,5 @@ rating:
     num: 81
 
 ---
-* Apache, Apache Hadoop name and logo are trademarks of Apache Software Foundation.
-* Hardware [System requirements](#sysreq) *(optimal)* are not from [official website](https://hadoop.apache.org/).
+  * Apache, Apache Hadoop name and logo are trademarks of Apache Software Foundation.
+  * Hardware [System requirements](#sysreq) *(optimal)* are not from [official website](https://hadoop.apache.org/).

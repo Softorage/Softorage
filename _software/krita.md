@@ -69,9 +69,9 @@ source:
   description: ["https://krita.org/en/features/highlights/"]
   developer: ["https://krita.org/en/about/history/"]
   initial_release: ["https://krita.org/en/krita-releases-overview/"]
-  written_in: ["https://en.wikipedia.org/wiki/Krita", "https://krita.org/en/get-involved/developers/"]
+  written_in: ["https://en.wikipedia.org/w/index.php?title=Krita&oldid=877276791", "https://krita.org/en/get-involved/developers/"]
   platform:
-    - dskp: ["https://krita.org/en/download/krita-desktop/", "https://en.wikipedia.org/wiki/Krita"]
+    - dskp: ["https://krita.org/en/download/krita-desktop/", "https://en.wikipedia.org/w/index.php?title=Krita&oldid=877276791"]
   sysreq: ["https://krita.org/en/download/krita-desktop/"]
   license: ["https://phabricator.kde.org/source/krita/browse/master/COPYING", ""]
   rating:

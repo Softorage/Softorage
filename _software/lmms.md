@@ -60,7 +60,7 @@ social:
 source:
   description: ["https://lmms.io/"]
   developer: ["https://github.com/LMMS/lmms/graphs/contributors", "https://sourceforge.net/projects/lmms/"]
-  initial_release: ["https://en.wikipedia.org/wiki/LMMS"]
+  initial_release: ["https://en.wikipedia.org/w/index.php?title=LMMS&oldid=877499392"]
   written_in: ["https://lmms.io/get-involved/", "https://github.com/LMMS/lmms"]
   platform:
     - dskp: ["https://lmms.io/download/"]
@@ -69,7 +69,7 @@ source:
   rating:
     - ["Gizmo's Freeware", "e", "https://www.techsupportalert.com/content/lmms.htm-2"]
     - ["SOFTPEDIA", "e", "https://www.softpedia.com/reviews/linux/LMMS-18082.shtml"]
-  status: ["https://github.com/LMMS/lmms/pulse"]
+  status: ["https://github.com/LMMS/lmms/graphs/contributors"]
 
 rating:
   - name: "Gizmo's Freeware"

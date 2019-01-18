@@ -56,7 +56,7 @@ social:
 source:
   description: ["https://audacity.en.softonic.com/#app-softonic-review", "https://github.com/audacity/audacity"]
   initial_release: ["https://sourceforge.net/projects/audacity/files/audacity/0.8/"]
-  written_in: ["https://github.com/audacity/audacity", "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"]
+  written_in: ["https://github.com/audacity/audacity", "https://en.wikipedia.org/w/index.php?title=Audacity_(audio_editor)&oldid=875154652"]
   platform:
     - dskp: ["https://www.audacityteam.org/download/"]
   sysreq: ["https://www.audacityteam.org/download/windows/", "https://www.audacityteam.org/download/mac/", "https://www.audacityteam.org/download/linux/"]
@@ -91,4 +91,4 @@ rating:
     num: 304
 
 ---
-* Legacy versions for [Windows](https://www.audacityteam.org/download/legacy-windows/) and [mac](https://www.audacityteam.org/download/legacy-mac/) are also available.
+  * Legacy versions for [Windows](https://www.audacityteam.org/download/legacy-windows/) and [mac](https://www.audacityteam.org/download/legacy-mac/) are also available.

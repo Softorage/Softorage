@@ -57,8 +57,8 @@ social:
 source:
   description: ["https://scikit-learn.org/stable/index.html"]
   developer: ["https://scikit-learn.org/stable/about.html", "https://github.com/scikit-learn/scikit-learn/graphs/contributors"]
-  initial_release: ["https://scikit-learn.org/stable/about.html", "https://en.wikipedia.org/wiki/Scikit-learn"]
-  written_in: ["https://github.com/scikit-learn/scikit-learn", "https://en.wikipedia.org/wiki/Scikit-learn"]
+  initial_release: ["https://scikit-learn.org/stable/about.html", "https://en.wikipedia.org/w/index.php?title=Scikit-learn&oldid=877016024"]
+  written_in: ["https://github.com/scikit-learn/scikit-learn", "https://en.wikipedia.org/w/index.php?title=Scikit-learn&oldid=877016024"]
   platform:
     - dskp: ["https://scikit-learn.org/stable/install.html"]
   sysreq: ["https://scikit-learn.org/stable/install.html"]
@@ -76,4 +76,4 @@ rating:
     num: 30
 
 ---
-* Warning: scikit-learn 0.20 is the last version to support Python 2.7 and Python 3.4. scikit-learn 0.21 will require Python 3.5 or newer.
+  * scikit-learn 0.20 is the last version to support Python 2.7 and Python 3.4. scikit-learn 0.21 will require Python 3.5 or newer.
