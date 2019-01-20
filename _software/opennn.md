@@ -42,7 +42,7 @@ social:
     url: "https://twitter.com/artelnics"
   - name: "Google+"
     url: "https://google.com/+Artelnics"
-  - name: "Instagram"
+  - name: "LinkedIn"
     url: "https://www.linkedin.com/company/artelnics"
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/OpenNN"

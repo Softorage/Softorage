@@ -42,20 +42,40 @@ layout: default
       {% endif %}
       <!-- As we don't check whether page.status is true, `status` is shown `unknown` when page.status is false. -->
       {% if page.status == "Active" %}
-      <span class="d-inline-flex align-items-center bg-success-light text-success rounded h6 p-2">{{ page.status }}</span>
-      {% elsif page.status == "Discontinued" %}
-      <span class="d-inline-flex align-items-center bg-danger-light text-danger rounded h6 p-2">{{ page.status }}</span>
-      {% else %}
-      <span class="d-inline-flex align-items-center bg-warning-light text-warning rounded h6 p-2">{{ page.status }}</span>
-      {% endif %}
+      
+      <a role="button" class="btn btn-sm bg-nav text-success" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
       {% if page.source.status %}
-       &nbsp;
-      <a role="button" class="btn btn-xs bg-nav text-success" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Verified" data-html="true" data-content="
       {% for src in page.source.status %}
       {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
       {% endfor %}
-      "><span class="fas fa-check small"></span></a>
+      {% else %}Not available, but hey, you could <a href='#contribute'>help</a>!
       {% endif %}
+      "><span class="fas fa-check small"></span></a>
+      
+      {% elsif page.status == "Discontinued" %}
+      
+      <a role="button" class="btn btn-sm bg-nav text-danger" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
+      {% if page.source.status %}
+      {% for src in page.source.status %}
+      {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+      {% endfor %}
+      {% else %}Not available, but hey, you could <a href='#contribute'>help</a>!
+      {% endif %}
+      "><span class="fas fa-circle small"></span></a>
+      
+      {% else %}
+      
+      <a role="button" class="btn btn-sm bg-nav text-warning" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
+      {% if page.source.status %}
+      {% for src in page.source.status %}
+      {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+      {% endfor %}
+      {% else %}Not available, but hey, you could <a href='#contribute'>help</a>!
+      {% endif %}
+      "><span class="fas fa-circle small"></span></a>
+      
+      {% endif %}
+      
     </div>
     <div class="col-md-4">
       {% if page.get_it %}
@@ -112,7 +132,7 @@ layout: default
           <p class="card-text mt-3">
           {% if page.description %}
           {{ page.description | markdownify }}
-          {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+          {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
           {% endif %}
           </p>
         </div>
@@ -251,7 +271,7 @@ layout: default
           {% endif %}
           {% endfor %}
           
-          {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+          {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
           {% endif %}
           </p>
         </div>
@@ -311,7 +331,7 @@ layout: default
             {% endif %}
             
             {% endfor %}
-            {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+            {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
             {% endif %}
           </p>
         </div>
@@ -385,7 +405,7 @@ layout: default
               </table>
             </div>
             <!-- /table-responsive -->
-            {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+            {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
             {% endif %}
           </div>
           <!-- /card-text -->
@@ -446,7 +466,7 @@ layout: default
           {% endif %}
           
           {% endfor %}
-          {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+          {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
           {% endif %}
           </p>
         </div>
@@ -482,7 +502,7 @@ layout: default
         {{ dev }}
         {% endif %}
         {% endfor %}
-        {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+        {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
         </p>
       </div>
@@ -510,7 +530,7 @@ layout: default
         {{ wr_in }}
         {% endif %}
         {% endfor %}
-        {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+        {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
         </p>
       </div>
@@ -539,7 +559,7 @@ layout: default
         {{ in_re }}
         {% endif %}
         {% endfor %}
-        {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+        {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
         </p>
       </div>
@@ -564,7 +584,7 @@ layout: default
         <a href="{{ repo }}">{{ repo }}</a>
         {% endif %}
         {% endfor %}
-        {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+        {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
         </p>
       </div>
@@ -592,7 +612,7 @@ layout: default
         <span{% if lic contains "(m)" %} title="{{ lic }} modified"{% endif %}>{{ lic }}</span>
         {% endif %}
         {% endfor %}
-        {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+        {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
         </p>
       </div>
@@ -614,7 +634,7 @@ layout: default
         <a href="/search#{{ category | replace: " ", "_" | downcase }}">{{ category }}</a>
         {% endif %}
         {% endfor %}
-        {% else %}Not available, but hey, you could <a href="#contribute">contribute</a>!
+        {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
         </p>
       </div>
