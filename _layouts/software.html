@@ -117,7 +117,7 @@ layout: default
       <!-- #7 Description -->
       <div class="card mb-3">
         <div class="card-body">
-          <span class="anchor" id ="description"></span>
+          <span class="anchor" id="description"></span>
           <span class="card-title h4">Description</span>
           <span class="float-right">
           {% if page.source.description %}
@@ -142,7 +142,7 @@ layout: default
       <!-- #13 Platform -->
       <div class="card mb-3">
         <div class="card-body">
-          <span class="anchor" id ="platform"></span>
+          <span class="anchor" id="platform"></span>
           <span class="card-title h4">Platform</span>
           <span class="float-right">
           {% if page.source.platform %}
@@ -279,7 +279,7 @@ layout: default
       <!-- #16 Social -->
       <div class="card">
         <div class="card-body">
-          <span class="anchor" id ="social"></span>
+          <span class="anchor" id="social"></span>
           <span class="card-title h4">Social</span>
           <span class="float-right">
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Social presence across the internet."><span class="fas fa-info small"></span></a>
@@ -324,11 +324,7 @@ layout: default
             {%- capture social_item -%}<a class="border p-1" href="{{ social.url }}"><span>{{ social.name }}</span></a>{%- endcapture -%}
             {%- endif -%}
             
-            {% if forloop.last == false %}
-            {{ social_item }}&nbsp;
-            {% else %}
-            {{ social_item }}
-            {% endif %}
+            {{ social_item }}{% unless forloop.last %}&nbsp;{% endunless %}
             
             {% endfor %}
             {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
@@ -345,7 +341,7 @@ layout: default
       <!-- #8 System Requirements -->
       <div class="card mb-3">
         <div class="card-body">
-          <span class="anchor" id ="sysreq"></span>
+          <span class="anchor" id="sysreq"></span>
           <span class="card-title h4">System Requirements</span>
           <span class="float-right">
           {% if page.source.sysreq %}
@@ -419,7 +415,7 @@ layout: default
       <!-- #18 Rating -->
       <div class="card">
         <div class="card-body">
-          <span class="anchor" id ="rating"></span>
+          <span class="anchor" id="rating"></span>
           <span class="card-title h4">Ratings</span>
           <span class="float-right">
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers."><span class="fas fa-info small"></span></a>
@@ -429,7 +425,6 @@ layout: default
           {% for rt in page.rating %}
           <!-- in case it isn't last forloop, break line after each rating -->
           
-          {%- capture rating_item -%}
           <div>
           {{ rt.name }}: {{ rt.rate[0] }}/{{ rt.rate[1] }}
           {% if rt.num %} &nbsp;<span class="text-muted">based on {{ rt.num }} reviews</span>{% else %} &nbsp;<span class="text-muted">based on professional's opinion</span>{% endif %}
@@ -457,13 +452,8 @@ layout: default
           {% endfor %}
           </span>
           </div>
-          {%- endcapture -%}
+          {% unless forloop.last %}<br>{% endunless %}
           
-          {% if forloop.last == false %}
-          {{ rating_item }}<br>
-          {% else %}
-          {{ rating_item }}
-          {% endif %}
           
           {% endfor %}
           {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
@@ -482,7 +472,7 @@ layout: default
     <!-- #9 Developer -->
     <div class="card">
       <div class="card-body">
-        <span class="anchor" id ="developer"></span>
+        <span class="anchor" id="developer"></span>
         <span class="card-title h4">Developer</span>
         <span class="float-right">
         {% if page.source.developer %}
@@ -496,11 +486,7 @@ layout: default
         <p class="card-text mt-3">
         {% if page.developer %}
         {% for dev in page.developer %}
-        {% if forloop.last == false %}
-        {{ dev }}, 
-        {% else %}
-        {{ dev }}
-        {% endif %}
+        {{ dev }}{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
@@ -510,7 +496,7 @@ layout: default
     <!-- #12 Written In -->
     <div class="card">
       <div class="card-body">
-        <span class="anchor" id ="written_in"></span>
+        <span class="anchor" id="written_in"></span>
         <span class="card-title h4">Written in</span>
         <span class="float-right">
         {% if page.source.written_in %}
@@ -524,11 +510,7 @@ layout: default
         <p class="card-text mt-3">
         {% if page.written_in %}
         {% for wr_in in page.written_in %}
-        {% if forloop.last == false %}
-        {{ wr_in }}, 
-        {% else %}
-        {{ wr_in }}
-        {% endif %}
+        {{ wr_in }}{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
@@ -538,7 +520,7 @@ layout: default
     <!-- #10 Initial Release -->
     <div class="card">
       <div class="card-body">
-        <span class="anchor" id ="initial_release"></span>
+        <span class="anchor" id="initial_release"></span>
         <span class="card-title h4">Initial Release</span>
         <span class="float-right">
         {% if page.source.initial_release %}
@@ -553,11 +535,7 @@ layout: default
         <p class="card-text mt-3">
         {% if page.initial_release %}
         {% for in_re in page.initial_release %}
-        {% if forloop.last == false %}
-        {{ in_re }}, 
-        {% else %}
-        {{ in_re }}
-        {% endif %}
+        {{ in_re }}{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
@@ -570,7 +548,7 @@ layout: default
     <!-- #11 Repository -->
     <div class="card">
       <div class="card-body">
-        <span class="anchor" id ="repository"></span>
+        <span class="anchor" id="repository"></span>
         <span class="card-title h4">Repository</span>
         <span class="float-right">
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Where you can find source code of the software. Have a look!"><span class="fas fa-info small"></span></a>
@@ -578,11 +556,7 @@ layout: default
         <p class="card-text mt-3">
         {% if page.repository %}
         {% for repo in page.repository %}
-        {% if forloop.last == false %}
-        <a href="{{ repo }}">{{ repo }}</a>, 
-        {% else %}
-        <a href="{{ repo }}">{{ repo }}</a>
-        {% endif %}
+        <a href="{{ repo }}">{{ repo }}</a>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
@@ -592,7 +566,7 @@ layout: default
     <!-- #15 License -->
     <div class="card">
       <div class="card-body">
-        <span class="anchor" id ="license"></span>
+        <span class="anchor" id="license"></span>
         <span class="card-title h4">License</span>
         <span class="float-right">
         {% if page.source.license %}
@@ -606,11 +580,7 @@ layout: default
         <p class="card-text mt-3">
         {% if page.license %}
         {% for lic in page.license %}
-        {% if forloop.last == false %}
-        <span{% if lic contains "(m)" %} title="{{ lic }} modified"{% endif %}>{{ lic }}</span>, 
-        {% else %}
-        <span{% if lic contains "(m)" %} title="{{ lic }} modified"{% endif %}>{{ lic }}</span>
-        {% endif %}
+        <span{% if lic contains "(m)" %} title="{{ lic }} modified"{% endif %}>{{ lic }}</span>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
@@ -620,7 +590,7 @@ layout: default
     <!-- #14 Categories -->
     <div class="card">
       <div class="card-body">
-        <span class="anchor" id ="categories"></span>
+        <span class="anchor" id="categories"></span>
         <span class="card-title h4">Categories</span>
         <span class="float-right">
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="What type of software it is. Helps you with classification."><span class="fas fa-info small"></span></a>
@@ -628,11 +598,7 @@ layout: default
         <p class="card-text mt-3">
         {% if page.categories %}
         {% for category in page.categories %}
-        {% if forloop.last == false %}
-        <a href="/search#{{ category | replace: " ", "_" | downcase }}">{{ category }}</a>, 
-        {% else %}
-        <a href="/search#{{ category | replace: " ", "_" | downcase }}">{{ category }}</a>
-        {% endif %}
+        <a href="/search#{{ category | replace: " ", "_" | downcase }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
@@ -674,6 +640,7 @@ layout: default
 </div>
 <!-- Initialize Popovers -->
 <!-- 
+  In Jekyll, one cannot access captured or assigned variable from a page/post's content area in the layout the page/post uses.
   " $(function(){$('[data-toggle="popover"]').popover()}); " has been converted into base64 format using https://www.base64encode.org/ and included as 'src' so that adding 'defer' attribute to <script> tag is allowed.
   This allows to place jQuery at the end of the document. Credit for idea to: https://stackoverflow.com/a/46088817
    -->

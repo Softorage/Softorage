@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://www.gimp.org/downloads/"]
 
 description: |
-  GIMP (GNU Image Manipulation Program) is a free and open-source [raster graphics editor](/search#raster_graphics_editor) used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.
+  GIMP (GNU Image Manipulation Program) is a free and open-source [raster graphics editor](/search/?category=raster_graphics_editor) used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.
   
   GIMP allows to create images with tools for airbrushing, penciling, cloning, and creating gradients. Power users can create their own brushes and patterns to use later. It also allows users to manipulate images imported into the program, further allowing to crop, add text, resize, and create nested layers. Creations can be animated as well.
   

@@ -11,7 +11,7 @@ get_it:
   - ["Authentic", "https://www.mlpack.org/download.html"]
 
 description: |
-  > mlpack is a C++ machine learning library with emphasis on scalability, speed, and ease-of-use. Its aim is to make machine learning possible for novice users by means of a simple, consistent API, while simultaneously exploiting C++ language features to provide maximum performance and maximum flexibility for expert users. This is done by providing a set of command-line executables which can be used as black boxes, and a modular C++ API for expert users and researchers to easily make changes to the internals of the algorithms.
+  > mlpack is a C++ [machine learning](/search/?category=machine_learning) library with emphasis on scalability, speed, and ease-of-use. Its aim is to make machine learning possible for novice users by means of a simple, consistent API, while simultaneously exploiting C++ language features to provide maximum performance and maximum flexibility for expert users. This is done by providing a set of command-line executables which can be used as black boxes, and a modular C++ API for expert users and researchers to easily make changes to the internals of the algorithms.
   > \- [Official website](https://www.mlpack.org/about.html)
   
   [Developement Blog](https://www.mlpack.org/gsocblog/) I [Documentation](https://www.mlpack.org/docs.html) I [Wiki](https://github.com/mlpack/mlpack/wiki) I [Mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack) I [IRC](https://webchat.freenode.net/?channels=mlpack) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/mlpack)

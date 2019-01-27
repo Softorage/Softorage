@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://krita.org/en/download/krita-desktop/"]
 
 description: |
-  Krita is a free-software and an open-source [raster graphics editor](/search#raster_graphics_editor), designed primarily for digital painting and animation purposes. It features a low-distract UI, high-quality OpenGL accelerated canvas, color management support, advanced brush engine, non-destructive layers and masks, group-based layer management, vector artwork support and switchable customization profiles.
+  Krita is a free-software and an open-source [raster graphics editor](/search/?category=raster_graphics_editor), designed primarily for digital painting and animation purposes. It features a low-distract UI, high-quality OpenGL accelerated canvas, color management support, advanced brush engine, non-destructive layers and masks, group-based layer management, vector artwork support and switchable customization profiles.
   
   Krita is a FREE and open source painting tool designed for concept artists, illustrators, matte and texture artists, and the VFX industry. Krita has been in development for over 10 years and has had an explosion in growth recently. It offers many common and innovative features to help the amateur and professional alike.
   

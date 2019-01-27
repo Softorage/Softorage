@@ -13,13 +13,13 @@ get_it:
 description: |
   MALLET is MAchine Learning for LanguagE Toolkit.
   
-  > MALLET is a Java-based package for statistical natural language processing, document classification, clustering, topic modeling, information extraction, and other [machine learning](/search#machine_learning) applications to text.
+  > MALLET is a Java-based package for statistical natural language processing, document classification, clustering, topic modeling, information extraction, and other [machine learning](/search/?category=machine_learning) applications to text.
   > \- [Official website](http://mallet.cs.umass.edu/)
   
   MALLET includes tools for document classification, sequence tagging, topic modeling.
   
   > Many of the algorithms in MALLET depend on numerical optimization. MALLET includes an efficient implementation of Limited Memory BFGS, among many other optimization methods.
-  > In addition to sophisticated [Machine Learning](/search#machine_learning) applications, MALLET includes routines for transforming text documents into numerical representations that can then be processed efficiently. This process is implemented through a flexible system of "pipes", which handle distinct tasks such as tokenizing strings, removing stopwords, and converting sequences into count vectors.
+  > In addition to sophisticated [Machine Learning](/search/?category=machine_learning) applications, MALLET includes routines for transforming text documents into numerical representations that can then be processed efficiently. This process is implemented through a flexible system of "pipes", which handle distinct tasks such as tokenizing strings, removing stopwords, and converting sequences into count vectors.
   > \- [Official website](http://mallet.cs.umass.edu/)
   
   [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/mallet) I [API Reference](http://mallet.cs.umass.edu/api)

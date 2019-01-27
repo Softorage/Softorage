@@ -13,9 +13,9 @@ get_it:
   - ["Authentic", "https://spark.apache.org/downloads.html"]
 
 description: |
-  > Apache Spark(TM) is an open-source distributed general-purpose cluster computing framework with (mostly) in-memory data processing engine that can do ETL, analytics, [machine learning](/search#machine_learning) and graph processing on large volumes of data at rest (batch processing) or in motion (streaming processing) with rich concise high-level APIs for the programming languages: Scala, Python, Java, R, and SQL.
+  > Apache Spark(TM) is an open-source distributed general-purpose cluster computing framework with (mostly) in-memory data processing engine that can do ETL, analytics, [machine learning](/search/?category=machine_learning) and graph processing on large volumes of data at rest (batch processing) or in motion (streaming processing) with rich concise high-level APIs for the programming languages: Scala, Python, Java, R, and SQL.
   > 
-  > In contrast to Hadoop’s two-stage disk-based MapReduce computation engine, Spark’s multi-stage (mostly) in-memory computing engine allows for running most computations in memory, and hence most of the time provides better performance for certain applications, e.g. iterative algorithms or interactive [data mining](/search#data_mining).  
+  > In contrast to Hadoop’s two-stage disk-based MapReduce computation engine, Spark’s multi-stage (mostly) in-memory computing engine allows for running most computations in memory, and hence most of the time provides better performance for certain applications, e.g. iterative algorithms or interactive [data mining](/search/?category=data_mining).  
   > \- [Mastering Apache Spark](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-overview.html) by Jacek Laskowski
   
   Libraries:

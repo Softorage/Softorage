@@ -9,7 +9,7 @@ get_it:
   - ["Authentic", "https://github.com/marmanis/yooreeka/archive/master.zip"]
 
 description: |
-  Yooreeka is a library for [data mining](/search#data_mining), [machine learning](/search#machine_learning), soft computing, and mathematical analysis. It also provides examples.
+  Yooreeka is a library for [data mining](/search/?category=data_mining), [machine learning](/search/?category=machine_learning), soft computing, and mathematical analysis. It also provides examples.
   
   [Google Code I Archive](https://code.google.com/archive/p/yooreeka/)
 
@@ -25,7 +25,7 @@ platform:
   - else:
       - ["Cross Platform", "o"]
 
-categories: ["Data Mining", "Machine Learning"]
+categories: ["Data Mining", "Machine Learning", "Framework"]
 
 license: ["Apache v2"]
 

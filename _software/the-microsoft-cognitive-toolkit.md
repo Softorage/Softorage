@@ -11,9 +11,9 @@ get_it:
   - ["Authentic", "https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine"]
 
 description: |
-  The Microsoft Cognitive Toolkit—previously known as CNTK—is an open-source toolkit for commercial-grade distributed [deep learning](/search#deep_learning). It describes neural networks as a series of computational steps via a directed graph. 
+  The Microsoft Cognitive Toolkit—previously known as CNTK—is an open-source toolkit for commercial-grade distributed [deep learning](/search/?category=deep_learning). It describes neural networks as a series of computational steps via a directed graph. 
   
-  The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through [deep learning](/search#deep_learning) by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
+  The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through [deep learning](/search/?category=deep_learning) by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
   
   [News](https://docs.microsoft.com/en-us/cognitive-toolkit/news) I [Documentation](https://docs.microsoft.com/en-us/cognitive-toolkit/) I [FAQ](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-FAQ) I [Blog](https://www.microsoft.com/en-us/cognitive-toolkit/blog/)
 

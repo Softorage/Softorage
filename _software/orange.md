@@ -13,9 +13,9 @@ get_it:
   - ["Authentic", "https://orange.biolab.si/download/"]
 
 description: |
-  Orange is a component structured [data mining](/search#data_mining) as well as [machine learning](/search#machine_learning) software suite written in python language. It's a [data visualization](/search#data_visualization) as well as evaluation software, with regard to novice and experts alike. [Data mining](/search#data_mining) can be done via visual programming or even python scripting.
+  Orange is a component structured [data mining](/search/?category=data_mining) as well as [machine learning](/search/?category=machine_learning) software suite written in python language. It's a [data visualization](/search/?category=data_visualization) as well as evaluation software, with regard to novice and experts alike. [Data mining](/search/?category=data_mining) can be done via visual programming or even python scripting.
   
-  Orange components are called widgets. Widgets cover a wide variety, ranging from simple [data visualization](/search#data_visualization), subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling. Orange is used for [data analysis](/search#data_analysis) as well.
+  Orange components are called widgets. Widgets cover a wide variety, ranging from simple [data visualization](/search/?category=data_visualization), subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling. Orange is used for [data analysis](/search/?category=data_analysis) as well.
   
   [Blog](https://blog.biolab.si/) I [Stack Overflow(QA)](https://stackoverflow.com/questions/tagged/orange) I [Community](https://orange.biolab.si/community/) I [Stack Exchange(data-science)](https://datascience.stackexchange.com/questions/tagged/orange) I [Wiki](https://github.com/biolab/orange3/wiki) I [Documentation](https://orange.biolab.si/docs/) I [FAQ](https://orange.biolab.si/faq/)
 

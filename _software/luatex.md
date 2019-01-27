@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "http://www.luatex.org/download.html"]
 
 description: |
-  LuaTeX is a TeX-based computer [typesetting](/search#typeseting) system which is an extended version of pdfTeX using Lua as an embedded scripting language.
+  LuaTeX is a TeX-based computer [typesetting](/search/?category=typeseting) system which is an extended version of pdfTeX using Lua as an embedded scripting language.
   
   > From the user perspective we have pdfTeX as stable and more or less frozen 8 bit engine, [XeTeX](/softwares/xetex/) as unicode input and font aware engine using libraries for font handling, and LuaTeX as engine that is programmable and delegates as much as possible to Lua, with the objective to keep the core engine lean and mean. Each engine has its benefits and drawbacks ([more details here](http://www.luatex.org/roadmap.html#tbp)). \- [Official website](http://www.luatex.org)
   

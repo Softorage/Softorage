@@ -14,7 +14,7 @@ get_it:
   - ["GitHub | Releases", "https://github.com/fontforge/fontforge/releases"]
 
 description: |
-  FontForge is a [font editor](/search#font_editor) which supports many common font formats. To facilitate automated format conversion and other repetitive tasks, FontForge implements two scripting languages: its own language and Python. FontForge can run scripts from its GUI, from the command line, and also offers its features as a Python module so it can be integrated into any Python program.
+  FontForge is a [font editor](/search/?category=font_editor) which supports many common font formats. To facilitate automated format conversion and other repetitive tasks, FontForge implements two scripting languages: its own language and Python. FontForge can run scripts from its GUI, from the command line, and also offers its features as a Python module so it can be integrated into any Python program.
   
   FontForge supports Adobe's OpenType feature file specification (with its own extensions to the syntax). It also supports the unofficial Microsoft mathematical typesetting extensions (MATH table) introduced for Cambria Math and supported by Office 2007, [XeTeX](/softwares/xetex/) and [LuaTeX](/softwares/luatex/). At least one free OpenType mathematical font has been developed in FontForge.
   

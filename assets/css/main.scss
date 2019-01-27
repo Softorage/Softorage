@@ -18,6 +18,13 @@ top: -5.45rem;
 visibility: hidden;
 }
 
+.stick {
+position: fixed;
+top: 56px;
+left: 0;
+right: 0;
+}
+
 // Theme specific classes
 {% assign theme = site.data.themes.a %}
 
@@ -28,7 +35,7 @@ $antinav: {{ theme.antinav }};
 $clr1-light: mix($clr1, $nav, 12%);
 $clr2-light: mix($clr2, $nav, 12%);
 
-//
+// *
 blockquote {
 @extend .p-2;
 font-weight: 250;
@@ -36,7 +43,7 @@ background: #f9f9f9;
 border-left: 10px solid #ccc;
 }
 
-// 
+// *
 .bg-warning-light {
 background: mix($warning, $nav, 15%);
 }
@@ -51,6 +58,8 @@ background: mix($danger, $nav, 25%);
 
 // Enable animation for navbar and font awesome
 .navbar, a, .fas, .fab, .far {
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
 transition: all 0.3s ease 0s;
 }
 
@@ -226,7 +235,7 @@ background: rgba($nav, 1);
 color: $clr2;
 }
 
-// general icons to be shown in black, even when they are used in anchored tags
+// * general icons to be shown in black, even when they are used in anchored tags
 .fa-comments {
 color: #000000;
 }
@@ -235,7 +244,7 @@ color: #000000;
 color: #f26522;
 }
 
-// brands
+// * brands
 .fa-gitlab {
 color: #fca326;
 }

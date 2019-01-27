@@ -17,12 +17,14 @@ permalink: /get-involved/
 
 Thank you for giving time for the project. Contributors are the primary pillar of invirds, who keep it updated to latest advancements and with trends.
 
-There are basically 3 ways in which you can actively get involved.
+There are basically 4 ways in which you can actively get involved.
 1. **Spread the word**  
   This is one of the most appreciated way in which you can help us. Tell your relatives, family, friends and enemies about invirds. Also, every `softpage` has share buttons which allow to share that page's URL in various ways.
 2. **Add softwares to invirds**  
   There is [a GUI available for adding softwares] and requires next to no technical skills. Check out ASTi.
-3. **Help with developement & feedback**  
+3. **Help us maintain documentaion**  
+  ASTi's documentation is primarily maintained at the ASTi's repo, and at reasonable intervals it is consolidated and used to update the documentation on invirds(that relates to ASTi). So, in case you want to help with ASTi's documentation, please see ASTi's docs and send pull requests there. Docs at invirds relating to ASTi will be updated based on ASTi's docs only.
+4. **Help with developement & feedback**  
   To help with developement, you need to have some knowledge about Jekyll, Shopify's Liquid templating language, YAML and HTML, CSS and JavaScript+jQuery. In case you want to give feedback, please [file an issue on GitLab]. Helping us with developement might mean that you would need to spend slightly more amount of time with us than other two methods above, and hey, your help means a lot to us. If you are ready to dive into developement, read below :)
 
 ---
@@ -84,6 +86,14 @@ Following are primary `characteristics`, along with brief intro:
   
 ### Infocard
 On a `softpage`, some of software's `characteristics` are presented as cards. Each such card is called an `infocard`.
+  
+  
+### i-button, i-pop & i-content
+There is an `i` button on almost every `infocard`, called as `i-button`. Clicking `i-button` of an `infocard` presents information as modal or popover or such. Such element which appears on clicking `i-button` is called `i-pop`, that is modal or popover is `i-pop`. And, content in `i-pop` is `i-content`.
+  
+  
+### input-field, input-type & input-value
+`input-field` is the form field give in ASTi to input value. The value to be filled in `input-field` is the `input-value`. An `input-field` takes input of a certain type, which is that `input-field`'s `input-type`. To avoid distorted output, `input-value` must in all cases correspond to `input-type` specified.
   
   
 ### Source

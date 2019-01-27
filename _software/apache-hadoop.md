@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://hadoop.apache.org/releases.html"]
 
 description: |
-  Apache(TM) Hadoop(R) is a library framework that facilitate using a network of many computers to solve problems involving massive amounts of data and computation providing for [distributed storage](/search#distributed_file_system) and processing of big data using the MapReduce programming model.
+  Apache(TM) Hadoop(R) is a library framework that facilitate using a network of many computers to solve problems involving massive amounts of data and computation providing for [distributed storage](/search/?category=distributed_file_system) and processing of big data using the MapReduce programming model.
   
   > It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.  
   > \- [Official website](https://hadoop.apache.org/)

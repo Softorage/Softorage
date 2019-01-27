@@ -13,9 +13,9 @@ get_it:
   - ["Included in Tex Live", "#"]
 
 description: |
-  > XeTeX is a TeX [typesetting](/search#typesetting) engine using Unicode and supporting modern font technologies such as OpenType, Graphite and Apple Advanced Typography (AAT). \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=XeTeX&oldid=877803914)
+  > XeTeX is a TeX [typesetting](/search/?category=typesetting) engine using Unicode and supporting modern font technologies such as OpenType, Graphite and Apple Advanced Typography (AAT). \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=XeTeX&oldid=877803914)
   
-  > XƎTEX is an extension of TEX that integrates TEX's [typesetting](/search#typesetting) capabilities with (a) the Unicode text encoding standard (supporting most of the world’s scripts) and (b) modern font technologies (TrueType and OpenType) and text layout services (AAT, OpenType layout, SIL Graphite) provided by the host operating system and available libraries. 
+  > XƎTEX is an extension of TEX that integrates TEX's [typesetting](/search/?category=typesetting) capabilities with (a) the Unicode text encoding standard (supporting most of the world’s scripts) and (b) modern font technologies (TrueType and OpenType) and text layout services (AAT, OpenType layout, SIL Graphite) provided by the host operating system and available libraries. 
   > With XƎTEX, the advanced typographic features provided by OpenType fonts become available for all TEX users, as well as support for complex non-roman scripts. XƎTEX also eliminates the complex task of managing a TEX font installation. XƎTEX is now part of the standard TEX distribution [TEX Live](/softwares/tex-live/) and works well with TEX macro packages like LATEX and ConTEXt. \- [Official website](http://xetex.sourceforge.net/)
   
   [News](https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/NEWS) I [TUG page](http://www.tug.org/xetex/) I [Mailing list](http://www.tug.org/mailman/listinfo/xetex)
