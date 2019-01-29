@@ -7,21 +7,22 @@ layout: default
 {% assign soft_no = soft_no | plus: 1 %}
 {% endfor %}
 <!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid text-center text-white main-gradient d-flex shadow" style="height:100vh;">
+<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex shadow" style="height:100vh;">
   <div style="height:3.5rem;"></div>
   <div class="container my-auto">
-    <h1>Open Source Database of <span class="txt-rotate" data-period="2000" data-rotate='[ "Fabulous", "Useful", "Superb", "Astonishing", "Great", "Awesome" ]'></span> Softwares</h1>
-    <p class="lead">may not be largest but most useful</p>
+    <h1 class="tg">Open Source Database of <span class="txt-rotate" data-period="2000" data-rotate='[ "Fabulous", "Useful", "Superb", "Astonishing", "Great", "Awesome" ]'></span> Softwares</h1>
+    <p class="lead tg">may not be largest but most useful</p>
     <hr class="my-4">
     <p class="lead">
-      <a class="btn btn-lg lighten-sm text-white" href="/search/" role="button"><span class="fas fa-search"></span>  Search</a>
-      <a class="btn btn-lg lighten text-white" href="#its_open" role="button"><span class="fas fa-angle-right fa-rotate-90"></span>  Explore</a>
-      <a class="btn btn-lg lighten-sm text-white" href="/contributing/" role="button"><span class="fas fa-hands-helping"></span>  Contribute</a>
+      <a class="btn btn-lg bg-clr1-light" href="/search/" role="button"><span class="fas fa-search text-clr1"></span>  <span class="text-clr1">Search</span></a>
+      <a class="btn btn-lg main-gradient-light" href="#its_open" role="button"><span class="fas fa-chevron-down text-clr1"></span>  <span class="tg">Explore</span></a>
+      <a class="btn btn-lg bg-clr2-light" href="/contributing/" role="button"><span class="fas fa-hands-helping text-clr2"></span>  <span class="text-clr2">Contribute</span></a>
     </p>
   </div>
 </div>
 <!-- Features -->
 <!-- It's open! -->
+<div class="container-fluid bg-nav">
 <div class="container py-5">
   <span class="anchor" id="its_open"></span>
   <div class="container py-5">
@@ -29,7 +30,7 @@ layout: default
       <div class="col-md-5 align-self-center">
         <span class="fas fa-lock-open text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7 text-antinav">
         <div class="display-4">It's open!</div>
         <div class="my-5"></div>
         <p>Licensed under Apache license 2.0, one of the most permissive licenses</p>
@@ -37,14 +38,16 @@ layout: default
     </div>
   </div>
 </div>
+</div>
 <!-- Number of softwares -->
-<div class="container shadow-sm py-5">
+<div class="container-fluid bg-nav">
+<div class="container position-relative shadow-sm py-5">
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
         <span class="fas fa-chart-line text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7 text-antinav">
         <div class="display-4">{{ soft_no | minus: 1 }}+ softwares</div>
         <div class="my-5"></div>
         <p>{{ soft_no | minus: 1 }}+ softwares have been added to database till now!</p>
@@ -52,14 +55,16 @@ layout: default
     </div>
   </div>
 </div>
+</div>
 <!-- Innovative arrangement -->
+<div class="container-fluid bg-nav">
 <div class="container py-5">
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
         <span class="fas fa-lightbulb text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7 text-antinav">
         <div class="display-4">Innovative Arrangement</div>
         <div class="my-5"></div>
         <p>Objectively arranged specifications allow clear comparision between softwares</p>
@@ -67,14 +72,16 @@ layout: default
     </div>
   </div>
 </div>
+</div>
 <!-- Fast -->
+<div class="container-fluid bg-nav">
 <div class="container shadow-sm py-5 mb-5">
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
         <span class="fas fa-bolt text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7 text-antinav">
         <div class="display-4">Fast</div>
         <div class="my-5"></div>
         <p>Powered by Jekyll and hosted by GitLab, it works as fast as lightning!</p>
@@ -82,18 +89,19 @@ layout: default
     </div>
   </div>
 </div>
+</div>
 <!-- Made with lots of love -->
 <div class="container-fluid bg-clr1-light shadow-sm position-relative py-5">
   <div class="container py-5">
     <div class="container text-center py-5">
       <div class="my-5">
         <span class="fas fa-table fa-4x text-clr1 align-middle m-3"></span>
-        <span class="fas fa-plus text-dark align-middle"></span>
+        <span class="fas fa-plus text-antinav align-middle"></span>
         <span class="fas fa-code fa-4x text-clr2 align-middle m-3"></span>
-        <span class="fas fa-plus text-dark align-middle"></span>
+        <span class="fas fa-plus text-antinav align-middle"></span>
         <span class="fas fa-heart fa-4x text-danger align-middle m-3"></span>
       </div>
-      <div class="display-4">Made with lots of love</div>
+      <div class="display-4 text-antinav">Made with lots of love</div>
     </div>
   </div>
 </div>

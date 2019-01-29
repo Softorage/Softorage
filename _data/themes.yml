@@ -1,6 +1,15 @@
-a:
+# note that nav, mat are used for background while antinav, clr1, clr2 are for text and stuff
+# so make sure to keep those in contrast
+light:
   nav: "#ffffff"
   antinav: "#000000"
   clr1: "#fc466b"
   clr2: "#3f5efb"
   mat: "#f5e8ff"
+
+dark:
+  nav: "#444"
+  antinav: "#ccc"
+  clr1: "#fc466b"
+  clr2: "#3f5efb"
+  mat: "#222"

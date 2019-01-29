@@ -6,7 +6,7 @@ permalink: /search/
 ---
 {%- assign categs =  site.software | map: "categories" | join: ","  | split: "," | uniq | sort -%}
 
-<div class="container-fluid bg-clr1-light text-clr1 text-center py-3">
+<div class="container-fluid bg-clr1-light text-clr1 text-center py-3 position-relative shadow-sm">
   
   <div style="height:3.5rem;"></div>
   <h1>{{ page.title }}</h1>
@@ -14,24 +14,19 @@ permalink: /search/
 
 </div>
 
-<!-- separator for banner and content -->
-<div class="bg-nav px-2">
-  <div class="bg-nav py-1 position-relative shadow"></div>
-</div>
-
 <!-- Modal -->
 <div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal-label" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content bg-nav text-antinav">
       <div class="modal-header">
         <h5 class="modal-title" id="filter-modal-label">Filters</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+        <span class="text-antinav" aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body filter-modal-body" id="filter-list">
         <input type="text" class="form-control fuzzy-search" placeholder="Search">
-        <span class="small float-right">powered by <a href="https://listjs.com/">List.js</a></span>
+        <span class="small float-right">search by <a href="https://listjs.com/">List.js</a></span>
         <br><br>
         <div class="form-group list">
           {% for categ in categs %}
@@ -53,12 +48,12 @@ permalink: /search/
   <div class="card mb-3">
     <div class="card-body" id="software-list">
       <div class="card-text">
-        <div class="form-inline bg-nav p-2 shadow menu" style="z-index:1030;">
+        <div class="form-inline bg-nav p-2 shadow-sm menu" style="z-index:1030;">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-sm bg-clr2-light text-clr2" data-toggle="modal" data-target="#filter-modal">
-        <span class="fas fa-filter"></span> Filter
+        <button type="button" class="btn btn-sm bg-clr2-light" data-toggle="modal" data-target="#filter-modal">
+        <span class="fas fa-filter text-clr2"></span> <span class="text-clr2">Filter</span>
         </button>
-        <input type="text" class="form-control my-2 mx-md-2 fuzzy-search" placeholder="Search">
+        <input type="text" class="form-control my-2 mx-sm-2 fuzzy-search" placeholder="Search">
         <span class="small">search by <a href="https://listjs.com/">List.js</a></span>
         </div>
         <br>
@@ -67,7 +62,7 @@ permalink: /search/
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Title &nbsp;<span class="btn btn-sm small sort" data-sort="name"><span class="fas fa-sort"></span></span></th>
+                <th scope="col">Title &nbsp;<span class="btn btn-sm small sort" data-sort="name"><span class="fas fa-sort text-antinav"></span></span></th>
                 <th scope="col">Info</th>
                 <th scope="col">Available for</th>
               </tr>
@@ -76,7 +71,7 @@ permalink: /search/
               {% for software in site.software %}
               <tr>
                 <th scope="row">{{ forloop.index }}</th>
-                <td><a class="font-weight-bold text-dark" href="{{ software.url | prepend: site.baseurl | prepend: site.url }}" target="_blank"><span class="name">{{ software.title }}</span></a>&nbsp;<span class="fas fa-external-link-alt small"></span></td>
+                <td><a class="font-weight-bold text-antinav text-reset" href="{{ software.url | prepend: site.baseurl | prepend: site.url }}" target="_blank"><span class="name">{{ software.title }}</span></a>&nbsp;<span class="fas fa-external-link-alt small"></span></td>
                 <td>
                   {% if software.info %}
                   <span class="info">{{ software.info }}</span>
@@ -193,7 +188,7 @@ permalink: /search/
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="/assets/js/list.min.js"></script>
 
 <!-- Initialize Popovers -->
 <!-- 
@@ -342,11 +337,11 @@ var stickyMenu = $('.menu').offset().top;
 
 $(window).scroll(function() {  
     if ($(window).scrollTop() > stickyMenu-56) {
-        $('.menu').addClass('stick');
+        $('.menu').removeClass('shadow-sm').addClass('shadow stick');
     }
     else {
-        $('.menu').removeClass('stick');
+        $('.menu').removeClass('shadow stick').addClass('shadow-sm');
     }  
 });
  -->
-<script src="data:text/javascript;base64,dmFyIHN0aWNreU1lbnU9JCgiLm1lbnUiKS5vZmZzZXQoKS50b3A7JCh3aW5kb3cpLnNjcm9sbChmdW5jdGlvbigpeyQod2luZG93KS5zY3JvbGxUb3AoKT5zdGlja3lNZW51LTU2PyQoIi5tZW51IikuYWRkQ2xhc3MoInN0aWNrIik6JCgiLm1lbnUiKS5yZW1vdmVDbGFzcygic3RpY2siKX0pOw" defer></script>
+<script src="data:text/javascript;base64,dmFyIHN0aWNreU1lbnU9JCgiLm1lbnUiKS5vZmZzZXQoKS50b3A7JCh3aW5kb3cpLnNjcm9sbChmdW5jdGlvbigpeyQod2luZG93KS5zY3JvbGxUb3AoKT5zdGlja3lNZW51LTU2PyQoIi5tZW51IikucmVtb3ZlQ2xhc3MoInNoYWRvdy1zbSIpLmFkZENsYXNzKCJzaGFkb3cgc3RpY2siKTokKCIubWVudSIpLnJlbW92ZUNsYXNzKCJzaGFkb3cgc3RpY2siKS5hZGRDbGFzcygic2hhZG93LXNtIil9KTs=" defer></script>

@@ -8,6 +8,20 @@
   "fa.scss"
 ;
 
+// Theme specific colors
+{% assign theme = site.data.themes.light %}
+
+$clr1: {{ theme.clr1 }};
+$clr2: {{ theme.clr2 }};
+$nav: {{ theme.nav }};
+$antinav: {{ theme.antinav }};
+$clr1-light: mix($clr1, $nav, 2%);
+$clr2-light: mix($clr2, $nav, 2%);
+
+body {
+background: $nav;
+}
+
 // adding .anchor class to anchor makes `element hiding behind fixed-top-navbar` problem go.
 // just that a distinct anchor shall be created (preferably with <span>) as its visibility is hidden.
 // https://stackoverflow.com/a/13184714
@@ -24,16 +38,6 @@ top: 56px;
 left: 0;
 right: 0;
 }
-
-// Theme specific classes
-{% assign theme = site.data.themes.a %}
-
-$clr1: {{ theme.clr1 }};
-$clr2: {{ theme.clr2 }};
-$nav: {{ theme.nav }};
-$antinav: {{ theme.antinav }};
-$clr1-light: mix($clr1, $nav, 12%);
-$clr2-light: mix($clr2, $nav, 12%);
 
 // *
 blockquote {
@@ -63,10 +67,12 @@ background: mix($danger, $nav, 25%);
 transition: all 0.3s ease 0s;
 }
 
+/*
 // Change color to $clr1 on hovering anchored FontAwesome
 a .fas:hover, a .fab:hover, a .far:hover {
 color: $clr1;
 }
+*/
 
 //
 .btn {
@@ -82,6 +88,8 @@ transition: all 0.3s ease 0s;
 // *
 .card {
 @extend .shadow-sm, .border-0;
+background: $nav;
+color: $antinav;
 }
 
 // text-gradient- for brand name
@@ -94,12 +102,12 @@ background: -webkit-linear-gradient(36deg, $clr1 0%, $clr2 100%);
 // Styling popover to make it a little cozy
 .popover {
 border: 0;
-box-shadow: 0 0.5rem 1rem rgba($antinav, 0.15);
+@extend .shadow;
 }
 
 .popover-header {
-background-color: $nav; 
-color: $antinav; 
+background-color: $nav;
+color: $antinav;
 font-size: 1.25rem;
 text-align: center;
 }
@@ -110,6 +118,9 @@ color: $antinav;
 padding: 1.25rem;
 }
 
+.popover .arrow {
+background-color: $nav;
+}
 //
 .main-gradient {
 background: $clr1;
@@ -135,6 +146,14 @@ color: $clr1-light;
 
 .text-clr2-light {
 color: $clr2-light;
+}
+
+.text-nav {
+color: $nav;
+}
+
+.text-antinav {
+color: $antinav;
 }
 
 .btn-grad {
@@ -167,6 +186,10 @@ background: $clr2-light;
 
 .bg-nav {
 background: $nav;
+}
+
+.bg-antinav {
+background: $antinav;
 }
 
 // Lighten class and its usage along with btn class

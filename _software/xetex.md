@@ -42,4 +42,4 @@ source:
   status: ["https://sourceforge.net/p/xetex/code/commit_browser", "https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/NEWS"]
 
 ---
-  * XeTeX is included in [Tex Live](/softwares/tex-live/), so XeTex is on [platforms](#platform) for which [Tex Live](/softwares/tex-live/) is available.
+  * XeTeX is included in [TeX Live](/softwares/tex-live/), so XeTeX is on [platforms](#platform) for which [TeX Live](/softwares/tex-live/) is available.

@@ -32,7 +32,8 @@ layout: default
     {%- endif -%}
   {%- endfor -%}
 {%- endif -%}
-<div class="container-fluid bg-clr2-light text-clr2 py-3">
+
+<div class="container-fluid bg-clr2-light text-clr2 py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
   <div class="row">
     <div class="col-md-8">
@@ -43,6 +44,7 @@ layout: default
       <!-- As we don't check whether page.status is true, `status` is shown `unknown` when page.status is false. -->
       {% if page.status == "Active" %}
       
+      <!-- in case of source, as first condition in if statement, we have checked if source is not a text-type(as src[1] exists only if it is a text-type source), that is it is a webpage, because it is more frequent condition -- not yet implemented -->
       <a role="button" class="btn btn-sm bg-nav text-success" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
       {% if page.source.status %}
       {% for src in page.source.status %}
@@ -95,21 +97,18 @@ layout: default
       {% if page.website %}
       <a class="btn lighten-xlg text-primary my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe"></span>  Visit</a> <br>
       {% endif %}
-      <div class="bg-white text-dark shadow-sm rounded my-2 p-2">
-        <span class="fas fa-share-alt-square fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="text-antinav rounded my-2 p-2">
+        <span class="fas fa-share-alt fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}&quote={{ page.title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fab fa-facebook fa-2x"></span></a>&nbsp;&nbsp;
         <a href="https://twitter.com/intent/tweet?source={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fab fa-twitter fa-2x"></span></a>&nbsp;&nbsp;
         <a href="whatsapp://send?text={{ page.url | prepend: site.baseurl | prepend: site.url }}%20{{ page.title }}" data-text="{{ page.title }}" data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fab fa-whatsapp fa-2x"></span></a>&nbsp;&nbsp;
         <a href="mailto:?subject={{ page.title }}&body={{ page.info }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via email"><span class="far fa-envelope fa-2x"></span></a>
       </div>
-      <a href="#to-proper-page-source" class="btn btn-sm btn-dark my-2" target="_blank">Help improve this page</a>
-      <a href="#to-proper-page-source" class="btn btn-sm btn-dark my-2" target="_blank">&#60;/source&#62;</a>
+      <a href="/contributing/" class="badge small my-2" target="_blank">Help us improve</a>
+      <a href="https://gitlab.com/invirds/invirds.gitlab.io/blob/master/{{ page.path }}" class="badge small my-2" target="_blank">&#60;/source&#62;</a>
     </div>
   </div>
 </div>
-
-<!-- separator for banner and content -->
-<div class="bg-nav px-2"><div class="bg-nav py-1 position-relative shadow"></div></div>
 
 <div class="container-fluid bg-clr1-light py-3">
   <div class="row">
@@ -129,12 +128,12 @@ layout: default
           {% endif %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info small"></span></a>
           </span>
-          <p class="card-text mt-3">
+          <span class="card-text mt-3">
           {% if page.description %}
           {{ page.description | markdownify }}
           {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
           {% endif %}
-          </p>
+          </span>
         </div>
       </div>
     </div>
@@ -616,7 +615,7 @@ layout: default
         <span class="h6">{{ category }}</span><br>
         {% for soft in site.software %}
         {% if soft.categories contains category %}
-        <a class="btn btn-sm btn-light shadow-sm" href="{{ soft.url }}">{{ soft.title }}</a> 
+        <a class="btn btn-sm btn-light shadow-sm my-2" href="{{ soft.url }}">{{ soft.title }}</a> 
         {% endif %}
         {% endfor %}
         <br><br>
