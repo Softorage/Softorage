@@ -12,17 +12,28 @@ permalink: /get-involved/
 
 <div class="container-fluid bg-nav text-antinav p-3" markdown="1">
 
+---
+
+<div class="text-center">
+
 Thank you for giving time for the project. Contributors are the primary pillar of invirds, who keep it updated to latest advancements and with trends.
 
-There are basically 4 ways in which you can actively get involved.
+We want to create a welcoming environment for everyone who is interested in contributing. Going through these guidelines ensures you and us are on the same page and that everyone's time and efforts are saved.
+
+</div>
+
+---
+
+No matter how you want to contribute, we welcome new drive and ideas and any contributions to improve invirds.
+
 1. **Spread the word**  
-  This is one of the most appreciated way in which you can help us. Tell your relatives, family, friends and enemies about invirds. Also, every `softpage` has share buttons which allow to share that page's URL in various ways.
+   This is one of the most appreciated way in which you can help us. Tell your relatives, family, friends and enemies about invirds. Also, every `softpage` has share buttons which allow to share that page's URL in various ways.
 2. **Add softwares to invirds**  
-  There is [a GUI available for adding softwares](/ASTi/) (called ASTi) and requires next to no technical skills. All documentation is provided as `i-buttons` in ASTi. Check it out.
+   There is [a GUI available for adding softwares](/ASTi/) (called ASTi) and requires next to no technical skills. All documentation is provided as `i-buttons` in ASTi. Check it out.
 3. **Help us maintain documentaion**  
-  ASTi's documentation is primarily maintained at the ASTi's repo, and at reasonable intervals it is consolidated and used to update the documentation on invirds(that relates to ASTi). So, in case you want to help with ASTi's documentation, please see ASTi's docs and send pull requests there. Docs at invirds relating to ASTi will be updated based on ASTi's docs only.
+   ASTi's documentation is primarily maintained at the ASTi's repo, and at reasonable intervals it is consolidated and used to update the documentation on invirds(that relates to ASTi). So, in case you want to help with ASTi's documentation, please see ASTi's docs and send pull requests there. Docs at invirds relating to ASTi will be updated based on ASTi's docs only.
 4. **Help with developement & feedback**  
-  To help with developement, you need to have some knowledge about Jekyll, Shopify's Liquid templating language, YAML and HTML, CSS and JavaScript+jQuery. In case you want to give feedback, please [file an issue on GitLab](https://gitlab.com/invirds/invirds.gitlab.io/issues). Helping us with developement might mean that you would need to spend slightly more amount of time with us than other two methods above, and hey, your help means a lot to us. If you are ready to dive into developement, read below :)
+   To help with developement, you need to have some knowledge about Jekyll, Shopify's Liquid templating language, YAML and HTML, CSS and JavaScript+jQuery. In case you want to give feedback, submit bug reports or feature requests, please [file an issue on GitLab](https://gitlab.com/invirds/invirds.gitlab.io/issues). Helping us with developement might mean that you would need to spend slightly more amount of time with us than other two methods above, and hey, your help means a lot to us. If you are ready to dive into developement, read below :)
 
 ---
 **Contents**
@@ -111,13 +122,13 @@ For example,
 1. URL1, URL2
 2. URL1, ["URL-B", Specifications of `source`], URL2
 
-2nd case is when a source is not a website. Say the information we are referring to can be found at line no. 12, page no.34, of The Example Book edition 5 by Author Example. Then 'Specification of `source`' is: "line no. 12, page no.34, of The Example Book edition 5 by Author Example". It should be noted that 'Specification of `source`' shall be as detailed as possible and needed. This includes specifying line number, page number, book name along with its edition details, author name, etc. URL-B is the URL on the web from where that book can be bought or downloaded or acquired for possesion whether in electronic, physical or any such form. This include link to Amazon page of the book or official website for the book or else. In case there is no URL to be specified as URL-B, `#` shall be the URL-B. It may be noted here that in case more than one URLs need to be specified as URL-B, they may be so as given in example below.  
-Example,  
+2nd case is when a source is not a website. Say the information we are referring to can be found at line no. 12, page no.34, of The Example Book edition 5 by Author Example. Then 'Specification of `source`' is: "line no. 12, page no.34, of The Example Book edition 5 by Author Example". It should be noted that 'Specification of `source`' shall be as detailed as possible and needed. This includes specifying line number, page number, book name along with its edition details, author name, etc. URL-B is the URL on the web from where that book can be bought or downloaded or acquired for possesion whether in electronic, physical or any such form. This include link to Amazon page of the book or official website for the book or else. In case there is no URL to be specified as URL-B, `#` shall be the URL-B.
+
+It may be noted here that in case more than one URLs need to be specified as URL-B, an appropriate one shall be chosen among them and that chosen one shall be `URL-B`. Please note that form as follws must not be used in any case as it will render the output distorted.  
 1. URL1, [["URL-B1", "URL-B2"], Specification of `source`], URL2
 
 Note: If using Wikipedia as source, it should be ensured that permanent link(can be found under 'Tools' on the Wikipedia page's sidebar) is used.
 
-**There is a need to see whether above info about source applies to all of our infocards' sources.**
   
 ---
 ---

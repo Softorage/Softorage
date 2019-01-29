@@ -44,11 +44,11 @@ layout: default
       <!-- As we don't check whether page.status is true, `status` is shown `unknown` when page.status is false. -->
       {% if page.status == "Active" %}
       
-      <!-- in case of source, as first condition in if statement, we have checked if source is not a text-type(as src[1] exists only if it is a text-type source), that is it is a webpage, because it is more frequent condition -- not yet implemented -->
+      <!-- in case of source, as first condition in if statement, we have checked if source is not a text-type(as src.first exists only if it is a text-type source), that is, it is a webpage, because it is more frequent condition -->
       <a role="button" class="btn btn-sm bg-nav text-success" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
       {% if page.source.status %}
       {% for src in page.source.status %}
-      {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+      {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
       {% endfor %}
       {% else %}Not available, but hey, you could <a href='#contribute'>help</a>!
       {% endif %}
@@ -59,7 +59,7 @@ layout: default
       <a role="button" class="btn btn-sm bg-nav text-danger" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
       {% if page.source.status %}
       {% for src in page.source.status %}
-      {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+      {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
       {% endfor %}
       {% else %}Not available, but hey, you could <a href='#contribute'>help</a>!
       {% endif %}
@@ -70,7 +70,7 @@ layout: default
       <a role="button" class="btn btn-sm bg-nav text-warning" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
       {% if page.source.status %}
       {% for src in page.source.status %}
-      {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+      {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
       {% endfor %}
       {% else %}Not available, but hey, you could <a href='#contribute'>help</a>!
       {% endif %}
@@ -122,7 +122,7 @@ layout: default
           {% if page.source.description %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
           {% for src in page.source.description %}
-          {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+          {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
           {% endfor %}
           "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
           {% endif %}
@@ -150,17 +150,17 @@ layout: default
           {% if src.dskp %}
           <span class='fas fa-desktop'></span> : <br>
           {% for s in src.dskp %}
-          {{ forloop.index }} <a href='{{ s }}'>{{ s }}</a><br>
+          {{ forloop.index }} {% unless s.first %}<a href='{{ s }}'>{{ s }}</a>{% else %}<a href='{{ s[0] }}'>{{ s[1] }}</a>{% endunless %}<br>
           {% endfor %} <hr>
           {% elsif src.smptb %}
           <span class='fas fa-mobile-alt'></span> / <span class='fas fa-tablet-alt'></span> : <br>
           {% for s in src.smptb %}
-          {{ forloop.index }} <a href='{{ s }}'>{{ s }}</a><br>
+          {{ forloop.index }} {% unless s.first %}<a href='{{ s }}'>{{ s }}</a>{% else %}<a href='{{ s[0] }}'>{{ s[1] }}</a>{% endunless %}<br>
           {% endfor %} <hr>
           {% elsif src.else %}
           <span class='fas fa-bars'></span> : <br>
           {% for s in src.else %}
-          {{ forloop.index }} <a href='{{ s }}'>{{ s }}</a><br>
+          {{ forloop.index }} {% unless s.first %}<a href='{{ s }}'>{{ s }}</a>{% else %}<a href='{{ s[0] }}'>{{ s[1] }}</a>{% endunless %}<br>
           {% endfor %} <hr>
           {% endif %}
           {% endfor %}
@@ -346,7 +346,7 @@ layout: default
           {% if page.source.sysreq %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
           {% for src in page.source.sysreq %}
-          {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+          {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
           {% endfor %}
           "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="System configuration you should have to run the software peacefully."><span class="fas fa-info small"></span></a>
@@ -422,7 +422,6 @@ layout: default
           <p class="card-text mt-3">
           {% if page.rating %}
           {% for rt in page.rating %}
-          <!-- in case it isn't last forloop, break line after each rating -->
           
           <div>
           {{ rt.name }}: {{ rt.rate[0] }}/{{ rt.rate[1] }}
@@ -452,7 +451,7 @@ layout: default
           </span>
           </div>
           {% unless forloop.last %}<br>{% endunless %}
-          
+          <!-- in case it isn't last forloop, break line after each rating -->
           
           {% endfor %}
           {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
@@ -477,7 +476,7 @@ layout: default
         {% if page.source.developer %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
         {% for src in page.source.developer %}
-        {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+        {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
         {% endfor %}
         "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Get to know who developed the software."><span class="fas fa-info small"></span></a>
@@ -501,7 +500,7 @@ layout: default
         {% if page.source.written_in %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
         {% for src in page.source.written_in %}
-        {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+        {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
         {% endfor %}
         "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), the software is written in."><span class="fas fa-info small"></span></a>
@@ -525,7 +524,7 @@ layout: default
         {% if page.source.initial_release %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
         {% for src in page.source.initial_release %}
-        {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+        {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
         {% endfor %}
         "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
         {% endif %}
@@ -571,7 +570,7 @@ layout: default
         {% if page.source.license %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
         {% for src in page.source.license %}
-        {{ forloop.index }} <a href='{{ src }}'>{{ src }}</a><br>
+        {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
         {% endfor %}
         "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="fas fa-info small"></span></a>
@@ -623,6 +622,7 @@ layout: default
       </p>
     </div>
   </div>
+  
   {% assign content_temp = content | strip_newlines %}
   {% if content_temp != "" %}
   <hr>
@@ -630,13 +630,15 @@ layout: default
   <div class="card">
     <div class="card-body">
       <span class="card-title h4">Notes</span>
-      <p class="card-text mt-3">
+      <span class="card-text mt-3">
         {{ content }}
-      </p>
+      </span>
     </div>
   </div>
   {% endif %}
+
 </div>
+
 <!-- Initialize Popovers -->
 <!-- 
   In Jekyll, one cannot access captured or assigned variable from a page/post's content area in the layout the page/post uses.

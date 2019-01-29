@@ -18,7 +18,11 @@ Thank you for giving time for the project.
 
 You can help us in any of the following 3 ways:
 1. Donate(not available yet)
+
 2. Sponsor(not available yet)
+
 3. [Get involved](/get-involved/)
+  
+   Join in and help create a software database that everybody loves.
 
 </div>
