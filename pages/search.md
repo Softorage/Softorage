@@ -25,7 +25,7 @@ permalink: /search/
         </button>
       </div>
       <div class="modal-body filter-modal-body" id="filter-list">
-        <input type="text" class="form-control fuzzy-search" placeholder="Search">
+        <input type="text" class="bg-nav form-control fuzzy-search" placeholder="Search">
         <span class="small float-right">search by <a href="https://listjs.com/">List.js</a></span>
         <br><br>
         <div class="form-group list">
@@ -53,7 +53,7 @@ permalink: /search/
         <button type="button" class="btn btn-sm bg-clr2-light" data-toggle="modal" data-target="#filter-modal">
         <span class="fas fa-filter text-clr2"></span> <span class="text-clr2">Filter</span>
         </button>
-        <input type="text" class="form-control my-2 mx-sm-2 fuzzy-search" placeholder="Search">
+        <input type="text" class="bg-nav form-control my-2 mx-sm-2 fuzzy-search" placeholder="Search">
         <span class="small">search by <a href="https://listjs.com/">List.js</a></span>
         </div>
         <br>
@@ -62,7 +62,7 @@ permalink: /search/
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Title &nbsp;<span class="btn btn-sm small sort" data-sort="name"><span class="fas fa-sort text-antinav"></span></span></th>
+                <th scope="col">Title &nbsp;<span class="btn btn-sm small sort asc" data-sort="name"><span class="fas fa-sort text-antinav"></span></span></th>
                 <th scope="col">Info</th>
                 <th scope="col">Available for</th>
               </tr>
@@ -116,7 +116,7 @@ permalink: /search/
                   {% endif %}
                   {% endif %}
                   {% endfor %}
-                  "><span class="fas fa-desktop"></span></a>
+                  "><span class="fas fa-desktop text-clr2"></span></a>
                   {% elsif env.smp %} 
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
                   {% for os in env.smp %}
@@ -140,7 +140,7 @@ permalink: /search/
                   {% endif %}
                   {% endif %}
                   {% endfor %}
-                  "><span class="fas fa-mobile-alt"></span></a>          
+                  "><span class="fas fa-mobile-alt text-clr2"></span></a>          
                   {% elsif env.tab %} 
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
                   {% for os in env.tab %}
@@ -164,7 +164,7 @@ permalink: /search/
                   {% endif %}
                   {% endif %}
                   {% endfor %}
-                  "><span class="fas fa-tablet-alt"></span></a>
+                  "><span class="fas fa-tablet-alt text-clr2"></span></a>
                   {% else %} 
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
                   {% for item in env.else %}
@@ -174,7 +174,7 @@ permalink: /search/
                   <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
                   {% endif %}
                   {% endfor %}
-                  "><span class="fas fa-bars"></span></a>
+                  "><span class="fas fa-bars text-clr2"></span></a>
                   {% endif %}
                   {% endfor %}
                 </td>
@@ -196,7 +196,12 @@ permalink: /search/
   " $(function(){$('[data-toggle="popover"]').popover()}); " has been converted into base64 format using https://www.base64encode.org/ and included as 'src' so that adding 'defer' attribute to <script> tag is allowed.
   This allows to place jQuery at the end of the document. Credit for idea to: https://stackoverflow.com/a/46088817
  -->
+<!-- 
 <script src="data:text/javascript;base64,JChmdW5jdGlvbigpeyQoJ1tkYXRhLXRvZ2dsZT0icG9wb3ZlciJdJykucG9wb3ZlcigpfSk7" defer></script>
+
+have added code to default layout, in any case keeping this code in comments for some time
+
+ -->
 
 <!-- 
 <script>

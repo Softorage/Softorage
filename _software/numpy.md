@@ -39,6 +39,7 @@ platform:
       - ["Linux", "o"]
       - ["Windows", "o"]
       - ["macOS", "o"]
+      - ["Unix(like)", "n"]
 
 categories: ["Scientific Computing", "Array Computing", "Framework"]
 
@@ -56,7 +57,7 @@ source:
   initial_release: ["https://pypi.org/project/numpy/#history", "https://en.wikipedia.org/w/index.php?title=NumPy&oldid=878310397"]
   written_in: ["https://en.wikipedia.org/w/index.php?title=NumPy&oldid=878310397", "https://github.com/numpy/numpy"]
   platform:
-    - dskp: ["https://www.scipy.org/scipylib/download.html"]
+    - dskp: ["https://www.scipy.org/scipylib/download.html", "https://www.scipy.org/scipylib/download.html#third-party-vendor-package-managers"]
   license: ["https://www.numpy.org/license.html", "https://github.com/numpy/numpy/blob/master/LICENSE.txt"]
   rating:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/numpy-download/reviews"]

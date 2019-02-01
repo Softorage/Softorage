@@ -81,7 +81,7 @@ layout: default
     </div>
     <div class="col-md-4">
       {% if page.get_it %}
-      <a role="button" class="btn lighten-xlg text-primary my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
+      <a role="button" class="btn lighten-xlg my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
       {% for getit in page.get_it %} 
       <a href='{{ getit[1] }}' class='
       btn
@@ -92,20 +92,22 @@ layout: default
       {% endif %} 
       btn-sm'>{{ getit[0] }}</a> 
       {% endfor %}
-      "><span class="fas fa-arrow-alt-circle-down"></span>  Get it</a>
+      "><span class="fas fa-arrow-alt-circle-down text-primary"></span>  <span class="text-primary">Get it</span></a>
       {% endif %}
       {% if page.website %}
-      <a class="btn lighten-xlg text-primary my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe"></span>  Visit</a> <br>
+      <a class="btn lighten-xlg my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe text-primary"></span>  <span class="text-primary">Visit</a></span> <br>
       {% endif %}
-      <div class="text-antinav rounded my-2 p-2">
+      <div class="row my-2 p-2">
         <span class="fas fa-share-alt fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}&quote={{ page.title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fab fa-facebook fa-2x"></span></a>&nbsp;&nbsp;
         <a href="https://twitter.com/intent/tweet?source={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fab fa-twitter fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fab fa-google-plus fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}&summary={{ page.info }}&source=invirds" rel="nofollow" target="_blank" title="Share on LinkedIn"><span class="fab fa-linkedin fa-2x"></span></a>&nbsp;&nbsp;
         <a href="whatsapp://send?text={{ page.url | prepend: site.baseurl | prepend: site.url }}%20{{ page.title }}" data-text="{{ page.title }}" data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fab fa-whatsapp fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="https://reddit.com/submit?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit"><span class="fab fa-reddit fa-2x"></span></a>&nbsp;&nbsp;
         <a href="mailto:?subject={{ page.title }}&body={{ page.info }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via email"><span class="far fa-envelope fa-2x"></span></a>
       </div>
-      <a href="/contributing/" class="badge small my-2" target="_blank">Help us improve</a>
-      <a href="https://gitlab.com/invirds/invirds.gitlab.io/blob/master/{{ page.path }}" class="badge small my-2" target="_blank">&#60;/source&#62;</a>
+      <a href="https://gitlab.com/invirds/invirds.gitlab.io/blob/master/{{ page.path }}" class="badge small my-2" target="_blank">&#60;/page-source&#62;</a>
     </div>
   </div>
 </div>
@@ -201,7 +203,7 @@ layout: default
           {% endif %}
           {% endif %}
           {% endfor %}
-          "><span class="fas fa-desktop"></span></a>
+          "><span class="fas fa-desktop text-clr2"></span></a>
           
           {% elsif env.smp %} 
                    
@@ -227,7 +229,7 @@ layout: default
           {% endif %}
           {% endif %}
           {% endfor %}
-          "><span class="fas fa-mobile-alt"></span></a>          
+          "><span class="fas fa-mobile-alt text-clr2"></span></a>          
           
           {% elsif env.tab %} 
           
@@ -253,7 +255,7 @@ layout: default
           {% endif %}
           {% endif %}
           {% endfor %}
-          "><span class="fas fa-tablet-alt"></span></a>
+          "><span class="fas fa-tablet-alt text-clr2"></span></a>
           
           {% else %} 
           
@@ -265,7 +267,7 @@ layout: default
           <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
           {% endif %}
           {% endfor %}
-          "><span class="fas fa-bars"></span></a>
+          "><span class="fas fa-bars text-clr2"></span></a>
           
           {% endif %}
           {% endfor %}
@@ -636,6 +638,10 @@ layout: default
     </div>
   </div>
   {% endif %}
+  
+  <br>
+  
+  <p class="bg-nav text-antinav text-center p-2">Software name and software logo are property of their respective owners.</p>
 
 </div>
 
@@ -645,4 +651,9 @@ layout: default
   " $(function(){$('[data-toggle="popover"]').popover()}); " has been converted into base64 format using https://www.base64encode.org/ and included as 'src' so that adding 'defer' attribute to <script> tag is allowed.
   This allows to place jQuery at the end of the document. Credit for idea to: https://stackoverflow.com/a/46088817
    -->
+<!-- 
 <script src="data:text/javascript;base64,JChmdW5jdGlvbigpeyQoJ1tkYXRhLXRvZ2dsZT0icG9wb3ZlciJdJykucG9wb3ZlcigpfSk7" defer></script>
+
+have added code to default layout, in any case keeping this code in comments for some time
+
+ -->

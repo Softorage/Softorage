@@ -1,5 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
+# sitemap:
+#   exclude: "yes"
 ---
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -20,6 +22,7 @@ $clr2-light: mix($clr2, $nav, 2%);
 
 body {
 background: $nav;
+color: $antinav;
 }
 
 // adding .anchor class to anchor makes `element hiding behind fixed-top-navbar` problem go.
@@ -43,8 +46,8 @@ right: 0;
 blockquote {
 @extend .p-2;
 font-weight: 250;
-background: #f9f9f9;
-border-left: 10px solid #ccc;
+background: mix($antinav, $nav, 5%);
+border-left: 10px solid mix($antinav, $nav, 25%);
 }
 
 // *
@@ -118,9 +121,6 @@ color: $antinav;
 padding: 1.25rem;
 }
 
-.popover .arrow {
-background-color: $nav;
-}
 //
 .main-gradient {
 background: $clr1;
@@ -254,7 +254,7 @@ background: rgba($nav, 1);
 }
 
 // Colouring Font-Awesome icons
-.fa-shoe-prints, .fa-info, .fa-desktop, .fa-mobile-alt, .fa-tablet-alt, .fa-bars {
+.fa-shoe-prints, .fa-info {
 color: $clr2;
 }
 

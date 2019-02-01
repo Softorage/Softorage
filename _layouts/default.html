@@ -31,10 +31,13 @@ $(document).ready(function() {
       $('.navbar').removeClass('bg-nav shadow');
     }
   });
+  
+  /* initialize popovers */
+  $("[data-toggle='popover']").popover();
 });
 
  -->
-    <script>$(document).ready(function(){$(window).scroll(function(){$(this).scrollTop()>30?$(".navbar").addClass("bg-nav shadow"):$(".navbar").removeClass("bg-nav shadow")})});</script>
+    <script>$(function(){$(window).scroll(function(){$(this).scrollTop()>30?$(".navbar").addClass("bg-nav shadow"):$(".navbar").removeClass("bg-nav shadow")}),$("[data-toggle='popover']").popover()});</script>
 
   </body>
 

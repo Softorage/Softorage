@@ -2,7 +2,7 @@
 layout: default
 title: Contribute
 description: Anyone contributing benefits equally from others' contributions
-permalink: /contributing/
+permalink: /help-us/
 ---
 <div class="container-fluid bg-nav text-clr1 text-center py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
@@ -12,17 +12,31 @@ permalink: /contributing/
 
 <div class="container-fluid bg-nav text-antinav p-3" markdown="1">
 
-# Contributing (WIP)
+---
 
-Thank you for giving time for the project.
+We want to build a database that would contain every software that one can ever imagine of. A database accessible to everyone on the web alike. We want there to be an information resource to cater to any software related information needs of people. A resource, which people can look up to, which people can love. If you want there to exist a massive database of softwares accessible to everyone, you can help us build it!
 
-You can help us in any of the following 3 ways:
-1. Donate(not available yet)
+---
+<div class="container py-5" markdown="1">
 
-2. Sponsor(not available yet)
+## Donate(not available yet)
 
-3. [Get involved](/get-involved/)
-  
-   Join in and help create a software database that everybody loves.
+</div>
+---
+<div class="container py-5" markdown="1">
+
+## Sponsor(not available yet)
+
+</div>
+---
+<div class="container py-5" markdown="1">
+
+## Get involved
+
+invirds is a fully open source project. Every contribution matters. Join in, be part of the community and help create a software database that everyone would want to love.
+
+[Learn more](/get-involved/)
+
+</div>
 
 </div>
