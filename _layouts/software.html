@@ -619,8 +619,10 @@ layout: default
   <div class="card">
     <div class="card-body">
       <span class="card-title h4">You may try</span>
+      <!-- We won't be showing softwares that are covered under "Framework" category -->
       <p class="card-text mt-3">
         {% for category in page.categories %}
+        {% unless category == "Framework" %}
         <span class="h6">{{ category }}</span><br>
         {% for soft in site.software %}
         {% if soft.categories contains category %}
@@ -628,13 +630,14 @@ layout: default
         {% endif %}
         {% endfor %}
         <br><br>
+        {% endunless %}
         {% endfor %}
       </p>
     </div>
   </div>
   
   {% assign content_temp = content | strip_newlines %}
-  {% if content_temp != "" %}
+  {% unless content_temp == "" %}
   <hr>
   <!-- Notes -->
   <div class="card">
@@ -645,7 +648,7 @@ layout: default
       </div>
     </div>
   </div>
-  {% endif %}
+  {% endunless %}
   
   <br>
   
