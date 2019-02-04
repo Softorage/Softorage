@@ -1,7 +1,7 @@
 ---
 title: "The Microsoft Cognitive Toolkit"
 
-info: "A deep learning framework developed by Microsoft Research"
+info: "A deep learning framework developed by Microsoft Research, previously known as CNTK"
 
 status: "Active"
 
@@ -51,6 +51,11 @@ platform:
   - dskp:
       - ["Linux", "o"]
       - ["Windows", "o"]
+  - else:
+      - ["Python", "o"]
+      - ["C++", "o"]
+      - ["C#", "o"]
+      - ["BrainScript", "o"]
 
 categories: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Framework"]
 
@@ -69,6 +74,7 @@ source:
   written_in: ["https://www.microsoft.com/en-us/cognitive-toolkit/", "https://github.com/Microsoft/CNTK"]
   platform:
     - dskp: ["https://docs.microsoft.com/en-us/cognitive-toolkit/", "https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine"]
+    - else: ["https://www.microsoft.com/en-us/cognitive-toolkit/#features"]
   sysreq: ["https://docs.microsoft.com/en-us/cognitive-toolkit/test-configurations"]
   license: ["https://github.com/Microsoft/CNTK/blob/master/LICENSE.md"]
   rating:

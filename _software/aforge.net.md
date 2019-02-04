@@ -28,7 +28,8 @@ written_in: ["C#", "C", "C++"]
 
 platform:
   - else:
-      - ["Cross Platform", "o"]
+      - ["C#", "o"]
+      - [".NET", "o"]
 
 categories: ["Artificial Intelligence", "Computer Vision", "Framework"]
 

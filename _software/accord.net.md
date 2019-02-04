@@ -24,7 +24,7 @@ sysreq:
   -
     recm: ".NET Framework"
 
-developer: ["César Roberto de Souza(original developer)", "Anders Gustafsson", "Marcos Diego Catalano and others"]
+developer: ["César Roberto de Souza<OD>", "Anders Gustafsson", "Marcos Diego Catalano", "Others"]
 
 initial_release: "20 May 2010"
 
@@ -36,6 +36,8 @@ platform:
   - dskp:
       - ["Windows", "o"]
       - ["Linux", "n"]
+  - else:
+      - [".NET", "o"]
 
 categories: ["Artificial Intelligence", "Computer Vision", "Computer Audition", "Framework"]
 

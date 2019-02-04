@@ -48,6 +48,19 @@ platform:
       - ["Linux", "o"]
       - ["Windows", "o"]
       - ["macOS", "o"]
+  - else:
+      - ["Python", "o"]
+      - ["JavaScript", "o"]
+      - ["C++", "o"]
+      - ["Java", "o"]
+      - ["Go", "o"]
+      - ["Swift", "o"]
+      - ["C#", "n"]
+      - ["Haskell", "n"]
+      - ["Julia", "n"]
+      - ["Ruby", "n"]
+      - ["Rust", "n"]
+      - ["Scala", "n"]
 
 categories: ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Framework"]
 
@@ -70,6 +83,7 @@ source:
   written_in: ["https://github.com/tensorflow/tensorflow", "https://en.wikipedia.org/w/index.php?title=TensorFlow&oldid=878912059"]
   platform:
     - dskp: ["https://www.tensorflow.org/install/"]
+    - else: ["https://www.tensorflow.org/api_docs"]
   sysreq: ["https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781786469786/2/ch02lvl1sec18/requirements-for-running-tensorflow-with-gpu-from-nvidia", "https://www.tensorflow.org/install/gpu"]
   license: ["https://github.com/tensorflow/tensorflow/blob/master/LICENSE"]
   rating:

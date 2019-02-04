@@ -13,7 +13,7 @@ get_it:
 description: |
   Eclipse Deeplearning4j is a [deep learning](/search/?category=deep_learning) programming library written for Java and Scala and a computing framework with wide support for [deep learning](/search/?category=deep_learning) algorithms.
   
-  > There are a lot of knobs to turn when you’re training a distributed [deep-learning](/search/?category=deep_learning) network. We’ve done our best to explain them, so that Eclipse Deeplearning4j can serve as a DIY tool for Java, Scala and Clojure programmers working on [Hadoop](/softwares/apache-hadoop/) and other file systems.
+  > There are a lot of knobs to turn when you’re training a distributed deep-learning network. We’ve done our best to explain them, so that Eclipse Deeplearning4j can serve as a DIY tool for Java, Scala and Clojure programmers working on Hadoop and other file systems.
   > \- [Official website](https://deeplearning4j.org/about)
   
   Deeplearning4j includes implementations of the restricted Boltzmann machine, deep auto-encoder, deep belief net, stacked denoising auto-encoder and recursive neural tensor network, word2vec, doc2vec, and GloVe. These algorithms also include distributed parallel versions that integrate with [Apache Hadoop](/softwares/apache-hadoop/) and [Apache Spark](/softwares/apache-spark/).
@@ -25,7 +25,7 @@ sysreq:
     min: "4 GB RAM"
     recm: "8 GB RAM"
 
-developer: ["Adam Gibson", "Chris Nicholson", "Josh Patterson", "others"]
+developer: ["Adam Gibson", "Chris Nicholson", "Josh Patterson", "Others"]
 
 initial_release: "22 February 2014"
 
@@ -37,6 +37,10 @@ platform:
   - dskp:
       - ["Linux", "o"]
       - ["Windows", "o"]
+  - else:
+      - ["Java", "o"]
+      - ["Scala", "o"]
+      - ["Clojure", "o"]
 
 categories: ["Deep Learning", "Machine Learning", "Artificial Intelligence", "Framework"]
 
@@ -59,6 +63,7 @@ source:
   written_in: ["https://github.com/deeplearning4j/deeplearning4j/"]
   platform:
     - dskp: ["https://deeplearning4j.org/docs/latest/deeplearning4j-quickstart"]
+    - else: ["https://deeplearning4j.org/about"]
   sysreq: ["https://deeplearning4j.org/docs/latest/deeplearning4j-config-memory"]
   license: ["https://github.com/deeplearning4j/deeplearning4j/blob/master/LICENSE"]
   rating:

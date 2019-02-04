@@ -25,7 +25,7 @@ sysreq:
   -
     min: "For the Mono version, Mono SDK 5.12.0 (other versions won't work)"
 
-developer: ["Juan Linietsky & Ariel Manzur (founders) and community"]
+developer: ["Juan Linietsky<OD>", "Ariel Manzur<OD>", "Community"]
 
 initial_release: "14 January 2014"
 

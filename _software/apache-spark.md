@@ -13,9 +13,9 @@ get_it:
   - ["Authentic", "https://spark.apache.org/downloads.html"]
 
 description: |
-  > Apache Spark(TM) is an open-source distributed general-purpose cluster computing framework with (mostly) in-memory data processing engine that can do ETL, analytics, [machine learning](/search/?category=machine_learning) and graph processing on large volumes of data at rest (batch processing) or in motion (streaming processing) with rich concise high-level APIs for the programming languages: Scala, Python, Java, R, and SQL.
+  > Apache Spark(TM) is an open-source distributed general-purpose cluster computing framework with (mostly) in-memory data processing engine that can do ETL, analytics, machine learning and graph processing on large volumes of data at rest (batch processing) or in motion (streaming processing) with rich concise high-level APIs for the programming languages: Scala, Python, Java, R, and SQL.
   > 
-  > In contrast to Hadoop’s two-stage disk-based MapReduce computation engine, Spark’s multi-stage (mostly) in-memory computing engine allows for running most computations in memory, and hence most of the time provides better performance for certain applications, e.g. iterative algorithms or interactive [data mining](/search/?category=data_mining).  
+  > In contrast to Hadoop’s two-stage disk-based MapReduce computation engine, Spark’s multi-stage (mostly) in-memory computing engine allows for running most computations in memory, and hence most of the time provides better performance for certain applications, e.g. iterative algorithms or interactive data mining.  
   > \- [Mastering Apache Spark](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-overview.html) by Jacek Laskowski
   
   Libraries:
@@ -36,7 +36,7 @@ sysreq:
   -
     min: "Processor cores: 8-16 cores per machine"
 
-developer: ["Originally by Matei Zaharia at UC", "Berkley's AMPLab | Apache Software Foundation"]
+developer: ["Matei Zaharia<OD> at UC", "Berkley's AMPLab", "Apache Software Foundation"]
 
 initial_release: "26 May 2014"
 
@@ -50,8 +50,14 @@ platform:
       - ["Windows", "o"]
       - ["macOS", "o"]
       - ["Unix(like)", "o"]
+  - else:
+      - ["Scala", "o"]
+      - ["Python", "o"]
+      - ["Java", "o"]
+      - ["R", "o"]
+      - ["SQL", "o"]
 
-categories: ["Data Analytics", "Machine Learning"]
+categories: ["Data Analytics", "Machine Learning", "Framework"]
 
 license: ["Apache v2"]
 
@@ -66,6 +72,7 @@ source:
   written_in: ["https://github.com/apache/spark"]
   platform:
     - dskp: ["https://spark.apache.org/docs/latest/"]
+    - else: ["https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-overview.html"]
   sysreq: ["https://spark.apache.org/docs/2.4.0/hardware-provisioning.html"]
   license: ["https://github.com/apache/spark/blob/master/LICENSE"]
   rating:

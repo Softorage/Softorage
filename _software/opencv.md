@@ -18,7 +18,7 @@ description: |
   > It has C++, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications. Written in optimized C/C++, the library can take advantage of multi-core processing. Enabled with OpenCL, it can take advantage of the hardware acceleration of the underlying heterogeneous compute platform.
   > \- [Official website](https://opencv.org/)
   
-  OpenCV supports the [deep learning](/search/?category=deep_learning) frameworks TensorFlow, Torch/PyTorch and Caffe.
+  OpenCV supports the [deep learning](/search/?category=deep_learning) frameworks [TensorFlow](/softwares/tensorflow/), [Torch](/softwares/torch/)/[PyTorch](/softwares/pytorch/) and [Caffe](/softwares/caffe/).
   
   [News](https://opencv.org/news.html) I [Q&A Forum](http://answers.opencv.org/questions/) I [Documentation](https://docs.opencv.org/) I [Wiki](https://github.com/opencv/opencv/wiki) I [IRC](https://webchat.freenode.net/?channels=opencv)
 
@@ -46,6 +46,10 @@ platform:
       - ["Android", "o"]
       - ["iOS", "o"]
       - ["Maemo", "o"]
+  - else:
+      - ["C++", "o"]
+      - ["Python", "o"]
+      - ["Java", "o"]
 
 categories: ["Computer Vision", "Machine Learning", "Framework"]
 
@@ -73,6 +77,7 @@ source:
   platform:
     - dskp: ["https://opencv.org/platforms/", "https://opencv.org/releases.html"]
     - smptb: ["https://opencv.org/platforms/"]
+    - else: ["https://opencv.org/"]
   sysreq: ["http://answers.opencv.org/question/179923/laptop-minimum-system-requirement-for-opencv/"]
   license: ["https://github.com/opencv/opencv/blob/master/LICENSE"]
   rating:

@@ -27,7 +27,7 @@ sysreq:
   -
     min: "OpenGL 2.1 for Windows |   OpenGL 2.1 or mesa for Linux | Intel mac"
 
-developer: ["Björn Gustavsson", "Dan Gudmundsson", "and others"]
+developer: ["Björn Gustavsson", "Dan Gudmundsson", "Others"]
 
 initial_release: "19 October 2001"
 

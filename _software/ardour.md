@@ -39,7 +39,7 @@ sysreq:
     min: "2-4 channels: M-Audio Delta 44, 66 or 2496; 2-12 channels: M-Audio Delta 1010"
     recm: "more than 12 channels: RME HDSP, RME HDSPe; more than 26 channels: RME MADI"
 
-developer: ["Paul Davis", "David Robillard", "Robin Gareus", "Nick Mainsbridge", "Colin Fletcher", "Ben Loftis", "Tim Mayberry and others"]
+developer: ["Paul Davis", "David Robillard", "Robin Gareus", "Nick Mainsbridge", "Colin Fletcher", "Ben Loftis", "Tim Mayberry", "Others"]
 
 initial_release: "23 September 2005"
 

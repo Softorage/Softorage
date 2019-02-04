@@ -2,11 +2,12 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html style="scroll-behavior:smooth;">
+<html>
 
   {% include head.html %}
 
-  <body{% if page.no-navbar-overlap %} style="padding-top:3.5rem;"{% endif %}>
+  <!-- as navbar has `position: fixed`, there shall be inserted a `div` with height of navbar(3.5rem) in every file that uses this (default) layout, otherwise navbar overlaps content -->
+  <body>
     
     {% include header.html %}
     
@@ -21,14 +22,14 @@ layout: compress
 <!-- 
 Unminified JS to turn navbar solid on scroll
 
-$(document).ready(function() {
+$(function() {
   /* Transition effect for navbar */
   $(window).scroll(function() {
     /* checks if window is scrolled more than 30px, adds/removes bg-white and shadow class */
     if ($(this).scrollTop() > 30) {
-      $('.navbar').addClass('bg-nav shadow');
+      $(".navbar").addClass("bg-nav shadow");
     } else {
-      $('.navbar').removeClass('bg-nav shadow');
+      $(".navbar").removeClass("bg-nav shadow");
     }
   });
   

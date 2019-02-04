@@ -11,7 +11,7 @@ get_it:
   - ["Authentic", "https://www.mlpack.org/download.html"]
 
 description: |
-  > mlpack is a C++ [machine learning](/search/?category=machine_learning) library with emphasis on scalability, speed, and ease-of-use. Its aim is to make machine learning possible for novice users by means of a simple, consistent API, while simultaneously exploiting C++ language features to provide maximum performance and maximum flexibility for expert users. This is done by providing a set of command-line executables which can be used as black boxes, and a modular C++ API for expert users and researchers to easily make changes to the internals of the algorithms.
+  > mlpack is a C++ machine learning library with emphasis on scalability, speed, and ease-of-use. Its aim is to make machine learning possible for novice users by means of a simple, consistent API, while simultaneously exploiting C++ language features to provide maximum performance and maximum flexibility for expert users. This is done by providing a set of command-line executables which can be used as black boxes, and a modular C++ API for expert users and researchers to easily make changes to the internals of the algorithms.
   > \- [Official website](https://www.mlpack.org/about.html)
   
   [Developement Blog](https://www.mlpack.org/gsocblog/) I [Documentation](https://www.mlpack.org/docs.html) I [Wiki](https://github.com/mlpack/mlpack/wiki) I [Mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack) I [IRC](https://webchat.freenode.net/?channels=mlpack) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/mlpack)
@@ -22,7 +22,7 @@ sysreq:
   -
     min: "For Python bindings: setuptools, cython >= 0.24, numpy, pandas >= 0.15.0, pytest-runner"
 
-developer: ["FASTLab at Georgia Tech(originally)", "other contributors"]
+developer: ["FASTLab at Georgia Tech<OD>", "Other contributors"]
 
 initial_release: "17 December 2011"
 
@@ -36,6 +36,8 @@ platform:
       - ["macOS", "o"]
       - ["Windows", "o"]
       - ["Unix(like)", "o"]
+  - else:
+      - ["C++", "o"]
 
 categories: ["Machine Learning", "Framework"]
 
@@ -54,6 +56,7 @@ source:
   written_in: ["https://github.com/mlpack/mlpack"]
   platform:
     - dskp: ["https://www.mlpack.org/docs/mlpack-3.0.4/doxygen/build.html"]
+    - else: ["https://www.mlpack.org/about.html"]
   sysreq: ["https://www.mlpack.org/docs/mlpack-3.0.4/doxygen/build.html"]
   license: ["https://www.mlpack.org/about.html"]
   rating:

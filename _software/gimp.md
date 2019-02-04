@@ -25,7 +25,7 @@ sysreq:
   -
     min: "20 MB+ free space on hard disk | 60 MB+ with data files"
 
-developer: ["Spencer Kimball & Peter Mattis(original developers) | The GIMP Development Team"]
+developer: ["Spencer Kimball<OD>", "Peter Mattis<OD>", "The GIMP Development Team"]
 
 initial_release: "15 February 1996"
 

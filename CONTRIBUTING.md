@@ -2,7 +2,7 @@
 layout: default
 title: Contribute
 description: Anyone contributing benefits equally from others' contributions
-permalink: /help-us/
+permalink: /contribute/
 ---
 <div class="container-fluid bg-nav text-clr1 text-center py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
@@ -35,7 +35,7 @@ We want to build a database that would contain every software that one can ever 
 
 invirds is a fully open source project. Every contribution matters. Join in, be part of the community and help create a software database that everyone would want to love.
 
-[Learn more](/get-involved/)
+<a class="btn" href="/get-involved/">Learn more</a>
 
 </div>
 

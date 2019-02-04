@@ -29,7 +29,7 @@ sysreq:
   -
     min: "Python (>= 2.7 or >= 3.4), NumPy (>= 1.8.2), SciPy (>= 0.13.3)."
 
-developer: ["David Cournapeau(original developer)", "contributors"]
+developer: ["David Cournapeau<OD>", "Contributors"]
 
 initial_release: "June 2007"
 
@@ -43,8 +43,10 @@ platform:
       - ["Windows", "o"]
       - ["macOS", "o"]
       - ["Unix(like)", "o"]
+  - else:
+      - ["Python", "o"]
 
-categories: ["Machine Learning", "Data Mining", "Data Analysis"]
+categories: ["Machine Learning", "Data Mining", "Data Analysis", "Framework"]
 
 license: ["BSD-3"]
 
@@ -61,6 +63,7 @@ source:
   written_in: ["https://github.com/scikit-learn/scikit-learn", "https://en.wikipedia.org/w/index.php?title=Scikit-learn&oldid=877016024"]
   platform:
     - dskp: ["https://scikit-learn.org/stable/install.html"]
+    - else: ["https://scikit-learn.org/"]
   sysreq: ["https://scikit-learn.org/stable/install.html"]
   license: ["https://github.com/scikit-learn/scikit-learn/blob/master/COPYING"]
   rating:

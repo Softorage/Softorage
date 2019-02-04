@@ -35,8 +35,6 @@ platform:
       - ["Windows", "o"]
       - ["Linux", "o"]
       - ["macOS", "o"]
-  - else:
-      - ["Cross Platform", "o"]
 
 categories: ["Document Viewer"]
 
@@ -53,7 +51,6 @@ source:
   written_in: ["https://github.com/tmyroadctfig/xpdf"]
   platform:
     - dskp: ["https://www.xpdfreader.com/download.html"]
-    - else: ["https://en.wikipedia.org/w/index.php?title=Xpdf&oldid=875122479"]
   license: ["http://www.glyphandcog.com/opensource.html", "https://www.xpdfreader.com/opensource.html"]
   rating:
     - ["CandianContent", "u", "http://www.canadiancontent.net/tech/download/Xpdf.html"]

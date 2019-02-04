@@ -20,6 +20,11 @@ $antinav: {{ theme.antinav }};
 $clr1-light: mix($clr1, $nav, 2%);
 $clr2-light: mix($clr2, $nav, 2%);
 
+html {
+scroll-behavior: smooth;
+}
+
+// specifying this at top, so that, it is overridden when need be
 body {
 background: $nav;
 color: $antinav;
@@ -326,6 +331,10 @@ color: #45668e;
 
 .fa-mastodon {
 color: #2A8FDD;
+}
+
+.fa-bandcamp {
+color: #629aa9;
 }
 
 .fa-tumblr {

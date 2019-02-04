@@ -37,7 +37,14 @@ layout: default
   <div style="height:3.5rem;"></div>
   <div class="row">
     <div class="col-md-8">
-      <h1>{% if page.image %}<img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="{{ page.image }}" alt="{{ page.title }} logo">  {% endif %}{{ page.title }}</h1>
+      <div class="row p-3">
+      <div class="align-self-center col-auto">
+      {% if page.image %}<img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="{{ page.image }}" alt="{{ page.title }} logo">  {% endif %}
+      </div>
+      <div class="col">
+      <span class="display-4">{{ page.title }}</span>
+      </div>
+      </div>
       {% if page.info %}
       <p>{{ page.info }}</p>
       {% endif %}
@@ -81,7 +88,7 @@ layout: default
     </div>
     <div class="col-md-4">
       {% if page.get_it %}
-      <a role="button" class="btn lighten-xlg my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
+      <a role="button" class="btn bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
       {% for getit in page.get_it %} 
       <a href='{{ getit[1] }}' class='
       btn
@@ -94,8 +101,9 @@ layout: default
       {% endfor %}
       "><span class="fas fa-arrow-alt-circle-down text-primary"></span>  <span class="text-primary">Get it</span></a>
       {% endif %}
+      &nbsp;&nbsp;
       {% if page.website %}
-      <a class="btn lighten-xlg my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe text-primary"></span>  <span class="text-primary">Visit</a></span> <br>
+      <a class="btn bg-nav my-2" href="{{ page.website }}" target="_blank"><span class="fas fa-globe text-primary"></span>  <span class="text-primary">Visit</span></a> <br>
       {% endif %}
       <div class="row my-2 p-2">
         <span class="fas fa-share-alt fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -130,12 +138,12 @@ layout: default
           {% endif %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info small"></span></a>
           </span>
-          <span class="card-text mt-3">
+          <div class="card-text mt-3">
           {% if page.description %}
           {{ page.description | markdownify }}
           {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
           {% endif %}
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -177,29 +185,29 @@ layout: default
           
           <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
           {% for os in env.dskp %}
-          {% if os[0] == "Windows" %}
-          {% if os[1] == "n" %}
-          <span class='fab fa-windows fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {% else %}
-          <span class='fab fa-windows fa-2x'></span>&nbsp;&nbsp;
-          {% endif %}
-          {% elsif os[0] == "Linux" %}
-          {% if os[1] == "n" %}
-          <span class='fab fa-linux fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[0] == "Linux" %}
+          {% if os[1] == "o" %}
           <span class='fab fa-linux fa-2x'></span>&nbsp;&nbsp;
+          {% else %}
+          <span class='fab fa-linux fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+          {% endif %}
+          {% elsif os[0] == "Windows" %}
+          {% if os[1] == "o" %}
+          <span class='fab fa-windows fa-2x'></span>&nbsp;&nbsp;
+          {% else %}
+          <span class='fab fa-windows fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
           {% endif %}
           {% elsif os[0] == "macOS" %}
-          {% if os[1] == "n" %}
-          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[1] == "o" %}
           <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+          {% else %}
+          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
           {% endif %}
           {% else %}
-          {% if os[1] == "n" %}
-          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[1] == "o" %}
           <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
+          {% else %}
+          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
           {% endif %}
           {% endif %}
           {% endfor %}
@@ -210,22 +218,22 @@ layout: default
           <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
           {% for os in env.smp %}
           {% if os[0] == "Android" %}
-          {% if os[1] == "n" %}
-          <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[1] == "o" %}
           <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+          {% else %}
+          <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
           {% endif %}
           {% elsif os[0] == "iOS" %}
-          {% if os[1] == "n" %}
-          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[1] == "o" %}
           <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+          {% else %}
+          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
           {% endif %}
           {% else %}
-          {% if os[1] == "n" %}
-          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[1] == "o" %}
           <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
+          {% else %}
+          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
           {% endif %}
           {% endif %}
           {% endfor %}
@@ -236,22 +244,22 @@ layout: default
           <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
           {% for os in env.tab %}
           {% if os[0] == "Android" %}
-          {% if os[1] == "n" %}
-          <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[1] == "o" %}
           <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+          {% else %}
+          <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
           {% endif %}
           {% elsif os[0] == "iOS" %}
-          {% if os[1] == "n" %}
-          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[1] == "o" %}
           <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+          {% else %}
+          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
           {% endif %}
           {% else %}
-          {% if os[1] == "n" %}
-          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
-          {% else %}
+          {% if os[1] == "o" %}
           <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
+          {% else %}
+          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ os[0] }}</span>&nbsp;&nbsp;
           {% endif %}
           {% endif %}
           {% endfor %}
@@ -261,10 +269,10 @@ layout: default
           
           <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
           {% for item in env.else %}
-          {% if item[1] == "n" %}
-          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
+          {% if item[1] == "o" %}
+          <span class='shadow-sm p-2' title='This software framework/application would possibly rum on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
           {% else %}
-          <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
+          <span class='border border-warning shadow-sm p-2' title='This software framework/application would possibly rum on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
           {% endif %}
           {% endfor %}
           "><span class="fas fa-bars text-clr2"></span></a>
@@ -486,7 +494,7 @@ layout: default
         <p class="card-text mt-3">
         {% if page.developer %}
         {% for dev in page.developer %}
-        {{ dev }}{% unless forloop.last %}, {% endunless %}
+        {{ dev | replace: "<OD>", "<abbr title='Original Developer'>(OD)</abbr>" | replace: "<BDFL>", "<abbr title='Benevolent Dictator For Life'>(BDFL)</abbr>" }}{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
@@ -598,7 +606,7 @@ layout: default
         <p class="card-text mt-3">
         {% if page.categories %}
         {% for category in page.categories %}
-        <a href="/search#{{ category | replace: " ", "_" | downcase }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+        <a href="/search/?category={{ category | replace: " ", "_" | downcase }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         {% else %}Not available, but hey, you could <a href="#contribute">help</a>!
         {% endif %}
@@ -632,16 +640,16 @@ layout: default
   <div class="card">
     <div class="card-body">
       <span class="card-title h4">Notes</span>
-      <span class="card-text mt-3">
+      <div class="card-text mt-3">
         {{ content }}
-      </span>
+      </div>
     </div>
   </div>
   {% endif %}
   
   <br>
   
-  <p class="bg-nav text-antinav text-center p-2">Software name and software logo are property of their respective owners.</p>
+  <p class="bg-nav text-antinav text-center small p-2">Disclaimer: Software name and software logo are property of their respective owners. Use of software logo here does not imply endorsement of the organization by invirds, nor vice versa.</p>
 
 </div>
 

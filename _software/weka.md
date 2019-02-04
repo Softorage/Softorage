@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://www.cs.waikato.ac.nz/ml/weka/downloading.html"]
 
 description: |
-  > Weka is a collection of [machine learning](/search/?category=machine_learning) algorithms for [data mining](/search/?category=data_mining) tasks. It contains tools for data preparation, classification, regression, clustering, association rules mining, and visualization. \- [Official website](https://www.cs.waikato.ac.nz/ml/weka/)
+  > Weka is a collection of machine learning algorithms for data mining tasks. It contains tools for data preparation, classification, regression, clustering, association rules mining, and visualization. \- [Official website](https://www.cs.waikato.ac.nz/ml/weka/)
   
   Weka(Waikato Environment for Knowledge Analysis) provides access to [deep learning](/search/?category=deep_learning) with WekaDeeplearning4j which uses [Deeplearning4j](/softwares/deeplearning4j/).
   
@@ -23,7 +23,7 @@ sysreq:
   -
     recm: "Java v8"
 
-developer: ["Eibe Frank", "Mark Hall", "Peter Reutemann", "and Len Trigg", "University of Waikato"]
+developer: ["Eibe Frank", "Mark Hall", "Peter Reutemann", "Len Trigg", "University of Waikato"]
 
 initial_release: "1 May 2000"
 
@@ -36,8 +36,10 @@ platform:
       - ["Linux", "o"]
       - ["Windows", "o"]
       - ["macOS", "o"]
+  - else:
+      - ["Java", "o"]
 
-categories: ["Machine Learning", "Data Mining", "Deep Learning"]
+categories: ["Machine Learning", "Data Mining", "Deep Learning", "Framework"]
 
 license: ["GPL v2 for v3.6", "GPL v3 for v3.7.5+"]
 
@@ -54,6 +56,7 @@ source:
   written_in: ["https://github.com/Waikato/weka-3.8"]
   platform:
     - dskp: ["https://www.cs.waikato.ac.nz/ml/weka/downloading.html"]
+    - else: ["https://www.cs.waikato.ac.nz/ml/weka/"]
   sysreq: ["https://www.cs.waikato.ac.nz/ml/weka/requirements.html"]
   license: ["https://waikato.github.io/weka-wiki/faqs/commercial_applications/"]
   rating:
@@ -78,4 +81,3 @@ rating:
     num: 19
 
 ---
-  * Weka should run on any [platform](#platform) where Java is installed.

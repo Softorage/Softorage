@@ -23,7 +23,7 @@ written_in: ["Java"]
 
 platform:
   - else:
-      - ["Cross Platform", "o"]
+      - ["Java", "o"]
 
 categories: ["Data Mining", "Machine Learning", "Framework"]
 

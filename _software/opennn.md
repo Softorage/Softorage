@@ -32,8 +32,10 @@ platform:
       - ["Windows", "o"]
       - ["Linux", "o"]
       - ["macOS", "o"]
+  - else:
+      - ["C++", "o"]
 
-categories: ["Neural Networks", "Deep Learning", "Data Mining"]
+categories: ["Neural Networks", "Deep Learning", "Data Mining", "Framework"]
 
 license: ["LGPL v3"]
 
@@ -54,6 +56,7 @@ source:
   written_in: ["https://github.com/Artelnics/OpenNN", "http://www.opennn.net/documentation/opennn_start.html"]
   platform:
     - dskp: ["http://www.opennn.net/documentation/building_opennn.html", "https://en.wikipedia.org/w/index.php?title=OpenNN&oldid=875141876"]
+    - else: ["http://www.opennn.net/", "http://www.opennn.net/documentation/opennn_start.html#Whatitdoes"]
   license: ["https://github.com/Artelnics/OpenNN/blob/master/LICENSE.txt"]
   rating:
     - ["PAT RESEARCH", "e", "https://www.predictiveanalyticstoday.com/opennn/"]

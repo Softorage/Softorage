@@ -38,7 +38,7 @@ sysreq:
     min: "1024x768 resolution with 256 colors"
     recm: ""
 
-developer: ["The Document Foundation | Star Division(original developer)"]
+developer: ["The Document Foundation", "Star Division<OD>"]
 
 initial_release: "25 January 2011"
 

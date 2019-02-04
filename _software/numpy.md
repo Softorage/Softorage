@@ -15,7 +15,7 @@ get_it:
 description: |
   NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
   
-  > NumPy is the fundamental package for [scientific computing](/search/?category=scientific_computing) with Python. It contains among other things:
+  > NumPy is the fundamental package for scientific computing with Python. It contains among other things:
   > 
   > * a powerful N-dimensional array object
   > * sophisticated (broadcasting) functions
@@ -26,7 +26,7 @@ description: |
   
   [Mailing list](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists) I [FAQ](https://www.scipy.org/scipylib/faq.html#general-questions-about-numpy) I [Wiki](https://github.com/numpy/numpy/wiki) I [Documentation](https://docs.scipy.org/doc/) I [Stack Overflow](https://stackoverflow.com/questions/tagged/numpy)
 
-developer: ["Travis Oliphant(original developer)", "Community"]
+developer: ["Travis Oliphant<OD>", "Community"]
 
 initial_release: "14 March 2006"
 
@@ -40,6 +40,8 @@ platform:
       - ["Windows", "o"]
       - ["macOS", "o"]
       - ["Unix(like)", "n"]
+  - else:
+      - ["Python", "o"]
 
 categories: ["Scientific Computing", "Array Computing", "Framework"]
 
@@ -58,6 +60,7 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=NumPy&oldid=878310397", "https://github.com/numpy/numpy"]
   platform:
     - dskp: ["https://www.scipy.org/scipylib/download.html", "https://www.scipy.org/scipylib/download.html#third-party-vendor-package-managers"]
+    - else: ["https://www.numpy.org"]
   license: ["https://www.numpy.org/license.html", "https://github.com/numpy/numpy/blob/master/LICENSE.txt"]
   rating:
     - ["G2CROWD", "u", "https://www.g2crowd.com/products/numpy-download/reviews"]

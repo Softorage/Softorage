@@ -29,7 +29,7 @@ sysreq:
   -
     min: "MIDI port if you plan to use your MIDI keyboard"
 
-developer: ["Paul Giblock & Tobias Junghans(original developers) | LMMS developers"]
+developer: ["Paul Giblock<OD>", "Tobias Junghans<OD>", "LMMS developers"]
 
 initial_release: "2004"
 

@@ -39,8 +39,11 @@ platform:
   - dskp:
       - ["Linux", "o"]
       - ["macOS", "o"]
+  - else:
+      - ["Java", "o"]
+      - ["Scala", "o"]
 
-categories: ["Machine Learning"]
+categories: ["Machine Learning", "Framework"]
 
 license: ["Apache v2"]
 
@@ -57,6 +60,7 @@ source:
   written_in: ["https://github.com/apache/mahout"]
   platform:
     - dskp: ["https://mahout.apache.org/general/downloads#environment", "https://github.com/apache/mahout#setting-up-your-environment"]
+    - else: ["https://mahout.apache.org/"]
   sysreq: ["https://mahout.apache.org/users/basics/system-requirements.html"]
   license: ["https://github.com/apache/mahout/blob/master/LICENSE.txt"]
   rating:

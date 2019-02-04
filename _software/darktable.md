@@ -27,7 +27,7 @@ sysreq:
     min: "Less than 4GB RAM and more than 4 to 8GB swap space"
     recm: "4GB or more RAM and 4 to 8GB swap space"
 
-developer: ["Johannes Hanika(original developer) and others"]
+developer: ["Johannes Hanika<OD>", "Others"]
 
 initial_release: "8 April 2009"
 

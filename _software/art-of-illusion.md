@@ -29,7 +29,7 @@ sys_req:
   -
     recm: Single button mouse or a 3-button mouse with a scroll wheel
 
-developer: ["Peter Eastman and others"]
+developer: ["Peter Eastman", "Others"]
 
 initial_release: "29 October 1999"
 
