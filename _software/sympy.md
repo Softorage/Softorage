@@ -54,4 +54,4 @@ source:
   status: ["https://github.com/sympy/sympy/graphs/contributors", "https://www.sympy.org/"]
 
 ---
-  > [The license of all the logos is the same as SymPy: BSD.](https://docs.sympy.org/latest/outreach.html#sympy-logos)
+  > The license of all the logos is the same as SymPy: BSD. \- [source](https://docs.sympy.org/latest/outreach.html#sympy-logos).

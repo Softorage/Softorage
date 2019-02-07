@@ -18,6 +18,8 @@ description: |
   > XƎTEX is an extension of TEX that integrates TEX's typesetting capabilities with (a) the Unicode text encoding standard (supporting most of the world’s scripts) and (b) modern font technologies (TrueType and OpenType) and text layout services (AAT, OpenType layout, SIL Graphite) provided by the host operating system and available libraries. 
   > With XƎTEX, the advanced typographic features provided by OpenType fonts become available for all TEX users, as well as support for complex non-roman scripts. XƎTEX also eliminates the complex task of managing a TEX font installation. XƎTEX is now part of the standard TEX distribution TEX Live and works well with TEX macro packages like LATEX and ConTEXt. \- [Official website](http://xetex.sourceforge.net/)
   
+  See [TeX Live](/softwares/tex-live/).
+  
   [News](https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/NEWS) I [TUG page](http://www.tug.org/xetex/) I [Mailing list](http://www.tug.org/mailman/listinfo/xetex)
 
 developer: ["Jonathan Kew<OD>", "Others"]

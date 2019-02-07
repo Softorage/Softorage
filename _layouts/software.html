@@ -42,7 +42,7 @@ layout: default
       {% if page.image %}<img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="{{ page.image }}" alt="{{ page.title }} logo">  {% endif %}
       </div>
       <div class="col">
-      <span class="display-4">{{ page.title }}</span>
+      <h1 class="display-4">{{ page.title }}</h1>
       </div>
       </div>
       {% if page.info %}
@@ -52,7 +52,7 @@ layout: default
       {% if page.status == "Active" %}
       
       <!-- in case of source, as first condition in if statement, we have checked if source is not a text-type(as src.first exists only if it is a text-type source), that is, it is a webpage, because it is more frequent condition -->
-      <a role="button" class="btn btn-sm bg-nav text-success" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
+      <a role="button" class="btn btn-sm bg-nav text-success mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
       {% if page.source.status %}
       {% for src in page.source.status %}
       {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
@@ -63,7 +63,7 @@ layout: default
       
       {% elsif page.status == "Discontinued" %}
       
-      <a role="button" class="btn btn-sm bg-nav text-danger" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
+      <a role="button" class="btn btn-sm bg-nav text-danger mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
       {% if page.source.status %}
       {% for src in page.source.status %}
       {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
@@ -74,7 +74,7 @@ layout: default
       
       {% else %}
       
-      <a role="button" class="btn btn-sm bg-nav text-warning" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
+      <a role="button" class="btn btn-sm bg-nav text-warning mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
       {% if page.source.status %}
       {% for src in page.source.status %}
       {{ forloop.index }} {% unless src.first %}<a href='{{ src }}'>{{ src }}</a>{% else %}<a href='{{ src[0] }}'>{{ src[1] }}</a>{% endunless %}<br>
@@ -109,7 +109,9 @@ layout: default
         <span class="fas fa-share-alt fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url }}&quote={{ page.title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fab fa-facebook fa-2x"></span></a>&nbsp;&nbsp;
         <a href="https://twitter.com/intent/tweet?source={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}:{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fab fa-twitter fa-2x"></span></a>&nbsp;&nbsp;
+        <!-- G+ is shutting down
         <a href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fab fa-google-plus fa-2x"></span></a>&nbsp;&nbsp;
+        -->
         <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}&summary={{ page.info }}&source=invirds" rel="nofollow" target="_blank" title="Share on LinkedIn"><span class="fab fa-linkedin fa-2x"></span></a>&nbsp;&nbsp;
         <a href="whatsapp://send?text={{ page.url | prepend: site.baseurl | prepend: site.url }}%20{{ page.title }}" data-text="{{ page.title }}" data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fab fa-whatsapp fa-2x"></span></a>&nbsp;&nbsp;
         <a href="https://reddit.com/submit?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit"><span class="fab fa-reddit fa-2x"></span></a>&nbsp;&nbsp;
@@ -126,8 +128,12 @@ layout: default
       <!-- #7 Description -->
       <div class="card mb-3">
         <div class="card-body">
+          <div class="row">
+          <div class="col">
           <span class="anchor" id="description"></span>
-          <span class="card-title h4">Description</span>
+          <h2 class="card-title h4 m-0">Description</h2>
+          </div>
+          <div class="col-auto">
           <span class="float-right">
           {% if page.source.description %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
@@ -138,6 +144,8 @@ layout: default
           {% endif %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info small"></span></a>
           </span>
+          </div>
+          </div>
           <div class="card-text mt-3">
           {% if page.description %}
           {{ page.description | markdownify }}
@@ -151,8 +159,12 @@ layout: default
       <!-- #13 Platform -->
       <div class="card mb-3">
         <div class="card-body">
+          <div class="row">
+          <div class="col">
           <span class="anchor" id="platform"></span>
-          <span class="card-title h4">Platform</span>
+          <h2 class="card-title h4 m-0">Platform</h2>
+          </div>
+          <div class="col-auto">
           <span class="float-right">
           {% if page.source.platform %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
@@ -178,6 +190,8 @@ layout: default
           {% endif %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Which platforms, is the software available on. Orange borders mean unofficial release."><span class="fas fa-info small"></span></a>
           </span>
+          </div>
+          </div>
           <p class="card-text mt-3">
           {% if page.platform %}
           {% for env in page.platform %}
@@ -270,9 +284,9 @@ layout: default
           <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
           {% for item in env.else %}
           {% if item[1] == "o" %}
-          <span class='shadow-sm p-2' title='This software framework/application would possibly rum on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
+          <span class='badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
           {% else %}
-          <span class='border border-warning shadow-sm p-2' title='This software framework/application would possibly rum on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
+          <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
           {% endif %}
           {% endfor %}
           "><span class="fas fa-bars text-clr2"></span></a>
@@ -288,11 +302,17 @@ layout: default
       <!-- #16 Social -->
       <div class="card">
         <div class="card-body">
+          <div class="row">
+          <div class="col">
           <span class="anchor" id="social"></span>
-          <span class="card-title h4">Social</span>
+          <h2 class="card-title h4 m-0">Social</h2>
+          </div>
+          <div class="col-auto">
           <span class="float-right">
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Social presence across the internet."><span class="fas fa-info small"></span></a>
           </span>
+          </div>
+          </div>
           <p class="card-text mt-3">
             {% if page.social %}
             {% for social in page.social %}
@@ -350,8 +370,12 @@ layout: default
       <!-- #8 System Requirements -->
       <div class="card mb-3">
         <div class="card-body">
+          <div class="row">
+          <div class="col">
           <span class="anchor" id="sysreq"></span>
-          <span class="card-title h4">System Requirements</span>
+          <h2 class="card-title h4 m-0">System Requirements</h2>
+          </div>
+          <div class="col-auto">
           <span class="float-right">
           {% if page.source.sysreq %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
@@ -361,6 +385,8 @@ layout: default
           "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="System configuration you should have to run the software peacefully."><span class="fas fa-info small"></span></a>
           </span>
+          </div>
+          </div>
           <div class="card-text mt-3">
             {% if minimum or recommended or optimal %}
             <div class="table-responsive-md">
@@ -424,11 +450,17 @@ layout: default
       <!-- #18 Rating -->
       <div class="card">
         <div class="card-body">
+          <div class="row">
+          <div class="col">
           <span class="anchor" id="rating"></span>
-          <span class="card-title h4">Ratings</span>
+          <h2 class="card-title h4 m-0">Ratings</h2>
+          </div>
+          <div class="col-auto">
           <span class="float-right">
           <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers."><span class="fas fa-info small"></span></a>
           </span>
+          </div>
+          </div>
           <p class="card-text mt-3">
           {% if page.rating %}
           {% for rt in page.rating %}
@@ -480,8 +512,12 @@ layout: default
     <!-- #9 Developer -->
     <div class="card">
       <div class="card-body">
+        <div class="row">
+        <div class="col">
         <span class="anchor" id="developer"></span>
-        <span class="card-title h4">Developer</span>
+        <h2 class="card-title h4 m-0">Developer</h2>
+        </div>
+        <div class="col-auto">
         <span class="float-right">
         {% if page.source.developer %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
@@ -491,6 +527,8 @@ layout: default
         "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Get to know who developed the software."><span class="fas fa-info small"></span></a>
         </span>
+        </div>
+        </div>
         <p class="card-text mt-3">
         {% if page.developer %}
         {% for dev in page.developer %}
@@ -504,8 +542,12 @@ layout: default
     <!-- #12 Written In -->
     <div class="card">
       <div class="card-body">
+        <div class="row">
+        <div class="col">
         <span class="anchor" id="written_in"></span>
-        <span class="card-title h4">Written in</span>
+        <h2 class="card-title h4 m-0">Written in</h2>
+        </div>
+        <div class="col-auto">
         <span class="float-right">
         {% if page.source.written_in %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
@@ -515,6 +557,8 @@ layout: default
         "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), the software is written in."><span class="fas fa-info small"></span></a>
         </span>
+        </div>
+        </div>
         <p class="card-text mt-3">
         {% if page.written_in %}
         {% for wr_in in page.written_in %}
@@ -528,8 +572,12 @@ layout: default
     <!-- #10 Initial Release -->
     <div class="card">
       <div class="card-body">
+        <div class="row">
+        <div class="col">
         <span class="anchor" id="initial_release"></span>
-        <span class="card-title h4">Initial Release</span>
+        <h2 class="card-title h4 m-0">Initial Release</h2>
+        </div>
+        <div class="col-auto">
         <span class="float-right">
         {% if page.source.initial_release %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
@@ -540,6 +588,8 @@ layout: default
         {% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released. Elder the software, more trustworthy it is."><span class="fas fa-info small"></span></a>
         </span>
+        </div>
+        </div>
         <p class="card-text mt-3">
         {% if page.initial_release %}
         {% for in_re in page.initial_release %}
@@ -556,11 +606,17 @@ layout: default
     <!-- #11 Repository -->
     <div class="card">
       <div class="card-body">
+        <div class="row">
+        <div class="col">
         <span class="anchor" id="repository"></span>
-        <span class="card-title h4">Repository</span>
+        <h2 class="card-title h4 m-0">Repository</h2>
+        </div>
+        <div class="col-auto">
         <span class="float-right">
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Where you can find source code of the software. Have a look!"><span class="fas fa-info small"></span></a>
         </span>
+        </div>
+        </div>
         <p class="card-text mt-3">
         {% if page.repository %}
         {% for repo in page.repository %}
@@ -574,8 +630,12 @@ layout: default
     <!-- #15 License -->
     <div class="card">
       <div class="card-body">
+        <div class="row">
+        <div class="col">
         <span class="anchor" id="license"></span>
-        <span class="card-title h4">License</span>
+        <h2 class="card-title h4 m-0">License</h2>
+        </div>
+        <div class="col-auto">
         <span class="float-right">
         {% if page.source.license %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
@@ -585,6 +645,8 @@ layout: default
         "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>{% endif %}
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="fas fa-info small"></span></a>
         </span>
+        </div>
+        </div>
         <p class="card-text mt-3">
         {% if page.license %}
         {% for lic in page.license %}
@@ -598,11 +660,17 @@ layout: default
     <!-- #14 Categories -->
     <div class="card">
       <div class="card-body">
+        <div class="row">
+        <div class="col">
         <span class="anchor" id="categories"></span>
-        <span class="card-title h4">Categories</span>
+        <h2 class="card-title h4 m-0">Categories</h2>
+        </div>
+        <div class="col-auto">
         <span class="float-right">
         <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="What type of software it is. Helps you with classification."><span class="fas fa-info small"></span></a>
         </span>
+        </div>
+        </div>
         <p class="card-text mt-3">
         {% if page.categories %}
         {% for category in page.categories %}
@@ -618,7 +686,7 @@ layout: default
   <!-- You may try -->
   <div class="card">
     <div class="card-body">
-      <span class="card-title h4">You may try</span>
+      <h2 class="card-title h4 m-0">You may try</h2>
       <!-- We won't be showing softwares that are covered under "Framework" category -->
       <p class="card-text mt-3">
         {% for category in page.categories %}
@@ -642,7 +710,7 @@ layout: default
   <!-- Notes -->
   <div class="card">
     <div class="card-body">
-      <span class="card-title h4">Notes</span>
+      <h2 class="card-title h4 m-0">Notes</h2>
       <div class="card-text mt-3">
         {{ content }}
       </div>
@@ -652,7 +720,7 @@ layout: default
   
   <br>
   
-  <p class="bg-nav text-antinav text-center small p-2">Disclaimer: Software name and software logo are property of their respective owners. Use of software logo here does not imply endorsement of the organization by invirds, nor vice versa.</p>
+  <p class="bg-nav text-antinav text-center small p-2">Disclaimer: Software name, software logo and any related marks are property of their respective owners. Use of software name, software logo and any related marks here does not imply endorsement of the organization or software by invirds, nor vice versa.</p>
 
 </div>
 

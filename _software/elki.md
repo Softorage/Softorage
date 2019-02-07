@@ -11,7 +11,7 @@ get_it:
   - ["Authentic", "https://elki-project.github.io/releases/"]
 
 description: |
-  ELKI is Environment for Developing KDD(Knowledge Discovery in Databases, "[Data Mining](/search/?category=data_mining)")-Applications Supported by Index-Structures.
+  ELKI is Environment for Developing KDD(Knowledge Discovery in Databases, "Data Mining")-Applications Supported by Index-Structures.
   
   > ELKI is an open source (AGPLv3) data mining software written in Java. The focus of ELKI is research in algorithms, with an emphasis on unsupervised methods in cluster analysis and outlier detection. In order to achieve high performance and scalability, ELKI offers data index structures such as the R*-tree that can provide major performance gains. ELKI is designed to be easy to extend for researchers and students in this domain, and welcomes contributions of additional methods. ELKI aims at providing a large collection of highly parameterizable algorithms, in order to allow easy and fair evaluation and benchmarking of algorithms.
   > \- [Official website](https://elki-project.github.io/)

@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "http://www.artofillusion.org/downloads"]
 
 description: |
-  Art of Illusion is a [3D-graphics software](/search/?category=3d_computing_graphics), with similar intent of use as for example 3DS-Max or Maya of the commercial software packages or [Blender](/softwares/blender/) or [Wings 3D](/softwares/wings-3d/) on the freeware side. Though some sources seem to confuse 3D-modeling with CAD, Art of Illusion does not provide any CAD-features.
+  Art of Illusion is a 3D-graphics software, with similar intent of use as for example 3DS-Max or Maya of the commercial software packages or [Blender](/softwares/blender/) or [Wings 3D](/softwares/wings-3d/) on the freeware side. Though some sources seem to confuse 3D-modeling with CAD, Art of Illusion does not provide any CAD-features.
   
   Some user reviews describe Art of Illusion as 'intuitive', 'straight forward to learn' and 'good candidate for the first 3D modelling tool', while some characterize it as 'software for experienced CAD users' or taking plenty of time to figure out. For its capabilities it has been described 'powerful, comprehensive and extensible'.
   
@@ -86,4 +86,4 @@ rating:
     num: 6
 
 ---
-  * Absolute minimum requirements or recommendations for the system hardware have not been informed.
+  * Absolute minimum requirements or recommendations for the system hardware have not been declared.

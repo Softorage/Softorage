@@ -13,12 +13,12 @@ get_it:
   - ["Authentic", "https://opencv.org/releases.html"]
 
 description: |
-  OpenCV (Open Source Computer Vision Library) is an open source [computer vision](/search/?category=computer_vision) and [machine learning](search/?category=machine_learning) software library. OpenCV was built to provide a common infrastructure for [computer vision](/search/?category=computer_vision) applications and to accelerate the use of machine perception in the commercial products.
+  OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products.
   
   > It has C++, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications. Written in optimized C/C++, the library can take advantage of multi-core processing. Enabled with OpenCL, it can take advantage of the hardware acceleration of the underlying heterogeneous compute platform.
   > \- [Official website](https://opencv.org/)
   
-  OpenCV supports the [deep learning](/search/?category=deep_learning) frameworks [TensorFlow](/softwares/tensorflow/), [Torch](/softwares/torch/)/[PyTorch](/softwares/pytorch/) and [Caffe](/softwares/caffe/).
+  OpenCV supports the deep learning frameworks [TensorFlow](/softwares/tensorflow/), [Torch](/softwares/torch/)/[PyTorch](/softwares/pytorch/) and [Caffe](/softwares/caffe/).
   
   [News](https://opencv.org/news.html) I [Q&A Forum](http://answers.opencv.org/questions/) I [Documentation](https://docs.opencv.org/) I [Wiki](https://github.com/opencv/opencv/wiki) I [IRC](https://webchat.freenode.net/?channels=opencv)
 

@@ -11,19 +11,19 @@ get_it:
   - ["Authentic", "https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine"]
 
 description: |
-  The Microsoft Cognitive Toolkit—previously known as CNTK—is an open-source toolkit for commercial-grade distributed [deep learning](/search/?category=deep_learning). It describes neural networks as a series of computational steps via a directed graph. 
+  The Microsoft Cognitive Toolkit—previously known as CNTK—is an open-source toolkit for commercial-grade distributed deep learning. It describes neural networks as a series of computational steps via a directed graph. 
   
-  The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through [deep learning](/search/?category=deep_learning) by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
+  The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through deep learning by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
   
   [News](https://docs.microsoft.com/en-us/cognitive-toolkit/news) I [Documentation](https://docs.microsoft.com/en-us/cognitive-toolkit/) I [FAQ](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-FAQ) I [Blog](https://www.microsoft.com/en-us/cognitive-toolkit/blog/)
 
 sysreq:
   -
-    recm: "OS: Windows 8.1 Pro (64 bit), Windows 10 (64 bit), Windows Server 2012 R2 Standard and later | Ubuntu 16.04 LTS (64 bit"
+    recm: "OS: Windows 8.1 Pro (64 bit), Windows 10 (64 bit), Windows Server 2012 R2 Standard and later I Ubuntu 16.04 LTS (64 bit"
   -
-    recm: "Compiler: Visual Studio Enterprise 2017 for Windows | GNU C++ 5.4.0 for Linux"
+    recm: "Compiler: Visual Studio Enterprise 2017 for Windows I GNU C++ 5.4.0 for Linux"
   -
-    recm: "MPI: Microsoft MPI v. 7.0 for Windows | Open MPI v. 1.10.7 for Linux"
+    recm: "MPI: Microsoft MPI v. 7.0 for Windows I Open MPI v. 1.10.7 for Linux"
   -
     recm: "Math Library: Intel® MKLML library for Windows and Linux"
   -
@@ -33,9 +33,9 @@ sysreq:
   -
     recm: "zlib Library: zlib v.1.2.8 for Windows and Linux"
   -
-    recm: "libzip Library: libzip v.1.1.3 for Windows | libzip v.1.1.2 for Linux"
+    recm: "libzip Library: libzip v.1.1.3 for Windows I libzip v.1.1.2 for Linux"
   -
-    recm: "Java: Java SE Development Kit 8 v1.8.0_131, 64-bit for Windows | OpenJDK 7, 64-bit for Linux"
+    recm: "Java: Java SE Development Kit 8 v1.8.0_131, 64-bit for Windows I OpenJDK 7, 64-bit for Linux"
   -
     recm: "Anaconda Python: Anaconda3 4.1.1 (64 bit) for Windows and Linux"
 
@@ -91,4 +91,4 @@ rating:
     num: 4
 
 ---
-  * In [System Requirements](#sysreq), the presented set of product versions is not restrictive, i.e. CNTK may well work in many other configurations.
+  * In [System Requirements](#sysreq), the presented set of product versions is not restrictive, i.e. CNTK may work well in many other configurations.

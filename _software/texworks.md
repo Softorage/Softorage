@@ -13,9 +13,11 @@ get_it:
   - ["Authentic", "https://www.tug.org/texworks/#Getting_TeXworks"]
 
 description: |
-  TeXworks is free and open-source [TeX editor](/search/?category=tex_editor), available for Windows, Linux and OS X, released under GPL v2.
+  TeXworks is free and open-source TeX editor, available for Windows, Linux and OS X, released under GPL v2.
   
   > It is a Qt-based graphical user interface to the TeX typesetting system and its LaTeX, ConTeXt, and XeTeX extensions. TeXworks is targeted at direct generation of PDF output. It has a built-in PDF viewer using the poppler library; the viewer has auto-refresh capability, and also features SyncTeX support (which allows the user to synchronize the PDF viewer position with the source, and vice versa with a single click). \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=TeXworks&oldid=875136087)
+  
+  See [XeTeX](/softwares/xetex/), [TeX Live](/softwares/tex-live/).
   
   [Mailing list](https://tug.org/mailman/listinfo/texworks)
 

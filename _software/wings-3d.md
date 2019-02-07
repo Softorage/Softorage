@@ -17,7 +17,7 @@ description: |
   
   The program itself does not include tools to create it's own from scratch. Basically, Wings 3D can import models created by other design environments into polygonal meshes and then develop them through subdivision polygons. It also includes a series of tools that will help you allocate materials, textures and UV coordinates to your models, add lights to the scene and perform screenshots among other possibilities.
   
-  Wings 3D is a [3D computer graphics](/search/?category=3d_computer_graphics) software and [subdivision modeler](/search/?category=subdivision_modeler), often used in combination with other software, whereby models made in Wings 3D are exported to applications more specialized in rendering and animation such as [Blender](/softwares/blender/).
+  Wings 3D is a 3D computer graphics software and subdivision modeler, often used in combination with other software, whereby models made in Wings 3D are exported to applications more specialized in rendering and animation such as [Blender](/softwares/blender/).
   
   [Forum](http://www.wings3d.com/forum/) I [Documentation](http://www.wings3d.com/?page_id=87) I [News](http://www.wings3d.com/?page_id=76) I [User Manual](http://www.wings3d.com/?page_id=252) I [FAQ](http://www.wings3d.com/forum/archive/index.php?thread-1106.html)
 

@@ -11,7 +11,7 @@ get_it:
   - ["Authentic", "https://mahout.apache.org/general/downloads"]
 
 description: |
-  Apache Mahout(TM) is an open source project that is primarily used for creating scalable [machine learning](/search/?category=machine_learning) algorithms. It implements [machine learning](/search/?category=machine_learning) techniques such as, collaborative filtering, clustering, recommendation and classification.
+  Apache Mahout(TM) is an open source project that is primarily used for creating scalable machine learning algorithms. It implements machine learning techniques such as, collaborative filtering, clustering, recommendation and classification.
   
   It also provides Java libraries for common math operations (focused on linear algebra and statistics) and primitive Java collections.
   

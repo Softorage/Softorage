@@ -16,6 +16,8 @@ description: |
   > You can generate plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc., with just a few lines of code.
   > \- [Official website](https://matplotlib.org/)
   
+  See [IPython](/softwares/ipython/).
+  
   > It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+. \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=Matplotlib&oldid=878974242)
   
   [Documentation](https://matplotlib.org/#documentation) I [Users' Guide](https://matplotlib.org/users/) I [API docs](https://matplotlib.org/api/) I [FAQ](https://matplotlib.org/faq/) I [Wiki](https://github.com/matplotlib/matplotlib/wiki) I [Gitter chat](https://gitter.im/matplotlib/matplotlib) I [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/matplotlib) I Mailing list: [Users](https://mail.python.org/mailman/listinfo/matplotlib-users), [Developers](https://mail.python.org/mailman/listinfo/matplotlib-devel), [Announcements](https://mail.python.org/mailman/listinfo/matplotlib-announce)

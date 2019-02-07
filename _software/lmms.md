@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://lmms.io/download/"]
 
 description: |
-  LMMS (formerly Linux MultiMedia Studio) is a free and open source [digital audio workstation](/search/?category=digital_audio_workstation) application program, release under GPL v2 license. It allows music to be produced by arranging samples, synthesizing sounds, playing on a MIDI keyboard and combining the features of trackers and sequencers, when run on appropriate hardware.
+  LMMS (formerly Linux MultiMedia Studio) is a free and open source digital audio workstation application program, release under GPL v2 license. It allows music to be produced by arranging samples, synthesizing sounds, playing on a MIDI keyboard and combining the features of trackers and sequencers, when run on appropriate hardware.
   
   It allows users to sequence, compose, mix and automate songs in one interface, note playback via MIDI or typing keyboard, consolidate instrument tracks using Beat+Bassline Editor, fine tune patterns, notes, chords and melodies using Piano Roll Editor. It has built-in 64-bit VST instrument support with 32-bit VST bridge (64-bit Windows) and drop-in "Linux Audio Developer's Simple Plugin API" (LADSPA) plug-in support, drop-in VST ® effect plug-in support (Linux and Windows).
   

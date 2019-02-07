@@ -53,7 +53,11 @@ permalink: /search/
         <button type="button" class="btn btn-sm bg-clr2-light" data-toggle="modal" data-target="#filter-modal">
         <span class="fas fa-filter text-clr2"></span> <span class="text-clr2">Filter</span>
         </button>
-        <input type="text" class="bg-nav form-control my-2 mx-sm-2 fuzzy-search" placeholder="Search">
+        <!-- 
+        wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
+        see: https://github.com/javve/list.js/issues/358
+         -->
+        <input type="text" class="bg-nav form-control my-2 mx-sm-2 search" placeholder="Search">
         <span class="small">search by <a href="https://listjs.com/">List.js</a></span>
         </div>
         <br>
@@ -176,9 +180,9 @@ permalink: /search/
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
                   {% for item in env.else %}
                   {% if item[1] == "o" %}
-                  <span class='shadow-sm p-2' title='This software framework/application would possibly rum on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
+                  <span class='badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
                   {% else %}
-                  <span class='border border-warning shadow-sm p-2' title='This software framework/application would possibly rum on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
+                  <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ item[0] }}' style='margin-top:-1rem;'>{{ item[0] }}</span>&nbsp;&nbsp;
                   {% endif %}
                   {% endfor %}
                   "><span class="fas fa-bars text-clr2"></span></a>

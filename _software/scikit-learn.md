@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://scikit-learn.org/stable/install.html"]
 
 description: |
-  scikit-learn is an open source [machine learning](/search/?category=machine_learning) library featuring classification, regression, clustering, dimensionality reduction, model selection and preprocessing. It has tools for [data mining](/search/?category=data_mining) and [data analysis](/search/?category=data_analysis), and is built on [NumPy](/softwares/numpy/), [SciPy](/softwares/scipy/), and [matplotlib](/softwares/matplotlib/).
+  scikit-learn is an open source machine learning library featuring classification, regression, clustering, dimensionality reduction, model selection and preprocessing. It has tools for data mining and data analysis, and is built on [NumPy](/softwares/numpy/), [SciPy](/softwares/scipy/), and [matplotlib](/softwares/matplotlib/).
   
   As per [official website](https://scikit-learn.org/stable/index.html), it features:
   * Classification : Identifying to which category an object belongs to

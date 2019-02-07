@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://www.tug.org/texlive/acquire.html"]
 
 description: |
-  TeX Live is a free software [distribution for the TeX](/search/?category=tex_distribution) [typesetting](/search/?category=typesetting) system that includes major TeX-related programs, macro packages, and fonts. It is the replacement of its no-longer supported counterpart teTeX.
+  TeX Live is a free software distribution for the TeX typesetting system that includes major TeX-related programs, macro packages, and fonts. It is the replacement of its no-longer supported counterpart teTeX.
   
   > TeX Live is an easy way to get up and running with the TeX document production system. It provides a comprehensive TeX system with binaries for most flavors of Unix, including GNU/Linux, and also Windows. It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world. \- [Official website](https://www.tug.org/texlive/)
   

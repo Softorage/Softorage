@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://www.libreoffice.org/download/download/"]
 
 description: |
-  LibreOffice is a free and open-source [office suite](/search/?category=office_suite), a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice.
+  LibreOffice is a free and open-source office suite, a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice.
   
   LibreOffice uses the international ISO/IEC standard OpenDocument file format (ODF) as its native format to save documents for all of its applications. LibreOffice also supports the file formats of most other major office suites, including Microsoft Office(.doc, .docx, .xls, .xlsx, .ppt, .pptx), through a variety of import/export filters. You can export your work in many different formats including PDF.
   

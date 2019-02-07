@@ -11,10 +11,12 @@ get_it:
   - ["Authentic", "https://deeplearning4j.org/docs/latest/deeplearning4j-quickstart"]
 
 description: |
-  Eclipse Deeplearning4j is a [deep learning](/search/?category=deep_learning) programming library written for Java and Scala and a computing framework with wide support for [deep learning](/search/?category=deep_learning) algorithms.
+  Eclipse Deeplearning4j is a deep learning programming library written for Java and Scala and a computing framework with wide support for deep learning algorithms.
   
   > There are a lot of knobs to turn when you’re training a distributed deep-learning network. We’ve done our best to explain them, so that Eclipse Deeplearning4j can serve as a DIY tool for Java, Scala and Clojure programmers working on Hadoop and other file systems.
   > \- [Official website](https://deeplearning4j.org/about)
+  
+  See [Apache Hadoop](/softwares/apache-hadoop/).
   
   Deeplearning4j includes implementations of the restricted Boltzmann machine, deep auto-encoder, deep belief net, stacked denoising auto-encoder and recursive neural tensor network, word2vec, doc2vec, and GloVe. These algorithms also include distributed parallel versions that integrate with [Apache Hadoop](/softwares/apache-hadoop/) and [Apache Spark](/softwares/apache-spark/).
   

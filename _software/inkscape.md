@@ -13,7 +13,7 @@ get_it:
   - ["Authentic", "https://inkscape.org/release/"]
 
 description: |
-  Inkscape is professional quality [vector graphics editor](/search/?category=vector_graphics_editor) software which runs on Windows, Mac OS X and GNU/Linux. 
+  Inkscape is professional quality vector graphics editor software which runs on Windows, Mac OS X and GNU/Linux. 
   
   Inkscape has sophisticated drawing tools with capabilities comparable to Adobe Illustrator, CorelDRAW and Xara Xtreme. It can import and export various file formats, including SVG, AI, EPS, PDF, PS and PNG. It has a comprehensive feature set, a simple interface, multi-lingual support and is designed to be extensible; users can customize Inkscape's functionality with add-ons. Inkscape uses Scalable Vector Graphics (SVG), an open XML-based W3C standard, as the native format.
   

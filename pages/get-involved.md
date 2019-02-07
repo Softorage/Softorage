@@ -134,7 +134,7 @@ For example,
 1. URL1, URL2
 2. URL1, ["URL-B", Specifications of source], URL2
 
-2nd case is when a source is not a website. Say the information we are referring to can be found at line no. 12, page no.34, of The Example Book edition 5 by Author Example. Then 'Specification of source' is: "line no. 12, page no.34, of The Example Book edition 5 by Author Example". It should be noted that 'Specification of source' shall be as detailed as possible and needed. This includes specifying line number, page number, book name along with its edition details, author name, etc. URL-B is the URL on the web from where that book can be bought or downloaded or acquired for possession whether in electronic, physical or any such form. This include link to Amazon page of the book or official website for the book or else. In case there is no URL to be specified as URL-B, `#` shall be the URL-B.
+2nd case is when a source is not a website. Say the information we are referring to can be found at line no. 12, page no.34, of The Example Book edition 5 by Author Example. Then 'Specification of source' is: "line no. 12, page no.34, of The Example Book edition 5 by Author Example". It should be noted that 'Specification of source' shall be as detailed as possible and needed. This includes specifying line number, page number, book name along with its edition details, author name, ISBN of the book, etc. URL-B is the URL on the web from where that book can be bought or downloaded or acquired for possession whether in electronic, physical or any such form. This include link to Amazon page of the book or official website for the book or else. In case there is no URL to be specified as URL-B, `#` shall be the URL-B.
 
 <div class="alert alert-info" markdown="1">
 
