@@ -1,3 +1,5 @@
+*The developement for invirds is on a halt for 3-4 months (exam time). It will probably start by June.*
+
 # invirds
 
 Open Source Database of Useful Softwares  
