@@ -1,8 +1,6 @@
-*The developement for invirds is on a halt for 3-4 months (exam time). It will probably start by June.*
-
 # invirds
 
-Open Source Database of Useful Softwares  
+Open Database of Useful Softwares  
 Innovatively arranged, deeply searchable and convenient to use  
 Objective presentation of information makes software comparison a breeze  
   
