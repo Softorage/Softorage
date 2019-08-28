@@ -17,7 +17,7 @@ test:
 pages:
   script:
   - hugo --minify
-  - gzip -k -9 ---recursive public
+  - gzip -k -9 --recursive public
   artifacts:
     paths:
     - public
