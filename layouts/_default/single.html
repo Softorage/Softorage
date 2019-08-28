@@ -1,0 +1,8 @@
+{{ define "main" }}
+<div class="container-fluid bg-nav text-clr1 text-center py-3 position-relative shadow-sm">
+  <div style="height:3.5rem;"></div>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+</div>
+{{ .Content }}
+{{ end }}

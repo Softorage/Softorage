@@ -7,7 +7,7 @@ Objective presentation of information makes software comparison a breeze
 _The project is a Work-In-Progress_
 
 ```
-This project is primarily built with Jekyll.
+This project is primarily built with Hugo.
 You can get a copy of project up and running on your local machine for developement and testing purposes.
 ```
 
@@ -16,9 +16,8 @@ You can get a copy of project up and running on your local machine for developem
 * [__Bootstrap__](https://getbootstrap.com/)
 * [__Popper.js__](https://popper.js.org/)
 * [__JQuery__](https://jquery.com/)
-* [__Jekyll__](https://jekyllrb.com/)
+* [__Hugo__](https://gohugo.io/)
 * [__Font Awesome__](https://fontawesome.com/)
-* [__Compress Layout__ for Jekyll](https://jch.penibelst.de/)
 * [__ASTi__](https://gitlab.com/invirds/asti)
 <!-- * UnCSS or CriticalCSS : yet to be implemented -->
 <!-- * loadCSS : yet to be implemented -->

@@ -1,0 +1,729 @@
+{{ define "main" }}
+
+<!-- Tell Jekyll whether in 'System Requirements' Minimum or Recomended or Optimal data fields are present -->
+<!-- We want the whole Minimum column to exist even if one specification has Minimum specification stated in data file. Same goes for recommended and optimal. -->
+{{- $recommended := false -}}
+{{- $optimal := false -}}
+{{- $minimum := false -}}
+{{- if .Params.sysreq -}}
+  {{- range .Params.sysreq -}}
+    {{- if .min -}}
+      {{- $minimum = true -}}
+    {{- end -}}
+    {{- if .recm -}}
+      {{- $recommended = true -}}
+    {{- end -}}
+    {{- if .optm -}}
+      {{- $optimal = true -}}
+    {{- end -}}
+    {{/*- if minimum and recommended and optimal all are true then break -*/}}
+  {{- end -}}
+{{- end -}}
+
+<div class="container-fluid bg-clr2-light text-clr2 py-3 position-relative shadow-sm">
+  <div style="height:3.5rem;"></div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row p-3">
+      <div class="align-self-center col-auto">
+      {{ if .Params.image }}<img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="{{ .Params.image }}" alt="{{ .Title }} logo">  {{ end }}
+      </div>
+      <div class="col">
+      <h1 class="display-4">{{ .Title }}</h1>
+      </div>
+      </div>
+      {{ if .Params.description }}
+      <p>{{ .Params.description }}</p>
+      {{ end }}
+      <!-- As we don't check whether page.status is true, `status` is shown `unknown` when page.status is false. -->
+      {{ if eq .Params.status "Active" -}}
+      
+      <!-- in case of source, as first condition in if statement, we have checked if source is not a text-type(as src.first exists only if it is a text-type source), that is, it is a webpage, because it is more frequent condition -->
+      <a role="button" class="btn btn-sm bg-nav text-success mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
+      {{/* 
+      Here, the code iterates through a range, hence even if there is only one value of source for status, it has to be in square brackes([]) in the front matter, so that it is treated as an array. This is to ensure that a source from a book would not be mistaken by our code as two sources from web.
+      Example,
+      ["txt"] => one source from web
+      ["txt1","txt2"] => two sources from web
+      [["txt1","txt2"]] => one source from (say) book, txt1 being link, and txt2 being the text to be hyperlinked.
+       */}}
+      {{- if .Params.source.status }}
+      {{- range $index, $element := .Params.source.status -}}
+      {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+      {{- end }}
+      {{- else }}Not available, but hey, you could <a href='#contribute'>help</a>!
+      {{- end -}}
+      "><span class="fas fa-check small"></span></a>
+      
+      {{- else if eq .Params.status "Discontinued" }}
+      
+      <a role="button" class="btn btn-sm bg-nav text-danger mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
+      {{- if .Params.source.status }}
+      {{- range $index, $element := .Params.source.status -}}
+      {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+      {{- end }}
+      {{- else }}Not available, but hey, you could <a href='#contribute'>help</a>!
+      {{- end -}}
+      "><span class="fas fa-circle small"></span></a>
+      
+      {{- else }}
+      
+      <a role="button" class="btn btn-sm bg-nav text-warning mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
+      {{- if .Params.source.status }}
+      {{- range $index, $element := .Params.source.status -}}
+      {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+      {{- end }}
+      {{- else }}Not available, but hey, you could <a href='#contribute'>help</a>!
+      {{- end -}}
+      "><span class="fas fa-circle small"></span></a>
+      
+      {{- end }}
+      
+    </div>
+    <div class="col-md-4">
+      {{ if .Params.get_it }}
+      <a role="button" class="btn bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
+      {{- range .Params.get_it -}} 
+      <a href='{{ .url }}' class='btn btn-sm
+      {{- if eq .from "Authentic" }} btn-success
+      {{- else }} btn-light
+      {{- end -}} 
+      '>{{ .from }}</a> 
+      {{- end -}}
+      "><span class="fas fa-arrow-alt-circle-down text-primary"></span>  <span class="text-primary">Get it</span></a>
+      {{ end }}
+      &nbsp;&nbsp;
+      {{ if .Params.website }}
+      <a class="btn bg-nav my-2" href="{{ .Params.website }}" target="_blank"><span class="fas fa-globe text-primary"></span>  <span class="text-primary">Visit</span></a> <br>
+      {{ end }}
+      <div class="row my-2 p-2">
+        <span class="fas fa-share-alt fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.BaseURL }}{{ .Permalink }}&quote={{ .Title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fab fa-facebook fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/intent/tweet?source={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}:{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fab fa-twitter fa-2x"></span></a>&nbsp;&nbsp;
+        <!-- G+ is shutting down
+        <a href="https://plus.google.com/share?url={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fab fa-google-plus fa-2x"></span></a>&nbsp;&nbsp;
+        -->
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}&summary={{ .Params.description }}&source=invirds" rel="nofollow" target="_blank" title="Share on LinkedIn"><span class="fab fa-linkedin fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="whatsapp://send?text={{ site.BaseURL }}{{ .Permalink }}%20{{ .Title }}" data-text="{{ .Title }}" data-href="{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fab fa-whatsapp fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="https://reddit.com/submit?url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}" rel="nofollow" target="_blank" title="Share on Reddit"><span class="fab fa-reddit fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="mailto:?subject={{ .Title }}&body={{ .Params.description }}:{{ site.BaseURL }}{{ .Permalink }}" target="_blank" title="Share via email"><span class="far fa-envelope fa-2x"></span></a>
+      </div>
+      {{/*
+      to be done later after understanding what path content files get...maybe we will need .Dir page level variable
+      <a href="https://gitlab.com/invirds/invirds.gitlab.io/blob/master/content{{ .Dir }}" class="badge small my-2" target="_blank">&#60;/page-source&#62;</a>
+      */}}
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-clr1-light py-3">
+  <div class="row">
+    <div class="col-md-8">
+      <!-- #7 Overview -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+          <div class="col">
+          <span class="anchor" id="overview"></span>
+          <h2 class="card-title h4 m-0">Overview</h2>
+          </div>
+          <div class="col-auto">
+          <span class="float-right">
+          {{ if .Params.source.overview }}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+          {{- range $index, $element := .Params.source.overview -}}
+          {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+          {{- end -}}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {{ end }}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info small"></span></a>
+          </span>
+          </div>
+          </div>
+          <div class="card-text mt-3">
+          {{ if .Content }}
+          {{ .Content }}
+          {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+          {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <!-- #13 Platform -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+          <div class="col">
+          <span class="anchor" id="platform"></span>
+          <h2 class="card-title h4 m-0">Platform</h2>
+          </div>
+          <div class="col-auto">
+          <span class="float-right">
+          {{ if .Params.source.platform }}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+          {{- range .Params.source.platform -}}
+          {{ if .dskp -}}
+          <span class='fas fa-desktop'></span> : <br>
+          {{- range $index, $element := .dskp -}}
+          {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+          {{- end }} <hr>
+          
+          {{- else if .smptb -}}
+          <span class='fas fa-mobile-alt'></span> / <span class='fas fa-tablet-alt'></span> : <br>
+          {{- range $index, $element := .smptb -}}
+          {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+          {{- end }} <hr>
+          
+          {{- else if .else -}}
+          <span class='fas fa-bars'></span> : <br>
+          {{- range $index, $element := .else -}}
+          {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+          {{- end }} <hr>
+          {{- end }}
+          {{- end -}}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {{ end }}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Which platforms, is the software available on. Orange borders mean unofficial release."><span class="fas fa-info small"></span></a>
+          </span>
+          </div>
+          </div>
+          <p class="card-text mt-3">
+          {{ if .Params.platform }}
+          {{ range .Params.platform }}
+                  {{ if .dskp }}
+
+                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
+                  {{- range .dskp -}}
+                  {{ if eq .name "Linux" }}
+                  {{- if eq .type "official" -}}
+                  <span class='fab fa-linux fa-2x'></span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='fab fa-linux fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- else if eq .name "Windows" }}
+                  {{- if eq .type "official" -}}
+                  <span class='fab fa-windows fa-2x'></span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='fab fa-windows fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- else if eq .name "macOS" }}
+                  {{- if eq .type "official" -}}
+                  <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                  {{- else }}
+                  <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- else }}
+                  {{- if eq .type "official" -}}
+                  <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- end }}
+                  {{- end -}}
+                  "><span class="fas fa-desktop text-clr2"></span></a>
+
+                  {{- else if .smp }} 
+
+                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
+                  {{- range .smp -}}
+                  {{ if eq .name "Android" }}
+                  {{- if eq .type "official" -}}
+                  <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- else if eq .name "iOS" }}
+                  {{- if eq .type "official" -}}
+                  <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- else }}
+                  {{- if eq .type "official" -}}
+                  <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- end }}
+                  {{- end -}}
+                  "><span class="fas fa-mobile-alt text-clr2"></span></a>          
+
+                  {{- else if .tab }} 
+
+                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+                  {{- range .tab -}}
+                  {{ if eq .name "Android" }}
+                  {{- if eq .type "official" }}
+                  <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- else if eq .name "iOS" }}
+                  {{- if eq .type "official" -}}
+                  <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- else }}
+                  {{- if eq .type "official" -}}
+                  <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- end }}
+                  {{- end -}}
+                  "><span class="fas fa-tablet-alt text-clr2"></span></a>
+
+                  {{- else }} 
+
+                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
+                  {{- range .else -}}
+                  {{ if eq .type "official" -}}
+                  <span class='badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+                  {{- else -}}
+                  <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+                  {{- end }}
+                  {{- end -}}
+                  "><span class="fas fa-bars text-clr2"></span></a>
+
+                  {{- end }}
+          {{ end }}
+          
+          {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+          {{ end }}
+          </p>
+        </div>
+      </div>
+      <!-- #16 Social -->
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+          <div class="col">
+          <span class="anchor" id="social"></span>
+          <h2 class="card-title h4 m-0">Social</h2>
+          </div>
+          <div class="col-auto">
+          <span class="float-right">
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Social presence across the internet."><span class="fas fa-info small"></span></a>
+          </span>
+          </div>
+          </div>
+          <p class="card-text mt-3">
+            {{ if .Params.social }}
+            {{/* We will be using .Scratch here, as there is involved rewriting of variables multiple times */}}
+            {{ $scratch := newScratch }}
+            {{ range $index, $element := .Params.social }}
+            
+            {{- if eq $element.name "Wikipedia" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-wikipedia-w fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Youtube" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-youtube fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Facebook" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-facebook fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Twitter" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-twitter fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Pinterest" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-pinterest fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Instagram" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-instagram fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "LinkedIn" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-linkedin fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "VK" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-vk fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "DeviantArt" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-deviantart fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Google+" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-google-plus fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "reddit" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-reddit fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Flickr" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-flickr fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "mastodon" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-mastodon fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "GitHub" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-github fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Steam" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-steam fa-2x"></span></a>`) "") -}}
+            {{- else if eq $element.name "Bandcamp" -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-bandcamp fa-2x"></span></a>`) "") -}}
+            {{- else -}}
+            {{- $scratch.Set "social_item" (delimit (slice `<a class="border p-1" href="` $element.url `"><span>` $element.name `</span></a>`) "") -}}
+            {{- end -}}
+            
+            {{ if $index }}&nbsp;{{ end }}{{ $scratch.Get "social_item" }}
+            
+            {{ end }} <!-- end range -->
+            {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+            {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-clr1-light py-3">
+  <div class="row">
+    <div class="col-md-8">
+      <!-- #8 System Requirements -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+          <div class="col">
+          <span class="anchor" id="sysreq"></span>
+          <h2 class="card-title h4 m-0">System Requirements</h2>
+          </div>
+          <div class="col-auto">
+          <span class="float-right">
+          
+          {{ if .Params.source.sysreq -}}
+          
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+          {{- range $index, $element := .Params.source.sysreq -}}
+          {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+          {{- end -}}
+          "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          
+          {{- end }}
+          
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="System configuration you should have to run the software peacefully."><span class="fas fa-info small"></span></a>
+          </span>
+          </div>
+          </div>
+          <div class="card-text mt-3">
+            {{ if (or (or $minimum $recommended) $optimal) }}
+            <div class="table-responsive-md">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    {{ if $minimum }}
+                    <th scope="col">Minimum</th>
+                    {{ end }}
+                    {{ if $recommended }}
+                    <th scope="col">Recommended</th>
+                    {{ end }}
+                    {{ if $optimal }}
+                    <th scope="col">Optimal</th>
+                    {{ end }}
+                  </tr>
+                </thead>
+                <tbody>
+                  {{ range $index, $element := .Params.sysreq }}
+                  <tr>
+                    <th scope="row">{{ add $index 1 }}</th>
+                    {{ if $minimum }}
+                    <td>
+                      {{ if $element.min }}
+                      {{ $element.min }}
+                      {{ end }}
+                    </td>
+                    {{ end }}
+                    {{ if $recommended }}
+                    <td>
+                      {{ if $element.recm }}
+                      {{ $element.recm }}
+                      {{ end }}
+                    </td>
+                    {{ end }}
+                    {{ if $optimal }}
+                    <td>
+                      {{ if $element.optm }}
+                      {{ $element.optm }}
+                      {{ end }}
+                    </td>
+                    {{ end }}
+                  </tr>
+                  {{ end }}
+                </tbody>
+              </table>
+            </div>
+            <!-- /table-responsive -->
+            {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+            {{ end }}
+          </div>
+          <!-- /card-text -->
+        </div>
+        <!-- /card-body -->
+      </div>
+      <!-- /card -->
+    </div>
+    <!-- /col-md-8 -->
+    <div class="col-md-4">
+      <!-- #18 Rating -->
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+          <div class="col">
+          <span class="anchor" id="rating"></span>
+          <h2 class="card-title h4 m-0">Ratings</h2>
+          </div>
+          <div class="col-auto">
+          <span class="float-right">
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers."><span class="fas fa-info small"></span></a>
+          </span>
+          </div>
+          </div>
+          <p class="card-text mt-3">
+          {{ if .Params.rating }}
+          {{ range $index, $rt := .Params.rating }}
+          
+          <!-- in case it isn't last forloop, break line after each rating -->
+          {{ if $index }}<br>{{ end }}
+          
+          <div>
+          {{ $rt.name }}: {{ index $rt.rate 0 }}/{{ index $rt.rate 1 }}
+          {{ if $rt.num }} &nbsp;<span class="text-muted">based on {{ $rt.num }} reviews</span>{{ else }} &nbsp;<span class="text-muted">based on professional's opinion</span>{{ end }}
+          <span class="float-right">
+          {{ range .Params.source.rating }}
+          <!-- check whether 0th element of array which is name of reviewer is same as the concerned rating's reviewer -->
+          {{ if eq .name $rt.name }}
+          <!-- whether the review is based on a number of user opinions --> 
+          {{ if $rt.num }}
+          <!-- check whether the array of 'src_rating' has 2nd element "user", which corresponds to "based on a number of users' opinion" -->
+          {{ if eq .type "user" }}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ .url }}'>{{ .url }}</a>"><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {{ end }}
+          <!-- in case rating is based on a professsional's opinion -->
+          {{ else }}
+          {{ if eq .type "expert" }}
+          <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ .url }}'>{{ .url }}</a>"><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          </span>
+          </div>
+           
+          {{ end }}
+          {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+          {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /col-md-4 -->
+  </div>
+  <!-- /row -->
+</div>
+<div class="container-fluid bg-clr1-light pb-3">
+  
+  <div class="card-deck mb-3">
+    <!-- #9 Developer -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+        <div class="col">
+        <span class="anchor" id="developer"></span>
+        <h2 class="card-title h4 m-0">Developer</h2>
+        </div>
+        <div class="col-auto">
+        <span class="float-right">
+        {{ if .Params.source.developer }}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+        {{- range $index, $element := .Params.source.developer -}}
+        {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+        {{- end -}}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+        {{ end }}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Get to know who developed the software."><span class="fas fa-info small"></span></a>
+        </span>
+        </div>
+        </div>
+        <p class="card-text mt-3">
+        {{ if .Params.developer }}
+        {{ range $index, $element := .Params.developer }}
+        {{ if $index }}, {{ end }}{{ replace (replace $element `<OD>` `<abbr title="Original Developer">(OD)</abbr>`) `<BDFL>` `<abbr title="Benevolent Dictator For Life">(BDFL)</abbr>` | safeHTML }}
+        {{ end }}
+        {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+        {{ end }}
+        </p>
+      </div>
+    </div>
+    <!-- #12 Written In -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+        <div class="col">
+        <span class="anchor" id="written_in"></span>
+        <h2 class="card-title h4 m-0">Written in</h2>
+        </div>
+        <div class="col-auto">
+        <span class="float-right">
+        {{ if .Params.source.written_in }}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+        {{- range $index, $element := .Params.source.written_in -}}
+        {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+        {{- end -}}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+        {{ end }}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), the software is written in."><span class="fas fa-info small"></span></a>
+        </span>
+        </div>
+        </div>
+        <p class="card-text mt-3">
+        {{ if .Params.written_in }}
+        {{ range $index, $element := .Params.written_in }}
+        {{ if $index }}, {{ end }}{{ $element }}
+        {{ end }}
+        {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+        {{ end }}
+        </p>
+      </div>
+    </div>
+    <!-- #10 Initial Release -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+        <div class="col">
+        <span class="anchor" id="initial_release"></span>
+        <h2 class="card-title h4 m-0">Initial Release</h2>
+        </div>
+        <div class="col-auto">
+        <span class="float-right">
+        {{ if .Params.source.initial_release }}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+        {{- range $index, $element := .Params.source.initial_release -}}
+        {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+        {{- end -}}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+        {{ end }}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released. Elder the software, more trustworthy it is."><span class="fas fa-info small"></span></a>
+        </span>
+        </div>
+        </div>
+        <p class="card-text mt-3">
+        {{ if .Params.initial_release }}
+        {{ range $index, $element := .Params.initial_release }}
+        {{ if $index }}, {{ end }}{{ $element }}
+        {{ end }}
+        {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+        {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card-deck mb-3">
+    <!-- #11 Repository -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+        <div class="col">
+        <span class="anchor" id="repository"></span>
+        <h2 class="card-title h4 m-0">Repository</h2>
+        </div>
+        <div class="col-auto">
+        <span class="float-right">
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Where you can find source code of the software. Have a look!"><span class="fas fa-info small"></span></a>
+        </span>
+        </div>
+        </div>
+        <p class="card-text mt-3">
+        {{ if .Params.repository }}
+        {{ range $index, $element := .Params.repository }}
+        {{ if $index }}, {{ end }}<a href="{{ $element }}">{{ $element }}</a>
+        {{ end }}
+        {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+        {{ end }}
+        </p>
+      </div>
+    </div>
+    <!-- #15 License -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+        <div class="col">
+        <span class="anchor" id="license"></span>
+        <h2 class="card-title h4 m-0">License</h2>
+        </div>
+        <div class="col-auto">
+        <span class="float-right">
+        {{ if .Params.source.license }}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+        {{- range $index, $element := .Params.source.license -}}
+        {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+        {{- end -}}
+        "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+        {{ end }}
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="fas fa-info small"></span></a>
+        </span>
+        </div>
+        </div>
+        <p class="card-text mt-3">
+        {{ if .Params.license }}
+        {{ range $index, $element := .Params.license }}
+        {{ if $index }}, {{ end }}<span{{ if in $element "(m)" }} title="{{ $element }} modified"{{ end }}>{{ $element }}</span>
+        {{ end }}
+        {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+        {{ end }}
+        </p>
+      </div>
+    </div>
+    <!-- #14 Categories -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+        <div class="col">
+        <span class="anchor" id="categories"></span>
+        <h2 class="card-title h4 m-0">Categories</h2>
+        </div>
+        <div class="col-auto">
+        <span class="float-right">
+        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="What type of software it is. Helps you with classification."><span class="fas fa-info small"></span></a>
+        </span>
+        </div>
+        </div>
+        <p class="card-text mt-3">
+        {{/* if page.categories }}
+        {{ for category in page.categories }}
+        <a href="/search/?category={{ category | replace: " ", "_" | downcase }}">{{ category }}</a>{{ unless forloop.last }}, {{ endunless }}
+        {{ endfor }}
+        {{ else }}Not available, but hey, you could <a href="#contribute">help</a>!
+        {{ endif */}}
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- You may try -->
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title h4 m-0">You may try</h2>
+      <!-- We won't be showing softwares that are covered under "Framework" category -->
+      <p class="card-text mt-3">
+        {{ range $category := .Params.categories }}
+        {{ if ne $category "Framework" }}
+        <span class="h6">{{ $category }}</span><br>
+        {{ range where site.RegularPages "Section" "==" "software" }}
+        {{ if in .Params.categories $category }}
+        <a class="btn btn-sm btn-light shadow-sm my-2" href="{{ .Params.url }}">{{ .Params.title }}</a> 
+        {{ end }}
+        {{ end }}
+        <br><br>
+        {{ end }}
+        {{ end }}
+      </p>
+    </div>
+  </div>
+  
+  {{ if .Params.note }}
+  <hr>
+  <!-- Notes -->
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title h4 m-0">Notes</h2>
+      <div class="card-text mt-3">
+        {{ .Params.note | markdownify }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  
+  <br>
+  
+  <p class="bg-nav text-antinav text-center small p-2">Disclaimer: Software name, software logo and any related marks are property of their respective owners. Use of software name, software logo and any related marks here does not imply endorsement of the organization or software by invirds, nor vice versa.</p>
+
+</div>
+
+{{ end }}

@@ -1,16 +1,12 @@
-image: ruby:2.6.0
+# All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
+image: registry.gitlab.com/pages/hugo:latest
 
 variables:
-  JEKYLL_ENV: production
-  LC_ALL: C.UTF-8
-
-before_script:
-  - bundle install
+  GIT_SUBMODULE_STRATEGY: recursive
 
 test:
-  stage: test
   script:
-  - bundle exec jekyll build -d test
+  - hugo
   artifacts:
     paths:
     - test
@@ -18,9 +14,9 @@ test:
   - master
 
 pages:
-  stage: deploy
   script:
-  - bundle exec jekyll build -d public
+  - npm install postcss-cli postcss-uncss uncss
+  - hugo --minify
   - gzip -k -6 -r public
   artifacts:
     paths:
