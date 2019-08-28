@@ -26,7 +26,7 @@
           Code licensed under <b><a class="text-antinav text-reset" href="LICENSE">Apache license 2.0</a></b>. Unless otherwise noted, content licensed under <b><a class="text-antinav text-reset" href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0 license</a></b>.
           
           <p class="small">
-            Site last generated: {{ now }}
+            Site last generated: {{ now.Format "2 January, 2006" }}
             <br>
             Commit: <a href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Hash }}<a>
           </p>
