@@ -12,4 +12,4 @@ taxonomies:
   category: categories
 
 enableRobotsTXT: true
-enableGitInfo: true
+# enableGitInfo: true
