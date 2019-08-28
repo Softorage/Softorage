@@ -5,6 +5,7 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 test:
+  stage: test
   script:
   - hugo
   artifacts:
@@ -15,9 +16,10 @@ test:
 
 #  - npm install postcss-cli postcss-uncss uncss
 pages:
+  stage: deploy
   script:
   - hugo --minify
-  - gzip -k -9 public
+  - gzip -k -9 -r public
   artifacts:
     paths:
     - public
