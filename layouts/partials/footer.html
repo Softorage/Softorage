@@ -2,7 +2,7 @@
 
   <div class="container bg-nav text-center p-2">
   
-    <a href="https://gitlab.com/invirds/invirds.gitlab.io"><span class="fab fa-gitlab fa-2x"></span></a>
+    <a href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io"><span class="fab fa-gitlab fa-2x"></span></a>
   
   </div>
   
@@ -12,7 +12,7 @@
     
       <div class="col-md-7">
       
-        <span class="tg" style="font-size:3.5rem;"><a class="text-decoration-none" href="{{ site.BaseURL }}">invirds</a></span>
+        <span class="tg" style="font-size:3.5rem;"><a class="text-decoration-none" href="{{ site.BaseURL }}">{{ site.Title }}</a></span>
         <p class="lead text-antinav">Integrated Virtual Database of Softwares</p>
         
       </div>
@@ -21,16 +21,16 @@
       
         <p>
         
-          Copyright &#169; 2018 invirds
+          Copyright &#169; 2018 {{ site.Title }}
           <br>
           Code licensed under <b><a class="text-antinav text-reset" href="LICENSE">Apache license 2.0</a></b>. Unless otherwise noted, content licensed under <b><a class="text-antinav text-reset" href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0 license</a></b>.
-          {{/* git has to be initiated for access to .GitInfo object
+          
           <p class="small">
             Site last generated: {{ now }}
             <br>
-            Commit: <a href="https://gitlab.com/invirds/invirds.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Hash }}<a>
+            Commit: <a href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Hash }}<a>
           </p>
-          */}}
+          
         
         </p>
       

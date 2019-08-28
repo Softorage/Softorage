@@ -1,9 +1,9 @@
-baseURL: "https://invirds.gitlab.io/"
+baseURL: "https://softorage.gitlab.io/"
 languageCode: "en-us"
-title: "invirds"
+title: "Softorage"
 params:
   description:
-  author: invirds team
+  author: Softorage team
   # tagline: # required in SEO template (partial/seo.html)
   # twitter: # required in SEO template (partial/seo.html)
   # image: # resolution 200px x 200px to 1200px x 1200px
@@ -12,4 +12,4 @@ taxonomies:
   category: categories
 
 enableRobotsTXT: true
-# enableGitInfo: true
+enableGitInfo: true

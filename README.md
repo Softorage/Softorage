@@ -1,6 +1,6 @@
-# invirds
+# Softorage
 
-Open Database of Useful Softwares  
+Open Directory of Softwares  
 Innovatively arranged, deeply searchable and convenient to use  
 Objective presentation of information makes software comparison a breeze  
   
@@ -18,7 +18,7 @@ You can get a copy of project up and running on your local machine for developem
 * [__JQuery__](https://jquery.com/)
 * [__Hugo__](https://gohugo.io/)
 * [__Font Awesome__](https://fontawesome.com/)
-* [__ASTi__](https://gitlab.com/invirds/asti)
+* [__SAW__](https://gitlab.com/Softorage/saw)
 <!-- * UnCSS or CriticalCSS : yet to be implemented -->
 <!-- * loadCSS : yet to be implemented -->
 
@@ -31,7 +31,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## License
 
 ```
-   Copyright 2018 invirds
+   Copyright 2018 Softorage
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
