@@ -342,10 +342,11 @@ $(window).scroll(function() {
 });
 ` -}}
 
-{{- $js_softlistjs := $script | resources.FromString "js/softlist.js" | minify -}}
+{{- $js_softlistjs := $script | resources.FromString "assets/js/softlist.js" | minify -}}
 
-{{- $js_listjs.Content | safeHTML }}
-{{ $js_softlistjs.Content | safeHTML -}}
+{{- $js_listjs.Content | safeJS }}
+
+{{ $js_softlistjs.Content | safeJS -}}
 
 {{/*
 
