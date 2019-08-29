@@ -1,4 +1,4 @@
-{{ define "main" }}
+{{ define "main" -}}
 <div class="container-fluid bg-clr1-light text-clr1 text-center py-3 position-relative shadow-sm">
   
   <div style="height:3.5rem;"></div>
@@ -23,18 +23,16 @@
         <br><br>
         <div class="form-group list">
           
-          
           {{/* range $key, $value := site.Taxonomies.categories }}
-	  <li><a href="{{ $baseurl }}categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
-	  {{ end */}}
+          <li><a href="{{ $baseurl }}categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
+          {{ end */}}
           
-          
-          {{- range $key, $value := site.Taxonomies.categories }}
+          {{- range $key, $value := site.Taxonomies.categories -}}
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="{{ lower (replace $key " " "_") }}">
             <label class="form-check-label" for="{{ lower (replace $key " " "_") }}"> <span class="category-filter">{{ $key }}</span></label>
           </div>
-          {{ end }}
+          {{- end -}}
         </div>
       </div>
       <div class="modal-footer">
@@ -72,27 +70,27 @@
               </tr>
             </thead>
             <tbody class="list">
-              {{ range $index, $element := where site.RegularPages "Section" "==" "software" }}
+              {{- range $index, $element := where site.RegularPages "Section" "==" "software" -}}
               <tr>
                 <th scope="row">{{ add $index 1 }}</th>
                 <td><a class="font-weight-bold text-antinav text-reset" href="{{ $element.Permalink }}" target="_blank"><span class="name">{{ $element.Title }}</span></a>&nbsp;<span class="fas fa-external-link-alt small"></span></td>
                 <td>
-                  {{ if $element.Params.description }}
+                  {{- if $element.Params.description -}}
                   <span class="description">{{ $element.Params.description }}</span>
-                  {{ else }}
+                  {{- else -}}
                   <p>Not available</p>
-                  {{ end }}
+                  {{- end -}}
                   <br>
                   <div class="bg-clr2-light text-clr2 py-1 px-2 text-center rounded shadow-sm category">
-                    {{- range $i, $e := $element.Params.categories -}}
-                    {{ if $i }} | {{ end}}{{ $e }}
+                    {{- range $i, $e := $element.Params.categories }}
+                    {{- if $i }} | {{ end}}{{ $e }}
                     {{- end -}}
                   </div>
                 </td>
                 <td>
-                  {{ range $element.Params.platform }}
-                  {{ if .dskp }}
-
+                  {{- range $element.Params.platform }}
+                  {{- if .dskp -}}
+                  
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
                   {{- range .dskp -}}
                   {{ if eq .name "Linux" }}
@@ -122,9 +120,9 @@
                   {{- end }}
                   {{- end -}}
                   "><span class="fas fa-desktop text-clr2"></span></a>
-
-                  {{- else if .smp }} 
-
+                  
+                  {{- else if .smp -}} 
+                  
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
                   {{- range .smp -}}
                   {{ if eq .name "Android" }}
@@ -148,9 +146,9 @@
                   {{- end }}
                   {{- end -}}
                   "><span class="fas fa-mobile-alt text-clr2"></span></a>          
-
-                  {{- else if .tab }} 
-
+                  
+                  {{- else if .tab -}} 
+                  
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
                   {{- range .tab -}}
                   {{ if eq .name "Android" }}
@@ -174,9 +172,9 @@
                   {{- end }}
                   {{- end -}}
                   "><span class="fas fa-tablet-alt text-clr2"></span></a>
-
-                  {{- else }} 
-
+                  
+                  {{- else -}} 
+                  
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
                   {{- range .else -}}
                   {{ if eq .type "official" -}}
@@ -186,12 +184,12 @@
                   {{- end }}
                   {{- end -}}
                   "><span class="fas fa-bars text-clr2"></span></a>
-
+                  
                   {{- end }}
-                  {{ end }}
+                  {{- end -}}
                 </td>
               </tr>
-              {{ end }}
+              {{- end -}}
             </tbody>
           </table>
         </div>
@@ -200,11 +198,11 @@
   </div>
 </div>
 <!-- "main" block end -->
-{{ end }}
-{{ define "script" }}
+{{- end }}
+{{- define "script" -}}
 
 <!-- List.js JavaScript file -->
-{{- $js_listjs := resources.Get "js/list.js" | minify -}}
+{{- $js_listjs := resources.Get "js/list.min.js" }}
 
 {{- $script := `
 /* https://html-online.com/articles/get-url-parameters-javascript/ */
@@ -340,9 +338,9 @@ $(window).scroll(function() {
     $(".menu").removeClass("shadow stick").addClass("shadow-sm");
   }  
 });
-` -}}
+` }}
 
-{{- $js_softlistjs := $script | resources.FromString "assets/js/softlist.js" | minify -}}
+{{- $js_softlistjs := $script | resources.FromString "assets/js/softlist.js" | minify }}
 
 {{- $js_listjs.Content | safeJS }}
 
@@ -357,4 +355,4 @@ $(window).scroll(function() {
 <script src="data:text/javascript;base64,dmFyIHN0aWNreU1lbnU9JCgiLm1lbnUiKS5vZmZzZXQoKS50b3A7JCh3aW5kb3cpLnNjcm9sbChmdW5jdGlvbigpeyQod2luZG93KS5zY3JvbGxUb3AoKT5zdGlja3lNZW51LTU2PyQoIi5tZW51IikucmVtb3ZlQ2xhc3MoInNoYWRvdy1zbSIpLmFkZENsYXNzKCJzaGFkb3cgc3RpY2siKTokKCIubWVudSIpLnJlbW92ZUNsYXNzKCJzaGFkb3cgc3RpY2siKS5hZGRDbGFzcygic2hhZG93LXNtIil9KTs=" defer></script>
 */}}
 
-{{ end }}
+{{- end }}
