@@ -11,6 +11,8 @@ test:
   artifacts:
     paths:
     - test
+    - public
+    - resources
   except:
   - master
 
@@ -33,5 +35,6 @@ pages:
   artifacts:
     paths:
     - public
+    - resources
   only:
   - master
