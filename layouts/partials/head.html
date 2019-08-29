@@ -12,7 +12,7 @@
   <!-- resources.Get creates a new resource object based on a path to a file in the /assets directory. Then, we use resources.ExecuteAsTemplate with the resource type prepended to the name of the file. The dot (.) passes the context. -->
   {{ $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS | minify | fingerprint }}
   <!-- Minified Aggregated CSS -->
-  <link rel="stylesheet" integrity="{{ $css.Data.Integrity }}" href="{{ $css.Permalink }}">
+  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
   
   {{/* RSS Feed */}}
   {{ range .AlternativeOutputFormats -}}
