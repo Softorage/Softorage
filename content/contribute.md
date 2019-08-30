@@ -27,7 +27,7 @@ We want to build a database that would contain every software that one can ever 
 
 ## Get involved
 
-invirds is a fully open source project. Every contribution matters. Join in, be part of the community and help create a software database that everyone would want to love.
+Softorage is a fully open source project. Every contribution matters. Join in, be part of the community and help create a software database that everyone would want to love.
 
 <a class="btn" href="/get-involved/"><span class="text-clr2">Learn more</span></a>
 

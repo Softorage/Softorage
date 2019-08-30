@@ -330,11 +330,10 @@ $(".filter-modal-body input[type='checkbox']").on("change", function() {
 /* */
 var stickyMenu = $(".menu").offset().top;
 
-$(window).scroll(function() {  
+$(window).on("scroll", function() {  
   if ($(window).scrollTop() > stickyMenu-56) {
     $(".menu").removeClass("shadow-sm").addClass("shadow stick");
-  }
-  else {
+  } else {
     $(".menu").removeClass("shadow stick").addClass("shadow-sm");
   }  
 });

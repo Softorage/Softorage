@@ -1,10 +1,15 @@
 # Softorage
 
-Open Directory of Softwares  
-Innovatively arranged, deeply searchable and convenient to use  
-Objective presentation of information makes software comparison a breeze  
+The one place for your software related information needs  
   
-_The project is a Work-In-Progress_
+https://softorage.gitlab.io
+
+### Features:
+* Open Directory of Softwares
+* Innovatively arranged, deeply searchable and convenient to use
+* Objective presentation of information makes software comparison a breeze
+  
+_The project is in beta phase (Work-In-Progress)_
 
 ```
 This project is primarily built with Hugo.

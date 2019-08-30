@@ -1,12 +1,12 @@
-baseURL: "https://softorage.gitlab.io/"
+baseURL: "https://softorage.com/"
 languageCode: "en-us"
 title: "Softorage"
 params:
-  description:
+  description: The one place for your software related information needs
   author: Softorage team
-  # tagline: # required in SEO template (partial/seo.html)
-  # twitter: # required in SEO template (partial/seo.html)
-  # image: # resolution 200px x 200px to 1200px x 1200px
+  tagline: You name it # recommended for SEO template (partial/seo.html)
+  # twitter: # recommended for SEO template (partial/seo.html)
+  # image: # favicon; resolution 200px x 200px to 1200px x 1200px
 
 taxonomies:
   category: categories
