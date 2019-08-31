@@ -2,7 +2,7 @@
 
 The one place for your software related information needs  
   
-https://softorage.gitlab.io
+https://softorage.com
 
 ### Features:
 * Open Directory of Softwares

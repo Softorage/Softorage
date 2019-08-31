@@ -90,11 +90,10 @@
       {{- end -}} 
       '>{{ .from }}</a> 
       {{- end -}}
-      "><span class="fas fa-arrow-alt-circle-down text-primary"></span>  <span class="text-primary">Get it</span></a>
+      "><span class="fas fa-arrow-alt-circle-down text-primary"></span>&nbsp; <span class="text-primary">Get it</span></a>
       {{- end -}}
-      &nbsp;&nbsp;
       {{- if .Params.website -}}
-      <a class="btn bg-nav my-2" href="{{ .Params.website }}" target="_blank"><span class="fas fa-globe text-primary"></span>  <span class="text-primary">Visit</span></a> <br>
+      &nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}" target="_blank"><span class="fas fa-globe text-primary"></span>&nbsp; <span class="text-primary">Visit</span></a> <br>
       {{- end -}}
       <div class="row my-2 p-2">
         <span class="fas fa-share-alt fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -188,103 +187,103 @@
           <p class="card-text mt-3">
           {{- if .Params.platform }}
           {{- range .Params.platform }}
-          {{- if .dskp -}}
-          
-          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
-          {{- range .dskp -}}
-          {{ if eq .name "Linux" }}
-          {{- if eq .type "official" -}}
-          <span class='fab fa-linux fa-2x'></span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='fab fa-linux fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {{- end }}
-          {{- else if eq .name "Windows" }}
-          {{- if eq .type "official" -}}
-          <span class='fab fa-windows fa-2x'></span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='fab fa-windows fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {{- end }}
-          {{- else if eq .name "macOS" }}
-          {{- if eq .type "official" -}}
-          <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
-          {{- else }}
-          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {{- end }}
-          {{- else }}
-          {{- if eq .type "official" -}}
-          <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-          {{- end }}
-          {{- end }}
-          {{- end -}}
-          "><span class="fas fa-desktop text-clr2"></span></a>
-          
-          {{- else if .smp -}} 
-          
-          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
-          {{- range .smp -}}
-          {{ if eq .name "Android" }}
-          {{- if eq .type "official" -}}
-          <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {{- end }}
-          {{- else if eq .name "iOS" }}
-          {{- if eq .type "official" -}}
-          <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {{- end }}
-          {{- else }}
-          {{- if eq .type "official" -}}
-          <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-          {{- end }}
-          {{- end }}
-          {{- end -}}
-          "><span class="fas fa-mobile-alt text-clr2"></span></a>          
-          
-          {{- else if .tab -}} 
-          
-          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
-          {{- range .tab -}}
-          {{ if eq .name "Android" }}
-          {{- if eq .type "official" }}
-          <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {{- end }}
-          {{- else if eq .name "iOS" }}
-          {{- if eq .type "official" -}}
-          <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
-          {{- end }}
-          {{- else }}
-          {{- if eq .type "official" -}}
-          <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-          {{- end }}
-          {{- end }}
-          {{- end -}}
-          "><span class="fas fa-tablet-alt text-clr2"></span></a>
-          
-          {{- else -}} 
-          
-          <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
-          {{- range .else -}}
-          {{ if eq .type "official" -}}
-          <span class='badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-          {{- else -}}
-          <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-          {{- end }}
-          {{- end -}}
-          "><span class="fas fa-bars text-clr2"></span></a>
-          
-          {{- end }}
+            {{- if .dskp -}}
+            
+            <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
+            {{- range .dskp -}}
+            {{ if eq .name "Linux" }}
+            {{- if eq .type "official" -}}
+            <span class='fab fa-linux fa-2x'></span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='fab fa-linux fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+            {{- end }}
+            {{- else if eq .name "Windows" }}
+            {{- if eq .type "official" -}}
+            <span class='fab fa-windows fa-2x'></span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='fab fa-windows fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+            {{- end }}
+            {{- else if eq .name "macOS" }}
+            {{- if eq .type "official" -}}
+            <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+            {{- else }}
+            <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+            {{- end }}
+            {{- else }}
+            {{- if eq .type "official" -}}
+            <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+            {{- end }}
+            {{- end }}
+            {{- end -}}
+            "><span class="fas fa-desktop text-clr2"></span></a>
+            
+            {{- else if .smp -}} 
+            
+            <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
+            {{- range .smp -}}
+            {{ if eq .name "Android" }}
+            {{- if eq .type "official" -}}
+            <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+            {{- end }}
+            {{- else if eq .name "iOS" }}
+            {{- if eq .type "official" -}}
+            <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+            {{- end }}
+            {{- else }}
+            {{- if eq .type "official" -}}
+            <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+            {{- end }}
+            {{- end }}
+            {{- end -}}
+            "><span class="fas fa-mobile-alt text-clr2"></span></a>          
+            
+            {{- else if .tab -}} 
+            
+            <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+            {{- range .tab -}}
+            {{ if eq .name "Android" }}
+            {{- if eq .type "official" }}
+            <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+            {{- end }}
+            {{- else if eq .name "iOS" }}
+            {{- if eq .type "official" -}}
+            <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+            {{- end }}
+            {{- else }}
+            {{- if eq .type "official" -}}
+            <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+            {{- end }}
+            {{- end }}
+            {{- end -}}
+            "><span class="fas fa-tablet-alt text-clr2"></span></a>
+            
+            {{- else -}} 
+            
+            <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
+            {{- range .else -}}
+            {{ if eq .type "official" -}}
+            <span class='badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+            {{- else -}}
+            <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+            {{- end }}
+            {{- end -}}
+            "><span class="fas fa-bars text-clr2"></span></a>
+            
+            {{- end }}&nbsp;
           {{- end }}
           
           {{- else }}Not available, but hey, you could <a href="#contribute">help</a>!
