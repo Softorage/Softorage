@@ -200,8 +200,10 @@
 <!-- "main" block end -->
 {{- end }}
 {{- define "script" -}}
-
+{{/*
+Ensure that there is no non-JavaScript code in script block, otherwise errore might occur
 <!-- List.js JavaScript file -->
+*/}}
 {{- $js_listjs := resources.Get "js/list.min.js" }}
 
 {{- $script := `
@@ -339,19 +341,10 @@ $(window).on("scroll", function() {
 });
 ` }}
 
-{{- $js_softlistjs := $script | resources.FromString "assets/js/softlist.js" | minify }}
+{{- $js_softlistjs := $script | resources.FromString "js/softlist.js" | minify }}
 
 {{- $js_listjs.Content | safeJS }}
 
 {{ $js_softlistjs.Content | safeJS -}}
-
-{{/*
-
-{{ $js_softlistpage := slice $js_listjs $js_softlistjs | resources.Concat "js/softlistpage.js" | minify }}
-
-<script src="data:text/javascript;base64,ZnVuY3Rpb24gZ2V0VVJMVmFycygpe3ZhciBlPXt9O3dpbmRvdy5sb2NhdGlvbi5ocmVmLnJlcGxhY2UoL1s/Jl0rKFtePSZdKyk9KFteJl0qKS9naSxmdW5jdGlvbih0LHIsbyl7ZVtyXT1vfSk7cmV0dXJuIGV9dmFyIGNhdGVnb3J5U3RyRnJvbVVSTD1kZWNvZGVVUkkoZ2V0VVJMVmFycygpLmNhdGVnb3J5KS50b0xvd2VyQ2FzZSgpLnJlcGxhY2UoL1xzL2csIl8iKTtpZigidW5kZWZpbmVkIiE9Y2F0ZWdvcnlTdHJGcm9tVVJMJiYiIiE9Y2F0ZWdvcnlTdHJGcm9tVVJMKXt2YXIgY2F0ZWdvcnlBcnJGcm9tVVJMPWNhdGVnb3J5U3RyRnJvbVVSTC5zcGxpdCgiKyIpO2NvbnNvbGUubG9nKGNhdGVnb3J5QXJyRnJvbVVSTCl9QXJyYXkucHJvdG90eXBlLmV4dGVuZD1mdW5jdGlvbihlKXtBcnJheS5pc0FycmF5KGUpP2UuZm9yRWFjaChmdW5jdGlvbihlKXt0aGlzLnB1c2goZSl9LHRoaXMpOmNvbnNvbGUubG9nKCJQYXJhbWV0ZXIgb2YgZnVuY3Rpb24gaXMgbm90IGFuIGFycmF5LiBQbGVhc2UgZW5zdXJlIHRoYXQgeW91IGFyZSBwYXNzaW5nIGEgdmFsaWQgYXJyYXkgYXMgYSBgcGFyYW1ldGVyYCBpbnRvIEFycmF5LmV4dGVuZChwYXJhbWV0ZXIpIil9O3ZhciBzb2Z0d2FyZUxpc3RPcHRpb25zPXt2YWx1ZU5hbWVzOlsibmFtZSIsImluZm8iLCJjYXRlZ29yeSJdfSxmaWx0ZXJMaXN0T3B0aW9ucz17dmFsdWVOYW1lczpbImNhdGVnb3J5LWZpbHRlciJdfSxzb2Z0d2FyZUxpc3Q9bmV3IExpc3QoInNvZnR3YXJlLWxpc3QiLHNvZnR3YXJlTGlzdE9wdGlvbnMpLGZpbHRlckxpc3Q9bmV3IExpc3QoImZpbHRlci1saXN0IixmaWx0ZXJMaXN0T3B0aW9ucyksc2VsZWN0aW9uPVtdO2Z1bmN0aW9uIGZpbHRlclNvZnR3YXJlTGlzdCgpe3NvZnR3YXJlTGlzdC5maWx0ZXIoZnVuY3Rpb24oZSl7aWYoMD09c2VsZWN0aW9uLmxlbmd0aClyZXR1cm4hMDtmb3IodmFyIHQ9ZS52YWx1ZXMoKS5jYXRlZ29yeS50b0xvd2VyQ2FzZSgpLnJlcGxhY2UoL1xzL2csIl8iKS5zcGxpdCgiX3xfIikscj0wO3I8dC5sZW5ndGg7cisrKWZvcih2YXIgbz0wO288c2VsZWN0aW9uLmxlbmd0aDtvKyspaWYodFtyXT09c2VsZWN0aW9uW29dKXJldHVybiEwO3JldHVybiExfSl9Y2F0ZWdvcnlBcnJGcm9tVVJMJiZzZWxlY3Rpb24uZXh0ZW5kKGNhdGVnb3J5QXJyRnJvbVVSTCksJCgiI2ZpbHRlci1tb2RhbCAubGlzdCBpbnB1dC5mb3JtLWNoZWNrLWlucHV0IikuZWFjaChmdW5jdGlvbigpe2Zvcih2YXIgZT0wO2U8c2VsZWN0aW9uLmxlbmd0aDtlKyspaWYoJCh0aGlzKS5hdHRyKCJpZCIpPT1zZWxlY3Rpb25bZV0pcmV0dXJuICQodGhpcykuYXR0cigiY2hlY2tlZCIsIiIpLCEwfSksZmlsdGVyU29mdHdhcmVMaXN0KCksJCgiLmZpbHRlci1tb2RhbC1ib2R5IGlucHV0W3R5cGU9J2NoZWNrYm94J10iKS5vbigiY2hhbmdlIixmdW5jdGlvbigpe2lmKCQodGhpcykuaXMoIjpjaGVja2VkIikpc2VsZWN0aW9uLnB1c2goJCh0aGlzKS5hdHRyKCJpZCIpLnRvTG93ZXJDYXNlKCkucmVwbGFjZSgvXHMvZywiXyIpKTtlbHNle3ZhciBlPXNlbGVjdGlvbi5pbmRleE9mKCQodGhpcykuYXR0cigiaWQiKS50b0xvd2VyQ2FzZSgpLnJlcGxhY2UoL1xzL2csIl8iKSk7c2VsZWN0aW9uLnNwbGljZShlLDEpfXJldHVybiBmaWx0ZXJTb2Z0d2FyZUxpc3QoKSwhMX0pOw" defer></script>
-
-<script src="data:text/javascript;base64,dmFyIHN0aWNreU1lbnU9JCgiLm1lbnUiKS5vZmZzZXQoKS50b3A7JCh3aW5kb3cpLnNjcm9sbChmdW5jdGlvbigpeyQod2luZG93KS5zY3JvbGxUb3AoKT5zdGlja3lNZW51LTU2PyQoIi5tZW51IikucmVtb3ZlQ2xhc3MoInNoYWRvdy1zbSIpLmFkZENsYXNzKCJzaGFkb3cgc3RpY2siKTokKCIubWVudSIpLnJlbW92ZUNsYXNzKCJzaGFkb3cgc3RpY2siKS5hZGRDbGFzcygic2hhZG93LXNtIil9KTs=" defer></script>
-*/}}
 
 {{- end }}

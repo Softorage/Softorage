@@ -16,7 +16,7 @@ test:
   except:
   - master
 
-#  - npm install postcss-cli postcss-uncss uncss
+#  - npm install postcss-cli autoprefixer uncss postcss-uncss cssnano
 #
 # https://webd97.de/post/gitlab-pages-compression/
 # BeginQuote

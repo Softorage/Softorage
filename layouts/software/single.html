@@ -673,7 +673,7 @@
         <p class="card-text mt-3">
         {{- if .Params.categories }}
         {{- range $i, $e := .Params.categories }}
-        {{- if $i }},  {{ end }}<a href="/search/?category={{ lower (replace $e " " "_") }}">{{ $e }}</a>
+        {{- if $i }},  {{ end }}<a href="/software/?category={{ lower (replace $e " " "_") }}">{{ $e }}</a>
         {{- end -}}
         {{- else -}}
         Not available, but hey, you could <a href="#contribute">help</a>!
