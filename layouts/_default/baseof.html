@@ -6,12 +6,14 @@
   <!-- as navbar has `position: fixed`, there shall be inserted a `div` with height of navbar(3.5rem) in every file that uses this (default) layout, otherwise navbar overlaps content -->
   <body>
     
-    {{ partialCached "header.html" . }}
+    {{ partial "header.html" . }}
+    
+    <noscript>Softorage may not work at its best if JavaScript is disabled.</noscript>
     
     {{ block "main" . }}
     {{ end }}
 
-    {{ partialCached "footer.html" . }}
+    {{ partial "footer.html" . }}
     {{/* use tag partialCached for footer and for such elements which are common for all pages like header but not head, once the jekyll-include-cache plugin is activated */}}
     
     <!-- SCRIPTS -->

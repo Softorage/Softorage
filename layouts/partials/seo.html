@@ -1,5 +1,7 @@
 <!-- SEO template changes; source: https://digitalonlinetactics.com/post/blogging/hugo-seo-tips/ -->
-<title>{{ .Title | default site.Title }}
+<title>
+{{- if and (eq .Section "software") .IsPage }}View and download {{ end -}}
+{{ .Title | default site.Title }}
 {{- if not .IsHome }} | {{ site.Title }}{{ end -}}
 </title>
 
