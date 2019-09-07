@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {{ partial "head.html" . }}
-
   <!-- as navbar has `position: fixed`, there shall be inserted a `div` with height of navbar(3.5rem) in every file that uses this (default) layout, otherwise navbar overlaps content -->
   <body>
-    
     {{ partial "header.html" . }}
-    
     <noscript>Softorage may not work at its best if JavaScript is disabled.</noscript>
-    
     {{ block "main" . }}
     {{ end }}
-
     {{ partial "footer.html" . }}
     {{/* use tag partialCached for footer and for such elements which are common for all pages like header but not head, once the jekyll-include-cache plugin is activated */}}
-    
     <!-- SCRIPTS -->
     {{/* util.js must come first; tooltip.js is a dependency for popover.js; index.js shall come at last; others may follow any order */}}
     {{ $js_twbs := slice (resources.Get "js/bootstrap/util.js") (resources.Get "js/bootstrap/alert.js") (resources.Get "js/bootstrap/collapse.js") (resources.Get "js/bootstrap/button.js") (resources.Get "js/bootstrap/tooltip.js") (resources.Get "js/bootstrap/popover.js") (resources.Get "js/bootstrap/modal.js") (resources.Get "js/bootstrap/index.js") | resources.Concat "js/bootstrap.slim.js" }}
@@ -24,31 +17,29 @@
     {{- $js := slice $js_jquery $js_popperjs $js_twbs | resources.Concat "assets/js/main.js" | minify | fingerprint }}
     <!-- Combined JavaScript file -->
     <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
-<!-- 
-Unminified JS to turn navbar solid on scroll
-
-$(function() {
-  /* Transition effect for navbar */
-  $(window).scroll(function() {
-    /* checks if window is scrolled more than 30px, adds/removes bg-white and shadow class */
-    if ($(this).scrollTop() > 30) {
-      $(".navbar").addClass("bg-nav shadow");
-    } else {
-      $(".navbar").removeClass("bg-nav shadow");
-    }
-  });
-  
-  /* initialize popovers, used in navbar */
-  $("[data-toggle='popover']").popover();
-});
-
- -->
+    <!-- 
+    Unminified JS to turn navbar solid on scroll
+    
+    $(function() {
+      /* Transition effect for navbar */
+      $(window).scroll(function() {
+        /* checks if window is scrolled more than 30px, adds/removes bg-white and shadow class */
+        if ($(this).scrollTop() > 30) {
+          $(".navbar").addClass("bg-nav shadow");
+        } else {
+          $(".navbar").removeClass("bg-nav shadow");
+        }
+      });
+      
+      /* initialize popovers, used in navbar */
+      $("[data-toggle='popover']").popover();
+    });
+    
+    -->
     <script>$(function(){$(window).scroll(function(){$(this).scrollTop()>30?$(".navbar").addClass("bg-nav shadow"):$(".navbar").removeClass("bg-nav shadow")}),$("[data-toggle='popover']").popover()});</script>
     <script>
-    {{- block "script" . }}
-    {{- end -}}
+      {{- block "script" . }}
+      {{- end -}}
     </script>
-
   </body>
-
 </html>
