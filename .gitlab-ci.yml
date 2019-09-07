@@ -7,11 +7,10 @@ variables:
 test:
   stage: test
   script:
-  - hugo
+  - hugo --destination ./test
   artifacts:
     paths:
     - test
-    - public
     - resources
   except:
   - master
