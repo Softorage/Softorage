@@ -1,13 +1,12 @@
 # Softorage
 
-The one place for your software related information needs  
-  
-https://softorage.com
+The one place for authentic downloads and all your software related information needs  
 
-### Features:
-* Open Directory of Softwares
-* Innovatively arranged, deeply searchable and convenient to use
-* Objective presentation of information makes software comparison a breeze
+https://softorage.com
+___
+
+Softorage is the Open Software Directory, that is innovatively arranged, deeply searchable and convenient to use.
+Its objective representation of software related information makes software comparison a breeze.
   
 _The project is in beta phase (Work-In-Progress)_
 

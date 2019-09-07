@@ -1,7 +1,7 @@
-{{ define "main" }}
+{{ define "main" -}}
 
 <!-- Number of softwares in database -->
-{{ $soft_no := len (where site.RegularPages "Section" "==" "software") }}
+{{- $soft_no := len (where site.RegularPages "Section" "==" "software") -}}
 
 <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid text-center bg-nav d-flex shadow" style="height:100vh;">
@@ -11,7 +11,7 @@
     <p class="lead tg">{{ site.Params.tagline }}</p>
     <hr class="my-4">
     <p class="lead">
-      <a class="btn btn-lg bg-clr1-light" href="/software/" role="button"><span class="fas fa-search text-clr1"></span>&nbsp; <span class="text-clr1">Search</span></a>&nbsp;<a class="btn btn-lg main-gradient-light" href="#its_open" role="button"><span class="fas fa-chevron-down text-clr1"></span>&nbsp; <span class="tg">Explore</span></a>&nbsp;<a class="btn btn-lg bg-clr2-light" href="/contribute/" role="button"><span class="fas fa-hands-helping text-clr2"></span>&nbsp; <span class="text-clr2">Contribute</span></a>
+      <a class="btn bg-clr1-light" href="/software/" role="button"><span class="fas fa-search text-clr1"></span>&nbsp; <span class="text-clr1">Search</span></a>&nbsp;<a class="btn main-gradient-light" href="#its_open" role="button"><span class="fas fa-chevron-down text-clr1"></span>&nbsp; <span class="tg">Explore</span></a>&nbsp;<a class="btn bg-clr2-light" href="/contribute/" role="button"><span class="fas fa-hands-helping text-clr2"></span>&nbsp; <span class="text-clr2">Contribute</span></a>
     </p>
   </div>
 </div>
@@ -100,11 +100,14 @@
     </div>
   </div>
 </div>
-{{ end }}
-{{ define "script" }}
+
+{{- end }}
+{{ define "script" -}}
+
 /*
 do not use <script> tags for script block, as they are included in baseof.html 
 Typing Carousel (minified JS) ; source: https://codepen.io/gschier/pen/jkivt 
 */
 var TxtRotate=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period=parseInt(i,10)||2e3,this.txt="",this.tick(),this.isDeleting=!1};TxtRotate.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t];this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>";var i=this,s=300-100*Math.random();this.isDeleting&&(s/=2),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,s=500):(s=this.period,this.isDeleting=!0),setTimeout(function(){i.tick()},s)},window.onload=function(){for(var t=document.getElementsByClassName("txt-rotate"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-rotate"),s=t[e].getAttribute("data-period");i&&new TxtRotate(t[e],JSON.parse(i),s)}var o=document.createElement("style");o.type="text/css",o.innerHTML=".txt-rotate > .wrap { border-right: 0.08em solid #fff }",document.body.appendChild(o)};
-{{ end }}
+
+{{- end }}

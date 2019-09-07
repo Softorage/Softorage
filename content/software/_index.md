@@ -1,5 +1,5 @@
 ---
-title: Search
-description: Search invirds
+title: "Search"
+description: "Search the open software directory"
 # permalink: /search/
 ---
