@@ -1,3 +1,5 @@
+const purgecss = require("@fullhuman/postcss-purgecss")
+
 module.exports = {
   plugins: {
     autoprefixer: {
@@ -6,7 +8,7 @@ module.exports = {
         "Explorer >= 8",
       ]
     },
-    @fullhuman/postcss-purgecss: {
+    purgecss: {
       content: ["layouts/**/*.html"],
       ignore: []
     },
