@@ -10,8 +10,8 @@ before_script:
   - apk add git
   - apk add nodejs
   - apk add nodejs-npm
-  - npm install -g postcss-cli autoprefixer uncss postcss-uncss cssnano
-
+  - npm install -g postcss-cli autoprefixer @fullhuman/postcss-purgecss cssnano
+#  - npm install -g postcss-cli autoprefixer uncss postcss-uncss cssnano
 
 test:
   stage: test

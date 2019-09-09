@@ -6,8 +6,8 @@ module.exports = {
         "Explorer >= 8",
       ]
     },
-    postcss-uncss: {
-      html: ["layouts/**/*.html"],
+    @fullhuman/postcss-purgecss: {
+      content: ["layouts/**/*.html"],
       ignore: []
     },
     cssnano: {
