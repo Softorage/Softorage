@@ -1,17 +1,24 @@
 # All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+# image: monachus/hugo
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
+before_script:
+  - apk update
+  - apk add git
+  - apk add nodejs
+  - apk add nodejs-npm
+  - npm install postcss-cli autoprefixer @fullhuman/postcss-purgecss cssnano
+
 test:
   stage: test
   script:
-  - hugo
+  - hugo --destination ./test
   artifacts:
     paths:
     - test
-    - public
     - resources
   except:
   - master

@@ -3,7 +3,7 @@
 <div class="container-fluid bg-clr1-light text-clr1 text-center py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
   <h1>{{ .Title }}</h1>
-  <p>{{ .Description }}</p>
+  <p>{{ .Params.tagline }}</p>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal-label" aria-hidden="true">
@@ -59,16 +59,16 @@
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Title &nbsp;<span class="btn btn-sm small sort asc" data-sort="name"><span class="fas fa-sort text-antinav"></span></span></th>
-                <th scope="col">Description</th>
-                <th scope="col">Available for</th>
+                <th class="text-center" scope="col">#</th>
+                <th class="text-center" scope="col">Title &nbsp;<span class="btn btn-sm small sort asc" data-sort="name"><span class="fas fa-sort text-antinav"></span></span></th>
+                <th class="text-center" scope="col">Description</th>
+                <th class="text-center" scope="col">Available for</th>
               </tr>
             </thead>
             <tbody class="list">
               {{- range $index, $element := where site.RegularPages "Section" "==" "software" -}}
                 <tr>
-                  <th scope="row">{{ add $index 1 }}</th>
+                  <th class="text-center" scope="row">{{ add $index 1 }}</th>
                   <td><a class="font-weight-bold text-antinav text-reset" href="{{ $element.Permalink }}" target="_blank"><span class="name">{{ $element.Title }}</span></a>&nbsp;<span class="fas fa-external-link-alt small"></span></td>
                   <td>
                     {{- if $element.Params.description -}}
@@ -83,7 +83,7 @@
                       {{- end -}}
                     </div>
                   </td>
-                  <td>
+                  <td class="text-center">
                     {{- range $element.Params.platform }}
                       {{- if .dskp -}}
                         <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
