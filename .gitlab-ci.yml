@@ -6,11 +6,10 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 before_script:
-  - apk add --update --no-cache \
-      git \
-      nodejs \
-      nodejs-npm
-  - npm install -g postcss-cli autoprefixer uncss postcss-uncss cssnano
+  - git --version
+  - nodejs --version
+  - npm --version
+#  - npm install -g postcss-cli autoprefixer uncss postcss-uncss cssnano
 
 
 test:
