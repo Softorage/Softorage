@@ -1,14 +1,11 @@
-const purgecss = require("@fullhuman/postcss-purgecss")
-
+browserslist: [
+  "last 2 versions",
+  "Explorer >= 8"
+],
 module.exports = {
   plugins: {
-    autoprefixer: {
-      browsers: [
-        "last 2 versions",
-        "Explorer >= 8",
-      ]
-    },
-    purgecss: {
+    autoprefixer: {},
+    '@fullhuman/postcss-purgecss': {
       content: ["layouts/**/*.html"],
       ignore: []
     },
