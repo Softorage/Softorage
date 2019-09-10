@@ -5,10 +5,6 @@ browserslist: [
 module.exports = {
   plugins: {
     autoprefixer: {},
-    '@fullhuman/postcss-purgecss': {
-      content: ["layouts/**/*.html"],
-      ignore: []
-    },
     cssnano: {
       preset: "default"
     }
