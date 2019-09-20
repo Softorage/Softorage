@@ -1,23 +1,25 @@
-/*!
- * Custom CSS
- */
-
 // Theme specific colors
 {{ $theme := site.Data.themes.light }}
 
 $clr1: {{ $theme.clr1 | default "#fc466b" }};
 $clr2: {{ $theme.clr2 | default "#3f5efb" }};
-$nav: {{ $theme.nav | default "#ffffff" }};
-$antinav: {{ $theme.antinav | default "#000000" }};
+$nav: {{ $theme.nav | default "#ffffff" }}; //background
+$antinav: {{ $theme.antinav | default "#000000" }}; // text
 $mat: {{ $theme.mat | default "#f5e8ff" }};
 $clr1-light: mix($clr1, $nav, 2%);
 $clr2-light: mix($clr2, $nav, 2%);
+$nav-light: mix($nav, $antinav, 2%); // text
+$antinav-light: mix($antinav, $nav, 2%); // background
 
 // Import partials from sass dir
 @import
   "bootstrap/bootstrap",
   "fa"
 ;
+
+/*!
+ * Custom CSS
+ */
 
 html {
 scroll-behavior: smooth;
@@ -48,10 +50,10 @@ right: 0;
 
 // *
 blockquote {
-@extend .p-2;
+@extend .p-3;
 font-weight: 250;
-background: mix($antinav, $nav, 5%);
-border-left: 10px solid mix($antinav, $nav, 25%);
+background: mix($antinav, $nav, 3%);
+border-left: 10px solid mix($antinav, $nav, 15%);
 }
 
 // *
@@ -85,7 +87,7 @@ color: $clr1;
 }
 
 //
-input[type="url"]:hover, input[type="url"]:focus, input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
+input[type="url"]:hover, input[type="url"]:focus, input[type="text"]:hover, input[type="text"]:focus, input[type="search"]:hover, input[type="search"]:focus, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
 @extend .shadow;
 transition: all 0.3s ease 0s;
 }
@@ -110,14 +112,14 @@ border: 0;
 @extend .shadow;
 }
 
-.popover-header {
+.popover .popover-header {
 background-color: $nav;
 color: $antinav;
 font-size: 1.25rem;
 text-align: center;
 }
 
-.popover-body {
+.popover .popover-body {
 background-color: $nav;
 color: $antinav;
 padding: 1.25rem;
@@ -154,8 +156,16 @@ color: $clr2-light;
 color: $nav;
 }
 
+.text-nav-light {
+color: $nav-light;
+}
+
 .text-antinav {
 color: $antinav;
+}
+
+.text-antinav-light {
+color: $antinav-light;
 }
 
 .btn-grad {
@@ -192,6 +202,14 @@ background: $nav;
 
 .bg-antinav {
 background: $antinav;
+}
+
+.bg-nav-light {
+background: $nav-light;
+}
+
+.bg-antinav-light {
+background: $antinav-light;
 }
 
 // Lighten class and its usage along with btn class

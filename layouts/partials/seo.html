@@ -9,13 +9,13 @@
 </title>
 <meta name="description" content="
   {{- with .Description }}
-  {{- . }}
+  {{- . | safeHTML }}
   {{- else }}
   {{- if .IsPage }}
-  {{- .Summary }}
+  {{- .Summary | safeHTML }}
   {{- else }}
   {{- with site.Params.description }}
-  {{- . }}
+  {{- . | safeHTML }}
   {{- end }}
   {{- end }}
   {{- end -}}
@@ -24,7 +24,7 @@
 <link rel="canonical" href="{{ .Permalink }}" />
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="{{ if .IsHome }}{{ site.Params.description }}{{ else }}{{ .Description }}{{ end }}" /> <!-- page description, length < 200 chars -->
+<meta name="twitter:description" content="{{ if .IsHome }}{{ site.Params.description | safeHTML }}{{ else }}{{ .Description | safeHTML }}{{ end }}" /> <!-- page description, length < 200 chars -->
 <meta name="twitter:title" content="
   {{- .Title | default site.Title }}
   {{- if .IsHome -}}
@@ -49,7 +49,7 @@
   {{- else }} | {{ site.Title }}
   {{- end -}}
 ">
-<meta property="og:description" content="{{ if .IsHome }}{{ site.Params.description }}{{ else }}{{ .Description }}{{ end }}"> <!-- 300 chars max -->
+<meta property="og:description" content="{{ if .IsHome }}{{ site.Params.description | safeHTML }}{{ else }}{{ .Description | safeHTML }}{{ end }}"> <!-- 300 chars max -->
 <meta property="og:site_name" content="{{ site.Title }}" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
@@ -73,13 +73,13 @@
   { 
     "@context": "http://schema.org", 
     "@type": "WebSite", 
-    "url": {{ .Permalink }}, {{/* When in a script tag, Hugo automatically adds quotes around a URL. However, if quotes are added manually(like "{{ .Permalink }}"), Hugo adds back-slashes in neighborhood of forward slashes. */}}
-    "name": "{{ site.Title }}",
-      "author": {
-        "@type": "Person",
-        "name": "{{ site.Params.author }}"
-      },
-    "description": "{{ site.Params.description }}",
+    "url": {{ .Permalink }}, {{/* When in a script tag, Hugo automatically adds quotes around all Hugo tags, eg, {{ }}. However, if quotes are added manually (like "{{ .Permalink }}"), Hugo adds back-slashes in neighborhood of forward slashes. safeHTML tag doesn't work either as of v0.57.2 see: https://discourse.gohugo.io/t/x26rsquo-bad-escape-sequence-in-string-for-json-ld */}}
+    "name": {{ site.Title }},
+    "author": {
+      "@type": "Person",
+      "name": {{ site.Params.author }}
+    },
+    "description": {{ site.Params.description }}
   }
   </script>
 {{- end }}
@@ -89,17 +89,17 @@
       { 
         "@context": "http://schema.org", 
         "@type": "BlogPosting",
-        "headline": "{{ .Title }}",
-        "genre": "{{ if reflect.IsSlice .Params.categories }}{{ delimit .Params.categories ", " }}{{ else }}{{ .Params.categories }}{{ end }}",  
+        "headline": {{ .Title }},
+        "genre": {{ if reflect.IsSlice .Params.categories }}{{ delimit .Params.categories ", " }}{{ else }}{{ .Params.categories }}{{ end }},  
         "url": {{ .Permalink }},
-        "datePublished": "{{ time .Date }}",
-        "description": "{{ .Description }}",
-        "articleBody": "
+        "datePublished": {{ time .Date }},
+        "description": {{ .Description | safeJS }},
+        "articleBody": 
         {{ .Content }}
-        ",
+        ,
         "author": {
             "@type": "Person",
-            "name": "{{ site.Params.author }}"
+            "name": {{ site.Params.author }}
         }
       }
     {{ else -}}
@@ -107,12 +107,12 @@
         "@context": "http://schema.org", 
         "@type": "WebSite", 
         "url": {{ .Permalink }}, 
-        "name": "{{ .Title }}",
-          "author": {
-            "@type": "Person",
-            "name": "{{ site.Params.author }}"
-          },
-        "description": "{{ .Description | default site.Params.description }}",
+        "name": {{ .Title }},
+        "author": {
+          "@type": "Person",
+          "name": {{ site.Params.author }}
+        },
+        "description": {{ .Description | default site.Params.description }}
       }
     {{ end -}}
   </script>

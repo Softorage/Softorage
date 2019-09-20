@@ -4,6 +4,7 @@
   <div style="height:3.5rem;"></div>
   <h1>{{ .Title }}</h1>
   <p>{{ .Params.tagline }}</p>
+  <noscript class="alert alert-warning"><b>Warning:</b> Softorage may not work at its best if JavaScript is disabled.</noscript>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal-label" aria-hidden="true">
@@ -16,7 +17,7 @@
         </button>
       </div>
       <div class="modal-body filter-modal-body" id="filter-list">
-        <input type="text" class="bg-nav form-control fuzzy-search" placeholder="Search">
+        <input type="search" class="bg-nav border-0 form-control fuzzy-search shadow-sm" placeholder="Search">
         <span class="small float-right">search by <a href="https://listjs.com/">List.js</a></span>
         <br><br>
         <div class="form-group list">
@@ -25,8 +26,8 @@
           {{ end */}}
           {{- range $key, $value := site.Taxonomies.categories -}}
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="{{ lower (replace $key " " "_") }}">
-              <label class="form-check-label" for="{{ lower (replace $key " " "_") }}"> <span class="category-filter">{{ $key }}</span></label>
+              <input type="checkbox" class="form-check-input" id="{{ lower (replace $key "-" "_") }}">
+              <label class="form-check-label" for="{{ lower (replace $key "-" "_") }}"> <span class="category-filter">{{ $key | humanize | title }}</span></label>
             </div>
           {{- end -}}
         </div>
@@ -38,7 +39,7 @@
   </div>
 </div>
 <!-- -->
-<div class="container-fluid bg-clr2-light py-3">
+<div class="container-fluid bg-antinav-light py-3">
   <div class="card mb-3">
     <div class="card-body" id="software-list">
       <div class="card-text">
@@ -51,8 +52,8 @@
           wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
           see: https://github.com/javve/list.js/issues/358
           -->
-          <input type="text" class="bg-nav form-control my-2 mx-sm-2 search" placeholder="Search">
-          <span class="small">search by <a href="https://listjs.com/">List.js</a></span>
+          <input id="search" type="search" class="bg-nav border-0 form-control my-2 mx-sm-2 search shadow-sm" placeholder="Search">
+          <span class="small">by <a href="https://listjs.com/">List.js</a></span>
         </div>
         <br>
         <div class="table-responsive-md">
@@ -214,7 +215,6 @@ var categoryStrFromURL = decodeURI(getURLVars()["category"]).toLowerCase().repla
 /* categoryStrFromURL gets value undefined when there are no parameters in URL */
 if (categoryStrFromURL != "undefined" && categoryStrFromURL != "") {
   var categoryArrFromURL = categoryStrFromURL.split("+");
-  console.log(categoryArrFromURL);
 }
 /*
 adding elements of one array at the end of another
@@ -317,6 +317,17 @@ $(".filter-modal-body input[type='checkbox']").on("change", function() {
   }
   filterSoftwareList();
   return false;
+});
+
+/* Get search term from URL */
+var searchStrFromURL = decodeURI(getURLVars()["s"]).replace(/\+/g, " ");
+if (searchStrFromURL != "undefined" && searchStrFromURL != "") {
+  $("#search").val(searchStrFromURL);
+  softwareList.search(searchStrFromURL);
+}
+/* Rescan the rows so that popover works */
+$("#search").on("change", function() {
+  $("[data-toggle='popover']").popover();
 });
 
 /* */

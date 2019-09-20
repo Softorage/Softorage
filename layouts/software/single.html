@@ -18,7 +18,9 @@
     {{- end -}}
     {{/*- if minimum and recommended and optimal all are true then break -*/}}
   {{- end -}}
-{{- end -}}
+{{- end }}
+
+{{- $no_content := "Not available, but hey, you could <a href='#contribute'>help</a>!" -}}
 <!-- -->
 <div class="container-fluid bg-clr2-light text-clr2 py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
@@ -51,7 +53,7 @@
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            Not available, but hey, you could <a href='#contribute'>help</a>!
+            {{ $no_content }}
           {{- end -}}
         "><span class="fas fa-check small"></span></a>
       {{- else if in .Params.status "Discontinued" -}}
@@ -61,7 +63,7 @@
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            Not available, but hey, you could <a href='#contribute'>help</a>!
+            {{ $no_content }}
           {{- end -}}
         "><span class="fas fa-ban small"></span></a>
       {{- else -}}
@@ -71,23 +73,27 @@
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            Not available, but hey, you could <a href='#contribute'>help</a>!
+            {{ $no_content }}
           {{- end -}}
         "><span class="fas fa-question small"></span></a>
       {{- end -}}
     </div>
     <div class="col-md-4">
-      {{- if .Params.get_it -}}
+      {{- if .Params.get_it }}
+        {{- if eq (len .Params.get_it) 1 -}}
+          <a href="{{ (index .Params.get_it 0).url }}" class="btn bg-nav my-2"><span class="fas fa-arrow-alt-circle-down text-primary"></span>&nbsp; <span class="text-primary">Get it</span></a>
+        {{- else -}}
         <a role="button" class="btn bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
           {{- range .Params.get_it -}} 
             <a href='{{ .url }}' class='btn btn-sm
               {{- if eq .from "Authentic" }} btn-success
               {{- else }} btn-light
               {{- end -}}
-            '>{{ .from }}</a>
-          {{- end -}}
+            '>{{ .from }}</a>&nbsp;
+          {{ end -}}
         "><span class="fas fa-arrow-alt-circle-down text-primary"></span>&nbsp; <span class="text-primary">Get it</span></a>
-      {{- end -}}
+        {{- end }}
+      {{- end }}
       {{- if .Params.website -}}
         &nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}" target="_blank"><span class="fas fa-globe text-primary"></span>&nbsp; <span class="text-primary">Visit</span></a> <br>
       {{- end -}}
@@ -108,7 +114,23 @@
   </div>
 </div>
 <!-- -->
-<div class="container-fluid bg-clr1-light py-3">
+<div class="container bg-nav text-center small py-2" style="overflow-x: scroll;">
+  <nobr>
+  <a class="text-antinav text-decoration-none" href="#overview">Overview</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#platform">Platform</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#socail">Social</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#sysreq">System Requirements</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#rating">Ratings</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#developer">Developer</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#written_in">Written in</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#initial_release">Initial Release</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#repository">Repository</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#license">License</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#categories">Categories</a>&nbsp;&nbsp;&nbsp;
+  </nobr>
+</div>
+<!-- -->
+<div class="container-fluid bg-antinav-light py-3">
   <div class="row">
     <div class="col-md-8">
       <!-- #7 Overview -->
@@ -136,7 +158,7 @@
             {{- if .Content }}
               {{- .Content }}
             {{- else -}}
-              Not available, but hey, you could <a href="#contribute">help</a>!
+              {{ $no_content }}
             {{- end -}}
           </div>
         </div>
@@ -273,7 +295,7 @@
                 {{- end }}&nbsp;
               {{- end }}
             {{- else -}}
-              Not available, but hey, you could <a href="#contribute">help</a>!
+              {{ $no_content }}
             {{- end -}}
           </p>
         </div>
@@ -331,6 +353,8 @@
                   {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-steam fa-2x"></span></a>`) "") -}}
                 {{- else if eq $element.name "Bandcamp" -}}
                   {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-bandcamp fa-2x"></span></a>`) "") -}}
+                {{- else if eq $element.name "Medium" -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-medium fa-2x"></span></a>`) "") -}}
                 {{- else -}}
                   {{- $scratch.Set "social_item" (delimit (slice `<a class="border p-1" href="` $element.url `"><span>` $element.name `</span></a>`) "") -}}
                 {{- end -}}
@@ -338,7 +362,7 @@
                 {{- if $index }}&nbsp;{{ end }}{{ $scratch.Get "social_item" }}
               {{- end -}} <!-- end range -->
             {{- else -}}
-              Not available, but hey, you could <a href="#contribute">help</a>!
+              {{ $no_content }}
             {{- end -}}
           </p>
         </div>
@@ -346,7 +370,7 @@
     </div>
   </div>
 </div>
-<div class="container-fluid bg-clr1-light py-3">
+<div class="container-fluid bg-antinav-light py-3">
   <div class="row">
     <div class="col-md-8">
       <!-- #8 System Requirements -->
@@ -420,7 +444,7 @@
               </div>
               <!-- /table-responsive -->
             {{- else -}}
-              Not available, but hey, you could <a href="#contribute">help</a>!
+              {{ $no_content }}
             {{- end -}}
           </div>
           <!-- /card-text -->
@@ -475,7 +499,7 @@
                 </div>
               {{- end }}
             {{- else -}}
-              Not available, but hey, you could <a href="#contribute">help</a>!
+              {{ $no_content }}
             {{- end -}}
           </p>
         </div>
@@ -485,7 +509,7 @@
   </div>
   <!-- /row -->
 </div>
-<div class="container-fluid bg-clr1-light pb-3">
+<div class="container-fluid bg-antinav-light pb-3">
   <div class="card-deck mb-3">
     <!-- #9 Developer -->
     <div class="card">
@@ -514,7 +538,7 @@
               {{- if $index }}, {{ end }}{{ replace (replace $element `<OD>` `<abbr title="Original Developer">(OD)</abbr>`) `<BDFL>` `<abbr title="Benevolent Dictator For Life">(BDFL)</abbr>` | safeHTML }}
             {{- end }}
           {{- else -}}
-            Not available, but hey, you could <a href="#contribute">help</a>!
+            {{ $no_content }}
           {{- end -}}
         </p>
       </div>
@@ -546,7 +570,7 @@
               {{- if $index }}, {{ end }}{{ $element }}
             {{- end }}
           {{- else -}}
-            Not available, but hey, you could <a href="#contribute">help</a>!
+            {{ $no_content }}
           {{- end -}}
         </p>
       </div>
@@ -578,7 +602,7 @@
               {{- if $index }}, {{ end }}{{ $element }}
             {{- end }}
           {{- else -}}
-            Not available, but hey, you could <a href="#contribute">help</a>!
+            {{ $no_content }}
           {{- end -}}
         </p>
       </div>
@@ -605,7 +629,7 @@
               {{- if $index }}, {{ end }}<a href="{{ $element }}">{{ $element }}</a>
             {{- end }}
           {{- else -}}
-            Not available, but hey, you could <a href="#contribute">help</a>!
+            {{ $no_content }}
           {{- end -}}
         </p>
       </div>
@@ -637,7 +661,7 @@
               {{- if $index }}, {{ end }}<span{{ if in $element "(m)" }} title="{{ $element }} modified"{{ end }}>{{ $element }}</span>
             {{- end }}
           {{- else -}}
-            Not available, but hey, you could <a href="#contribute">help</a>!
+            {{ $no_content }}
           {{- end -}}
         </p>
       </div>
@@ -659,10 +683,10 @@
         <p class="card-text mt-3">
           {{- if .Params.categories }}
             {{- range $i, $e := .Params.categories }}
-              {{- if $i }},  {{ end }}<a href="/software/?category={{ lower (replace $e " " "_") }}">{{ $e }}</a>
+              {{- if $i }},  {{ end }}<a href="/categories/{{ lower (replace $e " " "-") }}">{{ $e }}</a>
             {{- end -}}
           {{- else -}}
-            Not available, but hey, you could <a href="#contribute">help</a>!
+            {{ $no_content }}
           {{- end -}}
         </p>
       </div>
