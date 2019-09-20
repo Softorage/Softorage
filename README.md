@@ -5,7 +5,7 @@ The one place for authentic downloads and all your software related information 
 https://softorage.com
 ___
 
-Softorage is the Open Software Directory, that is innovatively arranged, deeply searchable and convenient to use.
+Softorage is the Software Directory, that is innovatively arranged, deeply searchable and convenient to use.
 Its objective representation of software related information makes software comparison a breeze.
   
 _The project is in beta phase (Work-In-Progress)_
@@ -59,6 +59,5 @@ For a quick view, see [Apache license 2.0](https://tldrlegal.com/license/apache-
 * [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) - A hundred thanks for [allowing inline linking](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/technical#Hotlinking)
 * [CSS Gradient](https://cssgradient.io/) - Fabulous gradients in CSS and easy tutorials
 * [GTmetrix](https://gtmetrix.com/) - For one stop page speed recommendations
-* [Simple Typing Carousel](https://codepen.io/gschier/pen/jkivt) by [Gregory Schier](https://codepen.io/gschier) - A pretty JS based typing carousel
 <!-- * Algolia - Super smart searches -->
 <!-- * Zoho Mail - Custom email hosting -->

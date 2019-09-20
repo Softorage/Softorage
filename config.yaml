@@ -11,5 +11,9 @@ params:
 taxonomies:
   category: categories
 
+# blackfriday:
+#   extensions:
+#   - laxHtmlBlocks
+
 enableRobotsTXT: true
 # enableGitInfo: true

@@ -2,23 +2,42 @@
 
 <!-- Number of softwares in database -->
 {{- $soft_no := len (where site.RegularPages "Section" "==" "software") -}}
+{{- $categ_no := len site.Taxonomies.categories -}}
 
 <!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex shadow" style="height:100vh;">
+<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex flex-column" style="height:100vh;">
   <div style="height:3.5rem;"></div>
   <div class="container my-auto">
-    <h1 class="tg">Open Directory of <span class="txt-rotate" data-period="2000" data-rotate='[ "Fabulous", "Useful", "Superb", "Astonishing", "Great", "Awesome" ]'></span> &nbsp;Software</h1>
-    <p class="lead tg">{{ site.Params.tagline }}</p>
-    <hr class="my-4">
-    <p class="lead">
-      <a class="btn bg-clr1-light" href="/software/" role="button"><span class="fas fa-search text-clr1"></span>&nbsp; <span class="text-clr1">Search</span></a>&nbsp;<a class="btn main-gradient-light" href="#its_open" role="button"><span class="fas fa-chevron-down text-clr1"></span>&nbsp; <span class="tg">Explore</span></a>&nbsp;<a class="btn bg-clr2-light" href="/contribute/" role="button"><span class="fas fa-hands-helping text-clr2"></span>&nbsp; <span class="text-clr2">Contribute</span></a>
-    </p>
+    
+    <div class="row">
+    
+    <div class="col-md-8">
+      <div class="text-left tg"><h1 class="display-4">The Software Directory.</h1><br><span class="lead">Concise &amp; Professional.</span></div>
+    </div>
+    
+    <div class="col-md-4">
+      <br>
+      <form action="/search">
+      <input type="search" class="bg-nav border-0 form-control my-2 shadow-sm" name="s" placeholder="Search" autofocus>
+      </form>
+      <!-- <input type="submit">
+      <p class="lead tg">{{ site.Params.tagline }}</p> -->
+    </div>
+    
+    </div>
+    <noscript class="alert alert-warning"><b>Warning:</b> Softorage may not work at its best if JavaScript is disabled.</noscript>
+    
+    
   </div>
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn bg-clr1-light" href="/search/" role="button"><span class="fas fa-search text-clr1"></span>&nbsp; <span class="text-clr1">Search</span></a>&nbsp;<a class="btn main-gradient-light" href="#its_open" role="button"><span class="fas fa-chevron-down text-clr1"></span>&nbsp; <span class="tg">Explore</span></a>&nbsp;<a class="btn bg-clr2-light" href="/contribute/" role="button"><span class="fas fa-hands-helping text-clr2"></span>&nbsp; <span class="text-clr2">Contribute</span></a>
+  </p>
 </div>
 <!-- Features -->
 <!-- It's open! -->
-<div class="container-fluid bg-nav">
-<div class="container py-5">
+<div class="container-fluid bg-antinav-light py-3">
+<div class="container bg-nav rounded shadow-sm py-5">
   <span class="anchor" id="its_open"></span>
   <div class="container py-5">
     <div class="row text-center py-5">
@@ -33,10 +52,9 @@
     </div>
   </div>
 </div>
-</div>
+<br>
 <!-- Number of softwares -->
-<div class="container-fluid bg-nav">
-<div class="container position-relative shadow-sm py-5">
+<div class="container bg-nav rounded shadow-sm py-5">
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
@@ -45,15 +63,14 @@
       <div class="col-md-7 text-antinav">
         <div class="display-4">{{ sub $soft_no 1 }}+ softwares</div>
         <div class="my-5"></div>
-        <p>{{ sub $soft_no 1 }}+ softwares have been added to database till now!</p>
+        <p>{{ sub $soft_no 1 }}+ softwares from over <a href="/categories">{{ $categ_no }} categories</a> have been added to directory till now!</p>
       </div>
     </div>
   </div>
 </div>
-</div>
+<br>
 <!-- Innovative arrangement -->
-<div class="container-fluid bg-nav">
-<div class="container py-5">
+<div class="container bg-nav rounded shadow-sm py-5">
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
@@ -67,10 +84,9 @@
     </div>
   </div>
 </div>
-</div>
+<br>
 <!-- Fast -->
-<div class="container-fluid bg-nav">
-<div class="container position-relative shadow-sm py-5 mb-5">
+<div class="container bg-nav rounded shadow-sm py-5 mb-5">
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
@@ -79,11 +95,12 @@
       <div class="col-md-7 text-antinav">
         <div class="display-4">Fast</div>
         <div class="my-5"></div>
-        <p>Powered by Jekyll and hosted by GitLab, it works as fast as lightning!</p>
+        <p>Powered by Hugo and hosted by GitLab, it works as fast as lightning!</p>
       </div>
     </div>
   </div>
 </div>
+<br>
 </div>
 <!-- Made with lots of love -->
 <div class="container-fluid bg-clr1-light shadow-sm position-relative py-5">
@@ -100,14 +117,5 @@
     </div>
   </div>
 </div>
-
-{{- end }}
-{{ define "script" -}}
-
-/*
-do not use <script> tags for script block, as they are included in baseof.html 
-Typing Carousel (minified JS) ; source: https://codepen.io/gschier/pen/jkivt 
-*/
-var TxtRotate=function(t,e,i){this.toRotate=e,this.el=t,this.loopNum=0,this.period=parseInt(i,10)||2e3,this.txt="",this.tick(),this.isDeleting=!1};TxtRotate.prototype.tick=function(){var t=this.loopNum%this.toRotate.length,e=this.toRotate[t];this.isDeleting?this.txt=e.substring(0,this.txt.length-1):this.txt=e.substring(0,this.txt.length+1),this.el.innerHTML='<span class="wrap">'+this.txt+"</span>";var i=this,s=300-100*Math.random();this.isDeleting&&(s/=2),this.isDeleting||this.txt!==e?this.isDeleting&&""===this.txt&&(this.isDeleting=!1,this.loopNum++,s=500):(s=this.period,this.isDeleting=!0),setTimeout(function(){i.tick()},s)},window.onload=function(){for(var t=document.getElementsByClassName("txt-rotate"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-rotate"),s=t[e].getAttribute("data-period");i&&new TxtRotate(t[e],JSON.parse(i),s)}var o=document.createElement("style");o.type="text/css",o.innerHTML=".txt-rotate > .wrap { border-right: 0.08em solid #fff }",document.body.appendChild(o)};
 
 {{- end }}

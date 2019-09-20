@@ -10,7 +10,7 @@ before_script:
   - apk add git
   - apk add nodejs
   - apk add nodejs-npm
-  - npm install postcss-cli autoprefixer cssnano #@fullhuman/postcss-purgecss
+  - npm install postcss-cli autoprefixer cssnano @fullhuman/postcss-purgecss
 
 test:
   stage: test
@@ -23,17 +23,18 @@ test:
   except:
   - master
 
-#  - npm install postcss-cli autoprefixer uncss postcss-uncss cssnano
+
 #
 # https://webd97.de/post/gitlab-pages-compression/
 # BeginQuote
-# To enable compression, we need to create static compressed files.
-# Since we are working with static files, it is no problem at all to provide compressed variants of these files.
-# We just need to call gzip for each file.
-# For this website, I implemented this by calling gzip -k -6 $(find public -type f) after the successful Hugo build.
-# The -k flags keeps the input files, 9 is the compression level (1-9).
-# Unfortunately, the -r (recursive) flag is not supported by the base image, so I had to use a workaround here: find public -type f lists all files in the public directory (created by Hugo) recursively, which are then passed to gzip.
+#   To enable compression, we need to create static compressed files.
+#   Since we are working with static files, it is no problem at all to provide compressed variants of these files.
+#   We just need to call gzip for each file.
+#   For this website, I implemented this by calling gzip -k -6 $(find public -type f) after the successful Hugo build.
+#   The -k flags keeps the input files, 9 is the compression level (1-9).
+#   Unfortunately, the -r (recursive) flag is not supported by the base image, so I had to use a workaround here: find public -type f lists all files in the public directory (created by Hugo) recursively, which are then passed to gzip.
 # EndQuote
+#
 pages:
   stage: deploy
   script:

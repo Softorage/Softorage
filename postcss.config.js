@@ -1,9 +1,9 @@
 browserslist: [
-  "last 2 versions",
-  "Explorer >= 8"
+  "defaults"
 ],
 module.exports = {
   plugins: {
+
     autoprefixer: {},
     cssnano: {
       preset: "default"

@@ -2,7 +2,6 @@
 title: Contribute
 description: Anyone contributing benefits equally from others' contributions
 ---
-<span class="d-block container-fluid bg-nav text-antinav p-3" markdown="1">
 
 ---
 
@@ -33,4 +32,3 @@ Softorage is a fully open source project. Every contribution matters. Join in, b
 
 </span>
 
-</span>

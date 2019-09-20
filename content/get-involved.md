@@ -2,7 +2,6 @@
 title: Get Involved
 description: Help make Softorage better
 ---
-<span class="d-block container-fluid bg-nav text-antinav p-3" markdown="1">
 
 ---
 
@@ -154,4 +153,3 @@ Feel free to ([click here](https://gitlab.com/Softorage/softorage.gitlab.io/issu
 [Contributing Template](https://github.com/nayafia/contributing-template/blob/master/CONTRIBUTING-template.md)  
 [Code of conduct](https://www.contributor-covenant.org/)
 
-</span>

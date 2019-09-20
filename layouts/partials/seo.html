@@ -75,11 +75,11 @@
     "@type": "WebSite", 
     "url": {{ .Permalink }}, {{/* When in a script tag, Hugo automatically adds quotes around all Hugo tags, eg, {{ }}. However, if quotes are added manually (like "{{ .Permalink }}"), Hugo adds back-slashes in neighborhood of forward slashes. safeHTML tag doesn't work either as of v0.57.2 see: https://discourse.gohugo.io/t/x26rsquo-bad-escape-sequence-in-string-for-json-ld */}}
     "name": {{ site.Title }},
-      "author": {
-        "@type": "Person",
-        "name": {{ site.Params.author }}
-      },
-    "description": {{ site.Params.description }},
+    "author": {
+      "@type": "Person",
+      "name": {{ site.Params.author }}
+    },
+    "description": {{ site.Params.description }}
   }
   </script>
 {{- end }}
@@ -108,11 +108,11 @@
         "@type": "WebSite", 
         "url": {{ .Permalink }}, 
         "name": {{ .Title }},
-          "author": {
-            "@type": "Person",
-            "name": {{ site.Params.author }}
-          },
-        "description": {{ .Description | default site.Params.description }},
+        "author": {
+          "@type": "Person",
+          "name": {{ site.Params.author }}
+        },
+        "description": {{ .Description | default site.Params.description }}
       }
     {{ end -}}
   </script>
