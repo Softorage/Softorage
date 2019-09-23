@@ -20,7 +20,7 @@
           </div>
         </div>
         <!-- -->
-        <div class="card-text mt-3 collapse" id="content_{{ replace (lower .Title) " " "_" }}" aria-labelledby="{{ replace (lower .Title) " " "_" }}" style>
+        <div class="card-text mt-3 collapse" id="content_{{ replace (lower .Title) " " "_" }}" aria-labelledby="{{ replace (lower .Title) " " "_" }}">
           {{ range .Pages }}
             <a class="btn h4" href="{{ .Permalink }}">
             {{- if .Params.image -}}

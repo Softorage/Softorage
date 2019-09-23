@@ -53,7 +53,7 @@
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         "><span class="fas fa-check small"></span></a>
       {{- else if in .Params.status "Discontinued" -}}
@@ -63,7 +63,7 @@
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         "><span class="fas fa-ban small"></span></a>
       {{- else -}}
@@ -73,7 +73,7 @@
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         "><span class="fas fa-question small"></span></a>
       {{- end -}}
@@ -95,7 +95,7 @@
         {{- end }}
       {{- end }}
       {{- if .Params.website -}}
-        &nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}" target="_blank"><span class="fas fa-globe text-primary"></span>&nbsp; <span class="text-primary">Visit</span></a> <br>
+        &nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}"><span class="fas fa-globe text-primary"></span>&nbsp; <span class="text-primary">Visit</span></a> <br>
       {{- end -}}
       <div class="row my-2 p-2">
         <span class="fas fa-share-alt fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -158,7 +158,7 @@
             {{- if .Content }}
               {{- .Content }}
             {{- else -}}
-              {{ $no_content }}
+              {{ $no_content | safeHTML }}
             {{- end -}}
           </div>
         </div>
@@ -295,7 +295,7 @@
                 {{- end }}&nbsp;
               {{- end }}
             {{- else -}}
-              {{ $no_content }}
+              {{ $no_content | safeHTML }}
             {{- end -}}
           </p>
         </div>
@@ -359,10 +359,10 @@
                   {{- $scratch.Set "social_item" (delimit (slice `<a class="border p-1" href="` $element.url `"><span>` $element.name `</span></a>`) "") -}}
                 {{- end -}}
                 <!-- Get the value stored in $scratch -->
-                {{- if $index }}&nbsp;{{ end }}{{ $scratch.Get "social_item" }}
+                {{- if $index }}&nbsp; {{ end }}{{ $scratch.Get "social_item" }}
               {{- end -}} <!-- end range -->
             {{- else -}}
-              {{ $no_content }}
+              {{ $no_content | safeHTML }}
             {{- end -}}
           </p>
         </div>
@@ -444,7 +444,7 @@
               </div>
               <!-- /table-responsive -->
             {{- else -}}
-              {{ $no_content }}
+              {{ $no_content | safeHTML }}
             {{- end -}}
           </div>
           <!-- /card-text -->
@@ -499,7 +499,7 @@
                 </div>
               {{- end }}
             {{- else -}}
-              {{ $no_content }}
+              {{ $no_content | safeHTML }}
             {{- end -}}
           </p>
         </div>
@@ -538,7 +538,7 @@
               {{- if $index }}, {{ end }}{{ replace (replace $element `<OD>` `<abbr title="Original Developer">(OD)</abbr>`) `<BDFL>` `<abbr title="Benevolent Dictator For Life">(BDFL)</abbr>` | safeHTML }}
             {{- end }}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         </p>
       </div>
@@ -570,7 +570,7 @@
               {{- if $index }}, {{ end }}{{ $element }}
             {{- end }}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         </p>
       </div>
@@ -602,7 +602,7 @@
               {{- if $index }}, {{ end }}{{ $element }}
             {{- end }}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         </p>
       </div>
@@ -629,7 +629,7 @@
               {{- if $index }}, {{ end }}<a href="{{ $element }}">{{ $element }}</a>
             {{- end }}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         </p>
       </div>
@@ -661,7 +661,7 @@
               {{- if $index }}, {{ end }}<span{{ if in $element "(m)" }} title="{{ $element }} modified"{{ end }}>{{ $element }}</span>
             {{- end }}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         </p>
       </div>
@@ -686,7 +686,7 @@
               {{- if $i }},  {{ end }}<a href="/categories/{{ lower (replace $e " " "-") }}">{{ $e }}</a>
             {{- end -}}
           {{- else -}}
-            {{ $no_content }}
+            {{ $no_content | safeHTML }}
           {{- end -}}
         </p>
       </div>
@@ -703,7 +703,7 @@
             <span class="h6">{{ $category }}</span><br>
             {{- range where site.RegularPages "Section" "==" "software" }}
               {{- if in .Params.categories $category -}}
-                <a class="btn btn-sm btn-light shadow-sm my-2" href="{{ .Params.url }}">{{ .Params.title }}</a> 
+                <a class="btn btn-sm btn-light shadow-sm my-2" href="{{ .Params.url }}">{{ .Params.title }}</a> &nbsp;
               {{- end }}
             {{- end -}}
             <br><br>
@@ -725,7 +725,7 @@
     </div>
   {{- end -}}
   <br>
-  <p class="bg-nav text-antinav text-center small p-2">Disclaimer: Software name, software logo and any related marks are property of their respective owners. Use of software name, software logo and any related marks here does not imply endorsement of the organization or software by Softorage, nor vice versa.</p>
+  <p class="bg-nav text-antinav text-center small p-2">Disclaimer: Software name, software logo and any related marks are property of their respective owners. Use of software name, software logo and any related marks here neither imply endorsement of the organization or software by Softorage, nor vice versa.</p>
   {{/* .GitInfo seems to be not working on GitLab runners
   <p class="bg-nav text-antinav text-center small p-2">{{ .Title }} was last updated with commit: <a href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})<a></p>
   */}}

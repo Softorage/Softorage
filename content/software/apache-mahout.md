@@ -3,6 +3,8 @@ title: "Apache Mahout"
 
 description: "A project of the Apache Software Foundation to produce free implementations of distributed or otherwise scalable machine learning algorithms"
 
+image: "https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_Mahout_Logo.png"
+
 status: ["Active"]
 
 website: "https://mahout.apache.org/"
@@ -72,6 +74,8 @@ rating:
 
 note: |
   * Apache, Apache Mahout name and logo are trademarks of Apache Software Foundation.
+  
+
 ---
   Apache Mahout(TM) is an open source project that is primarily used for creating scalable machine learning algorithms. It implements machine learning techniques such as, collaborative filtering, clustering, recommendation and classification.
   
@@ -80,3 +84,4 @@ note: |
   A *mahout* is a word used in South Asian countries to describe one who drives an elephant as its master. The name comes from its close association with [Apache Hadoop]({{< ref "apache-hadoop" >}}) which uses an elephant as its logo. Many of the implementations use the [Apache Hadoop]({{< ref "apache-hadoop" >}}) platform.
   
   [Documentation](https://mahout.apache.org/docs/latest/index.html) I [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists) I [FAQ](https://mahout.apache.org/general/faq.html) I [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
+  

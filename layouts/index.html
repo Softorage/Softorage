@@ -17,7 +17,7 @@
     
     <div class="col-md-4">
       <br>
-      <form action="/search">
+      <form action="/search/" method="get">
       <input type="search" class="bg-nav border-0 form-control my-2 shadow-sm" name="s" placeholder="Search" autofocus>
       </form>
       <!-- <input type="submit">
@@ -61,9 +61,9 @@
         <span class="fas fa-chart-line text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
       </div>
       <div class="col-md-7 text-antinav">
-        <div class="display-4">{{ sub $soft_no 1 }}+ softwares</div>
+        <div class="display-4">{{ sub $soft_no 1 }}+ software</div>
         <div class="my-5"></div>
-        <p>{{ sub $soft_no 1 }}+ softwares from over <a href="/categories">{{ $categ_no }} categories</a> have been added to directory till now!</p>
+        <p>{{ sub $soft_no 1 }}+ software from over <a href="/categories">{{ $categ_no }} categories</a> have been added to directory till now!</p>
       </div>
     </div>
   </div>
@@ -79,7 +79,7 @@
       <div class="col-md-7 text-antinav">
         <div class="display-4">Innovative</div>
         <div class="my-5"></div>
-        <p>Objectively arranged specifications allow clear comparison between softwares</p>
+        <p>Objectively arranged specifications allow clear comparison between software</p>
       </div>
     </div>
   </div>

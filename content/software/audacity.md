@@ -3,6 +3,8 @@ title: "Audacity"
 
 description: "A free and open-source digital audio editor and recording application software"
 
+image: "https://upload.wikimedia.org/wikipedia/en/d/d7/Audacity_Logo_2-2-0.png"
+
 status: ["Active"]
 
 website: "https://www.audacityteam.org/"
@@ -59,7 +61,7 @@ source:
   sysreq: ["https://www.audacityteam.org/download/windows/", "https://www.audacityteam.org/download/mac/", "https://www.audacityteam.org/download/linux/"]
   license: ["https://www.audacityteam.org/copyright/", "https://www.audacityteam.org/about/license/"]
   rating:
-    - name: "techradar"
+    - name: "TechRadar"
       type: "expert"
       url: "https://www.techradar.com/reviews/audacity"
     - name: "TopTenReviews"
@@ -103,9 +105,12 @@ rating:
 
 note: |
   * Legacy versions for [Windows](https://www.audacityteam.org/download/legacy-windows/) and [mac](https://www.audacityteam.org/download/legacy-mac/) are also available.
+  
+
 ---
   Audacity imports sounds and music, puts sound effects against individual tracks and mixes things like music tracks and podcasts together. Audacity comes with many professional editing and recording functions. It's possible to create both live recordings as well as cut tracks. In addition, Audacity has an audio toolbox with countless effects, an equalizer and frequency analysis on board.
   
   Audacity is a digital audio editor with 1500+ stars on GitHub and is present in Software Repositories of major Linux distributions.
   
   [Blog](https://www.audacityteam.org/posts/) I [Forum](https://forum.audacityteam.org/) I [News](https://www.audacityteam.org/about/news/) I [Manual](https://manual.audacityteam.org/) I [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page) I [Documentation](https://www.audacityteam.org/help/documentation/) I [FAQ](https://manual.audacityteam.org/man/faq.html)
+  
