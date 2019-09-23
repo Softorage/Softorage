@@ -3,6 +3,8 @@ title: "mlpack"
 
 description: "A scalable machine learning library in C++ with a modular C++ API for expert users"
 
+image: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Mlpack-logo-white-outline.svg"
+
 status: ["Active"]
 
 website: "https://www.mlpack.org"
@@ -61,10 +63,10 @@ source:
   license: ["https://www.mlpack.org/about.html"]
   rating:
     - name: "OpenReview"
-      type: "u"
+      type: "user"
       url: "https://openreview.net/forum?id=ByltfevYt7"
     - name: "G2CROWD"
-      type: "u"
+      type: "user"
       url: "https://www.g2crowd.com/products/mlpack/reviews"
   status: ["https://github.com/mlpack/mlpack/graphs/contributors", "https://www.mlpack.org/gsocblog/"]
 
@@ -81,3 +83,4 @@ rating:
   > \- [Official website](https://www.mlpack.org/about.html)
   
   [Developement Blog](https://www.mlpack.org/gsocblog/) I [Documentation](https://www.mlpack.org/docs.html) I [Wiki](https://github.com/mlpack/mlpack/wiki) I [Mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack) I [IRC](https://webchat.freenode.net/?channels=mlpack) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/mlpack)
+  

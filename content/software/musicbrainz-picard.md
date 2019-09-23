@@ -3,6 +3,8 @@ title: "MusicBrainz Picard"
 
 description: "A free and open-source software for identifying, tagging, and organizing digital audio recordings"
 
+image: "https://upload.wikimedia.org/wikipedia/commons/8/8c/MusicBrainz_Picard_logo.svg"
+
 status: ["Active"]
 
 website: "https://picard.musicbrainz.org/"
@@ -84,3 +86,4 @@ rating:
   MusicBrainz is an open source database of music. The MusicBrainz Picard tool uses this database to identify and tag a song. It checks the songs against the MusicBrainz database to see if it can find a match. MusicBrainz Picard is an acoustic fingerprinter, so if it can’t find a match, it uses AcoustID (a database of audio fingerprints) in order to figure out the song.
   
   [Forum](https://community.metabrainz.org/c/picard) I [Documentation](https://picard.musicbrainz.org/docs/)
+  
