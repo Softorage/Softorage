@@ -1,2 +1,28 @@
-{{ define "main" }}
-{{ end }}
+{{ define "main" -}}
+
+<div class="container-fluid bg-nav text-clr1 text-center py-3 position-relative shadow-sm">
+  <div style="height:3.5rem;"></div>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+</div>
+<div class="container-fluid bg-antinav-light py-3">
+  <!-- ranges through each of the content files associated with a particular term and renders the summary.html content view -->
+  {{ range .Pages }}
+    <div class="card mb-3">
+      <div class="card-body text-antinav">
+        <span class="anchor" id="{{ replace (lower .Title) " " "_" }}"></span>
+        <h2>
+          {{- if .Params.image -}}
+            <img class="bg-nav rounded shadow-sm p-2" style="height:3.5rem;" src="{{ .Params.image }}" alt="{{ .Title }} logo">&nbsp;&nbsp;
+          {{- end -}}
+          <a class="card-title text-reset" href="{{ .Permalink }}"> {{ .Title }}</a>
+        </h2>
+        <div class="font-weight-bold small post-meta"> {{ .WordCount }} Words </div>
+        <p>{{ .Summary }}</p>
+        <a class="font-weight-bold text-reset text-decoration-none" href="{{ .Permalink }}"><nobr>Read more →</nobr></a>
+      </div>
+    </div>
+  {{ end }}
+</div>
+
+{{- end }}

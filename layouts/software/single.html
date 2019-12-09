@@ -27,20 +27,63 @@
   <div class="row">
     <div class="col-md-8">
       <div class="row p-3">
-        <div class="align-self-center col-auto">
-          {{- if .Params.image }}<img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="{{ .Params.image }}" alt="{{ .Title }} logo">  {{ end -}}
-        </div>
+        {{- if .Params.image -}}
+          <div class="align-middle text-center col-auto">
+            <img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="{{ .Params.image }}" alt="{{ .Title }} logo">  
+            
+            {{- if .Params.rating }}
+              {{- $rating_stars := 0 }}
+              {{- $len := len .Params.rating }} <!-- length of loop -->
+              {{- range $index, $rt := .Params.rating }}
+                {{- $rating_stars = add $rating_stars (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) -}} <!-- if one is float then only is the result a float -->
+                {{- if eq (add $index 1) $len }} 
+                  {{- $rating_stars = div $rating_stars $len }}
+                {{- end }}
+              {{- end }}
+              {{- $rating_stars = mul $rating_stars 125 -}} <!-- for some reason it works better with 125 -->
+              
+              <div class="rating-stars mx-auto mt-2">
+                <div class="rating-stars-top" style="width: {{ math.Round $rating_stars }}%">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+                <div class="rating-stars-bottom">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+              </div>
+            {{- end -}}
+          </div>
+        {{- end -}}
         <div class="col">
           <h1 class="display-4">{{ .Title }}</h1>
+          {{- if .Params.description -}}
+            <p class="small">{{ .Params.description }}</p>
+          {{- end -}}
+          
+          {{ if not .Params.image }}
+            {{- if .Params.rating }}
+              {{ $rating_stars := 0 }}
+              {{ $len := len .Params.rating }} <!-- length of loop -->
+              {{- range $index, $rt := .Params.rating -}}
+                {{ $rating_stars = add $rating_stars (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) -}} <!-- if one is float then only is the result a float -->
+                {{ if eq (add $index 1) $len }} 
+                  {{ $rating_stars = div $rating_stars $len }}
+                {{ end }}
+              {{ end }}
+              {{ $rating_stars = mul $rating_stars 125 }} <!-- for some reason it works better with 125 -->
+              <div class="rating-stars">
+                <div class="rating-stars-top" style="width: {{ math.Round $rating_stars }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+                <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+              </div>
+            {{ end }}
+          {{ end }}
+          
         </div>
       </div>
-      {{- if .Params.description -}}
-        <p>{{ .Params.description }}</p>
-      {{- end -}}
+
       <!-- As we don't check whether page.status is true, `status` is shown `unknown` when page.status is false. -->
       {{- if in .Params.status "Active" -}}
         <!-- in case of source, as first condition in if statement, we have checked if source is not a text-type(as src.first exists only if it is a text-type source), that is, it is a webpage, because it is more frequent condition -->
-        <a role="button" class="btn btn-sm bg-nav text-success mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
           {{/* 
             Here, the code iterates through a range, hence even if there is only one value of source for status, it has to be in square brackes([]) in the front matter, so that it is treated as an array. This is to ensure that a source from a book would not be mistaken by our code as two sources from web.
             Example,
@@ -53,35 +96,35 @@
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            {{ $no_content | safeHTML }}
+            {{ $no_content | safeHTMLAttr }}
           {{- end -}}
-        "><span class="fas fa-check small"></span></a>
+        "><span class="small text-success">Status | {{ site.Data.icons.checkmark | safeHTML }}</span></a>
       {{- else if in .Params.status "Discontinued" -}}
-        <a role="button" class="btn btn-sm bg-nav text-danger mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
           {{- if .Params.source.status }}
             {{- range $index, $element := .Params.source.status }}
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            {{ $no_content | safeHTML }}
+            {{ $no_content | safeHTMLAttr }}
           {{- end -}}
-        "><span class="fas fa-ban small"></span></a>
+        "><span class="small text-danger">Status | {{ site.Data.icons.ban | safeHTML }}</span></a>
       {{- else -}}
-        <a role="button" class="btn btn-sm bg-nav text-warning mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
           {{- if .Params.source.status }}
             {{- range $index, $element := .Params.source.status }}
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
             {{- end }}
           {{- else -}}
-            {{ $no_content | safeHTML }}
+            {{ $no_content | safeHTMLAttr }}
           {{- end -}}
-        "><span class="fas fa-question small"></span></a>
+        "><span class="small text-warning">Status | {{ site.Data.icons.question | safeHTML }}</span></a>
       {{- end -}}
     </div>
     <div class="col-md-4">
       {{- if .Params.get_it }}
         {{- if eq (len .Params.get_it) 1 -}}
-          <a href="{{ (index .Params.get_it 0).url }}" class="btn bg-nav my-2"><span class="fas fa-arrow-alt-circle-down text-primary"></span>&nbsp; <span class="text-primary">Get it</span></a>
+          <a href="{{ (index .Params.get_it 0).url }}" class="btn bg-nav my-2"><span class="text-primary">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-primary">Get it</span></a>
         {{- else -}}
         <a role="button" class="btn bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
           {{- range .Params.get_it -}} 
@@ -91,23 +134,23 @@
               {{- end -}}
             '>{{ .from }}</a>&nbsp;
           {{ end -}}
-        "><span class="fas fa-arrow-alt-circle-down text-primary"></span>&nbsp; <span class="text-primary">Get it</span></a>
+        "><span class="text-primary">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-primary">Get it</span></a>
         {{- end }}
       {{- end }}
       {{- if .Params.website -}}
-        &nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}"><span class="fas fa-globe text-primary"></span>&nbsp; <span class="text-primary">Visit</span></a> <br>
+        &nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}"><span class="text-primary">{{ site.Data.icons.website | safeHTML }}</span>&nbsp; <span class="text-primary">Visit</span></a> <br>
       {{- end -}}
       <div class="row my-2 p-2">
-        <span class="fas fa-share-alt fa-2x"></span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.BaseURL }}{{ .Permalink }}&quote={{ .Title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fab fa-facebook fa-2x"></span></a>&nbsp;&nbsp;
-        <a href="https://twitter.com/intent/tweet?source={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}:{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fab fa-twitter fa-2x"></span></a>&nbsp;&nbsp;
+        <span class="fa-2x">{{ site.Data.icons.share | safeHTML }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.BaseURL }}{{ .Permalink }}&quote={{ .Title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/intent/tweet?source={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}:{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>&nbsp;&nbsp;
         <!-- G+ is shutting down
-        <a href="https://plus.google.com/share?url={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fab fa-google-plus fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="https://plus.google.com/share?url={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa-2x">{{ site.Data.icons.googlePlus | safeHTML }}</span></a>&nbsp;&nbsp;
         -->
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}&summary={{ .Params.description }}&source=Softorage" rel="nofollow" target="_blank" title="Share on LinkedIn"><span class="fab fa-linkedin fa-2x"></span></a>&nbsp;&nbsp;
-        <a href="whatsapp://send?text={{ site.BaseURL }}{{ .Permalink }}%20{{ .Title }}" data-text="{{ .Title }}" data-href="{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fab fa-whatsapp fa-2x"></span></a>&nbsp;&nbsp;
-        <a href="https://reddit.com/submit?url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}" rel="nofollow" target="_blank" title="Share on Reddit"><span class="fab fa-reddit fa-2x"></span></a>&nbsp;&nbsp;
-        <a href="mailto:?subject={{ .Title }}&body={{ .Params.description }}:{{ site.BaseURL }}{{ .Permalink }}" target="_blank" title="Share via email"><span class="far fa-envelope fa-2x"></span></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}&summary={{ .Params.description }}&source=Softorage" rel="nofollow" target="_blank" title="Share on LinkedIn"><span class="fa-2x">{{ site.Data.icons.linkedin | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="whatsapp://send?text={{ site.BaseURL }}{{ .Permalink }}%20{{ .Title }}" data-text="{{ .Title }}" data-href="{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fa-2x">{{ site.Data.icons.whatsapp | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://reddit.com/submit?url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}" rel="nofollow" target="_blank" title="Share on Reddit"><span class="fa-2x">{{ site.Data.icons.reddit | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="mailto:?subject={{ .Title }}&body={{ .Params.description }}:{{ site.BaseURL }}{{ .Permalink }}" target="_blank" title="Share via email"><span class="fa-2x">{{ site.Data.icons.email | safeHTML }}</span></a>
       </div>
       <a href="https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/{{ .File.Path }}" class="badge small my-2" target="_blank">&#60;/page-source&#62;</a>
     </div>
@@ -148,9 +191,9 @@
                     {{- range $index, $element := .Params.source.overview }}
                       {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                     {{- end -}}
-                  "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                  "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                 {{- end -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="fas fa-info small"></span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -179,25 +222,25 @@
                   <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
                     {{- range .Params.source.platform }}
                       {{- if .dskp -}}
-                        <span class='fas fa-desktop'></span> : <br>
+                        {{ site.Data.icons.desktop | safeHTMLAttr }} : <br>
                         {{- range $index, $element := .dskp }}
                           {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                         {{- end }} <hr>
                       {{- else if .smptb -}}
-                        <span class='fas fa-mobile-alt'></span> / <span class='fas fa-tablet-alt'></span> : <br>
+                        {{ site.Data.icons.mobile | safeHTMLAttr }} / {{ site.Data.icons.tab | safeHTMLAttr }} : <br>
                         {{- range $index, $element := .smptb }}
                           {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                         {{- end }} <hr>
                       {{- else if .else -}}
-                        <span class='fas fa-bars'></span> : <br>
+                        {{ site.Data.icons.bars | safeHTMLAttr }} : <br>
                         {{- range $index, $element := .else }}
                           {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                         {{- end }} <hr>
                       {{- end }}
                     {{- end -}}
-                  "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                  "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                 {{- end -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Which platforms, is the software available on. Orange borders mean unofficial release."><span class="fas fa-info small"></span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Which platforms, is the software available on. Orange borders mean unofficial release."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -209,21 +252,21 @@
                     {{- range .dskp -}}
                       {{ if eq .name "Linux" }}
                         {{- if eq .type "official" -}}
-                          <span class='fab fa-linux fa-2x'></span>&nbsp;&nbsp;
+                          <span class='fa-2x'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- else -}}
-                          <span class='fab fa-linux fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- end }}
                       {{- else if eq .name "Windows" }}
                         {{- if eq .type "official" -}}
-                          <span class='fab fa-windows fa-2x'></span>&nbsp;&nbsp;
+                          <span class='fa-2x'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- else -}}
-                          <span class='fab fa-windows fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- end }}
                       {{- else if eq .name "macOS" }}
                         {{- if eq .type "official" -}}
-                          <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                          <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- else }}
-                          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- end }}
                       {{- else }}
                         {{- if eq .type "official" -}}
@@ -233,21 +276,21 @@
                         {{- end }}
                       {{- end }}
                     {{- end -}}
-                  "><span class="fas fa-desktop text-clr2"></span></a>
+                  "><span class="text-clr2">{{ site.Data.icons.desktop | safeHTML }}</span></a>
                 {{- else if .smp -}} 
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
                     {{- range .smp -}}
                       {{ if eq .name "Android" }}
                         {{- if eq .type "official" -}}
-                          <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+                          <span class='fa-2x'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- else -}}
-                          <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- end }}
                       {{- else if eq .name "iOS" }}
                         {{- if eq .type "official" -}}
-                          <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                          <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- else -}}
-                          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- end }}
                       {{- else }}
                         {{- if eq .type "official" -}}
@@ -257,21 +300,21 @@
                         {{- end }}
                       {{- end }}
                     {{- end -}}
-                  "><span class="fas fa-mobile-alt text-clr2"></span></a>
+                  "><span class="text-clr2">{{ site.Data.icons.mobile | safeHTML }}</span></a>
                 {{- else if .tab -}} 
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
                     {{- range .tab -}}
                       {{ if eq .name "Android" }}
                         {{- if eq .type "official" }}
-                        <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+                        <span class='fa-2x'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- else -}}
-                          <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- end }}
                       {{- else if eq .name "iOS" }}
                         {{- if eq .type "official" -}}
-                          <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                          <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- else -}}
-                          <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                         {{- end }}
                       {{- else }}
                         {{- if eq .type "official" -}}
@@ -281,7 +324,7 @@
                         {{- end }}
                       {{- end }}
                     {{- end -}}
-                  "><span class="fas fa-tablet-alt text-clr2"></span></a>
+                  "><span class="text-clr2">{{ site.Data.icons.tab | safeHTML }}</span></a>
                 {{- else -}} 
                   <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
                     {{- range .else -}}
@@ -291,7 +334,7 @@
                         <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
                       {{- end }}
                     {{- end -}}
-                  "><span class="fas fa-bars text-clr2"></span></a>
+                  "><span class="text-clr2">{{ site.Data.icons.bars | safeHTML }}</span></a>
                 {{- end }}&nbsp;
               {{- end }}
             {{- else -}}
@@ -310,7 +353,7 @@
             </div>
             <div class="col-auto">
               <span class="float-right">
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Social presence across the internet."><span class="fas fa-info small"></span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Social presence across the internet."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -322,39 +365,39 @@
               <!-- Range through all elements from the social param and assign (Set) respective value to $scratch -->
               {{- range $index, $element := .Params.social }}
                 {{- if eq $element.name "Wikipedia" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-wikipedia-w fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.wikipedia ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Youtube" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-youtube fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.youtube ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Facebook" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-facebook fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.facebook ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Twitter" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-twitter fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.twitter ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Pinterest" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-pinterest fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.pinterest ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Instagram" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-instagram fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.instagram ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "LinkedIn" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-linkedin fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.linkedin ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "VK" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-vk fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.vk ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "DeviantArt" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-deviantart fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.deviantart ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Google+" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-google-plus fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.googlePlus ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "reddit" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-reddit fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.reddit ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Flickr" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-flickr fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.flickr ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "mastodon" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-mastodon fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.mastodon ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "GitHub" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-github fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.github ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Steam" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-steam fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.steam ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Bandcamp" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-bandcamp fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.bandcamp ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Medium" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fab fa-medium fa-2x"></span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.medium ) `</span></a>`) "") -}}
                 {{- else -}}
                   {{- $scratch.Set "social_item" (delimit (slice `<a class="border p-1" href="` $element.url `"><span>` $element.name `</span></a>`) "") -}}
                 {{- end -}}
@@ -388,16 +431,16 @@
                     {{- range $index, $element := .Params.source.sysreq -}}
                       {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                     {{- end -}}
-                  "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                  "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                 {{- end -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="System configuration you should have to run the software peacefully."><span class="fas fa-info small"></span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="System configuration you should have to run the software peacefully."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
           <div class="card-text mt-3">
             {{- if (or (or $minimum $recommended) $optimal) -}}
               <div class="table-responsive-md">
-                <table class="table table-bordered">
+                <table>
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -465,7 +508,7 @@
             </div>
             <div class="col-auto">
               <span class="float-right">
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers."><span class="fas fa-info small"></span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -478,19 +521,19 @@
                   {{- $rt.name }}: {{ index $rt.rate 0 }}/{{ index $rt.rate 1 }}
                   {{- if $rt.num }} &nbsp;<span class="text-muted">based on {{ $rt.num }} reviews</span>{{ else }} &nbsp;<span class="text-muted">based on professional's opinion</span>{{ end }}
                   <span class="float-right">
-                    {{- range .Params.source.rating -}}
+                    {{- range $index_src, $rt_src := $.Params.source.rating -}}
                       <!-- check whether 0th element of array which is name of reviewer is same as the concerned rating's reviewer -->
-                      {{- if eq .name $rt.name -}}
+                      {{- if eq $rt_src.name $rt.name -}}
                         <!-- whether the review is based on a number of user opinions --> 
                         {{- if $rt.num -}}
                           <!-- check whether the array of 'src_rating' has 2nd element "user", which corresponds to "based on a number of users' opinion" -->
-                          {{- if eq .type "user" -}}
-                            <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ .url }}'>{{ .url }}</a>"><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                          {{- if eq $rt_src.type "user" -}}
+                            <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                           {{- end -}}
                         {{- else }}
                           <!-- in case rating is based on a professsional's opinion -->
-                          {{- if eq .type "expert" -}}
-                            <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ .url }}'>{{ .url }}</a>"><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                          {{- if eq $rt_src.type "expert" -}}
+                            <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                           {{- end }}
                         {{- end }}
                       {{- end }}
@@ -526,9 +569,9 @@
                   {{- range $index, $element := .Params.source.developer }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
-                "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Get to know who developed the software."><span class="fas fa-info small"></span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Get to know who developed the software."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -558,9 +601,9 @@
                   {{- range $index, $element := .Params.source.written_in }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
-                "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), the software is written in."><span class="fas fa-info small"></span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), the software is written in."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -590,9 +633,9 @@
                   {{- range $index, $element := .Params.source.initial_release }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
-                "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released. Elder the software, more trustworthy it is."><span class="fas fa-info small"></span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released. Elder the software, more trustworthy it is."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -619,7 +662,7 @@
           </div>
           <div class="col-auto">
             <span class="float-right">
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Where you can find source code of the software. Have a look!"><span class="fas fa-info small"></span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Where you can find source code of the software. Have a look!"><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -649,9 +692,9 @@
                   {{- range $index, $element := .Params.source.license }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
-                "><span class="fas fa-shoe-prints fa-rotate-270 small"></span></a>
+                "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="fas fa-info small"></span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -676,7 +719,7 @@
           </div>
           <div class="col-auto">
             <span class="float-right">
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="What type of software it is. Helps you with classification."><span class="fas fa-info small"></span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="What type of software it is. Helps you with classification."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -703,7 +746,7 @@
             <span class="h6">{{ $category }}</span><br>
             {{- range where site.RegularPages "Section" "==" "software" }}
               {{- if in .Params.categories $category -}}
-                <a class="btn btn-sm btn-light shadow-sm my-2" href="{{ .Params.url }}">{{ .Params.title }}</a> &nbsp;
+                <a class="btn btn-sm btn-light shadow-sm my-2" href="{{ .Permalink }}">{{ .Params.title }}</a> &nbsp;
               {{- end }}
             {{- end -}}
             <br><br>
@@ -725,7 +768,6 @@
     </div>
   {{- end -}}
   <br>
-  <p class="bg-nav text-antinav text-center small p-2">Disclaimer: Software name, software logo and any related marks are property of their respective owners. Use of software name, software logo and any related marks here neither imply endorsement of the organization or software by Softorage, nor vice versa.</p>
   {{/* .GitInfo seems to be not working on GitLab runners
   <p class="bg-nav text-antinav text-center small p-2">{{ .Title }} was last updated with commit: <a href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})<a></p>
   */}}

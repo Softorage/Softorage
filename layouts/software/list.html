@@ -21,9 +21,11 @@
         <span class="small float-right">search by <a href="https://listjs.com/">List.js</a></span>
         <br><br>
         <div class="form-group list">
-          {{/* range $key, $value := site.Taxonomies.categories }}
+          {{/* Example usage:
+          {{ range $key, $value := site.Taxonomies.categories }}
             <li><a href="{{ $baseurl }}categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
-          {{ end */}}
+          {{ end }}
+          */}}
           {{- range $key, $value := site.Taxonomies.categories -}}
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="{{ lower (replace $key "-" "_") }}">
@@ -46,7 +48,7 @@
         <div class="form-inline bg-nav p-2 shadow-sm menu" style="z-index:1030;">
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-sm bg-clr2-light" data-toggle="modal" data-target="#filter-modal">
-            <span class="fas fa-filter text-clr2"></span>&nbsp; <span class="text-clr2">Filter</span>
+            <span class="text-clr2">{{ site.Data.icons.filter | safeHTML }}</span>&nbsp; <span class="text-clr2">Filter</span>
           </button>
           <!-- 
           wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
@@ -57,20 +59,20 @@
         </div>
         <br>
         <div class="table-responsive-md">
-          <table class="table table-bordered">
+          <table>
             <thead>
               <tr>
-                <th class="text-center" scope="col">#</th>
-                <th class="text-center" scope="col">Title &nbsp;<span class="btn btn-sm small sort asc" data-sort="name"><span class="fas fa-sort text-antinav"></span></span></th>
-                <th class="text-center" scope="col">Description</th>
-                <th class="text-center" scope="col">Available for</th>
+                <th scope="col">#</th>
+                <th scope="col">Title &nbsp;<span class="btn btn-sm small sort asc" data-sort="name"><span class="text-antinav">{{ site.Data.icons.sort | safeHTML }}</span></span></th>
+                <th scope="col">Description</th>
+                <th scope="col">Available for</th>
               </tr>
             </thead>
             <tbody class="list">
               {{- range $index, $element := where site.RegularPages "Section" "==" "software" -}}
                 <tr>
-                  <th class="text-center" scope="row">{{ add $index 1 }}</th>
-                  <td><a class="font-weight-bold text-antinav text-reset" href="{{ $element.Permalink }}" target="_blank"><span class="name">{{ $element.Title }}</span></a>&nbsp;<span class="fas fa-external-link-alt small"></span></td>
+                  <th scope="row">{{ add $index 1 }}</th>
+                  <td><a class="font-weight-bold text-antinav text-reset" href="{{ $element.Permalink }}" target="_blank"><span class="name">{{ $element.Title }}</span></a>&nbsp;<span class="small">{{ site.Data.icons.externalLink | safeHTML }}</span></td>
                   <td>
                     {{- if $element.Params.description -}}
                       <span class="description">{{ $element.Params.description }}</span>
@@ -80,7 +82,7 @@
                     <br>
                     <div class="bg-clr2-light text-clr2 py-1 px-2 text-center rounded shadow-sm category">
                       {{- range $i, $e := $element.Params.categories }}
-                        {{- if $i }} | {{ end}}{{ $e }}
+                        {{- if $i }} | {{ end }}{{ $e }}
                       {{- end -}}
                     </div>
                   </td>
@@ -91,21 +93,21 @@
                           {{- range .dskp -}}
                             {{ if eq .name "Linux" }}
                               {{- if eq .type "official" -}}
-                                <span class='fab fa-linux fa-2x'></span>&nbsp;&nbsp;
+                                <span class='fa-2x'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- else -}}
-                                <span class='fab fa-linux fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                                <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- end }}
                             {{- else if eq .name "Windows" }}
                               {{- if eq .type "official" -}}
-                                <span class='fab fa-windows fa-2x'></span>&nbsp;&nbsp;
+                                <span class='fa-2x'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- else -}}
-                                <span class='fab fa-windows fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                                <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- end }}
                             {{- else if eq .name "macOS" }}
                               {{- if eq .type "official" -}}
-                                <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                                <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- else }}
-                                <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                                <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- end }}
                             {{- else }}
                               {{- if eq .type "official" -}}
@@ -115,21 +117,21 @@
                               {{- end }}
                             {{- end }}
                           {{- end -}}
-                        "><span class="fas fa-desktop text-clr2"></span></a>
+                        "><span class="text-clr2">{{ site.Data.icons.desktop | safeHTML }}</span></a>
                       {{- else if .smp -}} 
                         <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
                           {{- range .smp -}}
                             {{ if eq .name "Android" }}
                               {{- if eq .type "official" -}}
-                                <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+                                <span class='fa-2x'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- else -}}
-                                <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                                <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- end }}
                             {{- else if eq .name "iOS" }}
                               {{- if eq .type "official" -}}
-                                <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                                <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- else -}}
-                                <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                                <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- end }}
                             {{- else }}
                               {{- if eq .type "official" -}}
@@ -139,21 +141,21 @@
                               {{- end }}
                             {{- end }}
                           {{- end -}}
-                        "><span class="fas fa-mobile-alt text-clr2"></span></a>
+                        "><span class="text-clr2">{{ site.Data.icons.mobile | safeHTML }}</span></a>
                       {{- else if .tab -}} 
                         <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
                           {{- range .tab -}}
                             {{ if eq .name "Android" }}
                               {{- if eq .type "official" }}
-                              <span class='fab fa-android fa-2x'></span>&nbsp;&nbsp;
+                              <span class='fa-2x'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- else -}}
-                                <span class='fab fa-android fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                                <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- end }}
                             {{- else if eq .name "iOS" }}
                               {{- if eq .type "official" -}}
-                                <span class='fab fa-apple fa-2x'></span>&nbsp;&nbsp;
+                                <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- else -}}
-                                <span class='fab fa-apple fa-2x border border-warning p-1'></span>&nbsp;&nbsp;
+                                <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
                               {{- end }}
                             {{- else }}
                               {{- if eq .type "official" -}}
@@ -163,7 +165,7 @@
                               {{- end }}
                             {{- end }}
                           {{- end -}}
-                        "><span class="fas fa-tablet-alt text-clr2"></span></a>
+                        "><span class="text-clr2">{{ site.Data.icons.tab | safeHTML }}</span></a>
                       {{- else -}} 
                         <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
                           {{- range .else -}}
@@ -173,7 +175,7 @@
                               <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
                             {{- end }}
                           {{- end -}}
-                        "><span class="fas fa-bars text-clr2"></span></a>
+                        "><span class="text-clr2">{{ site.Data.icons.bars | safeHTML }}</span></a>
                       {{- end }}&nbsp;
                     {{- end -}}
                   </td>

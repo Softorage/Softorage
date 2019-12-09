@@ -27,9 +27,44 @@ scroll-behavior: smooth;
 
 // specifying this at top, so that, it is overridden when need be
 body {
+font-family: 'Lato', sans-serif;
 background: $nav;
 color: $antinav;
 }
+
+.brand {
+font-family: 'Roboto', sans-serif;
+}
+
+// https://codepen.io/Bluetidepro/pen/GkpEa : slightly modified
+.rating-stars {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 1rem;
+  height: 1rem;
+  width: 4rem;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  
+  &-top {
+    color: #e7711b;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  &-bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+  }
+}
+
+
 
 // adding .anchor class to anchor makes `element hiding behind fixed-top-navbar` problem go.
 // just that a distinct anchor shall be created (preferably with <span>) as its visibility is hidden.
@@ -84,6 +119,7 @@ color: $clr1;
 //
 .btn {
 @extend .shadow-sm;
+cursor: pointer;
 }
 
 //
@@ -115,14 +151,24 @@ border: 0;
 .popover .popover-header {
 background-color: $nav;
 color: $antinav;
-font-size: 1.25rem;
+font-size: 1.1rem;
 text-align: center;
+font-family: 'Lato', sans-serif;
 }
 
 .popover .popover-body {
 background-color: $nav;
 color: $antinav;
 padding: 1.25rem;
+font-family: 'Lato', sans-serif;
+}
+
+// Styling table, so that class names are not necessary. Very handy for markdown rendered content!
+table {
+@extend .table, .table-bordered;
+}
+th {
+@extend .text-center, .align-middle;
 }
 
 //
@@ -274,7 +320,7 @@ background: rgba($nav, 1);
 }
 
 // Colouring Font-Awesome icons
-.fa-shoe-prints, .fa-info {
+.card .btn-sm .fa-shoe-prints, .card .btn-sm .fa-info, .card .btn-sm .fa-question {
 color: $clr2;
 }
 

@@ -1,0 +1,70 @@
+# welcome page
+search: "<span class='fas fa-search'></span>"
+down: "<span class='fas fa-chevron-down'></span>"
+help: "<span class='fas fa-hands-helping'></span>"
+dotsVerticle: "<span class='fas fa-ellipsis-v tg'></span>" # exceptional case: we have added tg class for text gradient, since it won't work if tg were given to parent element of dotsVerticle.
+
+lockOpen: "<span class='fas fa-lock-open'></span>"
+lineChart: "<span class='fas fa-chart-line'></span>"
+bulb: "<span class='fas fa-lightbulb'></span>"
+bolt: "<span class='fas fa-bolt'></span>"
+
+table: "<span class='fas fa-table'></span>"
+plus: "<span class='fas fa-plus'></span>"
+code: "<span class='fas fa-code'></span>"
+heart: "<span class='fas fa-heart'></span>"
+
+download: "<span class='fas fa-arrow-alt-circle-down'></span>"
+website: "<span class='fas fa-globe'></span>"
+share: "<span class='fas fa-share-alt'></span>"
+email: "<span class='far fa-envelope'></span>"
+
+# source
+source: "<span class='fas fa-info'></span>" #"<span class='fas fa-shoe-prints fa-rotate-270'></span>"
+info: "<span class='fas fa-question'></span>" #"<span class='fas fa-info'></span>"
+
+# status
+checkmark: "<span class='fas fa-check'></span>"
+ban: "<span class='fas fa-ban'></span>"
+question: "<span class='fas fa-question'></span>"
+
+# platform
+desktop: "<span class='fas fa-desktop'></span>"
+mobile: "<span class='fas fa-mobile-alt'></span>"
+tab: "<span class='fas fa-tablet-alt'></span>"
+bars: "<span class='fas fa-bars'></span>"
+
+windows: "<span class='fab fa-windows'></span>"
+linux: "<span class='fab fa-linux'></span>"
+apple: "<span class='fab fa-apple'></span>"
+android: "<span class='fab fa-android'></span>"
+
+# social, footer
+gitlab: "<span class='fab fa-gitlab'></span>"
+facebook: "<span class='fab fa-facebook'></span>"
+twitter: "<span class='fab fa-twitter'></span>"
+whatsapp: "<span class='fab fa-whatsapp'></span>"
+wikipedia: "<span class='fab fa-wikipedia-w'></span>"
+youtube: "<span class='fab fa-youtube'></span>"
+pinterest: "<span class='fab fa-pinterest'></span>"
+instagram: "<span class='fab fa-instagram'></span>"
+linkedin: "<span class='fab fa-linkedin'></span>"
+vk: "<span class='fab fa-vk'></span>"
+deviantart: "<span class='fab fa-deviantart'></span>"
+googlePlus: "<span class='fab fa-google-plus'></span>"
+reddit: "<span class='fab fa-reddit'></span>"
+flickr: "<span class='fab fa-flickr'></span>"
+mastodon: "<span class='fab fa-mastodon'></span>"
+github: "<span class='fab fa-github'></span>"
+steam: "<span class='fab fa-steam'></span>"
+bandcamp: "<span class='fab fa-bandcamp'></span>"
+medium: "<span class='fab fa-medium'></span>"
+
+# SAW
+contents: "<span class='fas fa-align-justify'></span>"
+spinner: "<span class='fas fa-circle-notch'></span>"
+
+# Search page
+externalLink: "<span class='fas fa-external-link-alt'></span>"
+filter: "<span class='fas fa-filter'></span>"
+sort: "<span class='fas fa-sort'></span>"

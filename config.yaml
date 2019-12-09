@@ -2,18 +2,20 @@ baseURL: "https://softorage.com/"
 languageCode: "en-us"
 title: "Softorage"
 params:
-  description: The one place for authentic downloads and all your software related information needs
-  author: Softorage team
-  tagline: You name it # recommended for SEO template (partial/seo.html)
+  description: "The one place for authentic downloads and all your software related information needs"
+  author: "Softorage team"
+  tagline: "The Software Directory." # recommended for SEO template (partial/seo.html)
   # twitter: # recommended for SEO template (partial/seo.html)
   # image: # favicon; resolution 200px x 200px to 1200px x 1200px
 
 taxonomies:
   category: categories
 
-# blackfriday:
-#   extensions:
-#   - laxHtmlBlocks
-
 enableRobotsTXT: true
 # enableGitInfo: true
+
+# Allow HTML rendering
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

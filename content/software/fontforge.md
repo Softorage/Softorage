@@ -65,10 +65,10 @@ source:
   license: ["https://github.com/fontforge/fontforge/blob/master/LICENSE"]
   rating:
     - name: "OSDN"
-      type: "u"
+      type: "user"
       url: "https://osdn.net/projects/sfnet_fontforge/reviews/"
     - name: "SourceForge"
-      type: "u"
+      type: "user"
       url: "https://sourceforge.net/projects/fontforge/"
   status: ["https://github.com/fontforge/fontforge", "https://github.com/fontforge/fontforge/graphs/contributors", "https://github.com/fontforge/fontforge/releases"]
 

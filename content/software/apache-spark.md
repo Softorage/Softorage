@@ -37,7 +37,7 @@ platform:
         type: "official"
       - name: "Windows"
         type: "official"
-      - name: macOS"
+      - name: "macOS"
         type: "official"
       - name: "Unix(like)"
         type: "official"
