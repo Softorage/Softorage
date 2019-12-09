@@ -1,26 +1,52 @@
 <footer>
   <div class="container bg-nav text-center p-2">
-    <a href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io"><span class="fab fa-gitlab fa-2x"></span></a>
+    <a href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io"><span class="fa-2x">{{ site.Data.icons.gitlab | safeHTML }}</span></a>
   </div>
   <div class="container-fluid main-gradient-light py-3 shadow-sm position-relative">
     <div class="row">
       <div class="col-md-7">
-        <span class="tg" style="font-size:3.5rem;"><a class="text-decoration-none" href="{{ site.BaseURL }}">{{ site.Title }}</a></span>
-        <p class="lead text-antinav">{{ site.Params.tagline}}</p>
+        <span class="tg" style="font-size:3.5rem;"><a class="text-decoration-none brand" href="{{ site.BaseURL }}">{{ site.Title }}</a></span>
+        <p class="lead tg">{{ site.Params.tagline}}</p>
       </div>
       <div class="col-md-5 text-antinav">
-        <p>
-          Copyright &#169; 2018 {{ site.Title }}
-          <br>
-          Code licensed under <b><a class="text-antinav text-reset" href="LICENSE">Apache license 2.0</a></b>. Unless otherwise noted, content licensed under <b><a class="text-antinav text-reset" href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0 license</a></b>.
-          <p class="small">
-            Site last generated: {{ now.Format "2 January, 2006" }}
-          </p>
-        </p>
+        <div class="card-deck">
+          
+          <!-- Softorage -->
+          <div class="card rounded text-center">
+            <div class="card-body">
+              <a class="text-decoration-none text-reset" href="{{ site.BaseURL }}"><h2 class="card-title h4 m-0">Softorage</h2></a>
+              <div class="card-text mt-3">
+                <a class="text-reset" href="{{ site.BaseURL }}/search/">Search</a><br>
+                <a class="text-reset" href="{{ site.BaseURL }}/categories/">Categories</a><br>
+                <a class="text-reset" href="{{ site.BaseURL }}/contribute/">Contribute</a><br>
+                <a class="text-reset" href="{{ site.BaseURL }}/get-involved/">Get involved</a><br>
+                <a class="text-reset" href="{{ site.BaseURL }}/sitemap.xml">Sitemap</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Legal -->
+          <div class="card rounded text-center">
+            <div class="card-body">
+              <a class="text-decoration-none text-reset" href="{{ site.BaseURL }}/legal/"><h2 class="card-title h4 m-0">Legal</h2></a>
+              <div class="card-text mt-4">
+                <a class="text-reset" href="{{ site.BaseURL }}/legal/privacy-policy/">Privacy Policy</a><br>
+                <a class="text-reset" href="{{ site.BaseURL }}/legal/disclaimer/">Disclaimer</a><br>
+                <a class="text-reset" href="{{ site.BaseURL }}/legal/cookie-policy/">Cookie Policy</a><br>
+                <a class="text-reset" href="mailto:contact@softorge.com">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
+    </div>
+    <hr class="mt-4">
+    <div class="text-center mt-3">
+      <span class="small text-muted">Copyright &#169; 2019 {{ site.Title }} | Code licensed under <b><a class="text-antinav text-reset" href="LICENSE">Apache license 2.0</a></b>. Unless otherwise noted, content licensed under <b><a class="text-antinav text-reset" href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0 license</a></b>. | Site last generated: {{ now.Format "02 January, 2006" }}</span>
     </div>
   </div>
   <div class="container-fluid text-center text-antinav bg-mat p-2">
-    From Asia's emerging giant and the country of <span class="fas fa-heart text-danger"></span>&nbsp;-&nbsp;&nbsp;<span class="font-weight-bold bg-white rounded px-2"><span style="color:#FF9933;">In</span><span style="color:#000080;">d</span><span style="color:#138808;">ia</span></span>
+    From Asia's emerging giant and the country of <span class="text-danger">{{ site.Data.icons.heart | safeHTML }}</span>&nbsp;-&nbsp;&nbsp;<span class="font-weight-bold bg-white rounded px-2"><span style="color:#FF9933;">In</span><span style="color:#000080;">d</span><span style="color:#138808;">ia</span></span>
   </div>
 </footer>

@@ -4,8 +4,7 @@
 <!-- SEO template changes; source: https://digitalonlinetactics.com/post/blogging/hugo-seo-tips/ -->
 <title>
   {{- if and (eq .Section "software") .IsPage }}View and download {{ end -}}
-  {{ .Title | default site.Title }}
-  {{- if not .IsHome }} | {{ site.Title }}{{ end -}}
+  {{ .Title | default site.Title }} | {{ if not .IsHome -}} {{ site.Title }} {{- else -}} {{ site.Params.tagline }} {{- end -}}
 </title>
 <meta name="description" content="
   {{- with .Description }}

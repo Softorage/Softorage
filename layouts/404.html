@@ -8,16 +8,45 @@
 ---
 */}}
 
-<div class="container-fluid text-center d-flex" style="height:100vh;">
+<div class="container-fluid d-flex flex-column" style="height:100vh;">
   <div style="height:3.5rem;"></div>
   <br>
-  <div class="container my-auto">
-    <span class="text-clr1 display-1">404</span>
-    <br><br>
-    <h3><span class="fas fa-circle-notch fa-2x fa-spin"></span>ops!</h3>
-    <p class="lead my-4">The page you were looking for, could not be found :(</p>
-    Please try something else.
+  <div class="row my-auto">
+    <div class="col-md-5">
+      <div class="container my-auto text-center align-middle">
+        <span class="text-clr1 display-1">404</span>
+        <br><br>
+        <h3><span class="fa-2x fa-spin">{{ site.Data.icons.spinner | safeHTML }}</span>ops!</h3>
+        <p class="lead my-4">The page you were looking for, could not be found :(</p>
+      </div>
+    </div>
+    <hr>
+    <div class="col-md-7">
+      <div class="container my-auto align-middle">
+        <b class="my-4 h4">What may have caused this:</b>
+        <ul>
+          <li>The page may have been moved or deleted.</li>
+          <li>You may have used an outdated or broken link.</li>
+          <li>You may have typed address (URL) incorrectly.</li>
+        </ul>
+        
+        <b class="my-4 h4">What can be done:</b>
+        <ul>
+          <li>You may try retyping the URL.</li>
+          <li>You may head over to the <a href="{{ site.BaseURL }}">Softorage home page</a>.</li>
+          <li>You may head over to <a href="{{ site.BaseURL }}/search/">Search page</a>.</li>
+          <li>If you want to tell us about broken links or send in your general comments about Softorage.com, contact us at <a href="mailto:contact@softorage.com">contact@softorage.com</a>, with your Name, the Page you came from (if in regard to broken links), the Content or the URL of the page you were attempting to view. We will get in touch!</li>
+        </ul>
+        <hr>
+        <span class="h5">You can always try searching. It's worth a shot!</span>
+        <form action="/search/" method="get">
+          <input type="search" class="bg-nav border-0 form-control my-2 shadow-sm" name="s" placeholder="Search" autofocus>
+        </form>
+      </div>
+    </div>
   </div>
+  
+  
 </div>
 
 {{- end }}

@@ -56,7 +56,7 @@ source:
   license: ["https://www.numpy.org/license.html", "https://github.com/numpy/numpy/blob/master/LICENSE.txt"]
   rating:
     - name: "G2CROWD"
-      type: "u"
+      type: "user"
       url: "https://www.g2crowd.com/products/numpy-download/reviews"
   status: ["https://github.com/numpy/numpy/graphs/contributors"]
 

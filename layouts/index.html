@@ -12,7 +12,11 @@
     <div class="row">
     
     <div class="col-md-8">
-      <div class="text-left tg"><h1 class="display-4">The Software Directory.</h1><br><span class="lead">Concise &amp; Professional.</span></div>
+      <div class="text-left tg">
+        <h1 class="display-4">The Software Directory.</h1>
+        <br>
+        <span class="lead">Concise &amp; Professional.</span>
+      </div>
     </div>
     
     <div class="col-md-4">
@@ -31,7 +35,7 @@
   </div>
   <hr class="my-4">
   <p class="lead">
-    <a class="btn bg-clr1-light" href="/search/" role="button"><span class="fas fa-search text-clr1"></span>&nbsp; <span class="text-clr1">Search</span></a>&nbsp;<a class="btn main-gradient-light" href="#its_open" role="button"><span class="fas fa-chevron-down text-clr1"></span>&nbsp; <span class="tg">Explore</span></a>&nbsp;<a class="btn bg-clr2-light" href="/contribute/" role="button"><span class="fas fa-hands-helping text-clr2"></span>&nbsp; <span class="text-clr2">Contribute</span></a>
+    <a class="btn bg-clr1-light" href="/search/" role="button"><span class="text-clr1">{{ site.Data.icons.search | safeHTML }}</span>&nbsp; <span class="text-clr1">Search</span></a>&nbsp;<a class="btn main-gradient-light" href="#its_open" role="button"><span class="text-clr1">{{ site.Data.icons.help | safeHTML }}</span>&nbsp; <span class="tg">Explore</span></a>&nbsp;<a class="btn bg-clr2-light" href="/contribute/" role="button"><span class="text-clr2">{{ site.Data.icons.help | safeHTML }}</span>&nbsp; <span class="text-clr2">Contribute</span></a>
   </p>
 </div>
 <!-- Features -->
@@ -42,7 +46,7 @@
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
-        <span class="fas fa-lock-open text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
+        <span class="text-clr1 p-5 border rounded" style="font-size:5.5rem;">{{ site.Data.icons.lockOpen | safeHTML }}</span>
       </div>
       <div class="col-md-7 text-antinav">
         <div class="display-4">Open!</div>
@@ -58,7 +62,7 @@
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
-        <span class="fas fa-chart-line text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
+        <span class="text-clr1 p-5 border rounded" style="font-size:5.5rem;">{{ site.Data.icons.lineChart | safeHTML }}</span>
       </div>
       <div class="col-md-7 text-antinav">
         <div class="display-4">{{ sub $soft_no 1 }}+ software</div>
@@ -74,7 +78,7 @@
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
-        <span class="fas fa-lightbulb text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
+        <span class="text-clr1 p-5 border rounded" style="font-size:5.5rem;">{{ site.Data.icons.bulb | safeHTML }}</span>
       </div>
       <div class="col-md-7 text-antinav">
         <div class="display-4">Innovative</div>
@@ -90,7 +94,7 @@
   <div class="container py-5">
     <div class="row text-center py-5">
       <div class="col-md-5 align-self-center">
-        <span class="fas fa-bolt text-clr1 p-5 border rounded" style="font-size:5.5rem;"></span>
+        <span class="text-clr1 p-5 border rounded" style="font-size:5.5rem;">{{ site.Data.icons.bolt | safeHTML }}</span>
       </div>
       <div class="col-md-7 text-antinav">
         <div class="display-4">Fast</div>
@@ -107,11 +111,11 @@
   <div class="container py-5">
     <div class="container text-center py-5">
       <div class="my-5">
-        <span class="fas fa-table fa-4x text-clr1 align-middle m-3"></span>
-        <span class="fas fa-plus text-antinav align-middle"></span>
-        <span class="fas fa-code fa-4x text-clr2 align-middle m-3"></span>
-        <span class="fas fa-plus text-antinav align-middle"></span>
-        <span class="fas fa-heart fa-4x text-danger align-middle m-3"></span>
+        <span class="fa-4x text-clr1 align-middle m-3">{{ site.Data.icons.table | safeHTML }}</span>
+        <span class="text-antinav align-middle">{{ site.Data.icons.plus | safeHTML }}</span>
+        <span class="fa-4x text-clr2 align-middle m-3">{{ site.Data.icons.code | safeHTML }}</span>
+        <span class="text-antinav align-middle">{{ site.Data.icons.plus | safeHTML }}</span>
+        <span class="fa-4x text-danger align-middle m-3">{{ site.Data.icons.heart | safeHTML }}</span>
       </div>
       <div class="display-4 text-antinav">Made with lots of love</div>
     </div>

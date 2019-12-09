@@ -68,7 +68,7 @@ source:
       type: "expert"
       url: "https://download.cnet.com/Inkscape/3000-2191_4-10527269.html"
     - name: "CNET"
-      type: "uxpert"
+      type: "expert"
       url: "https://download.cnet.com/Inkscape/3000-2191_4-10527269.html"
     - name: "GetApp"
       type: "user"

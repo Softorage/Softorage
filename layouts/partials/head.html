@@ -6,6 +6,12 @@
   {{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS | postCSS | fingerprint -}}
   <!-- Minified Aggregated CSS -->
   <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+  <!-- Prefetch and Preconnect Google Fonts API -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <!-- Request Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&text=Softorage&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <!-- RSS Feed -->
   {{- range .AlternativeOutputFormats -}}
     {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}

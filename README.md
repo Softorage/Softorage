@@ -30,7 +30,7 @@ You can get a copy of project up and running on your local machine for developem
 
 _Anyone contributing benefits equally from others' contributions_  
   
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://softorage.com/contributing) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## License
 

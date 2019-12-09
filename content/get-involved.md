@@ -4,7 +4,6 @@ description: Help make Softorage better
 ---
 
 ---
-
 Thank you for giving time for the project. Contributors are the primary pillar of Softorage, who keep it updated to latest advancements and with trends.  
   
 We want to create a welcoming environment for everyone who is interested in contributing. Going through these guidelines ensures you and us are on the same page and that everyone's time and efforts are saved.
@@ -18,7 +17,7 @@ To help us, you can:
 1. **Spread the word**  
    This is one of the most appreciated way in which you can help us. Tell your relatives, family, friends and enemies about Softorage. Also, every `softpage` has share buttons which allow to share that page's URL in various ways.
 2. **Add softwares to Softorage**  
-   There is [a GUI available for adding softwares](/saw/) (called SAW) and requires next to no technical skills. All documentation is provided as `i-buttons` in SAW. [Check it out](/saw/).
+   There is [a GUI available for adding softwares](https://softorage.gitlab.io/saw/) (called SAW) and requires next to no technical skills. All documentation is provided as `i-buttons` in SAW. [Check it out!](https://softorage.gitlab.io/saw/)
 3. **Help us maintain documentaion**  
    SAW's documentation is primarily maintained at the SAW's repo, and at reasonable intervals it is consolidated and used to update the documentation on Softorage(that relates to SAW). So, in case you want to help with SAW's documentation, please see SAW's docs and send pull requests there. Docs at Softorage relating to SAW will be updated based on SAW's docs only.
 4. **Help with development & feedback**  
@@ -37,11 +36,11 @@ To help us, you can:
 
 Softorage primarily runs on [Hugo](https://gohugo.io/).
 
-<span class="d-block alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 
 You may need basic knowledge of Hugo's directory structure.
 
-</span>
+</div>
 
 ---
 
@@ -56,7 +55,7 @@ Each software's markdown file is rendered as a separate page. Such a page forms 
   
   
 ### Characteristics
-A software's markdown file stores information about the software in the form of [front-matter](https://jekyllrb.com/docs/front-matter/) variables. In a software's markdown file, these variables have been arranged in a systematic way forming levels of hierarchy, so that expected output is rendered on the softpage. The primary level of variables constitutes `charachteristics` of that software. From secondary level onward, the pattern of arrangement for variables and their values may differ from `characteristics` to `characteristics`.  
+A software's markdown file stores information about the software in the form of [front-matter](https://gohugo.io/content-management/front-matter/) variables. In a software's markdown file, these variables have been arranged in a systematic way forming levels of hierarchy, so that expected output is rendered on the softpage. The primary level of variables constitutes `charachteristics` of that software. From secondary level onward, the pattern of arrangement for variables and their values may differ from `characteristics` to `characteristics`.  
 Following are primary `characteristics`, along with brief intro:  
 
 1. `title`: Title of the software  
@@ -107,11 +106,11 @@ Now, in many cases, there are more than one `input-fields`, usually arranged in 
 ### Source
 `source` is the source from where the information in an `infocard` or a `characteristic` is obtained. An accepted `source` is a source which is as specific as possible and which is likely to be available or retrievable in future, and possibility of which to be unreachable in future is neglible at present. It may be a page of a website, or a page number of a book, or any globally traceable piece of information which can be retrieved later. In case source is a website page, just its URL can form part of `source` (see example 1).
 
-<span class="d-block alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 
 Note: If using Wikipedia as source, it should be ensured that permanent link (which can be found under 'Tools' on the Wikipedia page's sidebar) is used.
 
-</span>
+</div>
 
 However, in case a source is in a book, the format changes (see example 2).  
 
@@ -121,18 +120,18 @@ For example,
 
 2nd case is when a source is not a website. Say the information we are referring to can be found at line no. 12, page no.34, of The Example Book edition 5 by Author Example. Then 'Specification of source' is: "line no. 12, page no.34, of The Example Book edition 5 by Author Example". It should be noted that 'Specification of source' shall be as detailed as possible and needed. This includes specifying line number, page number, book name along with its edition details, author name, ISBN of the book, etc. URL-B is the URL on the web from where that book can be bought or downloaded or acquired for possession whether in electronic, physical or any such form. This include link to Amazon page of the book or official website for the book or else. In case there is no URL to be specified as URL-B, `#` shall be the URL-B.
 
-<span class="d-block alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 
 It may be noted here that in case more than one URLs need to be specified as URL-B, an appropriate one shall be chosen among them and that chosen one shall be URL-B.
 
-</span>
+</div>
 
-<span class="d-block alert alert-danger" markdown="1">
+<div class="alert alert-danger" markdown="1">
 
 Please note that form as follows must **not** be used in any case as it will render the output distorted.  
 1. URL1, [["URL-B1", "URL-B2"], Specification of source], URL2
 
-</span>
+</div>
 
 ---
 
