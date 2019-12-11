@@ -51,10 +51,10 @@ source:
   status: ["https://www.tug.org/texlive/", "https://tug.org/svn/texlive/trunk/"]
 
 ---
-  TeX Live is a free software distribution for the TeX typesetting system that includes major TeX-related programs, macro packages, and fonts. It is the replacement of its no-longer supported counterpart teTeX.
+  TeX Live is a free software distribution for the TeX [typesetting](/categories/typesetting) system that includes major TeX-related programs, macro packages, and fonts. It is the replacement of its no-longer supported counterpart teTeX.
   
   > TeX Live is an easy way to get up and running with the TeX document production system. It provides a comprehensive TeX system with binaries for most flavors of Unix, including GNU/Linux, and also Windows. It includes all the major TeX-related programs, macro packages, and fonts that are free software, including support for many languages around the world. \- [Official website](https://www.tug.org/texlive/)
   
-  Since the 2009 release of TeX Live, it includes [TeXworks]({{< ref "texworks" >}}), a graphical editor. There is also [MacTeX]({{< ref "mactex" >}}) for macOS which comprises TeX Live as well as some additional tools for using TeX on the Mac.
+  Since the 2009 release of TeX Live, it includes [TeXworks](/software/texworks/), a graphical editor. There is also [MacTeX](/software/mactex/) for macOS which comprises TeX Live as well as some additional tools for using TeX on the Mac.
   
   [Documentation](https://www.tug.org/texlive/doc.html) I [Mailing lists](https://www.tug.org/texlive/lists.html)

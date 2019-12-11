@@ -1,8 +1,18 @@
+{{ define "main" }}
+<!-- The purpose of this file is only to help PurgeCSS understand the icons that are used in the website -->
+<div class="container-fluid bg-nav text-clr1 text-center py-3 position-relative shadow-sm">
+  <div style="height:3.5rem;"></div>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+</div>
+<div class="container-fluid bg-antinav-light py-3">
+
+
 # welcome page
 search: "<span class='fas fa-search'></span>"
 down: "<span class='fas fa-chevron-down'></span>"
-help: "<span class='fas fa-hands-helping'></span>" # handshake in case of icomoon
-dotsVerticle: "<span class='fas fa-ellipsis-v tg'></span>" # exceptional case: we have added tg class for text gradient, since it won't work if tg were given to parent element of dotsVerticle.
+help: "<span class='fas fa-hands-helping'></span>"
+dotsVerticle: "<span class='fas fa-ellipsis-v tg'></span>"
 
 lockOpen: "<span class='fas fa-lock-open'></span>"
 lineChart: "<span class='fas fa-chart-line'></span>"
@@ -20,8 +30,8 @@ share: "<span class='fas fa-share-alt'></span>"
 email: "<span class='far fa-envelope'></span>"
 
 # source
-source: "<span class='fas fa-info'></span>" #"<span class='fas fa-shoe-prints fa-rotate-270'></span>"
-info: "<span class='fas fa-question'></span>" #"<span class='fas fa-info'></span>"
+source: "<span class='fas fa-info'></span>"
+info: "<span class='fas fa-question'></span>"
 
 # status
 checkmark: "<span class='fas fa-check'></span>"
@@ -54,11 +64,11 @@ deviantart: "<span class='fab fa-deviantart'></span>"
 googlePlus: "<span class='fab fa-google-plus'></span>"
 reddit: "<span class='fab fa-reddit'></span>"
 flickr: "<span class='fab fa-flickr'></span>"
-mastodon: "<span class='fab fa-mastodon'></span>" # not on icomoon
+mastodon: "<span class='fab fa-mastodon'></span>"
 github: "<span class='fab fa-github'></span>"
 steam: "<span class='fab fa-steam'></span>"
 bandcamp: "<span class='fab fa-bandcamp'></span>"
-medium: "<span class='fab fa-medium'></span>" # weird one on icomoon
+medium: "<span class='fab fa-medium'></span>"
 
 # SAW
 contents: "<span class='fas fa-align-justify'></span>"
@@ -68,3 +78,7 @@ spinner: "<span class='fas fa-circle-notch'></span>"
 externalLink: "<span class='fas fa-external-link-alt'></span>"
 filter: "<span class='fas fa-filter'></span>"
 sort: "<span class='fas fa-sort'></span>"
+
+
+</div>
+{{ end }}

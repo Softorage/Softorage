@@ -64,7 +64,7 @@ rating:
     num: 27
 
 ---
-  SciPy a free and open-source Python library used for scientific computing and technical computing.
+  SciPy a free and open-source Python library used for [scientific computing](/categories/scientific-computing) and technical computing.
   
   > The SciPy library is one of the core packages that make up the SciPy stack. It provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization. \- [Official website](https://www.scipy.org/scipylib/)
   
@@ -77,6 +77,6 @@ rating:
   
   > SciPy builds on the NumPy array object and is part of the NumPy stack which includes tools like Matplotlib, pandas and SymPy, and an expanding set of scientific computing libraries. \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=SciPy&oldid=877170311)
   
-  See [NumPy]({{< ref "numpy" >}}), [Matplotlib]({{< ref "matplotlib" >}}), [pandas]({{< ref "pandas" >}}) and [SymPy]({{< ref "sympy" >}}).
+  See [NumPy](/software/numpy/), [Matplotlib](/software/matplotlib/), [pandas](/software/pandas/) and [SymPy](/software/sympy/).
   
   [Documentation](https://docs.scipy.org/doc/) I [Mailing lists](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/scipy) I [IRC](https://webchat.freenode.net/?channels=scipy) I [FAQ](https://www.scipy.org/scipylib/faq.html)

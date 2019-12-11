@@ -72,7 +72,7 @@ rating:
     rate: [4.5, 5]
 
 ---
-  PyTorch is an open-source machine learning library for Python, based on [Torch]({{< ref "torch" >}}), used for applications such as natural language processing. One can also reuse Python packages such as [NumPy]({{< ref "numpy" >}}), [SciPy]({{< ref "scipy-(library)" >}}) and Cython to extend PyTorch when needed.
+  PyTorch is an open-source [machine learning](/categories/machine-learning) library for Python, based on [Torch](/software/torch/), used for applications such as natural language processing. One can also reuse Python packages such as [NumPy](/software/numpy/), [SciPy](/software/scipy-library/) and Cython to extend PyTorch when needed.
   
   > PyTorch provides two high-level features:
   > 

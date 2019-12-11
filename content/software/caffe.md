@@ -78,7 +78,7 @@ rating:
     rate: [4, 5]
 
 ---
-  Caffe (Convolutional Architecture for Fast Feature Embedding) is a deep learning framework, originally developed at University of California, Berkeley.
+  Caffe (Convolutional Architecture for Fast Feature Embedding) is a [deep learning](/categories/deep-learning) framework, originally developed at University of California, Berkeley.
   
   > Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by Berkeley AI Research (BAIR) and by community contributors. Yangqing Jia created the project during his PhD at UC Berkeley.
   > \- [Official website](http://caffe.berkeleyvision.org/#caffe)

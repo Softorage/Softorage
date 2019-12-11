@@ -61,7 +61,7 @@ rating:
     num: 58
 
 note: |
-  * Although not required, it is suggested to also install [IPython]({{< ref "ipython" >}}) for interactive use.([source](https://matplotlib.org/users/installing.html))
+  * Although not required, it is suggested to also install [IPython](/software/ipython/) for interactive use.([source](https://matplotlib.org/users/installing.html))
   
 
 ---
@@ -70,7 +70,7 @@ note: |
   > You can generate plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc., with just a few lines of code.
   > \- [Official website](https://matplotlib.org/)
   
-  See [IPython]({{< ref "ipython" >}}).
+  See [IPython](/software/ipython/).
   
   > It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+. \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=Matplotlib&oldid=878974242)
   

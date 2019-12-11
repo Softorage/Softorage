@@ -17,9 +17,11 @@
           {{- end -}}
           <a class="card-title text-reset" href="{{ .Permalink }}"> {{ .Title }}</a>
         </h2>
-        <div class="font-weight-bold small post-meta"> {{ .WordCount }} Words </div>
-        <p>{{ .Summary }}</p>
-        <a class="font-weight-bold text-reset text-decoration-none" href="{{ .Permalink }}"><nobr>Read more →</nobr></a>
+        <div class="card-text">
+          <div class="font-weight-bold small post-meta"> {{ .WordCount }} Words </div>
+          <p>{{ .Summary }}</p>
+          <a class="font-weight-bold text-reset text-decoration-none" href="{{ .Permalink }}"><nobr>Read more →</nobr></a>
+        </div>
       </div>
     </div>
   {{ end }}

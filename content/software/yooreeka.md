@@ -44,6 +44,6 @@ source:
 note: |
   * Repository has [not seen a commit since 13 May 2016](https://github.com/marmanis/yooreeka/graphs/contributors), nor has it been announced as discontinued.
 ---
-  Yooreeka is a library for data mining, machine learning, soft computing, and mathematical analysis. It also provides examples.
+  Yooreeka is a library for [data mining](/categories/data-mining), [machine learning](/categories/machine-learning), soft computing, and mathematical analysis. It also provides examples.
   
   [Google Code I Archive](https://code.google.com/archive/p/yooreeka/)

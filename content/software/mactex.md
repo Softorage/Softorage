@@ -35,6 +35,6 @@ source:
 ---
   > MacTeX is a redistribution of TeX Live, a typesetting environment. While TeX Live is designed to be cross-platform (running on Unix, macOS, and Windows), MacTeX includes Mac-specific utilities and front-ends. It is also pre-configured to work out-of-the-box with macOS as it provides sensible defaults for configuration options that, in TeX Live, are left up to the user to allow for its cross-platform compatibility. \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=MacTeX&oldid=870801269)
   
-  See [TeX Live]({{< ref "tex-live" >}}).
+  See [TeX Live](/software/tex-live/).
   
   [FAQ](https://www.tug.org/mactex/faq/) I [About](https://www.tug.org/mactex/aboutmactex.html)

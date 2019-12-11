@@ -41,14 +41,15 @@ font-family: 'Roboto', sans-serif;
   unicode-bidi: bidi-override;
   color: #c5c5c5;
   font-size: 1rem;
-  height: 1rem;
-  width: 4rem;
+  height: 1rem; // it is recommended that font-size and height is equal
+  width: 5rem; // width needs to be 5 times font-size so that each star correspond to 20%
   margin: 0;
   position: relative;
   padding: 0;
+  overflow-wrap: normal;
   
   &-top {
-    color: #e7711b;
+    color: #fbbc05;
     padding: 0;
     position: absolute;
     z-index: 1;
@@ -63,8 +64,6 @@ font-family: 'Roboto', sans-serif;
     z-index: 0;
   }
 }
-
-
 
 // adding .anchor class to anchor makes `element hiding behind fixed-top-navbar` problem go.
 // just that a distinct anchor shall be created (preferably with <span>) as its visibility is hidden.
@@ -169,6 +168,9 @@ table {
 }
 th {
 @extend .text-center, .align-middle;
+}
+td {
+@extend .align-middle;
 }
 
 //

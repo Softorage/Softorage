@@ -71,9 +71,9 @@ rating:
     num: 5
 
 ---
-  OpenNN (Open Neural Networks Library) implements neural networks, a main area of deep learning research.
+  OpenNN (Open Neural Networks Library) implements [neural networks](/categories/neural-networks), a main area of [deep learning](/categories/deep-learning) research.
   
-  OpenNN implements data mining methods as a bundle of functions. It allows embedding functions in other software tools using an 'Application Programming Interface (API)' for the interaction between the software tool and the predictive analytics tasks. A graphical user interface (GUI) is still missing, but some functions can support the integration of specific visualization tools.
+  OpenNN implements [data mining](/categories/data-mining) methods as a bundle of functions. It allows embedding functions in other software tools using an 'Application Programming Interface (API)' for the interaction between the software tool and the predictive analytics tasks. A graphical user interface (GUI) is still missing, but some functions can support the integration of specific visualization tools.
   
   It implements multiprocessing programming by means of OpenMP and GPU acceleration with CUDA.
   

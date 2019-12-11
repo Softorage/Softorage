@@ -79,11 +79,11 @@ rating:
     num: 10
 
 ---
-  MusicBrainz Picard is a free and open-source tag editor for identifying, tagging, and organizing digital audio recordings.
+  MusicBrainz Picard is a free and open-source [tag editor](/categories/tag-editor) for identifying, tagging, and organizing digital audio recordings.
   
   It allows to clean local musics and songs by automatically updating artist, album, track information and album art cover for each song.
   
-  MusicBrainz is an open source database of music. The MusicBrainz Picard tool uses this database to identify and tag a song. It checks the songs against the MusicBrainz database to see if it can find a match. MusicBrainz Picard is an acoustic fingerprinter, so if it can’t find a match, it uses AcoustID (a database of audio fingerprints) in order to figure out the song.
+  MusicBrainz is an open source database of music. The MusicBrainz Picard tool uses this database to identify and tag a song. It checks the songs against the MusicBrainz database to see if it can find a match. MusicBrainz Picard is an [acoustic fingerprinter](/categories/acoustic-fingerprinter), so if it can’t find a match, it uses AcoustID (a database of audio fingerprints) in order to figure out the song.
   
   [Forum](https://community.metabrainz.org/c/picard) I [Documentation](https://picard.musicbrainz.org/docs/)
   

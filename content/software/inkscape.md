@@ -96,7 +96,7 @@ note: |
   * Although [System Requirements](#sysreq) have not been specifically disclosed on the [official website](https://inkscape.org/), it is recommended to have at least 2GB RAM and a modern CPU. See [here](https://forum.inkscapecommunity.com/index.php?PHPSESSID=iit20pe7v0u5o89lc41bihb216&action=articles;sa=view;article=35) for more info.
   * Most of Inkscape's code is available under GPL v2, but because of license(s) of other softwares used, [license is given as GPL v3 or later](#license). See [here](https://gitlab.com/inkscape/inkscape/blob/master/COPYING).
 ---
-  Inkscape is professional quality vector graphics editor software which runs on Windows, Mac OS X and GNU/Linux. 
+  Inkscape is professional quality [vector graphics editor](/categories/vector-graphics-editor) software which runs on Windows, Mac OS X and GNU/Linux. 
   
   Inkscape has sophisticated drawing tools with capabilities comparable to Adobe Illustrator, CorelDRAW and Xara Xtreme. It can import and export various file formats, including SVG, AI, EPS, PDF, PS and PNG. It has a comprehensive feature set, a simple interface, multi-lingual support and is designed to be extensible; users can customize Inkscape's functionality with add-ons. Inkscape uses Scalable Vector Graphics (SVG), an open XML-based W3C standard, as the native format.
   

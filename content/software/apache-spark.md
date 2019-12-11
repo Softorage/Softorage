@@ -99,7 +99,7 @@ rating:
   > In contrast to Hadoop’s two-stage disk-based MapReduce computation engine, Spark’s multi-stage (mostly) in-memory computing engine allows for running most computations in memory, and hence most of the time provides better performance for certain applications, e.g. iterative algorithms or interactive data mining.  
   > \- [Mastering Apache Spark](https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-overview.html) by Jacek Laskowski
   
-  See [Apache Hadoop]({{< ref "apache-hadoop" >}}).
+  See [Apache Hadoop](/software/apache-hadoop).
   
   Libraries:
   1. [**Spark SQL**](https://spark.apache.org/sql/) is Apache Spark's module for working with structured data.

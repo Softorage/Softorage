@@ -68,7 +68,7 @@ rating:
 note: |
   * Repository - https://github.com/tmyroadctfig/xpdf hasn't been updated after 2012, hence not included.
 ---
-  Xpdf is a free and open-source PDF document viewer for operating systems supported by the Qt toolkit. Versions prior to 4.00 were written for the X Window System and Motif.
+  Xpdf is a free and open-source PDF [document viewer](/categories/document-viewer) for operating systems supported by the Qt toolkit. Versions prior to 4.00 were written for the X Window System and Motif.
   
   Xpdf runs on nearly any Unix-like operating system, but binaries are also available for Windows. Xpdf can decode LZW and read encrypted PDFs. The official version obeys the DRM restrictions of PDF files, which can prevent copying, printing, or converting some PDF files. There are patches that make Xpdf ignore these DRM restrictions, and these restrictions are patched out by the Debian distribution.
   

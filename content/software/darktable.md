@@ -68,7 +68,7 @@ source:
 note: |
   * Detailed synopsis regarding [System Requirements](#sysreq) can be found at [this link](https://www.darktable.org/2012/03/darktable-and-memory/).
 ---
-  darktable is a free and open-source photography workflow application and raw developer. Rather than being a raster graphics editor like Adobe Photoshop or [GIMP]({{< ref "gimp" >}}), it comprises a subset of image editing operations specifically aimed at non-destructive raw photo post-production. It is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
+  darktable is a free and open-source [photography workflow](/categories/photography-workflow) application and raw developer. Rather than being a [raster graphics editor](raster-graphics-editor) like Adobe Photoshop or [GIMP](/software/gimp), it comprises a subset of image editing operations specifically aimed at non-destructive raw [photo post-production](photo-post-production). It is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
   
   All editing is fully non-destructive and only operates on cached image buffers for display. The full image is only converted during export. Raw image loading is done using rawspeed, high-dynamic range and standard image formats such as jpeg are also supported. The core operates completely on floating point values, so darktable can not only be used for photography but also for scientifically acquired images or output of renderers (high dynamic range).
   

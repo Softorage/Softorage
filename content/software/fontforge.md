@@ -81,15 +81,15 @@ rating:
     num: 65
 
 ---
-  FontForge is a font editor which supports many common font formats. To facilitate automated format conversion and other repetitive tasks, FontForge implements two scripting languages: its own language and Python. FontForge can run scripts from its GUI, from the command line, and also offers its features as a Python module so it can be integrated into any Python program.
+  FontForge is a [font editor](/categories/font-editor) which supports many common font formats. To facilitate automated format conversion and other repetitive tasks, FontForge implements two scripting languages: its own language and Python. FontForge can run scripts from its GUI, from the command line, and also offers its features as a Python module so it can be integrated into any Python program.
   
-  FontForge supports Adobe's OpenType feature file specification (with its own extensions to the syntax). It also supports the unofficial Microsoft mathematical typesetting extensions (MATH table) introduced for Cambria Math and supported by Office 2007, [XeTeX]({{< ref "xetex" >}}) and [LuaTeX]({{< ref "luatex" >}}). At least one free OpenType mathematical font has been developed in FontForge.
+  FontForge supports Adobe's OpenType feature file specification (with its own extensions to the syntax). It also supports the unofficial Microsoft mathematical typesetting extensions (MATH table) introduced for Cambria Math and supported by Office 2007, [XeTeX](/software/xetex/) and [LuaTeX](/software/luatex/). At least one free OpenType mathematical font has been developed in FontForge.
   
   FontForge uses FreeType for rendering fonts on screen. Since the November 15, 2008 release, FontForge uses libcairo and libpango software libraries for graphics and text rendering providing anti-aliased graphics and complex text layout support.
   
   FontForge can use Potrace or AutoTrace to auto trace bitmap images and import them into a font.
   
-  Parts of FontForge code are used by the [LuaTeX]({{< ref "luatex" >}}) typesetting engine for reading and parsing OpenType fonts.
+  Parts of FontForge code are used by the [LuaTeX](/software/luatex/) typesetting engine for reading and parsing OpenType fonts.
   
   The FontForge source code includes a number of utility programs, including 'showttf' which shows the contents of binary font files, and a WOFF converter and deconverter.
   

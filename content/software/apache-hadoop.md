@@ -82,7 +82,7 @@ note: |
   * Apache, Apache Hadoop name and logo are trademarks of Apache Software Foundation.
   * Hardware [System requirements](#sysreq) *(optimal)* are not from [official website](https://hadoop.apache.org/).
 ---
-  Apache(TM) Hadoop(R) is a library framework that facilitate using a network of many computers to solve problems involving massive amounts of data and computation providing for distributed storage and processing of big data using the MapReduce programming model.
+  Apache(TM) Hadoop(R) is a library framework that facilitate using a network of many computers to solve problems involving massive amounts of data and computation providing for [distributed storage](/categories/distributed-file-system) and processing of big data using the MapReduce programming model.
   
   > It is designed to scale up from single servers to thousands of machines, each offering local computation and storage. Rather than rely on hardware to deliver high-availability, the library itself is designed to detect and handle failures at the application layer, so delivering a highly-available service on top of a cluster of computers, each of which may be prone to failures.  
   > \- [Official website](https://hadoop.apache.org/)

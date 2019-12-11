@@ -92,13 +92,13 @@ note: |
     * IntelliJ IDEA or Eclipse
     * Git
 ---
-  Eclipse Deeplearning4j is a deep learning programming library written for Java and Scala and a computing framework with wide support for deep learning algorithms.
+  Eclipse Deeplearning4j is a [deep learning](/categories/deep-learning) programming library written for Java and Scala and a computing framework with wide support for [deep learning](/categories/deep-learning) algorithms.
   
   > There are a lot of knobs to turn when you’re training a distributed deep-learning network. We’ve done our best to explain them, so that Eclipse Deeplearning4j can serve as a DIY tool for Java, Scala and Clojure programmers working on Hadoop and other file systems.
   > \- [Official website](https://deeplearning4j.org/about)
   
-  See [Apache Hadoop]({{< ref "apache-hadoop" >}}).
+  See [Apache Hadoop](/software/apache-hadoop).
   
-  Deeplearning4j includes implementations of the restricted Boltzmann machine, deep auto-encoder, deep belief net, stacked denoising auto-encoder and recursive neural tensor network, word2vec, doc2vec, and GloVe. These algorithms also include distributed parallel versions that integrate with [Apache Hadoop]({{< ref "apache-hadoop" >}}) and [Apache Spark]({{< ref "apache-spark" >}}).
+  Deeplearning4j includes implementations of the restricted Boltzmann machine, deep auto-encoder, deep belief net, stacked denoising auto-encoder and recursive neural tensor network, word2vec, doc2vec, and GloVe. These algorithms also include distributed parallel versions that integrate with [Apache Hadoop](/software/apache-hadoop) and [Apache Spark](/software/apache-spark).
   
   [Release Notes](https://deeplearning4j.org/release-notes) I [Gitter chat](https://gitter.im/deeplearning4j/deeplearning4j) I [Documentation](https://deeplearning4j.org/docs/latest/) I [Tutorials](https://deeplearning4j.org/tutorials/setup) I [API Reference](https://deeplearning4j.org/api/latest/) I [Sample Projects](https://github.com/deeplearning4j/dl4j-examples) I [FAQ](https://deeplearning4j.org/faq) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/deeplearning4j)

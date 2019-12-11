@@ -83,7 +83,7 @@ rating:
     num: 6
 
 ---
-  Godot is a game engine which was initially developed for several companies in Latin America before its public release. The development environment runs on Windows, macOS, Linux, BSD and Haiku (both 32 and 64-bit) and can create games targeting PC, mobile and web platforms.
+  Godot is a [game engine](/categories/game-engine) which was initially developed for several companies in Latin America before its public release. The development environment runs on Windows, macOS, Linux, BSD and Haiku (both 32 and 64-bit) and can create games targeting PC, mobile and web platforms.
   
   The architecture is built around a concept of a tree of nested "scenes". All game resources, from scripts to graphical assets, are saved as part of the computer's file system (rather than in a database). This storage solution is intended to make it easier for game development teams to collaborate on script code using version control.
   

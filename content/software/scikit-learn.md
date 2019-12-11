@@ -78,7 +78,7 @@ rating:
 note: |
   * scikit-learn 0.20 is the last version to support Python 2.7 and Python 3.4. scikit-learn 0.21 will require Python 3.5 or newer.
 ---
-  scikit-learn is an open source machine learning library featuring classification, regression, clustering, dimensionality reduction, model selection and preprocessing. It has tools for data mining and data analysis, and is built on [NumPy]({{< ref "numpy" >}}), [SciPy]({{< ref "scipy-(library)" >}}), and [matplotlib]({{< ref "matplotlib" >}}).
+  scikit-learn is an open source [machine learning](/categories/machine-learning) library featuring classification, regression, clustering, dimensionality reduction, model selection and preprocessing. It has tools for [data mining](/categories/data-mining) and [data analysis](/categories/data-analysis), and is built on [NumPy](/software/numpy/), [SciPy](/software/scipy-library/), and [matplotlib](/software/matplotlib/).
   
   As per [official website](https://scikit-learn.org/stable/index.html), it features:
   * Classification : Identifying to which category an object belongs to

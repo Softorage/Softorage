@@ -99,7 +99,7 @@ rating:
 ---
   Scribus is an Open Source program that brings professional page layout to Linux, BSD UNIX, Solaris, OpenIndiana, GNU/Hurd, Mac OS X, OS/2 Warp 4, eComStation, and Windows desktops with a combination of press-ready output and new approaches to page design.
   
-  Underneath a modern and user-friendly interface, Scribus supports professional desktop publishing features, such as color separations, CMYK and spot colors, ICC color management, and versatile PDF creation.
+  Underneath a modern and user-friendly interface, Scribus supports professional [desktop publishing](/categories/desktop-publishing) features, such as color separations, CMYK and spot colors, ICC color management, and versatile PDF creation.
   
   Books about Scribus are available in several languages, including an official manual for v1.3, published through FLES Books in 2009.
   

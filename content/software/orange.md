@@ -81,8 +81,8 @@ rating:
     num: 5566
 
 ---
-  Orange is a component structured data mining as well as machine learning software suite written in python language. It's a data visualization as well as evaluation software, with regard to novice and experts alike. Data mining can be done via visual programming or even python scripting.
+  Orange is a component structured [data mining](/categories/data-mining) as well as [machine learning](/categories/machine-learning) software suite written in python language. It's a [data visualization](/categories/data-visualization) as well as evaluation software, with regard to novice and experts alike. [Data mining](/categories/data-mining) can be done via visual programming or even python scripting.
   
-  Orange components are called widgets. Widgets cover a wide variety, ranging from simple data visualization, subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling. Orange is used for data analysis as well.
+  Orange components are called widgets. Widgets cover a wide variety, ranging from simple [data visualization](/categories/data-visualization), subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling. Orange is used for [data analysis](/categories/[data-analysis) as well.
   
   [Blog](https://blog.biolab.si/) I [Stack Overflow(QA)](https://stackoverflow.com/questions/tagged/orange) I [Community](https://orange.biolab.si/community/) I [Stack Exchange(data-science)](https://datascience.stackexchange.com/questions/tagged/orange) I [Wiki](https://github.com/biolab/orange3/wiki) I [Documentation](https://orange.biolab.si/docs/) I [FAQ](https://orange.biolab.si/faq/)

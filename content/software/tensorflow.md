@@ -122,6 +122,6 @@ note: |
   
   TensorFlow was originally developed by researchers and engineers from the Google Brain team within Google’s AI organization.
   
-  It comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.
+  It comes with strong support for [machine learning](/categories/machine-learning) and [deep learning](/categories/deep-learning) and the flexible numerical computation core is used across many other scientific domains.
   
   [Blog](https://medium.com/tensorflow) I [Mailing list](https://www.tensorflow.org/community/lists) I [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow) I [Tutorials](https://www.tensorflow.org/tutorials/) I [FAQ](https://www.tensorflow.org/guide/faq)

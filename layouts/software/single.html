@@ -27,23 +27,20 @@
   <div class="row">
     <div class="col-md-8">
       <div class="row p-3">
+        <!-- Defining $rating_stars as a global variable -->
+        {{- $rating_stars := 0 }}
         {{- if .Params.image -}}
           <div class="align-middle text-center col-auto">
             <img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="{{ .Params.image }}" alt="{{ .Title }} logo">  
-            
+            <br>
             {{- if .Params.rating }}
-              {{- $rating_stars := 0 }}
               {{- $len := len .Params.rating }} <!-- length of loop -->
               {{- range $index, $rt := .Params.rating }}
                 {{- $rating_stars = add $rating_stars (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) -}} <!-- if one is float then only is the result a float -->
-                {{- if eq (add $index 1) $len }} 
-                  {{- $rating_stars = div $rating_stars $len }}
-                {{- end }}
               {{- end }}
-              {{- $rating_stars = mul $rating_stars 125 -}} <!-- for some reason it works better with 125 -->
-              
-              <div class="rating-stars mx-auto mt-2">
-                <div class="rating-stars-top" style="width: {{ math.Round $rating_stars }}%">
+              {{- $rating_stars = div $rating_stars $len }}
+              <div class="d-inline-block rating-stars text-center mt-2">
+                <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><!-- for some reason it works better with 125 (edit: not anymore. reason is clarified in stylesheet) -->
                   <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
                 </div>
                 <div class="rating-stars-bottom">
@@ -61,17 +58,13 @@
           
           {{ if not .Params.image }}
             {{- if .Params.rating }}
-              {{ $rating_stars := 0 }}
               {{ $len := len .Params.rating }} <!-- length of loop -->
               {{- range $index, $rt := .Params.rating -}}
                 {{ $rating_stars = add $rating_stars (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) -}} <!-- if one is float then only is the result a float -->
-                {{ if eq (add $index 1) $len }} 
-                  {{ $rating_stars = div $rating_stars $len }}
-                {{ end }}
               {{ end }}
-              {{ $rating_stars = mul $rating_stars 125 }} <!-- for some reason it works better with 125 -->
-              <div class="rating-stars">
-                <div class="rating-stars-top" style="width: {{ math.Round $rating_stars }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+              {{ $rating_stars = div $rating_stars $len }}
+              <div class="d-inline-block rating-stars">
+                <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
                 <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
               </div>
             {{ end }}
@@ -512,13 +505,27 @@
               </span>
             </div>
           </div>
-          <p class="card-text mt-3">
+          <div class="card-text mt-3">
             {{- if .Params.rating }}
+              <div class="text-center align-middle mb-3">
+                <span class="font-weight-bold h5">{{ lang.NumFmt 2 (mul $rating_stars 5) }}</span><!-- lang.NumFmt formats a number with a given precision -->
+                <div class="d-inline-block rating-stars">
+                  <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+                  <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+                </div>
+                <span class="h5">5</span>
+              </div>
+              
               {{- range $index, $rt := .Params.rating -}}
                 <!-- in case it isn't last forloop, break line after each rating -->
                 {{- if $index }}<br>{{ end -}}
                 <div>
-                  {{- $rt.name }}: {{ index $rt.rate 0 }}/{{ index $rt.rate 1 }}
+                  <span>{{- $rt.name }}:</span> <span>{{ index $rt.rate 0 }}</span>
+                  <div class="d-inline-block rating-stars">
+                    <div class="rating-stars-top" style="width: {{ mul (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) 100 }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+                    <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+                  </div>
+                  <span> {{ index $rt.rate 1 }}</span>
                   {{- if $rt.num }} &nbsp;<span class="text-muted">based on {{ $rt.num }} reviews</span>{{ else }} &nbsp;<span class="text-muted">based on professional's opinion</span>{{ end }}
                   <span class="float-right">
                     {{- range $index_src, $rt_src := $.Params.source.rating -}}
@@ -544,7 +551,7 @@
             {{- else -}}
               {{ $no_content | safeHTML }}
             {{- end -}}
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -603,7 +610,7 @@
                   {{- end -}}
                 "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), the software is written in."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), in which the software is written."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -662,7 +669,7 @@
           </div>
           <div class="col-auto">
             <span class="float-right">
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Where you can find source code of the software. Have a look!"><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Here you can find source code of the software. Have a look!"><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>

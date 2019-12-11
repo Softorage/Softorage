@@ -77,11 +77,11 @@ note: |
   
 
 ---
-  Apache Mahout(TM) is an open source project that is primarily used for creating scalable machine learning algorithms. It implements machine learning techniques such as, collaborative filtering, clustering, recommendation and classification.
+  Apache Mahout(TM) is an open source project that is primarily used for creating scalable [machine learning](/categories/machine-learning) algorithms. It implements [machine learning](/categories/machine-learning) techniques such as, collaborative filtering, clustering, recommendation and classification.
   
   It also provides Java libraries for common math operations (focused on linear algebra and statistics) and primitive Java collections.
   
-  A *mahout* is a word used in South Asian countries to describe one who drives an elephant as its master. The name comes from its close association with [Apache Hadoop]({{< ref "apache-hadoop" >}}) which uses an elephant as its logo. Many of the implementations use the [Apache Hadoop]({{< ref "apache-hadoop" >}}) platform.
+  A *mahout* is a word used in South Asian countries to describe one who drives an elephant as its master. The name comes from its close association with [Apache Hadoop](/software/apache-hadoop) which uses an elephant as its logo. Many of the implementations use the [Apache Hadoop](/software/apache-hadoop) platform.
   
   [Documentation](https://mahout.apache.org/docs/latest/index.html) I [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists) I [FAQ](https://mahout.apache.org/general/faq.html) I [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
   
