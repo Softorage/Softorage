@@ -3,7 +3,7 @@
   {{- partial "seo.html" . -}}
   {{ hugo.Generator }}
   <!-- resources.Get creates a new resource object based on a path to a file in the /assets directory. Then, we use resources.ExecuteAsTemplate with the resource type destination as "assets/css/main.scss". The dot (.) passes the context. -->
-  {{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS | fingerprint -}}
+  {{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS | postCSS | fingerprint -}}
   <!-- Minified Aggregated CSS -->
   <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
   <!-- Prefetch and Preconnect Google Fonts API -->
