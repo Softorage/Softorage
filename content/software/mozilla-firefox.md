@@ -68,7 +68,7 @@ social:
     url: "https://en.wikipedia.org/wiki/Firefox"
   - name: "Twitter"
     url: "https://twitter.com/firefox"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://www.youtube.com/firefoxchannel"
 
 source:

@@ -49,7 +49,7 @@ social:
     url: "https://www.reddit.com/r/godot"
   - name: "GitHub"
     url: "https://github.com/godotengine"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://www.youtube.com/c/GodotEngineOfficial"
   - name: "Steam"
     url: "https://steamcommunity.com/app/404790"

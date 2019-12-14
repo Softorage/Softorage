@@ -44,7 +44,7 @@ social:
     url: "https://github.com/accord-net/framework"
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/Accord.NET"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "http://www.youtube.com/playlist?list=PLb8yJtCIm8PQRC0t8re7b5mOCP8s6iBk9"
   - name: "LinkedIn"
     url: "http://www.linkedin.com/in/cesarrsouza"

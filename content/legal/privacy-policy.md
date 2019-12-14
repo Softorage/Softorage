@@ -1,7 +1,7 @@
 ---
-title: Privacy Policy
+title: "Privacy Policy"
 ---
-| Effective date: December 05, 2019 |
+| Effective date: December 15, 2019 |
 | --------------------------------- |
 
 ## Introduction
@@ -12,7 +12,7 @@ Your privacy is important to us. We believe it is important for you to know how 
 
 This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
 
-We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from https://softorage.com
+We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our [Terms and Conditions](/legal/terms-and-conditions), accessible from https://softorage.com
 
 This Privacy Terms apply to the main website softorage.com as well as in the sub-domains (sometimes called “microsites”). Please note that these websites may include links to websites of third parties whose privacy practices differ from those of Softorage. If you provide personal data to any of those websites your data is governed by their privacy statements.
 

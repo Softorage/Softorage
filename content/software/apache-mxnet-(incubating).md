@@ -56,7 +56,7 @@ social:
     url: "https://reddit.com/r/mxnet"
   - name: "Twitter"
     url: "https://twitter.com/apachemxnet"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://www.youtube.com/apachemxnet"
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/Apache_MXNet"

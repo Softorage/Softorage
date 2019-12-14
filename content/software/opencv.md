@@ -63,7 +63,7 @@ social:
     url: "https://plus.google.com/+OpencvOrg"
   - name: "Twitter"
     url: "https://twitter.com/opencvlibrary"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://www.youtube.com/user/opencvdev"
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/OpenCV"

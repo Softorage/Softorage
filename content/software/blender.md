@@ -91,7 +91,7 @@ license: ["GPL v2+"]
 social:
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/Blender_(software)"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://youtube.com/BlenderFoundation"
   - name: "Twitter"
     url: "https://twitter.com/blender_org"

@@ -1,7 +1,7 @@
 ---
-title: Disclaimer
+title: "Disclaimer"
 ---
-| Last updated: December 05, 2019 |
+| Last updated: December 15, 2019 |
 | ------------------------------- |
 
 The information contained on https://softorage.com website (the "Service") is for general information purposes only.
@@ -43,7 +43,14 @@ In no event shall Softorage and/or its suppliers be liable for any direct, indir
 
 ## Trademarks
 
-Any of the trademarks, service marks, collective marks, design rights or similar rights that are mentioned, used or cited in the web-pages or articles of the Softorage are the property of their respective owners. Software name, software logo and any related marks are property of their respective owners. Their use here does not imply that you may use them for any purpose other than for the same or a similar informational use as contemplated by the original authors of these Softorage web-pages or articles under the CC-BY-SA and GFDL licensing schemes, as the case may be. Unless otherwise stated Softorage and Softorage sites are neither endorsed by nor affiliated with any of the holders of any such rights and as such Softorage cannot grant any rights to use any otherwise protected materials. Use of software name, software logo and any related marks here neither imply endorsement of the organization or software by Softorage, nor vice versa. Your use of any such or similar incorporeal property is at your own risk.
+Any of the trademarks, service marks, collective marks, design rights or similar rights that are mentioned, used or cited in the web-pages or articles of the Softorage are the property of their respective owners.
+
+* It is believed that the exhibition of icons to illustrate or identify the computer software in question qualifies as fair use under the Copyright law of the Republic of India.
+* The entire logo is used to convey the meaning intended and avoid tarnishing or misrepresenting the intended image.
+* The logo is of a size and resolution sufficient to maintain the quality intended by the company or organization, without being unnecessarily high resolution.
+* The image is placed at the top of the article/web-page discussing CCleaner, a subject of public interest. The significance of the logo is to help the reader identify the organization, assure the readers that they have reached the right article containing critical commentary about the organization, and illustrate the organization's intended branding message in a way that words alone could not convey.
+
+Software name, software logo and any related marks are property of their respective owners. Their use here does not imply that you may use them for any purpose other than for the same or a similar informational use as contemplated by the original authors of these Softorage web-pages or articles under the CC-BY-SA and GFDL licensing schemes, as the case may be. Unless otherwise stated Softorage and Softorage sites are neither endorsed by nor affiliated with any of the holders of any such rights and as such Softorage cannot grant any rights to use any otherwise protected materials. Use of software name, software logo and any related marks here neither imply endorsement of the organization or software by Softorage, nor vice versa. Your use of any such or similar incorporeal property is at your own risk.
 
 ## External links disclaimer
 

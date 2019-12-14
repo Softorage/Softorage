@@ -44,7 +44,7 @@ social:
     url: "https://www.facebook.com/orangedm"
   - name: "Twitter"
     url: "https://twitter.com/orangedataminer"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://www.youtube.com/channel/UClKKWBe2SCAEyv7ZNGhIe4g"
   - name: "Wikipedia"
     url: "https://en.wikipedia.org/wiki/Orange_(software)"

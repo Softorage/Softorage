@@ -76,7 +76,7 @@ license: ["Apache v2"]
 social:
   - name: "Twitter"
     url: "https://twitter.com/tensorflow"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "http://youtube.com/tensorflow/"
   - name: "reddit"
     url: "https://www.reddit.com/r/tensorflow/"

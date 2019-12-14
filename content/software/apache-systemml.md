@@ -37,7 +37,7 @@ license: ["Apache v2"]
 social:
   - name: "Twitter"
     url: "https://twitter.com/ApacheSystemML"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://www.youtube.com/channel/UCQwUHIc5SjqNIppUH6xbxXQ"
   - name: "Medium"
     url: "https://medium.com/@apachesystemml"

@@ -59,7 +59,7 @@ social:
     url: "https://www.facebook.com/libreoffice.org"
   - name: "Google+"
     url: "https://plus.google.com/+libreoffice/"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://www.youtube.com/channel/UCQAClQkZEm2rkWvU5bvCAXQ"
   - name: "reddit"
     url: "https://www.reddit.com/r/libreoffice"

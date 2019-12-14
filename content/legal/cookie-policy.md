@@ -1,7 +1,7 @@
 ---
-title: Cookies Policy
+title: "Cookie Policy"
 ---
-| Last updated: December 05, 2019 |
+| Last updated: December 15, 2019 |
 | ------------------------------- |
 
 Softorage ("us", "we", or "our") uses cookies on the https://softorage.com website (the "Service", "website", "site"). By using the Service, you consent to the use of cookies.

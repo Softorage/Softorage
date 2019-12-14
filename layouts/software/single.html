@@ -359,7 +359,7 @@
               {{- range $index, $element := .Params.social }}
                 {{- if eq $element.name "Wikipedia" -}}
                   {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.wikipedia ) `</span></a>`) "") -}}
-                {{- else if eq $element.name "Youtube" -}}
+                {{- else if eq $element.name "YouTube" -}}
                   {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.youtube ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Facebook" -}}
                   {{- $scratch.Set "social_item" (delimit (slice `<a href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.facebook ) `</span></a>`) "") -}}
@@ -516,38 +516,53 @@
                 <span class="h5">5</span>
               </div>
               
-              {{- range $index, $rt := .Params.rating -}}
-                <!-- in case it isn't last forloop, break line after each rating -->
-                {{- if $index }}<br>{{ end -}}
-                <div>
-                  <span>{{- $rt.name }}:</span> <span>{{ index $rt.rate 0 }}</span>
-                  <div class="d-inline-block rating-stars">
-                    <div class="rating-stars-top" style="width: {{ mul (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) 100 }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-                    <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-                  </div>
-                  <span> {{ index $rt.rate 1 }}</span>
-                  {{- if $rt.num }} &nbsp;<span class="text-muted">based on {{ $rt.num }} reviews</span>{{ else }} &nbsp;<span class="text-muted">based on professional's opinion</span>{{ end }}
-                  <span class="float-right">
-                    {{- range $index_src, $rt_src := $.Params.source.rating -}}
-                      <!-- check whether 0th element of array which is name of reviewer is same as the concerned rating's reviewer -->
-                      {{- if eq $rt_src.name $rt.name -}}
-                        <!-- whether the review is based on a number of user opinions --> 
-                        {{- if $rt.num -}}
-                          <!-- check whether the array of 'src_rating' has 2nd element "user", which corresponds to "based on a number of users' opinion" -->
-                          {{- if eq $rt_src.type "user" -}}
-                            <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+              <div class="table-responsive-md">
+                <table class="table-borderless border-0">
+                  <tbody>
+                    {{- range $index, $rt := .Params.rating -}}
+                      <tr>
+                        <th class="py-2" scopr="row">{{- $rt.name }}</th>
+                        <td class="py-2 text-center text-nowrap">
+                          <span>{{ index $rt.rate 0 }}</span>
+                          <div class="d-inline-block rating-stars">
+                            <div class="rating-stars-top" style="width: {{ mul (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) 100 }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+                            <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+                          </div>
+                          <span>{{ index $rt.rate 1 }}</span>
+                        </td>
+                        <td class="py-2">
+                          {{- if $rt.num -}}
+                            <span class="text-muted small">based on {{ $rt.num }} reviews</span>
+                          {{- else -}}
+                            <span class="text-muted small">based on professional's opinion</span>
                           {{- end -}}
-                        {{- else }}
-                          <!-- in case rating is based on a professsional's opinion -->
-                          {{- if eq $rt_src.type "expert" -}}
-                            <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
-                          {{- end }}
-                        {{- end }}
-                      {{- end }}
-                    {{- end -}}
-                  </span>
-                </div>
-              {{- end }}
+                        </td>
+                        <td class="py-2">
+                          <span class="float-right">
+                            {{- range $index_src, $rt_src := $.Params.source.rating -}}
+                              <!-- check whether 0th element of array which is name of reviewer is same as the concerned rating's reviewer -->
+                              {{- if eq $rt_src.name $rt.name -}}
+                                <!-- whether the review is based on a number of user opinions --> 
+                                {{- if $rt.num -}}
+                                  <!-- check whether the array of 'src_rating' has 2nd element "user", which corresponds to "based on a number of users' opinion" -->
+                                  {{- if eq $rt_src.type "user" -}}
+                                    <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                  {{- end -}}
+                                {{- else }}
+                                  <!-- in case rating is based on a professsional's opinion -->
+                                  {{- if eq $rt_src.type "expert" -}}
+                                    <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                  {{- end }}
+                                {{- end }}
+                              {{- end }}
+                            {{- end -}}
+                          </span>
+                        </td>
+                      </tr>
+                    {{- end }}
+                  </tbody>
+                </table>
+              </div>
             {{- else -}}
               {{ $no_content | safeHTML }}
             {{- end -}}
@@ -674,13 +689,21 @@
           </div>
         </div>
         <p class="card-text mt-3">
+          {{ $proprietary := false }}
           {{- if .Params.repository }}
             {{- range $index, $element := .Params.repository }}
               {{- if $index }}, {{ end }}<a href="{{ $element }}">{{ $element }}</a>
             {{- end }}
           {{- else -}}
-            {{ $no_content | safeHTML }}
-          {{- end -}}
+            {{- range $index, $element := .Params.license }}
+              {{- if in $element "Proprietary" -}}{{ $proprietary = true }}{{ end }}
+            {{- end }}
+            {{- if $proprietary }}
+              {{- $.Title }} being a proprietary software, its source code is not publicly hosted.
+            {{- else }}
+              {{- $no_content | safeHTML }}
+            {{- end }}
+          {{- end -}}    
         </p>
       </div>
     </div>

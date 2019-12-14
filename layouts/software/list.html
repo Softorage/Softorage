@@ -69,8 +69,8 @@
   <br>
   
   <div class="list">
-    <!-- Defining $proprietory and $rating_stars as a global variable -->
-    {{- $proprietory := false }}
+    <!-- Defining $proprietary and $rating_stars as a global variable -->
+    {{- $proprietary := false }}
     {{- $rating_stars := 0 }}
     
     {{- range $index, $element := where site.RegularPages "Section" "==" "software" -}}
@@ -82,11 +82,11 @@
             <span class="text-muted small float-right">
               
               {{- if $element.Params.license }}
-                {{- range $ind_lic, $lic := .Params.license }}
+                {{- range $ind_lic, $lic := $element.Params.license }}
                   {{- if $ind_lic }}, {{ end }}<span{{ if in $lic "(m)" }} title="{{ $lic }} modified"{{ end }}>{{ $lic }}</span>
-                  {{- if in $lic "Proprietory" }}{{ $proprietory := true }}{{ end }}
+                  {{- if in $lic "Proprietary" }}{{ $proprietary = true }}{{ end }}
                 {{- end }}
-                {{- if not $proprietory }} | <span class="text-success">Free and Open Source</span> {{- end }}
+                {{- if not $proprietary }} | <span class="text-success">Free and Open Source</span> {{- end }}
               {{- else -}}
                 No license found
               {{- end -}}
@@ -105,8 +105,6 @@
                 <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div><!-- for some reason it works better with 125 (edit: not anymore. reason is clarified in stylesheet) -->
                 <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
               </div>
-              <!-- Resetting value of $rating_stars to zero -->
-              {{- $rating_stars = 0 }}
             {{- else }}<span class="text-muted">No rating found.</span>
             {{- end -}}
           </div>
@@ -221,6 +219,10 @@
           </div>
         </div>
       </div>
+      <!-- Reset value of $rating_stars to default, zero -->
+      {{- $rating_stars = 0 }}
+      <!-- Reset value of $proprietary to default, false -->
+      {{- $proprietary = false }}
     {{- end -}}
   </div>
 </div>
