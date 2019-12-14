@@ -1,8 +1,6 @@
 ---
 title: "Terms and Conditions"
 ---
-| Effective date: December 15, 2019 |
-| --------------------------------- |
 
 Welcome to the network of software services provided by Softorage. Here are the ways that you can and can't use our website, we've tried to keep them brief and easy to understand.
 
@@ -47,7 +45,7 @@ We reserve the right to withdraw this permission for any reason without notice a
 
 You may not use our Website in such a way that disrupts, interferes with or restricts the use by other users.
 
-You may not reproduce or copy the content of our Website in any form without prior permission, otherwise than in accordance with the CC-BY-SA 33.0 license. We reserve the right to withdraw this permission for any reason without notice and to demand that you immediately remove any copyrighted material.
+You may not reproduce or copy the content of our Website in any form without prior permission, otherwise than in accordance with the [CC-BY-SA 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/). We reserve the right to withdraw this permission for any reason without notice and to demand that you immediately remove any copyrighted material.
 
 This terms of use and permissions within and any dispute or claim arising out of or in connection with it or its subject matter or formation shall be governed by and construed in accordance with the laws of the Republic of India and submitted to the exclusive jurisdiction of the the courts in Mumbai, India.
 

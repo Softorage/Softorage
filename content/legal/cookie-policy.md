@@ -1,8 +1,6 @@
 ---
 title: "Cookie Policy"
 ---
-| Last updated: December 15, 2019 |
-| ------------------------------- |
 
 Softorage ("us", "we", or "our") uses cookies on the https://softorage.com website (the "Service", "website", "site"). By using the Service, you consent to the use of cookies.
 
@@ -58,5 +56,9 @@ If you'd like to delete cookies or instruct your web browser to delete or refuse
 You can learn more about cookies on the following third-party websites:
 * AllAboutCookies: http://www.allaboutcookies.org/
 * Network Advertising Initiative: http://www.networkadvertising.org/
+
+## Changes to this Cookies policy
+
+We aim to meet high standards and our policies and procedures are, therefore, constantly under review. From time to time we may change how we use and place cookies. Accordingly we recommend that you check this page periodically in order to review our current policies and practices.
 
 Please review our privacy policy for understanding what personal data we collect from you, through our interactions with you on this website, and how we use that data.

@@ -1,0 +1,12 @@
+ {{ define "main" }}
+<div class="container-fluid bg-nav text-clr1 text-center py-3 position-relative shadow-sm">
+  <div style="height:3.5rem;"></div>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+</div>
+<div class="container-fluid bg-antinav-light py-3">
+  <span class="font-weight-bold small">Last updated: {{ .GitInfo.AuthorDate.Format "02 January, 2006" }}</span>
+  <hr>
+  {{ .Content }}
+</div>
+{{ end }}

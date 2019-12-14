@@ -1,8 +1,6 @@
 ---
 title: "Privacy Policy"
 ---
-| Effective date: December 15, 2019 |
-| --------------------------------- |
 
 ## Introduction
 

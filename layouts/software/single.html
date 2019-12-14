@@ -508,12 +508,12 @@
           <div class="card-text mt-3">
             {{- if .Params.rating }}
               <div class="text-center align-middle mb-3">
-                <span class="font-weight-bold h5">{{ lang.NumFmt 2 (mul $rating_stars 5) }}</span><!-- lang.NumFmt formats a number with a given precision -->
+                <span class="font-weight-bold h5">{{ lang.NumFmt 2 (mul $rating_stars 5) }}</span>&nbsp;<!-- lang.NumFmt formats a number with a given precision -->
                 <div class="d-inline-block rating-stars">
                   <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
                   <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
                 </div>
-                <span class="h5">5</span>
+                &nbsp;<span class="h5">5</span>
               </div>
               
               <div class="table-responsive-md">
@@ -523,12 +523,12 @@
                       <tr>
                         <th class="py-2" scopr="row">{{- $rt.name }}</th>
                         <td class="py-2 text-center text-nowrap">
-                          <span>{{ index $rt.rate 0 }}</span>
+                          <span>{{ index $rt.rate 0 }}</span>&nbsp;
                           <div class="d-inline-block rating-stars">
                             <div class="rating-stars-top" style="width: {{ mul (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) 100 }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
                             <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
                           </div>
-                          <span>{{ index $rt.rate 1 }}</span>
+                          &nbsp;<span>{{ index $rt.rate 1 }}</span>
                         </td>
                         <td class="py-2">
                           {{- if $rt.num -}}
@@ -798,9 +798,8 @@
     </div>
   {{- end -}}
   <br>
-  {{/* .GitInfo seems to be not working on GitLab runners
-  <p class="bg-nav text-antinav text-center small p-2">{{ .Title }} was last updated with commit: <a href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})<a></p>
-  */}}
+  <p class="bg-nav text-antinav text-center small p-2">This page was last updated on {{ .GitInfo.AuthorDate.Format "02 January, 2006" }} with commit: <a class="font-weight-bold" href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})<a></p>
+  
 </div>
 
 {{- end }}
