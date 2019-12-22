@@ -24,9 +24,9 @@
 <!-- -->
 <div class="container-fluid bg-clr2-light text-clr2 py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
-  <div class="row">
+  <div class="row p-2">
     <div class="col-md-8">
-      <div class="row p-3">
+      <div class="row">
         <!-- Defining $rating_stars as a global variable -->
         {{- $rating_stars := 0 }}
         {{- if .Params.image -}}
@@ -72,11 +72,11 @@
           
         </div>
       </div>
-
+      
       <!-- As we don't check whether page.status is true, `status` is shown `unknown` when page.status is false. -->
       {{- if in .Params.status "Active" -}}
         <!-- in case of source, as first condition in if statement, we have checked if source is not a text-type(as src.first exists only if it is a text-type source), that is, it is a webpage, because it is more frequent condition -->
-        <a role="button" class="btn btn-sm bg-nav mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
           {{/* 
             Here, the code iterates through a range, hence even if there is only one value of source for status, it has to be in square brackes([]) in the front matter, so that it is treated as an array. This is to ensure that a source from a book would not be mistaken by our code as two sources from web.
             Example,
@@ -93,7 +93,7 @@
           {{- end -}}
         "><span class="small text-success">Status | {{ site.Data.icons.checkmark | safeHTML }}</span></a>
       {{- else if in .Params.status "Discontinued" -}}
-        <a role="button" class="btn btn-sm bg-nav mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
           {{- if .Params.source.status }}
             {{- range $index, $element := .Params.source.status }}
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
@@ -103,7 +103,7 @@
           {{- end -}}
         "><span class="small text-danger">Status | {{ site.Data.icons.ban | safeHTML }}</span></a>
       {{- else -}}
-        <a role="button" class="btn btn-sm bg-nav mb-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
           {{- if .Params.source.status }}
             {{- range $index, $element := .Params.source.status }}
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
@@ -114,27 +114,32 @@
         "><span class="small text-warning">Status | {{ site.Data.icons.question | safeHTML }}</span></a>
       {{- end -}}
     </div>
+    
     <div class="col-md-4">
+    
       {{- if .Params.get_it }}
         {{- if eq (len .Params.get_it) 1 -}}
-          <a href="{{ (index .Params.get_it 0).url }}" class="btn bg-nav my-2"><span class="text-primary">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-primary">Get it</span></a>
+          <a href="{{ (index .Params.get_it 0).url }}" class="btn bg-success my-2"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">Get it</span></a>
         {{- else -}}
-        <a role="button" class="btn bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
-          {{- range .Params.get_it -}} 
-            <a href='{{ .url }}' class='btn btn-sm
-              {{- if eq .from "Authentic" }} btn-success
-              {{- else }} btn-light
-              {{- end -}}
-            '>{{ .from }}</a>&nbsp;
-          {{ end -}}
-        "><span class="text-primary">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-primary">Get it</span></a>
+          <a role="button" class="btn bg-success my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
+            {{- range .Params.get_it -}} 
+              <a href='{{ .url }}' class='btn btn-sm
+                {{- if eq .from "Authentic" }} btn-success
+                {{- else }} btn-light
+                {{- end -}}
+              '>{{ .from }}</a>&nbsp;
+            {{ end -}}
+          "><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">Get it</span></a>
         {{- end }}
       {{- end }}
+      
       {{- if .Params.website -}}
         &nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}"><span class="text-primary">{{ site.Data.icons.website | safeHTML }}</span>&nbsp; <span class="text-primary">Visit</span></a> <br>
       {{- end -}}
-      <div class="row my-2 p-2">
-        <span class="fa-2x">{{ site.Data.icons.share | safeHTML }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <div class="row my-2 ml-1">
+        <span class="fa-2x">{{ site.Data.icons.share | safeHTML }}</span>&nbsp;&nbsp;
+        <span class="d-inline-block font-weight-bold border-left border-right"></span>&nbsp;&nbsp;
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.BaseURL }}{{ .Permalink }}&quote={{ .Title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>&nbsp;&nbsp;
         <a href="https://twitter.com/intent/tweet?source={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}:{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>&nbsp;&nbsp;
         <!-- G+ is shutting down
@@ -145,7 +150,10 @@
         <a href="https://reddit.com/submit?url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}" rel="nofollow" target="_blank" title="Share on Reddit"><span class="fa-2x">{{ site.Data.icons.reddit | safeHTML }}</span></a>&nbsp;&nbsp;
         <a href="mailto:?subject={{ .Title }}&body={{ .Params.description }}:{{ site.BaseURL }}{{ .Permalink }}" target="_blank" title="Share via email"><span class="fa-2x">{{ site.Data.icons.email | safeHTML }}</span></a>
       </div>
+      <!--
       <a href="https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/{{ .File.Path }}" class="badge small my-2" target="_blank">&#60;/page-source&#62;</a>
+      -->
+      
     </div>
   </div>
 </div>
@@ -154,7 +162,7 @@
   <nobr>
   <a class="text-antinav text-decoration-none" href="#overview">Overview</a>&nbsp;&nbsp;&nbsp;
   <a class="text-antinav text-decoration-none" href="#platform">Platform</a>&nbsp;&nbsp;&nbsp;
-  <a class="text-antinav text-decoration-none" href="#socail">Social</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#social">Social</a>&nbsp;&nbsp;&nbsp;
   <a class="text-antinav text-decoration-none" href="#sysreq">System Requirements</a>&nbsp;&nbsp;&nbsp;
   <a class="text-antinav text-decoration-none" href="#rating">Ratings</a>&nbsp;&nbsp;&nbsp;
   <a class="text-antinav text-decoration-none" href="#developer">Developer</a>&nbsp;&nbsp;&nbsp;
@@ -240,95 +248,7 @@
           <p class="card-text mt-3">
             {{- if .Params.platform }}
               {{- range .Params.platform }}
-                {{- if .dskp -}}
-                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
-                    {{- range .dskp -}}
-                      {{ if eq .name "Linux" }}
-                        {{- if eq .type "official" -}}
-                          <span class='fa-2x'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- else if eq .name "Windows" }}
-                        {{- if eq .type "official" -}}
-                          <span class='fa-2x'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- else if eq .name "macOS" }}
-                        {{- if eq .type "official" -}}
-                          <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- else }}
-                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- else }}
-                        {{- if eq .type "official" -}}
-                          <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- end }}
-                    {{- end -}}
-                  "><span class="text-clr2">{{ site.Data.icons.desktop | safeHTML }}</span></a>
-                {{- else if .smp -}} 
-                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
-                    {{- range .smp -}}
-                      {{ if eq .name "Android" }}
-                        {{- if eq .type "official" -}}
-                          <span class='fa-2x'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- else if eq .name "iOS" }}
-                        {{- if eq .type "official" -}}
-                          <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- else }}
-                        {{- if eq .type "official" -}}
-                          <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- end }}
-                    {{- end -}}
-                  "><span class="text-clr2">{{ site.Data.icons.mobile | safeHTML }}</span></a>
-                {{- else if .tab -}} 
-                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
-                    {{- range .tab -}}
-                      {{ if eq .name "Android" }}
-                        {{- if eq .type "official" }}
-                        <span class='fa-2x'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- else if eq .name "iOS" }}
-                        {{- if eq .type "official" -}}
-                          <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- else }}
-                        {{- if eq .type "official" -}}
-                          <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-                        {{- else -}}
-                          <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-                        {{- end }}
-                      {{- end }}
-                    {{- end -}}
-                  "><span class="text-clr2">{{ site.Data.icons.tab | safeHTML }}</span></a>
-                {{- else -}} 
-                  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
-                    {{- range .else -}}
-                      {{ if eq .type "official" -}}
-                        <span class='badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-                      {{- else -}}
-                        <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
-                      {{- end }}
-                    {{- end -}}
-                  "><span class="text-clr2">{{ site.Data.icons.bars | safeHTML }}</span></a>
-                {{- end }}&nbsp;
+                {{- partial "reusables/platform.html" . }}
               {{- end }}
             {{- else -}}
               {{ $no_content | safeHTML }}
@@ -507,21 +427,27 @@
           </div>
           <div class="card-text mt-3">
             {{- if .Params.rating }}
+              <div class="text-center align-middle small text-muted">
+                Aggregate
+              </div>
               <div class="text-center align-middle mb-3">
-                <span class="font-weight-bold h5">{{ lang.NumFmt 2 (mul $rating_stars 5) }}</span>&nbsp;<!-- lang.NumFmt formats a number with a given precision -->
+                <span class="font-weight-bold h5">{{ lang.NumFmt 2 (mul $rating_stars 5) }}</span>&nbsp;<!-- "lang.NumFmt 2" formats a number with a given precision, here 2. Eg, 4.09158 to 4.09 -->
                 <div class="d-inline-block rating-stars">
                   <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
                   <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
                 </div>
                 &nbsp;<span class="h5">5</span>
               </div>
-              
-              <div class="table-responsive-md">
+              <hr class="my-1">
+              <div class="table-responsive-lg">
                 <table class="table-borderless border-0">
                   <tbody>
                     {{- range $index, $rt := .Params.rating -}}
                       <tr>
-                        <th class="py-2" scopr="row">{{- $rt.name }}</th>
+                        <th class="py-2" scope="row">
+                          {{- $rt.name }}
+                          {{- if $rt.remarks }}<br><span class="small text-muted">{{ $rt.remarks }}</span>{{ end -}}
+                        </th>
                         <td class="py-2 text-center text-nowrap">
                           <span>{{ index $rt.rate 0 }}</span>&nbsp;
                           <div class="d-inline-block rating-stars">
@@ -542,16 +468,32 @@
                             {{- range $index_src, $rt_src := $.Params.source.rating -}}
                               <!-- check whether 0th element of array which is name of reviewer is same as the concerned rating's reviewer -->
                               {{- if eq $rt_src.name $rt.name -}}
-                                <!-- whether the review is based on a number of user opinions --> 
+                                <!-- whether the review is based on a number of user opinions -->
                                 {{- if $rt.num -}}
                                   <!-- check whether the array of 'src_rating' has 2nd element "user", which corresponds to "based on a number of users' opinion" -->
                                   {{- if eq $rt_src.type "user" -}}
-                                    <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
-                                  {{- end -}}
-                                {{- else }}
+                                    {{- if $rt.remarks -}}
+                                      {{- if and $rt_src.remarks (eq $rt.remarks $rt_src.remarks) -}}
+                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                      {{- end -}}
+                                    {{- else -}}
+                                      {{- if not $rt_src.remarks -}}
+                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                      {{- end }}
+                                    {{- end }}
+                                  {{- end }}
+                                {{- else -}}
                                   <!-- in case rating is based on a professsional's opinion -->
                                   {{- if eq $rt_src.type "expert" -}}
-                                    <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                    {{- if $rt.remarks -}}
+                                      {{- if and $rt_src.remarks (eq $rt.remarks $rt_src.remarks) -}}
+                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                      {{- end }}
+                                    {{- else }}
+                                      {{- if not $rt_src.remarks -}}
+                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                      {{- end }}
+                                    {{- end }}
                                   {{- end }}
                                 {{- end }}
                               {{- end }}
@@ -797,8 +739,10 @@
       </div>
     </div>
   {{- end -}}
+  {{- if .GitInfo -}}
   <br>
   <p class="bg-nav text-antinav text-center small p-2">This page was last updated on {{ .GitInfo.AuthorDate.Format "02 January, 2006" }} with commit: <a class="font-weight-bold" href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})<a></p>
+  {{- end -}}
   
 </div>
 

@@ -1,0 +1,104 @@
+<!--
+  Is used to read and display platforms for which the software under consideration is available.
+  
+  Used in:
+    layouts/software/single.html
+    layouts/software/list.html
+-->
+{{- if .dskp -}}
+  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
+    <div class='text-center'>
+      {{- range .dskp -}}
+        {{ if eq .name "Linux" }}
+          {{- if eq .type "official" -}}
+            <span class='fa-2x'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- else if eq .name "Windows" }}
+          {{- if eq .type "official" -}}
+            <span class='fa-2x'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- else if eq .name "macOS" }}
+          {{- if eq .type "official" -}}
+            <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- else }}
+            <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- else }}
+          {{- if eq .type "official" -}}
+            <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- end }}
+      {{- end -}}
+    </div>
+  "><span class="text-clr2">{{ site.Data.icons.desktop | safeHTML }}</span></a>
+{{- else if .smp -}} 
+  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
+    <div class='text-center'>
+      {{- range .smp -}}
+        {{ if eq .name "Android" }}
+          {{- if eq .type "official" -}}
+            <span class='fa-2x'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- else if eq .name "iOS" }}
+          {{- if eq .type "official" -}}
+            <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- else }}
+          {{- if eq .type "official" -}}
+            <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- end }}
+      {{- end -}}
+    </div>
+  "><span class="text-clr2">{{ site.Data.icons.mobile | safeHTML }}</span></a>
+{{- else if .tab -}} 
+  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+    <div class='text-center'>
+      {{- range .tab -}}
+        {{ if eq .name "Android" }}
+          {{- if eq .type "official" }}
+          <span class='fa-2x'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- else if eq .name "iOS" }}
+          {{- if eq .type "official" -}}
+            <span class='fa-2x'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='fa-2x border border-warning p-1'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- else }}
+          {{- if eq .type "official" -}}
+            <span class='shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+          {{- else -}}
+            <span class='border border-warning shadow-sm p-2' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+          {{- end }}
+        {{- end }}
+      {{- end -}}
+    </div>
+  "><span class="text-clr2">{{ site.Data.icons.tab | safeHTML }}</span></a>
+{{- else -}} 
+  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
+    <div class='text-center'>
+      {{- range .else -}}
+        {{ if eq .type "official" -}}
+          <span class='badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+        {{- else -}}
+          <span class='border border-warning badge badge-light' title='This software framework/application would possibly run on every platform that can run {{ .name }}' style='margin-top:-1rem;'>{{ .name }}</span>&nbsp;&nbsp;
+        {{- end }}
+      {{- end -}}
+    </div>
+  "><span class="text-clr2">{{ site.Data.icons.bars | safeHTML }}</span></a>
+{{- end }}&nbsp;

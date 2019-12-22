@@ -12,8 +12,6 @@ This site provides the information, services and products available "AS IS", wit
 
 This website does not provide software for download but only provides with a link to download software from authentic link, and as such this site is not associated with the software  for which it provides an authentic link for download and cannot be held liable for issues or faults that arise from the download or use of the software.
 
-You agree that you have read and understood all the coditions enumerated in this document, [Disclaimer](/legal/disclaimer), [Cookie Policy](/legal/cookie-policy) and [Privacy Policy](/legal/privacy-policy).
-
 ### Removal
 
 If you are the publisher of a software title and wish to have it removed from Softorage.com, please send us a message via our [contact form](mailto:contact@softorage.com) including, your name, company, job title, the title of the software, and the reason for the takedown request. We will then contact you within 72 hours to verify your identity and your request will be actioned within a further 72 hours.
@@ -49,4 +47,4 @@ You may not reproduce or copy the content of our Website in any form without pri
 
 This terms of use and permissions within and any dispute or claim arising out of or in connection with it or its subject matter or formation shall be governed by and construed in accordance with the laws of the Republic of India and submitted to the exclusive jurisdiction of the the courts in Mumbai, India.
 
-Please proceed only if you accept all the conditions enumerated herein above, out of your free will and consent.
+You agree that you have read and understood all the coditions enumerated in this document, [Disclaimer](/legal/disclaimer), [Cookie Policy](/legal/cookie-policy) and [Privacy Policy](/legal/privacy-policy). Please proceed only if you accept all the conditions enumerated herein above, out of your free will and consent.

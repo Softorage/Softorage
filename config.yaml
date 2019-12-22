@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Softorage"
 params:
   description: "The one place for authentic downloads and all your software related information needs"
-  author: "Softorage team"
+  author: "Sanmay Joshi"
   tagline: "The Software Directory." # recommended for SEO template (partial/seo.html)
   # twitter: # recommended for SEO template (partial/seo.html)
   # image: # favicon; resolution 200px x 200px to 1200px x 1200px
@@ -19,3 +19,5 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+googleAnalytics: UA-154890683-1

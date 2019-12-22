@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- SEO template changes; source: https://digitalonlinetactics.com/post/blogging/hugo-seo-tips/ -->
 <title>
-  {{ .Title | default site.Title }}{{- if and (eq .Section "software") .IsPage }} - View and download {{ end -}} | {{ if not .IsHome -}} {{ site.Title }} {{- else -}} {{ site.Params.tagline }} {{- end -}}
+  {{- .Title | default site.Title }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}
 </title>
 <meta name="description" content="
   {{- with .Description }}
