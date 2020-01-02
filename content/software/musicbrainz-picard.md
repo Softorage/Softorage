@@ -12,6 +12,14 @@ website: "https://picard.musicbrainz.org/"
 get_it:
   - from: "Authentic"
     url: "https://picard.musicbrainz.org/downloads/"
+  - from: "Softpedia x32 (Windows)"
+    url: "https://www.softpedia.com/get/Multimedia/Audio/Tag-Editors/MusicBrainz-Picard.shtml"
+  - from: "CNET (Windows)"
+    url: "https://download.cnet.com/MusicBrainz-Picard/3000-2170_4-166444.html"
+  - from: "Softonic (Windows)"
+    url: "https://musicbrainz-picard.en.softonic.com/"
+  - from: "MacUpdate (macOS)"
+    url: "https://www.macupdate.com/app/mac/26543/musicbrainz-picard"
 
 developer: ["MusicBrainz"]
 
@@ -49,7 +57,7 @@ source:
     - name: "PCWorld"
       type: "expert"
       url: "https://www.pcworld.com/article/232471/musicbrainz_picard.html"
-    - name: "alternativeTo"
+    - name: "AlternativeTo"
       type: "user"
       url: "https://alternativeto.net/software/musicbrainz-picard/reviews/"
     - name: "Gizmo's Freeware"
@@ -61,12 +69,25 @@ source:
     - name: "CNET"
       type: "user"
       url: "https://download.cnet.com/MusicBrainz-Picard/3000-2170_4-166444.html"
+      remarks: "Windows"
+    - name: "Softpedia"
+      type: "user"
+      url: "https://www.softpedia.com/get/Multimedia/Audio/Tag-Editors/MusicBrainz-Picard.shtml"
+      remarks: "x32 bit Windows"
+    - name: "Softonic"
+      type: "user"
+      url: "https://musicbrainz-picard.en.softonic.com/"
+      remarks: "Windows"
+    - name: "MacUpdate"
+      type: "user"
+      url: "https://www.macupdate.com/app/mac/26543/musicbrainz-picard"
+      remarks: "macOS"
   status: ["https://github.com/metabrainz/picard/graphs/contributors", "https://community.metabrainz.org/c/picard"]
 
 rating:
   - name: "PCWorld"
     rate: [4.5, 5]
-  - name: "alternativeTo"
+  - name: "AlternativeTo"
     rate: [4.2, 5]
     num: 12
   - name: "Gizmo's Freeware"
@@ -77,6 +98,19 @@ rating:
   - name: "CNET"
     rate: [2.7, 5]
     num: 10
+    remarks: "Windows"
+  - name: "Softpedia"
+    rate: [3.6, 5]
+    num: 46
+    remarks: "x32 bit Windows"
+  - name: "Softonic"
+    rate: [7, 10]
+    num: 3
+    remarks: "Windows"
+  - name: "MacUpdate"
+    rate: [5, 5]
+    num: 20
+    remarks: "macOS"
 
 ---
   MusicBrainz Picard is a free and open-source [tag editor](/categories/tag-editor) for identifying, tagging, and organizing digital audio recordings.

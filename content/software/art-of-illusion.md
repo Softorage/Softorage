@@ -12,12 +12,22 @@ website: "http://www.artofillusion.org"
 get_it:
   - from: "Authentic"
     url: "http://www.artofillusion.org/downloads"
+  - from: "Softonic (Windows)"
+    url: "https://art-of-illusion.en.softonic.com/"
+  - from: "CNET (Windows)"
+    url: "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"
+  - from: "Softpedia (Windows)"
+    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Art-of-Illusion.shtml"
+  - from: "Malavida (Windows)"
+    url: "https://www.malavida.com/en/soft/art-of-illusion/"
+  - from: "MacUpdate (macOS)"
+    url: "https://www.macupdate.com/app/mac/19836/art-of-illusion"
 
-sys_req:
+sysreq:
   -
-    recm: A keyboard with a numberpad
+    recm: "A keyboard with a numberpad"
   -
-    recm: Single button mouse or a 3-button mouse with a scroll wheel
+    recm: "Single button mouse or a 3-button mouse with a scroll wheel"
 
 developer: ["Peter Eastman", "Others"]
 
@@ -65,12 +75,19 @@ source:
     - name: "CNET"
       type: "user"
       url: "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"
+      remarks: "Windows"
     - name: "CNET"
       type: "expert"
       url: "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"
-    - name: "SOFTPEDIA"
+      remarks: "Windows"
+    - name: "Softpedia"
       type: "user"
       url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Art-of-Illusion.shtml"
+      remarks: "Windows"
+    - name: "Softonic"
+      type: "user"
+      url: "https://art-of-illusion.en.softonic.com/"
+      remarks: "Windows"
   status: ["https://sourceforge.net/p/aoi/activity/?page=0&limit=100#5c21dbd6ee24ca4d526b7563"]
 
 rating:
@@ -83,14 +100,23 @@ rating:
   - name: "CNET"
     rate: [3.3, 5]
     num: 3
+    remarks: "Windows"
   - name: "CNET"
     rate: [5, 5]
-  - name: "SOFTPEDIA"
+    remarks: "Windows"
+  - name: "Softpedia"
     rate: [3.2, 5]
     num: 6
+    remarks: "Windows"
+  - name: "Softonic"
+    rate: [7, 10]
+    num: 139
+    remarks: "Windows"
 
 note: |
   * Absolute minimum requirements or recommendations for the system hardware have not been declared.
+  
+
 ---
   Art of Illusion is a [3D-graphics software](/categories/3d-computing-graphics), with similar intent of use as for example 3DS-Max or Maya of the commercial software packages or [Blender](/software/blender) or [Wings 3D](/software/wings-3d) on the freeware side. Though some sources seem to confuse 3D-modeling with CAD, Art of Illusion does not provide any CAD-features.
   
@@ -101,3 +127,4 @@ note: |
   Art of Illusion has been entirely written in Java.
   
   [Forum](https://sourceforge.net/p/aoi/discussion/) I [Documentation](http://www.artofillusion.org/documentation) I [FAQ](http://www.artofillusion.org/faq)
+  

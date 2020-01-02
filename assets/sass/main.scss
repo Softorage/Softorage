@@ -162,6 +162,11 @@ padding: 1.25rem;
 font-family: 'Lato', sans-serif;
 }
 
+//
+.tooltip {
+font-family: 'Lato', sans-serif;
+}
+
 // Styling table, so that class names are not necessary. Very handy for markdown rendered content!
 table {
 @extend .table, .table-bordered;
@@ -436,7 +441,7 @@ color: #0078d7;
 /* purgecss start ignore */
 // osano cookie consent customization
 .cc-banner {
-@extend .shadow-lg;
+box-shadow: 0 -0.5rem 1rem rgba(0,0,0,.045) !important; // @extend .shadow; just shadow drops above
 }
 
 // osano cookie consent css - prettified; 

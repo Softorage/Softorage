@@ -7,13 +7,17 @@ image: "https://upload.wikimedia.org/wikipedia/commons/2/28/FontForge_Logo%2C_20
 
 status: ["Active"]
 
-website: "https://fontforge.github.io/"
+website: "https://fontforge.org/"
 
 get_it:
   - from: "Authentic"
-    url: "https://fontforge.github.io/en-US/downloads/"
+    url: "https://fontforge.org/en-US/downloads/"
   - from: "GitHub | Releases"
     url: "https://github.com/fontforge/fontforge/releases"
+  - from: "Softpedia (Windows)"
+    url: "https://www.softpedia.com/get/Others/Font-Utils/FontForge.shtml"
+  - from: "MacUpdate (macOS)"
+    url: "https://www.macupdate.com/app/mac/48689/fontforge"
 
 sysreq:
   -
@@ -55,13 +59,13 @@ social:
     url: "https://en.wikipedia.org/wiki/FontForge"
 
 source:
-  overview: ["http://fontforge.github.io/en-US/documentation/scripting/", "http://fontforge.sourceforge.net/scripting.html", "http://fontforge.github.io/en-US/documentation/scripting/python/", "http://fontforge.sourceforge.net/python.html", "http://fontforge.github.io/featurefile.html", "http://fontforge.sourceforge.net/math.html", "http://fontforge.sourceforge.net/source-build.html#Dependencies", "https://github.com/fontforge/fontforge/releases", "http://fontforge.sourceforge.net/changelog.html", "http://www.luatex.org/talks/tug2008-taco-luatex.pdf", "https://fontforge.github.io/en-US/documentation/utilities/"]
-  developer: ["https://en.wikipedia.org/w/index.php?title=FontForge&oldid=875122964", "http://fontforge.github.io/en-US/project/acknowledgements/"]
-  initial_release: ["http://fontforge.github.io/oldchangelog.html"]
+  overview: ["http://fontforge.org/en-US/documentation/scripting/", "http://fontforge.sourceforge.net/scripting.html", "http://fontforge.org/en-US/documentation/scripting/python/", "http://fontforge.sourceforge.net/python.html", "http://fontforge.org/featurefile.html", "http://fontforge.sourceforge.net/math.html", "http://fontforge.sourceforge.net/source-build.html#Dependencies", "https://github.com/fontforge/fontforge/releases", "http://fontforge.sourceforge.net/changelog.html", "http://www.luatex.org/talks/tug2008-taco-luatex.pdf", "https://fontforge.org/en-US/documentation/utilities/"]
+  developer: ["https://en.wikipedia.org/w/index.php?title=FontForge&oldid=875122964", "http://fontforge.org/en-US/project/acknowledgements/"]
+  initial_release: ["http://fontforge.org/oldchangelog.html"]
   written_in: ["https://github.com/fontforge/fontforge"]
   platform:
-    - dskp: ["http://fontforge.github.io/en-US/downloads/"]
-  sysreq: ["https://fontforge.github.io/faq.html#Minimum"]
+    - dskp: ["http://fontforge.org/en-US/downloads/"]
+  sysreq: ["https://fontforge.org/faq.html#Minimum"]
   license: ["https://github.com/fontforge/fontforge/blob/master/LICENSE"]
   rating:
     - name: "OSDN"
@@ -70,6 +74,14 @@ source:
     - name: "SourceForge"
       type: "user"
       url: "https://sourceforge.net/projects/fontforge/"
+    - name: "Softpedia"
+      type: "user"
+      url: "https://www.softpedia.com/get/Others/Font-Utils/FontForge.shtml"
+      remarks: "Windows"
+    - name: "MacUpdate"
+      type: "user"
+      url: "https://www.macupdate.com/app/mac/48689/fontforge"
+      remarks: "macOS"
   status: ["https://github.com/fontforge/fontforge", "https://github.com/fontforge/fontforge/graphs/contributors", "https://github.com/fontforge/fontforge/releases"]
 
 rating:
@@ -79,6 +91,14 @@ rating:
   - name: "SourceForge"
     rate: [4.3, 5]
     num: 65
+  - name: "Softpedia"
+    rate: [4.8, 5]
+    num: 126
+    remarks: "Windows"
+  - name: "MacUpdate"
+    rate: [4.3, 5]
+    num: 7
+    remarks: "macOS"
 
 ---
   FontForge is a [font editor](/categories/font-editor) which supports many common font formats. To facilitate automated format conversion and other repetitive tasks, FontForge implements two scripting languages: its own language and Python. FontForge can run scripts from its GUI, from the command line, and also offers its features as a Python module so it can be integrated into any Python program.
@@ -93,4 +113,5 @@ rating:
   
   The FontForge source code includes a number of utility programs, including 'showttf' which shows the contents of binary font files, and a WOFF converter and deconverter.
   
-  [Online Book](http://designwithfontforge.com/) I [Documentation](https://fontforge.github.io/en-US/documentation/) I [FAQ](https://fontforge.github.io/en-US/faq/) I [Wiki](https://github.com/fontforge/fontforge/wiki) I [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
+  [Online Book](http://designwithfontforge.com/) I [Documentation](https://fontforge.org/en-US/documentation/) I [FAQ](https://fontforge.org/en-US/faq/) I [Wiki](https://github.com/fontforge/fontforge/wiki) I [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
+  

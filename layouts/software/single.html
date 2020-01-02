@@ -20,7 +20,8 @@
   {{- end -}}
 {{- end }}
 
-{{- $no_content := "Not available, but hey, you could <a href='#contribute'>help</a>!" -}}
+<!-- using printf to concatenate strings -->
+{{- $no_content := printf "%s%s%s" "Not available, but we appreciate <a href='/contribute/'>help</a>! You can help us <a href='https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/" .File.Path "'>improve this page</a>." -}}
 <!-- -->
 <div class="container-fluid bg-clr2-light text-clr2 py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
@@ -119,36 +120,142 @@
     
       {{- if .Params.get_it }}
         {{- if eq (len .Params.get_it) 1 -}}
-          <a href="{{ (index .Params.get_it 0).url }}" class="btn bg-success my-2"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">Get it</span></a>
+          <a href="{{ (index .Params.get_it 0).url }}" class="btn btn-success my-2"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">Get it</span></a>
         {{- else -}}
-          <a role="button" class="btn bg-success my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Get it from" data-html="true" data-content="
-            {{- range .Params.get_it -}} 
-              <a href='{{ .url }}' class='btn btn-sm
-                {{- if eq .from "Authentic" }} btn-success
-                {{- else }} btn-light
-                {{- end -}}
-              '>{{ .from }}</a>&nbsp;
-            {{ end -}}
-          "><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">Get it</span></a>
+          <button role="button" class="btn bg-success my-2" data-toggle="modal" data-target="#get-it-modal"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">{{ if in .Params.categories "Framework" }}Get it{{ else }}Download{{ end }}</span></button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="get-it-modal" tabindex="-1" role="dialog" aria-labelledby="get-it-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-nav text-antinav">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="get-it-modal-label">{{ if in .Params.categories "Framework" }}Get {{ .Title }}{{ else }}Download {{ .Title }}{{ end }}</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-antinav" aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body get-it-modal-body">
+                  <div class="text-center">
+                    {{- range .Params.get_it -}} 
+                      {{ if in .from "Authentic" }}
+                        <a href='{{ .url }}' class='btn btn-lg{{ if eq .from "Authentic" }} btn-success{{ else }} btn-light{{ end }}'>{{ .from }}{{ if eq .from "Authentic" }} <i class='small'>(Recommended)</i>{{ end }}</a>&nbsp;
+                      {{ end }}
+                    {{ end -}}
+                  </div>
+                  <hr>
+                  
+                  <ul class="nav nav-tabs" id="downloadTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="windows-tab" data-toggle="tab" href="#windows" role="tab" aria-controls="windows" aria-selected="true">Windows</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="linux-tab" data-toggle="tab" href="#linux" role="tab" aria-controls="linux" aria-selected="false">Linux</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="macOS-tab" data-toggle="tab" href="#macOS" role="tab" aria-controls="macOS" aria-selected="false">macOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+                    </li>
+                  </ul>
+                  <!-- index of last iteration (subtracted 1 since they start from zero) -->
+                  {{ $download_len := sub (len .Params.get_it) 1 }}
+                  {{ $available := false }}
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+                      {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                        {{ if or (in $download_item.from "(Windows)") (in $download_item.from "(All)") }}
+                          <a href='{{ $download_item.url }}' class='btn btn-sm bg-clr2-light m-2'>{{ replace $download_item.from "(Windows)" "" }}</a>
+                          {{ $available = true }}
+                        {{ else if and (eq $index $download_len) (not $available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $available is set to false. -->
+                          <p class="m-2">No download available for Windows.</p>
+                        {{ end }}
+                        {{ if and (eq $index $download_len) $available }}
+                          {{ $available = false }} <!-- resetting the variable '$available' -->
+                        {{ end }}
+                      {{ end -}}
+                    </div>
+                    <div class="tab-pane fade" id="linux" role="tabpanel" aria-labelledby="linux-tab">
+                      {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                        {{ if or (in $download_item.from "(Linux)") (in $download_item.from "(All)") }}
+                          <a href='{{ $download_item.url }}' class='btn btn-sm bg-clr2-light m-2'>{{ replace $download_item.from "(Linux)" "" }}</a>
+                          {{ $available = true }}
+                        {{ else if and (eq $index $download_len) (not $available) }}
+                          <p class="m-2">No download available for Linux.</p>
+                        {{ end }}
+                        {{ if and (eq $index $download_len) $available }}
+                          {{ $available = false }} <!-- resetting the variable '$available' -->
+                        {{ end }}
+                      {{ end -}}
+                    </div>
+                    <div class="tab-pane fade" id="macOS" role="tabpanel" aria-labelledby="macOS-tab">
+                      {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                        {{ if or (in $download_item.from "(macOS)") (in $download_item.from "(All)") }}
+                          <a href='{{ $download_item.url }}' class='btn btn-sm bg-clr2-light m-2'>{{ replace $download_item.from "(macOS)" "" }}</a>
+                          {{ $available = true }}
+                        {{ else if and (eq $index $download_len) (not $available) }}
+                          <p class="m-2">No download available for macOS.</p>
+                        {{ end }}
+                        {{ if and (eq $index $download_len) $available }}
+                          {{ $available = false }} <!-- resetting the variable '$available' -->
+                        {{ end }}
+                      {{ end -}}
+                    </div>
+                    <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+                      {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                        {{ if not (or (or (or (or (in $download_item.from "(macOS)") (in $download_item.from "(All)")) (in $download_item.from "(Linux)")) (in $download_item.from "(Windows)")) (in $download_item.from "Authentic")) }}
+                          <a href='{{ $download_item.url }}' class='btn btn-sm bg-clr2-light m-2'>{{ $download_item.from }}</a>
+                          {{ $available = true }}
+                        {{ else if and (eq $index $download_len) (not $available) }}
+                          <p class="m-2">No download available for others.</p>
+                        {{ end }}
+                        {{ if and (eq $index $download_len) $available }}
+                          {{ $available = false }} <!-- resetting the variable '$available' -->
+                        {{ end }}
+                      {{ end -}}
+                    </div>
+                  </div>
+                  
+                  {{/*
+                  <span class="lead">Windows</span>
+                  <br>
+                  {{- range .Params.get_it -}} 
+                    {{ if or (in .from "(Windows)") (in .from "(All)") }}
+                    <a href='{{ .url }}' class='btn btn-sm
+                      {{- if eq .from "Authentic" }} btn-success
+                      {{- else }} btn-light
+                      {{- end -}}
+                    '>{{ .from }}</a>&nbsp;
+                    {{ end }}
+                  {{ end -}}
+                  */}}
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         {{- end }}
       {{- end }}
       
       {{- if .Params.website -}}
-        &nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}"><span class="text-primary">{{ site.Data.icons.website | safeHTML }}</span>&nbsp; <span class="text-primary">Visit</span></a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}"><span class="text-primary">{{ site.Data.icons.website | safeHTML }}</span>&nbsp; <span class="text-primary">Visit</span></a> <br>
       {{- end -}}
       
       <div class="row my-2 ml-1">
         <span class="fa-2x">{{ site.Data.icons.share | safeHTML }}</span>&nbsp;&nbsp;
         <span class="d-inline-block font-weight-bold border-left border-right"></span>&nbsp;&nbsp;
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.BaseURL }}{{ .Permalink }}&quote={{ .Title }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="https://twitter.com/intent/tweet?source={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}:{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>&nbsp;&nbsp;
-        <!-- G+ is shutting down
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.BaseURL }}{{ .Permalink }}&quote={{ .Title }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/intent/tweet?source={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}:{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>&nbsp;&nbsp;
+        <!--{{/* G+ is shutting down
         <a href="https://plus.google.com/share?url={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa-2x">{{ site.Data.icons.googlePlus | safeHTML }}</span></a>&nbsp;&nbsp;
-        -->
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}&summary={{ .Params.description }}&source=Softorage" rel="nofollow" target="_blank" title="Share on LinkedIn"><span class="fa-2x">{{ site.Data.icons.linkedin | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="whatsapp://send?text={{ site.BaseURL }}{{ .Permalink }}%20{{ .Title }}" data-text="{{ .Title }}" data-href="{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" title="Share on Whatsapp"><span class="fa-2x">{{ site.Data.icons.whatsapp | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="https://reddit.com/submit?url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}" rel="nofollow" target="_blank" title="Share on Reddit"><span class="fa-2x">{{ site.Data.icons.reddit | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="mailto:?subject={{ .Title }}&body={{ .Params.description }}:{{ site.BaseURL }}{{ .Permalink }}" target="_blank" title="Share via email"><span class="fa-2x">{{ site.Data.icons.email | safeHTML }}</span></a>
+        */}}-->
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}&summary={{ .Params.description }}&source=Softorage" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on LinkedIn"><span class="fa-2x">{{ site.Data.icons.linkedin | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="whatsapp://send?text={{ site.BaseURL }}{{ .Permalink }}%20{{ .Title }}" data-text="{{ .Title }}" data-href="{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Whatsapp"><span class="fa-2x">{{ site.Data.icons.whatsapp | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://reddit.com/submit?url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Reddit"><span class="fa-2x">{{ site.Data.icons.reddit | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="mailto:?subject={{ .Title }}&body={{ .Params.description }}:{{ site.BaseURL }}{{ .Permalink }}" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share via email"><span class="fa-2x">{{ site.Data.icons.email | safeHTML }}</span></a>
       </div>
       <!--
       <a href="https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/{{ .File.Path }}" class="badge small my-2" target="_blank">&#60;/page-source&#62;</a>
@@ -741,7 +848,8 @@
   {{- end -}}
   {{- if .GitInfo -}}
   <br>
-  <p class="bg-nav text-antinav text-center small p-2">This page was last updated on {{ .GitInfo.AuthorDate.Format "02 January, 2006" }} with commit: <a class="font-weight-bold" href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})<a></p>
+  <p class="bg-nav text-antinav text-center small p-2">This page was last updated with commit: <a class="font-weight-bold" href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})<a></p>
+  <!--{{/* on {{ .GitInfo.AuthorDate.Format "02 January, 2006" }} */}}-->
   {{- end -}}
   
 </div>

@@ -12,6 +12,24 @@ website: "https://www.audacityteam.org/"
 get_it:
   - from: "Authentic"
     url: "https://www.audacityteam.org/download/"
+  - from: "FossHub (All)"
+    url: "https://www.fosshub.com/Audacity.html"
+  - from: "Softonic (Windows)"
+    url: "https://audacity.en.softonic.com/"
+  - from: "Uptodown (Windows)"
+    url: "https://audacity.en.uptodown.com/windows"
+  - from: "FileHippo (Windows)"
+    url: "https://filehippo.com/download_audacity/"
+  - from: "CNET (Windows)"
+    url: "https://download.cnet.com/Audacity/3000-2170_4-10058117.html"
+  - from: "FileHorse (Windows)"
+    url: "https://www.filehorse.com/download-audacity/"
+  - from: "Softpedia (Windows)"
+    url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-Editors-Recorders/Audacity.shtml"
+  - from: "TechSpot (All)"
+    url: "https://www.techspot.com/downloads/3194-audacity.html"
+  - from: "Malavida (Windows)"
+    url: "https://www.malavida.com/en/soft/audacity"
 
 sysreq:
   -
@@ -76,12 +94,44 @@ source:
     - name: "CNET"
       type: "user"
       url: "https://download.cnet.com/Audacity/3000-2170_4-10058117.html"
+      remarks: "Windows"
     - name: "CNET"
       type: "expert"
       url: "https://download.cnet.com/Audacity/3000-2170_4-10058117.html"
+      remarks: "Windows"
     - name: "SourceForge"
       type: "user"
       url: "https://sourceforge.net/projects/audacity/reviews/"
+    - name: "Softonic"
+      type: "user"
+      url: "https://audacity.en.softonic.com/"
+      remarks: "Windows"
+    - name: "FossHub"
+      type: "user"
+      url: "https://www.fosshub.com/Audacity.html"
+    - name: "Uptodown"
+      type: "user"
+      url: "https://audacity.en.uptodown.com/windows"
+      remarks: "Windows"
+    - name: "FileHippo"
+      type: "user"
+      url: "https://filehippo.com/download_audacity/"
+      remarks: "Windows"
+    - name: "FileHorse"
+      type: "user"
+      url: "https://www.filehorse.com/download-audacity/"
+      remarks: "Windows"
+    - name: "Softpedia"
+      type: "user"
+      url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-Editors-Recorders/Audacity.shtml"
+      remarks: "Windows"
+    - name: "Malavida"
+      type: "user"
+      url: "https://www.malavida.com/en/soft/audacity"
+      remarks: "Windows"
+    - name: "TechSpot"
+      type: "user"
+      url: "https://www.techspot.com/downloads/3194-audacity.html"
   status: ["https://www.audacityteam.org/posts/"]
 
 rating:
@@ -97,16 +147,47 @@ rating:
   - name: "CNET"
     rate: [4.2, 5]
     num: 799
+    remarks: "Windows"
   - name: "CNET"
     rate: [4, 5]
+    remarks: "Windows"
   - name: "SourceForge"
     rate: [4.6, 5]
     num: 304
+  - name: "Softonic"
+    rate: [8, 10]
+    num: 11915
+    remarks: "Windows"
+  - name: "FossHub"
+    rate: [5, 5]
+    num: 6985
+  - name: "Uptodown"
+    rate: [4.5, 5]
+    num: 16
+    remarks: "Windows"
+  - name: "FileHippo"
+    rate: [7.4, 10]
+    num: 140
+    remarks: "Windows"
+  - name: "FileHorse"
+    rate: [8, 10]
+    num: 362
+    remarks: "Windows"
+  - name: "Softpedia"
+    rate: [4.3, 5]
+    num: 414
+    remarks: "Windows"
+  - name: "Malavida"
+    rate: [8, 10]
+    num: 148
+    remarks: "Windows"
+  - name: "TechSpot"
+    rate: [4.8, 5]
+    num: 14
 
 note: |
   * Legacy versions for [Windows](https://www.audacityteam.org/download/legacy-windows/) and [mac](https://www.audacityteam.org/download/legacy-mac/) are also available.
   
-
 ---
   Audacity imports sounds and music, puts sound effects against individual tracks and mixes things like music tracks and podcasts together. Audacity comes with many professional editing and recording functions. It's possible to create both live recordings as well as cut tracks. In addition, Audacity has an audio toolbox with countless effects, an equalizer and frequency analysis on board.
   

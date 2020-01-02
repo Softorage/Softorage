@@ -12,6 +12,24 @@ website: "https://www.gimp.org/"
 get_it:
   - from: "Authentic"
     url: "https://www.gimp.org/downloads/"
+  - from: "TechSpot (All)"
+    url: "https://www.techspot.com/downloads/614-the-gimp.html"
+  - from: "FileHorse x64 (Windows)"
+    url: "https://www.filehorse.com/download-gimp/"
+  - from: "Softpedia (Windows)"
+    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/GIMP.shtml"
+  - from: "Softonic (Windows)"
+    url: "https://the-gimp.en.softonic.com/"
+  - from: "CNET (Windows)"
+    url: "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"
+  - from: "Uptodown (Windows)"
+    url: "https://gimp.en.uptodown.com/windows"
+  - from: "FileHippo x32 (Windows)"
+    url: "https://filehippo.com/download_the-gimp_32/"
+  - from: "CNET (macOS)"
+    url: "https://download.cnet.com/GIMP/3000-2192_4-10322178.html"
+  - from: "MacUpdate (macOS)"
+    url: "https://www.macupdate.com/app/mac/14597/gimp"
 
 sysreq:
   -
@@ -32,11 +50,11 @@ platform:
       - name: "Linux"
         type: "official"
       - name: "macOS"
-        type:  "official"
+        type: "official"
       - name: "Windows"
-        type:  "official"
+        type: "official"
       - name: "Unix(like)"
-        type:  "official"
+        type: "official"
 
 categories: ["Raster Graphics Editor"]
 
@@ -68,6 +86,7 @@ source:
     - name: "Softonic"
       type: "user"
       url: "https://the-gimp.en.softonic.com/#app-softonic-review"
+      remarks: "Windows"
     - name: "Capterra"
       type: "user"
       url: "https://www.capterra.com/p/168960/GIMP/"
@@ -77,9 +96,42 @@ source:
     - name: "CNET"
       type: "user"
       url: "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"
+      remarks: "Windows"
     - name: "CNET"
       type: "expert"
       url: "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"
+      remarks: "Windows"
+    - name: "Uptodown"
+      type: "user"
+      url: "https://gimp.en.uptodown.com/windows"
+      remarks: "Windows"
+    - name: "FileHippo"
+      type: "user"
+      url: "https://filehippo.com/download_the-gimp_32/"
+      remarks: "x32 bit Windows"
+    - name: "TechSpot"
+      type: "user"
+      url: "https://www.techspot.com/downloads/614-the-gimp.html"
+    - name: "FileHorse"
+      type: "user"
+      url: "https://www.filehorse.com/download-gimp/"
+      remarks: "x64 bit Windows"
+    - name: "Softpedia"
+      type: "user"
+      url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/GIMP.shtml"
+      remarks: "Windows"
+    - name: "MacUpdate"
+      type: "user"
+      url: "https://www.macupdate.com/app/mac/14597/gimp"
+      remarks: "macOS"
+    - name: "CNET"
+      type: "user"
+      url: "https://download.cnet.com/GIMP/3000-2192_4-10322178.html"
+      remarks: "macOS"
+    - name: "CNET"
+      type: "expert"
+      url: "https://download.cnet.com/GIMP/3000-2192_4-10322178.html"
+      remarks: "macOS"
   status: ["https://www.gimp.org/news/", "https://gitlab.gnome.org/GNOME/gimp/graphs/master"]
 
 rating:
@@ -87,7 +139,8 @@ rating:
     rate: [5, 5]
   - name: "Softonic"
     rate: [7, 10]
-    num: 8664
+    num: 11807
+    remarks: "Windows"
   - name: "Capterra"
     rate: [4.5, 5]
     num: 770
@@ -97,14 +150,48 @@ rating:
   - name: "CNET"
     rate: [4, 5]
     num: 874
+    remarks: "Windows"
   - name: "CNET"
     rate: [5, 5]
+    remarks: "Windows"
+  - name: "Uptodown"
+    rate: [4.2, 5]
+    num: 21
+    remarks: "Windows"
+  - name: "FileHippo"
+    rate: [8, 10]
+    num: 267
+    remarks: "x32 bit Windows"
+  - name: "TechSpot"
+    rate: [4.6, 5]
+    num: 35
+  - name: "FileHorse"
+    rate: [7.8, 10]
+    num: 122
+    remarks: "x64 bit Windows"
+  - name: "Softpedia"
+    rate: [4.2, 5]
+    num: 411
+    remarks: "Windows"
+  - name: "MacUpdate"
+    rate: [4.2, 5]
+    num: 202
+    remarks: "macOS"
+  - name: "CNET"
+    rate: [3, 5]
+    num: 81
+    remarks: "macOS"
+  - name: "CNET"
+    rate: [3.5, 5]
+    remarks: "macOS"
 
 note: |
   * [System Requirements](#sysreq) could not be found on the [official website](https://www.gimp.org/). [System Requirements](#sysreq) stated [here](#sysreq) are from a page of 2011(see source).
+  
 ---
   GIMP (GNU Image Manipulation Program) is a free and open-source [raster graphics editor](/categories/raster-graphics-editor) used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.
   
   GIMP allows to create images with tools for airbrushing, penciling, cloning, and creating gradients. Power users can create their own brushes and patterns to use later. It also allows users to manipulate images imported into the program, further allowing to crop, add text, resize, and create nested layers. Creations can be animated as well.
   
   [News](https://www.gimp.org/news/) I [Wiki](https://wiki.gimp.org/) I [Documentation](https://www.gimp.org/docs/) I [User FAQ](https://www.gimp.org/docs/userfaq.html) I [Books](https://www.gimp.org/books/) I [Mailing lists](https://www.gimp.org/mail_lists.html) I [IRC](https://www.gimp.org/irc.html)
+  

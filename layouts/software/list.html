@@ -21,6 +21,7 @@
         <span class="small float-right">search by <a href="https://listjs.com/">List.js</a></span>
         <br><br>
         <div class="form-group list">
+          <span class="lead">Categories</span>
           {{/* Example usage:
           {{ range $key, $value := site.Taxonomies.categories }}
             <li><a href="{{ $baseurl }}categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
@@ -42,10 +43,10 @@
 </div>
 <!-- -->
 <div class="container-fluid bg-antinav-light py-3" id="software-list">
-  <div class="card mb-3">
+  <div class="card mb-3 menu" style="z-index:1030;">
     <div class="card-body">
       <div class="card-text">
-        <div class="form-inline bg-nav menu" style="z-index:1030;">
+        <div class="form-inline bg-nav">
           <!-- 
           wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
           see: https://github.com/javve/list.js/issues/358

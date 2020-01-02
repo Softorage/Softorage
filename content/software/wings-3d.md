@@ -68,7 +68,7 @@ source:
     - name: "CNET"
       type: "user"
       url: "https://download.cnet.com/Wings-3D/3000-6677_4-10514566.html"
-    - name: "alternativeTo"
+    - name: "AlternativeTo"
       type: "user"
       url: "https://alternativeto.net/software/wings-3d/reviews/"
   status: ["https://sourceforge.net/projects/wings/files/wings/", "http://www.wings3d.com/forum/", "https://github.com/dgud/wings/graphs/contributors"]
@@ -86,7 +86,7 @@ rating:
   - name: "CNET"
     rate: [3.9, 5]
     num: 8
-  - name: "alternativeTo"
+  - name: "AlternativeTo"
     rate: [4, 5]
     num: 2
 

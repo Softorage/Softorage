@@ -62,7 +62,7 @@ source:
     - name: "SourceForge"
       type: "user"
       url: "https://sourceforge.net/projects/accord-net/reviews/"
-    - name: "SOFTPEDIA"
+    - name: "Softpedia"
       type: "user"
       url: "https://www.softpedia.com/get/Programming/Components-Libraries/Accord-NET-Framework.shtml"
   status: ["https://github.com/accord-net/framework"]
@@ -71,7 +71,7 @@ rating:
   - name: "SourceForge"
     rate: [5, 5]
     num: 1
-  - name: "SOFTPEDIA"
+  - name: "Softpedia"
     rate: [4.1, 5]
     num: 8
 

@@ -3,7 +3,7 @@ title: "Mozilla Firefox"
 
 description: "An open source web browser developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/6/67/Firefox_Logo%2C_2017.svg"
+image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg"
 
 status: ["Active"]
 
@@ -12,6 +12,28 @@ website: "https://www.mozilla.org/en-US/firefox/"
 get_it:
   - from: "Authentic"
     url: "https://www.mozilla.org/en-US/firefox/new/"
+  - from: "Softonic (Windows)"
+    url: "https://mozilla-firefox.en.softonic.com/"
+  - from: "FileHippo x32 (Windows)"
+    url: "https://filehippo.com/download_mozilla-firefox/"
+  - from: "FileHippo x64 (Windows)"
+    url: "https://filehippo.com/download_mozilla-firefox-64/"
+  - from: "CNET (Windows)"
+    url: "https://download.cnet.com/mozilla-firefox/"
+  - from: "FileHorse x32 (Windows)"
+    url: "https://www.filehorse.com/download-firefox-32/"
+  - from: "TechSpot (All)"
+    url: "https://www.techspot.com/downloads/19-mozilla-firefox.html"
+  - from: "Malavida (Windows)"
+    url: "https://www.malavida.com/en/soft/firefox/"
+  - from: "Softpedia x32 (Windows)"
+    url: "https://www.softpedia.com/get/Internet/Browsers/Mozilla-Firefox-Final.shtml"
+  - from: "Softonic (macOS)"
+    url: "https://mozilla-firefox.en.softonic.com/mac"
+  - from: "Google Play Store (Android)"
+    url: "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
+  - from: "Softonic (Android)"
+    url: "https://mozilla-firefox.en.softonic.com/android"
 
 sysreq:
   -
@@ -42,8 +64,10 @@ platform:
   - dskp:
       - name: "Windows"
         type: "official"
+        arch: ["x32", "x64"]
       - name: "Linux"
         type: "official"
+        arch: ["x32", "x64"]
       - name: "macOS"
         type: "official"
       - name: "Unix(like)"
@@ -77,7 +101,6 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=Firefox&oldid=878328541", "http://www.infoworld.com/article/3165424/web-browsers/mozilla-binds-firefoxs-fate-to-the-rust-language.html"]
   platform:
     - dskp: ["https://www.mozilla.org/en-US/firefox/new/", "https://en.wikipedia.org/w/index.php?title=Firefox&oldid=878328541", "https://svnweb.freebsd.org/ports/head/www/firefox/", "http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/www/mozilla-firefox/", "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/www/firefox/", "https://wiki.openindiana.org/oi/Firefox", "https://pkgsrc.joyent.com/install-on-illumos/", "https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox", "https://ftp.mozilla.org/pub/firefox/releases/52.0esr/contrib/solaris_pkgadd/README.txt"]
-    - smptb: ["https://www.mozilla.org/en-US/firefox/new/"]
   sysreq: ["https://www.mozilla.org/en-US/firefox/62.0/system-requirements/"]
   license: ["https://www.mozilla.org/foundation/licensing.html", "https://www.mozilla.org/en-US/about/legal/eula/"]
   rating:
@@ -87,6 +110,49 @@ source:
     - name: "TopTenReviews"
       type: "expert"
       url: "https://www.toptenreviews.com/software/internet/best-internet-browser-software/mozilla-firefox-review/"
+    - name: "Softonic"
+      type: "user"
+      url: "https://mozilla-firefox.en.softonic.com/"
+      remarks: "Windows"
+    - name: "FileHippo"
+      type: "user"
+      url: "https://filehippo.com/download_mozilla-firefox/"
+      remarks: "x32 bit Windows"
+    - name: "CNET"
+      type: "user"
+      url: "https://download.cnet.com/mozilla-firefox/"
+      remarks: "Windows"
+    - name: "CNET"
+      type: "expert"
+      url: "https://download.cnet.com/mozilla-firefox/"
+      remarks: "Windows"
+    - name: "FileHorse"
+      type: "user"
+      url: "https://www.filehorse.com/download-firefox-32/"
+      remarks: "x32 bit Windows"
+    - name: "TechSpot"
+      type: "user"
+      url: "https://www.techspot.com/downloads/19-mozilla-firefox.html"
+    - name: "Malavida"
+      type: "user"
+      url: "https://www.malavida.com/en/soft/firefox/"
+      remarks: "Windows"
+    - name: "Softpedia"
+      type: "user"
+      url: "https://www.softpedia.com/get/Internet/Browsers/Mozilla-Firefox-Final.shtml"
+      remarks: "x32 bit Windows"
+    - name: "Softonic"
+      type: "user"
+      url: "https://mozilla-firefox.en.softonic.com/mac"
+      remarks: "macOS"
+    - name: "Google Play"
+      type: "user"
+      url: "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
+      remarks: "Android"
+    - name: "Softonic"
+      type: "user"
+      url: "https://mozilla-firefox.en.softonic.com/android"
+      remarks: "Android"
   status: ["https://hg.mozilla.org/mozilla-central/log", "https://github.com/mozilla/gecko-dev/graphs/contributors"]
 
 rating:
@@ -95,11 +161,55 @@ rating:
     num: 142
   - name: "TopTenReviews"
     rate: [9.85, 10]
+  - name: "Softonic"
+    rate: [8, 10]
+    num: 38375
+    remarks: "Windows"
+  - name: "FileHippo"
+    rate: [10, 10]
+    num: 540
+    remarks: "x32 bit Windows"
+  - name: "CNET"
+    rate: [4.5, 5]
+    num: 15638
+    remarks: "Windows"
+  - name: "CNET"
+    rate: [4, 5]
+    remarks: "Windows"
+  - name: "FileHorse"
+    rate: [8.6, 10]
+    num: 2743
+    remarks: "x32 bit Windows"
+  - name: "TechSpot"
+    rate: [4.4, 5]
+    num: 960
+  - name: "Malavida"
+    rate: [9, 10]
+    num: 1395
+    remarks: "Windows"
+  - name: "Softpedia"
+    rate: [4.3, 5]
+    num: 13345
+    remarks: "x32 bit Windows"
+  - name: "Softonic"
+    rate: [7, 10]
+    num: 1113
+    remarks: "macOS"
+  - name: "Google Play"
+    rate: [4.4, 5]
+    num: 3342873
+    remarks: "Android"
+  - name: "Softonic"
+    rate: [8, 10]
+    num: 876
+    remarks: "Android"
 
 note: |
   * Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
   * Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)
+  
 ---
   Mozilla Firefox (or simply Firefox) is a free and open-source [web browser](/categories/web-browser) developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox is available for Windows, macOS, Linux, BSD illumos and Solaris operating systems. Its sibling, Firefox for Android, is also available. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards. In 2017, Firefox began incorporating new technology under the code name Quantum to promote parallelism and a more intuitive user interface. An additional version, Firefox for iOS, was released on November 12, 2015. Due to platform restrictions, it uses the WebKit layout engine instead of Gecko, as with all other iOS web browsers.
   
   [Blog](https://blog.mozilla.org/) I [Forum](https://support.mozilla.org/en-US/questions) I [News/Announcements](https://blog.mozilla.org/press/) I [Wiki](https://wiki.mozilla.org/Firefox) I [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding) I [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
+  

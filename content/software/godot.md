@@ -12,6 +12,12 @@ website: "https://godotengine.org/"
 get_it:
   - from: "Authentic"
     url: "https://godotengine.org/download/"
+  - from: "FileHorse x32 (Windows)"
+    url: "https://www.filehorse.com/download-godot-engine-32/"
+  - from: "Softpedia (Windows)"
+    url: "https://www.softpedia.com/get/Gaming-Related/Godot-Engine.shtml"
+  - from: "Uptodown x64 (Windows)"
+    url: "https://godot-engine.en.uptodown.com/windows"
 
 sysreq:
   -
@@ -72,6 +78,10 @@ source:
     - name: "G2CROWD"
       type: "user"
       url: "https://www.g2crowd.com/products/godot/reviews"
+    - name: "FileHorse"
+      type: "user"
+      url: "https://www.filehorse.com/download-godot-engine-32/"
+      remarks: "x32 bit Windows"
   status: ["https://godotengine.org/news", "https://github.com/godotengine/godot/graphs/contributors"]
 
 rating:
@@ -81,6 +91,10 @@ rating:
   - name: "G2CROWD"
     rate: [3.9, 5]
     num: 6
+  - name: "FileHorse"
+    rate: [8, 10]
+    num: 21
+    remarks: "x32 bit Windows"
 
 ---
   Godot is a [game engine](/categories/game-engine) which was initially developed for several companies in Latin America before its public release. The development environment runs on Windows, macOS, Linux, BSD and Haiku (both 32 and 64-bit) and can create games targeting PC, mobile and web platforms.
@@ -88,3 +102,4 @@ rating:
   The architecture is built around a concept of a tree of nested "scenes". All game resources, from scripts to graphical assets, are saved as part of the computer's file system (rather than in a database). This storage solution is intended to make it easier for game development teams to collaborate on script code using version control.
   
   [Documentation](https://docs.godotengine.org/) I [News](https://godotengine.org/news) I [Question/Answers](https://godotengine.org/qa/) I [IRC](http://webchat.freenode.net/?channels=#godotengine) I [Developer Forum](https://godotdevelopers.org/) I [FAQ](http://docs.godotengine.org/en/3.0/about/faq.html)
+  

@@ -1,4 +1,27 @@
 <head>
+  <!-- GitLab doesn't automatically redirect users from softorage.gitlab.io to softorage.com. Following script (slightly modified from original source) does that. source: https://www.r-bloggers.com/porting-and-redirecting-a-hugo-based-blogdown-website-to-an-https-enabled-custom-domain-and-how-to-do-it-the-easy-way/#javascript-to-the-rescue -->
+  <script>
+    function replacePath(path, old_d, new_d) {
+      if (window.location.hostname != "127.0.0.1" && window.location.hostname != "localhost") {
+        path = path.replace(old_d, new_d);
+        if (path.includes(new_d)) {
+          /* only if really on the new domain */
+          path = path.replace("http:", "https:");
+        }
+      }
+      return path;
+    }
+    var newpath = replacePath(
+      window.location.href,
+      "://softorage.gitlab.io",
+      "://softorage.com"
+    );
+    /* Prevent infinite redirect */
+    if (window.location.href != newpath){
+      window.location.replace(newpath);
+    }
+  </script>
+  <!-- Google Analytics shall work only on production website -->
   {{ if eq hugo.Environment "production" -}}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154890683-1"></script>
@@ -14,7 +37,7 @@
   {{- partial "seo.html" . -}}
   {{ hugo.Generator }}
   <!-- resources.Get creates a new resource object based on a path to a file in the /assets directory. Then, we use resources.ExecuteAsTemplate with the resource type destination as "assets/css/main.scss". The dot (.) passes the context. -->
-  {{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS | postCSS | fingerprint -}}
+  {{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS | fingerprint -}}
   <!-- Minified Aggregated CSS -->
   <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
   <!-- Prefetch and Preconnect Google Fonts API -->

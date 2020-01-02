@@ -12,6 +12,26 @@ website: "https://www.libreoffice.org/"
 get_it:
   - from: "Authentic"
     url: "https://www.libreoffice.org/download/download/"
+  - from: "FossHub (All)"
+    url: "https://www.fosshub.com/LibreOffice.html"
+  - from: "TechSpot (All)"
+    url: "https://www.techspot.com/downloads/5131-libreoffice-productivity-suite.html"
+  - from: "FileHorse x64 (Windows)"
+    url: "https://www.filehorse.com/download-libreoffice-64/"
+  - from: "Softonic (Windows)"
+    url: "https://libreoffice.en.softonic.com/"
+  - from: "FileHippo x32 (Windows)"
+    url: "https://filehippo.com/download_libreoffice_32/"
+  - from: "Uptodown (Windows)"
+    url: "https://libreoffice.en.uptodown.com/windows"
+  - from: "Malavida (Windows)"
+    url: "https://www.malavida.com/en/soft/libreoffice/"
+  - from: "Softpedia x32 (Windows)"
+    url: "https://www.softpedia.com/get/Office-tools/Office-suites/LibreOffice.shtml"
+  - from: "Softpedia x64 (Linux)"
+    url: "https://linux.softpedia.com/get/Office/Office-Suites/LibreOffice-60713.shtml"
+  - from: "Softonic (macOS)"
+    url: "https://libreoffice-mac.en.softonic.com/mac"
 
 sysreq:
   -
@@ -75,11 +95,10 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=LibreOffice&oldid=877694401", "https://wiki.documentfoundation.org/ReleaseNotes/4.0"]
   platform:
     - dskp: ["https://www.libreoffice.org/download/download/"]
-    - smptb: ["https://www.libreoffice.org/download/android-viewer/"]
   sysreq: ["https://www.libreoffice.org/get-help/system-requirements/"]
   license: ["https://www.libreoffice.org/about-us/licenses/"]
   rating:
-    - name: "techradar"
+    - name: "TechRadar"
       type: "expert"
       url: "https://www.techradar.com/reviews/libreoffice"
     - name: "PCWorld"
@@ -91,6 +110,48 @@ source:
     - name: "G2CROWD"
       type: "user"
       url: "https://www.g2crowd.com/products/libreoffice/reviews"
+    - name: "FossHub"
+      type: "user"
+      url: "https://www.fosshub.com/LibreOffice.html"
+    - name: "TechSpot"
+      type: "user"
+      url: "https://www.techspot.com/downloads/5131-libreoffice-productivity-suite.html"
+    - name: "FileHorse"
+      type: "user"
+      url: "https://www.filehorse.com/download-libreoffice-64/"
+      remarks: "x64 bit Windows"
+    - name: "Softonic"
+      type: "user"
+      url: "https://libreoffice.en.softonic.com/"
+      remarks: "Windows"
+    - name: "FileHippo"
+      type: "user"
+      url: "https://filehippo.com/download_libreoffice_32/"
+      remarks: "x32 bit Windows"
+    - name: "Malavida"
+      type: "user"
+      url: "https://www.malavida.com/en/soft/libreoffice/"
+      remarks: "Windows"
+    - name: "Softpedia"
+      type: "user"
+      url: "https://www.softpedia.com/get/Office-tools/Office-suites/LibreOffice.shtml"
+      remarks: "x32 bit Windows"
+    - name: "Softpedia"
+      type: "user"
+      url: "https://linux.softpedia.com/get/Office/Office-Suites/LibreOffice-60713.shtml"
+      remarks: "x64 bit Linux"
+    - name: "Softonic"
+      type: "user"
+      url: "https://libreoffice-mac.en.softonic.com/mac"
+      remarks: "macOS"
+    - name: "CNET"
+      type: "expert"
+      url: "https://download.cnet.com/LibreOffice/3000-18483_4-75337651.html"
+      remarks: "Windows"
+    - name: "CNET"
+      type: "user"
+      url: "https://download.cnet.com/LibreOffice/3000-18483_4-75337651.html"
+      remarks: "Windows"
   status: ["https://blog.documentfoundation.org/", "https://gerrit.libreoffice.org/#/q/status:open"]
 
 rating:
@@ -104,9 +165,51 @@ rating:
   - name: "G2CROWD"
     rate: [4.4, 5]
     num: 96
+  - name: "FossHub"
+    rate: [5, 5]
+    num: 15
+  - name: "TechSpot"
+    rate: [4.5, 5]
+    num: 30
+  - name: "FileHorse"
+    rate: [8.6, 10]
+    num: 70
+    remarks: "x64 bit Windows"
+  - name: "Softonic"
+    rate: [8, 10]
+    num: 3504
+    remarks: "Windows"
+  - name: "FileHippo"
+    rate: [7.3, 10]
+    num: 207
+    remarks: "x32 bit Windows"
+  - name: "Malavida"
+    rate: [8, 10]
+    num: 41
+    remarks: "Windows"
+  - name: "Softpedia"
+    rate: [3.6, 5]
+    num: 10794
+    remarks: "x32 bit Windows"
+  - name: "Softpedia"
+    rate: [4.8, 5]
+    num: 1376
+    remarks: "x64 bit Linux"
+  - name: "Softonic"
+    rate: [7, 10]
+    num: 244
+    remarks: "macOS"
+  - name: "CNET"
+    rate: [4.5, 5]
+    remarks: "Windows"
+  - name: "CNET"
+    rate: [4, 5]
+    num: 179
+    remarks: "Windows"
 
 note: |
   * [LibreOffice website](https://www.libreoffice.org/) mentions twitter handles [@tdforg](https://twitter.com/tdforg), [@libreoffice](https://twitter.com/libreoffice), [@AskLibreOffice](https://twitter.com/AskLibreOffice), [@LibreOfficeBugs](https://twitter.com/LibreOfficeBugs).
+  
 ---
   LibreOffice is a free and open-source [office suite](/categories/office-suite), a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice.
   
@@ -115,3 +218,4 @@ note: |
    It is available in 115 languages.
    
    [Blog](https://blog.documentfoundation.org/) I [Forum](https://ask.libreoffice.org/en/questions/) I [Wiki](https://wiki.documentfoundation.org/Main_Page) I [Documentation](https://wiki.documentfoundation.org/Documentation/Publications) I [IRC](https://irc.documentfoundation.org/) I [Planet](https://planet.documentfoundation.org/) I [Mailing lists](https://www.libreoffice.org/get-help/mailing-lists/) I [FAQ](https://www.libreoffice.org/get-help/frequently-asked-questions/)
+  
