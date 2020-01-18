@@ -12,7 +12,7 @@ website: "http://www.aforgenet.com/"
 get_it:
   - from: "Authentic"
     url: "http://www.aforgenet.com/framework/downloads.html"
-  - from: "Google Code | Archive"
+  - from: "Google Code Archive | Authentic"
     url: "https://code.google.com/archive/p/aforge/downloads"
 
 developer: ["Andrew Kirillov"]

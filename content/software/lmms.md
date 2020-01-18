@@ -12,23 +12,64 @@ website: "https://lmms.io/"
 get_it:
   - from: "Authentic"
     url: "https://lmms.io/download/"
-  - from: "Softpedia x32 (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-Editors-Recorders/LMMS--Linux-MultiMedia-Studio.shtml"
-  - from: "FileHippo (Windows)"
+  - from: "FileHippo"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://filehippo.com/download_lmms/"
-  - from: "Softonic (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://lmms.en.softonic.com/"
-  - from: "FileHorse x64 (Windows)"
+  - from: "FileHorse"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.filehorse.com/download-lmms-64/"
-  - from: "Uptodown x64 (Windows)"
+  - from: "Uptodown"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://lmms.en.uptodown.com/windows"
-  - from: "CNET x32 (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://download.cnet.com/LMMS-32-bit/3000-2170_4-10967914.html"
-  - from: "CNET x64 (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://download.cnet.com/LMMS-64-bit/3000-2170_4-75289588.html"
-  - from: "Malavida (Windows)"
+  - from: "Malavida"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.malavida.com/en/soft/lmms/"
-  - from: "MacUpdate (macOS)"
+  - from: "MacUpdate"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.macupdate.com/app/mac/55961/lmms"
 
 sysreq:

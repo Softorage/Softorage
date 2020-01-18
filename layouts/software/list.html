@@ -17,9 +17,11 @@
         </button>
       </div>
       <div class="modal-body filter-modal-body" id="filter-list">
-        <input type="search" class="bg-nav border-0 form-control fuzzy-search shadow-sm" placeholder="Search">
+        <!-- since search is not much use for filters for now, being commented temp'ly.
+        <input type="search" class="bg-nav border-0 form-control search shadow-sm" placeholder="Search">
         <span class="small float-right">search by <a href="https://listjs.com/">List.js</a></span>
         <br><br>
+        -->
         <div class="form-group list">
           <span class="lead">Categories</span>
           {{/* Example usage:
@@ -27,12 +29,16 @@
             <li><a href="{{ $baseurl }}categories/{{ $key | urlize  }}">{{ $key | humanize }}</a> ({{ len $value }})</li>
           {{ end }}
           */}}
-          {{- range $key, $value := site.Taxonomies.categories -}}
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="{{ lower (replace $key "-" "_") }}">
-              <label class="form-check-label" for="{{ lower (replace $key "-" "_") }}"> <span class="category-filter">{{ $key | humanize | title }}</span></label>
+          <div class="border rounded p-2">
+            <div style="max-height:15rem;overflow-y:auto;">
+              {{- range $key, $value := site.Taxonomies.categories -}}
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="{{ lower (replace $key "-" "_") }}">
+                  <label class="form-check-label" for="{{ lower (replace $key "-" "_") }}"> <span class="category-filter">{{ $key | humanize | title }}</span></label>
+                </div>
+              {{- end -}}
             </div>
-          {{- end -}}
+          </div>
         </div>
       </div>
       <div class="modal-footer">
@@ -42,34 +48,34 @@
   </div>
 </div>
 <!-- -->
-<div class="container-fluid bg-antinav-light py-3" id="software-list">
-  <div class="card mb-3 menu" style="z-index:1030;">
-    <div class="card-body">
-      <div class="card-text">
-        <div class="form-inline bg-nav">
-          <!-- 
-          wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
-          see: https://github.com/javve/list.js/issues/358
-          -->
-          <input id="search" type="search" class="bg-nav border-0 form-control my-2 mx-sm-2 search shadow-sm" placeholder="Search">
-          <span class="small">by <a href="https://listjs.com/">List.js</a></span>
-          <!-- Button trigger modal -->
-          <span class="ml-auto">
-            <button type="button" class="btn btn-sm bg-clr2-light" data-toggle="modal" title="Filter" data-target="#filter-modal">
-              <span class="text-clr2 small">{{ site.Data.icons.filter | safeHTML }}</span>
-            </button>&nbsp;
-            <span class="btn btn-sm bg-clr2-light sort asc" title="Sort" data-sort="name">
-              <span class="text-clr2">{{ site.Data.icons.sort | safeHTML }}</span>
-            </span>&nbsp;
-          </span>
+<div id="software-list">
+  <div class="container-fluid bg-antinav-light menu" style="z-index:1030;">
+    <div class="card">
+      <div class="card-body">
+        <div class="card-text">
+          <div class="form-inline bg-nav">
+            <!-- 
+            wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
+            see: https://github.com/javve/list.js/issues/358
+            -->
+            <input id="search" type="search" class="bg-nav border-0 form-control my-2 mx-sm-2 search shadow-sm" placeholder="Search">
+            <span class="small">by <a href="https://listjs.com/">List.js</a></span>
+            <!-- Button trigger modal -->
+            <span class="ml-auto">
+              <button type="button" class="btn btn-sm bg-clr2-light" data-toggle="modal" title="Filter" data-target="#filter-modal">
+                <span class="text-clr2 small">{{ site.Data.icons.filter | safeHTML }}</span>
+              </button>&nbsp;
+              <span class="btn btn-sm bg-clr2-light sort asc" title="Sort" data-sort="name">
+                <span class="text-clr2">{{ site.Data.icons.sort | safeHTML }}</span>
+              </span>&nbsp;
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
   
-  <br>
-  
-  <div class="list">
+  <div class="container-fluid bg-antinav-light py-3 list">
     <!-- Defining $proprietary and $rating_stars as a global variable -->
     {{- $proprietary := false }}
     {{- $rating_stars := 0 }}

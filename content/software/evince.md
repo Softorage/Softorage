@@ -12,15 +12,35 @@ website: "https://wiki.gnome.org/Apps/Evince/"
 get_it:
   - from: "Authentic"
     url: "https://wiki.gnome.org/Apps/Evince/Downloads/"
-  - from: "FossHub (Windows)"
+  - from: "FossHub"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.fosshub.com/Evince.html"
-  - from: "Softonic (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://evince.en.softonic.com/"
-  - from: "CNET (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://download.cnet.com/Evince/3000-10743_4-75362773.html"
-  - from: "Malavida (Windows)"
+  - from: "Malavida"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.malavida.com/en/soft/evince/"
-  - from: "Softpedia (Linux)"
+  - from: "Softpedia"
+    platform:
+      - name: "Linux"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Evince-3819.shtml"
 
 developer: ["The Evince Team"]
@@ -81,6 +101,7 @@ source:
       type: "user"
       url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Evince-3819.shtml"
       remarks: "Linux"
+  status: ["https://github.com/GNOME/evince/commits/mainline"]
 
 rating:
   - name: "CNET"

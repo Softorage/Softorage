@@ -12,17 +12,48 @@ website: "https://www.darktable.org/"
 get_it:
   - from: "Authentic"
     url: "https://www.darktable.org/install/"
-  - from: "FossHub x64 (Windows, macOS)"
+  - from: "FossHub"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.fosshub.com/darktable.html"
-  - from: "Malavida x64 (Linux)"
+  - from: "Malavida"
+    platform:
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.malavida.com/en/soft/darktable/linux/"
-  - from: "FileHorse x64 (Windows)"
+  - from: "FileHorse"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.filehorse.com/download-darktable/"
-  - from: "Softpedia x64 (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/darktable.shtml"
-  - from: "Softpedia (Linux)"
+  - from: "Softpedia"
+    platform:
+      - name: "Linux"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://linux.softpedia.com/get/Multimedia/Graphics/darktable-51811.shtml"
-  - from: "MacUpdate (macOS)"
+  - from: "MacUpdate"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.macupdate.com/app/mac/45193/darktable"
 
 sysreq:

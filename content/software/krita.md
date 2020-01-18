@@ -12,25 +12,83 @@ website: "https://krita.org/en"
 get_it:
   - from: "Authentic"
     url: "https://krita.org/en/download/krita-desktop/"
-  - from: "FileHorse x64 (Windows)"
+  - from: "FileHorse"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.filehorse.com/download-krita-64/"
-  - from: "TechSpot (All)"
+  - from: "TechSpot"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.techspot.com/downloads/6842-krita.html"
-  - from: "FossHub (All)"
+  - from: "FossHub"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.fosshub.com/Krita.html"
-  - from: "Softonic (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://krita.en.softonic.com/"
-  - from: "Softpedia x32 (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Krita.shtml"
-  - from: "Uptodown (Windows)"
+  - from: "Uptodown"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://krita.en.uptodown.com/windows"
-  - from: "FileHippo (Windows)"
+  - from: "FileHippo"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://filehippo.com/download_krita/"
-  - from: "Malavida (Windows)"
+  - from: "Malavida"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.malavida.com/en/soft/krita/"
-  - from: "Softpedia (Linux)"
+  - from: "Softpedia"
+    platform:
+      - name: "Linux"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://linux.softpedia.com/get/Multimedia/Graphics/Krita-2254.shtml"
-  - from: "Softonic (macOS)"
+  - from: "Softonic"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://krita.en.softonic.com/mac"
 
 sysreq:

@@ -10,7 +10,7 @@ website: ["https://moa.cms.waikato.ac.nz/"]
 get_it:
   - from: "Authentic"
     url: "https://moa.cms.waikato.ac.nz/downloads/"
-  - from: "Authentic I GitHub Releases"
+  - from: "GitHub Releases | Authentic"
     url: "https://github.com/Waikato/moa/releases"
 
 developer: ["Albert Bifet", "Geoff Holmes", "Bernhard Pfahringer", "University of Waikato", "Contributors"]

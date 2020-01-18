@@ -12,6 +12,37 @@ website: "http://www.wings3d.com/"
 get_it:
   - from: "Authentic"
     url: "http://www.wings3d.com/?page_id=84"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
+    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Wings-3D.shtml"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+    url: "https://wings-3d.en.softonic.com/"
+  - from: "Malavida"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+    url: "https://www.malavida.com/en/soft/wings-3d/"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+    url: "https://download.cnet.com/Wings-3D/3000-6677_4-10514566.html"
+  - from: "Softonic"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+    url: "https://wings-3d.en.softonic.com/mac"
 
 sysreq:
   -
@@ -62,15 +93,29 @@ source:
     - name: "Softonic"
       type: "user"
       url: "https://wings-3d.en.softonic.com/"
+      remarks: "Windows"
     - name: "G2CROWD"
       type: "user"
       url: "https://www.g2crowd.com/products/wings-3d/reviews"
     - name: "CNET"
       type: "user"
       url: "https://download.cnet.com/Wings-3D/3000-6677_4-10514566.html"
+      remarks: "Windows"
     - name: "AlternativeTo"
       type: "user"
       url: "https://alternativeto.net/software/wings-3d/reviews/"
+    - name: "Softpedia"
+      type: "user"
+      url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Wings-3D.shtml"
+      remarks: "x32 bit Windows"
+    - name: "Malavida"
+      type: "user"
+      url: "https://www.malavida.com/en/soft/wings-3d/"
+      remarks: "Windows"
+    - name: "Softonic"
+      type: "user"
+      url: "https://wings-3d.en.softonic.com/mac"
+      remarks: "macOS"
   status: ["https://sourceforge.net/projects/wings/files/wings/", "http://www.wings3d.com/forum/", "https://github.com/dgud/wings/graphs/contributors"]
 
 rating:
@@ -80,18 +125,33 @@ rating:
   - name: "Softonic"
     rate: [7, 10]
     num: 73
+    remarks: "Windows"
   - name: "G2CROWD"
     rate: [4.5, 5]
     num: 1
   - name: "CNET"
     rate: [3.9, 5]
     num: 8
+    remarks: "Windows"
   - name: "AlternativeTo"
     rate: [4, 5]
     num: 2
+  - name: "Softpedia"
+    rate: [3.8, 5]
+    num: 24
+    remarks: "x32 bit Windows"
+  - name: "Malavida"
+    rate: [9, 10]
+    num: 3
+    remarks: "Windows"
+  - name: "Softonic"
+    rate: [7, 10]
+    num: 8
+    remarks: "macOS"
 
 note: |
   * To run Wing 3D on Unix(like) systems, it needs to built from source code.[[source]](http://www.wings3d.com/?page_id=84)
+  
 ---
   Wings 3D is a tool specifically designed to import and modify models through subdivision - a polygonal modeling technique that allows very well-defined polygons.
   
@@ -100,3 +160,4 @@ note: |
   Wings 3D is a [3D computer graphics](/categories/3d-computing-graphics) software and [subdivision modeler](/categories/subdivision-modeler), often used in combination with other software, whereby models made in Wings 3D are exported to applications more specialized in rendering and animation such as [Blender](/software/blender/).
   
   [Forum](http://www.wings3d.com/forum/) I [Documentation](http://www.wings3d.com/?page_id=87) I [News](http://www.wings3d.com/?page_id=76) I [User Manual](http://www.wings3d.com/?page_id=252) I [FAQ](http://www.wings3d.com/forum/archive/index.php?thread-1106.html)
+  

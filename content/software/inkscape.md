@@ -12,25 +12,75 @@ website: "https://inkscape.org/"
 get_it:
   - from: "Authentic"
     url: "https://inkscape.org/release/"
-  - from: "Softonic (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://inkscape.en.softonic.com/"
-  - from: "FileHippo (Windows)"
+  - from: "FileHippo"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://filehippo.com/download_inkscape/"
-  - from: "FileHorse x32 (Windows)"
+  - from: "FileHorse"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://www.filehorse.com/download-inkscape-32/"
-  - from: "FossHub x32/x64 (Windows)"
+  - from: "FossHub"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
     url: "https://www.fosshub.com/Inkscape.html"
-  - from: "TechSpot (All)"
+  - from: "TechSpot"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.techspot.com/downloads/2306-inkscape.html"
-  - from: "Uptodown (Windows)"
+  - from: "Uptodown"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://inkscape.en.uptodown.com/windows"
-  - from: "Malavida (Windows)"
+  - from: "Malavida"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.malavida.com/en/soft/inkscape/"
-  - from: "Softpedia x32 (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Inkscape.shtml"
-  - from: "Softpedia (Linux)"
+  - from: "Softpedia"
+    platform:
+      - name: "Linux"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://linux.softpedia.com/get/Artistic-Software/Inkscape-61.shtml"
-  - from: "Softonic (macOS)"
+  - from: "Softonic"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://inkscape.en.softonic.com/mac"
 
 developer: ["The Inkscape team"]

@@ -12,13 +12,30 @@ website: "https://picard.musicbrainz.org/"
 get_it:
   - from: "Authentic"
     url: "https://picard.musicbrainz.org/downloads/"
-  - from: "Softpedia x32 (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Audio/Tag-Editors/MusicBrainz-Picard.shtml"
-  - from: "CNET (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://download.cnet.com/MusicBrainz-Picard/3000-2170_4-166444.html"
-  - from: "Softonic (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://musicbrainz-picard.en.softonic.com/"
-  - from: "MacUpdate (macOS)"
+  - from: "MacUpdate"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.macupdate.com/app/mac/26543/musicbrainz-picard"
 
 developer: ["MusicBrainz"]

@@ -23,7 +23,7 @@
 <!-- using printf to concatenate strings -->
 {{- $no_content := printf "%s%s%s" "Not available, but we appreciate <a href='/contribute/'>help</a>! You can help us <a href='https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/" .File.Path "'>improve this page</a>." -}}
 <!-- -->
-<div class="container-fluid bg-clr2-light text-clr2 py-3 position-relative shadow-sm">
+<div class="container-fluid main-gradient-light text-clr2 py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
   <div class="row p-2">
     <div class="col-md-8">
@@ -52,9 +52,9 @@
           </div>
         {{- end -}}
         <div class="col">
-          <h1 class="display-4">{{ .Title }}</h1>
+          <h1 class="display-4 tg">{{ .Title }}</h1>
           {{- if .Params.description -}}
-            <p class="small">{{ .Params.description }}</p>
+            <p class="small" style="color:#8e0090;">{{ .Params.description }}</p>
           {{- end -}}
           
           {{ if not .Params.image }}
@@ -119,15 +119,17 @@
     <div class="col-md-4">
     
       {{- if .Params.get_it }}
-        {{- if eq (len .Params.get_it) 1 -}}
+        {{/* since a user expects uniformity in interface, it is decided to keep only modal view, and discard the practise of directing user to 'download website' upon clicking the 'download/get it' button.
+        {{- if eq (len .Params.get_it) 1 -}} <!-- if there is just one download link, we assume that it is authentic link and from official website -->
           <a href="{{ (index .Params.get_it 0).url }}" class="btn btn-success my-2"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">Get it</span></a>
         {{- else -}}
-          <button role="button" class="btn bg-success my-2" data-toggle="modal" data-target="#get-it-modal"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">{{ if in .Params.categories "Framework" }}Get it{{ else }}Download{{ end }}</span></button>
+        */}}
+          <button role="button" class="btn btn-download btn-hover my-2" data-toggle="modal" data-target="#get-it-modal"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">{{ if in .Params.categories "Framework" }}Get it{{ else }}Download{{ end }}</span></button>
           
           <!-- Modal -->
           <div class="modal fade" id="get-it-modal" tabindex="-1" role="dialog" aria-labelledby="get-it-modal-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content bg-nav text-antinav">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content bg-nav text-antinav shadow">
                 <div class="modal-header">
                   <h5 class="modal-title" id="get-it-modal-label">{{ if in .Params.categories "Framework" }}Get {{ .Title }}{{ else }}Download {{ .Title }}{{ end }}</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -135,101 +137,218 @@
                   </button>
                 </div>
                 <div class="modal-body get-it-modal-body">
-                  <div class="text-center">
-                    {{- range .Params.get_it -}} 
-                      {{ if in .from "Authentic" }}
-                        <a href='{{ .url }}' class='btn btn-lg{{ if eq .from "Authentic" }} btn-success{{ else }} btn-light{{ end }}'>{{ .from }}{{ if eq .from "Authentic" }} <i class='small'>(Recommended)</i>{{ end }}</a>&nbsp;
-                      {{ end }}
-                    {{ end -}}
-                  </div>
-                  <hr>
-                  
-                  <ul class="nav nav-tabs" id="downloadTab" role="tablist">
+                  <!-- we have enabled tabbable tabs for following, i.e., with id download-tab-->
+                  <ul class="nav nav-tabs rounded-lg shadow-sm justify-content-center" id="download-tab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" id="windows-tab" data-toggle="tab" href="#windows" role="tab" aria-controls="windows" aria-selected="true">Windows</a>
+                      <a class="nav-link active text-success" data-toggle="tab" href="#download-authentic" role="tab" aria-controls="authentic" aria-selected="true">Recommended</a>
                     </li>
+                    
                     <li class="nav-item">
-                      <a class="nav-link" id="linux-tab" data-toggle="tab" href="#linux" role="tab" aria-controls="linux" aria-selected="false">Linux</a>
+                      <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp" role="tab" aria-controls="desktop" aria-selected="false">{{ site.Data.icons.desktop | safeHTML }}</a>
                     </li>
+                    
                     <li class="nav-item">
-                      <a class="nav-link" id="macOS-tab" data-toggle="tab" href="#macOS" role="tab" aria-controls="macOS" aria-selected="false">macOS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+                      <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb" role="tab" aria-controls="smartphone/tab" aria-selected="false">{{ site.Data.icons.mobile | safeHTML }} / {{ site.Data.icons.tab | safeHTML }}</a>
                     </li>
                   </ul>
+                  
                   <!-- index of last iteration (subtracted 1 since they start from zero) -->
                   {{ $download_len := sub (len .Params.get_it) 1 }}
-                  {{ $available := false }}
+                  <!-- stores availability of download link for given platform -->
+                  {{ $download_available := false }}
+                  
                   <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
-                      {{- range $index, $download_item := sort .Params.get_it "from" -}} 
-                        {{ if or (in $download_item.from "(Windows)") (in $download_item.from "(All)") }}
-                          <a href='{{ $download_item.url }}' class='btn btn-sm bg-clr2-light m-2'>{{ replace $download_item.from "(Windows)" "" }}</a>
-                          {{ $available = true }}
-                        {{ else if and (eq $index $download_len) (not $available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $available is set to false. -->
-                          <p class="m-2">No download available for Windows.</p>
-                        {{ end }}
-                        {{ if and (eq $index $download_len) $available }}
-                          {{ $available = false }} <!-- resetting the variable '$available' -->
+                    <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="authentic-tab">
+                      {{- range .Params.get_it -}}
+                        {{ if (in .from "Authentic") | or (in .from "Google Play") | or (in .from "Apple App") }}
+                          <a href="{{ .url }}" class="btn btn{{ if eq .from "Authentic" }} bg-success-light text-success{{ else }}-sm btn-light text-primary{{ end }} m-2"
+                          {{- if .platform }} data-toggle="tooltip" data-placement="top" title="{{ index (index .platform 0) "name" }}" {{- end -}}
+                          >{{ if eq .from "Authentic" }}Official download{{ else }}{{ replace .from " | Authentic" "" }}{{ end }}</a>&nbsp;
                         {{ end }}
                       {{ end -}}
                     </div>
-                    <div class="tab-pane fade" id="linux" role="tabpanel" aria-labelledby="linux-tab">
-                      {{- range $index, $download_item := sort .Params.get_it "from" -}} 
-                        {{ if or (in $download_item.from "(Linux)") (in $download_item.from "(All)") }}
-                          <a href='{{ $download_item.url }}' class='btn btn-sm bg-clr2-light m-2'>{{ replace $download_item.from "(Linux)" "" }}</a>
-                          {{ $available = true }}
-                        {{ else if and (eq $index $download_len) (not $available) }}
-                          <p class="m-2">No download available for Linux.</p>
-                        {{ end }}
-                        {{ if and (eq $index $download_len) $available }}
-                          {{ $available = false }} <!-- resetting the variable '$available' -->
-                        {{ end }}
-                      {{ end -}}
+                    
+                    <div class="tab-pane fade" id="download-dskp" role="tabpanel" aria-labelledby="desktop-tab">
+                      <div class="row my-2">
+                        <div class="col-3">
+                          <ul class="nav nav-pills flex-column" role="tablist" aria-orientation="vertical">
+                            <li class="nav-item">
+                              <a class="nav-link active text-clr2" data-toggle="tab" href="#download-dskp-windows" role="tab" aria-controls="windows" aria-selected="true">Windows</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-linux" role="tab" aria-controls="linux" aria-selected="false">Linux</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-macOS" role="tab" aria-controls="macOS" aria-selected="false">macOS</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-9">
+                          <div class="tab-content">
+                            <div class="tab-pane fade show active" id="download-dskp-windows" role="tabpanel" aria-labelledby="windows-tab">
+                              {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                                {{ if $download_item.platform }}
+                                  {{ range $download_item.platform }}
+                                    {{ if in .hardware "dskp" | and (eq .name "Windows") | and (not (in $download_item.from "Authentic")) }}
+                                      <a href="{{ $download_item.url }}" {{- if eq .type "unofficial" }} data-toggle="tooltip" data-placement="top" title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Windows Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      {{ $download_available = true }}
+                                    {{ end }}
+                                  {{ end }}
+                                {{ end }}
+                                {{ if and (eq $index $download_len) (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
+                                  <p class="m-2 text-muted">No download available for Windows.</p>
+                                {{ else if and (eq $index $download_len) $download_available }}
+                                  {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
+                                {{ end }}
+                              {{ end -}}
+                            </div>
+                            <div class="tab-pane fade" id="download-dskp-linux" role="tabpanel" aria-labelledby="linux-tab">
+                              {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                                {{ if $download_item.platform }}
+                                  {{ range $download_item.platform }}
+                                    {{ if in .hardware "dskp" | and (eq .name "Linux") | and (not (in $download_item.from "Authentic")) }}
+                                      <a href="{{ $download_item.url }}" {{- if eq .type "unofficial" }} data-toggle="tooltip" data-placement="top" title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Linux Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      {{ $download_available = true }}
+                                    {{ end }}
+                                  {{ end }}
+                                {{ end }}
+                                {{ if and (eq $index $download_len) (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
+                                  <p class="m-2 text-muted">No download available for Linux.</p>
+                                {{ else if and (eq $index $download_len) $download_available }}
+                                  {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
+                                {{ end }}
+                              {{ end -}}
+                            </div>
+                            <div class="tab-pane fade" id="download-dskp-macOS" role="tabpanel" aria-labelledby="macOS-tab">
+                              {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                                {{ if $download_item.platform }}
+                                  {{ range $download_item.platform }}
+                                    {{ if in .hardware "dskp" | and (eq .name "macOS") | and (not (in $download_item.from "Authentic")) }}
+                                      <a href="{{ $download_item.url }}" {{- if eq .type "unofficial" }} data-toggle="tooltip" data-placement="top" title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} macOS Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      {{ $download_available = true }}
+                                    {{ end }}
+                                  {{ end }}
+                                {{ end }}
+                                {{ if (eq $index $download_len) | and (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
+                                  <p class="m-2 text-muted">No download available for macOS.</p>
+                                {{ else if (eq $index $download_len) | and $download_available }}
+                                  {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
+                                {{ end }}
+                              {{ end -}}
+                            </div>
+                            <div class="tab-pane fade" id="download-dskp-other" role="tabpanel" aria-labelledby="other-tab">
+                              {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                                <!-- if the item has platform field -->
+                                {{ if $download_item.platform }}
+                                  {{ range $download_item.platform }}
+                                    {{ if in .hardware "dskp" | and (not ((eq .name "macOS") | or (eq .name "Linux") | or (eq .name "Windows") | or (in $download_item.from "Authentic"))) }}
+                                    {{/* {{ if not (or (or (or (eq .name "macOS") (eq .name "Linux")) (eq .name "Windows")) (in $download_item.from "Authentic")) }} */}}
+                                      <a href="{{ $download_item.url }}" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} ({{- if .arch }}{{ delimit .arch "/" }} {{- end }}{{ .name }})</a>
+                                      {{ $download_available = true }}
+                                    {{ end }}
+                                  {{ end }}
+                                <!-- if the item doesn't have any platform field and it doesn't have 'Authentic' in its name -->
+                                {{ else if not (in $download_item.from "Authentic") }}
+                                  <a href="{{ $download_item.url }}" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }}</a>
+                                  {{ $download_available = true }}
+                                {{ end }}
+                                {{ if and (eq $index $download_len) (not $download_available) }}
+                                  <p class="m-2 text-muted">No download available for others.</p>
+                                {{ else if and (eq $index $download_len) $download_available }}
+                                  {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
+                                {{ end }}
+                              {{ end -}}
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- row -->
                     </div>
-                    <div class="tab-pane fade" id="macOS" role="tabpanel" aria-labelledby="macOS-tab">
-                      {{- range $index, $download_item := sort .Params.get_it "from" -}} 
-                        {{ if or (in $download_item.from "(macOS)") (in $download_item.from "(All)") }}
-                          <a href='{{ $download_item.url }}' class='btn btn-sm bg-clr2-light m-2'>{{ replace $download_item.from "(macOS)" "" }}</a>
-                          {{ $available = true }}
-                        {{ else if and (eq $index $download_len) (not $available) }}
-                          <p class="m-2">No download available for macOS.</p>
-                        {{ end }}
-                        {{ if and (eq $index $download_len) $available }}
-                          {{ $available = false }} <!-- resetting the variable '$available' -->
-                        {{ end }}
-                      {{ end -}}
-                    </div>
-                    <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
-                      {{- range $index, $download_item := sort .Params.get_it "from" -}} 
-                        {{ if not (or (or (or (or (in $download_item.from "(macOS)") (in $download_item.from "(All)")) (in $download_item.from "(Linux)")) (in $download_item.from "(Windows)")) (in $download_item.from "Authentic")) }}
-                          <a href='{{ $download_item.url }}' class='btn btn-sm bg-clr2-light m-2'>{{ $download_item.from }}</a>
-                          {{ $available = true }}
-                        {{ else if and (eq $index $download_len) (not $available) }}
-                          <p class="m-2">No download available for others.</p>
-                        {{ end }}
-                        {{ if and (eq $index $download_len) $available }}
-                          {{ $available = false }} <!-- resetting the variable '$available' -->
-                        {{ end }}
-                      {{ end -}}
+                    
+                    <div class="tab-pane fade" id="download-smptb" role="tabpanel" aria-labelledby="smptb-tab">
+                      <div class="row my-2">
+                        <div class="col-3">
+                          <ul class="nav nav-pills flex-column" role="tablist" aria-orientation="vertical">
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2 active" data-toggle="tab" href="#download-smptb-android" role="tab" aria-controls="android" aria-selected="true">Android</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb-ios" role="tab" aria-controls="ios" aria-selected="false">iOS</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb-other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-9">
+                          <!-- | or (in $download_item.from "Google Play") | or (in $download_item.from "Apple App") 
+                             for now we are showing links for google play and apple app store in android and ios section too, though they are present in authentic(recommended) section too.
+                          -->
+                          <div class="tab-content">
+                            <div class="tab-pane fade show active" id="download-smptb-android" role="tabpanel" aria-labelledby="android-tab">
+                              {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                                {{ if $download_item.platform }}
+                                  {{ range $download_item.platform }}
+                                    {{ if in .hardware "smptb" | and (eq .name "Android") | and (not (in $download_item.from "Authentic")) }}
+                                      <a href="{{ $download_item.url }}" {{- if eq .type "unofficial" }} title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Android Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      {{ $download_available = true }}
+                                    {{ end }}
+                                  {{ end }}
+                                {{ end }}
+                                {{ if and (eq $index $download_len) (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
+                                  <p class="m-2 text-muted">No download available for Android.</p>
+                                {{ else if and (eq $index $download_len) $download_available }}
+                                  {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
+                                {{ end }}
+                              {{ end -}}
+                            </div>
+                            <div class="tab-pane fade" id="download-smptb-ios" role="tabpanel" aria-labelledby="ios-tab">
+                              {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                                {{ if $download_item.platform }}
+                                  {{ range $download_item.platform }}
+                                    {{ if in .hardware "smptb" | and (eq .name "iOS") | and (not (in $download_item.from "Authentic")) }}
+                                      <a href="{{ $download_item.url }}" {{- if eq .type "unofficial" }} title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} iOS Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      {{ $download_available = true }}
+                                    {{ end }}
+                                  {{ end }}
+                                {{ end }}
+                                {{ if and (eq $index $download_len) (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
+                                  <p class="m-2 text-muted">No download available for iOS.</p>
+                                {{ else if and (eq $index $download_len) $download_available }}
+                                  {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
+                                {{ end }}
+                              {{ end -}}
+                            </div>
+                            <div class="tab-pane fade" id="download-smptb-other" role="tabpanel" aria-labelledby="other-tab">
+                              {{- range $index, $download_item := sort .Params.get_it "from" -}} 
+                                <!-- if the item has platform field -->
+                                {{ if $download_item.platform }}
+                                  {{ range $download_item.platform }}
+                                    {{ if in .hardware "smptb" | and (not ((eq .name "Android") | or (eq .name "iOS") | or (in $download_item.from "Authentic"))) }}
+                                    {{/* {{ if not (or (or (or (eq .name "macOS") (eq .name "Linux")) (eq .name "Windows")) (in $download_item.from "Authentic")) }} */}}
+                                      <a href="{{ $download_item.url }}" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} ({{- if .arch }}{{ delimit .arch "/" }} {{- end }}{{ .name }})</a>
+                                      {{ $download_available = true }}
+                                    {{ end }}
+                                  {{ end }}
+                                <!-- if the item doesn't have any platform field and it doesn't have 'Authentic' in its name -->
+                                {{ else if not (in $download_item.from "Authentic") }}
+                                  <a href="{{ $download_item.url }}" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }}</a>
+                                  {{ $download_available = true }}
+                                {{ end }}
+                                {{ if and (eq $index $download_len) (not $download_available) }}
+                                  <p class="m-2 text-muted">No download available for others.</p>
+                                {{ else if and (eq $index $download_len) $download_available }}
+                                  {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
+                                {{ end }}
+                              {{ end -}}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  
-                  {{/*
-                  <span class="lead">Windows</span>
-                  <br>
-                  {{- range .Params.get_it -}} 
-                    {{ if or (in .from "(Windows)") (in .from "(All)") }}
-                    <a href='{{ .url }}' class='btn btn-sm
-                      {{- if eq .from "Authentic" }} btn-success
-                      {{- else }} btn-light
-                      {{- end -}}
-                    '>{{ .from }}</a>&nbsp;
-                    {{ end }}
-                  {{ end -}}
-                  */}}
-                  
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -237,7 +356,7 @@
               </div>
             </div>
           </div>
-        {{- end }}
+        {{/* relates to if block commented out above {{- end }}*/}}
       {{- end }}
       
       {{- if .Params.website -}}
@@ -247,15 +366,15 @@
       <div class="row my-2 ml-1">
         <span class="fa-2x">{{ site.Data.icons.share | safeHTML }}</span>&nbsp;&nbsp;
         <span class="d-inline-block font-weight-bold border-left border-right"></span>&nbsp;&nbsp;
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.BaseURL }}{{ .Permalink }}&quote={{ .Title }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="https://twitter.com/intent/tweet?source={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}:{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}&quote=Check%20out%20{{ .Title }}%20on%20Softorage" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/intent/tweet?source={{ .Permalink }}&text=Check%20out%20{{ .Title }}%20on%20Softorage:%0A{{ .Permalink }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>&nbsp;&nbsp;
         <!--{{/* G+ is shutting down
-        <a href="https://plus.google.com/share?url={{ site.BaseURL }}{{ .Permalink }}&text={{ .Title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa-2x">{{ site.Data.icons.googlePlus | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://plus.google.com/share?url={{ .Permalink }}&text={{ .Title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa-2x">{{ site.Data.icons.googlePlus | safeHTML }}</span></a>&nbsp;&nbsp;
         */}}-->
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}&summary={{ .Params.description }}&source=Softorage" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on LinkedIn"><span class="fa-2x">{{ site.Data.icons.linkedin | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="whatsapp://send?text={{ site.BaseURL }}{{ .Permalink }}%20{{ .Title }}" data-text="{{ .Title }}" data-href="{{ site.BaseURL }}{{ .Permalink }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Whatsapp"><span class="fa-2x">{{ site.Data.icons.whatsapp | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="https://reddit.com/submit?url={{ site.BaseURL }}{{ .Permalink }}&title={{ .Title }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Reddit"><span class="fa-2x">{{ site.Data.icons.reddit | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="mailto:?subject={{ .Title }}&body={{ .Params.description }}:{{ site.BaseURL }}{{ .Permalink }}" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share via email"><span class="fa-2x">{{ site.Data.icons.email | safeHTML }}</span></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title=Check%20out%20{{ .Title }}%20on%20Softorage&summary={{ .Params.description }}&source=Softorage" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on LinkedIn"><span class="fa-2x">{{ site.Data.icons.linkedin | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="whatsapp://send?text={{ .Permalink }}%0A%0ACheck%20out%20{{ .Title }}%20on%20Softorage" data-text="{{ .Title }}" data-href="{{ .Permalink }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Whatsapp"><span class="fa-2x">{{ site.Data.icons.whatsapp | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://reddit.com/submit?url={{ .Permalink }}&title=Check%20out%20{{ .Title }}%20on%20Softorage" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Reddit"><span class="fa-2x">{{ site.Data.icons.reddit | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="mailto:?subject=Check%20out%20{{ .Title }}%20on%20Softorage&body={{ .Params.description }}%0A%0A{{ .Permalink }}" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share via email"><span class="fa-2x">{{ site.Data.icons.email | safeHTML }}</span></a>
       </div>
       <!--
       <a href="https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/{{ .File.Path }}" class="badge small my-2" target="_blank">&#60;/page-source&#62;</a>
@@ -265,7 +384,7 @@
   </div>
 </div>
 <!-- -->
-<div class="container bg-nav text-center small py-2" style="overflow-x: scroll;">
+<div class="container bg-nav text-center small py-2" style="overflow-x: auto;">
   <nobr>
   <a class="text-antinav text-decoration-none" href="#overview">Overview</a>&nbsp;&nbsp;&nbsp;
   <a class="text-antinav text-decoration-none" href="#platform">Platform</a>&nbsp;&nbsp;&nbsp;
@@ -278,6 +397,7 @@
   <a class="text-antinav text-decoration-none" href="#repository">Repository</a>&nbsp;&nbsp;&nbsp;
   <a class="text-antinav text-decoration-none" href="#license">License</a>&nbsp;&nbsp;&nbsp;
   <a class="text-antinav text-decoration-none" href="#categories">Categories</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#alternatives">Alternatives</a>&nbsp;&nbsp;&nbsp;
   </nobr>
 </div>
 <!-- -->
@@ -295,7 +415,7 @@
             <div class="col-auto">
               <span class="float-right">
                 {{- if .Params.source.overview -}}
-                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                     {{- range $index, $element := .Params.source.overview }}
                       {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                     {{- end -}}
@@ -327,7 +447,7 @@
             <div class="col-auto">
               <span class="float-right">
                 {{ if .Params.source.platform }}
-                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                     {{- range .Params.source.platform }}
                       {{- if .dskp -}}
                         {{ site.Data.icons.desktop | safeHTMLAttr }} : <br>
@@ -447,7 +567,7 @@
             <div class="col-auto">
               <span class="float-right">
                 {{- if .Params.source.sysreq -}}
-                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                     {{- range $index, $element := .Params.source.sysreq -}}
                       {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                     {{- end -}}
@@ -520,7 +640,7 @@
     <div class="col-md-4">
       <!-- #18 Rating -->
       <div class="card">
-        <div class="card-body">
+        <div class="card-body" style="max-height:37.5rem;overflow:auto;">
           <div class="row">
             <div class="col">
               <span class="anchor" id="rating"></span>
@@ -528,7 +648,7 @@
             </div>
             <div class="col-auto">
               <span class="float-right">
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers. Note that ratings change over time, so numbers may not be exact."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -581,11 +701,11 @@
                                   {{- if eq $rt_src.type "user" -}}
                                     {{- if $rt.remarks -}}
                                       {{- if and $rt_src.remarks (eq $rt.remarks $rt_src.remarks) -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end -}}
                                     {{- else -}}
                                       {{- if not $rt_src.remarks -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- end }}
                                   {{- end }}
@@ -594,11 +714,11 @@
                                   {{- if eq $rt_src.type "expert" -}}
                                     {{- if $rt.remarks -}}
                                       {{- if and $rt_src.remarks (eq $rt.remarks $rt_src.remarks) -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- else }}
                                       {{- if not $rt_src.remarks -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- end }}
                                   {{- end }}
@@ -636,7 +756,7 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.developer -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.developer }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
@@ -668,7 +788,7 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.written_in -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.written_in }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
@@ -680,9 +800,7 @@
         </div>
         <p class="card-text mt-3">
           {{- if .Params.written_in }}
-            {{- range $index, $element := .Params.written_in }}
-              {{- if $index }}, {{ end }}{{ $element }}
-            {{- end }}
+            {{- delimit .Params.written_in ", " }}
           {{- else -}}
             {{ $no_content | safeHTML }}
           {{- end -}}
@@ -700,7 +818,7 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.initial_release -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.initial_release }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
@@ -712,9 +830,7 @@
         </div>
         <p class="card-text mt-3">
           {{- if .Params.initial_release }}
-            {{- range $index, $element := .Params.initial_release }}
-              {{- if $index }}, {{ end }}{{ $element }}
-            {{- end }}
+            {{- delimit .Params.initial_release ", " }}
           {{- else -}}
             {{ $no_content | safeHTML }}
           {{- end -}}
@@ -738,20 +854,14 @@
           </div>
         </div>
         <p class="card-text mt-3">
-          {{ $proprietary := false }}
           {{- if .Params.repository }}
             {{- range $index, $element := .Params.repository }}
               {{- if $index }}, {{ end }}<a href="{{ $element }}">{{ $element }}</a>
             {{- end }}
-          {{- else -}}
-            {{- range $index, $element := .Params.license }}
-              {{- if in $element "Proprietary" -}}{{ $proprietary = true }}{{ end }}
-            {{- end }}
-            {{- if $proprietary }}
-              {{- $.Title }} being a proprietary software, its source code is not publicly hosted.
-            {{- else }}
-              {{- $no_content | safeHTML }}
-            {{- end }}
+          {{- else if in .Params.license "Proprietary" -}}
+            {{- $.Title }} being a proprietary software, its source code is not publicly hosted.
+          {{- else }}
+            {{- $no_content | safeHTML }}
           {{- end -}}    
         </p>
       </div>
@@ -767,7 +877,7 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.license -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.license }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
@@ -814,21 +924,32 @@
       </div>
     </div>
   </div>
-  <!-- You may try -->
+  <!-- Alternatives -->
+  <!-- total number of software (subtracted 1 since they start from zero) -->
+  {{ $total_soft := sub (len (where site.RegularPages "Section" "==" "software")) 1 }}
+  <!-- stores availability of software for given category -->
+  {{ $categ_available := false }}
   <div class="card">
     <div class="card-body">
-      <h2 class="card-title h4 m-0">You may try</h2>
+      <span class="anchor" id="alternatives"></span>
+      <h2 class="card-title h4 m-0">Alternatives</h2>
       <!-- We won't be showing softwares that are covered under "Framework" category -->
       <p class="card-text mt-3">
-        {{- range $category := .Params.categories }}
+        {{- range $i, $category := .Params.categories }}
           {{- if ne $category "Framework" -}}
+            {{- if $i }}<br>{{ end -}}
             <span class="h6">{{ $category }}</span><br>
-            {{- range where site.RegularPages "Section" "==" "software" }}
-              {{- if in .Params.categories $category -}}
-                <a class="btn btn-sm btn-light shadow-sm my-2" href="{{ .Permalink }}">{{ .Params.title }}</a> &nbsp;
+            {{- range $index, $current := where site.RegularPages "Section" "==" "software" }}
+              {{- if and (not (eq $current.Params.title $.Title)) (in $current.Params.categories $category) -}}
+                <a class="btn btn-sm btn-light shadow-sm my-2" {{- if in $current.Params.license "Proprietary" }} data-toggle="tooltip" data-placement="top" title="Proprietary" {{- else }} data-toggle="tooltip" data-placement="top" title="Free and Open Source" {{- end }} href="{{ $current.Permalink }}">{{ $current.Params.title }}</a> &nbsp;
+                {{ $categ_available = true }}
               {{- end }}
+              {{ if and (eq $index $total_soft) (not $categ_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $categ_available is set to false. -->
+                <p class="m-2 text-muted">No alternative software available under '{{ $category }}' category.</p>
+              {{ else if and (eq $index $total_soft) $categ_available }}
+                {{ $categ_available = false }} <!-- resetting the variable '$categ_available' -->
+              {{ end }}
             {{- end -}}
-            <br><br>
           {{- end }}
         {{- end -}}
       </p>
@@ -855,3 +976,9 @@
 </div>
 
 {{- end }}
+{{ define "script" }}
+$("#download-tab a").click(function (e) {
+  e.preventDefault();  
+  $(this).tab("show");
+});
+{{ end }}

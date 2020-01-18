@@ -18,7 +18,7 @@
     {{- $js_popperjs := resources.Get "js/popper.min.js" }}
     {{- $js := slice $js_jquery $js_popperjs $js_twbs | resources.Concat "assets/js/main.js" | minify | fingerprint }}
     <!-- Combined JavaScript file -->
-    <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
     <!-- 
     Unminified JS to turn navbar solid on scroll
     
@@ -58,9 +58,9 @@
         }
       },
       "content": {
-        "message": "We use cookies to ensure you get the best user experience on our website. By continuing to use this site, you agree to the use of these cookies.",
+        "message": "We use cookies to ensure you get the best user experience on our website. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='{{ site.BaseURL }}legal/cookie-policy/'>Cookie Policy</a>, <a href='{{ site.BaseURL }}legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='{{ site.BaseURL }}legal/terms-and-conditions/'>Terms and Conditions</a>.",
         "dismiss": "Agree",
-        "link": "Find out more",
+        "link": "Find more about cookies in our Privacy Policy.",
         "href": "{{ site.BaseURL }}legal/privacy-policy/"
       }
     });

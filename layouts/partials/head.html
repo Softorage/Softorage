@@ -1,3 +1,5 @@
+<!-- resources.Get creates a new resource object based on a path to a file in the /assets directory. Then, we use resources.ExecuteAsTemplate with the resource type destination as "assets/css/main.scss". The dot (.) passes the context. -->
+{{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS -}}
 <head>
   <!-- GitLab doesn't automatically redirect users from softorage.gitlab.io to softorage.com. Following script (slightly modified from original source) does that. source: https://www.r-bloggers.com/porting-and-redirecting-a-hugo-based-blogdown-website-to-an-https-enabled-custom-domain-and-how-to-do-it-the-easy-way/#javascript-to-the-rescue -->
   <script>
@@ -21,8 +23,9 @@
       window.location.replace(newpath);
     }
   </script>
-  <!-- Google Analytics shall work only on production website -->
+  
   {{ if eq hugo.Environment "production" -}}
+    <!-- Google Analytics shall work only on production website -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154890683-1"></script>
     <script>
@@ -32,14 +35,20 @@
 
       gtag('config', 'UA-154890683-1');
     </script>
+    
+    <!-- SEO and Hugo's Tag shall work only on production website -->
+    <!-- SEO tag -->
+    {{- partial "seo.html" . -}}
+    {{ hugo.Generator }}
+    
+    <!-- Run PostCSS on $css, only if on Production Environment, since its builds take considerably more time -->
+    {{- $css = $css | postCSS | fingerprint }}
+  {{- else }}
+    {{- $css = $css | fingerprint }}
   {{- end }}
-  <!-- SEO tag -->
-  {{- partial "seo.html" . -}}
-  {{ hugo.Generator }}
-  <!-- resources.Get creates a new resource object based on a path to a file in the /assets directory. Then, we use resources.ExecuteAsTemplate with the resource type destination as "assets/css/main.scss". The dot (.) passes the context. -->
-  {{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS | postCSS | fingerprint -}}
+  
   <!-- Minified Aggregated CSS -->
-  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
   <!-- Prefetch and Preconnect Google Fonts API -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -50,6 +59,19 @@
   {{- range .AlternativeOutputFormats -}}
     {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{- end -}}
+  
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=0-0-1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=0-0-1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=0-0-1">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest?v=0-0-1">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=0-0-1" color="#525252">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=0-0-1">
+  <meta name="apple-mobile-web-app-title" content="Softorage">
+  <meta name="application-name" content="Softorage">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?v=0-0-1">
+  
   <!-- Address bar color -->
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#ffffff">

@@ -12,11 +12,25 @@ website: "https://godotengine.org/"
 get_it:
   - from: "Authentic"
     url: "https://godotengine.org/download/"
-  - from: "FileHorse x32 (Windows)"
+  - from: "FileHorse"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://www.filehorse.com/download-godot-engine-32/"
-  - from: "Softpedia (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.softpedia.com/get/Gaming-Related/Godot-Engine.shtml"
-  - from: "Uptodown x64 (Windows)"
+  - from: "Uptodown"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://godot-engine.en.uptodown.com/windows"
 
 sysreq:

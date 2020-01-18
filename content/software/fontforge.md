@@ -12,11 +12,19 @@ website: "https://fontforge.org/"
 get_it:
   - from: "Authentic"
     url: "https://fontforge.org/en-US/downloads/"
-  - from: "GitHub | Releases"
+  - from: "GitHub Releases | Authentic"
     url: "https://github.com/fontforge/fontforge/releases"
-  - from: "Softpedia (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.softpedia.com/get/Others/Font-Utils/FontForge.shtml"
-  - from: "MacUpdate (macOS)"
+  - from: "MacUpdate"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.macupdate.com/app/mac/48689/fontforge"
 
 sysreq:

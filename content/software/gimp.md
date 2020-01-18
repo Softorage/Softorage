@@ -12,23 +12,67 @@ website: "https://www.gimp.org/"
 get_it:
   - from: "Authentic"
     url: "https://www.gimp.org/downloads/"
-  - from: "TechSpot (All)"
+  - from: "TechSpot"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.techspot.com/downloads/614-the-gimp.html"
-  - from: "FileHorse x64 (Windows)"
+  - from: "FileHorse"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.filehorse.com/download-gimp/"
-  - from: "Softpedia (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/GIMP.shtml"
-  - from: "Softonic (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://the-gimp.en.softonic.com/"
-  - from: "CNET (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"
-  - from: "Uptodown (Windows)"
+  - from: "Uptodown"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://gimp.en.uptodown.com/windows"
-  - from: "FileHippo x32 (Windows)"
+  - from: "FileHippo"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://filehippo.com/download_the-gimp_32/"
-  - from: "CNET (macOS)"
+  - from: "CNET"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://download.cnet.com/GIMP/3000-2192_4-10322178.html"
-  - from: "MacUpdate (macOS)"
+  - from: "MacUpdate"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.macupdate.com/app/mac/14597/gimp"
 
 sysreq:

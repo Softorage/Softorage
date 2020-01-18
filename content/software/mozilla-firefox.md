@@ -12,27 +12,89 @@ website: "https://www.mozilla.org/en-US/firefox/"
 get_it:
   - from: "Authentic"
     url: "https://www.mozilla.org/en-US/firefox/new/"
-  - from: "Softonic (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://mozilla-firefox.en.softonic.com/"
-  - from: "FileHippo x32 (Windows)"
+  - from: "FileHippo"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://filehippo.com/download_mozilla-firefox/"
-  - from: "FileHippo x64 (Windows)"
+  - from: "FileHippo"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://filehippo.com/download_mozilla-firefox-64/"
-  - from: "CNET (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://download.cnet.com/mozilla-firefox/"
-  - from: "FileHorse x32 (Windows)"
+  - from: "FileHorse"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://www.filehorse.com/download-firefox-32/"
-  - from: "TechSpot (All)"
+  - from: "TechSpot"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
     url: "https://www.techspot.com/downloads/19-mozilla-firefox.html"
-  - from: "Malavida (Windows)"
+  - from: "Malavida"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.malavida.com/en/soft/firefox/"
-  - from: "Softpedia x32 (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://www.softpedia.com/get/Internet/Browsers/Mozilla-Firefox-Final.shtml"
-  - from: "Softonic (macOS)"
+  - from: "Softonic"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://mozilla-firefox.en.softonic.com/mac"
-  - from: "Google Play Store (Android)"
+  - from: "Google Play Store (Firefox)"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
-  - from: "Softonic (Android)"
+  - from: "Google Play Store (Firefox Lite)"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+    url: "https://play.google.com/store/apps/details?id=org.mozilla.rocket"
+  - from: "Softonic"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
     url: "https://mozilla-firefox.en.softonic.com/android"
 
 sysreq:

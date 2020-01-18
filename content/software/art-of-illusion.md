@@ -12,15 +12,35 @@ website: "http://www.artofillusion.org"
 get_it:
   - from: "Authentic"
     url: "http://www.artofillusion.org/downloads"
-  - from: "Softonic (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://art-of-illusion.en.softonic.com/"
-  - from: "CNET (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"
-  - from: "Softpedia (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Art-of-Illusion.shtml"
-  - from: "Malavida (Windows)"
+  - from: "Malavida"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.malavida.com/en/soft/art-of-illusion/"
-  - from: "MacUpdate (macOS)"
+  - from: "MacUpdate"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.macupdate.com/app/mac/19836/art-of-illusion"
 
 sysreq:
@@ -116,7 +136,6 @@ rating:
 note: |
   * Absolute minimum requirements or recommendations for the system hardware have not been declared.
   
-
 ---
   Art of Illusion is a [3D-graphics software](/categories/3d-computing-graphics), with similar intent of use as for example 3DS-Max or Maya of the commercial software packages or [Blender](/software/blender) or [Wings 3D](/software/wings-3d) on the freeware side. Though some sources seem to confuse 3D-modeling with CAD, Art of Illusion does not provide any CAD-features.
   

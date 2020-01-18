@@ -5,7 +5,7 @@ light:
   antinav: "#000000"
   clr1: "#fc466b"
   clr2: "#3f5efb"
-  mat: "#f5e8ff"
+  mat: "#fbf5ff"
 
 dark:
   nav: "#444"

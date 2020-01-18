@@ -5,10 +5,10 @@ $clr1: {{ $theme.clr1 | default "#fc466b" }};
 $clr2: {{ $theme.clr2 | default "#3f5efb" }};
 $nav: {{ $theme.nav | default "#ffffff" }}; //background
 $antinav: {{ $theme.antinav | default "#000000" }}; // text
-$mat: {{ $theme.mat | default "#f5e8ff" }};
-$clr1-light: mix($clr1, $nav, 2%);
-$clr2-light: mix($clr2, $nav, 2%);
-$nav-light: mix($nav, $antinav, 2%); // text
+$mat: {{ $theme.mat | default "#fbf5ff" }};
+$clr1-light: mix($clr1, $nav, 5%);
+$clr2-light: mix($clr2, $nav, 5%);
+$nav-light: mix($nav, $antinav, 5%); // text
 $antinav-light: mix($antinav, $nav, 2%); // background
 
 // Import partials from sass dir
@@ -17,7 +17,7 @@ $antinav-light: mix($antinav, $nav, 2%); // background
   "fa"
 ;
 
-/*!
+/*! f41845   1e3fe7
  * Custom CSS
  */
 
@@ -116,6 +116,11 @@ color: $clr1;
 */
 
 //
+.nav-tabs .nav-link.active {
+box-shadow: inset 0 2px 3px 1px #ddd;
+}
+
+//
 .btn {
 @extend .shadow-sm;
 cursor: pointer;
@@ -136,9 +141,9 @@ color: $antinav;
 
 // text-gradient- for brand name
 .tg {
-background: -webkit-linear-gradient(36deg, $clr1 0%, $clr2 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+background: linear-gradient(36deg, $clr1 0%, $clr2 100%);
+background-clip: text;
+color: transparent;
 }
 
 // Styling popover to make it a little cozy
@@ -221,12 +226,36 @@ color: $antinav;
 color: $antinav-light;
 }
 
-.btn-grad {
-background-image: linear-gradient(90deg,  $clr1 0%, $clr2 100%);
+button.close{
+outline: none;
 }
 
-.btn-grad:hover {
-background-position: right center;
+.btn-hover {
+background-size: 300% 100%;
+transition: all .3s ease-in-out;
+}
+.btn-hover:hover {
+box-shadow: 0 5px 25px 0px rgba(64, 228, 149, 0.75) !important;
+background-position: 100% 0;
+transition: all .3s ease-in-out;
+}
+.btn-hover:focus {
+outline: none;
+}
+
+.btn-download {
+width: 150px;
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+height: 50px;
+text-align: center;
+border: none;
+background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+}
+
+.btn-grad {
+background-image: linear-gradient(90deg,  $clr1 0%, $clr2 100%);
 }
 
 .bg-mat {
@@ -442,6 +471,8 @@ color: #0078d7;
 // osano cookie consent customization
 .cc-banner {
 box-shadow: 0 -0.5rem 1rem rgba(0,0,0,.045) !important; // @extend .shadow; just shadow drops above
+font-size: 75% !important;
+font-weight: 400;
 }
 
 // osano cookie consent css - prettified; 

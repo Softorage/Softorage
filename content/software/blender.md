@@ -12,27 +12,85 @@ website: "https://www.blender.org/"
 get_it:
   - from: "Authentic"
     url: "https://www.blender.org/download/"
-  - from: "Softonic x32 (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://blender.en.softonic.com/"
-  - from: "Softonic x64 (Windows)"
+  - from: "Softonic"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://blender-64bits.en.softonic.com/"
-  - from: "FileHippo (Windows)"
+  - from: "FileHippo"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://filehippo.com/download_blender/"
-  - from: "CNET x32 (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
     url: "https://download.cnet.com/Blender/3000-6677_4-10514553.html"
-  - from: "CNET x64 (Windows)"
+  - from: "CNET"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://download.cnet.com/Blender-64-bit/3000-6677_4-75183932.html"
-  - from: "FileHorse x64 (Windows)"
+  - from: "FileHorse"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
     url: "https://www.filehorse.com/download-blender-64/"
-  - from: "TechSpot (All)"
+  - from: "TechSpot"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
     url: "https://www.techspot.com/downloads/638-blender.html"
-  - from: "Uptodown (Windows)"
+  - from: "Uptodown"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://blender.en.uptodown.com/windows"
-  - from: "Malavida (Windows)"
+  - from: "Malavida"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.malavida.com/en/soft/blender/"
-  - from: "Softpedia (Windows)"
+  - from: "Softpedia"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Blender.shtml"
-  - from: "MacUpdate (macOS)"
+  - from: "MacUpdate"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
     url: "https://www.macupdate.com/app/mac/14085/blender"
 
 sysreq:
