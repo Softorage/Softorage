@@ -38,8 +38,9 @@ test:
 pages:
   stage: deploy
   script:
-  - hugo --minify
-  - gzip -k -9 $(find public -type f)
+  - hugo --minify # run hugo with minify option to minify all the HTML
+  - gzip -k -9 $(find public -type f) # use gzip for compression
+  - curl "https://www.google.com/ping?sitemap=https://softorage.com/sitemap.xml" # ping Google to scan sitemap
   artifacts:
     paths:
     - public
