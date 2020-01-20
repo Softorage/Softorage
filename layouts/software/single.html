@@ -21,7 +21,7 @@
 {{- end }}
 
 <!-- using printf to concatenate strings -->
-{{- $no_content := printf "%s%s%s" "Not available, but we appreciate <a href='/contribute/'>help</a>! You can help us <a href='https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/" .File.Path "'>improve this page</a>." -}}
+{{- $no_content := printf "%s%s%s" "Not available, but <a href='/contribute/'>we appreciate help!</a> You can help us <a href='https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/" .File.Path "'>improve this page</a>." -}}
 <!-- -->
 <div class="container-fluid main-gradient-light text-clr2 py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
@@ -54,7 +54,7 @@
         <div class="col">
           <h1 class="display-4 tg">{{ .Title }}</h1>
           {{- if .Params.description -}}
-            <p class="small" style="color:#8e0090;">{{ .Params.description }}</p>
+            <p class="small" style="color:#8e0090;//#fc4aff//">{{ .Params.description }}</p>
           {{- end -}}
           
           {{ if not .Params.image }}
@@ -580,7 +580,7 @@
           <div class="card-text mt-3">
             {{- if (or (or $minimum $recommended) $optimal) -}}
               <div class="table-responsive-md">
-                <table>
+                <table class="text-antinav">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -667,7 +667,7 @@
               </div>
               <hr class="my-1">
               <div class="table-responsive-lg">
-                <table class="table-borderless border-0">
+                <table class="table-borderless border-0 text-antinav">
                   <tbody>
                     {{- range $index, $rt := .Params.rating -}}
                       <tr>

@@ -3,8 +3,8 @@
 light:
   nav: "#ffffff"
   antinav: "#000000"
-  clr1: "#fc466b"
-  clr2: "#3f5efb"
+  clr1: "#fc466b" # #ff8ca3
+  clr2: "#3f5efb" # #8297ff
   mat: "#fbf5ff"
 
 dark:
