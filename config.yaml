@@ -1,15 +1,26 @@
-baseURL: "https://softorage.com/"
-languageCode: "en-us"
 title: "Softorage"
+
+baseURL: "https://softorage.com/"
+
+languageCode: "en-us"
+
 params:
   description: "The one place for authentic downloads and all your software related information needs"
-  author: "Sanmay Joshi"
   tagline: "The Software Directory." # recommended for SEO template (partial/seo.html)
-  # twitter: # recommended for SEO template (partial/seo.html)
-  # image: # favicon; resolution 200px x 200px to 1200px x 1200px
+  twitter: "@Softorage" # recommended for SEO template (partial/seo.html)
+  image: "/assets/favicon/Softorage-Logo-Profile.png" # favicon; resolution 200px x 200px to 1200px x 1200px
+
+author: 
+  name: "Sanmay Joshi and Softorage contributors"
+  email: "contact@softorage.com"
+
+copyright: "Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license."
 
 taxonomies:
   category: categories
+
+frontmatter:
+  date: ["date", "publishDate", "lastmod", ":git"]
 
 enableRobotsTXT: true
 enableGitInfo: true

@@ -52,8 +52,7 @@ Software name, software logo and any related marks are property of their respect
 
 ## External links disclaimer
 
-https://softorage.com website may contain links to external websites that are not provided or maintained by or in any way affiliated with Softorage
-Please note that the Softorage does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
+https://softorage.com website may contain links to external websites that are not provided or maintained by or in any way affiliated with Softorage. Please note that the Softorage does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
 
 ---
 

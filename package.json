@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://gitlab.com/Softorage/softorage.gitlab.io.git"
   },
-  "author": "Sanmay Joshi",
+  "author": "Sanmay Joshi and Softorage contributors",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://gitlab.com/Softorage/softorage.gitlab.io/issues"
