@@ -41,6 +41,7 @@ pages:
   - hugo --minify # run hugo with minify option to minify all the HTML
   - gzip -k -9 $(find public -type f) # use gzip for compression
   - curl "https://www.google.com/ping?sitemap=https://softorage.com/sitemap.xml" # ping Google to scan sitemap
+  - curl "https://www.google.com/ping?sitemap=https://softorage.com/index.xml" # ping Google to scan sitemap
   artifacts:
     paths:
     - public
