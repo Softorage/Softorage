@@ -10,6 +10,7 @@ before_script:
   - apk add git
   - apk add nodejs
   - apk add nodejs-npm
+  - apk add curl
   - npm install postcss-cli autoprefixer cssnano @fullhuman/postcss-purgecss
 
 test:
