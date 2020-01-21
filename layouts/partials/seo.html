@@ -82,7 +82,7 @@
     "name": {{ site.Title }},
     "author": {
       "@type": "Person",
-      "name": {{ site.Params.author.name }}
+      "name": {{ site.Author.name }}
     },
     "description": {{ site.Params.description }}
   }
@@ -104,7 +104,7 @@
         ,
         "author": {
             "@type": "Person",
-            "name": {{ site.Params.author.name }}
+            "name": {{ site.Author.name }}
         }
       }
     {{ else -}}
@@ -115,7 +115,7 @@
         "name": {{ .Title }},
         "author": {
           "@type": "Person",
-          "name": {{ site.Params.author.name }}
+          "name": {{ site.Author.name }}
         },
         "description": {{ .Description | default site.Params.description }}
       }

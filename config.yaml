@@ -7,8 +7,8 @@ languageCode: "en-us"
 params:
   description: "The one place for authentic downloads and all your software related information needs"
   tagline: "The Software Directory." # recommended for SEO template (partial/seo.html)
-  twitter: "@Softorage" # recommended for SEO template (partial/seo.html)
-  image: "/assets/favicon/Softorage-Logo-Profile.png" # favicon; resolution 200px x 200px to 1200px x 1200px
+  twitter: "@Softorage" # twitter handle; recommended for SEO template (partial/seo.html)
+  image: "https://softorage.com/assets/favicon/Softorage-Logo-Profile.png" # absolute path to image to be used for social media; resolution 200px x 200px to 1200px x 1200px
 
 author: 
   name: "Sanmay Joshi and Softorage contributors"
@@ -20,7 +20,7 @@ taxonomies:
   category: categories
 
 frontmatter:
-  date: ["date", "publishDate", "lastmod", ":git"]
+  date: ["date", "publishDate", "lastmod", ":git"] # adding ':git' at the end (of default format) makes the atom/rss feed to fetch dates from git, once enableGitInfo is set to true in 'config' file
 
 enableRobotsTXT: true
 enableGitInfo: true
