@@ -165,7 +165,7 @@ source:
     - dskp: ["https://www.avast.com/store", "https://www.avast.com/free-antivirus-download", "https://www.avast.com/free-mac-security"]
     - smptb: ["https://www.avast.com/store", "https://www.avast.com/free-mobile-security", "https://www.avast.com/free-ios-security"]
   sysreq: ["https://support.avast.com/article/Antivirus-FAQ/#requirements"]
-  license: ["https://en.wikipedia.org/w/index.php?title=Antivirus_software&oldid=934192056", "https://www.avast.com/en-in/eula"]
+  license: ["https://en.wikipedia.org/w/index.php?title=Antivirus_software&oldid=934192056", "https://www.avast.com/eula"]
   rating:
     - name: "TechSpot"
       type: "user"

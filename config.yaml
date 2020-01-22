@@ -1,34 +1,35 @@
-title: "Softorage"
+title: "Softorage" # required
 
-baseURL: "https://softorage.com/"
+baseURL: "https://softorage.com/" # required
 
-languageCode: "en-us"
+languageCode: "en-us" # recommended
 
 params:
-  description: "The one place for authentic downloads and all your software related information needs"
-  tagline: "The Software Directory." # recommended for SEO template (partial/seo.html)
-  twitter: "@Softorage" # twitter handle; recommended for SEO template (partial/seo.html)
-  image: "https://softorage.com/assets/favicon/Softorage-Logo-Profile.png" # absolute path to image to be used for social media; resolution 200px x 200px to 1200px x 1200px
+  description: "The one place for authentic downloads and all your software related information needs" # required
+  tagline: "The Software Directory." # required, recommended for SEO template (partial/seo.html)
+  twitter: "@Softorage" # optional, twitter handle; recommended for SEO template (partial/seo.html)
+  fb_app_id: "170403084180809" # optional, for SEO template (partial/seo.html)
+  image: "https://softorage.com/assets/favicon/Softorage-Logo-Profile.png" # optional, absolute path to image to be used for social media; resolution 200px x 200px to 1200px x 1200px
 
 author: 
-  name: "Sanmay Joshi and Softorage contributors"
-  email: "contact@softorage.com"
+  name: "Sanmay Joshi and Softorage contributors" # required
+  email: "contact@softorage.com" # optional, used in default rss template : https://gohugo.io/templates/rss/#configure-rss
 
-copyright: "Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license."
+copyright: "Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license." # optional, used in default rss template : https://gohugo.io/templates/rss/#configure-rss
 
 taxonomies:
-  category: categories
+  category: categories # optional
 
 frontmatter:
   date: ["date", "publishDate", "lastmod", ":git"] # adding ':git' at the end (of default format) makes the atom/rss feed to fetch dates from git, once enableGitInfo is set to true in 'config' file
 
-enableRobotsTXT: true
-enableGitInfo: true
+enableRobotsTXT: true # optional
+enableGitInfo: true # optional
 
-# Allow HTML rendering
+# Allow HTML in markdown to be rendered
 markup:
   goldmark:
     renderer:
       unsafe: true
 
-googleAnalytics: UA-154890683-1
+googleAnalytics: UA-154890683-1 # optional

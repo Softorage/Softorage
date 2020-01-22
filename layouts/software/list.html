@@ -80,7 +80,7 @@
     {{- $proprietary := false }}
     {{- $rating_stars := 0 }}
     
-    {{- range $index, $element := where site.RegularPages "Section" "==" "software" -}}
+    {{- range $index, $element := sort (where site.RegularPages "Section" "==" "software") "Title" -}}
       <div class="card mb-3">
         <div class="card-body text-antinav">
           <div class="card-title align-middle">

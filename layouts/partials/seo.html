@@ -57,6 +57,9 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
+{{ if site.Params.fb_app_id }}
+<meta property="fb:app_id" content="{{ site.Params.fb_app_id }}" />
+{{ end }}
 {{ if or site.Params.image .Params.image -}}
   <meta property="og:image" content="{{ if not .IsHome }}{{ .Params.image }}{{ else }}{{ site.Params.image }}{{ end }}" />
 {{- end }} <!-- reso 200px x 200px to 1200px x 1200px -->

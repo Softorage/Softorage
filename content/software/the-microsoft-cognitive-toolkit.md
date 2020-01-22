@@ -13,7 +13,7 @@ get_it:
 
 sysreq:
   -
-    recm: "OS: Windows 8.1 Pro (64 bit), Windows 10 (64 bit), Windows Server 2012 R2 Standard and later I Ubuntu 16.04 LTS (64 bit"
+    recm: "OS: Windows 8.1 Pro (64 bit), Windows 10 (64 bit), Windows Server 2012 R2 Standard and later I Ubuntu 16.04 LTS (64 bit)"
   -
     recm: "Compiler: Visual Studio Enterprise 2017 for Windows I GNU C++ 5.4.0 for Linux"
   -
