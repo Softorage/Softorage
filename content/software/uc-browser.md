@@ -101,7 +101,7 @@ get_it:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
-    url: "https://apps.apple.com/us/app/uc-browser/id1048518592"
+    url: "https://apps.apple.com/app/uc-browser/id1048518592"
   - from: "Softonic"
     platform:
       - name: "iOS"
@@ -227,7 +227,7 @@ source:
       remarks: "Android"
     - name: "Apple App Store"
       type: "user"
-      url: "https://apps.apple.com/us/app/uc-browser/id1048518592"
+      url: "https://apps.apple.com/app/uc-browser/id1048518592"
       remarks: "iOS"
     - name: "Softonic"
       type: "user"

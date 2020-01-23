@@ -1,7 +1,7 @@
 ---
 title: "Avast Antivirus"
 
-description: "A family of internet security applications developed by Avast"
+description: "A family of internet security applications developed by Avast, which includes Avast Passwords, Avast Secureline VPN"
 
 image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Avast_Software_white_logo.png"
 
@@ -60,6 +60,18 @@ get_it:
         hardware: ["smptb"]
         type: "official"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity"
+  - from: "Google Play Store (Passwords)"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+    url: "https://play.google.com/store/apps/details?id=com.avast.android.passwordmanager"
+  - from: "Google Play Store (VPN)"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+    url: "https://play.google.com/store/apps/details?id=com.avast.android.vpn"
   - from: "Softonic"
     platform:
       - name: "Android"
@@ -89,7 +101,7 @@ get_it:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
-    url: "https://apps.apple.com/us/app/avast-security-photo-vault/id1276551855"
+    url: "https://apps.apple.com/app/avast-security-photo-vault/id1276551855"
   - from: "Apple App Store (Passwords)"
     platform:
       - name: "iOS"
@@ -107,7 +119,7 @@ get_it:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
-    url: "https://apps.apple.com/us/app/avast-secureline-vpn-proxy/id793096595"
+    url: "https://apps.apple.com/app/avast-secureline-vpn-proxy/id793096595"
 
 sysreq:
   -
@@ -216,7 +228,7 @@ source:
       remarks: "macOS"
     - name: "Apple App Store"
       type: "user"
-      url: "https://apps.apple.com/us/app/avast-security-photo-vault/id1276551855"
+      url: "https://apps.apple.com/app/avast-security-photo-vault/id1276551855"
       remarks: "iOS"
   status: ["https://blog.avast.com/"]
 

@@ -99,7 +99,7 @@ get_it:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
-    url: "https://apps.apple.com/us/app/google-chrome/id535886823"
+    url: "https://apps.apple.com/app/google-chrome/id535886823"
 
 sysreq:
   -
@@ -207,7 +207,7 @@ source:
       remarks: "iOS"
     - name: "Apple App Store"
       type: "user"
-      url: "https://apps.apple.com/us/app/google-chrome/id535886823"
+      url: "https://apps.apple.com/app/google-chrome/id535886823"
       remarks: "iOS"
     - name: "CNET"
       type: "expert"

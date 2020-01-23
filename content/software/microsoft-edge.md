@@ -76,7 +76,7 @@ get_it:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
-    url: "https://apps.apple.com/us/app/microsoft-edge/id1288723196"
+    url: "https://apps.apple.com/app/microsoft-edge/id1288723196"
   - from: "Softonic"
     platform:
       - name: "iOS"
@@ -184,7 +184,7 @@ source:
       remarks: "Android"
     - name: "Apple App Store"
       type: "user"
-      url: "https://apps.apple.com/us/app/microsoft-edge/id1288723196"
+      url: "https://apps.apple.com/app/microsoft-edge/id1288723196"
       remarks: "iOS"
     - name: "Softonic"
       type: "user"

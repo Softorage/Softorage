@@ -1,7 +1,7 @@
 ---
 title: "Mozilla Firefox"
 
-description: "An open source web browser developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation"
+description: "An open source web browser developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation; with variant Firefox Lite"
 
 image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg"
 

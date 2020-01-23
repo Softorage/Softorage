@@ -1,7 +1,7 @@
 ---
 title: "Opera (Web Browser)"
 
-description: "A freeware Chromium-based web browser developed by Opera Software"
+description: "A freeware Chromium-based web browser developed by Opera Software; with variants Opera Mini, Opera Touch"
 
 image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Opera_2015_icon.svg"
 
@@ -319,5 +319,5 @@ rating:
   
   Privacy: In 2016, Opera was sold to a group of Chinese companies and investors. According to its privacy policy, Opera collects data on its users, including names, IP addresses and search terms. It also reserves the right to share that data with third-party applications but doesn’t give specifics. The company that operates the VPN service for Opera, SurfEasy, essentially collects everything it can from users, including browsing history, IP address and bandwidth usage while using the VPN. One can turn off some data collection by disabling certain features in the settings.
         
-  [Blog/News](https://blogs.opera.com/news/)  I  [Blog Desktop](https://blogs.opera.com/desktop/)  I  [Blog Mobile](https://blogs.opera.com/mobile/)  |  [Blog Security](https://blogs.opera.com/security/)  |  [Forum](https://forums.opera.com/)  I  Wiki  I  [Help](https://help.opera.com/en/get-started/)  I  [FAQ](https://help.opera.com/en/faq/)
+  [Blog/News](https://blogs.opera.com/news/) I [Blog Desktop](https://blogs.opera.com/desktop/) I [Blog Mobile](https://blogs.opera.com/mobile/) I [Blog Security](https://blogs.opera.com/security/) I [Forum](https://forums.opera.com/) I [Help](https://help.opera.com/en/get-started/) I [FAQ](https://help.opera.com/en/faq/)
   

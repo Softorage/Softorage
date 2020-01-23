@@ -63,7 +63,7 @@ get_it:
 
 sysreq:
   -
-    min: "Windows 7 or later, 32 or 64 bit doesn't matter."
+    min: "Windows 7 or later"
 
 developer: ["Pete Batard of Akeo Consulting"]
 

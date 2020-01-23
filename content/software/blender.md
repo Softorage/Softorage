@@ -160,6 +160,7 @@ source:
   written_in: ["https://www.blender.org/get-involved/"]
   platform:
     - dskp: ["https://www.blender.org/download/"]
+    - smptb: ["https://download.blender.org/demo/android/"]
   sysreq: ["https://www.blender.org/download/requirements/"]
   license: ["https://www.blender.org/about/license/"]
   rating:

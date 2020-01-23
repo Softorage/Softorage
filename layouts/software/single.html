@@ -25,7 +25,7 @@
 <!-- -->
 <div class="container-fluid main-gradient-light text-clr2 py-3 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
-  <div class="row p-2">
+  <div class="row px-2">
     <div class="col-md-8">
       <div class="row">
         <!-- Defining $rating_stars as a global variable -->
@@ -427,7 +427,7 @@
           </div>
           <div class="card-text mt-3">
             {{- if .Content }}
-              {{- .Content }}
+              {{- replace .Content "> I <" "> | <" | safeHTML }}
             {{- else -}}
               {{ $no_content | safeHTML }}
             {{- end -}}
@@ -669,7 +669,7 @@
               <div class="table-responsive-lg">
                 <table class="table-borderless border-0 text-antinav">
                   <tbody>
-                    {{- range $index, $rt := .Params.rating -}}
+                    {{- range $index, $rt := sort .Params.rating "name" -}}
                       <tr>
                         <th class="py-2" scope="row">
                           {{- $rt.name }}

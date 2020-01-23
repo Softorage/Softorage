@@ -1,7 +1,7 @@
 ---
 title: "Adobe Photoshop"
 
-description: "A raster graphics editor developed and published by Adobe Inc."
+description: "A raster graphics editor developed and published by Adobe Inc.; with Photoshop Express, Photoshop Mix, Photoshop Fix & Photoshop Touch as part of Photoshop family"
 
 image: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
 
