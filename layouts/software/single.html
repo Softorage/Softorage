@@ -31,7 +31,7 @@
         <!-- Defining $rating_stars as a global variable -->
         {{- $rating_stars := 0 }}
         {{- if .Params.image -}}
-          <div class="align-middle text-center col-auto">
+          <div class="align-middle px-auto col-auto">
             <img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="{{ .Params.image }}" alt="{{ .Title }} logo">  
             <br>
             {{- if .Params.rating }}
@@ -40,7 +40,7 @@
                 {{- $rating_stars = add $rating_stars (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) -}} <!-- if one is float then only is the result a float -->
               {{- end }}
               {{- $rating_stars = div $rating_stars $len }}
-              <div class="d-inline-block rating-stars text-center mt-2">
+              <div class="d-inline-block rating-stars mt-2">
                 <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><!-- for some reason it works better with 125 (edit: not anymore. reason is clarified in stylesheet) -->
                   <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
                 </div>
@@ -675,7 +675,7 @@
                           {{- $rt.name }}
                           {{- if $rt.remarks }}<br><span class="small text-muted">{{ $rt.remarks }}</span>{{ end -}}
                         </th>
-                        <td class="py-2 text-center text-nowrap">
+                        <td class="py-2 px-auto text-nowrap">
                           <span>{{ index $rt.rate 0 }}</span>&nbsp;
                           <div class="d-inline-block rating-stars">
                             <div class="rating-stars-top" style="width: {{ mul (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) 100 }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>

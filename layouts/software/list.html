@@ -124,9 +124,7 @@
             <br>
             <div class="mt-2">
               <span class="bg-clr2-light text-clr2 p-2 text-center rounded category">
-                {{- range $i, $e := $element.Params.categories }}
-                  {{- if $i }} | {{ end }}{{ $e }}
-                {{- end -}}
+                {{- delimit $element.Params.categories " | " -}}
               </span>
                 
               <span class="float-right">
