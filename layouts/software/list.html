@@ -4,7 +4,7 @@
   <div style="height:3.5rem;"></div>
   <h1>{{ .Title }}</h1>
   <p>{{ .Params.tagline }}</p>
-  <noscript class="alert alert-warning"><b>Warning:</b> Softorage may not work at its best if JavaScript is disabled.</noscript>
+  <noscript class="alert alert-warning"><b>Warning:</b> Softorage may not work at its best when JavaScript is disabled.</noscript>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="filter-modal-label" aria-hidden="true">
@@ -123,7 +123,7 @@
             {{- end -}}
             <br>
             <div class="mt-2">
-              <span class="bg-clr2-light text-clr2 p-2 text-center rounded category">
+              <span class="bg-clr2-light small text-clr2 p-2 text-center rounded category">
                 {{- delimit $element.Params.categories " | " -}}
               </span>
                 
