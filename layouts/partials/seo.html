@@ -1,11 +1,33 @@
+<!-- declare $platform_in_title as an array -->
+{{ $platform_in_title := slice }}
+{{ if .Params.platform }}
+{{ range .Params.platform }}
+  {{ if .dskp }}
+    {{ range  (sort .dskp "name" "desc") -}}
+      {{ $platform_in_title = $platform_in_title | union (slice .name) }}
+    {{ end }}
+  {{ end }}
+  {{ if .smp }}
+    {{ range  (sort .smp "name" "desc") -}}
+      {{ $platform_in_title = $platform_in_title | union (slice .name) }}
+    {{ end }}
+  {{ end }}
+  {{ if .tab }}
+    {{ range  (sort .tab "name" "desc") -}}
+      {{ $platform_in_title = $platform_in_title | union (slice .name) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- SEO template changes; source: https://digitalonlinetactics.com/post/blogging/hugo-seo-tips/ -->
 <title>
-  {{- .Title | default site.Title }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}
+  {{- .Title | default site.Title }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ if gt (len $platform_in_title) 0 }} on {{ delimit (sort $platform_in_title "value" "desc") ", " }} Systems{{ end }}{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}
 </title>
-<meta name="title" content="{{- .Title | default site.Title }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}">
+<meta name="title" content="{{- .Title | default site.Title }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ if gt (len $platform_in_title) 0 }} on {{ delimit (sort $platform_in_title "value" "desc") ", " }} Systems{{ end }}{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}{{/* good for general cases {{- .Title | default site.Title }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}*/}}">
 <meta name="description" content="
   {{- with .Description }}
   {{- . | safeHTML }}

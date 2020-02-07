@@ -9,7 +9,7 @@
   -->
   */}}
   <nav class="navbar {{ if ne $.Title "Search" -}} navbar-expand {{- else -}} navbar-expand-lg {{- end }} navbar-light fixed-top">
-    <a class="navbar-brand bg-nav rounded px-3" href="{{ site.BaseURL }}"><span class="tg"><span class="brand">{{ site.Title }}</span>&nbsp;<sup><span class="small">beta</span></sup></span></a>
+    <a class="navbar-brand bg-nav rounded px-3" href="{{ site.BaseURL }}"><span class="tg"><span class="brand">{{ site.Title }}</span>&nbsp;<sup><span class="small text-clr2">beta</span></sup></span></a>
     <a class="navbar-toggler border-0" role="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="text-antinav">{{ site.Data.icons.bars | safeHTML }}</span>
     </a>

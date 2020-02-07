@@ -116,14 +116,14 @@ platform:
         type: "official"
   - smp:
       - name: "Android"
-        type: "unofficial"
+        type: "official"
       - name: "iOS"
         type: "official"
       - name: "Windows"
         type: "official"
   - tab:
       - name: "Android"
-        type: "unofficial"
+        type: "official"
       - name: "iOS"
         type: "official"
 

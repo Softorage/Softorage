@@ -7,7 +7,7 @@
 </div>
 <div class="container-fluid bg-antinav-light py-3">
   <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
-  {{ range .Pages }}
+  {{ range (sort .Pages "Title") }}
     <div class="card mb-3">
       <div class="card-body text-antinav">
         <span class="anchor" id="{{ replace (lower .Title) " " "_" }}"></span>
