@@ -42,7 +42,7 @@ font-family: 'Roboto', sans-serif;
   color: #c5c5c5;
   font-size: 1rem;
   height: 1rem; // it is recommended that font-size and height is equal
-  width: 4.5rem; // width needs to be 5 times font-size so that each star correspond to 20% (not true since 4.5 rem gives better results)
+  width: 5rem; // width needs to be 5 times font-size so that each star correspond to 20% (not true if used text-center class from twbs, since &-top and &-bottom donot start from same starting, but have their center coninciding. Alternative to text-center in this case, may be d-flex with justify-content-center)
   margin: 0;
   position: relative;
   padding: 0;

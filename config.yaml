@@ -5,7 +5,7 @@ baseURL: "https://softorage.com/" # required
 languageCode: "en-us" # recommended
 
 params:
-  description: "The one place for authentic downloads and all your software related information needs" # required
+  description: "The software directory, with authentic software downloads and information that makes sense." # The one place for authentic downloads and all your software related information needs # required
   tagline: "The Software Directory." # required, recommended for SEO template (partial/seo.html)
   twitter: "@Softorage" # optional, twitter handle; recommended for SEO template (partial/seo.html)
   fb_app_id: "170403084180809" # optional, for SEO template (partial/seo.html)
@@ -18,7 +18,7 @@ author:
 copyright: "Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license." # optional, used in default rss template : https://gohugo.io/templates/rss/#configure-rss
 
 taxonomies:
-  category: categories # optional
+  category: "categories" # optional
 
 frontmatter:
   date: ["date", "publishDate", "lastmod", ":git"] # adding ':git' at the end (of default format) makes the atom/rss feed to fetch dates from git, once enableGitInfo is set to true in 'config' file
@@ -32,4 +32,4 @@ markup:
     renderer:
       unsafe: true
 
-googleAnalytics: UA-154890683-1 # optional
+googleAnalytics: "UA-154890683-1" # optional

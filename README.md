@@ -1,6 +1,6 @@
 # Softorage
 
-The one place for authentic downloads and all your software related information needs  
+The software directory, with authentic software downloads and information that makes sense.  
 
 https://softorage.com
 ___
@@ -23,7 +23,10 @@ You can get a copy of project up and running on your local machine for developem
 * [__Hugo__](https://gohugo.io/)
 * [__Font Awesome__](https://fontawesome.com/)
 * [__SAW__](https://gitlab.com/Softorage/saw)
-<!-- * UnCSS or CriticalCSS : yet to be implemented -->
+* [__PostCSS__](https://postcss.org/)
+* [__Autoprefixer__](https://github.com/postcss/autoprefixer)
+* [__cssnano__](https://cssnano.co/)
+* [__PurgeCSS__](https://purgecss.com/)
 <!-- * loadCSS : yet to be implemented -->
 
 ## Contributing
