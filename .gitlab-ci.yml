@@ -46,6 +46,6 @@ pages:
   artifacts:
     paths:
     - public
-    - resources
+    # - resources # since artifacts are considered in calculating size occupied, it is not taken
   only:
   - master
