@@ -3,7 +3,7 @@ title: "uTorrent"
 
 description: "A proprietary adware BitTorrent client owned and developed by BitTorrent, Inc."
 
-image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/UTorrent_%28logo%29.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/utorrent.png"
 
 status: ["Active"]
 
@@ -13,71 +13,71 @@ get_it:
   - from: "Authentic"
     url: "https://www.utorrent.com/downloads"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://utorrent.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_utorrent/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/uTorrent/3000-2196_4-10528327.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.filehorse.com/download-utorrent/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/utorrent/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/Internet/File-Sharing/uTorrent.shtml"
-  - from: "Uptodown"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Uptodown"
     url: "https://utorrent.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Google Play Store"
+    url: "https://play.google.com/store/apps/details?id=com.utorrent.client"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://play.google.com/store/apps/details?id=com.utorrent.client"
   - from: "FileHippo"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/mac/download_utorrent_for_mac/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "MacUpdate"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.macupdate.com/app/mac/29824/utorrent"
-  - from: "FileHorse"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://mac.filehorse.com/download-utorrent/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -
@@ -226,7 +226,6 @@ rating:
     rate: [4.5, 5]
     num: 2
     remarks: "macOS"
-
 ---
   uTorrent is an efficient [BitTorrent client](/categories/bittorrent-client) from the originator of the BitTorrent protocol. Most of the features present in other BitTorrent clients are present in uTorrent, including bandwidth prioritization, scheduling, RSS auto-downloading, and Mainline DHT. Additionally, uTorrent supports the protocol encryption joint specification and peer exchange.
   

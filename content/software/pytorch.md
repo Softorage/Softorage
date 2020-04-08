@@ -3,6 +3,8 @@ title: "PyTorch"
 
 description: "A machine learning library for Python, based on Torch"
 
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/pytorch.png"
+
 status: ["Active"]
 
 website: "https://pytorch.org/"
@@ -70,7 +72,6 @@ source:
 rating:
   - name: "InfoWorld"
     rate: [4.5, 5]
-
 ---
   PyTorch is an open-source [machine learning](/categories/machine-learning) library for Python, based on [Torch](/software/torch/), used for applications such as natural language processing. One can also reuse Python packages such as [NumPy](/software/numpy/), [SciPy](/software/scipy-library/) and Cython to extend PyTorch when needed.
   
@@ -86,3 +87,4 @@ rating:
   > \- [NVIDIA - DEEP LEARNING FRAMEWORKS DOCUMENTATION](https://docs.nvidia.com/deeplearning/dgx/pytorch-release-notes/overview.html)
   
   [Blog](https://pytorch.org/blog) I [Documentation](https://pytorch.org/docs) I [Slack](https://pytorch.slack.com/) I [FAQ](https://pytorch.org/docs/stable/notes/faq.html) I [PyTorch Discuss Q&A](https://discuss.pytorch.org/) I [Wiki](https://github.com/pytorch/pytorch/wiki)
+

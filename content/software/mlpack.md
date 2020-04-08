@@ -3,7 +3,7 @@ title: "mlpack"
 
 description: "A scalable machine learning library in C++ with a modular C++ API for expert users"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Mlpack-logo-white-outline.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/mlpack.png"
 
 status: ["Active"]
 
@@ -77,10 +77,10 @@ rating:
   - name: "G2CROWD"
     rate: [3.5, 5]
     num: 1
-
 ---
   > mlpack is a C++ machine learning library with emphasis on scalability, speed, and ease-of-use. Its aim is to make machine learning possible for novice users by means of a simple, consistent API, while simultaneously exploiting C++ language features to provide maximum performance and maximum flexibility for expert users. This is done by providing a set of command-line executables which can be used as black boxes, and a modular C++ API for expert users and researchers to easily make changes to the internals of the algorithms.
   > \- [Official website](https://www.mlpack.org/about.html)
   
   [Developement Blog](https://www.mlpack.org/gsocblog/) I [Documentation](https://www.mlpack.org/docs.html) I [Wiki](https://github.com/mlpack/mlpack/wiki) I [Mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack) I [IRC](https://webchat.freenode.net/?channels=mlpack) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/mlpack)
   
+

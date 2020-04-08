@@ -3,7 +3,7 @@ title: "Vivaldi (Web Browser)"
 
 description: "A freeware, cross-platform web browser developed by Vivaldi Technologies"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Vivaldi_web_browser_logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/vivaldi-web-browser.png"
 
 status: ["Active"]
 
@@ -13,106 +13,106 @@ get_it:
   - from: "Authentic"
     url: "https://vivaldi.com/download/"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_vivaldi/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
     url: "https://download.cnet.com/Vivaldi-64-bit/3000-2356_4-76472369.html"
-  - from: "FileHorse"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://www.filehorse.com/download-vivaldi-64/"
-  - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.malavida.com/en/soft/vivaldi/"
-  - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://vivaldi-browser.en.softonic.com/"
-  - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32", "x64"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "Linux"
-        hardware: ["dskp"]
-        arch: ["x32", "x64"]
-        type: "official"
-    url: "https://www.techspot.com/downloads/6692-vivaldi-browser.html"
-  - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://vivaldi.en.uptodown.com/windows"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-vivaldi-64/"
     platform:
-      - name: "macOS"
+      - name: "Windows"
         hardware: ["dskp"]
+        arch: ["x64"]
         type: "official"
-    url: "https://mac.filehorse.com/download-vivaldi/"
-  - from: "MacUpdate"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.macupdate.com/app/mac/53990/vivaldi"
   - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/vivaldi/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Softonic"
+    url: "https://vivaldi-browser.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/6692-vivaldi-browser.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+  - from: "Uptodown"
+    url: "https://vivaldi.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "FileHorse"
+    url: "https://mac.filehorse.com/download-vivaldi/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/53990/vivaldi"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vivaldi/mac/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
+    url: "https://linux.softpedia.com/get/Internet/HTTP-WWW-/Vivaldi-103720.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         type: "official"
-    url: "https://linux.softpedia.com/get/Internet/HTTP-WWW-/Vivaldi-103720.shtml"
   - from: "APKMirror"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://www.apkmirror.com/apk/vivaldi-technologies/vivaldi-browser-beta/vivaldi-browser-beta-2-9-1741-33-release/"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://vivaldi-browser.en.softonic.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.vivaldi.browser"
-  - from: "Malavida"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vivaldi/android/"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
 
 developer: ["Vivaldi Technologies AS"]
 

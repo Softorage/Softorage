@@ -3,7 +3,7 @@ title: "CCleaner"
 
 description: "A utility used to clean potentially unwanted files and invalid Windows Registry entries from a computer"
 
-image: "https://upload.wikimedia.org/wikipedia/en/4/4a/CCleaner_logo_2013.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/ccleaner.png"
 
 status: ["Active"]
 
@@ -13,95 +13,95 @@ get_it:
   - from: "Authentic"
     url: "https://www.ccleaner.com/ccleaner/download"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_ccleaner/"
-  - from: "CNET"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "CNET"
     url: "https://download.cnet.com/ccleaner/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://ccleaner.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/Security/Secure-cleaning/CCleaner.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://www.techspot.com/downloads/132-ccleaner.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/ccleaner/#gref"
-  - from: "FileHorse"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://www.filehorse.com/download-ccleaner/"
-  - from: "Uptodown"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://ccleaner.en.uptodown.com/windows"
-  - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://play.google.com/store/apps/details?id=com.piriform.ccleaner"
   - from: "Uptodown"
+    url: "https://ccleaner.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Google Play Store"
+    url: "https://play.google.com/store/apps/details?id=com.piriform.ccleaner"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Uptodown"
     url: "https://ccleaner.en.uptodown.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/mac/download_ccleaner_for_mac/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/CCleaner/3000-2144_4-75453127.html"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://mac.filehorse.com/download-ccleaner/"
-  - from: "MacUpdate"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/41220/ccleaner"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -
@@ -280,7 +280,6 @@ rating:
     rate: [4.6, 5]
     num: 1344146
     remarks: "Android"
-
 ---
   CCleaner is a [utility](/categories/utility) used to clean potentially unwanted files and invalid Windows Registry entries from a computer. It is system optimization, privacy and cleaning tool. It removes unused files from system - temporary files, broken shortcuts, allowing Windows to run faster and freeing up hard disk space, helps you uninstall software and select which programs start with Windows. It cleans traces of online activities such as Internet history. It contains a registry cleaner.
   

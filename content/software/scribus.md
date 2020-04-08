@@ -3,7 +3,7 @@ title: "Scribus"
 
 description: "A free and open source desktop publishing (DTP) application, designed for layout, typesetting, and preparation of files for professional-quality image-setting equipment"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/8/85/Scribus_logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/scribus.png"
 
 status: ["Active"]
 
@@ -13,6 +13,7 @@ get_it:
   - from: "Authentic"
     url: "https://www.scribus.net/downloads/stable-branch/"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/6110-scribus.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -24,76 +25,75 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/6110-scribus.html"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32"]
-        type: "official"
     url: "https://www.filehorse.com/download-scribus-32/"
-  - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://filehippo.com/download_scribus/"
-  - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://scribus.en.softonic.com/"
-  - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.malavida.com/en/soft/scribus/"
-  - from: "MacUpdate"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.macupdate.com/app/mac/22952/scribus"
-  - from: "Softonic"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://scribus.en.softonic.com/mac"
-  - from: "FileHorse"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://mac.filehorse.com/download-scribus/"
-  - from: "CNET"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://download.cnet.com/Scribus/3000-6675_4-100490.html"
-  - from: "CNET"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://download.cnet.com/Scribus/3000-6675_4-10655204.html"
+  - from: "FileHippo"
+    url: "https://filehippo.com/download_scribus/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Softonic"
+    url: "https://scribus.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/scribus/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/22952/scribus"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Softonic"
+    url: "https://scribus.en.softonic.com/mac"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "FileHorse"
+    url: "https://mac.filehorse.com/download-scribus/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
+    url: "https://download.cnet.com/Scribus/3000-6675_4-100490.html"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "CNET"
+    url: "https://download.cnet.com/Scribus/3000-6675_4-10655204.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
+  - from: "CNET"
+    url: "https://download.cnet.com/Scribus-64-bit/3000-6675_4-75846779.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://download.cnet.com/Scribus-64-bit/3000-6675_4-75846779.html"
   - from: "Softpedia"
+    url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Scribus-2148.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Scribus-2148.shtml"
 
 sysreq:
   -
@@ -258,7 +258,6 @@ rating:
     rate: [4.2, 5]
     num: 51
     remarks: "Linux"
-
 ---
   Scribus is an Open Source program that brings professional page layout to Linux, BSD UNIX, Solaris, OpenIndiana, GNU/Hurd, Mac OS X, OS/2 Warp 4, eComStation, and Windows desktops with a combination of press-ready output and new approaches to page design.
   

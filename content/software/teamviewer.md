@@ -3,7 +3,7 @@ title: "TeamViewer"
 
 description: "A proprietary software application for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/9/90/TeamViewer_logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/teamviewer.png"
 
 status: ["Active"]
 
@@ -13,12 +13,13 @@ get_it:
   - from: "Authentic"
     url: "https://www.teamviewer.com/en/download/"
   - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/teamviewer/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.malavida.com/en/soft/teamviewer/"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/4636-teamviewer.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -33,109 +34,108 @@ get_it:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://www.techspot.com/downloads/4636-teamviewer.html"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_teamviewer/"
-  - from: "FileHorse"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://www.filehorse.com/download-teamviewer/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/Internet/Remote-Utils/TeamViewer.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/TeamViewer/3000-7240_4-10398150.html"
-  - from: "Uptodown"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Uptodown"
     url: "https://teamviewer.en.uptodown.com/windows"
-  - from: "Malavida"
     platform:
-      - name: "macOS"
+      - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/teamviewer/mac/"
-  - from: "FileHorse"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://mac.filehorse.com/download-teamviewer/"
-  - from: "Malavida"
     platform:
-      - name: "Android"
-        hardware: ["smptb"]
+      - name: "macOS"
+        hardware: ["dskp"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/teamviewer/android/"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/teamviewer/iphone/"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Google Play Store (QuickSupport)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.teamviewer.teamviewer.market.mobile"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Google Play Store (Host)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.teamviewer.host.market"
-  - from: "Google Play Store (Pilot)"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Google Play Store (Pilot)"
     url: "https://play.google.com/store/apps/details?id=com.teamviewer.pilot"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Apple App Store (QuickSupport)"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://apps.apple.com/app/teamviewer-quicksupport/id661649585"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Apple App Store (Meetings)"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://apps.apple.com/app/teamviewer-for-meetings/id482946817"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Apple App Store"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://apps.apple.com/app/teamviewer-remote-control/id692035811"
-  - from: "Apple App Store (Pilot)"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
+  - from: "Apple App Store (Pilot)"
     url: "https://apps.apple.com/app/teamviewer-pilot/id1436001042"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
 
 developer: ["TeamViewer AG"]
 
@@ -341,7 +341,6 @@ rating:
     rate: [8, 10]
     num: 13
     remarks: "iOS"
-
 ---
   TeamViewer is a proprietary software application for [remote control](/categories/remote-administration/), [desktop sharing](/categories/desktop-sharing), online meetings, [web conferencing](/categories/web-conferencing/) and file transfer between computers. It allows remote access to computers or mobile devices and use them as though user were there. It allows to remotely connect to servers, commercial-grade machines, and IoT devices through TeamViewer's global remote access network. TeamViewer includes encryption based on 2048-bit RSA private/public key exchange and AES (256-bit) session encryption, two-factor authentication, enforced password reset on unusual activity and a listing feature for trusted devices (Whitelisting).
   

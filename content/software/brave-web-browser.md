@@ -3,7 +3,7 @@ title: "Brave (Web Browser)"
 
 description: "A free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser"
 
-image: "https://upload.wikimedia.org/wikipedia/en/6/68/Brave_logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/brave-web-browser.png"
 
 status: ["Active"]
 
@@ -15,12 +15,13 @@ get_it:
   - from: "GitHub Releases (For developers) | Authentic"
     url: "https://github.com/brave/brave-browser/releases"
   - from: "CNET"
+    url: "https://download.cnet.com/Brave/3000-2356_4-76476837.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://download.cnet.com/Brave/3000-2356_4-76476837.html"
   - from: "FossHub"
+    url: "https://www.fosshub.com/Brave-Browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -29,27 +30,27 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.fosshub.com/Brave-Browser.html"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Internet/Browsers/Brave.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/Internet/Browsers/Brave.shtml"
   - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/brave/"
-  - from: "FileHippo"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHippo"
     url: "https://filehippo.com/download_brave/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/6797-brave-browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -67,74 +68,73 @@ get_it:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
-    url: "https://www.techspot.com/downloads/6797-brave-browser.html"
   - from: "Softonic"
+    url: "https://brave-browser.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://brave-browser.en.softonic.com/"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-brave-browser-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://www.filehorse.com/download-brave-browser-64/"
   - from: "Softonic"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://brave-browser.en.softonic.com/mac"
-  - from: "FileHorse"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://mac.filehorse.com/download-brave-browser/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "APKPure"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://apkpure.com/brave-browser-private-ads-block/com.brave.browser"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.brave.browser"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Uptodown"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://brave-software-brave.en.uptodown.com/android"
-  - from: "Softonic"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Softonic"
     url: "https://brave-browser.en.softonic.com/android"
-  - from: "Malavida"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/brave-browser/android/"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Softonic"
+    url: "https://brave-browser.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
-    url: "https://brave-browser.en.softonic.com/iphone"
   - from: "FileHippo"
+    url: "https://filehippo.com/mac/download_brave-for-mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://filehippo.com/mac/download_brave-for-mac/"
 
 sysreq:
   -
@@ -326,7 +326,6 @@ rating:
     rate: [4.7, 5]
   - name: "PCWorld"
     rate: [4, 5]
-
 ---
   Brave is a free and open-source privacy-focused [web browser](/categories/web-browser) developed by Brave Software, Inc. based on the [Chromium](/software/chromium-web-browser) web browser. It uses Blink browser engine and V8 JavaScript engine. The browser blocks ads and website trackers, and provides a way for users to send cryptocurrency contributions in the form of Basic Attention Tokens to websites and content creators. It allows users to surf the web using TOR, to protect their privacy.
   

@@ -23,7 +23,7 @@
 <!-- using printf to concatenate strings -->
 {{- $no_content := printf "%s%s%s" "Not available, but <a href='/contribute/'>we appreciate help!</a> You can help us <a href='https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/" .File.Path "'>improve this page</a>." -}}
 <!-- -->
-<div class="container-fluid main-gradient-light text-clr2 py-3 position-relative shadow-sm">
+<div class="container-fluid main-gradient-light text-clr2 pb-3 pt-4 position-relative shadow-sm">
   <div style="height:3.5rem;"></div>
   <div class="row px-2">
     <div class="col-md-8">
@@ -52,7 +52,7 @@
           </div>
         {{- end -}}
         <div class="col">
-          <h1 class="display-4 tg">{{ .Title }}</h1>
+          <h1 class="display-4 tg">{{ replace (replace .Title "(" "<span class='small' style='font-weight: 300; font-size: 1.2rem;'>") ")" "</span>" | safeHTML }}</h1>
           {{- if .Params.description -}}
             <p class="small" style="color:#8e0090;//#fc4aff//">{{ .Params.description }}</p>
           {{- end -}}
@@ -640,7 +640,7 @@
     <div class="col-md-4">
       <!-- #18 Rating -->
       <div class="card">
-        <div class="card-body" style="max-height:37.5rem;overflow:auto;">
+        <div class="card-body">
           <div class="row">
             <div class="col">
               <span class="anchor" id="rating"></span>
@@ -666,7 +666,7 @@
                 &nbsp;<span class="h5">5</span>
               </div>
               <hr class="my-1">
-              <div class="table-responsive-lg">
+              <div class="table-responsive-lg" style="max-height: 35.5rem; overflow: auto;">
                 <table class="table-borderless border-0 text-antinav">
                   <tbody>
                     {{- range $index, $rt := sort .Params.rating "name" -}}

@@ -3,7 +3,7 @@ title: "Torch"
 
 description: "A machine learning library and scientific computing framework for LuaJIT"
 
-image: "https://upload.wikimedia.org/wikipedia/en/f/f5/Torch_2014_logo.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/torch.png"
 
 status: ["Discontinued"]
 
@@ -66,7 +66,6 @@ source:
 note: |
   * Torch is not in active development. Check out actively maintained [ATen](https://github.com/pytorch/pytorch/tree/master/aten) (which is part of [PyTorch](/software/pytorch)).
   
-
 ---
   Torch is a scientific computing framework with support for [machine learning](/categories/machine-learning) algorithms. It provides N-dimensional arrays, with support for routines for indexing, slicing, transposing, etc.
   
@@ -74,3 +73,4 @@ note: |
   
   [Documentation](http://torch.ch/docs/getting-started.html#_) I [Wiki](https://github.com/torch/torch7/wiki/Cheatsheet) I [Mailing list](https://groups.google.com/forum/embed/?place=forum%2Ftorch7#!forum/torch7) I [Gitter chat](https://gitter.im/torch/torch7)
   
+

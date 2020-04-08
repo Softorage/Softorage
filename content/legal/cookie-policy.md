@@ -70,6 +70,8 @@ Please note that opting out will not affect the lawfulness of processing based o
 ## Where can you find more information about cookies
 
 You can learn more about cookies on the following third-party websites:
+* Cookies and You: https://www.cookiesandyou.com/
+* Learn About Cookies: https://www.learn-about-cookies.com/
 * AllAboutCookies: http://www.allaboutcookies.org/
 * Network Advertising Initiative: http://www.networkadvertising.org/
 

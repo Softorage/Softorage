@@ -3,11 +3,11 @@ title: "Apache SystemML"
 
 description: "A machine learning system with support for Java 8+, Scala 2.11+, Python 2.7/3.5+, Hadoop 2.6+, and Spark 2.1+"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/SystemML-Logo-Black.png/320px-SystemML-Logo-Black.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/apache-systemml.png"
 
 status: ["Active"]
 
-website: ["https://systemml.apache.org/"]
+website: "[https://systemml.apache.org/]"
 
 get_it:
   - from: "Authentic"
@@ -66,9 +66,11 @@ rating:
 
 note: |
   * [Apache Spark](/software/apache-spark/) is a prerequisite for installing Apache SystemML. Hence, [platforms for which Apache Spark is available](/software/apache-spark/#platform) are considered for Apache SystemML.
+  
 ---
   Apache SystemML is a [machine learning](/categories/machine-learning) system with support for Java 8+, Scala 2.11+, Python 2.7/3.5+, Hadoop 2.6+, and Spark 2.1+. It provides a workplace for [machine learning](/categories/machine-learning) using big data. As It runs on top of [Apache Spark](/software/apache-spark/), it automatically scales data, line by line, determining whether the code should be run on the driver or an [Apache Spark](/software/apache-spark/) cluster. Future releases may include additional deep learning with GPU capabilities such as importing and running neural network architectures and pre-trained models for training.
   
   Apache SystemML is customizable with R-like and Python-like languages. It also supports multiple execution modes, including Spark MLContext API, Spark Batch, Hadoop Batch, Standalone, and JMLC and automatic optimization based on data and cluster characteristics to ensure both efficiency and scalability.
   
   [Documentation](https://systemml.apache.org/documentation.html) I [Mailing lists](https://systemml.apache.org/community.html#mailing-list)
+

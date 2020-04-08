@@ -3,7 +3,7 @@ title: "Google Chrome"
 
 description: "A cross-platform web browser developed by Google"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Chrome_icon_%28September_2014%29.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/google-chrome.png"
 
 status: ["Active"]
 
@@ -13,25 +13,26 @@ get_it:
   - from: "Authentic"
     url: "https://www.google.com/chrome/"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://chrome.en.softonic.com/"
-  - from: "Uptodown"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Uptodown"
     url: "https://google-chrome.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
+    url: "https://chrome-64-bit.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://chrome-64-bit.en.softonic.com/"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/4718-google-chrome-for-windows.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -43,63 +44,62 @@ get_it:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/4718-google-chrome-for-windows.html"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Internet/Browsers/Google-Chrome.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/Internet/Browsers/Google-Chrome.shtml"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-google-chrome-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://www.filehorse.com/download-google-chrome-64/"
   - from: "FileHippo"
+    url: "https://filehippo.com/download_google_chrome/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://filehippo.com/download_google_chrome/"
   - from: "FileHippo"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/mac/download_google_chrome_for_mac/"
-  - from: "Softonic"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softonic"
     url: "https://chrome.en.softonic.com/mac"
-  - from: "Softonic"
     platform:
-      - name: "Android"
-        hardware: ["smptb"]
+      - name: "macOS"
+        hardware: ["dskp"]
         type: "official"
+  - from: "Softonic"
     url: "https://chrome.en.softonic.com/android"
-  - from: "Google Play Store"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.android.chrome"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://chrome.en.softonic.com/iphone"
-  - from: "Apple App Store"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
+  - from: "Apple App Store"
     url: "https://apps.apple.com/app/google-chrome/id535886823"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
 
 sysreq:
   -
@@ -302,3 +302,4 @@ note: |
   
   [Blog](https://blog.google/products/chrome/) I [Help Community](https://support.google.com/chrome/community) I [Enterprise Community](https://support.google.com/chrome/a/threads) I [API Index](https://developer.chrome.com/apps/api_index) I [Chrome & Chrome Web Store FAQ](https://developer.chrome.com/webstore/faq) I [Mobile Chrome FAQ](https://developer.chrome.com/multidevice/faq) I [Extensions FAQ](https://developer.chrome.com/extensions/faq)
   
+

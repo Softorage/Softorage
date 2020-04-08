@@ -3,7 +3,7 @@ title: "Internet Explorer"
 
 description: "A series of graphical web browsers developed by Microsoft"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Internet_Explorer_9_icon.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/internet-explorer.png"
 
 status: ["Discontinued"]
 
@@ -13,60 +13,60 @@ get_it:
   - from: "Authentic"
     url: "https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads"
   - from: "Microsoft Download Center | Authentic"
+    url: "https://www.microsoft.com/en-in/download/internet-explorer.aspx"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.microsoft.com/en-in/download/internet-explorer.aspx"
   - from: "FileHorse (IE 8/9/11)"
+    url: "https://www.filehorse.com/download-internet-explorer/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         type: "official"
-    url: "https://www.filehorse.com/download-internet-explorer/"
   - from: "Softonic (IE 7)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://internet-explorer-7.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic (IE 8)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://internet-explorer-8.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic (IE 9)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://internet-explorer-9.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic (IE 10)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://internet-explorer-10.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic (IE 11)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://internet-explorer-11-windows-7.en.softonic.com/"
-  - from: "FileHippo (IE 11)"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHippo (IE 11)"
     url: "https://filehippo.com/download_internet_explorer_windows_7/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
+    url: "https://internet-explorer-for-mac.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://internet-explorer-for-mac.en.softonic.com/mac"
 
 sysreq:
   -
@@ -240,10 +240,10 @@ rating:
   - name: "G2CROWD"
     rate: [2.4, 5]
     num: 160
-
 ---
   Internet Explorer(since v10) (formerly Microsoft Internet Explorer(v6 & earlier) and Windows Internet Explorer(v7, 8, 9), commonly abbreviated IE or MSIE) is a series of graphical [web browsers](/categories/web-browser/) developed by Microsoft and included in the Microsoft Windows line of operating systems. Internet Explorer was once the most widely used [web browser](/categories/web-browser/), attaining a peak of about 95% usage share by 2003. It is based on Trident layout engine and Chankra JavaScript engine. The browser is discontinued, but still maintained.
   
   On March 17, 2015, Microsoft announced that [Microsoft Edge](/software/microsoft-edge/) would replace Internet Explorer as the default browser on its Windows 10 devices.
   
   [Forum](https://social.technet.microsoft.com/Forums/ie/) I [Documentation](https://docs.microsoft.com/en-us/internet-explorer/) I [Lifecycle FAQ](https://support.microsoft.com/en-in/help/17454/lifecycle-faq-internet-explorer) I [FAQ for IT Pros](https://docs.microsoft.com/en-us/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
+

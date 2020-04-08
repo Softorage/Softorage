@@ -3,7 +3,7 @@ title: "Krita"
 
 description: "A free and open-source raster graphics editor, designed primarily for digital painting and animation purposes."
 
-image: "https://upload.wikimedia.org/wikipedia/commons/3/31/Calligra_Krita_icon.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/krita.png"
 
 status: ["Active"]
 
@@ -13,27 +13,14 @@ get_it:
   - from: "Authentic"
     url: "https://krita.org/en/download/krita-desktop/"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
     url: "https://www.filehorse.com/download-krita-64/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
   - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32", "x64"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "Linux"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
     url: "https://www.techspot.com/downloads/6842-krita.html"
-  - from: "FossHub"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -46,50 +33,63 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
+  - from: "FossHub"
     url: "https://www.fosshub.com/Krita.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
   - from: "Softonic"
+    url: "https://krita.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://krita.en.softonic.com/"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Krita.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Krita.shtml"
   - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://krita.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_krita/"
-  - from: "Malavida"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/krita/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
+    url: "https://linux.softpedia.com/get/Multimedia/Graphics/Krita-2254.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://linux.softpedia.com/get/Multimedia/Graphics/Krita-2254.shtml"
   - from: "Softonic"
+    url: "https://krita.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://krita.en.softonic.com/mac"
 
 sysreq:
   -
@@ -233,7 +233,6 @@ rating:
     rate: [7.5, 10]
     num: 35
     remarks: "Windows"
-
 ---
   Krita is a free-software and an open-source [raster graphics editor](/categories/raster-graphics-editor), designed primarily for digital painting and animation purposes. It features a low-distract UI, high-quality OpenGL accelerated canvas, color management support, advanced brush engine, non-destructive layers and masks, group-based layer management, vector artwork support and switchable customization profiles.
   

@@ -3,7 +3,7 @@ title: "Apache Spark"
 
 description: "Distributed general-purpose cluster-computing framework"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Spark-logo-192x100px.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/apache-spark.png"
 
 status: ["Active"]
 
@@ -92,7 +92,6 @@ rating:
   - name: "PAT RESEARCH"
     rate: [8.2, 10]
     num: 2
-
 ---
   > Apache Spark(TM) is an open-source distributed general-purpose cluster computing framework with (mostly) in-memory data processing engine that can do ETL, analytics, machine learning and graph processing on large volumes of data at rest (batch processing) or in motion (streaming processing) with rich concise high-level APIs for the programming languages: Scala, Python, Java, R, and SQL.
   > 
@@ -108,3 +107,4 @@ rating:
   4. [**GraphX**](https://spark.apache.org/graphx/) is Apache Spark's API for graphs and graph-parallel computation.
   
   [News](https://spark.apache.org/news/) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/apache-spark) I [Community/Mailing Lists](https://spark.apache.org/community.html) I [Documentation](https://spark.apache.org/documentation.html) I [FAQ](https://spark.apache.org/faq.html) I [IRC](https://webchat.freenode.net/?channels=apache-spark)
+

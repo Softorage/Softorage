@@ -3,7 +3,7 @@ title: "Audacity"
 
 description: "A free and open-source digital audio editor and recording application software"
 
-image: "https://upload.wikimedia.org/wikipedia/en/d/d7/Audacity_Logo_2-2-0.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/audacity.png"
 
 status: ["Active"]
 
@@ -13,51 +13,7 @@ get_it:
   - from: "Authentic"
     url: "https://www.audacityteam.org/download/"
   - from: "FossHub"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.fosshub.com/Audacity.html"
-  - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://audacity.en.softonic.com/"
-  - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://audacity.en.uptodown.com/windows"
-  - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://filehippo.com/download_audacity/"
-  - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://download.cnet.com/Audacity/3000-2170_4-10058117.html"
-  - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.filehorse.com/download-audacity/"
-  - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-Editors-Recorders/Audacity.shtml"
-  - from: "TechSpot"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -65,13 +21,57 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/3194-audacity.html"
-  - from: "Malavida"
+  - from: "Softonic"
+    url: "https://audacity.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Uptodown"
+    url: "https://audacity.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "FileHippo"
+    url: "https://filehippo.com/download_audacity/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "CNET"
+    url: "https://download.cnet.com/Audacity/3000-2170_4-10058117.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "FileHorse"
+    url: "https://www.filehorse.com/download-audacity/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-Editors-Recorders/Audacity.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/3194-audacity.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/audacity"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -

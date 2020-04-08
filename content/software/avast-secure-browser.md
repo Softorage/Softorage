@@ -3,7 +3,7 @@ title: "Avast Secure Browser"
 
 description: "A web browser developed by Avast that focuses on Internet security and privacy"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/0/08/Avast_Secure_Browser.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/avast-secure-browser.png"
 
 status: ["Active"]
 
@@ -13,53 +13,53 @@ get_it:
   - from: "Authentic"
     url: "https://www.avast.com/secure-browser"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/Avast-Secure-Browser/3000-2356_4-78042444.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_avast-secure-browser/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.techspot.com/downloads/6707-avast-secure-browser.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://secure-browser.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/Internet/Browsers/Avast-Secure-Browser.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.filehorse.com/download-avast-secure-browser/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://avast-secure-browser.en.uptodown.com/windows"
-  - from: "Malavida"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/avast-secure-browser/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -
@@ -134,7 +134,6 @@ rating:
     rate: [4, 5]
     num: 45
     remarks: "Windows"
-
 ---
   Avast Secure Browser is a free [Chromium](/software/chromium-web-browser/) based [web browser](/categories/web-browser/) developed by Avast that focuses on [internet security](/categories/security-software/) and privacy. Avast Secure Browser was originally called "SafeZone" before being revamped and rebranded as 'Avast Secure Browser' in early 2018. Before the revamp and rename, SafeZone's design was similar to that of the [Opera browser](/software/opera-web-browser/).
   

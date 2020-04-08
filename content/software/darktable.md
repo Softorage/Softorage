@@ -3,7 +3,7 @@ title: "darktable"
 
 description: "A free and open-source post-photography workflow application and raw developer"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Darktable_icon.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/darktable.png"
 
 status: ["Active"]
 
@@ -13,48 +13,48 @@ get_it:
   - from: "Authentic"
     url: "https://www.darktable.org/install/"
   - from: "FossHub"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.fosshub.com/darktable.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "Linux"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/darktable/linux/"
+    platform:
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
     url: "https://www.filehorse.com/download-darktable/"
-  - from: "Softpedia"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/darktable.shtml"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/darktable.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
+  - from: "Softpedia"
+    url: "https://linux.softpedia.com/get/Multimedia/Graphics/darktable-51811.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://linux.softpedia.com/get/Multimedia/Graphics/darktable-51811.shtml"
   - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/45193/darktable"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.macupdate.com/app/mac/45193/darktable"
 
 sysreq:
   -

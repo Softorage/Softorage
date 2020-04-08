@@ -3,7 +3,7 @@ title: "Avast Antivirus"
 
 description: "A family of internet security applications developed by Avast, which includes Avast Passwords, Avast Secureline VPN"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Avast_Software_white_logo.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/avast-antivirus.png"
 
 status: ["Active"]
 
@@ -13,113 +13,113 @@ get_it:
   - from: "Authentic"
     url: "https://www.avast.com/store"
   - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://www.techspot.com/downloads/223-avast-home-edition.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_avast_antivirus/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/Avast-Free-Antivirus/3000-2239_4-10019223.html"
-  - from: "Softonic"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softonic"
     url: "https://avast.en.softonic.com/"
-  - from: "FileHorse"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://www.filehorse.com/download-avast-antivirus/"
-  - from: "Softpedia"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softpedia"
     url: "https://www.softpedia.com/get/Antivirus/Avast-Home-Edition.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Google Play Store (Passwords)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.passwordmanager"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Google Play Store (VPN)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.vpn"
-  - from: "Softonic"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://avast.en.softonic.com/android"
-  - from: "MacUpdate"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.macupdate.com/app/mac/26644/avast"
-  - from: "FileHorse"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://mac.filehorse.com/download-avast-mac-security/"
   - from: "Softonic"
+    url: "https://avast.en.softonic.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/26644/avast"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
+    url: "https://mac.filehorse.com/download-avast-mac-security/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Softonic"
     url: "https://avast-2015.en.softonic.com/mac"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Apple App Store"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://apps.apple.com/app/avast-security-photo-vault/id1276551855"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Apple App Store (Passwords)"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://apps.apple.com/app/avast-passwords-secure-password/id1114498254"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Softonic (VPN)"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://avast.en.softonic.com/iphone"
-  - from: "Apple App Store (VPN)"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
+  - from: "Apple App Store (VPN)"
     url: "https://apps.apple.com/app/avast-secureline-vpn-proxy/id793096595"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
 
 sysreq:
   -
@@ -283,8 +283,8 @@ rating:
     rate: [4.7, 5]
     num: 13423
     remarks: "iOS"
-
 ---
   Avast Antivirus is a family of internet [security applications](/categories/security-software/) developed by Avast for Microsoft Windows, macOS, Android and iOS. The Avast Antivirus products include free and proprietary versions that provide [computer security](/categories/security-software/), [browser](/categories/web-browser/) security, [antivirus software](/categories/antivirus-software/), firewall, anti-phishing, antispyware, and anti-spam among other services.
   
   [Blog](https://blog.avast.com/) I [Forum](https://forum.avast.com/) I [Documentation](https://www.avast.com/download-documentation) I [FAQ](https://support.avast.com/article/Antivirus-FAQ/)
+

@@ -1,0 +1,196 @@
+{{ define "main" -}}
+
+<!-- Number of softwares in database -->
+{{- $soft_no := len (where site.RegularPages "Section" "==" "software") -}}
+{{- $categ_no := len site.Taxonomies.categories -}}
+
+<!-- Jumbotron -->
+
+<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex flex-column mb-1" style="height:100vh; background: url('https://cdn.statically.io/gl/Softorage/images/master/background-cover/brown-leopard.jpg') rgba(255, 255, 255, 0.85) no-repeat center; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.85);">
+  
+  <div style="height:3.5rem;"></div>
+  <span class="anchor" id="what_we_do_1"></span>
+  
+  <div class="container my-auto">
+    <div class="text-left tg">
+      <span class="h3">The internet is chock-full of awesome software, extremely useful information and <a class="text-reset" style="border-bottom: 3px dotted blue;" href="https://www.howtogeek.com/207692/yes-every-freeware-download-site-is-serving-crapware-heres-the-proof/" data-toggle="tooltip" data-placement="right" title="Click for more info">deadly malware</a>.</span>
+      <br class="mb-5">
+      <span class="">But, we've got your back!</span>
+    </div>
+  </div>
+  
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn bg-clr1" href="#what_we_do_2" role="button"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
+  </p>
+  
+  
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex flex-column mb-1" data-src="https://cdn.statically.io/gl/Softorage/images/master/background-cover/commitment.jpg" style="height:100vh; background: url('https://cdn.statically.io/gl/Softorage/images/master/background-cover/commitment.jpg') rgba(255, 255, 255, 0.85) no-repeat center 40%; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.75);">
+  <span class="anchor" id="what_we_do_2"></span>
+  <div style="height:3.5rem;"></div>
+ 
+  <div class="container my-auto">
+    <div class="text-left tg">
+      <span class="lead">We want people to get the software they want with confidence. The confidence that they are safe. The confidence that they are gently protected from malware when they get a fabulous software on their computer.</span>
+      <br class="mb-3">
+      <span class="h3">That confidence, we want to build.</span>
+    </div>
+  </div>
+  
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn bg-clr1" href="#what_we_do_3" role="button"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
+  </p>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex flex-column mb-1" data-src="https://cdn.statically.io/gl/Softorage/images/master/background-cover/woman-coffee.jpg" style="height:100vh; background: url('https://cdn.statically.io/gl/Softorage/images/master/background-cover/woman-coffee.jpg') rgba(255, 255, 255, 0.85) no-repeat center 40%; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.7);">
+  <span class="anchor" id="what_we_do_3"></span>
+  <div style="height:3.5rem;"></div>
+ 
+  <div class="container my-auto">
+    <div class="text-left tg">
+      <span class="h3">With authentic download links that point to official software website, you stay pleasantly safe, and enjoy the software you wish, </span>
+      <br class="mb-2">
+      <span class="">along with a sip of your favorite coffee.</span>
+    </div>
+  </div>
+  
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn bg-clr1" href="#what_we_do_4" role="button"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
+  </p>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex flex-column mb-1" data-src="https://cdn.statically.io/gl/Softorage/images/master/background-cover/white-and-brown-eggs.jpg" style="height:100vh; background: url('https://cdn.statically.io/gl/Softorage/images/master/background-cover/white-and-brown-eggs.jpg') no-repeat center 35%; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.6);">
+  <span class="anchor" id="what_we_do_4"></span>
+  <div style="height:3.5rem;"></div>
+
+  <div class="container my-auto">
+    <div class="text-left tg">
+      <span class="h3">Objective presentation of software related information facilitates easy and efficient comparison among different software.</span>
+    </div>
+  </div>
+  
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn bg-clr1" href="#what_we_do_5" role="button"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
+  </p>
+</div>
+
+<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex flex-column mb-1" data-src="https://cdn.statically.io/gl/Softorage/images/master/background-cover/the-flash.jpg" style="height: 100vh; background: url('https://cdn.statically.io/gl/Softorage/images/master/background-cover/the-flash.jpg') no-repeat center 70%; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.78);">
+  
+  <span class="anchor" id="what_we_do_5"></span>
+  <div style="height:3.5rem;"></div>
+  
+  <div class="container my-auto">
+    <div class="text-left tg">
+      <span class="h3">Built with <span style="border-bottom: 3px double blue;" data-toggle="tooltip" data-placement="bottom" title="Fastest static site generator out there!">Hugo</span>, hosted on <span style="border-bottom: 3px double blue;" data-toggle="tooltip" data-placement="bottom" title="Complete DevOps platform, delivered as a single application">GitLab</span> as <a class="text-reset" style="border-bottom: 3px dotted blue;" href="https://gitlab.com/Softorage/softorage.gitlab.io/">a public open source project</a>, and served via <span style="border-bottom: 3px double blue;" data-toggle="tooltip" data-placement="bottom" title="Ultra-fast, agile, secure static and dynamic content delivery">Cloudflare CDN</span>.</span>
+      <br class="mb-5">
+      <span class="lead">Yep, we are <em>lightning fast!</em></span>
+    </div>
+  </div>
+  
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn bg-clr1" href="#what_we_do_6" role="button"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
+  </p>
+  
+</div>
+
+
+<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex flex-column" data-src="https://cdn.statically.io/gl/Softorage/images/master/background-cover/dog-with-flower.jpg" style="height: 100vh; background: url('https://cdn.statically.io/gl/Softorage/images/master/background-cover/dog-with-flower.jpg') no-repeat center 10%; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.8);">
+  
+  <span class="anchor" id="what_we_do_6"></span>
+  <div style="height:3.5rem;"></div>
+  
+  <div class="container my-auto">
+    <div class="text-left tg">
+      <span class="h3">In your service, to help you stay safe from malware. Always.</span>
+      <br class="mb-5">
+      <span class="">Join us on our mission to help everyone stay genially safe.</span>
+    </div>
+  </div>
+  
+  <!--hr class="my-4">
+  <p class="lead">
+    
+    <a class="btn bg-clr1" href="#what_we_do_2" role="button"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
+    
+  </p-->
+</div>
+<!-- Features -->
+<!-- It's open! -->
+<!--div class="container-fluid bg-antinav-light py-3">
+<div class="container bg-nav rounded shadow-sm py-5">
+  <span class="anchor" id="its_open"></span>
+  <div class="container py-5">
+    <div class="row text-center py-5">
+      <div class="col-md-5 align-self-center">
+        <span class="text-clr1 p-5 rounded" style="font-size:5.5rem;">{{ site.Data.icons.lockOpen | safeHTML }}</span>
+      </div>
+      <div class="col-md-7 text-antinav">
+        <div class="display-4">Open!</div>
+        <div class="my-5"></div>
+        <p>Licensed under Apache license 2.0, one of the most permissive licenses</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Number of softwares >
+<div class="container bg-nav rounded shadow-sm py-5">
+  <div class="container py-5">
+    <div class="row text-center py-5">
+      <div class="col-md-5 align-self-center">
+        <span class="text-clr1 p-5 rounded" style="font-size:5.5rem;">{{ site.Data.icons.lineChart | safeHTML }}</span>
+      </div>
+      <div class="col-md-7 text-antinav">
+        <div class="display-4">{{ sub $soft_no 1 }} and counting</div>
+        <div class="my-5"></div>
+        <p>{{ sub $soft_no 1 }}+ software from over <a href="/categories">{{ $categ_no }} categories</a> have been added to directory till now!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Innovative arrangement >
+<div class="container bg-nav rounded shadow-sm py-5">
+  <div class="container py-5">
+    <div class="row text-center py-5">
+      <div class="col-md-5 align-self-center">
+        <span class="text-clr1 p-5 rounded" style="font-size:5.5rem;">{{ site.Data.icons.bulb | safeHTML }}</span>
+      </div>
+      <div class="col-md-7 text-antinav">
+        <div class="display-4">Innovative</div>
+        <div class="my-5"></div>
+        <p>Objectively arranged specifications allow clear comparison between software</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Fast >
+<div class="container bg-nav rounded shadow-sm py-5 mb-5">
+  <div class="container py-5">
+    <div class="row text-center py-5">
+      <div class="col-md-5 align-self-center">
+        <span class="text-clr1 p-5 rounded" style="font-size:5.5rem;">{{ site.Data.icons.bolt | safeHTML }}</span>
+      </div>
+      <div class="col-md-7 text-antinav">
+        <div class="display-4">Fast</div>
+        <div class="my-5"></div>
+        <p>Powered by Hugo and hosted by GitLab, it works as fast as lightning!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+</div-->
+
+{{- end }}
+{{ define "script" }}
+{{- $js_toadjs := resources.Get "js/toad.min.js" }}
+{{- $js_toadjs.Content | safeJS }}
+{{ end }}

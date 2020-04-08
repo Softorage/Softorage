@@ -3,7 +3,7 @@ title: "Blender"
 
 description: "3D modeling software written in C, C++, and Python containing cloth, hair, fluid, particle, and rigid body simulation techniques."
 
-image: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/blender.png"
 
 status: ["Active"]
 
@@ -13,47 +13,48 @@ get_it:
   - from: "Authentic"
     url: "https://www.blender.org/download/"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32"]
-        type: "official"
     url: "https://blender.en.softonic.com/"
-  - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
-    url: "https://blender-64bits.en.softonic.com/"
-  - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://filehippo.com/download_blender/"
-  - from: "CNET"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://download.cnet.com/Blender/3000-6677_4-10514553.html"
+  - from: "Softonic"
+    url: "https://blender-64bits.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
+  - from: "FileHippo"
+    url: "https://filehippo.com/download_blender/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
+    url: "https://download.cnet.com/Blender/3000-6677_4-10514553.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        arch: ["x64"]
+        arch: ["x32"]
         type: "official"
+  - from: "CNET"
     url: "https://download.cnet.com/Blender-64-bit/3000-6677_4-75183932.html"
-  - from: "FileHorse"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
+  - from: "FileHorse"
     url: "https://www.filehorse.com/download-blender-64/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/638-blender.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -67,31 +68,30 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         type: "official"
-    url: "https://www.techspot.com/downloads/638-blender.html"
   - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://blender.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/blender/"
-  - from: "Softpedia"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Blender.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/14085/blender"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.macupdate.com/app/mac/14085/blender"
 
 sysreq:
   -
@@ -269,9 +269,9 @@ rating:
   - name: "TechSpot"
     rate: [4.7, 5]
     num: 32
-
 ---
   Blender is a professional, free and open-source [3D computer graphics](/categories/3d-computing-graphics) software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender's features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.
   
   [Reference Manual](https://docs.blender.org/manual/en/latest/index.html) I [News](https://www.blender.org/news/) I [Community](https://www.blender.org/community/) I [Stack Exchange(QA)](https://blender.stackexchange.com/) I [Wiki](https://wiki.blender.org/wiki/Main_Page) I [Discord(community-managed)](https://discordapp.com/invite/blender) I [Developers Blog](https://code.blender.org/) I [Developers Forum](https://devtalk.blender.org/) I [IRC](https://wiki.blender.org/wiki/Communication/Contact/IRC)
   
+

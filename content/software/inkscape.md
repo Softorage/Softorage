@@ -3,7 +3,7 @@ title: "Inkscape"
 
 description: "A free and open-source vector graphics editor which can be used to create or edit vector graphics such as illustrations, diagrams, line arts, charts, logos and complex paintings"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Inkscape_Logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/inkscape.png"
 
 status: ["Active"]
 
@@ -13,75 +13,75 @@ get_it:
   - from: "Authentic"
     url: "https://inkscape.org/release/"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://inkscape.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_inkscape/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32"]
-        type: "official"
     url: "https://www.filehorse.com/download-inkscape-32/"
-  - from: "FossHub"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32", "x64"]
-        type: "official"
-    url: "https://www.fosshub.com/Inkscape.html"
-  - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32", "x64"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "Linux"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.techspot.com/downloads/2306-inkscape.html"
-  - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://inkscape.en.uptodown.com/windows"
-  - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.malavida.com/en/soft/inkscape/"
-  - from: "Softpedia"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Inkscape.shtml"
+  - from: "FossHub"
+    url: "https://www.fosshub.com/Inkscape.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+  - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/2306-inkscape.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Uptodown"
+    url: "https://inkscape.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/inkscape/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Inkscape.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
+  - from: "Softpedia"
+    url: "https://linux.softpedia.com/get/Artistic-Software/Inkscape-61.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://linux.softpedia.com/get/Artistic-Software/Inkscape-61.shtml"
   - from: "Softonic"
+    url: "https://inkscape.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://inkscape.en.softonic.com/mac"
 
 developer: ["The Inkscape team"]
 

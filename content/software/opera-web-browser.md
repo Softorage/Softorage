@@ -3,7 +3,7 @@ title: "Opera (Web Browser)"
 
 description: "A freeware Chromium-based web browser developed by Opera Software; with variants Opera Mini, Opera Touch"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/4/49/Opera_2015_icon.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/opera-web-browser.png"
 
 status: ["Active"]
 
@@ -13,18 +13,19 @@ get_it:
   - from: "Authentic"
     url: "https://www.opera.com/hi/download"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_opera/"
-  - from: "Softpedia"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Opera-for-Windows-without-Java.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/393-opera-browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -36,80 +37,79 @@ get_it:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/393-opera-browser.html"
   - from: "Softonic"
+    url: "https://opera.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://opera.en.softonic.com/"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-opera-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.filehorse.com/download-opera-32/"
   - from: "MacUpdate"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.macupdate.com/app/mac/6297/opera"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://mac.filehorse.com/download-opera/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/mac/download_opera_for_mac/"
-  - from: "Softonic"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://opera.en.softonic.com/mac"
-  - from: "Google Play Store (Opera)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://play.google.com/store/apps/details?id=com.opera.browser"
-  - from: "Google Play Store (Opera Touch)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://play.google.com/store/apps/details?id=com.opera.touch"
-  - from: "Google Play Store (Opera Mini)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://play.google.com/store/apps/details?id=com.opera.mini.native"
   - from: "Softonic"
+    url: "https://opera.en.softonic.com/mac"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Google Play Store (Opera)"
+    url: "https://play.google.com/store/apps/details?id=com.opera.browser"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Google Play Store (Opera Touch)"
+    url: "https://play.google.com/store/apps/details?id=com.opera.touch"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Google Play Store (Opera Mini)"
+    url: "https://play.google.com/store/apps/details?id=com.opera.mini.native"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Softonic"
     url: "https://opera.en.softonic.com/android"
-  - from: "Uptodown"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Uptodown"
     url: "https://opera-browser.en.uptodown.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Apple App Store"
+    url: "https://apps.apple.com/app/id1411869974"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
-    url: "https://apps.apple.com/app/id1411869974"
 
 sysreq:
   -
@@ -311,7 +311,6 @@ rating:
     rate: [3.9, 5]
   - name: "Tom's Guide"
     rate: [3, 5]
-
 ---
   Opera is a freeware [web browser](/categories/web-browser) developed by Opera Software. Opera is a [Chromium](/software/chromium-web-browser/)-based browser using the Blink layout engine.
   
@@ -321,3 +320,4 @@ rating:
         
   [Blog/News](https://blogs.opera.com/news/) I [Blog Desktop](https://blogs.opera.com/desktop/) I [Blog Mobile](https://blogs.opera.com/mobile/) I [Blog Security](https://blogs.opera.com/security/) I [Forum](https://forums.opera.com/) I [Help](https://help.opera.com/en/get-started/) I [FAQ](https://help.opera.com/en/faq/)
   
+

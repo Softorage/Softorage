@@ -3,7 +3,7 @@ title: "OpenCV"
 
 description: "A library of programming functions mainly aimed at real-time computer vision"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/opencv.png"
 
 status: ["Active"]
 
@@ -106,6 +106,7 @@ rating:
 
 note: |
   * [System requirements](#sysreq): System optimal for you depends on your use.
+  
 ---
   OpenCV (Open Source Computer Vision Library) is an open source [computer vision](/categories/computer-vision) and [machine learning](/categories/machine-learning) software library. OpenCV was built to provide a common infrastructure for [computer vision](/categories/computer-vision) applications and to accelerate the use of machine perception in the commercial products.
   
@@ -115,3 +116,4 @@ note: |
   OpenCV supports the [deep learning](/categories/deep-learning) frameworks [TensorFlow](/software/tensorflow/), [Torch](/software/torch/)/[PyTorch](/software/pytorch/) and [Caffe](/software/caffe/).
   
   [News](https://opencv.org/news.html) I [Q&A Forum](http://answers.opencv.org/questions/) I [Documentation](https://docs.opencv.org/) I [Wiki](https://github.com/opencv/opencv/wiki) I [IRC](https://webchat.freenode.net/?channels=opencv)
+

@@ -36,6 +36,41 @@ color: $antinav;
 font-family: 'Roboto', sans-serif;
 }
 
+/*
+@keyframes backg-fadein {
+from { box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 1); }
+to   { box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.85); }
+}
+
+.backg-fadein {
+animation-name: backg-fadein;
+animation-duration: 5s;
+}
+*/
+
+/*.landing-cover {
+background: url('/flash-the-flash.jpg') no-repeat center;
+  // library background: url('https://images.unsplash.com/photo-1554900773-fc4c7ccbe0fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80') no-repeat center;
+  //background: url('https://images.unsplash.com/photo-1578593173954-d5d3ced862e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1363&q=80') no-repeat center;
+background-size: cover;
+position: absolute;
+text-align: center;
+height: 100vh;
+width: 100%;
+//top: 0;
+//left: 0;
+}
+
+.white-overlay {
+position: absolute;
+background-color: #ffffff;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+opacity: 0.85;
+}*/
+
 // https://codepen.io/Bluetidepro/pen/GkpEa : slightly modified
 .rating-stars {
   unicode-bidi: bidi-override;
@@ -104,7 +139,7 @@ background: mix($danger, $nav, 25%);
 }
 
 // Enable animation for navbar and font awesome
-.navbar, a, .fas, .fab, .far {
+.navbar, a, .fas, .fab, .far, .type-search, tr {
 transition: all 0.3s ease 0s;
 }
 
@@ -126,8 +161,12 @@ box-shadow: inset 0 2px 3px 1px #ddd;
 cursor: pointer;
 }
 
+input[type="search"]:hover, input[type="search"]:focus {
+box-shadow: none;
+}
+
 //
-input[type="url"]:hover, input[type="url"]:focus, input[type="text"]:hover, input[type="text"]:focus, input[type="search"]:hover, input[type="search"]:focus, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
+input[type="url"]:hover, input[type="url"]:focus, input[type="text"]:hover, input[type="text"]:focus, .type-search:hover, .type-search:focus-within, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
 @extend .shadow;
 transition: all 0.3s ease 0s;
 }

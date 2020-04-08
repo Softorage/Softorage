@@ -3,7 +3,7 @@ title: "FontForge"
 
 description: "A font editor which supports many common font formats."
 
-image: "https://upload.wikimedia.org/wikipedia/commons/2/28/FontForge_Logo%2C_2015.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/fontforge.png"
 
 status: ["Active"]
 
@@ -15,17 +15,17 @@ get_it:
   - from: "GitHub Releases | Authentic"
     url: "https://github.com/fontforge/fontforge/releases"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Others/Font-Utils/FontForge.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.softpedia.com/get/Others/Font-Utils/FontForge.shtml"
   - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/48689/fontforge"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.macupdate.com/app/mac/48689/fontforge"
 
 sysreq:
   -
@@ -107,7 +107,6 @@ rating:
     rate: [4.3, 5]
     num: 7
     remarks: "macOS"
-
 ---
   FontForge is a [font editor](/categories/font-editor) which supports many common font formats. To facilitate automated format conversion and other repetitive tasks, FontForge implements two scripting languages: its own language and Python. FontForge can run scripts from its GUI, from the command line, and also offers its features as a Python module so it can be integrated into any Python program.
   

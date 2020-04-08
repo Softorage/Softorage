@@ -3,7 +3,7 @@ title: "Ardour"
 
 description: "A hard disk recorder and digital audio workstation application. It runs on Linux, MacOS, FreeBSD and Microsoft Windows."
 
-image: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Ardour-icon.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/ardour.png"
 
 status: ["Active"]
 
@@ -13,17 +13,17 @@ get_it:
   - from: "Authentic"
     url: "https://community.ardour.org/download"
   - from: "Softonic"
+    url: "https://ardour.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://ardour.en.softonic.com/"
   - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/ardour/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.malavida.com/en/soft/ardour/mac/"
 
 sysreq:
   -

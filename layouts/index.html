@@ -1,127 +1,351 @@
 {{ define "main" -}}
 
-<!-- Number of softwares in database -->
-{{- $soft_no := len (where site.RegularPages "Section" "==" "software") -}}
-{{- $categ_no := len site.Taxonomies.categories -}}
-
 <!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid text-center bg-nav d-flex flex-column" style="height:100vh;">
+<!--div class="landing-cover">
+  <div class="white-overlay"></div>
+</div-->
+
+<div class="jumbotron jumbotron-fluid text-center d-flex flex-column" style="height:100vh; background: url('https://cdn.statically.io/gl/Softorage/images/master/background-cover/books-on-shelve.jpg') no-repeat center 5%; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.85);">
+
   <div style="height:3.5rem;"></div>
   <div class="container my-auto">
     
     <div class="row">
     
-    <div class="col-md-8">
-      <div class="text-left tg">
-        <h1 class="display-4">The Software Directory.</h1>
-        <br>
-        <span class="lead">Concise &amp; Elegant.</span>
+      <div class="col-md-8">
+        <div class="text-left tg">
+          <span class="h2">Get the software you want and the information you need.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="display-4">Carefree.</span>
+          <br class="mb-5">
+          <span class="lead">Softorage. Concise &amp; Elegant.</span>
+        </div>
       </div>
-    </div>
-    
-    <div class="col-md-4">
-      <br>
-      <form action="/search/" method="get">
-      <input type="search" class="bg-nav border-0 form-control my-2 shadow-sm" name="s" placeholder="Search" autofocus>
-      </form>
-      <!-- <input type="submit">
-      <p class="lead tg">{{ site.Params.tagline }}</p> -->
-    </div>
+      
+      <div class="col-md-4">
+        <br>
+        <p class="lead">
+          <a class="btn bg-clr1 mx-3" href="/search/" role="button" data-toggle="tooltip" data-placement="bottom" title="Search"><span class="text-nav">{{ site.Data.icons.search | safeHTML }}</span></a>&nbsp;
+          <a class="btn main-gradient mx-3" href="#explore" role="button" data-toggle="tooltip" data-placement="bottom" title="Explore"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
+          <a class="btn bg-clr2 mx-3" href="/contribute/" role="button" data-toggle="tooltip" data-placement="bottom" title="Contribute"><span class="text-nav">{{ site.Data.icons.help | safeHTML }}</span></a>
+        </p>
+        <!-- <input type="submit">
+        <p class="lead tg">{{ site.Params.tagline }}</p> -->
+      </div>
     
     </div>
     <noscript class="alert alert-warning"><b>Warning:</b> Softorage may not work at its best if JavaScript is disabled.</noscript>
     
+  </div>
+  
+</div>
+
+
+<div class="container-fluid">
+  <div style="height:3.5rem;"></div>
+  <span class="anchor" id="explore"></span>
+  <div class="container py-4 text-center">
+    <a href="{{ site.BaseURL }}what-we-do/" target="_blank" style="outline:none;" class="text-reset text-decoration-none" data-toggle="tooltip" data-placement="right" data-html="true" title="<span class='small'>that helps you keep away from malware!&nbsp;Click to find out how</span>"><span class="h2 tg">The Software Directory.</span></a>
+  </div>
+  
+  <div class="container-fluid py-1">
+    <div class="card-deck mb-3">
+      <div class="card">
+        <div class="card-header text-center bg-clr1-light h5 border-0">
+          Utilities
+        </div>
+        <div class="card-body" style="overflow-x: auto;">
+          
+          <!--h2 class="card-title h4 m-0">Developer</h2 -->
+          
+          <p class="card-text mt-3">
+            
+            <table class="table-borderless table-hover border-0 text-antinav">
+              <tbody>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/balenaetcher/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/balenaetcher.png?h=40" alt="balenaEtcher logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  balenaEtcher
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/ccleaner/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/ccleaner.png?h=40" alt="CCleaner logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  CCleaner
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/winrar/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/winrar.png?h=40" alt="WinRAR logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  WinRAR
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/teracopy/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/teracopy.png?h=40" alt="TeraCopy logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  TeraCopy
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </p>
+        </div>
+        <!--div class="card-footer text-center bg-clr2-light text-muted border-0">
+          Footer
+        </div-->
+      </div>
+      
+      <div class="card">
+        <div class="card-header text-center bg-clr1-light h5 border-0">
+          Browsers
+        </div>
+        <div class="card-body" style="overflow-x: auto;">
+          
+          <!--h2 class="card-title h4 m-0">Developer</h2 -->
+          
+          <p class="card-text mt-3">
+            
+            <table class="table-borderless table-hover border-0 text-antinav">
+              <tbody>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/mozilla-firefox/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/mozilla-firefox.png?h=40" alt="Mozilla Firefox logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  Mozilla Firefox
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/google-chrome/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/google-chrome.png?h=40" alt="Google Chrome logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  Google Chrome
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/uc-browser/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/uc-browser.png?h=40" alt="UC Browser logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  UC Browser
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/brave-web-browser/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/brave-web-browser.png?h=40" alt="Brave logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  Brave
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </p>
+        </div>
+        <!--div class="card-footer text-center bg-clr2-light text-muted border-0">
+          Footer
+        </div-->
+      </div>
+      
+      <div class="card">
+        <div class="card-header text-center bg-clr1-light h5 border-0">
+          Multimedia
+        </div>
+        <div class="card-body" style="overflow-x: auto;">
+          
+          <!--h2 class="card-title h4 m-0">Developer</h2 -->
+          
+          <p class="card-text mt-3">
+            
+            <table class="table-borderless table-hover border-0 text-antinav">
+              <tbody>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/vlc-media-player/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/vlc-media-player.png?h=40" alt="VLC Media Player logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  VLC Media Player
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/adobe-flash-player/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/adobe-flash-player.png?h=40" alt="Adobe Flash Player logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  Adobe Flash Player
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/audacity/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/audacity.png?h=40" alt="Audacity logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  Audacity
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/lmms/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/lmms.png?h=40" alt="LMMS logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  LMMS
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </p>
+        </div>
+        <!--div class="card-footer text-center bg-clr2-light text-muted border-0">
+          Footer
+        </div-->
+      </div>
+      
+      <div class="card">
+        <div class="card-header text-center bg-clr1-light h5 border-0">
+          AI, ML & DL
+        </div>
+        <div class="card-body" style="overflow-x: auto;">
+          
+          <!--h2 class="card-title h4 m-0">Developer</h2 -->
+          
+          <p class="card-text mt-3">
+            
+            <table class="table-borderless table-hover border-0 text-antinav">
+              <tbody>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/tensorflow/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/tensorflow.png?h=40" alt="TensorFlow logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  TensorFlow
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/eclipse-deeplearning4j/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/eclipse-deeplearning4j.png?h=40" alt="Eclipse Deeplearning4j logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  Eclipse Deeplearning4j
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/apache-systemml/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/apache-systemml.png?h=40" alt="Apache SystemML logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  Apache SystemML
+                  </td>
+                </tr>
+                <tr class="rounded-lg" style="cursor: pointer" onclick="window.location='{{ site.BaseURL }}software/scikit-learn/';">
+                  <td class="text-center py-2">
+                  <img style="height:2.5rem;" src="https://cdn.statically.io/gl/Softorage/images/master/software-logo/scikit-learn.png?h=40" alt="scikit-learn logo">
+                  </td>
+                  <td class="font-weight-bold py-2">
+                  scikit-learn
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </p>
+        </div>
+        <!--div class="card-footer text-center bg-clr2-light text-muted border-0">
+          Footer
+        </div-->
+      </div>
+      
+      <!--div class="card">
+        <div class="card-header text-center bg-clr1-light h5 border-0">
+          Security & Privacy
+        </div>
+        <div class="card-body">
+          
+          <!--h2 class="card-title h4 m-0">Developer</h2 >
+          
+          <p class="card-text mt-3">
+           
+          </p>
+        </div>
+        <!--div class="card-footer text-center bg-clr2-light text-muted border-0">
+          Footer
+        </div>
+      </div-->
+      
+      <!--div class="card">
+        <div class="card-header text-center bg-clr1-light h5 border-0">
+          Business & Work
+        </div>
+        <div class="card-body">
+          
+          <!--h2 class="card-title h4 m-0">Developer</h2 >
+          
+          <p class="card-text mt-3">
+           
+          </p>
+        </div>
+        <!--div class="card-footer text-center bg-clr2-light text-muted border-0">
+          Footer
+        </div>
+      </div-->
+    </div>
     
+    
+    <!--
+    live usb creator
+    
+    Graphics: raster graphics editor/vector graphics editor/3d computing graphics
+    
+    machine learning
+    DAW: 
+    
+    
+    Utility
+    
+    
+    
+    web browser
+    Security: Security Software
+    Business & Work: Office Suite, document viewer
+    Internet: BitTorrent Client
+    Multimedia: media player, runtime System, Digital Audio Editor, Digital Audio Workstation
+    
+    Utility: file archiver, utility, 
+    
+    
+    
+    align as per categs on say softonic, and in them have those softs and categs to show first that have highest impressions 
+    -->
   </div>
-  <hr class="my-4">
-  <p class="lead">
-    <a class="btn bg-clr1-light" href="/search/" role="button"><span class="text-clr1">{{ site.Data.icons.search | safeHTML }}</span>&nbsp; <span class="text-clr1">Search</span></a>&nbsp;
-    <a class="btn main-gradient-light" href="#its_open" role="button"><span class="text-clr1">{{ site.Data.icons.down | safeHTML }}</span>&nbsp; <span class="tg">Explore</span></a>&nbsp;
-    <a class="btn bg-clr2-light" href="/contribute/" role="button"><span class="text-clr2">{{ site.Data.icons.help | safeHTML }}</span>&nbsp; <span class="text-clr2">Contribute</span></a>
-  </p>
-</div>
-<!-- Features -->
-<!-- It's open! -->
-<div class="container-fluid bg-antinav-light py-3">
-<div class="container bg-nav rounded shadow-sm py-5">
-  <span class="anchor" id="its_open"></span>
-  <div class="container py-5">
-    <div class="row text-center py-5">
-      <div class="col-md-5 align-self-center">
-        <span class="text-clr1 p-5 rounded" style="font-size:5.5rem;">{{ site.Data.icons.lockOpen | safeHTML }}</span>
-      </div>
-      <div class="col-md-7 text-antinav">
-        <div class="display-4">Open!</div>
-        <div class="my-5"></div>
-        <p>Licensed under Apache license 2.0, one of the most permissive licenses</p>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<!-- Number of softwares -->
-<div class="container bg-nav rounded shadow-sm py-5">
-  <div class="container py-5">
-    <div class="row text-center py-5">
-      <div class="col-md-5 align-self-center">
-        <span class="text-clr1 p-5 rounded" style="font-size:5.5rem;">{{ site.Data.icons.lineChart | safeHTML }}</span>
-      </div>
-      <div class="col-md-7 text-antinav">
-        <div class="display-4">{{ sub $soft_no 1 }} and counting</div>
-        <div class="my-5"></div>
-        <p>{{ sub $soft_no 1 }}+ software from over <a href="/categories">{{ $categ_no }} categories</a> have been added to directory till now!</p>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<!-- Innovative arrangement -->
-<div class="container bg-nav rounded shadow-sm py-5">
-  <div class="container py-5">
-    <div class="row text-center py-5">
-      <div class="col-md-5 align-self-center">
-        <span class="text-clr1 p-5 rounded" style="font-size:5.5rem;">{{ site.Data.icons.bulb | safeHTML }}</span>
-      </div>
-      <div class="col-md-7 text-antinav">
-        <div class="display-4">Innovative</div>
-        <div class="my-5"></div>
-        <p>Objectively arranged specifications allow clear comparison between software</p>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<!-- Fast -->
-<div class="container bg-nav rounded shadow-sm py-5 mb-5">
-  <div class="container py-5">
-    <div class="row text-center py-5">
-      <div class="col-md-5 align-self-center">
-        <span class="text-clr1 p-5 rounded" style="font-size:5.5rem;">{{ site.Data.icons.bolt | safeHTML }}</span>
-      </div>
-      <div class="col-md-7 text-antinav">
-        <div class="display-4">Fast</div>
-        <div class="my-5"></div>
-        <p>Powered by Hugo and hosted by GitLab, it works as fast as lightning!</p>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-</div>
+</div>  
+
 <!-- Made with lots of love -->
-<div class="container-fluid bg-clr1-light shadow-sm position-relative py-5">
-  <div class="container py-5">
-    <div class="container text-center py-5">
+<div class="d-flex container-fluid bg-clr1-light pt-5" data-src="https://cdn.statically.io/gl/Softorage/images/master/background-cover/love-code.jpg" style="height: 100vh; background: url('https://cdn.statically.io/gl/Softorage/images/master/background-cover/love-code.jpg') no-repeat center 18%; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.78);">
+  <div class="container text-center py-5 my-auto">
+    <!--div class="container text-center py-5">
       <div class="my-5">
         <span class="fa-4x text-clr1 align-middle m-3">{{ site.Data.icons.table | safeHTML }}</span>
         <span class="text-antinav align-middle">{{ site.Data.icons.plus | safeHTML }}</span>
         <span class="fa-4x text-clr2 align-middle m-3">{{ site.Data.icons.code | safeHTML }}</span>
         <span class="text-antinav align-middle">{{ site.Data.icons.plus | safeHTML }}</span>
         <span class="fa-4x text-danger align-middle m-3">{{ site.Data.icons.heart | safeHTML }}</span>
-      </div>
+      </div-->
       <div class="display-4 text-antinav">Made with lots of love</div>
-    </div>
+    <!--/div-->
   </div>
 </div>
 
 {{- end }}
+{{ define "script" }}
+{{- $js_toadjs := resources.Get "js/toad.min.js" }}
+{{- $js_toadjs.Content | safeJS }}
+{{ end }}

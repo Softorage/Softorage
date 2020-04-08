@@ -7,15 +7,60 @@
   is changed to
     <nav class="navbar {{ if ne $.Title "Search" -}} navbar-expand {{- else -}} navbar-expand-lg {{- end }} navbar-light fixed-top">
   -->
-  */}}
-  <nav class="navbar {{ if ne $.Title "Search" -}} navbar-expand {{- else -}} navbar-expand-lg {{- end }} navbar-light fixed-top">
+    */}}
+  {{ $not_search_page := true }}
+  {{ if ne $.Title "Search" -}}
+  {{ $not_search_page = true }}
+  {{ else }}
+  {{ $not_search_page = false }}
+  {{ end }}
+  
+  <nav class="navbar {{ if $not_search_page -}} navbar-expand {{- else -}} navbar-expand-lg {{- end }} navbar-light fixed-top" style="opacity: 0.93;">
     <a class="navbar-brand bg-nav rounded px-3" href="{{ site.BaseURL }}"><span class="tg"><span class="brand">{{ site.Title }}</span>&nbsp;<sup><span class="small text-clr2">beta</span></sup></span></a>
+    
+    <div class="d-inline-block bg-nav border-0 my-2 shadow-sm flex-fill type-search rounded">
+      
+        <div class="row">
+          <div class="col-1 py-2">
+            <span class="pl-3">{{ site.Data.icons.search | safeHTML }}</span>
+          </div>
+          <div class="col-11">
+            {{ if $not_search_page -}}
+            <form action="/search/" method="get">
+              <input type="search" class="bg-nav border-0 form-control" name="s" placeholder="Search the Softorage">
+            </form>
+            {{ else }}
+              <!-- 
+              wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
+              see: https://github.com/javve/list.js/issues/358
+              -->
+              <input type="search" id="search_page_main_search" class="bg-nav border-0 form-control" name="s" placeholder="Search this page">
+            {{ end }}
+          </div>
+        </div>
+      
+    </div>
+    
     <a class="navbar-toggler border-0" role="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="text-antinav">{{ site.Data.icons.bars | safeHTML }}</span>
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        
+        {{ if $not_search_page -}}
+        {{ else }}
+        <li class="nav-item m-1 my-2">
+          <button type="button" class="btn bg-nav" data-toggle="modal" title="Filter" data-target="#filter-modal">
+            <span class="text-clr2 small">{{ site.Data.icons.filter | safeHTML }}</span>
+          </button>
+        </li>
+        <li class="nav-item m-1 my-2">
+          <span class="btn bg-nav sort asc" id="search_page_main_sort" title="Sort" >
+            <span class="text-clr2">{{ site.Data.icons.sort | safeHTML }}</span>
+          </span>
+        </li>
+        {{ end }}
+        <li class="nav-item ml-3 my-2">
           <a role="button" class="btn bg-nav shadow-none" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom" data-content="
           <a class='dropdown-item text-antinav' href='/contribute/'>Contribute!</a><br>
           ">{{ site.Data.icons.dotsVerticle | safeHTML }}</a>

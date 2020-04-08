@@ -3,7 +3,7 @@ title: "Apache Hadoop"
 
 description: "A software framework for distributed storage that facilitates using a network of many computers to solve problems involving massive amounts of data and computation using MapReduce programming model"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hadoop_logo_new.svg/640px-Hadoop_logo_new.svg.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/apache-hadoop.png"
 
 status: ["Active"]
 
@@ -81,6 +81,7 @@ rating:
 note: |
   * Apache, Apache Hadoop name and logo are trademarks of Apache Software Foundation.
   * Hardware [System requirements](#sysreq) *(optimal)* are not from [official website](https://hadoop.apache.org/).
+  
 ---
   Apache(TM) Hadoop(R) is a library framework that facilitate using a network of many computers to solve problems involving massive amounts of data and computation providing for [distributed storage](/categories/distributed-file-system) and processing of big data using the MapReduce programming model.
   
@@ -90,3 +91,4 @@ note: |
   When a node fails, processing is re-directed to the remaining nodes in the cluster and data is automatically re-replicated in preparation for future node failures, making Apache Hadoop resilient.
   
   [Blog](https://blogs.apache.org/hadoop/) I [News](https://hadoop.apache.org/news.html) I [Mailing lists](https://hadoop.apache.org/mailing_lists.html) I [Wiki](https://wiki.apache.org/hadoop) I [Documentation](https://hadoop.apache.org/docs/current/) I [FAQ](https://wiki.apache.org/hadoop/FAQ) I [IRC](https://webchat.freenode.net/?channels=hadoop)
+

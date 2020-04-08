@@ -3,7 +3,7 @@ title: "Art of Illusion"
 
 description: "3D-modeling software for creating and mapping textures and rendering both, still images and animations."
 
-image: "https://upload.wikimedia.org/wikipedia/commons/0/06/Aoi_icon64.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/art-of-illusion.png"
 
 status: ["Active"]
 
@@ -13,35 +13,35 @@ get_it:
   - from: "Authentic"
     url: "http://www.artofillusion.org/downloads"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://art-of-illusion.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Art-of-Illusion.shtml"
-  - from: "Malavida"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/art-of-illusion/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/19836/art-of-illusion"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.macupdate.com/app/mac/19836/art-of-illusion"
 
 sysreq:
   -

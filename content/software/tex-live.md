@@ -3,7 +3,7 @@ title: "TeX Live"
 
 description: "A free software distribution for the TeX document production system"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Texlive-yearless.svg/320px-Texlive-yearless.svg.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/tex-live.png"
 
 status: ["Active"]
 
@@ -49,7 +49,6 @@ source:
     - dskp: ["https://www.tug.org/texlive/", "https://en.wikipedia.org/w/index.php?title=TeX_Live&oldid=875130468"]
   license: ["https://tug.org/texmf-dist/doc/latex/base/lppl.txt", "https://www.tug.org/texlive/LICENSE.TL", "https://en.wikipedia.org/w/index.php?title=TeX_Live&oldid=875130468"]
   status: ["https://www.tug.org/texlive/", "https://tug.org/svn/texlive/trunk/"]
-
 ---
   TeX Live is a free software distribution for the TeX [typesetting](/categories/typesetting) system that includes major TeX-related programs, macro packages, and fonts. It is the replacement of its no-longer supported counterpart teTeX.
   
@@ -58,3 +57,4 @@ source:
   Since the 2009 release of TeX Live, it includes [TeXworks](/software/texworks/), a graphical editor. There is also [MacTeX](/software/mactex/) for macOS which comprises TeX Live as well as some additional tools for using TeX on the Mac.
   
   [Documentation](https://www.tug.org/texlive/doc.html) I [Mailing lists](https://www.tug.org/texlive/lists.html)
+

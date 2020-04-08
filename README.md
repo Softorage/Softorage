@@ -5,15 +5,15 @@ The software directory, with authentic software downloads and information that m
 https://softorage.com
 ___
 
-Softorage is the Software Directory, that is innovatively arranged, deeply searchable and convenient to use.
-Its objective representation of software related information makes software comparison a breeze.
+Core features:
+* Protection from malware injection practices
+* Concise and elegant design
+* Objective presentation of related information, facilitating efficient and easy software comparison
+* Ridiculously fast
+* Wide array of type of software, ranging from web browser and utility applications to machine learning and data mining libraries
   
 _The project is in beta phase (Work-In-Progress)_
 
-```
-This project is primarily built with Hugo.
-You can get a copy of project up and running on your local machine for developement and testing purposes.
-```
 
 ## Built with
 
@@ -32,6 +32,11 @@ You can get a copy of project up and running on your local machine for developem
 ## Contributing
 
 _Anyone contributing benefits equally from others' contributions_  
+
+```
+This project is primarily built with Hugo.
+You can get a copy of project up and running on your local machine for developement and testing purposes.
+```
   
 Please read [CONTRIBUTING.md](https://softorage.com/contributing) for details on our code of conduct, and the process for submitting pull requests to us.
 
@@ -59,8 +64,9 @@ For a quick view, see [Apache license 2.0](https://tldrlegal.com/license/apache-
 ## Acknowledgments
 
 * [Gitlab hosting](https://about.gitlab.com/product/pages/) - Awesome free hosting for open-source projects
-* [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) - A hundred thanks for [allowing inline linking](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/technical#Hotlinking)
-* [CSS Gradient](https://cssgradient.io/) - Fabulous gradients in CSS and easy tutorials
+* [Cloudflare CDN](https://www.cloudflare.com/cdn/) - Ultra-fast, agile, secure static and dynamic content delivery
+* [CSS Gradient](https://cssgradient.io/) - Fabulous CSS gradients tutorials
 * [GTmetrix](https://gtmetrix.com/) - For one stop page speed recommendations
-<!-- * Algolia - Super smart searches -->
-<!-- * Zoho Mail - Custom email hosting -->
+<!-- * [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) - A hundred thanks for [allowing inline linking](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/technical#Hotlinking) -->
+<!-- * list.js - Super smart searches -->
+<!-- * forwardemail.com - Custom email hosting -->

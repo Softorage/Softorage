@@ -3,7 +3,7 @@ title: "LuaTeX"
 
 description: "TeX-based computer typesetting system which is an extended version of pdfTeX using Lua as an embedded scripting language"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/d/d1/LuaTeX_logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/luatex.png"
 
 status: ["Active"]
 
@@ -49,6 +49,7 @@ source:
 
 note: |
   * Username and password for repository are [given on official website](http://www.luatex.org/download.html); both `anonsvn`.
+  
 ---
   LuaTeX is a TeX-based computer [typesetting](/categories/typesetting) system which is an extended version of pdfTeX using Lua as an embedded scripting language.
   
@@ -57,3 +58,4 @@ note: |
   See [XeTeX](/software/xetex/), [LuaTeX](/software/luatex/).
   
   [Mailing list](http://www.luatex.org/support.html) I [Wiki](http://wiki.luatex.org/index.php/Main_Page) I [Documentation](http://www.luatex.org/documentation.html) I [FAQ](http://www.luatex.org/faq.html) I [Stack Exchange](https://tex.stackexchange.com/questions/tagged/luatex)
+

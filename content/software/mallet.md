@@ -3,6 +3,8 @@ title: "MALLET"
 
 description: "A Java-based toolkit for machine learning applications on text"
 
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/mallet.png"
+
 status: ["Active"]
 
 website: "http://mallet.cs.umass.edu"
@@ -72,6 +74,7 @@ rating:
 
 note: |
   * On [official website](http://mallet.cs.umass.edu), [license](#license) for code is stated to be Common Public License v1, while at the repository on GitHub, it is Apache v2. The license is taken as Apache v2 considering [this commit on GitHub](https://github.com/mimno/Mallet/commit/35ea9c69ff566bb7975fdb84868da2e989292219).
+  
 ---
   MALLET is MAchine Learning for LanguagE Toolkit.
   

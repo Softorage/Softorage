@@ -3,7 +3,7 @@ title: "MusicBrainz Picard"
 
 description: "A free and open-source software for identifying, tagging, and organizing digital audio recordings"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/8/8c/MusicBrainz_Picard_logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/musicbrainz-picard.png"
 
 status: ["Active"]
 
@@ -13,30 +13,30 @@ get_it:
   - from: "Authentic"
     url: "https://picard.musicbrainz.org/downloads/"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Multimedia/Audio/Tag-Editors/MusicBrainz-Picard.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/Multimedia/Audio/Tag-Editors/MusicBrainz-Picard.shtml"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/MusicBrainz-Picard/3000-2170_4-166444.html"
-  - from: "Softonic"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softonic"
     url: "https://musicbrainz-picard.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/26543/musicbrainz-picard"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.macupdate.com/app/mac/26543/musicbrainz-picard"
 
 developer: ["MusicBrainz"]
 
@@ -128,7 +128,6 @@ rating:
     rate: [5, 5]
     num: 20
     remarks: "macOS"
-
 ---
   MusicBrainz Picard is a free and open-source [tag editor](/categories/tag-editor) for identifying, tagging, and organizing digital audio recordings.
   

@@ -3,7 +3,7 @@ title: "Chromium (Web Browser)"
 
 description: "A free and open-source web browser project developed by Google, used to make Google Chrome"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Chromium_Material_Icon.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/chromium-web-browser.png"
 
 status: ["Active"]
 
@@ -13,13 +13,14 @@ get_it:
   - from: "Authentic"
     url: "https://download-chromium.appspot.com/"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/Browsers/Portable-Google-Chrome-Chromium.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/Browsers/Portable-Google-Chrome-Chromium.shtml"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/4936-chromium.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -30,62 +31,61 @@ get_it:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/4936-chromium.html"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-chromium-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://www.filehorse.com/download-chromium-64/"
   - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/chromium/"
-  - from: "Softonic"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softonic"
     url: "https://chromium.en.softonic.com/"
-  - from: "CNET"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "CNET"
     url: "https://download.cnet.com/Chromium/3000-2356_4-10907846.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "MacUpdate"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.macupdate.com/app/mac/36244/chromium"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://chromium.en.softonic.com/mac"
-  - from: "Malavida"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.malavida.com/en/soft/chromium/mac/"
   - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/chromium/mac/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/chromium/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://www.malavida.com/en/soft/chromium/android/"
   - from: "FileHorse"
+    url: "https://mac.filehorse.com/download-chromium/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://mac.filehorse.com/download-chromium/"
 
 developer: ["Google LLC", "Chromium Authors"]
 
@@ -233,7 +233,6 @@ rating:
   - name: "G2CROWD"
     rate: [4.5, 5]
     num: 15
-
 ---
   Chromium is an open-source [web browser](/categories/web-browser) project by Google that forms the basis for [Google Chrome](/software/google-chrome). While [Chrome](/software/google-chrome) is based on Chromium, Google also adds a number of proprietary features to [Chrome](/software/google-chrome) like automatic updates and support for additional video formats. The Chromium source code is also widely used by other parties to create their own browsers, in a similar manner as Google, while others simply build it as-is and release browsers with the Chromium name. Some of the other [web browsers](/categories/web-browser) based on Chromium are, [Microsoft Edge](/software/microsoft-edge), [Vivaldi](/software/vivaldi-web-browser) and [Brave](/software/brave-web-browser).
   

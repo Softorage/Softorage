@@ -3,7 +3,7 @@ title: "SymPy"
 
 description: "A Python library for symbolic mathematics"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/5/54/Sympy_logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/sympy.png"
 
 status: ["Active"]
 
@@ -52,6 +52,7 @@ source:
 
 note: |
   > The license of all the logos is the same as SymPy: BSD. \- [source](https://docs.sympy.org/latest/outreach.html#sympy-logos).
+  
 ---
   > SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible. SymPy is written entirely in Python. \- [Official website](https://www.sympy.org/)
   

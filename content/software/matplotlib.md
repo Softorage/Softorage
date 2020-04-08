@@ -3,7 +3,7 @@ title: "Matplotlib"
 
 description: "A plotting library for the Python programming language"
 
-image: "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Matplotlib_logo.svg/320px-Matplotlib_logo.svg.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/matplotlib.png"
 
 status: ["Active"]
 
@@ -63,7 +63,6 @@ rating:
 note: |
   * Although not required, it is suggested to also install [IPython](/software/ipython/) for interactive use.([source](https://matplotlib.org/users/installing.html))
   
-
 ---
   > Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.
   > ...
@@ -76,3 +75,4 @@ note: |
   
   [Documentation](https://matplotlib.org/#documentation) I [Users' Guide](https://matplotlib.org/users/) I [API docs](https://matplotlib.org/api/) I [FAQ](https://matplotlib.org/faq/) I [Wiki](https://github.com/matplotlib/matplotlib/wiki) I [Gitter chat](https://gitter.im/matplotlib/matplotlib) I [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/matplotlib) I Mailing list: [Users](https://mail.python.org/mailman/listinfo/matplotlib-users), [Developers](https://mail.python.org/mailman/listinfo/matplotlib-devel), [Announcements](https://mail.python.org/mailman/listinfo/matplotlib-announce)
   
+

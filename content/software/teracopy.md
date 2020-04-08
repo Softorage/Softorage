@@ -3,7 +3,7 @@ title: "TeraCopy"
 
 description: "A file transfer utility designed as an alternative for the built-in Windows Explorer file transfer feature"
 
-image: "https://upload.wikimedia.org/wikipedia/en/5/58/TeraCopy_icon.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/teracopy.png"
 
 status: ["Active"]
 
@@ -13,53 +13,53 @@ get_it:
   - from: "Authentic"
     url: "https://www.codesector.com/downloads"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_teracopy/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/System/File-Management/TeraCopy.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.techspot.com/downloads/4310-teracopy.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/teracopy/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://teracopy.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.filehorse.com/download-teracopy/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/TeraCopy/3000-2248_4-10671835.html"
-  - from: "Uptodown"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Uptodown"
     url: "https://teracopy.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
 
 developer: ["Code Sector"]
 
@@ -154,7 +154,6 @@ rating:
   - name: "CNET"
     rate: [4, 5]
     remarks: "Windows"
-
 ---
   TeraCopy is a file transfer [utility](/categories/utility/) developed by Code Sector, designed as an alternative for the built-in Windows Explorer file transfer feature, with focus on data integrity, file transfer reliability and the ability to pause or resume file transfers.
   

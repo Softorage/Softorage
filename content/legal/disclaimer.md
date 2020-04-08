@@ -2,7 +2,7 @@
 title: "Disclaimer"
 ---
 
-The information contained on https://softorage.com website (the "Service") is for general information purposes only.
+The information contained on https://softorage.com website (the "Service", the "website") is for general information purposes only.
 
 Please be advised that nothing found here has necessarily been reviewed by people with the expertise required to provide you with complete, accurate or reliable information.
 
@@ -16,9 +16,13 @@ This Site is subject to periodic update and revision. Materials should only be c
 
 In no event shall Softorage be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other arising out of or in connection with the use of the Service or the contents of the Service. Softorage reserves the right to make additions, deletions, or modification to the contents on the Service at any time without prior notice.
 
-Softorage does not warrant that the website is free of viruses or other harmful components.
+Though we are committed to providing services in a virus-free environment, Softorage does not warrant that the website is free of viruses or other harmful components.
 
 None of the contributors, sponsors, administrators or anyone else connected with Softorage in any way whatsoever can be responsible for the appearance of any inaccurate or libelous information or for your use of the information contained in or linked from these web pages.
+
+## Use of third party material
+
+Softorage has used images obtained from third party sources on the website, where such images are either distributed under a permissive license such as [CC0](https://creativecommons.org/publicdomain/zero/1.0/) or are available in the public domain.
 
 ## No contract; limited license
 

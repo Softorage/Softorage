@@ -3,6 +3,8 @@ title: "Accord.NET"
 
 description: "A framework for scientific computing in .NET covering numerical linear algebra, numerical optimization, statistics, machine learning, artificial neural networks, signal and image processing areas."
 
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/accord.net.png"
+
 status: ["Active"]
 
 website: "http://accord-framework.net"
@@ -74,7 +76,6 @@ rating:
   - name: "Softpedia"
     rate: [4.1, 5]
     num: 8
-
 ---
   Accord.NET is a framework for scientific computing in .NET. The framework is comprised of multiple libraries encompassing a wide range of scientific computing applications, such as statistical data processing, [machine learning](/categories/machine-learning), [artificial intelligence](/categories/artificial-intelligence), pattern recognition, including but not limited to, [computer vision](/categories/computer-vision) and [computer audition](/categories/computer-audition). The framework offers a large number of probability distributions, hypothesis tests, kernel functions and support for most popular performance measurements techniques.
   
@@ -83,3 +84,4 @@ rating:
   The Accord.NET Framework has been featured in multiple books such as [Mastering.NET Machine Learning](https://www.packtpub.com/big-data-and-business-intelligence/mastering-net-machine-learning) by PACKT publishing and [F# for Machine Learning Applications](https://www.packtpub.com/big-data-and-business-intelligence/f-machine-learning), featured in [QCON San Francisco](https://www.infoq.com/presentations/accord-net-machine-learning), and currently accumulates more than 1,500 forks in GitHub.
   
   [Documentation](http://accord-framework.net/docs/html/R_Project_Accord_NET.htm) I [Wiki](https://github.com/accord-net/framework/wiki) I [Publications](http://accord-framework.net/publications.html) I [Sample Applications](http://accord-framework.net/samples.html)
+

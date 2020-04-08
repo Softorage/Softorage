@@ -2,19 +2,19 @@
 title: "Terms and Conditions"
 ---
 
-Welcome to the network of software services provided by Softorage. Here are the ways that you can and can't use our website, we've tried to keep them brief and easy to understand.
+Welcome to the network of software services provided by Softorage. Here are the ways that you can and can't use our website, we've tried to keep them brief and easy to understand.
 
 ### Disclaimer
 
-By using the information, services and products available through this site and downloading any software, you are agreeing to the terms and conditions contained herein.
+By using the information, services and products available through this site and downloading any software, you are agreeing to the terms and conditions contained herein.
 
 This site provides the information, services and products available "AS IS", with no warranties whatsoever. All express warranties and all implied warranties and non-infringement of proprietary rights are hereby disclaimed to the fullest extent permitted by law.
 
-This website does not provide software for download but only provides with a link to download software from authentic link, and as such this site is not associated with the software  for which it provides an authentic link for download and cannot be held liable for issues or faults that arise from the download or use of the software.
+This website does not provide software for download but only provides with a link to download software from authentic link, and as such this site is not associated with the software  for which it provides an authentic link for download and cannot be held liable for issues or faults that arise from the download or use of the software.
 
 ### Removal
 
-If you are the publisher of a software title and wish to have it removed from Softorage.com, please send us a message via our [contact form](mailto:contact@softorage.com) including, your name, company, job title, the title of the software, and the reason for the takedown request. We will then contact you within 72 hours to verify your identity and your request will be actioned within a further 72 hours.
+If you are the publisher of a software title and wish to have it removed from Softorage.com, please send us a message via our [contact form](mailto:contact@softorage.com) including, your name, company, job title, the title of the software, and the reason for the takedown request. We will then contact you within 72 hours to verify your identity and your request will be actioned within a further 72 hours.
 
 ### Use of Trademarks
 

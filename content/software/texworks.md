@@ -3,7 +3,7 @@ title: "TeXworks"
 
 description: "A TeX front-end program (working environment) that is GUI TeX editor"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/b/b7/TeXworks_icon_128.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/texworks.png"
 
 status: ["Active"]
 
@@ -49,7 +49,6 @@ source:
     - dskp: ["https://www.tug.org/texworks/#Getting_TeXworks"]
   license: ["https://github.com/TeXworks/texworks/blob/master/COPYING"]
   status: ["https://github.com/TeXworks/texworks/graphs/contributors", "https://www.tug.org/texworks/"]
-
 ---
   TeXworks is free and open-source [TeX editor](/categories/tex-editor), available for Windows, Linux and OS X, released under GPL v2.
   
@@ -58,3 +57,4 @@ source:
   See [XeTeX](/software/xetex/), [TeX Live](/software/tex-live/).
   
   [Mailing list](https://tug.org/mailman/listinfo/texworks)
+

@@ -3,7 +3,7 @@ title: "Adobe Acrobat DC"
 
 description: "A commercial software developed by Adobe Inc., to view, print, annotate, as well as create, edit, convert, digitally sign, encrypt, export and publish PDF files"
 
-image: "https://upload.wikimedia.org/wikipedia/en/4/4c/Acrobat_Pro_CC_icon.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/adobe-acrobat-dc.png"
 
 status: ["Active"]
 
@@ -13,56 +13,56 @@ get_it:
   - from: "Authentic"
     url: "https://acrobat.adobe.com/us/en/free-trial-download.html"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/Office-tools/PDF/Adobe-Acrobat.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_adobe_acrobat_pro_dc/"
-  - from: "Malavida"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/adobe-acrobat-professional/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://adobe-acrobat-professional.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.techspot.com/downloads/4683-adobe-acrobat-pro.html"
-  - from: "FileHorse"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.filehorse.com/download-adobe-acrobat-pro-dc/"
-  - from: "Malavida"
-    platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.malavida.com/en/soft/adobe-acrobat/mac/"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-adobe-acrobat-pro-dc/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/adobe-acrobat/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-acrobat-pro-dc/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -
@@ -184,7 +184,6 @@ rating:
     rate: [9, 10]
     num: 9
     remarks: "macOS"
-
 ---
   Adobe Acrobat DC (formerly Acrobat Exchange) is a commercial [desktop publishing](/categories/desktop-publishing/) software that allows to view, print, share, annotate, as well as create, edit, convert, digitally sign, encrypt, export and publish PDF files.
   

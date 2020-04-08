@@ -3,6 +3,8 @@ title: "ELKI"
 
 description: "A data mining software written in Java, with focus on research in algorithms"
 
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/elki.png"
+
 status: ["Active"]
 
 website: "https://elki-project.github.io/"
@@ -67,7 +69,6 @@ rating:
   - name: "PAT RESEARCH"
     rate: [8.3, 10]
     num: 1
-
 ---
   ELKI is Environment for Developing KDD(Knowledge Discovery in Databases, "[Data Mining](/categories/data-mining)")-Applications Supported by Index-Structures.
   
@@ -81,3 +82,4 @@ rating:
   > \- [Stack Overflow](https://stackoverflow.com/tags/elki/info)
   
   [Mailing list](https://elki-project.github.io#bug-reports-and-contact) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/elki) I [FAQ](https://elki-project.github.io/faq)
+

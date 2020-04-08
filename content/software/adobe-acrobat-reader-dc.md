@@ -3,48 +3,51 @@ title: "Adobe Acrobat Reader DC"
 
 description: "A freemium software developed by Adobe Inc., to view, create, manipulate, print and manage files in Portable Document Format (PDF)"
 
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/adobe-acrobat-reader-dc.png"
+
 status: ["Active"]
 
 get_it:
   - from: "Authentic"
     url: "https://get.adobe.com/reader/"
   - from: "Other Versions | Authentic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://get.adobe.com/reader/otherversions/"
-  - from: "FileHorse"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-acrobat-reader-dc/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/Office-tools/PDF/Adobe-Reader.shtml"
-  - from: "Softonic"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_adobe-acrobat-reader-dc/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/2083-adobe-reader-dc.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -52,43 +55,42 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/2083-adobe-reader-dc.html"
   - from: "FileHorse"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://mac.filehorse.com/download-adobe-acrobat-reader-dc/"
-  - from: "Softonic"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/mac"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.adobe.reader"
-  - from: "Softonic"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://adobe-reader.en.softonic.com/android"
-  - from: "Apple App Store"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564"
   - from: "Softonic"
+    url: "https://adobe-reader.en.softonic.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Apple App Store"
+    url: "https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
+  - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/iphone"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
 
 sysreq:
   -
@@ -254,7 +256,6 @@ rating:
     num: 7280
   - name: "Accurate Reviews"
     rate: [7.9, 10]
-
 ---
   Adobe Acrobat Reader DC (formerly Adobe Reader, Adobe Acrobat Reader) is a freemium [document viewer](/categories/document-viewer/) software viewing, printing, signing, sharing, and annotating PDFs. It's a PDF viewer that can open and interact with all types of PDF content – including forms and multimedia. It’s connected to Adobe Document Cloud services, which allows to work with PDFs on any device, from anywhere.
   

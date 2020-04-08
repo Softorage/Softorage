@@ -3,7 +3,7 @@ title: "LibreOffice"
 
 description: "A free and open-source office suite, comprising programs for word processing, the creation and editing of spreadsheets, slideshows, diagrams and drawings, working with databases, and composing mathematical formulae"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/0/02/LibreOffice_Logo_Flat.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/libreoffice.png"
 
 status: ["Active"]
 
@@ -13,20 +13,7 @@ get_it:
   - from: "Authentic"
     url: "https://www.libreoffice.org/download/download/"
   - from: "FossHub"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32", "x64"]
-        type: "official"
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
-      - name: "Linux"
-        hardware: ["dskp"]
-        arch: ["x32", "x64"]
-        type: "official"
     url: "https://www.fosshub.com/LibreOffice.html"
-  - from: "TechSpot"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -39,59 +26,72 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         type: "official"
+  - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5131-libreoffice-productivity-suite.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
+      - name: "Linux"
+        hardware: ["dskp"]
+        arch: ["x32", "x64"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
     url: "https://www.filehorse.com/download-libreoffice-64/"
-  - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://libreoffice.en.softonic.com/"
-  - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32"]
-        type: "official"
-    url: "https://filehippo.com/download_libreoffice_32/"
-  - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://libreoffice.en.uptodown.com/windows"
-  - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.malavida.com/en/soft/libreoffice/"
-  - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32"]
-        type: "official"
-    url: "https://www.softpedia.com/get/Office-tools/Office-suites/LibreOffice.shtml"
-  - from: "Softpedia"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://linux.softpedia.com/get/Office/Office-Suites/LibreOffice-60713.shtml"
   - from: "Softonic"
+    url: "https://libreoffice.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "FileHippo"
+    url: "https://filehippo.com/download_libreoffice_32/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
+  - from: "Uptodown"
+    url: "https://libreoffice.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/libreoffice/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Office-tools/Office-suites/LibreOffice.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
+  - from: "Softpedia"
+    url: "https://linux.softpedia.com/get/Office/Office-Suites/LibreOffice-60713.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
+  - from: "Softonic"
+    url: "https://libreoffice-mac.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://libreoffice-mac.en.softonic.com/mac"
 
 sysreq:
   -

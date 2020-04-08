@@ -3,7 +3,7 @@ title: "Evince"
 
 description: "Evince is a document viewer for multiple document formats. The goal of evince is to replace the multiple document viewers that exist on the GNOME Desktop with a single simple application."
 
-image: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Evince_logo_2011.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/evince.png"
 
 status: ["Active"]
 
@@ -13,35 +13,35 @@ get_it:
   - from: "Authentic"
     url: "https://wiki.gnome.org/Apps/Evince/Downloads/"
   - from: "FossHub"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.fosshub.com/Evince.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://evince.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/Evince/3000-10743_4-75362773.html"
-  - from: "Malavida"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/evince/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
+    url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Evince-3819.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Evince-3819.shtml"
 
 developer: ["The Evince Team"]
 
@@ -129,7 +129,6 @@ rating:
     rate: [2.6, 5]
     num: 72
     remarks: "Linux"
-
 ---
   Evince is a [document viewer](/categories/document-viewer) for PDF, PostScript, DjVu, TIFF, XPS and DVI formats. It was designed for the GNOME desktop environment. The developers of Evince intended to replace the multiple GNOME document viewers with a single and simple application. The Evince motto sums up the project aim: "Simply a Document Viewer". GNOME releases have included Evince since GNOME 2.12 (September 2005). Evince code consists mainly of C, with a small part (the code that interfaces with Poppler) written in C++. A large number of Linux distributions – including Ubuntu, Fedora and Linux Mint – include Evince as the default document-viewer. Evince is free and open-source software subject to the requirements of the GNU General Public License version 2 or later. The Evince FAQ highlights the meaning of the word "Evince" as "to show or express something clearly".
   

@@ -3,7 +3,7 @@ title: "WinRAR"
 
 description: "A trialware file archiver utility for Windows, developed by Eugene Roshal of win.rar GmbH"
 
-image: "https://upload.wikimedia.org/wikipedia/en/4/4f/WinRAR_Logo_2018.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/winrar.png"
 
 status: ["Active"]
 
@@ -13,20 +13,21 @@ get_it:
   - from: "Authentic"
     url: "https://www.win-rar.com/download.html?L=0"
   - from: "FileHippo"
+    url: "https://filehippo.com/download_winrar_32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://filehippo.com/download_winrar_32/"
   - from: "FileHippo"
+    url: "https://filehippo.com/download_winrar_64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://filehippo.com/download_winrar_64/"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/67-winrar.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -46,72 +47,71 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         type: "official"
-    url: "https://www.techspot.com/downloads/67-winrar.html"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
     url: "https://download.cnet.com/WinRAR-64-bit/3000-2250_4-10965579.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
     url: "https://www.filehorse.com/download-winrar-64/"
-  - from: "Uptodown"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
+  - from: "Uptodown"
     url: "https://winrar.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
   - from: "Softonic"
+    url: "https://winrar.en.softonic.com/download"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://winrar.en.softonic.com/download"
   - from: "Softonic"
+    url: "https://winrar-64bit.en.softonic.com/download"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://winrar-64bit.en.softonic.com/download"
   - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.rarlab.rar&hl=en_IN"
-  - from: "Uptodown"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Uptodown"
     url: "https://rar-for-android.en.uptodown.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "TechSpot"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.techspot.com/downloads/5169-winrar-for-mac.html"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/mac/download_winrar_for_mac/"
-  - from: "FileHorse"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://mac.filehorse.com/download-rar-for-mac/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -
@@ -276,7 +276,6 @@ rating:
     rate: [7.9, 10]
     num: 41
     remarks: "macOS"
-
 ---
   WinRAR is an [archive manager](/categories/file-archiver) for backing up data and reducing the size of e-mail attachments. Decompress files downloaded from the internet and create new archives in RAR and ZIP file format. Support is provided for RAR, ZIP, CAB, ARJ, LZH, ACE, TAR, GZip, UUE, ISO, BZIP2, Z and 7-Zip file formats.
   

@@ -3,7 +3,7 @@ title: "Microsoft Edge"
 
 description: "A web browser developed by Microsoft"
 
-image: "https://upload.wikimedia.org/wikipedia/en/9/98/Microsoft_Edge_logo_%282019%29.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/microsoft-edge.png"
 
 status: ["Active"]
 
@@ -13,32 +13,33 @@ get_it:
   - from: "Authentic"
     url: "https://www.microsoft.com/en-us/edge"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Internet/Browsers/Microsoft-Edge.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/Internet/Browsers/Microsoft-Edge.shtml"
   - from: "Softonic"
+    url: "https://microsoft-edge.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://microsoft-edge.en.softonic.com/"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-microsoft-edge/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://www.filehorse.com/download-microsoft-edge/"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_edge-browser/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/7158-microsoft-edge.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -46,43 +47,42 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/7158-microsoft-edge.html"
   - from: "Softonic"
+    url: "https://microsoft-edge.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://microsoft-edge.en.softonic.com/mac"
   - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=com.microsoft.emmx"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Uptodown"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://microsoft-edge.en.uptodown.com/android"
-  - from: "Softonic"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://microsoft-edge.en.softonic.com/android"
-  - from: "Apple App Store"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://apps.apple.com/app/microsoft-edge/id1288723196"
   - from: "Softonic"
+    url: "https://microsoft-edge.en.softonic.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Apple App Store"
+    url: "https://apps.apple.com/app/microsoft-edge/id1288723196"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
+  - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/iphone"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
 
 sysreq:
   -
@@ -251,7 +251,9 @@ rating:
 note: |
   * For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview) topic on Microsoft Docs website.
   * After installation of Microsoft Edge, license terms are viewable in Microsoft Edge at [edge://terms](edge://terms).
+  
 ---
   Microsoft Edge is a [web browser](/categories/web-browser) developed by Microsoft. Edge includes integration with Cortana and has extensions hosted on the Microsoft Store. Unlike [Internet Explorer](/software/internet-explorer/), Edge does not support the legacy ActiveX and BHO technologies. Originally built with Microsoft's own EdgeHTML and Chakra engines, in 2019 Edge was rebuilt as a [Chromium](/software/chromium-web-browser/)-based browser, using the Blink and V8 engines. Though, for iOS, Microsoft Edge is based on WebKit. Microsoft released the first [Chromium](/software/chromium-web-browser/)-based Edge version on January 15, 2020.
   
   [Devs Blog](https://blogs.windows.com/msedgedev/) I [Forum](https://answers.microsoft.com/en-us/edge/forum) I [Documentation](https://docs.microsoft.com/en-us/microsoft-edge/) I [Deploy Documentation](https://docs.microsoft.com/en-us/deployedge/) I [FAQ for IT Pros](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-faq) I [FAQ for Enterprise](https://docs.microsoft.com/en-us/deployedge/faqs-edge-in-the-enterprise)
+

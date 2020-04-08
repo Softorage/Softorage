@@ -3,7 +3,7 @@ title: "LMMS"
 
 description: "LMMS (formerly Linux MultiMedia Studio) is a free and open source digital audio workstation application program, release under GPL v2 license"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Lmms_logo.png/240px-Lmms_logo.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/lmms.png"
 
 status: ["Active"]
 
@@ -13,64 +13,64 @@ get_it:
   - from: "Authentic"
     url: "https://lmms.io/download/"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32"]
-        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-Editors-Recorders/LMMS--Linux-MultiMedia-Studio.shtml"
-  - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://filehippo.com/download_lmms/"
-  - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://lmms.en.softonic.com/"
-  - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
-    url: "https://www.filehorse.com/download-lmms-64/"
-  - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
-    url: "https://lmms.en.uptodown.com/windows"
-  - from: "CNET"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://download.cnet.com/LMMS-32-bit/3000-2170_4-10967914.html"
-  - from: "CNET"
+  - from: "FileHippo"
+    url: "https://filehippo.com/download_lmms/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Softonic"
+    url: "https://lmms.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "FileHorse"
+    url: "https://www.filehorse.com/download-lmms-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
+  - from: "Uptodown"
+    url: "https://lmms.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
+  - from: "CNET"
+    url: "https://download.cnet.com/LMMS-32-bit/3000-2170_4-10967914.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
+  - from: "CNET"
     url: "https://download.cnet.com/LMMS-64-bit/3000-2170_4-75289588.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
   - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/lmms/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.malavida.com/en/soft/lmms/"
   - from: "MacUpdate"
+    url: "https://www.macupdate.com/app/mac/55961/lmms"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.macupdate.com/app/mac/55961/lmms"
 
 sysreq:
   -
@@ -107,7 +107,7 @@ license: ["GPL v2+"]
 social:
   - name: "Facebook"
     url: "https://facebook.com/makefreemusic"
-  - name: "Youtube"
+  - name: "YouTube"
     url: "https://www.youtube.com/user/LMMSOfficial"
   - name: "Bandcamp"
     url: "https://lmmsartists.bandcamp.com/"
@@ -179,7 +179,6 @@ rating:
     rate: [8, 10]
     num: 19
     remarks: "Windows"
-
 ---
   LMMS (formerly Linux MultiMedia Studio) is a free and open source [digital audio workstation](/categories/digital-audio-workstation) application program, release under GPL v2 license. It allows music to be produced by arranging samples, synthesizing sounds, playing on a MIDI keyboard and combining the features of trackers and sequencers, when run on appropriate hardware.
   
@@ -187,3 +186,4 @@ rating:
   
   [Forum](https://lmms.io/forum/) I [Wiki](https://lmms.io/wiki/index.php?title=Main_Page) I [Developer Wiki](https://github.com/LMMS/lmms/wiki) I [Documentation(wiki)](https://lmms.io/documentation/) I [User FAQ](https://lmms.io/documentation/User_FAQ) I [Mailing lists](https://sourceforge.net/p/lmms/mailman/) I [IRC](https://webchat.freenode.net/?channels=lmms) I [Discord](https://lmms.io/chat/)
   
+

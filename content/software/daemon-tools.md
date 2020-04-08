@@ -3,7 +3,7 @@ title: "DAEMON Tools"
 
 description: "A virtual drive and optical disc authoring program"
 
-image: "https://upload.wikimedia.org/wikipedia/en/c/cf/Daemon_tools_logo.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/daemon-tools.png"
 
 website: "https://www.daemon-tools.cc/"
 
@@ -11,83 +11,83 @@ get_it:
   - from: "Authentic"
     url: "https://www.daemon-tools.cc/downloads"
   - from: "TechSpot (Lite)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.techspot.com/downloads/4819-daemon-tools-lite.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot (Pro)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.techspot.com/downloads/208-daemon-tools.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic (Lite)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://daemon-tools-lite.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic (Pro)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://daemon-tools-pro.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic (Ultra)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://daemon-tools-ultra.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia (Lite)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/CD-DVD-Tools/Virtual-CD-DVD-Rom/DAEMON-Tools.shtml"
-  - from: "Malavida (Lite)"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Malavida (Lite)"
     url: "https://www.malavida.com/en/soft/daemon-tools/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo (Lite)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_daemon_tools/"
-  - from: "FileHorse (Lite)"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse (Lite)"
     url: "https://www.filehorse.com/download-daemon-tools/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Uptodown (Lite)"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://daemon-tools.en.uptodown.com/windows"
-  - from: "CNET (Pro)"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "CNET (Pro)"
     url: "https://download.cnet.com/Daemon-Tools-Pro/3000-2242_4-10744439.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Malavida (Lite)"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/daemon-tools/mac/"
-  - from: "FileHorse (Lite)"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse (Lite)"
     url: "https://mac.filehorse.com/download-daemon-tools/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -

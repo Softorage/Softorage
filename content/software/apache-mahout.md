@@ -3,7 +3,7 @@ title: "Apache Mahout"
 
 description: "A project of the Apache Software Foundation to produce free implementations of distributed or otherwise scalable machine learning algorithms"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_Mahout_Logo.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/apache-mahout.png"
 
 status: ["Active"]
 
@@ -75,7 +75,6 @@ rating:
 note: |
   * Apache, Apache Mahout name and logo are trademarks of Apache Software Foundation.
   
-
 ---
   Apache Mahout(TM) is an open source project that is primarily used for creating scalable [machine learning](/categories/machine-learning) algorithms. It implements [machine learning](/categories/machine-learning) techniques such as, collaborative filtering, clustering, recommendation and classification.
   
@@ -85,3 +84,4 @@ note: |
   
   [Documentation](https://mahout.apache.org/docs/latest/index.html) I [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists) I [FAQ](https://mahout.apache.org/general/faq.html) I [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
   
+

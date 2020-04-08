@@ -3,7 +3,7 @@ title: "IPython"
 
 description: "A command shell for interactive computing"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/IPython_Logo.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/ipython.png"
 
 status: ["Active"]
 
@@ -67,6 +67,7 @@ note: |
   >  * ipywidgets (formerly IPython.html.widgets)
   >  * Traitlets, the config system used by IPython and Jupyter
   > \- [source](https://ipython.org/documentation.html#other-pieces)
+  
 ---
   > IPython (Interactive Python) is a command shell for interactive computing in multiple programming languages, originally developed for the Python programming language, that offers introspection, rich media, shell syntax, tab completion, and history. IPython provides the following features:
   > 

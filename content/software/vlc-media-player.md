@@ -3,7 +3,7 @@ title: "VLC Media Player"
 
 description: "A free and open-source media player software and streaming media server developed by the VideoLAN project"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/VLC_Icon.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/vlc-media-player.png"
 
 status: ["Active"]
 
@@ -13,47 +13,48 @@ get_it:
   - from: "Authentic"
     url: "https://www.videolan.org/vlc/#download"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x32"]
-        type: "official"
     url: "https://www.filehorse.com/download-vlc-32/"
-  - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
-    url: "https://www.filehorse.com/download-vlc-64/"
-  - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
-    url: "https://www.malavida.com/en/soft/vlc/"
-  - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        arch: ["x64"]
-        type: "official"
-    url: "https://vlc-media-player.en.uptodown.com/windows"
-  - from: "FileHippo"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://filehippo.com/download_vlc-media-player_32/"
-  - from: "FileHippo"
+  - from: "FileHorse"
+    url: "https://www.filehorse.com/download-vlc-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
+  - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/vlc/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "Uptodown"
+    url: "https://vlc-media-player.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
+  - from: "FileHippo"
+    url: "https://filehippo.com/download_vlc-media-player_32/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x32"]
+        type: "official"
+  - from: "FileHippo"
     url: "https://filehippo.com/download_vlc_media_player_64/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        arch: ["x64"]
+        type: "official"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/3562-vlc-media-player.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -65,80 +66,79 @@ get_it:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/3562-vlc-media-player.html"
   - from: "CNET"
+    url: "https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html"
   - from: "Softonic"
+    url: "https://vlc-media-player.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://vlc-media-player.en.softonic.com/"
   - from: "Softonic"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://vlc-media-player.en.softonic.com/mac"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/vlc/mac/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/mac/download_vlc_media_player-for_mac/"
-  - from: "FileHorse"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHorse"
     url: "https://mac.filehorse.com/download-vlc/"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softpedia"
+    url: "https://linux.softpedia.com/get/Multimedia/Video/VLC-2608.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://linux.softpedia.com/get/Multimedia/Video/VLC-2608.shtml"
   - from: "Google Play Store"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=org.videolan.vlc"
-  - from: "Softonic"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/android"
-  - from: "Malavida"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://www.malavida.com/en/soft/vlc/android/"
-  - from: "Softonic"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://vlc-media-player.en.softonic.com/iphone"
   - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/vlc/android/"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Softonic"
+    url: "https://vlc-media-player.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/iphone/"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
 
 sysreq:
   -
@@ -367,7 +367,6 @@ rating:
     rate: [8, 10]
     num: 91
     remarks: "iOS"
-
 ---
   VLC is a free and open source cross-platform [multimedia player](/categories/media-player/) and framework, developed by the VideoLAN project, that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols. It can read a large number of popular video and audio formats, such as MPEG, MKV, MP4, MOV, WMV, H.264, WAV, FLV, AVI, etc. It can also convert media into many of the same formats that it is able to read, including the MPEG, ASF, AAC, and MP3 formats. See [this Wikipedia page](https://en.wikipedia.org/wiki/VLC_media_player#Format_support) for format support.
   

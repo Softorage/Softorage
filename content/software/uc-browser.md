@@ -3,7 +3,7 @@ title: "UC Browser"
 
 description: "A web browser developed by the Singapore/China-based mobile Internet company UCWeb, which is in turn owned by the Alibaba Group"
 
-image: "https://upload.wikimedia.org/wikipedia/en/d/d0/UC_Browser_Logo.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/uc-browser.png"
 
 status: ["Active"]
 
@@ -13,107 +13,107 @@ get_it:
   - from: "Authentic"
     url: "http://www.ucweb.com/ucbrowser/download/"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.filehorse.com/download-uc-browser-for-windows/"
-  - from: "Malavida"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/uc-browser/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://filehippo.com/download_ucbrowser/"
-  - from: "Uptodown"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://uc-browser.en.uptodown.com/android"
-  - from: "Softonic"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://uc-browser.en.softonic.com/"
-  - from: "TechSpot"
+  - from: "Uptodown"
+    url: "https://uc-browser.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://www.techspot.com/downloads/5702-uc-browser-for-android.html"
-  - from: "Google Play Store (UC Browser)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://play.google.com/store/apps/details?id=com.UCMobile.intl"
-  - from: "Google Play Store (UC Mini)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://play.google.com/store/apps/details?id=com.uc.browser.en"
-  - from: "Google Play Store (UC Turbo)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://play.google.com/store/apps/details?id=com.ucturbo"
-  - from: "Softonic (UC Browser)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://uc-browser.en.softonic.com/android"
-  - from: "Softonic (UC Mini)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://uc-browser-mini-for-android-go.en.softonic.com/android"
-  - from: "Softonic (UC HD)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://uc-browser-hd.en.softonic.com/android"
-  - from: "Malavida"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://www.malavida.com/en/soft/uc-browser/android/"
-  - from: "APKPure"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://apkpure.com/uc-browser/com.UCMobile.intl/"
-  - from: "Apple App Store"
-    platform:
-      - name: "iOS"
-        hardware: ["smptb"]
-        type: "official"
-    url: "https://apps.apple.com/app/uc-browser/id1048518592"
   - from: "Softonic"
+    url: "https://uc-browser.en.softonic.com/"
     platform:
-      - name: "iOS"
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
+  - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/5702-uc-browser-for-android.html"
+    platform:
+      - name: "Android"
         hardware: ["smptb"]
         type: "official"
-    url: "https://uc-browser.en.softonic.com/iphone"
+  - from: "Google Play Store (UC Browser)"
+    url: "https://play.google.com/store/apps/details?id=com.UCMobile.intl"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Google Play Store (UC Mini)"
+    url: "https://play.google.com/store/apps/details?id=com.uc.browser.en"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Google Play Store (UC Turbo)"
+    url: "https://play.google.com/store/apps/details?id=com.ucturbo"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Softonic (UC Browser)"
+    url: "https://uc-browser.en.softonic.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Softonic (UC Mini)"
+    url: "https://uc-browser-mini-for-android-go.en.softonic.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Softonic (UC HD)"
+    url: "https://uc-browser-hd.en.softonic.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/uc-browser/android/"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "APKPure"
+    url: "https://apkpure.com/uc-browser/com.UCMobile.intl/"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Apple App Store"
+    url: "https://apps.apple.com/app/uc-browser/id1048518592"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         type: "official"
+  - from: "Softonic"
+    url: "https://uc-browser.en.softonic.com/iphone"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
+  - from: "Malavida"
     url: "https://www.malavida.com/en/soft/uc-browser/iphone/"
+    platform:
+      - name: "iOS"
+        hardware: ["smptb"]
+        type: "official"
 
 sysreq:
   -
@@ -308,7 +308,6 @@ rating:
     rate: [6, 10]
     num: 227
     remarks: "iOS"
-
 ---
   UC Browser is a [web browser](/categories/web-browser/) developed by the Singapore/China-based mobile Internet company UCWeb, which is in turn owned by the Alibaba Group. It uses [Chromium browser](/software/chromium-web-browser/) as its base. It is more popular than [Google Chrome](/software/google-chrome/) in some of Asia's fastest-growing markets like India and Indonesia.
   
@@ -318,3 +317,4 @@ rating:
   
   [News](http://www.ucweb.com/press/) I [FAQ](http://www.ucweb.com/ucbrowser/help/)
   
+

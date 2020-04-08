@@ -3,7 +3,7 @@ title: "Mozilla Firefox"
 
 description: "An open source web browser developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation; with variant Firefox Lite"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/mozilla-firefox.png"
 
 status: ["Active"]
 
@@ -13,39 +13,40 @@ get_it:
   - from: "Authentic"
     url: "https://www.mozilla.org/en-US/firefox/new/"
   - from: "Softonic"
+    url: "https://mozilla-firefox.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://mozilla-firefox.en.softonic.com/"
   - from: "FileHippo"
+    url: "https://filehippo.com/download_mozilla-firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://filehippo.com/download_mozilla-firefox/"
   - from: "FileHippo"
+    url: "https://filehippo.com/download_mozilla-firefox-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://filehippo.com/download_mozilla-firefox-64/"
   - from: "CNET"
+    url: "https://download.cnet.com/mozilla-firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://download.cnet.com/mozilla-firefox/"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-firefox-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.filehorse.com/download-firefox-32/"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/19-mozilla-firefox.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -58,44 +59,43 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         type: "official"
-    url: "https://www.techspot.com/downloads/19-mozilla-firefox.html"
   - from: "Malavida"
+    url: "https://www.malavida.com/en/soft/firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.malavida.com/en/soft/firefox/"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Internet/Browsers/Mozilla-Firefox-Final.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/Internet/Browsers/Mozilla-Firefox-Final.shtml"
   - from: "Softonic"
+    url: "https://mozilla-firefox.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://mozilla-firefox.en.softonic.com/mac"
   - from: "Google Play Store (Firefox)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
   - from: "Google Play Store (Firefox Lite)"
-    platform:
-      - name: "Android"
-        hardware: ["smptb"]
-        type: "official"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.rocket"
-  - from: "Softonic"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         type: "official"
+  - from: "Softonic"
     url: "https://mozilla-firefox.en.softonic.com/android"
+    platform:
+      - name: "Android"
+        hardware: ["smptb"]
+        type: "official"
 
 sysreq:
   -
@@ -275,3 +275,4 @@ note: |
   
   [Blog](https://blog.mozilla.org/) I [Forum](https://support.mozilla.org/en-US/questions) I [News/Announcements](https://blog.mozilla.org/press/) I [Wiki](https://wiki.mozilla.org/Firefox) I [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding) I [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
   
+

@@ -3,7 +3,7 @@ title: "GIMP"
 
 description: "A free and open-source raster graphics editor built with GTK toolkit"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/4/45/The_GIMP_icon_-_gnome.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/gimp.png"
 
 status: ["Active"]
 
@@ -13,6 +13,7 @@ get_it:
   - from: "Authentic"
     url: "https://www.gimp.org/downloads/"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/614-the-gimp.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -23,57 +24,56 @@ get_it:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/614-the-gimp.html"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-gimp/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://www.filehorse.com/download-gimp/"
   - from: "Softpedia"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/GIMP.shtml"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://the-gimp.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "CNET"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"
-  - from: "Uptodown"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "Uptodown"
     url: "https://gimp.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHippo"
+    url: "https://filehippo.com/download_the-gimp_32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://filehippo.com/download_the-gimp_32/"
   - from: "CNET"
-    platform:
-      - name: "macOS"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://download.cnet.com/GIMP/3000-2192_4-10322178.html"
-  - from: "MacUpdate"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
+  - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/14597/gimp"
+    platform:
+      - name: "macOS"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -

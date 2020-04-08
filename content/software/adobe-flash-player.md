@@ -3,7 +3,7 @@ title: "Adobe Flash Player"
 
 description: "A computer software for using content created on the Adobe Flash platform, including viewing multimedia contents, executing rich Internet applications, and streaming audio and video"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/3/32/Adobe_Flash_Player_v11_icon.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/adobe-flash-player.png"
 
 status: ["Active"]
 
@@ -13,6 +13,7 @@ get_it:
   - from: "Authentic"
     url: "https://get.adobe.com/flashplayer/"
   - from: "Other Versions | Authentic"
+    url: "https://get.adobe.com/flashplayer/otherversions/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -24,21 +25,21 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         type: "official"
-    url: "https://get.adobe.com/flashplayer/otherversions/"
   - from: "Uptodown"
+    url: "https://adobe-flash-player.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://adobe-flash-player.en.uptodown.com/windows"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Internet/WEB-Design/Flash/Macromedia-Flash-Player.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.softpedia.com/get/Internet/WEB-Design/Flash/Macromedia-Flash-Player.shtml"
   - from: "TechSpot"
+    url: "https://www.techspot.com/downloads/1127-adobe-flash-player.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
@@ -49,37 +50,36 @@ get_it:
       - name: "Linux"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.techspot.com/downloads/1127-adobe-flash-player.html"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://adobe-flash-player.en.softonic.com/"
-  - from: "FileHippo"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHippo"
     url: "https://filehippo.com/download_adobe-flash-player/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
+    url: "https://adobe-flash-player.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://adobe-flash-player.en.softonic.com/mac"
   - from: "Softonic"
-    platform:
-      - name: "Android"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://adobe-flash-player.en.softonic.com/android"
-  - from: "FileHippo"
     platform:
       - name: "Android"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHippo"
     url: "https://filehippo.com/android/download_adobe-flash-player/"
+    platform:
+      - name: "Android"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -
@@ -209,7 +209,6 @@ rating:
   - name: "G2CROWD"
     rate: [4.2, 5]
     num: 357
-
 ---
   Adobe Flash Player (labeled Shockwave Flash in [Internet Explorer](/software/internet-explorer/) and [Firefox](/software/mozilla-firefox/)) is computer software for using content created on the Adobe Flash platform, including viewing multimedia contents, executing rich Internet applications, and streaming audio and video. Flash Player can run from a [web browser](/categories/web-browser/) as a [browser plug-in](/categories/browser-extension/) or on supported mobile devices. Flash Player runs SWF files that can be created by Adobe Flash Professional, Adobe Flash Builder or by third party tools such as FlashDevelop. Flash Player supports [vector graphics](/categories/vector-graphics-editor/), [3D graphics](/categories/3d-computing-graphics/), embedded audio, video and [raster graphics](/categories/raster-graphics-editor), and a scripting language called ActionScript (based on ECMAScript).
   

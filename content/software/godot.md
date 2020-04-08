@@ -3,7 +3,7 @@ title: "Godot"
 
 description: "A 2D and 3D cross-platform compatible game engine released as open source software under the MIT license"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Godot_logo.svg"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/godot.png"
 
 status: ["Active"]
 
@@ -13,25 +13,25 @@ get_it:
   - from: "Authentic"
     url: "https://godotengine.org/download/"
   - from: "FileHorse"
+    url: "https://www.filehorse.com/download-godot-engine-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.filehorse.com/download-godot-engine-32/"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Gaming-Related/Godot-Engine.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
-    url: "https://www.softpedia.com/get/Gaming-Related/Godot-Engine.shtml"
   - from: "Uptodown"
+    url: "https://godot-engine.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         type: "official"
-    url: "https://godot-engine.en.uptodown.com/windows"
 
 sysreq:
   -
@@ -109,7 +109,6 @@ rating:
     rate: [8, 10]
     num: 21
     remarks: "x32 bit Windows"
-
 ---
   Godot is a [game engine](/categories/game-engine) which was initially developed for several companies in Latin America before its public release. The development environment runs on Windows, macOS, Linux, BSD and Haiku (both 32 and 64-bit) and can create games targeting PC, mobile and web platforms.
   

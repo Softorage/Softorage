@@ -3,7 +3,7 @@ title: "Wings 3D"
 
 description: "A free and open-source subdivision modeler inspired by Nendo and Mirai from Izware"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Wings3d.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/wings-3d.png"
 
 status: ["Active"]
 
@@ -13,36 +13,36 @@ get_it:
   - from: "Authentic"
     url: "http://www.wings3d.com/?page_id=84"
   - from: "Softpedia"
+    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Wings-3D.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
         type: "official"
-    url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Wings-3D.shtml"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://wings-3d.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/wings-3d/"
-  - from: "CNET"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "CNET"
     url: "https://download.cnet.com/Wings-3D/3000-6677_4-10514566.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
+    url: "https://wings-3d.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         type: "official"
-    url: "https://wings-3d.en.softonic.com/mac"
 
 sysreq:
   -

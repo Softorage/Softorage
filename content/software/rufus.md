@@ -3,7 +3,7 @@ title: "Rufus"
 
 description: "A free and open-source portable application for Microsoft Windows that can be used to format and create bootable USB flash drives or Live USBs"
 
-image: "https://upload.wikimedia.org/wikipedia/commons/d/de/Rufus-logo.png"
+image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/rufus.png"
 
 status: ["Active"]
 
@@ -13,53 +13,53 @@ get_it:
   - from: "Authentic"
     url: "https://rufus.ie/downloads/"
   - from: "GitHub Releases | Authentic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://github.com/pbatard/rufus/releases"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FossHub"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.fosshub.com/Rufus.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Malavida"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.malavida.com/en/soft/rufus-usb/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Softonic"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://rufus.en.softonic.com/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "Uptodown"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://rufus-usb.en.uptodown.com/windows"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "TechSpot"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.techspot.com/downloads/6062-rufus.html"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
   - from: "FileHorse"
-    platform:
-      - name: "Windows"
-        hardware: ["dskp"]
-        type: "official"
     url: "https://www.filehorse.com/download-rufus/"
-  - from: "FileHippo"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         type: "official"
+  - from: "FileHippo"
     url: "https://filehippo.com/download_rufus/"
+    platform:
+      - name: "Windows"
+        hardware: ["dskp"]
+        type: "official"
 
 sysreq:
   -
@@ -163,10 +163,10 @@ rating:
   - name: "CNET"
     rate: [4, 5]
     remarks: "Windows"
-
 ---
   Rufus is a free and open-source portable application developed by Pete Batard of Akeo Consulting for Microsoft Windows that can be used to format and create bootable USB flash drives or [Live USBs](/categories/live-usb-creator/).
   
   Rufus supports a variety of bootable .iso files, including various Linux distributions and Windows installation .iso files, as well as raw disk image files (including compressed ones). If needed, it can install a bootloader such as SYSLINUX or GRUB onto the flash drive to render it bootable. It also allows the installation of MS-DOS or FreeDOS onto a flash drive as well as the creation of Windows To Go bootable media. It supports formatting flash drives as FAT, FAT32, NTFS, exFAT, UDF or ReFS filesystems. Rufus can compute the MD5, SHA-1 and SHA-256 hashes of the currently selected image.
   
   [FAQ](https://github.com/pbatard/rufus/wiki/FAQ) 
+
