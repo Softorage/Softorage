@@ -3,7 +3,7 @@ title: "SymPy"
 
 description: "A Python library for symbolic mathematics"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/sympy.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/sympy.png?h=80"
 
 status: ["Active"]
 
@@ -57,3 +57,4 @@ note: |
   > SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible. SymPy is written entirely in Python. \- [Official website](https://www.sympy.org/)
   
   [Documentation](https://docs.sympy.org/) I [Wiki](https://github.com/sympy/sympy/wiki) I [Mailing list](https://groups.google.com/forum/#!forum/sympy) I [Gitter chat](https://gitter.im/sympy/sympy) I [IRC](https://webchat.freenode.net/?channels=sympy) I [Planet SymPy](https://planet.sympy.org/) I [FAQ](https://github.com/sympy/sympy/wiki/Faq)
+

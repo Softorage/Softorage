@@ -3,7 +3,7 @@ title: "MacTeX"
 
 description: "A redistribution of TeX Live, a typesetting environment which includes Mac-specific utilities and front-ends"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/mactex.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/mactex.png?h=80"
 
 status: ["Active"]
 
@@ -39,4 +39,5 @@ source:
   See [TeX Live](/software/tex-live/).
   
   [FAQ](https://www.tug.org/mactex/faq/) I [About](https://www.tug.org/mactex/aboutmactex.html)
+
 

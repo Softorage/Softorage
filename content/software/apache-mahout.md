@@ -3,7 +3,7 @@ title: "Apache Mahout"
 
 description: "A project of the Apache Software Foundation to produce free implementations of distributed or otherwise scalable machine learning algorithms"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/apache-mahout.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/apache-mahout.png?h=80"
 
 status: ["Active"]
 
@@ -84,4 +84,5 @@ note: |
   
   [Documentation](https://mahout.apache.org/docs/latest/index.html) I [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists) I [FAQ](https://mahout.apache.org/general/faq.html) I [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
   
+
 

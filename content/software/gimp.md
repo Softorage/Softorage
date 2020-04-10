@@ -3,7 +3,7 @@ title: "GIMP"
 
 description: "A free and open-source raster graphics editor built with GTK toolkit"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/gimp.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/gimp.png?h=80"
 
 status: ["Active"]
 
@@ -239,3 +239,4 @@ note: |
   
   [News](https://www.gimp.org/news/) I [Wiki](https://wiki.gimp.org/) I [Documentation](https://www.gimp.org/docs/) I [User FAQ](https://www.gimp.org/docs/userfaq.html) I [Books](https://www.gimp.org/books/) I [Mailing lists](https://www.gimp.org/mail_lists.html) I [IRC](https://www.gimp.org/irc.html)
   
+

@@ -3,7 +3,7 @@ title: "ELKI"
 
 description: "A data mining software written in Java, with focus on research in algorithms"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/elki.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/elki.png?h=80"
 
 status: ["Active"]
 
@@ -82,4 +82,5 @@ rating:
   > \- [Stack Overflow](https://stackoverflow.com/tags/elki/info)
   
   [Mailing list](https://elki-project.github.io#bug-reports-and-contact) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/elki) I [FAQ](https://elki-project.github.io/faq)
+
 

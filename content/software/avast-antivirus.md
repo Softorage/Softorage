@@ -3,7 +3,7 @@ title: "Avast Antivirus"
 
 description: "A family of internet security applications developed by Avast, which includes Avast Passwords, Avast Secureline VPN"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/avast-antivirus.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/avast-antivirus.png?h=80"
 
 status: ["Active"]
 
@@ -287,4 +287,5 @@ rating:
   Avast Antivirus is a family of internet [security applications](/categories/security-software/) developed by Avast for Microsoft Windows, macOS, Android and iOS. The Avast Antivirus products include free and proprietary versions that provide [computer security](/categories/security-software/), [browser](/categories/web-browser/) security, [antivirus software](/categories/antivirus-software/), firewall, anti-phishing, antispyware, and anti-spam among other services.
   
   [Blog](https://blog.avast.com/) I [Forum](https://forum.avast.com/) I [Documentation](https://www.avast.com/download-documentation) I [FAQ](https://support.avast.com/article/Antivirus-FAQ/)
+
 

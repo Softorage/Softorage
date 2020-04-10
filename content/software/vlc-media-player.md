@@ -3,7 +3,7 @@ title: "VLC Media Player"
 
 description: "A free and open-source media player software and streaming media server developed by the VideoLAN project"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/vlc-media-player.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/vlc-media-player.png?h=80"
 
 status: ["Active"]
 
@@ -372,3 +372,4 @@ rating:
   
   [News](https://www.videolan.org/news.html) I [Forum](https://forum.videolan.org/) I [Wiki](https://wiki.videolan.org/) I [Documentation](https://wiki.videolan.org/Documentation) I [FAQ](https://www.videolan.org/support/faq.html) I [IRC](https://webchat.freenode.net/?channels=videolan)
   
+

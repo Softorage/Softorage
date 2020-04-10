@@ -3,7 +3,7 @@ title: "Brave (Web Browser)"
 
 description: "A free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/brave-web-browser.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/brave-web-browser.png?h=80"
 
 status: ["Active"]
 

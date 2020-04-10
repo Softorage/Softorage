@@ -3,7 +3,7 @@ title: "OpenCog"
 
 description: "A project that aims to build an artificial general intelligence (AGI) framework. OpenCog Prime is a specific set of interacting components designed to give rise to human-equivalent artificial general intelligence."
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/opencog.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/opencog.png?h=80"
 
 status: ["Active"]
 
@@ -49,4 +49,5 @@ source:
   
   [OpenCog Brainwave Blog](https://blog.opencog.org/) I [OpenCog Foundation Feed](https://opencog.org/feed/) I [AI Documentation](https://wiki.opencog.org/w/AI_Documentation) I [Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project) I [FAQ](https://opencog.org/faq/) I [Mailing list](https://groups.google.com/forum/#!forum/opencog) I [IRC](https://webchat.freenode.net/?channels=opencog)
   
+
 

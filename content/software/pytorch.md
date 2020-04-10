@@ -3,7 +3,7 @@ title: "PyTorch"
 
 description: "A machine learning library for Python, based on Torch"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/pytorch.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/pytorch.png?h=80"
 
 status: ["Active"]
 
@@ -87,4 +87,5 @@ rating:
   > \- [NVIDIA - DEEP LEARNING FRAMEWORKS DOCUMENTATION](https://docs.nvidia.com/deeplearning/dgx/pytorch-release-notes/overview.html)
   
   [Blog](https://pytorch.org/blog) I [Documentation](https://pytorch.org/docs) I [Slack](https://pytorch.slack.com/) I [FAQ](https://pytorch.org/docs/stable/notes/faq.html) I [PyTorch Discuss Q&A](https://discuss.pytorch.org/) I [Wiki](https://github.com/pytorch/pytorch/wiki)
+
 

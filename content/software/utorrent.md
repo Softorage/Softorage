@@ -3,7 +3,7 @@ title: "uTorrent"
 
 description: "A proprietary adware BitTorrent client owned and developed by BitTorrent, Inc."
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/utorrent.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/utorrent.png?h=80"
 
 status: ["Active"]
 
@@ -233,3 +233,4 @@ rating:
   
   [Blog](http://blog.utorrent.com/) I [Forum](https://forum.utorrent.com/) I [Help](http://help.utorrent.com/) I [documentation.HELP!](https://documentation.help/uTorrent/) I [FAQ](http://help.utorrent.com/customer/portal/topics/822087/articles)
   
+

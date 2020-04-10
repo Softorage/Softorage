@@ -3,7 +3,7 @@ title: "IPython"
 
 description: "A command shell for interactive computing"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/ipython.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/ipython.png?h=80"
 
 status: ["Active"]
 
@@ -79,3 +79,4 @@ note: |
   > \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=IPython&oldid=880851247)
   
   [News](https://ipython.org/news.html) I [Documentation](https://ipython.org/documentation.html) I [Mailing list](https://mail.python.org/mailman/listinfo/ipython-dev) I [Wiki](https://github.com/ipython/ipython/wiki) I [FAQ](https://ipython.org/faq.html) I [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/ipython)
+

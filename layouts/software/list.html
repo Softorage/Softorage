@@ -59,7 +59,7 @@
         <div class="card-body text-antinav">
           <div class="card-title align-middle">
             <span class="h3">{{ add $index 1 }}</span>&nbsp;
-            <a class="text-reset h3" href="{{ $element.Permalink }}" target="_blank"><span class="name">{{ $element.Title }}</span></a>&nbsp; {{ site.Data.icons.externalLink | safeHTML }}&nbsp;&nbsp;
+            <a class="text-reset h3" href="{{ $element.Permalink }}" target="_blank"><span class="name">{{ replace (replace $element.Title "(" "<span class='small' style='font-weight: 300; font-size: 1rem;'>") ")" "</span>" | safeHTML }}</span></a>&nbsp; {{ site.Data.icons.externalLink | safeHTML }}&nbsp;&nbsp;
             <span class="text-muted small float-right">
               
               {{- if $element.Params.license }}

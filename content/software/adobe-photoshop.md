@@ -3,7 +3,7 @@ title: "Adobe Photoshop"
 
 description: "A raster graphics editor developed and published by Adobe Inc.; with Photoshop Express, Photoshop Mix, Photoshop Fix & Photoshop Touch as part of Photoshop family"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/adobe-photoshop.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-photoshop.png?h=80"
 
 status: ["Active"]
 
@@ -356,4 +356,5 @@ rating:
   Photoshop's naming scheme was initially based on version numbers. However, in October 2002 (following the introduction of Creative Suite branding), each new version of Photoshop was designated with "CS" plus a number; e.g., the eighth major version of Photoshop was Photoshop CS and the ninth was Photoshop CS2. Photoshop CS3 through CS6 were also distributed in two different editions: Standard and Extended. With the introduction of the Creative Cloud branding in June 2013 (and in turn, the change of the "CS" suffix to "CC"), Photoshop's licensing scheme was changed to that of software as a service rental model.
   
   [Blog](https://theblog.adobe.com/creative-cloud/photoshop/) I [Forum](https://community.adobe.com/t5/photoshop/bd-p/photoshop) I [User Guide](https://helpx.adobe.com/in/photoshop/user-guide.html) I [FAQ](https://helpx.adobe.com/in/photoshop/faq.html)
+
 

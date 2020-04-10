@@ -3,7 +3,7 @@ title: "LibreOffice"
 
 description: "A free and open-source office suite, comprising programs for word processing, the creation and editing of spreadsheets, slideshows, diagrams and drawings, working with databases, and composing mathematical formulae"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/libreoffice.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/libreoffice.png?h=80"
 
 status: ["Active"]
 
@@ -279,3 +279,4 @@ note: |
    
    [Blog](https://blog.documentfoundation.org/) I [Forum](https://ask.libreoffice.org/en/questions/) I [Wiki](https://wiki.documentfoundation.org/Main_Page) I [Documentation](https://wiki.documentfoundation.org/Documentation/Publications) I [IRC](https://irc.documentfoundation.org/) I [Planet](https://planet.documentfoundation.org/) I [Mailing lists](https://www.libreoffice.org/get-help/mailing-lists/) I [FAQ](https://www.libreoffice.org/get-help/frequently-asked-questions/)
   
+

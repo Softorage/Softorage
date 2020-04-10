@@ -3,7 +3,7 @@ title: "Mozilla Firefox"
 
 description: "An open source web browser developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation; with variant Firefox Lite"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/mozilla-firefox.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/mozilla-firefox.png?h=80"
 
 status: ["Active"]
 
@@ -275,4 +275,5 @@ note: |
   
   [Blog](https://blog.mozilla.org/) I [Forum](https://support.mozilla.org/en-US/questions) I [News/Announcements](https://blog.mozilla.org/press/) I [Wiki](https://wiki.mozilla.org/Firefox) I [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding) I [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
   
+
 

@@ -3,7 +3,7 @@ title: "MusicBrainz Picard"
 
 description: "A free and open-source software for identifying, tagging, and organizing digital audio recordings"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/musicbrainz-picard.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/musicbrainz-picard.png?h=80"
 
 status: ["Active"]
 
@@ -137,3 +137,4 @@ rating:
   
   [Forum](https://community.metabrainz.org/c/picard) I [Documentation](https://picard.musicbrainz.org/docs/)
   
+

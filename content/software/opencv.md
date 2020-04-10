@@ -3,7 +3,7 @@ title: "OpenCV"
 
 description: "A library of programming functions mainly aimed at real-time computer vision"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/opencv.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/opencv.png?h=80"
 
 status: ["Active"]
 
@@ -116,4 +116,5 @@ note: |
   OpenCV supports the [deep learning](/categories/deep-learning) frameworks [TensorFlow](/software/tensorflow/), [Torch](/software/torch/)/[PyTorch](/software/pytorch/) and [Caffe](/software/caffe/).
   
   [News](https://opencv.org/news.html) I [Q&A Forum](http://answers.opencv.org/questions/) I [Documentation](https://docs.opencv.org/) I [Wiki](https://github.com/opencv/opencv/wiki) I [IRC](https://webchat.freenode.net/?channels=opencv)
+
 

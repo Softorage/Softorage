@@ -3,7 +3,7 @@ title: "WinRAR"
 
 description: "A trialware file archiver utility for Windows, developed by Eugene Roshal of win.rar GmbH"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/winrar.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/winrar.png?h=80"
 
 status: ["Active"]
 
@@ -283,3 +283,4 @@ rating:
   
   [News](https://www.win-rar.com/latestnews.html?&L=0) I [Manual](http://acritum.com/software/manuals/winrar/) I [documentation.HELP!](https://documentation.help/WinRAR/) I [FAQ](https://www.win-rar.com/faq.html?&L=0)
   
+

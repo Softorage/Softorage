@@ -3,7 +3,7 @@ title: "Avast Secure Browser"
 
 description: "A web browser developed by Avast that focuses on Internet security and privacy"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/avast-secure-browser.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/avast-secure-browser.png?h=80"
 
 status: ["Active"]
 
@@ -140,3 +140,4 @@ rating:
   It has features such as Ad Block, Bank mode, Passwords, Video downloader, Anti-tracking & Anti-fingerprinting, Anti-fishing, etc.
   
   [Blog](https://blog.avast.com/topic/browser) I [Forum](https://forum.avast.com/index.php?board=78.0) I [FAQ](https://support.avast.com/en-in/article/Secure-Browser-FAQ)
+

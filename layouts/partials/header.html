@@ -20,26 +20,40 @@
     
     <div class="d-inline-block bg-nav border-0 my-2 shadow-sm flex-fill type-search rounded">
       
-        <div class="row">
-          <div class="col-1 py-2">
-            <span class="pl-3">{{ site.Data.icons.search | safeHTML }}</span>
-          </div>
-          <div class="col-11">
-            {{ if $not_search_page -}}
+      <div class="row desktop-only">
+        <div class="col-1 py-2">
+          <span class="pl-3">{{ site.Data.icons.search | safeHTML }}</span>
+        </div>
+        <div class="col-11">
+          {{ if $not_search_page -}}
             <form action="/search/" method="get">
               <input type="search" class="bg-nav border-0 form-control" name="s" placeholder="Search the Softorage">
             </form>
-            {{ else }}
-              <!-- 
-              wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
-              see: https://github.com/javve/list.js/issues/358
-              -->
-              <input type="search" id="search_page_main_search" class="bg-nav border-0 form-control" name="s" placeholder="Search this page">
-            {{ end }}
-          </div>
+          {{ else }}
+            <!-- 
+            wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
+            see: https://github.com/javve/list.js/issues/358
+            -->
+            <input type="search" id="search_page_main_search" class="bg-nav border-0 form-control" name="s" placeholder="Search this page">
+          {{ end }}
         </div>
-      
+      </div>
+        
     </div>
+    
+    <a role="button" class="btn bg-nav shadow-none mobile-only" tabindex="0" data-toggle="popover" data-trigger="click" data-html="true" data-placement="bottom" data-content="
+      {{ if $not_search_page -}}
+        <form action='/search/' method='get'>
+          <input type='search' class='bg-nav form-control' name='s' placeholder='Search the Softorage'>
+        </form>
+      {{ else }}
+        <!-- 
+        wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
+        see: https://github.com/javve/list.js/issues/358
+        -->
+        <input type='search' id='search_page_main_search' class='bg-nav form-control' name='s' placeholder='Search this page'>
+      {{ end }}
+    ">{{ site.Data.icons.search | safeHTML }}</a>
     
     <a class="navbar-toggler border-0" role="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="text-antinav">{{ site.Data.icons.bars | safeHTML }}</span>

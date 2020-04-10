@@ -3,7 +3,7 @@ title: "Adobe Acrobat Reader DC"
 
 description: "A freemium software developed by Adobe Inc., to view, create, manipulate, print and manage files in Portable Document Format (PDF)"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/adobe-acrobat-reader-dc.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-acrobat-reader-dc.png?h=80"
 
 status: ["Active"]
 
@@ -262,3 +262,4 @@ rating:
   Acrobat Reader DC, has a set of premium features, which are activated on a purchase of subscription to Adobe Acrobat PDF Pack, Adobe Acrobat Export PDF, or Adobe Sign.
   
   [News](https://helpx.adobe.com/reader/whats-new.html) I [Forum](https://community.adobe.com/t5/acrobat-reader/bd-p/acrobat-reader) I [FAQ](https://helpx.adobe.com/reader/faq.html)
+

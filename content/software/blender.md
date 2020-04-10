@@ -3,7 +3,7 @@ title: "Blender"
 
 description: "3D modeling software written in C, C++, and Python containing cloth, hair, fluid, particle, and rigid body simulation techniques."
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/blender.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/blender.png?h=80"
 
 status: ["Active"]
 
@@ -274,4 +274,5 @@ rating:
   
   [Reference Manual](https://docs.blender.org/manual/en/latest/index.html) I [News](https://www.blender.org/news/) I [Community](https://www.blender.org/community/) I [Stack Exchange(QA)](https://blender.stackexchange.com/) I [Wiki](https://wiki.blender.org/wiki/Main_Page) I [Discord(community-managed)](https://discordapp.com/invite/blender) I [Developers Blog](https://code.blender.org/) I [Developers Forum](https://devtalk.blender.org/) I [IRC](https://wiki.blender.org/wiki/Communication/Contact/IRC)
   
+
 

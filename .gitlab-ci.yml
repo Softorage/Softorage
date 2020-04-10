@@ -21,6 +21,7 @@ test:
     paths:
     - test
     - resources
+    expire_in: 1 week
   except:
   - master
 
@@ -46,6 +47,7 @@ pages:
   artifacts:
     paths:
     - public
-    # - resources # since artifacts are considered in calculating size occupied, it is not taken
+    - resources # since artifacts are considered in calculating size occupied, it is not taken
+    expire_in: 1 week
   only:
   - master

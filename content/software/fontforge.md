@@ -3,7 +3,7 @@ title: "FontForge"
 
 description: "A font editor which supports many common font formats."
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/fontforge.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/fontforge.png?h=80"
 
 status: ["Active"]
 
@@ -122,3 +122,4 @@ rating:
   
   [Online Book](http://designwithfontforge.com/) I [Documentation](https://fontforge.org/en-US/documentation/) I [FAQ](https://fontforge.org/en-US/faq/) I [Wiki](https://github.com/fontforge/fontforge/wiki) I [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
   
+

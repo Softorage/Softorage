@@ -36,6 +36,19 @@ color: $antinav;
 font-family: 'Roboto', sans-serif;
 }
 
+// especially, search bar
+@media (min-width: 650px) {
+  .mobile-only {
+  display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
 /*
 @keyframes backg-fadein {
 from { box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 1); }

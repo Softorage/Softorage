@@ -3,7 +3,7 @@ title: "TeamViewer"
 
 description: "A proprietary software application for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/teamviewer.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/teamviewer.png?h=80"
 
 status: ["Active"]
 
@@ -345,3 +345,4 @@ rating:
   TeamViewer is a proprietary software application for [remote control](/categories/remote-administration/), [desktop sharing](/categories/desktop-sharing), online meetings, [web conferencing](/categories/web-conferencing/) and file transfer between computers. It allows remote access to computers or mobile devices and use them as though user were there. It allows to remotely connect to servers, commercial-grade machines, and IoT devices through TeamViewer's global remote access network. TeamViewer includes encryption based on 2048-bit RSA private/public key exchange and AES (256-bit) session encryption, two-factor authentication, enforced password reset on unusual activity and a listing feature for trusted devices (Whitelisting).
   
   [Blog](https://www.teamviewer.com/en/blog/) I [Community Blog/News](https://community.teamviewer.com/t5/Community-Blog/bg-p/News) I [Community Forum](https://community.teamviewer.com/) I [Documentation](https://www.teamviewer.com/en/documents/) I [FAQ](https://www.teamviewer.com/en/remote-management/support/faq/)
+

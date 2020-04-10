@@ -3,7 +3,7 @@ title: "LMMS"
 
 description: "LMMS (formerly Linux MultiMedia Studio) is a free and open source digital audio workstation application program, release under GPL v2 license"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/lmms.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/lmms.png?h=80"
 
 status: ["Active"]
 
@@ -186,4 +186,5 @@ rating:
   
   [Forum](https://lmms.io/forum/) I [Wiki](https://lmms.io/wiki/index.php?title=Main_Page) I [Developer Wiki](https://github.com/LMMS/lmms/wiki) I [Documentation(wiki)](https://lmms.io/documentation/) I [User FAQ](https://lmms.io/documentation/User_FAQ) I [Mailing lists](https://sourceforge.net/p/lmms/mailman/) I [IRC](https://webchat.freenode.net/?channels=lmms) I [Discord](https://lmms.io/chat/)
   
+
 

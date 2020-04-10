@@ -3,7 +3,7 @@ title: "NumPy"
 
 description: "A fundamental package for scientific array computing with Python, supporting multi-dimensional arrays, matrices, with a collection of high-level mathematical functions to operate on these arrays"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/numpy.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/numpy.png?h=80"
 
 status: ["Active"]
 
@@ -77,4 +77,5 @@ rating:
   > Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data. Arbitrary data-types can be defined. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases. \- [Official website](https://www.numpy.org)
   
   [Mailing list](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists) I [FAQ](https://www.scipy.org/scipylib/faq.html#general-questions-about-numpy) I [Wiki](https://github.com/numpy/numpy/wiki) I [Documentation](https://docs.scipy.org/doc/) I [Stack Overflow](https://stackoverflow.com/questions/tagged/numpy)
+
 

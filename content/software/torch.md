@@ -3,7 +3,7 @@ title: "Torch"
 
 description: "A machine learning library and scientific computing framework for LuaJIT"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/torch.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/torch.png?h=80"
 
 status: ["Discontinued"]
 
@@ -73,4 +73,5 @@ note: |
   
   [Documentation](http://torch.ch/docs/getting-started.html#_) I [Wiki](https://github.com/torch/torch7/wiki/Cheatsheet) I [Mailing list](https://groups.google.com/forum/embed/?place=forum%2Ftorch7#!forum/torch7) I [Gitter chat](https://gitter.im/torch/torch7)
   
+
 

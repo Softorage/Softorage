@@ -3,7 +3,7 @@ title: "Audacity"
 
 description: "A free and open-source digital audio editor and recording application software"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/audacity.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/audacity.png?h=80"
 
 status: ["Active"]
 
@@ -237,3 +237,4 @@ note: |
   
   [Blog](https://www.audacityteam.org/posts/) I [Forum](https://forum.audacityteam.org/) I [News](https://www.audacityteam.org/about/news/) I [Manual](https://manual.audacityteam.org/) I [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page) I [Documentation](https://www.audacityteam.org/help/documentation/) I [FAQ](https://manual.audacityteam.org/man/faq.html)
   
+

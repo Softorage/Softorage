@@ -3,7 +3,7 @@ title: "balenaEtcher"
 
 description: "A free and open-source utility used for writing image files such as .iso and .img files, as well as zipped folders onto storage media to create live SD cards and USB flash drives"
 
-image: "https://cdn.statically.io/gl/Softorage/images/master/software-logo/balenaetcher.png"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/balenaetcher.png?h=80"
 
 status: ["Active"]
 
@@ -208,3 +208,4 @@ note: |
   Etcher was developed using the Electron framework. balenaEtcher was originally called Etcher, but its name was changed on October 29, 2018 when Resin.io changed its name to Balena.
   
   [Blog](https://www.balena.io/blog/tag/etcher/) I [Support](https://github.com/balena-io/etcher/blob/master/SUPPORT.md) I [Forum](https://forums.balena.io/c/etcher) I [Documentation](https://github.com/balena-io/etcher/blob/master/docs/USER-DOCUMENTATION.md) I [FAQ](https://www.balena.io/etcher/#faq) I [Mailing list](https://us3.list-manage.com/subscribe?u=87871f17defba2d203db77a92&id=1fc3119ed2)
+
