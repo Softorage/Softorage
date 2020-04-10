@@ -3,7 +3,7 @@ title: "The Microsoft Cognitive Toolkit"
 
 description: "A deep learning framework developed by Microsoft Research, previously known as CNTK"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/the-microsoft-cognitive-toolkit.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/the-microsoft-cognitive-toolkit.png?h=64"
 
 status: ["Active"]
 
@@ -105,5 +105,6 @@ note: |
   The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through [deep learning](/categories/deep-learning) by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
   
   [News](https://docs.microsoft.com/en-us/cognitive-toolkit/news) I [Documentation](https://docs.microsoft.com/en-us/cognitive-toolkit/) I [FAQ](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-FAQ) I [Blog](https://www.microsoft.com/en-us/cognitive-toolkit/blog/)
+
 
 

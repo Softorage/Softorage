@@ -3,7 +3,7 @@ title: "TeX Live"
 
 description: "A free software distribution for the TeX document production system"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/tex-live.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/tex-live.png?h=64"
 
 status: ["Active"]
 
@@ -57,5 +57,6 @@ source:
   Since the 2009 release of TeX Live, it includes [TeXworks](/software/texworks/), a graphical editor. There is also [MacTeX](/software/mactex/) for macOS which comprises TeX Live as well as some additional tools for using TeX on the Mac.
   
   [Documentation](https://www.tug.org/texlive/doc.html) I [Mailing lists](https://www.tug.org/texlive/lists.html)
+
 
 

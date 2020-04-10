@@ -3,7 +3,7 @@ title: "scikit-learn"
 
 description: "A machine learning library for the Python programming language"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/scikit-learn.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/scikit-learn.png?h=64"
 
 status: ["Active"]
 
@@ -90,5 +90,6 @@ note: |
   * Preprocessing : Feature extraction and normalization
   
   [Documentation](https://scikit-learn.org/stable/documentation.html) I [Wiki](https://github.com/scikit-learn/scikit-learn/wiki) I [Mailing list](https://mail.python.org/mailman/listinfo/scikit-learn) I [Stack Overflow](https://stackoverflow.com/questions/tagged/scikit-learn) I [FAQ](https://scikit-learn.org/stable/faq.html) I [IRC](https://webchat.freenode.net/?channels=scikit-learn)
+
 
 

@@ -3,7 +3,7 @@ title: "IObit Driver Booster"
 
 description: "A driver updater utility for Windows users to keep drivers and game components up to date"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/iobit-driver-booster.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/iobit-driver-booster.png?h=64"
 
 status: ["Active"]
 
@@ -179,3 +179,4 @@ rating:
   It is known for 'Game Mode' setting, which optimizes drivers to improve their performance in games so as to enhance the gaming experience.
   
   [News](https://forums.iobit.com/forum/general-forums/news-offers) I [Forum](https://forums.iobit.com/) I [User Manual](https://www.iobit.com/product-manuals/db-help/) I [FAQ](https://www.iobit.com/en/allfaq.php#p109)
+

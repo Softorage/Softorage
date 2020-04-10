@@ -3,7 +3,7 @@ title: "UC Browser"
 
 description: "A web browser developed by the Singapore/China-based mobile Internet company UCWeb, which is in turn owned by the Alibaba Group"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/uc-browser.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/uc-browser.png?h=64"
 
 status: ["Active"]
 
@@ -317,5 +317,6 @@ rating:
   
   [News](http://www.ucweb.com/press/) I [FAQ](http://www.ucweb.com/ucbrowser/help/)
   
+
 
 

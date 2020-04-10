@@ -3,7 +3,7 @@ title: "Microsoft Edge"
 
 description: "A web browser developed by Microsoft"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/microsoft-edge.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/microsoft-edge.png?h=64"
 
 status: ["Active"]
 
@@ -256,5 +256,6 @@ note: |
   Microsoft Edge is a [web browser](/categories/web-browser) developed by Microsoft. Edge includes integration with Cortana and has extensions hosted on the Microsoft Store. Unlike [Internet Explorer](/software/internet-explorer/), Edge does not support the legacy ActiveX and BHO technologies. Originally built with Microsoft's own EdgeHTML and Chakra engines, in 2019 Edge was rebuilt as a [Chromium](/software/chromium-web-browser/)-based browser, using the Blink and V8 engines. Though, for iOS, Microsoft Edge is based on WebKit. Microsoft released the first [Chromium](/software/chromium-web-browser/)-based Edge version on January 15, 2020.
   
   [Devs Blog](https://blogs.windows.com/msedgedev/) I [Forum](https://answers.microsoft.com/en-us/edge/forum) I [Documentation](https://docs.microsoft.com/en-us/microsoft-edge/) I [Deploy Documentation](https://docs.microsoft.com/en-us/deployedge/) I [FAQ for IT Pros](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-faq) I [FAQ for Enterprise](https://docs.microsoft.com/en-us/deployedge/faqs-edge-in-the-enterprise)
+
 
 

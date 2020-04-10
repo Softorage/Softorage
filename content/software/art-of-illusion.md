@@ -3,7 +3,7 @@ title: "Art of Illusion"
 
 description: "3D-modeling software for creating and mapping textures and rendering both, still images and animations."
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/art-of-illusion.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/art-of-illusion.png?h=64"
 
 status: ["Active"]
 
@@ -147,4 +147,5 @@ note: |
   
   [Forum](https://sourceforge.net/p/aoi/discussion/) I [Documentation](http://www.artofillusion.org/documentation) I [FAQ](http://www.artofillusion.org/faq)
   
+
 

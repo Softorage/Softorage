@@ -3,7 +3,7 @@ title: "Xpdf"
 
 description: "A free and open-source PDF viewer for operating systems supported by the Qt toolkit."
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/xpdf.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/xpdf.png?h=64"
 
 status: ["Active"]
 
@@ -76,5 +76,6 @@ note: |
   Xpdf is also used as a back-end for other PDF readers frontends such as KPDF and GPDF, and its engine, without the X11 display components, is used for PDF viewers including BePDF on BeOS, '!PDF' on RISC OS, on PalmPDF on Palm OS and on Windows Mobile.
   
   [Forum](http://forum.xpdfreader.com/)
+
 
 

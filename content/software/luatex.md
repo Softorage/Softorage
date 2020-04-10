@@ -3,7 +3,7 @@ title: "LuaTeX"
 
 description: "TeX-based computer typesetting system which is an extended version of pdfTeX using Lua as an embedded scripting language"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/luatex.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/luatex.png?h=64"
 
 status: ["Active"]
 
@@ -58,5 +58,6 @@ note: |
   See [XeTeX](/software/xetex/), [LuaTeX](/software/luatex/).
   
   [Mailing list](http://www.luatex.org/support.html) I [Wiki](http://wiki.luatex.org/index.php/Main_Page) I [Documentation](http://www.luatex.org/documentation.html) I [FAQ](http://www.luatex.org/faq.html) I [Stack Exchange](https://tex.stackexchange.com/questions/tagged/luatex)
+
 
 

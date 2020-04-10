@@ -3,7 +3,7 @@ title: "Opera (Web Browser)"
 
 description: "A freeware Chromium-based web browser developed by Opera Software; with variants Opera Mini, Opera Touch"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/opera-web-browser.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/opera-web-browser.png?h=64"
 
 status: ["Active"]
 
@@ -320,5 +320,6 @@ rating:
         
   [Blog/News](https://blogs.opera.com/news/) I [Blog Desktop](https://blogs.opera.com/desktop/) I [Blog Mobile](https://blogs.opera.com/mobile/) I [Blog Security](https://blogs.opera.com/security/) I [Forum](https://forums.opera.com/) I [Help](https://help.opera.com/en/get-started/) I [FAQ](https://help.opera.com/en/faq/)
   
+
 
 

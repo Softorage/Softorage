@@ -3,7 +3,7 @@ title: "TeraCopy"
 
 description: "A file transfer utility designed as an alternative for the built-in Windows Explorer file transfer feature"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/teracopy.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/teracopy.png?h=64"
 
 status: ["Active"]
 
@@ -158,4 +158,5 @@ rating:
   TeraCopy is a file transfer [utility](/categories/utility/) developed by Code Sector, designed as an alternative for the built-in Windows Explorer file transfer feature, with focus on data integrity, file transfer reliability and the ability to pause or resume file transfers.
   
   [Blog](http://blog.codesector.com/category/teracopy/) I [User Manual](https://codesector.kayako.com/section/5-user-manual) I [FAQ](https://codesector.kayako.com/section/6-faq)
+
 

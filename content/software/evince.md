@@ -3,7 +3,7 @@ title: "Evince"
 
 description: "Evince is a document viewer for multiple document formats. The goal of evince is to replace the multiple document viewers that exist on the GNOME Desktop with a single simple application."
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/evince.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/evince.png?h=64"
 
 status: ["Active"]
 
@@ -134,4 +134,5 @@ rating:
   
   [News](https://gitlab.gnome.org/GNOME/evince/blob/master/NEWS) I [Documentation](https://help.gnome.org/users/evince/stable/) I [FAQ](https://wiki.gnome.org/Apps/Evince/FrequentlyAskedQuestions) I [Mailing list](https://mail.gnome.org/mailman/listinfo/evince-list)
   
+
 

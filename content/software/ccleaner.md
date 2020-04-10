@@ -3,7 +3,7 @@ title: "CCleaner"
 
 description: "A utility used to clean potentially unwanted files and invalid Windows Registry entries from a computer"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/ccleaner.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/ccleaner.png?h=64"
 
 status: ["Active"]
 
@@ -285,4 +285,5 @@ rating:
   
   [Blog](https://www.ccleaner.com/news/blog) I [Community Forum](https://forum.piriform.com/) I [Press Releases](https://www.ccleaner.com/about/press-releases) I [Documentation](https://www.ccleaner.com/docs/ccleaner) I [FAQ](https://www.ccleaner.com/ccleaner/faq)
   
+
 

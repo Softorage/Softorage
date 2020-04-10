@@ -3,7 +3,7 @@ title: "TeXworks"
 
 description: "A TeX front-end program (working environment) that is GUI TeX editor"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/texworks.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/texworks.png?h=64"
 
 status: ["Active"]
 
@@ -57,5 +57,6 @@ source:
   See [XeTeX](/software/xetex/), [TeX Live](/software/tex-live/).
   
   [Mailing list](https://tug.org/mailman/listinfo/texworks)
+
 
 

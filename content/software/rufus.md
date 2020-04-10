@@ -3,7 +3,7 @@ title: "Rufus"
 
 description: "A free and open-source portable application for Microsoft Windows that can be used to format and create bootable USB flash drives or Live USBs"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/rufus.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/rufus.png?h=64"
 
 status: ["Active"]
 
@@ -169,5 +169,6 @@ rating:
   Rufus supports a variety of bootable .iso files, including various Linux distributions and Windows installation .iso files, as well as raw disk image files (including compressed ones). If needed, it can install a bootloader such as SYSLINUX or GRUB onto the flash drive to render it bootable. It also allows the installation of MS-DOS or FreeDOS onto a flash drive as well as the creation of Windows To Go bootable media. It supports formatting flash drives as FAT, FAT32, NTFS, exFAT, UDF or ReFS filesystems. Rufus can compute the MD5, SHA-1 and SHA-256 hashes of the currently selected image.
   
   [FAQ](https://github.com/pbatard/rufus/wiki/FAQ) 
+
 
 

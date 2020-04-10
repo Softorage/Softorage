@@ -3,7 +3,7 @@ title: "Google Chrome"
 
 description: "A cross-platform web browser developed by Google"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/google-chrome.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/google-chrome.png?h=64"
 
 status: ["Active"]
 
@@ -302,5 +302,6 @@ note: |
   
   [Blog](https://blog.google/products/chrome/) I [Help Community](https://support.google.com/chrome/community) I [Enterprise Community](https://support.google.com/chrome/a/threads) I [API Index](https://developer.chrome.com/apps/api_index) I [Chrome & Chrome Web Store FAQ](https://developer.chrome.com/webstore/faq) I [Mobile Chrome FAQ](https://developer.chrome.com/multidevice/faq) I [Extensions FAQ](https://developer.chrome.com/extensions/faq)
   
+
 
 

@@ -3,7 +3,7 @@ title: "Wings 3D"
 
 description: "A free and open-source subdivision modeler inspired by Nendo and Mirai from Izware"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/wings-3d.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/wings-3d.png?h=64"
 
 status: ["Active"]
 
@@ -161,4 +161,5 @@ note: |
   
   [Forum](http://www.wings3d.com/forum/) I [Documentation](http://www.wings3d.com/?page_id=87) I [News](http://www.wings3d.com/?page_id=76) I [User Manual](http://www.wings3d.com/?page_id=252) I [FAQ](http://www.wings3d.com/forum/archive/index.php?thread-1106.html)
   
+
 

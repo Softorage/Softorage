@@ -3,7 +3,7 @@ title: "Adobe Acrobat DC"
 
 description: "A commercial software developed by Adobe Inc., to view, print, annotate, as well as create, edit, convert, digitally sign, encrypt, export and publish PDF files"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-acrobat-dc.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-acrobat-dc.png?h=64"
 
 status: ["Active"]
 
@@ -190,4 +190,5 @@ rating:
   Its features include, edit scanned documents; create protected PDFs; export PDFs to MS Office; fill, sign, and send forms; delete sensitive information; work with Dropbox, Box, Google Drive, and OneDrive.
   
   [Blog](https://theblog.adobe.com/document-cloud/acrobat-dc/) I [Release Notes](https://helpx.adobe.com/in/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes) I [Forum](https://community.adobe.com/t5/acrobat/bd-p/acrobat) | [User Guide](https://helpx.adobe.com/acrobat/user-guide.html) I [FAQ](https://helpx.adobe.com/in/acrobat/faq.html)
+
 

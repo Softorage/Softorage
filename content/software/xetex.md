@@ -3,7 +3,7 @@ title: "XeTeX"
 
 description: "A TeX typesetting engine using Unicode and supporting modern font technologies"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/xetex.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/xetex.png?h=64"
 
 status: ["Active"]
 
@@ -46,5 +46,6 @@ note: |
   See [TeX Live](/software/tex-live/).
   
   [News](https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/NEWS) I [TUG page](http://www.tug.org/xetex/) I [Mailing list](http://www.tug.org/mailman/listinfo/xetex)
+
 
 

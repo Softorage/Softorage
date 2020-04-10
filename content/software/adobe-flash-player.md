@@ -3,7 +3,7 @@ title: "Adobe Flash Player"
 
 description: "A computer software for using content created on the Adobe Flash platform, including viewing multimedia contents, executing rich Internet applications, and streaming audio and video"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-flash-player.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-flash-player.png?h=64"
 
 status: ["Active"]
 
@@ -213,4 +213,5 @@ rating:
   Adobe Flash Player (labeled Shockwave Flash in [Internet Explorer](/software/internet-explorer/) and [Firefox](/software/mozilla-firefox/)) is computer software for using content created on the Adobe Flash platform, including viewing multimedia contents, executing rich Internet applications, and streaming audio and video. Flash Player can run from a [web browser](/categories/web-browser/) as a [browser plug-in](/categories/browser-extension/) or on supported mobile devices. Flash Player runs SWF files that can be created by Adobe Flash Professional, Adobe Flash Builder or by third party tools such as FlashDevelop. Flash Player supports [vector graphics](/categories/vector-graphics-editor/), [3D graphics](/categories/3d-computing-graphics/), embedded audio, video and [raster graphics](/categories/raster-graphics-editor), and a scripting language called ActionScript (based on ECMAScript).
   
   [Archived Versions](https://helpx.adobe.com/flash-player/kb/archived-flash-player-versions.html) I [Blog](https://blogs.adobe.com/flashplayer/) I [Forum](https://community.adobe.com/t5/flash-player/bd-p/flash-player) I [FAQ](https://helpx.adobe.com/in/flash-player/kb/flash-player-faq.html) 
+
 

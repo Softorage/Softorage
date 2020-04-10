@@ -3,7 +3,7 @@ title: "MALLET"
 
 description: "A Java-based toolkit for machine learning applications on text"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/mallet.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/mallet.png?h=64"
 
 status: ["Active"]
 
@@ -88,4 +88,5 @@ note: |
   > \- [Official website](http://mallet.cs.umass.edu/)
   
   [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/mallet) I [API Reference](http://mallet.cs.umass.edu/api)
+
 

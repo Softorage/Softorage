@@ -3,7 +3,7 @@ title: "pandas"
 
 description: "A library providing data structures and data analysis tools for the Python programming language"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/pandas.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/pandas.png?h=64"
 
 status: ["Active"]
 
@@ -57,4 +57,5 @@ source:
   > pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=Pandas_(software)&oldid=876441587)
   
   [Documentation](https://pandas.pydata.org/pandas-docs/stable/) I [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/pandas) I [Mailing list - Developers](https://mail.python.org/mailman/listinfo/pandas-dev) I [FAQ](https://pandas.pydata.org/pandas-docs/stable/user_guide/gotchas.html) I [IRC](https://webchat.freenode.net/?channels=pydata)
+
 

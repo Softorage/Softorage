@@ -3,7 +3,7 @@ title: "Apache SystemML"
 
 description: "A machine learning system with support for Java 8+, Scala 2.11+, Python 2.7/3.5+, Hadoop 2.6+, and Spark 2.1+"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/apache-systemml.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/apache-systemml.png?h=64"
 
 status: ["Active"]
 
@@ -73,5 +73,6 @@ note: |
   Apache SystemML is customizable with R-like and Python-like languages. It also supports multiple execution modes, including Spark MLContext API, Spark Batch, Hadoop Batch, Standalone, and JMLC and automatic optimization based on data and cluster characteristics to ensure both efficiency and scalability.
   
   [Documentation](https://systemml.apache.org/documentation.html) I [Mailing lists](https://systemml.apache.org/community.html#mailing-list)
+
 
 

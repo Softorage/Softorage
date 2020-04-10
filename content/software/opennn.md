@@ -3,7 +3,7 @@ title: "OpenNN"
 
 description: "A software library which implements neural networks, a main area of deep learning research"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/opennn.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/opennn.png?h=64"
 
 status: ["Active"]
 
@@ -79,5 +79,6 @@ rating:
   It implements multiprocessing programming by means of OpenMP and GPU acceleration with CUDA.
   
   [Documentation](http://www.opennn.net/documentation/)
+
 
 

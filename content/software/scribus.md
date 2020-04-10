@@ -3,7 +3,7 @@ title: "Scribus"
 
 description: "A free and open source desktop publishing (DTP) application, designed for layout, typesetting, and preparation of files for professional-quality image-setting equipment"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/scribus.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/scribus.png?h=64"
 
 status: ["Active"]
 
@@ -267,4 +267,5 @@ rating:
   
   [Blog](https://rants.scribus.net/) I [Forum](http://forums.scribus.net/) I [News](https://www.scribus.net/category/news/) I [Wiki](https://wiki.scribus.net/canvas/Scribus) I [Video Tutorials](https://wiki.scribus.net/canvas/Scribus_Video_Tutorials) I [Get Stated](https://wiki.scribus.net/canvas/Get_Started_with_Scribus) I [Docs](https://wiki.scribus.net/canvas/Help:TOC) I [Mailing list](http://lists.scribus.net/mailman/listinfo) I [FAQ](https://wiki.scribus.net/canvas/Category:FAQ) I [IRC](https://webchat.freenode.net/?channels=scribus)
   
+
 

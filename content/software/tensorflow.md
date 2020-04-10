@@ -3,7 +3,7 @@ title: "TensorFlow"
 
 description: "An open-source software library for data-flow programming and machine learning applications such as neural networks"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/tensorflow.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/tensorflow.png?h=64"
 
 status: ["Active"]
 
@@ -126,5 +126,6 @@ note: |
   It comes with strong support for [machine learning](/categories/machine-learning) and [deep learning](/categories/deep-learning) and the flexible numerical computation core is used across many other scientific domains.
   
   [Blog](https://medium.com/tensorflow) I [Mailing list](https://www.tensorflow.org/community/lists) I [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow) I [Tutorials](https://www.tensorflow.org/tutorials/) I [FAQ](https://www.tensorflow.org/guide/faq)
+
 
 

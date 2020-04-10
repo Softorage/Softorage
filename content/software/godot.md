@@ -3,7 +3,7 @@ title: "Godot"
 
 description: "A 2D and 3D cross-platform compatible game engine released as open source software under the MIT license"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/godot.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/godot.png?h=64"
 
 status: ["Active"]
 
@@ -116,4 +116,5 @@ rating:
   
   [Documentation](https://docs.godotengine.org/) I [News](https://godotengine.org/news) I [Question/Answers](https://godotengine.org/qa/) I [IRC](http://webchat.freenode.net/?channels=#godotengine) I [Developer Forum](https://godotdevelopers.org/) I [FAQ](http://docs.godotengine.org/en/3.0/about/faq.html)
   
+
 

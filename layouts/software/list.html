@@ -171,7 +171,9 @@ var softwareListOptions = {
   valueNames: ["name", "description", "category"]
 };
 var softwareList = new List("software-list", softwareListOptions);
-$("#search_page_main_search").on("keyup", function() {
+
+// .search_page_main_search can be found in /layouts/partial/header.html
+$(".search_page_main_search").on("keyup", function() {
   var searchString = $(this).val();
   softwareList.search(searchString);
 });

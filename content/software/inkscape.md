@@ -3,7 +3,7 @@ title: "Inkscape"
 
 description: "A free and open-source vector graphics editor which can be used to create or edit vector graphics such as illustrations, diagrams, line arts, charts, logos and complex paintings"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/inkscape.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/inkscape.png?h=64"
 
 status: ["Active"]
 
@@ -257,4 +257,5 @@ note: |
   
   [Questions for Inkscape](https://answers.launchpad.net/inkscape/) I [News](https://inkscape.org/news/) I [Community Forum](https://forum.inkscapecommunity.com/index.php?action=forum) I [Wiki](http://wiki.inkscape.org/wiki/index.php/Inkscape) I [IRC](irc://irc.freenode.org/#inkscape) I [Mailing lists](https://inkscape.org/community/mailing-lists/) I [FAQ](https://inkscape.org/learn/faq/)
   
+
 

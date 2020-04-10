@@ -3,7 +3,7 @@ title: "DAEMON Tools"
 
 description: "A virtual drive and optical disc authoring program"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/daemon-tools.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/daemon-tools.png?h=64"
 
 website: "https://www.daemon-tools.cc/"
 
@@ -260,4 +260,5 @@ note: |
   
   [Blog](https://blog.daemon-tools.cc/home) I [Forum](https://forum.daemon-tools.cc/) I [FAQ](https://www.daemon-tools.cc/support/faq)
   
+
 

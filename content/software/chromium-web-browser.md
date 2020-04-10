@@ -3,7 +3,7 @@ title: "Chromium (Web Browser)"
 
 description: "A free and open-source web browser project developed by Google, used to make Google Chrome"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/chromium-web-browser.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/chromium-web-browser.png?h=64"
 
 status: ["Active"]
 
@@ -238,4 +238,5 @@ rating:
   
   [Blog](https://blog.chromium.org/) I [Dev Mailing lists](https://groups.google.com/a/chromium.org/group/chromium-discuss) I [Blink Engine Dev FAQ](https://www.chromium.org/blink/developer-faq) I [IRC for Devs](https://webchat.freenode.net/#chromium) I [Documentation](https://chromium.googlesource.com/chromium/src.git/+/master/docs/README.md)
   
+
 

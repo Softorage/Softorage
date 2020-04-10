@@ -3,7 +3,7 @@ title: "Vivaldi (Web Browser)"
 
 description: "A freeware, cross-platform web browser developed by Vivaldi Technologies"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/vivaldi-web-browser.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/vivaldi-web-browser.png?h=64"
 
 status: ["Active"]
 
@@ -291,4 +291,5 @@ note: |
   
   [Blog](https://vivaldi.com/blog/) I [Press Releases](https://vivaldi.com/press/releases/) I [Forum](https://forum.vivaldi.net/) I [Help](https://help.vivaldi.com/) I [FAQ](https://help.vivaldi.com/faq/) I [Security Related FAQ](https://help.vivaldi.com/faq/)
   
+
 

@@ -5,7 +5,7 @@ The software directory, with authentic software downloads and information that m
 https://softorage.com
 ___
 
-Core features:
+## Core features:
 * Protection from malware injection practices
 * Concise and elegant design
 * Objective presentation of related information, facilitating efficient and easy software comparison

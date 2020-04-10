@@ -34,7 +34,7 @@
             wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
             see: https://github.com/javve/list.js/issues/358
             -->
-            <input type="search" id="search_page_main_search" class="bg-nav border-0 form-control" name="s" placeholder="Search this page">
+            <input type="search" class="bg-nav border-0 form-control search_page_main_search" name="s" placeholder="Search this page">
           {{ end }}
         </div>
       </div>
@@ -47,11 +47,7 @@
           <input type='search' class='bg-nav form-control' name='s' placeholder='Search the Softorage'>
         </form>
       {{ else }}
-        <!-- 
-        wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
-        see: https://github.com/javve/list.js/issues/358
-        -->
-        <input type='search' id='search_page_main_search' class='bg-nav form-control' name='s' placeholder='Search this page'>
+        <input type='search' class='bg-nav form-control search_page_main_search' name='s' placeholder='Search this page'>
       {{ end }}
     ">{{ site.Data.icons.search | safeHTML }}</a>
     

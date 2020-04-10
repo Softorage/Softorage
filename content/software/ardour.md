@@ -3,7 +3,7 @@ title: "Ardour"
 
 description: "A hard disk recorder and digital audio workstation application. It runs on Linux, MacOS, FreeBSD and Microsoft Windows."
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/ardour.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/ardour.png?h=64"
 
 status: ["Active"]
 
@@ -113,4 +113,5 @@ note: |
   
   [IRC](http://webchat.freenode.net/?channels=ardour) I [Blog](https://discourse.ardour.org/c/blog) I [News](https://community.ardour.org/news) I [Forum](https://discourse.ardour.org/) I [Manual](http://manual.ardour.org/toc/) I [FAQ](https://community.ardour.org/realfaq) I [Mailing lists](https://ardour.org/community.html#mailinglists)
   
+
 

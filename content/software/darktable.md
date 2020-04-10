@@ -3,7 +3,7 @@ title: "darktable"
 
 description: "A free and open-source post-photography workflow application and raw developer"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/darktable.png?h=80"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/darktable.png?h=64"
 
 status: ["Active"]
 
@@ -167,4 +167,5 @@ note: |
   
   [Blog](https://www.darktable.org/blog/) I [Forum](https://discuss.pixls.us/c/software/darktable) I [User Manual](http://www.darktable.org/usermanual/en/) I [News](https://www.darktable.org/news/) I [Users' Wiki](https://redmine.darktable.org/projects/users/wiki) I [Development Wiki](https://redmine.darktable.org/projects/darktable/wiki) I [FAQ](https://www.darktable.org/about/faq/) I [Mailing list](https://www.darktable.org/contact/)
   
+
 
