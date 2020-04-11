@@ -15,7 +15,7 @@
   {{ $not_search_page = false }}
   {{ end }}
   
-  <nav class="navbar {{ if $not_search_page -}} navbar-expand {{- else -}} navbar-expand-lg {{- end }} navbar-light fixed-top" style="opacity: 0.93;">
+  <nav class="navbar {{ if $not_search_page -}} navbar-expand {{- else -}} navbar-expand-lg {{- end }} navbar-light fixed-top">
     <a class="navbar-brand bg-nav rounded px-3" href="{{ site.BaseURL }}"><span class="tg"><span class="brand">{{ site.Title }}</span>&nbsp;<sup><span class="small text-clr2">beta</span></sup></span></a>
     
     <div class="d-inline-block bg-nav border-0 my-2 shadow-sm flex-fill type-search rounded">

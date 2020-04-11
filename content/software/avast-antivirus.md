@@ -154,7 +154,7 @@ platform:
       - name: "iOS"
         type: "official"
 
-categories: ["Security Software", "Antivirus Software"]
+categories: ["Security", "Antivirus"]
 
 license: ["Proprietary", "Freemium"]
 

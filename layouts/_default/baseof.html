@@ -6,7 +6,7 @@
     {{ partial "header.html" . }}
     
     <!-- Position COVID19 message alert -->
-    <div style="position: fixed; top: 33rem; right: 0; z-index: 1030;">
+    <div style="position: fixed; top: 32rem; right: 0; z-index: 1030;">
       <div class="alert alert-warning alert-dismissible fade show shadow-sm" role="alert">
         Stay home. Stay safe!
         <!--button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -50,7 +50,7 @@
       $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
     });
     -->
-    <script>$(function(){$(window).scroll(function(){$(this).scrollTop()>30?$(".navbar").addClass("bg-nav shadow"):$(".navbar").removeClass("bg-nav shadow")}),$("[data-toggle='popover']").popover({container:'body',sanitize:false}),$("[data-toggle='tooltip']").tooltip({container:'body'})});</script>
+    <script>$(function(){$(window).scroll(function(){$(this).scrollTop()>30?$(".navbar").addClass("shadow").attr("style", "background: rgba(255,255,255,0.9);"):$(".navbar").removeClass("bg-nav shadow").removeAttr("style")}),$("[data-toggle='popover']").popover({container:'body',sanitize:false}),$("[data-toggle='tooltip']").tooltip({container:'body'})});</script>
     <script>
       {{- block "script" . }}
       {{- end -}}
