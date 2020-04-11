@@ -3,7 +3,7 @@ title: "Psiphon"
 
 description: "A relay-based internet censorship circumvention tool utilizing a combination of secure communication and obfuscation technologies"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/psiphonpng?h=64"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/psiphon.png?h=64"
 
 status: ["Active"]
 
