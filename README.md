@@ -3,10 +3,8 @@
 </p>
 
 The software directory, with authentic software downloads and information that makes sense.  
-{: .text-center}
 
-https://softorage.com{: .text-center}
-
+https://softorage.com
 
 ---
 
