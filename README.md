@@ -1,8 +1,10 @@
-# Softorage
+<p align="center">
+![Softorage Banner Image](/.repo/images/Cover photo- NoBG.png?raw=true)
 
 The software directory, with authentic software downloads and information that makes sense.  
 
 https://softorage.com
+</p>
 ___
 
 ## Core features:
