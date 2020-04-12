@@ -1,9 +1,11 @@
 <p align="center">
-![Softorage Banner Image](/source/images/Cover photo- NoBG.png?raw=true){: .text-center}
+![Softorage Banner Image](/source/images/Cover photo- NoBG.png?raw=true)
+{: .text-center}
 
-The software directory, with authentic software downloads and information that makes sense.  {: .text-center}
+The software directory, with authentic software downloads and information that makes sense.  
+{: .text-center}
 
-https://softorage.com  {: .text-center}
+https://softorage.com{: .text-center}
 </p>
 
 ---
