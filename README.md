@@ -1,12 +1,12 @@
 <p align="center">
-![Softorage Banner Image](/source/images/Cover photo- NoBG.png?raw=true)
-{: .text-center}
+<img src="/source/images/Cover photo-NoBG.png?raw=true" alt="Softorage Banner Image">
+</p>
 
 The software directory, with authentic software downloads and information that makes sense.  
 {: .text-center}
 
 https://softorage.com{: .text-center}
-</p>
+
 
 ---
 
