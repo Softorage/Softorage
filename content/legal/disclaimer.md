@@ -22,7 +22,9 @@ None of the contributors, sponsors, administrators or anyone else connected with
 
 ## Use of third party material
 
-Softorage has used images obtained from third party sources on the website, where such images are either distributed under a permissive license such as [CC0](https://creativecommons.org/publicdomain/zero/1.0/) or are available in the public domain.
+Softorage has used images obtained from third party sources on the website, where such images on third party sources are either distributed under a permissive license such as [CC0](https://creativecommons.org/publicdomain/zero/1.0/) or are available in the public domain.
+
+Images displayed on the website are hosted by Softorage [here](https://gitlab.com/Softorage/images) for use of Softorage and its affiliated websites, and shall not be linked to or used in any way without proper consent from Softorage. We only use [images repository](https://gitlab.com/Softorage/images) to segregate images used on Softorage from [Main Repository](https://gitlab.com/Softorage/softorage.gitlab.io). We use GitLab Pages to host the images, and in no way utilize GitLab and Version Control System on GitLab to serve images. We use Statically.io CDN to serve these images to our users, to ensure that bandwith utilisation of GitLab Pages is controlled, and kept at utmost minimum, and in no way do we use GitLab or GitLab pages as an 'Image CDN'.
 
 ## No contract; limited license
 
@@ -56,7 +58,7 @@ Software name, software logo and any related marks are property of their respect
 
 ## External links disclaimer
 
-https://softorage.com website may contain links to external websites that are not provided or maintained by or in any way affiliated with Softorage. Please note that the Softorage does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
+https://softorage.com website may contain links to external websites that are not provided or maintained by or in any way affiliated with Softorage. Please note that Softorage does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
 
 ---
 

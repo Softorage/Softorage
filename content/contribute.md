@@ -1,39 +1,58 @@
 ---
-title: Contribute
-description: Anyone contributing benefits equally from others' contributions
+title: "Contribute"
+description: "Anyone contributing benefits equally from others' contributions"
 ---
 
 <div class="card">
 <div class="card-body lead">
-We want to build a database that would contain every software that one can ever imagine of. A database accessible to everyone on the web alike. We want there to be an information resource to cater to any software related information needs of people. A resource, which people can look up to, which people can love. If you want there to exist a massive database of softwares accessible to everyone, you can help us build it!
+<div class="text-center">
+
+Thank you, for considering contribution to Softorage.
+
+</div>
+
+We dream to build confidence in our users, that they can get a fantastic software on their computer and be safely protected from malware. To achieve the dream, we have built Softorage, the software directory that presents authentic links for downloads pointing to official software website; an information resource to cater software related information needs of people, which people can look up to, and love.
+
+<div class="text-center">
+
+By contributing, you help us build it!
+
+</div>
+</div>
+</div>
+
+---
+
+<div class="card">
+<div class="card-body">
+
+## Donate - not available yet
+
 </div>
 </div>
 
 ---
 
-<div class="container py-5" markdown="1">
+<div class="card">
+<div class="card-body">
 
-## Donate(not available yet)
+## Sponsor - not available yet
 
+</div>
 </div>
 
 ---
 
-<div class="container py-5" markdown="1">
-
-## Sponsor(not available yet)
-
-</div>
-
----
-
-<div class="container py-5" markdown="1">
+<div class="card">
+<div class="card-body">
 
 ## Get involved
 
-Softorage is a fully open source project. Every contribution matters. Join in, be part of the community and help create a software database that everyone would want to love.
+Softorage is a fully open source project where every contribution matters.  
+Join in, be part of the community and help create the software directory that everyone would want to love.
 
 <a class="btn bg-nav" href="/get-involved/"><span class="text-clr2">Learn more</span></a>
 
+</div>
 </div>
 

@@ -32,7 +32,7 @@ get_it:
         arch: ["x32", "x64"]
         type: "official"
 
-developer: ["Bjorn Erik Pedersen", "Steve Francia<OD>", "Community"]
+developer: ["Bjorn Erik Pedersen", "Steve Francia <OD>", "Community"]
 
 initial_release: ["25 June 2013"]
 

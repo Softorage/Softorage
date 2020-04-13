@@ -4,7 +4,7 @@
 
 The software directory, with authentic software downloads and information that makes sense.  
 
-[Softorage](https://softorage.com) &#183; [Purpose](https://softorage.com/what-we-do/)
+[Softorage](https://softorage.com) **&#183;** [Purpose](https://softorage.com/what-we-do/)
 
 ---
 
@@ -41,7 +41,7 @@ This project is primarily built with Hugo.
 You can get a copy of project up and running on your local machine for developement and testing purposes.
 ```
   
-Please read [CONTRIBUTING.md](https://softorage.com/contributing) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://softorage.com/contribute/) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## License
 
