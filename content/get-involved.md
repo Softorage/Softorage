@@ -1,6 +1,6 @@
 ---
 title: "Get Involved"
-description: "Help make Softorage better"
+description: "Be part of the community and help make Softorage better"
 ---
 
 ## Contents
@@ -26,7 +26,7 @@ To help us, you can:
 3. **Help us maintain documentaion**  
    SAW's documentation is primarily maintained at the SAW's repo, and at reasonable intervals it is consolidated and used to update the documentation on Softorage(that relates to SAW). So, in case you want to help with SAW's documentation, please see SAW's docs and send pull requests there. Docs at Softorage relating to SAW will be updated based on SAW's docs only.
 4. **Help with development & feedback**  
-   Help with development need not always relate to a high level template code. Fixing typos is also a type help we really appreciate ([file an issue](https://gitlab.com/Softorage/softorage.gitlab.io/issues) if you found one). To help with deeper development, you need to have some knowledge about Hugo, Hugo's Go Templating Language, YAML and HTML, CSS and JavaScript+jQuery. In case you want to give feedback, submit bug reports or feature requests, please feel free to [file an issue on GitLab](https://gitlab.com/Softorage/softorage.gitlab.io/issues). Helping us with development might mean that you would need to spend slightly more amount of time with us than other two methods above, but your help means a lot to us. If you are ready to dive into development, read below :)
+   Help with development need not always relate to a high level template code. Fixing typos is also a type of help we really appreciate ([file an issue](https://gitlab.com/Softorage/softorage.gitlab.io/issues) if you found one). To help with deeper development, you need to have some knowledge about Hugo, Hugo's Go Templating Language, YAML and HTML, CSS and JavaScript+jQuery. In case you want to give feedback, submit bug reports or feature requests, please feel free to [file an issue on GitLab](https://gitlab.com/Softorage/softorage.gitlab.io/issues). Helping us with development might mean that you would need to spend slightly more amount of time with us than other methods above, but your help means a lot to us. If you are ready to dive into development, read below :)
 
 <div class="alert alert-info" markdown="1">
 
