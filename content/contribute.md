@@ -11,7 +11,7 @@ Thank you, for considering contribution to Softorage.
 
 </div>
 
-We dream to build confidence in our users, that they can get a fantastic software on their computer and be safely protected from malware. To achieve the dream, we have built Softorage, the software directory that presents authentic links for downloads pointing to official software website; an information resource to cater software related information needs of people, which people can look up to, and love.
+We dream to build confidence in our users, that they can get a fantastic software on their computer and be safely protected from malware. We dream to build confidence in software developers, that the fabulous software they build with their precious time and efforts, isn't manipulated till it reaches end users. To achieve the dream, we have built Softorage, the software directory that presents authentic links for downloads pointing to official software website; an information resource to cater software related information needs of people, which people can look up to, and love.
 
 <div class="text-center">
 
