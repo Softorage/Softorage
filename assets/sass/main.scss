@@ -84,6 +84,7 @@ left: 0;
 opacity: 0.85;
 }*/
 
+/*
 // https://codepen.io/Bluetidepro/pen/GkpEa : slightly modified
 .rating-stars {
   unicode-bidi: bidi-override;
@@ -113,13 +114,50 @@ opacity: 0.85;
   }
 }
 
+Example usage:
+<div class="d-inline-block rating-stars mt-2">
+  <div class="rating-stars-top" style="width:  math.Round (mul $rating_stars 100) %"><!-- for some reason it works better with 125 (edit: not anymore. reason is clarified in stylesheet) -->
+    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+  </div>
+  <div class="rating-stars-bottom">
+    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+  </div>
+</div>
+
+<div class="d-inline-block rating-stars">
+  <div class="rating-stars-top" style="width:  math.Round (mul $rating_stars 100) %"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div><!-- for some reason it works better with 125 (edit: not anymore. reason is clarified in stylesheet) -->
+  <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+</div>
+*/
+
+// Thanks: https://css-tricks.com/five-methods-for-five-star-ratings/
+.rating-stars {
+  --star-size: 1rem;
+  --star-color: #c5c5c5;
+  --star-background: #fbbc05;
+  --percent: calc(var(--rating) * 100%);
+  
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times; // make sure ★ appears correctly
+  line-height: 1;
+  
+  &::before {
+    content: "★★★★★";
+    letter-spacing: 0.7px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    background-clip: text;
+    color: transparent;
+  }
+}
+
 // adding .anchor class to anchor makes `element hiding behind fixed-top-navbar` problem go.
 // just that a distinct anchor shall be created (preferably with <span>) as its visibility is hidden.
 // https://stackoverflow.com/a/13184714
 .anchor {
 display: block;
 position: relative;
-top: -5.45rem;
+top: -4.5rem; //4.5rem = 72px = height of navbar
 visibility: hidden;
 }
 

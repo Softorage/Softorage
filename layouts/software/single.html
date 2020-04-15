@@ -40,14 +40,9 @@
                 {{- $rating_stars = add $rating_stars (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) -}} <!-- if one is float then only is the result a float -->
               {{- end }}
               {{- $rating_stars = div $rating_stars $len }}
-              <div class="d-inline-block rating-stars mt-2">
-                <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><!-- for some reason it works better with 125 (edit: not anymore. reason is clarified in stylesheet) -->
-                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-                </div>
-                <div class="rating-stars-bottom">
-                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-                </div>
-              </div>
+              
+              <div class="rating-stars mt-2" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ mul $rating_stars 5 }} out of 5"></div>
+              
             {{- end -}}
           </div>
         {{- end -}}
@@ -64,10 +59,9 @@
                 {{ $rating_stars = add $rating_stars (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) -}} <!-- if one is float then only is the result a float -->
               {{ end }}
               {{ $rating_stars = div $rating_stars $len }}
-              <div class="d-inline-block rating-stars">
-                <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-                <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-              </div>
+              
+              <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ mul $rating_stars 5 }} out of 5"></div>
+              
             {{ end }}
           {{ end }}
           
@@ -659,10 +653,9 @@
               </div>
               <div class="d-flex justify-content-center align-middle mb-2">
                 <span class="font-weight-bold h5">{{ lang.NumFmt 2 (mul $rating_stars 5) }}</span>&nbsp;<!-- "lang.NumFmt 2" formats a number with a given precision, here 2. Eg, 4.09158 to 4.09 -->
-                <div class="d-inline-block rating-stars">
-                  <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-                  <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-                </div>
+                
+                <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ mul $rating_stars 5 }} out of 5"></div>
+                
                 &nbsp;<span class="h5">5</span>
               </div>
               <hr class="my-1">
@@ -677,10 +670,9 @@
                         </th>
                         <td class="py-2 px-auto text-nowrap">
                           <span>{{ index $rt.rate 0 }}</span>&nbsp;
-                          <div class="d-inline-block rating-stars">
-                            <div class="rating-stars-top" style="width: {{ mul (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) 100 }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-                            <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-                          </div>
+                          
+                          <div class="rating-stars mt-2" style="--rating: {{ div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1) }};" aria-label="Rating: {{ mul (div (mul (index $rt.rate 0) 1.0) (index $rt.rate 1)) 5 }} out of 5"></div>
+                          
                           &nbsp;<span>{{ index $rt.rate 1 }}</span>
                         </td>
                         <td class="py-2">

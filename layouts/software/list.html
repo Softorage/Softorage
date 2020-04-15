@@ -82,10 +82,8 @@
               {{- end }}
               {{- $rating_stars = div $rating_stars $len }}
               
-              <div class="d-inline-block rating-stars">
-                <div class="rating-stars-top" style="width: {{ math.Round (mul $rating_stars 100) }}%"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div><!-- for some reason it works better with 125 (edit: not anymore. reason is clarified in stylesheet) -->
-                <div class="rating-stars-bottom"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
-              </div>
+              <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ mul $rating_stars 5 }} out of 5"></div>
+              
             {{- else }}<span class="text-muted">No rating found.</span>
             {{- end -}}
           </div>
