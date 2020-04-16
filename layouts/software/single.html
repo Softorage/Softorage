@@ -933,7 +933,7 @@
             <span class="h6">{{ $category }}</span><br>
             {{- range $index, $current := where site.RegularPages "Section" "==" "software" }}
               {{- if and (not (eq $current.Params.title $.Title)) (in $current.Params.categories $category) -}}
-                <a class="btn btn-sm btn-light shadow-sm my-2" {{- if in $current.Params.license "Proprietary" }} data-toggle="tooltip" data-placement="top" title="Proprietary" {{- else }} data-toggle="tooltip" data-placement="top" title="Free and Open Source" {{- end }} href="{{ $current.Permalink }}">{{ $current.Params.title }}</a> &nbsp;
+                <a class="btn btn-sm btn-light shadow-sm my-2" {{- if in $current.Params.license "Proprietary" }} data-toggle="tooltip" data-placement="top" title="Proprietary" {{- else }} data-toggle="tooltip" data-placement="top" title="Free and Open Source" {{- end }} href="{{ $current.Permalink }}">{{ replace (replace $current.Params.title "(" "<span class='small' style='font-weight: 400;'>(") ")" ")</span>" | safeHTML }}</a> &nbsp;
                 {{ $categ_available = true }}
               {{- end }}
               {{ if and (eq $index $total_soft) (not $categ_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $categ_available is set to false. -->

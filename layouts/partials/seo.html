@@ -25,7 +25,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- SEO template changes; source: https://digitalonlinetactics.com/post/blogging/hugo-seo-tips/ -->
 <title>
-  {{- .Title | default site.Title }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ if gt (len $platform_in_title) 0 }} on {{ delimit (sort $platform_in_title "value" "desc") ", " " and " }} Systems{{ end }}{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}
+  {{ replace (replace (default site.Title .Title) "(" "- ") ")" "" }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ if gt (len $platform_in_title) 0 }} on {{ delimit (sort $platform_in_title "value" "desc") ", " " and " }} Systems{{ end }}{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}
 </title>
 <meta name="title" content="{{- .Title | default site.Title }}{{ if and (eq .Section "software") .IsPage }} - View and download{{ if gt (len $platform_in_title) 0 }} on {{ delimit (sort $platform_in_title "value" "desc") ", " " and " }} Systems{{ end }}{{ end }} | {{ if not .IsHome }}{{ site.Title }}{{ else }}{{ site.Params.tagline }}{{ end -}}
 

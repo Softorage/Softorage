@@ -1,7 +1,7 @@
 ---
 title: "Ardour"
 
-description: "A hard disk recorder and digital audio workstation application. It runs on Linux, MacOS, FreeBSD and Microsoft Windows."
+description: "A hard disk recorder and digital audio workstation (DAW) application. It runs on Linux, MacOS, FreeBSD and Microsoft Windows."
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/ardour.png?h=64"
 

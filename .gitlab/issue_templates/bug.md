@@ -28,7 +28,7 @@ logs, and code as it's very hard to read otherwise. -->
 
 
 
-## Possible Solution
+## Possible Cause(s)/Solution(s)
 <!--- Not obligatory, but suggest a fix/reason for the bug. If you can, link to the line of code that might be responsible for the problem -->
 
 

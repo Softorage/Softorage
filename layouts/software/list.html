@@ -176,7 +176,6 @@ $(".search_page_main_search").on("keyup", function() {
   softwareList.search(searchString);
 });
 
-
 $("#search_page_main_sort").on("click", function() {
   if ($("#search_page_main_sort").hasClass("asc")) {
     softwareList.sort('name', { order: "desc" });
@@ -187,6 +186,15 @@ $("#search_page_main_sort").on("click", function() {
   }
 });
 
+/*
+$("#mobile_search").on("click", function() {
+  if ($("#popover520431").hasClass("show")) {
+    $("#popover520431").removeClass("show");
+  } else {
+    $("#popover520431").addClass("show");
+  }
+});
+*/
 
 var filterListOptions = {
   valueNames: ["category-filter"]

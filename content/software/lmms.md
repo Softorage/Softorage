@@ -1,7 +1,7 @@
 ---
 title: "LMMS"
 
-description: "LMMS (formerly Linux MultiMedia Studio) is a free and open source digital audio workstation application program, release under GPL v2 license"
+description: "LMMS (formerly Linux MultiMedia Studio) is a free and open source digital audio workstation (DAW) application program, release under GPL v2 license"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/lmms.png?h=64"
 
