@@ -131,7 +131,7 @@ source:
     - name: "FossHub"
       type: "user"
       url: "https://www.fosshub.com/Sumatra-PDF.html"
-      remarks: "x32/64 - Windows"
+      remarks: "Un/Portable x32/64 - Windows"
     - name: "CNET"
       type: "expert"
       url: "https://download.cnet.com/Sumatra-PDF/3000-18497_4-10698785.html"
