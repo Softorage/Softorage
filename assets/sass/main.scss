@@ -559,7 +559,7 @@ color: #0078d7;
 // Cookie Consent from Osano; url: https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css
 /* purgecss start ignore */
 // osano cookie consent customization
-.cc-banner {
+.cc-window {
 box-shadow: 0 -0.5rem 1rem rgba(0,0,0,.045) !important; // @extend .shadow; just shadow drops above
 font-size: 75% !important;
 font-weight: 400;
@@ -840,7 +840,7 @@ font-weight: 400;
 
 @media screen and (max-width:900px) {
   // osano cookie consent customization
-  .cc-banner {
+  .cc-window {
     box-shadow: 0 -0.5rem 1rem rgba(0,0,0,.045) !important; // @extend .shadow; just shadow drops above
     font-size: 75% !important;
     font-weight: 400;
@@ -853,7 +853,7 @@ font-weight: 400;
 @media screen and (max-width:414px) and (orientation:portrait),
 screen and (max-width:736px) and (orientation:landscape) {
   // osano cookie consent customization
-  .cc-banner {
+  .cc-window {
     box-shadow: 0 -0.5rem 1rem rgba(0,0,0,.045) !important; // @extend .shadow; just shadow drops above
     font-size: 75% !important;
     font-weight: 400;
