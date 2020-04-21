@@ -155,7 +155,7 @@
                     <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="authentic-tab">
                       {{- range .Params.get_it -}}
                         {{ if (in .from "Authentic") | or (in .from "Google Play") | or (in .from "Apple App") }}
-                          <a href="{{ .url }}" class="btn btn{{ if eq .from "Authentic" }} bg-success-light text-success{{ else }}-sm btn-light text-primary{{ end }} m-2"
+                          <a href="{{ .url }}" class="btn btn{{ if eq .from "Authentic" }} bg-success-light text-success{{ else }}-sm btn-primary{{ end }} m-2"
                           {{- if .platform }} data-toggle="tooltip" data-placement="top" title="{{ index (index .platform 0) "name" }}" {{- end -}}
                           >{{ if eq .from "Authentic" }}Official download{{ else }}{{ replace .from " | Authentic" "" }}{{ end }}</a>&nbsp;
                         {{ end }}

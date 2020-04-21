@@ -38,6 +38,7 @@ windows: "<span class='fab fa-windows'></span>"
 linux: "<span class='fab fa-linux'></span>"
 apple: "<span class='fab fa-apple'></span>"
 android: "<span class='fab fa-android'></span>"
+unix: "<img src='/assets/webfonts/unix-logo.svg' height='28'></img>"
 
 # social, footer
 gitlab: "<span class='fab fa-gitlab'></span>"
