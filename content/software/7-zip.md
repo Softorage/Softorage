@@ -141,6 +141,8 @@ platform:
         arch: ["x32", "x64"]
       - name: "Linux"
         type: "official"
+      - name: "Unix(like)"
+        type: "official"
 
 categories: ["File Archiver", "File Manager"]
 
