@@ -1,12 +1,10 @@
 <p align="center">
 <a href="https://softorage.com"><img src="/source/images/Cover photo-NoBG.png?raw=true" alt="Softorage Banner Image"></a>
-</p>
-
+  
 The software directory, with authentic software downloads and information that makes sense.  
-
+  
 [Softorage](https://softorage.com) **&#183;** [Purpose](https://softorage.com/what-we-do/)
-
----
+</p>
 
 ## Core features:
 * Protection from malware injection practices
