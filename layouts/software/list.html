@@ -31,12 +31,21 @@
           */}}
           <div class="border rounded p-2">
             <div style="max-height:15rem;overflow-y:auto;">
-              {{- range $key, $value := site.Taxonomies.categories -}}
+              {{/* Previous implementation
+              - range $key, $value := site.Taxonomies.categories -}}
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="{{ lower (replace $key "-" "_") }}">
                   <label class="form-check-label" for="{{ lower (replace $key "-" "_") }}"> <span class="category-filter">{{ $key | humanize | title }}</span></label>
                 </div>
-              {{- end -}}
+              {{- end -*/}}
+              
+              {{ $t := sort ($.Site.GetPage "/categories").Pages "Title" }}
+              {{- range $t -}}
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="{{ lower (replace .Title " " "_") }}">
+                  <label class="form-check-label" for="{{ lower (replace .Title " " "_") }}"> <span class="category-filter">{{ .Title }}</span></label>
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
@@ -140,7 +149,7 @@ use:
 if example URL- www.url.com/?num=3&text=three then
 var number = getUrlVars()["num"]; var mytext = getUrlVars()["text"];
 */
-var categoryStrFromURL = decodeURI(getURLVars()["category"]).toLowerCase().replace(/\s/g, "_");
+var categoryStrFromURL = decodeURI(getURLVars()["category"]).toLowerCase().replace(/ /g, "_");
 /* categoryStrFromURL gets value undefined when there are no parameters in URL */
 if (categoryStrFromURL != "undefined" && categoryStrFromURL != "") {
   var categoryArrFromURL = categoryStrFromURL.split("+");
@@ -208,6 +217,7 @@ var selection = [];
 if (categoryArrFromURL) {
   selection.extend(categoryArrFromURL);
 }
+/* tick the checkboxes as per selcetion recieved from URL */
 $("#filter-modal .list input.form-check-input").each(function() {
   for (var i = 0; i < selection.length; i++) {
     if ($(this).attr("id") == selection[i]) {
@@ -236,7 +246,7 @@ function filterSoftwareList() {
       values to lowercase just to make 
       sure human error doesn't break this
       */
-      var categoryString = item.values().category.toLowerCase().replace(/\s/g, "_");
+      var categoryString = item.values().category.toLowerCase().replace(/ /g, "_");
       /*
       this turns multiple entries separated 
       by a comma and space into different
@@ -268,9 +278,9 @@ $(".filter-modal-body input[type='checkbox']").on("change", function() {
   based on special "id" on <li>s in filter <ul>
   */
   if ($(this).is(":checked")) {
-    selection.push($(this).attr("id").toLowerCase().replace(/\s/g, "_"));
+    selection.push($(this).attr("id").toLowerCase().replace(/ /g, "_"));
   } else {
-    var selectionIndex = selection.indexOf($(this).attr("id").toLowerCase().replace(/\s/g, "_"));
+    var selectionIndex = selection.indexOf($(this).attr("id").toLowerCase().replace(/ /g, "_"));
     selection.splice(selectionIndex, 1);
   }
   filterSoftwareList();
