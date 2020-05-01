@@ -34,10 +34,7 @@ _The project is in beta phase (Work-In-Progress)_
 
 _Anyone contributing benefits equally from others' contributions_  
 
-```
-This project is primarily built with Hugo.
-You can get a copy of project up and running on your local machine for developement and testing purposes.
-```
+This project is primarily built with Hugo. You can get a copy of project up and running on your local machine for developement and testing purposes. Simply [install Hugo](https://softorage.com/software/hugo/), open the directory where you have the repo (the folder with config.yaml file), run in terminal `hugo serve` and visit *localhost:1313* (or similar one that is prompted in terminal) in your favourite browser (Firefox recommended). You're done!
   
 Please read [CONTRIBUTING.md](https://softorage.com/contribute/) for details on our code of conduct, and the process for submitting pull requests to us.
 

@@ -15,86 +15,82 @@
   {{ $not_search_page = false }}
   {{ end }}
   
-  <nav class="navbar {{ if $not_search_page -}} navbar-expand {{- else -}} navbar-expand-lg {{- end }} navbar-light fixed-top">
-    <a class="navbar-brand bg-nav rounded px-3" href="{{ site.BaseURL }}"><span class="tg"><span class="brand">{{ site.Title }}</span>&nbsp;<sup><span class="small text-clr2">beta</span></sup></span></a>
-    
-    <div class="d-inline-block bg-nav border-0 my-2 shadow-sm flex-fill type-search rounded">
+  <nav class="navbar {{ if $not_search_page -}} navbar-expand {{- else -}} navbar-expand-lg {{- end }} navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-nav rounded px-3" href="{{ site.BaseURL }}"><span class="tg"><span class="brand">{{ site.Title }}</span>&nbsp;<sup><span class="small text-clr2">beta</span></sup></span></a>
       
-      <div class="row desktop-only pl-3">
-        <div class="col-1 py-2">
-          <span class="">{{ site.Data.icons.search | safeHTML }}</span>
-        </div>
-        <div class="col-11">
-          {{ if $not_search_page -}}
-            <form action="/search/" method="get">
-              <input type="search" class="bg-nav border-0 form-control" name="s" placeholder="Search the Softorage">
-            </form>
-          {{ else }}
-            <!-- 
-            wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
-            see: https://github.com/javve/list.js/issues/358
-            -->
-            <input type="search" class="bg-nav border-0 form-control search_page_main_search" name="s" placeholder="Search this page">
-          {{ end }}
-        </div>
-      </div>
+      <div class="desktop-only bg-nav border-0 my-2 shadow-sm flex-fill type-search rounded">
         
-    </div>
-    
-    <a role="button" class="btn bg-nav shadow-none mobile-only" tabindex="0" data-toggle="popover" data-trigger="click" data-html="true" data-placement="bottom" data-content="
-      {{ if $not_search_page -}}
-        <form action='/search/' method='get'>
-          <input type='search' class='bg-nav form-control' name='s' placeholder='Search the Softorage'>
-        </form>
-      {{ else }}
-        <input type='search' class='bg-nav form-control search_page_main_search' name='s' placeholder='Search this page'>
-      {{ end }}
-    ">{{ site.Data.icons.search | safeHTML }}</a>
-    
-    {{/*
-    <a role="button" id="mobile_search" class="btn bg-nav shadow-none mobile-only" tabindex="0">{{ site.Data.icons.search | safeHTML }}</a>
-    
-    
-    <div class="popover fade bs-popover-bottom" role="tooltip" id="popover520431" x-placement="bottom" style="position: absolute; transform: translate3d(268px, 10942px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <div class="arrow" style="left: 182px;"></div>
-      <h3 class="popover-header"></h3>
-      <div class="popover-body">
+        <div class="row pl-3">
+          <div class="col-1 py-2">
+            <span class="">{{ site.Data.icons.search | safeHTML }}</span>
+          </div>
+          <div class="col-11">
+            {{ if $not_search_page -}}
+              <form action="/search/" method="get">
+                <input type="search" class="bg-nav border-0 form-control" name="s" placeholder="Search the Softorage">
+              </form>
+            {{ else }}
+              <!-- 
+              wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
+              see: https://github.com/javve/list.js/issues/358
+              -->
+              <input type="search" id="search_page_main_search_dskp" class="bg-nav border-0 form-control" name="s" placeholder="Search this page">
+            {{ end }}
+          </div>
+        </div>
+          
+      </div>
+      
+      {{/* a prior failed implementation; will keep for some time
+      <a role="button" id="searchMob" class="btn bg-nav shadow-none mobile-only" tabindex="0" data-toggle="popover" data-trigger="click" data-html="true" data-placement="bottom" data-content="
         {{ if $not_search_page -}}
           <form action='/search/' method='get'>
             <input type='search' class='bg-nav form-control' name='s' placeholder='Search the Softorage'>
           </form>
         {{ else }}
-          <input type='search' class='bg-nav form-control search_page_main_search' name='s' placeholder='Search this page'>
+          <input type='search' id='search_page_main_search_mob' class='bg-nav form-control' name='s' placeholder='Search this page'>
         {{ end }}
+      ">{{ site.Data.icons.search | safeHTML }}</a>
+      */}}
+          
+      <a class="navbar-toggler border-0" role="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="text-antinav">{{ site.Data.icons.bars | safeHTML }}</span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          
+          {{ if $not_search_page -}}
+          {{ else }}
+          <li class="nav-item m-1 my-2">
+            <button type="button" class="btn bg-nav" data-toggle="modal" title="Filter" data-target="#filter-modal">
+              <span class="text-clr2 small">{{ site.Data.icons.filter | safeHTML }}</span>
+            </button>
+          </li>
+          <li class="nav-item m-1 mr-3 my-2">
+            <span class="btn bg-nav sort asc" id="search_page_main_sort" title="Sort" >
+              <span class="text-clr2">{{ site.Data.icons.sort | safeHTML }}</span>
+            </span>
+          </li>
+          {{ end }}
+          <li class="nav-item m-1 my-2">
+            <a role="button" class="btn bg-nav shadow-none" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom" data-content="
+            <a class='dropdown-item text-antinav' href='/contribute/'>Contribute!</a><br>
+            ">{{ site.Data.icons.dotsVerticle | safeHTML }}</a>
+          </li>
+        </ul>
       </div>
     </div>
-    */}}
-    
-    <a class="navbar-toggler border-0" role="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="text-antinav">{{ site.Data.icons.bars | safeHTML }}</span>
-    </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        
-        {{ if $not_search_page -}}
+    <div class="container-fluid type-search" id="search_page_main_search_mob_div">
+      <div class="mobile-only flex-fill mt-2 bg-nav border-0 shadow-sm rounded">
+      {{ if $not_search_page -}}
+          <form action='/search/' method='get'>
+            <input type='search' class='bg-nav border-0 form-control' name='s' placeholder='Search the Softorage'>
+          </form>
         {{ else }}
-        <li class="nav-item m-1 my-2">
-          <button type="button" class="btn bg-nav" data-toggle="modal" title="Filter" data-target="#filter-modal">
-            <span class="text-clr2 small">{{ site.Data.icons.filter | safeHTML }}</span>
-          </button>
-        </li>
-        <li class="nav-item m-1 my-2">
-          <span class="btn bg-nav sort asc" id="search_page_main_sort" title="Sort" >
-            <span class="text-clr2">{{ site.Data.icons.sort | safeHTML }}</span>
-          </span>
-        </li>
+          <input type='search' id='search_page_main_search_mob' class='bg-nav border-0 form-control' name='s' placeholder='Search this page'>
         {{ end }}
-        <li class="nav-item ml-3 my-2">
-          <a role="button" class="btn bg-nav shadow-none" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom" data-content="
-          <a class='dropdown-item text-antinav' href='/contribute/'>Contribute!</a><br>
-          ">{{ site.Data.icons.dotsVerticle | safeHTML }}</a>
-        </li>
-      </ul>
+      </div>
     </div>
   </nav>
 </header>

@@ -97,12 +97,24 @@
   { 
     "@context": "http://schema.org", 
     "@type": "WebSite", 
-    "url": {{ .Permalink }}, {{/* When in a script tag, Hugo automatically adds quotes around all Hugo tags, eg, {{ }}. However, if quotes are added manually (like "{{ .Permalink }}"), Hugo adds back-slashes in neighborhood of forward slashes. safeHTML tag doesn't work either as of v0.57.2 see: https://discourse.gohugo.io/t/x26rsquo-bad-escape-sequence-in-string-for-json-ld */}}
+    "url": {{ site.BaseURL }}, {{/*
+    When in a script tag, Hugo automatically adds quotes around all Hugo tags, eg, {{ }}. However, if quotes are added manually (like "{{ .Permalink }}"), Hugo adds back-slashes in neighborhood of forward slashes. safeHTML tag doesn't work either as of v0.57.2 see: https://discourse.gohugo.io/t/x26rsquo-bad-escape-sequence-in-string-for-json-ld 
+    
+    url: Specifies the URL of the site being searched. Set to the canonical homepage of your site.
+    */}}
     "name": {{ site.Title }},
     "author": {
       "@type": "Person",
       "name": {{ site.Author.name }}
     },
+    {{ if site.Params.search_target -}}
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://softorage.com/search?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    {{ end -}}
+    "logo": {{ site.Params.image }},
     "description": {{ site.Params.description }}
   }
   </script>
@@ -115,12 +127,16 @@
         "@type": "BlogPosting",
         "headline": {{ .Title }},
         "genre": {{ if reflect.IsSlice .Params.categories }}{{ delimit .Params.categories ", " }}{{ else }}{{ .Params.categories }}{{ end }},  
-        "url": {{ .Permalink }},
+        "url": {{ site.BaseURL }},
         "datePublished": {{ time .Date }},
         "description": {{ .Description | safeJS }},
         "articleBody": 
         {{ .Content }}
         ,
+        "logo": {{ site.Params.image }},
+        {{ if .Params.image -}}
+        "image": {{ .Params.image }},
+        {{ end -}}
         "author": {
             "@type": "Person",
             "name": {{ site.Author.name }}
@@ -130,12 +146,16 @@
       { 
         "@context": "http://schema.org", 
         "@type": "WebSite", 
-        "url": {{ .Permalink }}, 
+        "url": {{ site.BaseURL }}, 
         "name": {{ .Title }},
         "author": {
           "@type": "Person",
           "name": {{ site.Author.name }}
         },
+        "logo": {{ site.Params.image }},
+        {{ if .Params.image -}}
+        "image": {{ .Params.image }},
+        {{ end -}}
         "description": {{ .Description | default site.Params.description }}
       }
     {{ end -}}

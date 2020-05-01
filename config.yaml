@@ -10,6 +10,7 @@ params:
   twitter: "@Softorage" # optional, twitter handle; recommended for SEO template (partial/seo.html)
   fb_app_id: "170403084180809" # optional, for SEO template (partial/seo.html)
   image: "https://softorage.com/assets/favicon/Softorage-Logo-Profile.png" # optional, absolute path to image to be used for social media; resolution 200px x 200px to 1200px x 1200px
+  search_target: "https://softorage.com/search?s" # optional, definition: where you wish to direct users with search term; used in SEO template {{ site.Params.search_target | safeHTML | jsonify }}={search_term_string} # not working
 
 author: 
   name: "Sanmay Joshi and Softorage contributors" # required
