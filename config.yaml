@@ -34,3 +34,10 @@ markup:
       unsafe: true
 
 googleAnalytics: "UA-154890683-1" # optional
+
+# Define output formats # Optional
+outputs:
+  page:
+  - HTML
+  - AMP
+

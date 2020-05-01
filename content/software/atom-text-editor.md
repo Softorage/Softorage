@@ -216,4 +216,4 @@ rating:
   
   Atom has installable packages that add extra functionality to it. An example is Teletype, which allows collaborating on code right from the editor.
   
-  [Blog](https://blog.atom.io/) I [Forum](https://discuss.atom.io/) I [Documentation](https://atom.io/docs) I [Mailing lists]() I [FAQ](https://atom.io/faq) I [IRC](https://webchat.freenode.net/?channels=atom) I etc
+  [Blog](https://blog.atom.io/) I [Forum](https://discuss.atom.io/) I [Documentation](https://atom.io/docs) I [Mailing lists]() I [FAQ](https://atom.io/faq) I [IRC](https://webchat.freenode.net/?channels=atom)

@@ -58,7 +58,7 @@
   <!-- Request Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto&text=Softorage&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <!-- RSS Feed -->
+  <!-- AMP, RSS Feed, and other output formats -->
   {{- range .AlternativeOutputFormats -}}
     {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{- end -}}
