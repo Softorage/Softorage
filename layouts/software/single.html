@@ -962,7 +962,7 @@
   {{- end -}}
   {{- if .GitInfo -}}
   <br>
-  <p class="bg-nav text-antinav text-center small p-2">This page was last updated with commit: <a class="font-weight-bold" href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})<a></p>
+  <p class="bg-nav text-antinav text-center small p-2">This page was last updated with commit: <a class="font-weight-bold" href="https://gitlab.com/{{ site.Title }}/softorage.gitlab.io/commit/{{ .GitInfo.Hash }}">{{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})</a></p>
   <!--{{/* on {{ .GitInfo.AuthorDate.Format "02 January, 2006" }} */}}-->
   {{- end -}}
   
