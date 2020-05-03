@@ -27,15 +27,16 @@ Softorage uses cookies and similar technologies for several purposes to enable c
 * Analytics - In order to provide our website efficiently, we use cookies and other identifiers to gather usage and performance data. For example, we use cookies to count the number of unique visitors to a web page or service and to develop other statistics about the operations of our website. This includes cookies from Softorage and from third-party analytics providers.
 * Performance - Softorage uses cookies for load balancing to ensure that websites remain up and running.
 
-In addition to the cookies Softorage sets when you visit our websites, third parties may also set cookies when you visit Softorage sites. In some cases, that is because we have hired the third party to provide services on our behalf, such as site analytics. In particular, we use cookies from Google Analytics ([read Google’s privacy policy](https://support.google.com/analytics/answer/6004245)) for website analytics and metrics, Disqus ([read Disqus’ privacy policy](https://help.disqus.com/terms-and-policies/disqus-privacy-policy)) to enable comments to our blog posts; if you want to know more about these services use cookies and personal data, please refer to the privacy notices directly on each third party’s website.
+In addition to the cookies Softorage sets when you visit our websites, third parties may also set cookies when you visit Softorage sites. In some cases, that is because we have hired the third party to provide services on our behalf, such as site analytics. In particular, we use cookies from Google Analytics ([read Google’s privacy policy](https://support.google.com/analytics/answer/6004245)) for website analytics and metrics with anonymized IP addresses, Disqus ([read Disqus’ privacy policy](https://help.disqus.com/terms-and-policies/disqus-privacy-policy)) to enable comments to our blog posts; if you want to know more about how these services use cookies and personal data, please refer to the privacy notices directly on each third party’s website.
 
 Some of the cookies we commonly use are listed below. This list is not exhaustive, but it is intended to illustrate the main reasons we typically set cookies. If you visit one of our websites, the site may set some or all of the following cookies:
 
 | Cookie Name | Description | Cookie Category | Expiry |
 |-------------|-------------|-----------------|--------|
 | _ga | It is used for visitor tracking. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports. | Third Party Performance (Google Analytics) | Persistent (2 years) |
-| _gid | This cookie is used to store “Session ID” and to group the entire session’s activity together for each user. | Third Party Performance (Google Analytics) | Session |
-| _gat | This cookie is used to throttle the request rate - limiting the collection of data on high traffic sites. | Third Party Performance (Google Analytics) | Session |
+| _gid | This cookie is used to store “Session ID” and to group the entire session’s activity together for each user. | Third Party Performance (Google Analytics) | Session (1 day) |
+| _gat | This cookie is used to throttle the request rate - limiting the collection of data on high traffic sites. | Third Party Performance (Google Analytics) | Session (49 seconds) |
+| __cfduid | Cookie assoiated with sites using CloudFlare, used to speed up page load times. According to CloudFlare, it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information. | Targeting cookies | Persistent (1 month) |
 
 By using our website you agree that we can place these types of cookies on your device.
 
@@ -46,10 +47,10 @@ Most web browsers automatically accept cookies but provide controls that allow y
 Please note, however, that if you delete cookies or refuse to accept them, you might not be able to use all of the features we offer, you may not be able to store your preferences, and some of our pages might not display properly.
 
 There are several ways you can opt-out from cookies usage:
-* You can opt-out of behavioural advertisement at any time here, via the [NAI’s consumer opt-out system](http://optout.networkadvertising.org/) or via the [DAA’s WebChoices Tool](http://optout.aboutads.info/). Softonic recommends to use both systems as some ad partners may participate in one and not the other.
+* You can opt-out of behavioural advertisement at any time here, via the [NAI’s consumer opt-out system](http://optout.networkadvertising.org/) or via the [DAA’s WebChoices Tool](http://optout.aboutads.info/). Softorage recommends to use both systems as some ad partners may participate in one and not the other.
 * Furthermore, our analytics partners have implemented their own ways for you to opt-out:
     * To opt out of the data processing perform by Google, please go [here](https://tools.google.com/dlpage/gaoptout).
-    * To opt-out of the data processing perform by Hotjar please go [here](https://help.hotjar.com/hc/en-us/articles/360001749014-Visitor-Lookup).
+    * To opt-out of the data processing perform by Hotjar, please go [here](https://help.hotjar.com/hc/en-us/articles/360001749014-Visitor-Lookup).
     * To opt-out of the data processing perform by comScore, please go [here](http://optout.aboutads.info/?c=2#!/).
 * You can set your browser to refuse or accept cookies, or set the browser so that cookies are automatically deleted once you close your browser, computer or device. You may change your cookies settings in browsers as follows:
     * Google Chrome: Settings > Privacy > Content Settings > Cookies

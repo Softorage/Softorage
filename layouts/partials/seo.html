@@ -110,7 +110,7 @@
     {{ if site.Params.search_target -}}
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://softorage.com/search?s={search_term_string}",
+      "target": {{ printf "%s%s" site.Params.search_target "={search_term_string}" }},
       "query-input": "required name=search_term_string"
     },
     {{ end -}}

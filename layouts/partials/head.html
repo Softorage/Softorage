@@ -27,13 +27,13 @@
   {{ if eq hugo.Environment "production" -}}
     <!-- Google Analytics shall work only on production website -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154890683-1"></script>
+    <script async src={{ printf "%s%s" "https://www.googletagmanager.com/gtag/js?id=" site.GoogleAnalytics | safeHTMLAttr }}></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-154890683-1');
+      gtag("config", {{ site.GoogleAnalytics }}, { 'anonymize_ip': true });
     </script>
     
     <!-- SEO and Hugo's Tag shall work only on production website -->
@@ -45,6 +45,7 @@
     {{- $css = $css | postCSS | fingerprint }}
   {{- else }}
     {{- $css = $css | fingerprint }}
+    {{- partial "seo.html" . -}}
   {{- end }}
   
   <!-- Minified Aggregated CSS -->
@@ -73,14 +74,14 @@
   <link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=0-0-1" type="image/x-icon">
   <meta name="apple-mobile-web-app-title" content="Softorage">
   <meta name="application-name" content="Softorage">
-  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#fff6f8">
   <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?v=0-0-1">
   
   <!-- Address bar color -->
   <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#fff6f8">
   <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#ffffff">
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>

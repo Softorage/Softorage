@@ -136,10 +136,10 @@ Most web browsers automatically accept cookies but provide controls that allow y
 Please note, however, that if you delete cookies or refuse to accept them, you might not be able to use all of the features we offer, you may not be able to store your preferences, and some of our pages might not display properly.
 
 There are several ways you can opt-out from cookies usage:
-* You can opt-out of behavioural advertisement at any time here, via the [NAI’s consumer opt-out system](http://optout.networkadvertising.org/) or via the [DAA’s WebChoices Tool](http://optout.aboutads.info/). Softonic recommends to use both systems as some ad partners may participate in one and not the other.
+* You can opt-out of behavioural advertisement at any time here, via the [NAI’s consumer opt-out system](http://optout.networkadvertising.org/) or via the [DAA’s WebChoices Tool](http://optout.aboutads.info/). Softorage recommends to use both systems as some ad partners may participate in one and not the other.
 * Furthermore, our analytics partners have implemented their own ways for you to opt-out:
     * To opt out of the data processing perform by Google, please go [here](https://tools.google.com/dlpage/gaoptout).
-    * To opt-out of the data processing perform by Hotjar please go [here](https://help.hotjar.com/hc/en-us/articles/360001749014-Visitor-Lookup).
+    * To opt-out of the data processing perform by Hotjar, please go [here](https://help.hotjar.com/hc/en-us/articles/360001749014-Visitor-Lookup).
     * To opt-out of the data processing perform by comScore, please go [here](http://optout.aboutads.info/?c=2#!/).
 * You can set your browser to refuse or accept cookies, or set the browser so that cookies are automatically deleted once you close your browser, computer or device. You may change your cookies settings in browsers as follows:
     * Google Chrome: Settings > Privacy > Content Settings > Cookies

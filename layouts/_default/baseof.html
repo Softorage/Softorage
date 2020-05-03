@@ -72,9 +72,97 @@
         "message": "We use cookies to ensure you get the best user experience on our website. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='{{ site.BaseURL }}legal/cookie-policy/'>Cookie Policy</a>, <a href='{{ site.BaseURL }}legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='{{ site.BaseURL }}legal/terms-and-conditions/'>Terms and Conditions</a>.",
         "dismiss": "Okay. Got it!",
         "link": "Find more about cookies in our Privacy Policy.",
-        "href": "{{ site.BaseURL }}legal/privacy-policy/"
-      }
+        "href": "{{ site.BaseURL }}legal/privacy-policy/",
+        "allow": "Allow cookies",
+        "deny": "Decline",
+        "policy": "Cookie Consent"
+      },
+      "revokable": true
     });
     </script>
+    {{/*
+    <!--
+    
+    for opt-in type of cookie consent; to comply with stricter privacy requirements
+    
+    https://web.archive.org/web/20200503103417/https://www.osano.com/cookieconsent/documentation/disabling-cookies/
+    https://web.archive.org/web/20200503103410/https://cookieconsent.freshdesk.com/support/solutions/articles/43000002898-google-analytics-gtag-
+    
+    in head:
+    // Disable tracking by default
+    window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = true;
+
+    // Initialize gtag
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    -----------------------------------------
+    
+    window.cookieconsent.initialise({
+    
+    "palette": {
+        "popup": {
+          "background": "#fafafa",
+          "text": "#343434"
+        },
+        "button": {
+          "background": "#3f5efb",
+          "text": "#fbfbfb"
+        }
+      },
+      "content": {
+        "message": "We use cookies to ensure you get the best user experience on our website. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='{{ site.BaseURL }}legal/cookie-policy/'>Cookie Policy</a>, <a href='{{ site.BaseURL }}legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='{{ site.BaseURL }}legal/terms-and-conditions/'>Terms and Conditions</a>.",
+        "dismiss": "Okay. Got it!",
+        "link": "Find more about cookies in our Privacy Policy.",
+        "href": "{{ site.BaseURL }}legal/privacy-policy/",
+        
+        "allow": 'Allow cookies',
+        "deny": 'Decline',
+        "policy": 'Cookie Consent'
+      },
+      
+      "revokable": true,
+      "type": "opt-in",
+      
+      onInitialise: function (status) {
+        var type = this.options.type;
+        var didConsent = this.hasConsented();
+        if (type == 'opt-in' && didConsent) {
+          // enable cookies
+          // https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out
+          window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = false;
+        }
+        if (type == 'opt-out' && !didConsent) {
+          // disable cookies
+          window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = true;
+        }
+      },
+      onStatusChange: function(status, chosenBefore) {
+        var type = this.options.type;
+        var didConsent = this.hasConsented();
+        if (type == 'opt-in' && didConsent) {
+          // enable cookies
+          window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = false;
+        }
+        if (type == 'opt-out' && !didConsent) {
+          // disable cookies
+          window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = true;
+        }
+      },
+      onRevokeChoice: function() {
+        var type = this.options.type;
+        if (type == 'opt-in') {
+          // disable cookies
+          window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = true;
+        }
+        if (type == 'opt-out') {
+          // enable cookies
+          window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = false;
+        }
+      }
+    });
+    -->
+    */}}
   </body>
 </html>
