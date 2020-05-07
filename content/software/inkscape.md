@@ -253,7 +253,7 @@ note: |
 ---
   Inkscape is professional quality [vector graphics editor](/categories/vector-graphics-editor) software which runs on Windows, Mac OS X and GNU/Linux. 
   
-  Inkscape has sophisticated drawing tools with capabilities comparable to Adobe Illustrator, CorelDRAW and Xara Xtreme. It can import and export various file formats, including SVG, AI, EPS, PDF, PS and PNG. It has a comprehensive feature set, a simple interface, multi-lingual support and is designed to be extensible; users can customize Inkscape's functionality with add-ons. Inkscape uses Scalable Vector Graphics (SVG), an open XML-based W3C standard, as the native format.
+  Inkscape is widely used for both artistic and technical illustrations such as cartoons, clip art, logos, typography, diagramming and flowcharting. It can import and export various file formats, including SVG, AI, EPS, PDF, PS and PNG. It has a comprehensive feature set, a simple interface, multi-lingual support and is designed to be extensible; users can customize Inkscape's functionality with add-ons. Inkscape uses Scalable Vector Graphics (SVG), an open XML-based W3C standard, as the native format.
   
   [Questions for Inkscape](https://answers.launchpad.net/inkscape/) I [News](https://inkscape.org/news/) I [Community Forum](https://inkscape.org/forums/) I [Wiki](http://wiki.inkscape.org/wiki/index.php/Inkscape) I [IRC](irc://irc.freenode.org/#inkscape) I [Mailing lists](https://inkscape.org/community/mailing-lists/) I [FAQ](https://inkscape.org/learn/faq/)
   

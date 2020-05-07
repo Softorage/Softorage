@@ -40,7 +40,7 @@
                 </div>
               {{- end -*/}}
               
-              {{ $t := sort ($.Site.GetPage "/categories").Pages "Title" }}
+              {{ $t := sort (site.GetPage "/categories").Pages "Title" }}
               {{- range $t -}}
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="{{ lower (replace .Title " " "_") }}">
