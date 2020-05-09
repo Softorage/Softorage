@@ -157,7 +157,16 @@
                       {{- range .Params.get_it -}}
                         {{ if (in .from "Authentic") | or (in .from "Google Play") | or (in .from "Apple App") }}
                           <a href="{{ .url }}" class="btn btn{{ if eq .from "Authentic" }} bg-success-light text-success{{ else }}-sm btn-primary{{ end }} m-2"
-                          {{- if .platform }} data-toggle="tooltip" data-placement="top" title="{{ index (index .platform 0) "name" }}" {{- end -}}
+                          {{- if .platform }} data-toggle="tooltip" data-placement="top" title="
+                          
+                          {{- range $index, $platform := .platform -}}
+                          
+                          {{- if $index -}}, {{ end -}} {{- $platform.name -}}
+                          
+                          {{- end -}}
+                          
+                          
+                          {{/* index (index .platform 0) "name" */}}" {{- end -}}
                           >{{ if eq .from "Authentic" }}Official download{{ else }}{{ replace .from " | Authentic" "" }}{{ end }}</a>&nbsp;
                         {{ end }}
                       {{ end -}}
@@ -181,6 +190,7 @@
                             </li>
                           </ul>
                         </div>
+                        {{ $platform_download_not_available := "No download available for " }}
                         <div class="col-9">
                           <div class="tab-content">
                             <div class="tab-pane fade show active" id="download-dskp-windows" role="tabpanel" aria-labelledby="windows-tab">
@@ -194,7 +204,10 @@
                                   {{ end }}
                                 {{ end }}
                                 {{ if and (eq $index $download_len) (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
-                                  <p class="m-2 text-muted">No download available for Windows.</p>
+                                  <p class="m-2 text-muted">No download available for Windows.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
                                 {{ else if and (eq $index $download_len) $download_available }}
                                   {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
                                 {{ end }}
@@ -211,7 +224,10 @@
                                   {{ end }}
                                 {{ end }}
                                 {{ if and (eq $index $download_len) (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
-                                  <p class="m-2 text-muted">No download available for Linux.</p>
+                                  <p class="m-2 text-muted">No download available for Linux.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
                                 {{ else if and (eq $index $download_len) $download_available }}
                                   {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
                                 {{ end }}
@@ -228,7 +244,10 @@
                                   {{ end }}
                                 {{ end }}
                                 {{ if (eq $index $download_len) | and (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
-                                  <p class="m-2 text-muted">No download available for macOS.</p>
+                                  <p class="m-2 text-muted">No download available for macOS.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
                                 {{ else if (eq $index $download_len) | and $download_available }}
                                   {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
                                 {{ end }}
@@ -251,7 +270,10 @@
                                   {{ $download_available = true }}
                                 {{ end }}
                                 {{ if and (eq $index $download_len) (not $download_available) }}
-                                  <p class="m-2 text-muted">No download available for others.</p>
+                                  <p class="m-2 text-muted">No download available for others.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
                                 {{ else if and (eq $index $download_len) $download_available }}
                                   {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
                                 {{ end }}
@@ -293,7 +315,10 @@
                                   {{ end }}
                                 {{ end }}
                                 {{ if and (eq $index $download_len) (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
-                                  <p class="m-2 text-muted">No download available for Android.</p>
+                                  <p class="m-2 text-muted">No download available for Android.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
                                 {{ else if and (eq $index $download_len) $download_available }}
                                   {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
                                 {{ end }}
@@ -310,7 +335,10 @@
                                   {{ end }}
                                 {{ end }}
                                 {{ if and (eq $index $download_len) (not $download_available) }} <!-- means to run only if above 'if statement' does not run, current iteration is last in the range loop and $download_available is set to false. -->
-                                  <p class="m-2 text-muted">No download available for iOS.</p>
+                                  <p class="m-2 text-muted">No download available for iOS.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
                                 {{ else if and (eq $index $download_len) $download_available }}
                                   {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
                                 {{ end }}
@@ -333,7 +361,10 @@
                                   {{ $download_available = true }}
                                 {{ end }}
                                 {{ if and (eq $index $download_len) (not $download_available) }}
-                                  <p class="m-2 text-muted">No download available for others.</p>
+                                  <p class="m-2 text-muted">No download available for others.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
                                 {{ else if and (eq $index $download_len) $download_available }}
                                   {{ $download_available = false }} <!-- resetting the variable '$download_available' -->
                                 {{ end }}

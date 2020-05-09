@@ -1,4 +1,5 @@
 public/
 resources
-test.html
+layouts/test/
+content/test/
 node_modules
