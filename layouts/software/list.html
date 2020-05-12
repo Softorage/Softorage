@@ -92,7 +92,7 @@
               {{- end }}
               {{- $rating_stars = div $rating_stars $len }}
               
-              <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ mul $rating_stars 5 }} out of 5"></div>
+              <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ lang.NumFmt 2 (mul $rating_stars 5) }} out of 5"></div> <!-- "lang.NumFmt 2" formats a number with a given precision, here 2. Eg, 4.09158 to 4.09 -->
               
             {{- else }}<span class="text-muted">No rating found.</span>
             {{- end -}}

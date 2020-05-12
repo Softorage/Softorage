@@ -42,7 +42,7 @@
               {{- end }}
               {{- $rating_stars = div $rating_stars $len }}
               
-              <div class="rating-stars mt-2" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ mul $rating_stars 5 }} out of 5"></div>
+              <div class="rating-stars mt-2" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ lang.NumFmt 2 (mul $rating_stars 5) }} out of 5"></div>
               
             {{- end -}}
           </div>
@@ -61,7 +61,7 @@
               {{ end }}
               {{ $rating_stars = div $rating_stars $len }}
               
-              <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ mul $rating_stars 5 }} out of 5"></div>
+              <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ lang.NumFmt 2 (mul $rating_stars 5) }} out of 5"></div>
               
             {{ end }}
           {{ end }}
@@ -119,7 +119,7 @@
           <a href="{{ (index .Params.get_it 0).url }}" class="btn btn-success my-2"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">Get it</span></a>
         {{- else -}}
         */}}
-          <button role="button" class="btn btn-download btn-hover my-2" data-toggle="modal" data-target="#get-it-modal"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">{{ if in .Params.categories "Framework" }}Get it{{ else }}Download{{ end }}</span></button>
+          <button class="btn btn-download btn-hover my-2" data-toggle="modal" data-target="#get-it-modal"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">{{ if in .Params.categories "Framework" }}Get it{{ else }}Download{{ end }}</span></button>
           
           <!-- Modal -->
           <div class="modal fade" id="get-it-modal" tabindex="-1" role="dialog" aria-labelledby="get-it-modal-label" aria-hidden="true">
@@ -686,7 +686,7 @@
               <div class="d-flex justify-content-center align-middle mb-2">
                 <span class="font-weight-bold h5">{{ lang.NumFmt 2 (mul $rating_stars 5) }}</span>&nbsp;<!-- "lang.NumFmt 2" formats a number with a given precision, here 2. Eg, 4.09158 to 4.09 -->
                 
-                <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ mul $rating_stars 5 }} out of 5"></div>
+                <div class="rating-stars" style="--rating: {{ $rating_stars }};" aria-label="Rating: {{ lang.NumFmt 2 (mul $rating_stars 5) }} out of 5"></div>
                 
                 &nbsp;<span class="h5">5</span>
               </div>
@@ -958,7 +958,7 @@
       <span class="anchor" id="alternatives"></span>
       <h2 class="card-title h4 m-0">Alternatives</h2>
       <!-- We won't be showing softwares that are covered under "Framework" category -->
-      <p class="card-text mt-3">
+      <div class="card-text mt-3">
         {{- range $i, $category := .Params.categories }}
           {{- if ne $category "Framework" -}}
             {{- if $i }}<br>{{ end -}}
@@ -976,7 +976,7 @@
             {{- end -}}
           {{- end }}
         {{- end -}}
-      </p>
+      </div>
     </div>
   </div>
   {{- if .Params.note -}}
