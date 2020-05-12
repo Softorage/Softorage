@@ -34,24 +34,24 @@ written_in: ["Scala", "Java", "Python", "R"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
   - else:
       - name: "Scala"
-        type: "official"
+        official: true
       - name: "Python"
-        type: "official"
+        official: true
       - name: "Java"
-        type: "official"
+        official: true
       - name: "R"
-        type: "official"
+        official: true
       - name: "SQL"
-        type: "official"
+        official: true
 
 categories: ["Data Analytics", "Machine Learning", "Framework"]
 
@@ -106,7 +106,8 @@ rating:
   3. [**MLlib**](https://spark.apache.org/mllib/) is Apache Spark's scalable machine learning library.
   4. [**GraphX**](https://spark.apache.org/graphx/) is Apache Spark's API for graphs and graph-parallel computation.
   
-  [News](https://spark.apache.org/news/) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/apache-spark) I [Community/Mailing Lists](https://spark.apache.org/community.html) I [Documentation](https://spark.apache.org/documentation.html) I [FAQ](https://spark.apache.org/faq.html) I [IRC](https://webchat.freenode.net/?channels=apache-spark)
+  [News](https://spark.apache.org/news/)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/apache-spark)  I  [Community/Mailing Lists](https://spark.apache.org/community.html)  I  [Documentation](https://spark.apache.org/documentation.html)  I  [FAQ](https://spark.apache.org/faq.html)  I  [IRC](https://webchat.freenode.net/?channels=apache-spark)
+
 
 
 

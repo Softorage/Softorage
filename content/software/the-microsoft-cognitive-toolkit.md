@@ -46,18 +46,18 @@ written_in: ["C++", "Jupyter Notebook", "Python"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
   - else:
       - name: "Python"
-        type: "official"
+        official: true
       - name: "C++"
-        type: "official"
+        official: true
       - name: "C#"
-        type: "official"
+        official: true
       - name: "BrainScript"
-        type: "official"
+        official: true
 
 categories: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Framework"]
 
@@ -104,7 +104,8 @@ note: |
   
   The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through [deep learning](/categories/deep-learning) by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
   
-  [News](https://docs.microsoft.com/en-us/cognitive-toolkit/news) I [Documentation](https://docs.microsoft.com/en-us/cognitive-toolkit/) I [FAQ](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-FAQ) I [Blog](https://www.microsoft.com/en-us/cognitive-toolkit/blog/)
+  [News](https://docs.microsoft.com/en-us/cognitive-toolkit/news)  I  [Documentation](https://docs.microsoft.com/en-us/cognitive-toolkit/)  I  [FAQ](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-FAQ)  I  [Blog](https://www.microsoft.com/en-us/cognitive-toolkit/blog/)
+
 
 
 

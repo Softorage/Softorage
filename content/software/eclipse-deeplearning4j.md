@@ -29,16 +29,16 @@ written_in: ["Java", "C++", "Python", "JavaScript", "Scala", "Cuda"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
   - else:
       - name: "Java"
-        type: "official"
+        official: true
       - name: "Scala"
-        type: "official"
+        official: true
       - name: "Clojure"
-        type: "official"
+        official: true
 
 categories: ["Deep Learning", "Machine Learning", "Artificial Intelligence", "Framework"]
 
@@ -104,7 +104,8 @@ note: |
   
   Deeplearning4j includes implementations of the restricted Boltzmann machine, deep auto-encoder, deep belief net, stacked denoising auto-encoder and recursive neural tensor network, word2vec, doc2vec, and GloVe. These algorithms also include distributed parallel versions that integrate with [Apache Hadoop](/software/apache-hadoop) and [Apache Spark](/software/apache-spark).
   
-  [Release Notes](https://deeplearning4j.org/release-notes) I [Gitter chat](https://gitter.im/deeplearning4j/deeplearning4j) I [Documentation](https://deeplearning4j.org/docs/latest/) I [Tutorials](https://deeplearning4j.org/tutorials/setup) I [API Reference](https://deeplearning4j.org/api/latest/) I [Sample Projects](https://github.com/deeplearning4j/dl4j-examples) I [FAQ](https://deeplearning4j.org/faq) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/deeplearning4j)
+  [Release Notes](https://deeplearning4j.org/release-notes)  I  [Gitter chat](https://gitter.im/deeplearning4j/deeplearning4j)  I  [Documentation](https://deeplearning4j.org/docs/latest/)  I  [Tutorials](https://deeplearning4j.org/tutorials/setup)  I  [API Reference](https://deeplearning4j.org/api/latest/)  I  [Sample Projects](https://github.com/deeplearning4j/dl4j-examples)  I  [FAQ](https://deeplearning4j.org/faq)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/deeplearning4j)
+
 
 
 

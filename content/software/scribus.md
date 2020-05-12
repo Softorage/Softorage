@@ -18,82 +18,82 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-scribus-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_scribus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://scribus.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/scribus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/22952/scribus"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://scribus.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-scribus/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Scribus/3000-6675_4-100490.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Scribus/3000-6675_4-10655204.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Scribus-64-bit/3000-6675_4-75846779.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Scribus-2148.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -120,13 +120,13 @@ written_in: ["C++", "Qt"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["Desktop Publishing"]
 
@@ -265,7 +265,8 @@ rating:
   
   Books about Scribus are available in several languages, including an official manual for v1.3, published through FLES Books in 2009.
   
-  [Blog](https://rants.scribus.net/) I [Forum](http://forums.scribus.net/) I [News](https://www.scribus.net/category/news/) I [Wiki](https://wiki.scribus.net/canvas/Scribus) I [Video Tutorials](https://wiki.scribus.net/canvas/Scribus_Video_Tutorials) I [Get Stated](https://wiki.scribus.net/canvas/Get_Started_with_Scribus) I [Docs](https://wiki.scribus.net/canvas/Help:TOC) I [Mailing list](http://lists.scribus.net/mailman/listinfo) I [FAQ](https://wiki.scribus.net/canvas/Category:FAQ) I [IRC](https://webchat.freenode.net/?channels=scribus)
+  [Blog](https://rants.scribus.net/)  I  [Forum](http://forums.scribus.net/)  I  [News](https://www.scribus.net/category/news/)  I  [Wiki](https://wiki.scribus.net/canvas/Scribus)  I  [Video Tutorials](https://wiki.scribus.net/canvas/Scribus_Video_Tutorials)  I  [Get Stated](https://wiki.scribus.net/canvas/Get_Started_with_Scribus)  I  [Docs](https://wiki.scribus.net/canvas/Help:TOC)  I  [Mailing list](http://lists.scribus.net/mailman/listinfo)  I  [FAQ](https://wiki.scribus.net/canvas/Category:FAQ)  I  [IRC](https://webchat.freenode.net/?channels=scribus)
   
+
 
 

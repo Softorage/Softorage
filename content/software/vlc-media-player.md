@@ -18,127 +18,127 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-vlc-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://vlc-media-player.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_vlc-media-player_32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_vlc_media_player_64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/3562-vlc-media-player.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_vlc_media_player-for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-vlc/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Multimedia/Video/VLC-2608.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=org.videolan.vlc"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/iphone/"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -155,29 +155,29 @@ written_in: ["C", "C++", "Objective-C", "Kotlin (Android app only)", "Java (Andr
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - else:
       - name: "Apple TV"
-        type: "official"
+        official: true
 
 categories: ["Media Player"]
 
@@ -370,7 +370,8 @@ rating:
 ---
   VLC is a free and open source cross-platform [multimedia player](/categories/media-player/) and framework, developed by the VideoLAN project, that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols. It can read a large number of popular video and audio formats, such as MPEG, MKV, MP4, MOV, WMV, H.264, WAV, FLV, AVI, etc. It can also convert media into many of the same formats that it is able to read, including the MPEG, ASF, AAC, and MP3 formats. See [this Wikipedia page](https://en.wikipedia.org/wiki/VLC_media_player#Format_support) for format support.
   
-  [News](https://www.videolan.org/news.html) I [Forum](https://forum.videolan.org/) I [Wiki](https://wiki.videolan.org/) I [Documentation](https://wiki.videolan.org/Documentation) I [FAQ](https://www.videolan.org/support/faq.html) I [IRC](https://webchat.freenode.net/?channels=videolan)
+  [News](https://www.videolan.org/news.html)  I  [Forum](https://forum.videolan.org/)  I  [Wiki](https://wiki.videolan.org/)  I  [Documentation](https://wiki.videolan.org/Documentation)  I  [FAQ](https://www.videolan.org/support/faq.html)  I  [IRC](https://webchat.freenode.net/?channels=videolan)
   
+
 
 

@@ -24,7 +24,7 @@ written_in: ["C++", "Python", "Scheme", "Haskell"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
 
 categories: ["Artificial Intelligence", "Framework"]
 
@@ -47,8 +47,9 @@ source:
   OpenCog is a project that aims to build an open source [artificial intelligence](/categories/artificial-intelligence) framework. OpenCog Prime is an architecture for robot and virtual embodied cognition that defines a set of interacting components designed to give rise to human-equivalent [artificial general intelligence (AGI)](/categories/artificial-intelligence) as an emergent phenomenon of the whole system. OpenCog Prime's design is primarily the work of Ben Goertzel while the OpenCog framework is intended as a generic framework for broad-based AGI research. Research utilizing OpenCog has been published in journals and presented at conferences and workshops including the annual Conference on [Artificial General Intelligence](/categories/artificial-intelligence). OpenCog is released under the terms of the GNU Affero General Public License.
   OpenCog is in use by more than 50 companies, including Huawei and Cisco.
   
-  [OpenCog Brainwave Blog](https://blog.opencog.org/) I [OpenCog Foundation Feed](https://opencog.org/feed/) I [AI Documentation](https://wiki.opencog.org/w/AI_Documentation) I [Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project) I [FAQ](https://opencog.org/faq/) I [Mailing list](https://groups.google.com/forum/#!forum/opencog) I [IRC](https://webchat.freenode.net/?channels=opencog)
+  [OpenCog Brainwave Blog](https://blog.opencog.org/)  I  [OpenCog Foundation Feed](https://opencog.org/feed/)  I  [AI Documentation](https://wiki.opencog.org/w/AI_Documentation)  I  [Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project)  I  [FAQ](https://opencog.org/faq/)  I  [Mailing list](https://groups.google.com/forum/#!forum/opencog)  I  [IRC](https://webchat.freenode.net/?channels=opencog)
   
+
 
 
 

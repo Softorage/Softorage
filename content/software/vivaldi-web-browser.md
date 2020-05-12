@@ -17,102 +17,102 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Vivaldi-64-bit/3000-2356_4-76472369.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-vivaldi-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vivaldi/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://vivaldi-browser.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6692-vivaldi-browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://vivaldi.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-vivaldi/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/53990/vivaldi"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vivaldi/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Internet/HTTP-WWW-/Vivaldi-103720.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "APKMirror"
     url: "https://www.apkmirror.com/apk/vivaldi-technologies/vivaldi-browser-beta/vivaldi-browser-beta-2-9-1741-33-release/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://vivaldi-browser.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.vivaldi.browser"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vivaldi/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 developer: ["Vivaldi Technologies AS"]
 
@@ -123,20 +123,20 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
         arch: ["x64"]
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -289,7 +289,8 @@ note: |
 ---
   Vivaldi is a freeware, cross-platform [web browser](/categories/web-browser/) developed by Vivaldi Technologies, a company founded by [Opera](/software/opera-web-browser/) Software co-founder and former CEO Jon Stephenson von Tetzchner and Tatsuki Tomita. It is based on [Chromium](/software/chromium-web-browser/) [web browser](/categories/web-browser/), which uses Blink browser engine and V8 JavaScript engine. It is available for general users but is primarily targeted towards technically-inclined users as well as former [Opera](/software/opera-web-browser/) users disgruntled by its transition from the Presto layout engine to a [Chromium](/software/chromium-web-browser/)-based browser. Despite also being [Chromium](/software/chromium-web-browser/)-based, Vivaldi aims to revive the features of the Presto-based [Opera](/software/opera-web-browser/) with its own proprietary modifications.
   
-  [Blog](https://vivaldi.com/blog/) I [Press Releases](https://vivaldi.com/press/releases/) I [Forum](https://forum.vivaldi.net/) I [Help](https://help.vivaldi.com/) I [FAQ](https://help.vivaldi.com/faq/) I [Security Related FAQ](https://help.vivaldi.com/faq/)
+  [Blog](https://vivaldi.com/blog/)  I  [Press Releases](https://vivaldi.com/press/releases/)  I  [Forum](https://forum.vivaldi.net/)  I  [Help](https://help.vivaldi.com/)  I  [FAQ](https://help.vivaldi.com/faq/)  I  [Security Related FAQ](https://help.vivaldi.com/faq/)
   
+
 
 

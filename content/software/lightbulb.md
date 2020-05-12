@@ -15,8 +15,8 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
 
 developer: ["Alexey Golub", "Other Contributors"]
 
@@ -27,7 +27,7 @@ written_in: ["C#"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
 
 categories: ["Color Temperature Adjustment", "Utility"]
 
@@ -50,7 +50,6 @@ rating:
   - name: "Softpedia"
     rate: [3.8, 5]
     num: 26
-
 ---
   LightBulb is a [utility](/categories/utility/) that adjusts screen [color temperature](/categories/color-temperature-adjustment/) based on location and time of the day. It reduces eyestrain which may be produced by staring at a computer screen when working late hours. As the day goes on, it continuously adjusts gamma of the screen display, transitioning the display color temperature from cold blue in the afternoon to warm yellow during the night. Its primary objective is to match the color of the screen to the light sources of your surrounding environment - typically, sunlight during the day and artificial light during the night. It has minimal impact on performance (consumes around 20MB of RAM) and offers customization options.
   

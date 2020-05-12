@@ -17,91 +17,91 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_psiphon/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://psiphon.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-psiphon/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://psiphon.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/psiphon/id1276263909"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store (Browser)"
     url: "https://apps.apple.com/app/psiphon-browser/id1193362444"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.psiphon3"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Pro)"
     url: "https://play.google.com/store/apps/details?id=com.psiphon3.subscription"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://psiphon.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "APKPure (Pro)"
     url: "https://apkpure.com/psiphon-pro-the-internet-freedom-vpn/com.psiphon3.subscription"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/psiphon/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://psiphon.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://psiphon.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "For Win XP and Vista"
     url: "https://psiphon.ca/en/faq.html#windows-xp-eol"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 developer: ["Psiphon Inc", "the Citizen Lab at the University of Toronto<OD>"]
 
@@ -114,17 +114,17 @@ written_in: ["Java (Android)", "Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Internet Censorship Circumvention"]
 
@@ -274,10 +274,10 @@ rating:
     num: 17
   - name: "TechRadar"
     rate: [3.5, 5]
-
 ---
   Psiphon is an open-source relay-based [internet censorship circumvention](/categories/internet-censorship-circumvention/) tool utilizing a combination of secure communication and obfuscation technologies. It is a centrally managed, and geographically diverse network of thousands of proxy servers, using a performance-oriented, single and multi hop architecture.
   
   In 2014, maliciously repackaged psiphon was found.
   
-  [Blog](https://psiphon.ca/blog/index.html) I [User Guide](https://psiphon.ca/en/user-guide.html) I [FAQ](https://psiphon.ca/en/faq.html)
+  [Blog](https://psiphon.ca/blog/index.html)  I  [User Guide](https://psiphon.ca/en/user-guide.html)  I  [FAQ](https://psiphon.ca/en/faq.html)
+

@@ -17,49 +17,49 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/driver-booster/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://driver-booster.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo (Free)"
     url: "https://filehippo.com/download_driver-booster-free/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse (Free)"
     url: "https://www.filehorse.com/download-driver-booster-free/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse (Pro)"
     url: "https://www.filehorse.com/download-driver-booster-pro/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic (Free)"
     url: "https://driver-booster-free.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Driver-Booster/3000-18513_4-75992725.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -74,7 +74,7 @@ developer: ["IObit"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
 
 categories: ["Utility"]
 
@@ -178,5 +178,6 @@ rating:
   
   It is known for 'Game Mode' setting, which optimizes drivers to improve their performance in games so as to enhance the gaming experience.
   
-  [News](https://forums.iobit.com/forum/general-forums/news-offers) I [Forum](https://forums.iobit.com/) I [User Manual](https://www.iobit.com/product-manuals/db-help/) I [FAQ](https://www.iobit.com/en/allfaq.php#p109)
+  [News](https://forums.iobit.com/forum/general-forums/news-offers)  I  [Forum](https://forums.iobit.com/)  I  [User Manual](https://www.iobit.com/product-manuals/db-help/)  I  [FAQ](https://www.iobit.com/en/allfaq.php#p109)
+
 

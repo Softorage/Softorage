@@ -24,11 +24,11 @@ written_in: ["C++", "C"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["TeX Editor"]
 
@@ -57,6 +57,7 @@ source:
   See [XeTeX](/software/xetex/), [TeX Live](/software/tex-live/).
   
   [Mailing list](https://tug.org/mailman/listinfo/texworks)
+
 
 
 

@@ -19,122 +19,122 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FossHub"
     url: "https://www.fosshub.com/Brave-Browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Brave.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/brave/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_brave/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6797-brave-browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://brave-browser.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-brave-browser-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://brave-browser.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-brave-browser/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "APKPure"
     url: "https://apkpure.com/brave-browser-private-ads-block/com.brave.browser"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.brave.browser"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://brave-software-brave.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://brave-browser.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/brave-browser/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://brave-browser.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_brave-for-mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -153,23 +153,23 @@ written_in: ["C", "C++", "JavaScript", "Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x64"]
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -329,6 +329,7 @@ rating:
 ---
   Brave is a free and open-source privacy-focused [web browser](/categories/web-browser) developed by Brave Software, Inc. based on the [Chromium](/software/chromium-web-browser) web browser. It uses Blink browser engine and V8 JavaScript engine. The browser blocks ads and website trackers, and provides a way for users to send cryptocurrency contributions in the form of Basic Attention Tokens to websites and content creators. It allows users to surf the web using TOR, to protect their privacy.
   
-  [Blog](https://brave.com/blog/) I [Community Forum](https://community.brave.com/) I [Developers' Wiki](https://github.com/brave/brave-browser/wiki) I [FAQ](https://brave.com/faq/) I [Brave Creators FAQ](https://support.brave.com/hc/en-us/articles/360025397851-Frequently-Asked-Questions) I [Brave Rewards FAQ](https://support.brave.com/hc/en-us/articles/360027276731-Brave-Rewards-FAQ) I [Brave Ads FAQ](https://support.brave.com/hc/en-us/articles/360026361072-Brave-Ads-FAQ)
+  [Blog](https://brave.com/blog/)  I  [Community Forum](https://community.brave.com/)  I  [Developers' Wiki](https://github.com/brave/brave-browser/wiki)  I  [FAQ](https://brave.com/faq/)  I  [Brave Creators FAQ](https://support.brave.com/hc/en-us/articles/360025397851-Frequently-Asked-Questions)  I  [Brave Rewards FAQ](https://support.brave.com/hc/en-us/articles/360027276731-Brave-Rewards-FAQ)  I  [Brave Ads FAQ](https://support.brave.com/hc/en-us/articles/360026361072-Brave-Ads-FAQ)
   
+
 

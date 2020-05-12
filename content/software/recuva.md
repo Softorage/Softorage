@@ -17,50 +17,50 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/System/Backup-and-Recovery/Portable-Recuva.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "true"
+        official: true
+        portable: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/recuva/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://recuva.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://recuva-portable.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "true"
+        official: true
+        portable: true
   - from: "Uptodown"
     url: "https://recuva.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_recuva/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
 
 sysreq:
   -
@@ -73,7 +73,7 @@ initial_release: ["06 August 2007"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
 
 categories: ["Data Recovery", "Utility"]
 
@@ -176,8 +176,8 @@ rating:
     rate: [3, 5]
   - name: "TechRadar"
     rate: [4, 5]
-
 ---
   Recuva is a [data recovery](/categories/data-recovery/) and an undeletion program for Windows, developed by Piriform. It is able to undelete files that have been marked as deleted (the operating system marks the areas of the disk in which deleted files were stored as free space). It can recover files deleted from internal and external hard disk drives, USB flash drives, memory cards, portable media players or all random-access storage mediums with a supported file system.
   
-  [Forum](https://community.ccleaner.com/forum/16-recuva/) I [Documentation](https://www.ccleaner.com/docs/recuva) I [FAQ](https://www.ccleaner.com/recuva/faq)
+  [Forum](https://community.ccleaner.com/forum/16-recuva/)  I  [Documentation](https://www.ccleaner.com/docs/recuva)  I  [FAQ](https://www.ccleaner.com/recuva/faq)
+

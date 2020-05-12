@@ -28,16 +28,16 @@ written_in: ["Python", "Cython", "C", "C++"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
   - else:
       - name: "Python"
-        type: "official"
+        official: true
 
 categories: ["Machine Learning", "Data Mining", "Data Analysis", "Framework"]
 
@@ -89,7 +89,8 @@ note: |
   * Model selection : Comparing, validating and choosing parameters and models
   * Preprocessing : Feature extraction and normalization
   
-  [Documentation](https://scikit-learn.org/stable/documentation.html) I [Wiki](https://github.com/scikit-learn/scikit-learn/wiki) I [Mailing list](https://mail.python.org/mailman/listinfo/scikit-learn) I [Stack Overflow](https://stackoverflow.com/questions/tagged/scikit-learn) I [FAQ](https://scikit-learn.org/stable/faq.html) I [IRC](https://webchat.freenode.net/?channels=scikit-learn)
+  [Documentation](https://scikit-learn.org/stable/documentation.html)  I  [Wiki](https://github.com/scikit-learn/scikit-learn/wiki)  I  [Mailing list](https://mail.python.org/mailman/listinfo/scikit-learn)  I  [Stack Overflow](https://stackoverflow.com/questions/tagged/scikit-learn)  I  [FAQ](https://scikit-learn.org/stable/faq.html)  I  [IRC](https://webchat.freenode.net/?channels=scikit-learn)
+
 
 
 

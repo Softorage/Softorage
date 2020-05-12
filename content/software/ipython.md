@@ -24,13 +24,13 @@ written_in: ["Python"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["Shell"]
 
@@ -78,6 +78,7 @@ note: |
   >  * Tools for parallel computing
   > \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=IPython&oldid=880851247)
   
-  [News](https://ipython.org/news.html) I [Documentation](https://ipython.org/documentation.html) I [Mailing list](https://mail.python.org/mailman/listinfo/ipython-dev) I [Wiki](https://github.com/ipython/ipython/wiki) I [FAQ](https://ipython.org/faq.html) I [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/ipython)
+  [News](https://ipython.org/news.html)  I  [Documentation](https://ipython.org/documentation.html)  I  [Mailing list](https://mail.python.org/mailman/listinfo/ipython-dev)  I  [Wiki](https://github.com/ipython/ipython/wiki)  I  [FAQ](https://ipython.org/faq.html)  I  [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/ipython)
+
 
 

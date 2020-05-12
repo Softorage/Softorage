@@ -18,78 +18,78 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6842-krita.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FossHub"
     url: "https://www.fosshub.com/Krita.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://krita.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Krita.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://krita.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_krita/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/krita/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Multimedia/Graphics/Krita-2254.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://krita.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -112,11 +112,11 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Raster Graphics Editor"]
 
@@ -238,7 +238,8 @@ rating:
   
   Krita is a FREE and open source painting tool designed for concept artists, illustrators, matte and texture artists, and the VFX industry. Krita has been in development for over 10 years and has had an explosion in growth recently. It offers many common and innovative features to help the amateur and professional alike.
   
-  [Forum](https://forum.kde.org/viewforum.php?f=136) I [Documentation(Manual)](https://docs.krita.org/en/) I [Wiki](https://userbase.kde.org/Krita/en) I [News](https://krita.org/en/news/) I [FAQ](https://docs.krita.org/en/KritaFAQ.html) I [Mailing list](https://krita.org/en/mailing-lists/) I [IRC](https://krita.org/en/irc/)
+  [Forum](https://forum.kde.org/viewforum.php?f=136)  I  [Documentation(Manual)](https://docs.krita.org/en/)  I  [Wiki](https://userbase.kde.org/Krita/en)  I  [News](https://krita.org/en/news/)  I  [FAQ](https://docs.krita.org/en/KritaFAQ.html)  I  [Mailing list](https://krita.org/en/mailing-lists/)  I  [IRC](https://krita.org/en/irc/)
   
+
 
 

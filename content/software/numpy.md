@@ -24,16 +24,16 @@ written_in: ["Python", "C"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "unofficial"
+        official: false
   - else:
       - name: "Python"
-        type: "official"
+        official: true
 
 categories: ["Scientific Computing", "Array Computing", "Framework"]
 
@@ -76,7 +76,8 @@ rating:
   > 
   > Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data. Arbitrary data-types can be defined. This allows NumPy to seamlessly and speedily integrate with a wide variety of databases. \- [Official website](https://www.numpy.org)
   
-  [Mailing list](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists) I [FAQ](https://www.scipy.org/scipylib/faq.html#general-questions-about-numpy) I [Wiki](https://github.com/numpy/numpy/wiki) I [Documentation](https://docs.scipy.org/doc/) I [Stack Overflow](https://stackoverflow.com/questions/tagged/numpy)
+  [Mailing list](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists)  I  [FAQ](https://www.scipy.org/scipylib/faq.html#general-questions-about-numpy)  I  [Wiki](https://github.com/numpy/numpy/wiki)  I  [Documentation](https://docs.scipy.org/doc/)  I  [Stack Overflow](https://stackoverflow.com/questions/tagged/numpy)
+
 
 
 

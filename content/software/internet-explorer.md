@@ -17,56 +17,56 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse (IE 8/9/11)"
     url: "https://www.filehorse.com/download-internet-explorer/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "Softonic (IE 7)"
     url: "https://internet-explorer-7.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic (IE 8)"
     url: "https://internet-explorer-8.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic (IE 9)"
     url: "https://internet-explorer-9.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic (IE 10)"
     url: "https://internet-explorer-10.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic (IE 11)"
     url: "https://internet-explorer-11-windows-7.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo (IE 11)"
     url: "https://filehippo.com/download_internet_explorer_windows_7/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://internet-explorer-for-mac.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -93,10 +93,10 @@ written_in: ["C++ (Triedent, Chankra)", "JavaScript (Chakra)"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -245,7 +245,8 @@ rating:
   
   On March 17, 2015, Microsoft announced that [Microsoft Edge](/software/microsoft-edge/) would replace Internet Explorer as the default browser on its Windows 10 devices.
   
-  [Forum](https://social.technet.microsoft.com/Forums/ie/) I [Documentation](https://docs.microsoft.com/en-us/internet-explorer/) I [Lifecycle FAQ](https://support.microsoft.com/en-in/help/17454/lifecycle-faq-internet-explorer) I [FAQ for IT Pros](https://docs.microsoft.com/en-us/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
+  [Forum](https://social.technet.microsoft.com/Forums/ie/)  I  [Documentation](https://docs.microsoft.com/en-us/internet-explorer/)  I  [Lifecycle FAQ](https://support.microsoft.com/en-in/help/17454/lifecycle-faq-internet-explorer)  I  [FAQ for IT Pros](https://docs.microsoft.com/en-us/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
+
 
 
 

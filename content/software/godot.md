@@ -18,20 +18,20 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Gaming-Related/Godot-Engine.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://godot-engine.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -50,11 +50,11 @@ written_in: ["C++", "Java", "Python", "C#"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Game Engine"]
 
@@ -114,7 +114,8 @@ rating:
   
   The architecture is built around a concept of a tree of nested "scenes". All game resources, from scripts to graphical assets, are saved as part of the computer's file system (rather than in a database). This storage solution is intended to make it easier for game development teams to collaborate on script code using version control.
   
-  [Documentation](https://docs.godotengine.org/) I [News](https://godotengine.org/news) I [Question/Answers](https://godotengine.org/qa/) I [IRC](http://webchat.freenode.net/?channels=#godotengine) I [Developer Forum](https://godotforums.org/) I [FAQ](http://docs.godotengine.org/en/3.0/about/faq.html)
+  [Documentation](https://docs.godotengine.org/)  I  [News](https://godotengine.org/news)  I  [Question/Answers](https://godotengine.org/qa/)  I  [IRC](http://webchat.freenode.net/?channels=#godotengine)  I  [Developer Forum](https://godotforums.org/)  I  [FAQ](http://docs.godotengine.org/en/3.0/about/faq.html)
   
+
 
 

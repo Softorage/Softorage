@@ -17,49 +17,49 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/System/File-Management/TeraCopy.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4310-teracopy.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/teracopy/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://teracopy.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-teracopy/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/TeraCopy/3000-2248_4-10671835.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://teracopy.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 developer: ["Code Sector"]
 
@@ -68,9 +68,9 @@ initial_release: ["16 May 2007"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Utility"]
 
@@ -157,6 +157,7 @@ rating:
 ---
   TeraCopy is a file transfer [utility](/categories/utility/) developed by Code Sector, designed as an alternative for the built-in Windows Explorer file transfer feature, with focus on data integrity, file transfer reliability and the ability to pause or resume file transfers.
   
-  [Blog](http://blog.codesector.com/category/teracopy/) I [User Manual](https://codesector.kayako.com/section/5-user-manual) I [FAQ](https://codesector.kayako.com/section/6-faq)
+  [Blog](http://blog.codesector.com/category/teracopy/)  I  [User Manual](https://codesector.kayako.com/section/5-user-manual)  I  [FAQ](https://codesector.kayako.com/section/6-faq)
+
 
 

@@ -17,71 +17,71 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_inkscape/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-inkscape-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FossHub"
     url: "https://www.fosshub.com/Inkscape.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/2306-inkscape.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://inkscape.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/inkscape/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Inkscape.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Artistic-Software/Inkscape-61.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://inkscape.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 developer: ["The Inkscape team"]
 
@@ -94,11 +94,11 @@ written_in: ["C++", "C", "Python (extentions)"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Vector Graphics Editor"]
 
@@ -255,7 +255,8 @@ note: |
   
   Inkscape is widely used for both artistic and technical illustrations such as cartoons, clip art, logos, typography, diagramming and flowcharting. It can import and export various file formats, including SVG, AI, EPS, PDF, PS and PNG. It has a comprehensive feature set, a simple interface, multi-lingual support and is designed to be extensible; users can customize Inkscape's functionality with add-ons. Inkscape uses Scalable Vector Graphics (SVG), an open XML-based W3C standard, as the native format.
   
-  [Questions for Inkscape](https://answers.launchpad.net/inkscape/) I [News](https://inkscape.org/news/) I [Community Forum](https://inkscape.org/forums/) I [Wiki](http://wiki.inkscape.org/wiki/index.php/Inkscape) I [IRC](irc://irc.freenode.org/#inkscape) I [Mailing lists](https://inkscape.org/community/mailing-lists/) I [FAQ](https://inkscape.org/learn/faq/)
+  [Questions for Inkscape](https://answers.launchpad.net/inkscape/)  I  [News](https://inkscape.org/news/)  I  [Community Forum](https://inkscape.org/forums/)  I  [Wiki](http://wiki.inkscape.org/wiki/index.php/Inkscape)  I  [IRC](irc://irc.freenode.org/#inkscape)  I  [Mailing lists](https://inkscape.org/community/mailing-lists/)  I  [FAQ](https://inkscape.org/learn/faq/)
   
+
 
 

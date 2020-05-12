@@ -17,61 +17,61 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://audacity.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://audacity.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_audacity/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Audacity/3000-2170_4-10058117.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-audacity/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-Editors-Recorders/Audacity.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/3194-audacity.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/audacity"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -92,11 +92,11 @@ written_in: ["C", "C++", "Shell", "Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Digital Audio Editor"]
 
@@ -235,7 +235,8 @@ note: |
   
   Audacity is a digital audio editor with 1500+ stars on GitHub and is present in Software Repositories of major Linux distributions.
   
-  [Blog](https://www.audacityteam.org/posts/) I [Forum](https://forum.audacityteam.org/) I [News](https://www.audacityteam.org/about/news/) I [Manual](https://manual.audacityteam.org/) I [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page) I [Documentation](https://www.audacityteam.org/help/documentation/) I [FAQ](https://manual.audacityteam.org/man/faq.html)
+  [Blog](https://www.audacityteam.org/posts/)  I  [Forum](https://forum.audacityteam.org/)  I  [News](https://www.audacityteam.org/about/news/)  I  [Manual](https://manual.audacityteam.org/)  I  [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page)  I  [Documentation](https://www.audacityteam.org/help/documentation/)  I  [FAQ](https://manual.audacityteam.org/man/faq.html)
   
+
 
 

@@ -36,16 +36,16 @@ written_in: ["C++", "Python", "CUDA"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
   - else:
       - name: "Python"
-        type: "official"
+        official: true
       - name: "MATLAB"
-        type: "official"
+        official: true
 
 categories: ["Deep Learning", "Framework"]
 
@@ -85,7 +85,8 @@ rating:
   Caffe allows switching between CPU and GPU by setting a single flag. Caffe is among the fastest ConvNet implementations available.
   > Caffe can process over 60M images per day with a single NVIDIA K40 GPU*. That’s 1 ms/image for inference and 4 ms/image for learning and more recent library versions and hardware are faster still. \- [Official website](http://caffe.berkeleyvision.org/#why-caffe)
   
-  [Documentation](http://caffe.berkeleyvision.org/#Documentation) I [Mailing list - Users](https://groups.google.com/forum/#!forum/caffe-users)
+  [Documentation](http://caffe.berkeleyvision.org/#Documentation)  I  [Mailing list - Users](https://groups.google.com/forum/#!forum/caffe-users)
+
 
 
 

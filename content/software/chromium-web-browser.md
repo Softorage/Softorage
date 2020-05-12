@@ -18,74 +18,74 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4936-chromium.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-chromium-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/chromium/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://chromium.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Chromium/3000-2356_4-10907846.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/36244/chromium"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://chromium.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/chromium/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/chromium/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-chromium/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 developer: ["Google LLC", "Chromium Authors"]
 
@@ -98,19 +98,19 @@ written_in: ["C", "C++", "JavaScript", "Java (Android app only)", "Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -236,7 +236,8 @@ rating:
 ---
   Chromium is an open-source [web browser](/categories/web-browser) project by Google that forms the basis for [Google Chrome](/software/google-chrome). While [Chrome](/software/google-chrome) is based on Chromium, Google also adds a number of proprietary features to [Chrome](/software/google-chrome) like automatic updates and support for additional video formats. The Chromium source code is also widely used by other parties to create their own browsers, in a similar manner as Google, while others simply build it as-is and release browsers with the Chromium name. Some of the other [web browsers](/categories/web-browser) based on Chromium are, [Microsoft Edge](/software/microsoft-edge), [Vivaldi](/software/vivaldi-web-browser) and [Brave](/software/brave-web-browser).
   
-  [Blog](https://blog.chromium.org/) I [Dev Mailing lists](https://groups.google.com/a/chromium.org/group/chromium-discuss) I [Blink Engine Dev FAQ](https://www.chromium.org/blink/developer-faq) I [IRC for Devs](https://webchat.freenode.net/#chromium) I [Documentation](https://chromium.googlesource.com/chromium/src.git/+/master/docs/README.md)
+  [Blog](https://blog.chromium.org/)  I  [Dev Mailing lists](https://groups.google.com/a/chromium.org/group/chromium-discuss)  I  [Blink Engine Dev FAQ](https://www.chromium.org/blink/developer-faq)  I  [IRC for Devs](https://webchat.freenode.net/#chromium)  I  [Documentation](https://chromium.googlesource.com/chromium/src.git/+/master/docs/README.md)
   
+
 
 

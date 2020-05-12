@@ -22,13 +22,13 @@ written_in: ["Lua", "C"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["Typesetting"]
 
@@ -57,7 +57,8 @@ note: |
   
   See [XeTeX](/software/xetex/), [LuaTeX](/software/luatex/).
   
-  [Mailing list](http://www.luatex.org/support.html) I [Wiki](http://wiki.luatex.org/index.php/Main_Page) I [Documentation](http://www.luatex.org/documentation.html) I [FAQ](http://www.luatex.org/faq.html) I [Stack Exchange](https://tex.stackexchange.com/questions/tagged/luatex)
+  [Mailing list](http://www.luatex.org/support.html)  I  [Wiki](http://wiki.luatex.org/index.php/Main_Page)  I  [Documentation](http://www.luatex.org/documentation.html)  I  [FAQ](http://www.luatex.org/faq.html)  I  [Stack Exchange](https://tex.stackexchange.com/questions/tagged/luatex)
+
 
 
 

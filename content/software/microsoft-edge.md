@@ -18,71 +18,71 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-microsoft-edge/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_edge-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/7158-microsoft-edge.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.microsoft.emmx"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://microsoft-edge.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/microsoft-edge/id1288723196"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -109,20 +109,20 @@ initial_release: ["29 July 2015"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -255,7 +255,8 @@ note: |
 ---
   Microsoft Edge is a [web browser](/categories/web-browser) developed by Microsoft. Edge includes integration with Cortana and has extensions hosted on the Microsoft Store. Unlike [Internet Explorer](/software/internet-explorer/), Edge does not support the legacy ActiveX and BHO technologies. Originally built with Microsoft's own EdgeHTML and Chakra engines, in 2019 Edge was rebuilt as a [Chromium](/software/chromium-web-browser/)-based browser, using the Blink and V8 engines. Though, for iOS, Microsoft Edge is based on WebKit. Microsoft released the first [Chromium](/software/chromium-web-browser/)-based Edge version on January 15, 2020.
   
-  [Devs Blog](https://blogs.windows.com/msedgedev/) I [Forum](https://answers.microsoft.com/en-us/edge/forum) I [Documentation](https://docs.microsoft.com/en-us/microsoft-edge/) I [Deploy Documentation](https://docs.microsoft.com/en-us/deployedge/) I [FAQ for IT Pros](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-faq) I [FAQ for Enterprise](https://docs.microsoft.com/en-us/deployedge/faqs-edge-in-the-enterprise)
+  [Devs Blog](https://blogs.windows.com/msedgedev/)  I  [Forum](https://answers.microsoft.com/en-us/edge/forum)  I  [Documentation](https://docs.microsoft.com/en-us/microsoft-edge/)  I  [Deploy Documentation](https://docs.microsoft.com/en-us/deployedge/)  I  [FAQ for IT Pros](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-faq)  I  [FAQ for Enterprise](https://docs.microsoft.com/en-us/deployedge/faqs-edge-in-the-enterprise)
+
 
 
 

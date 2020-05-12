@@ -17,89 +17,89 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://google-chrome.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://chrome-64-bit.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4718-google-chrome-for-windows.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Google-Chrome.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-google-chrome-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_google_chrome/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_google_chrome_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://chrome.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://chrome.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.android.chrome"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://chrome.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/google-chrome/id535886823"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -116,23 +116,23 @@ written_in: ["C", "C++", "Java (Android app only)", "JavaScript", "Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x64"]
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -300,8 +300,9 @@ note: |
 ---
   The Google Chrome [Web browser](/categories/web-browser) is based on the open source [Chromium](/software/chromium-web-browser) project. Google released Chrome in 2008 and issues several updates a year. It is available for Windows, macOS, Linux, Android and iOS operating systems. The Google Chrome browser takes a sandboxing-based approach to Web security. Each open website runs as its own process, which helps prevent malicious code on one page from affecting others (or the computer operating system at large). The browser also supports Web standards such as HTML5 and cascading style sheets (CSS).
   
-  [Blog](https://blog.google/products/chrome/) I [Help Community](https://support.google.com/chrome/community) I [Enterprise Community](https://support.google.com/chrome/a/threads) I [API Index](https://developer.chrome.com/apps/api_index) I [Chrome & Chrome Web Store FAQ](https://developer.chrome.com/webstore/faq) I [Mobile Chrome FAQ](https://developer.chrome.com/multidevice/faq) I [Extensions FAQ](https://developer.chrome.com/extensions/faq)
+  [Blog](https://blog.google/products/chrome/)  I  [Help Community](https://support.google.com/chrome/community)  I  [Enterprise Community](https://support.google.com/chrome/a/threads)  I  [API Index](https://developer.chrome.com/apps/api_index)  I  [Chrome & Chrome Web Store FAQ](https://developer.chrome.com/webstore/faq)  I  [Mobile Chrome FAQ](https://developer.chrome.com/multidevice/faq)  I  [Extensions FAQ](https://developer.chrome.com/extensions/faq)
   
+
 
 
 

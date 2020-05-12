@@ -28,14 +28,14 @@ written_in: ["Java"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - else:
       - name: "Java"
-        type: "official"
+        official: true
 
 categories: ["Machine Learning", "Data Mining", "Deep Learning", "Framework"]
 
@@ -90,7 +90,8 @@ rating:
   
   Weka(Waikato Environment for Knowledge Analysis) provides access to [deep learning](/categories/deep-learning) with WekaDeeplearning4j which uses [Deeplearning4j](/software/eclipse-deeplearning4j/).
   
-  [Blog](https://waikato.github.io/weka-blog/) I [New Forum](https://community.hitachivantara.com/community/products-and-solutions/pentaho/ml-data-mining) I [Old Forum](https://forums.pentaho.com/forums/81-Pentaho-Data-Mining-WEKA/) I [Documentation](https://www.cs.waikato.ac.nz/ml/weka/documentation.html) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/weka) I [Mailing list](https://waikato.github.io/weka-wiki/mailing_list/) I [Wiki](https://waikato.github.io/weka-wiki/) I [FAQ](https://waikato.github.io/weka-wiki/faq/) I [IRC](https://webchat.freenode.net/?channels=weka) I [SourceForge](https://sourceforge.net/projects/weka/) I [Package metadata](http://weka.sourceforge.net/packageMetaData/)
+  [Blog](https://waikato.github.io/weka-blog/)  I  [New Forum](https://community.hitachivantara.com/community/products-and-solutions/pentaho/ml-data-mining)  I  [Old Forum](https://forums.pentaho.com/forums/81-Pentaho-Data-Mining-WEKA/)  I  [Documentation](https://www.cs.waikato.ac.nz/ml/weka/documentation.html)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/weka)  I  [Mailing list](https://waikato.github.io/weka-wiki/mailing_list/)  I  [Wiki](https://waikato.github.io/weka-wiki/)  I  [FAQ](https://waikato.github.io/weka-wiki/faq/)  I  [IRC](https://webchat.freenode.net/?channels=weka)  I  [SourceForge](https://sourceforge.net/projects/weka/)  I  [Package metadata](http://weka.sourceforge.net/packageMetaData/)
+
 
 
 

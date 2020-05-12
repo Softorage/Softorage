@@ -17,67 +17,67 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_utorrent/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/uTorrent/3000-2196_4-10528327.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-utorrent/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/utorrent/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/File-Sharing/uTorrent.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://utorrent.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.utorrent.client"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_utorrent_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/29824/utorrent"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-utorrent/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -92,17 +92,17 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
 
 categories: ["BitTorrent Client"]
 
@@ -231,7 +231,8 @@ rating:
   
   uTorrent claims to not eat away at valuable system resources; the program typically runs on approx. 6MB of memory.
   
-  [Blog](http://blog.utorrent.com/) I [Forum](https://forum.utorrent.com/) I [Help](http://help.utorrent.com/) I [documentation.HELP!](https://documentation.help/uTorrent/) I [FAQ](http://help.utorrent.com/customer/portal/topics/822087/articles)
+  [Blog](http://blog.utorrent.com/)  I  [Forum](https://forum.utorrent.com/)  I  [Help](http://help.utorrent.com/)  I  [documentation.HELP!](https://documentation.help/uTorrent/)  I  [FAQ](http://help.utorrent.com/customer/portal/topics/822087/articles)
   
+
 
 

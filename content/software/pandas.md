@@ -24,14 +24,14 @@ written_in: ["Python", "Cython", "C"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - else:
       - name: "Python"
-        type: "official"
+        official: true
 
 categories: ["Data Analysis", "Framework"]
 
@@ -56,6 +56,7 @@ source:
 ---
   > pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=Pandas_(software)&oldid=876441587)
   
-  [Documentation](https://pandas.pydata.org/pandas-docs/stable/) I [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/pandas) I [Mailing list - Developers](https://mail.python.org/mailman/listinfo/pandas-dev) I [FAQ](https://pandas.pydata.org/pandas-docs/stable/user_guide/gotchas.html) I [IRC](https://webchat.freenode.net/?channels=pydata)
+  [Documentation](https://pandas.pydata.org/pandas-docs/stable/)  I  [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/pandas)  I  [Mailing list - Developers](https://mail.python.org/mailman/listinfo/pandas-dev)  I  [FAQ](https://pandas.pydata.org/pandas-docs/stable/user_guide/gotchas.html)  I  [IRC](https://webchat.freenode.net/?channels=pydata)
+
 
 

@@ -18,102 +18,102 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FossHub"
     url: "https://www.fosshub.com/Shotcut.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://shotcut.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Shotcut/3000-13631_4-75906006.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://shotcut.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Video/Video-Editors/Shotcut.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6135-shotcut.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_shotcut_64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-shotcut-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_shotcut_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-shotcut/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://shotcut.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/48634/shotcut"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -138,13 +138,13 @@ written_in: ["C++", "QML"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x64"]
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Video Editor"]
 
@@ -292,8 +292,7 @@ rating:
   - name: "G2CROWD"
     rate: [4, 5]
     num: 26
-
 ---
   Shotcut is a free and open-source cross-platform [video editing application](/categories/video-editor/), developed on the MLT Multimedia Framework. It supports video, audio, and image formats via FFmpeg, and uses a timeline for non-linear video editing of multiple tracks that may be composed of various file formats.
   
-  [Blog/News](https://shotcut.org/blog/) I [Forum](https://forum.shotcut.org/) I [Tutorials](https://shotcut.org/tutorials/) I [How-tos](https://shotcut.org/howtos/) I [FAQ](https://shotcut.org/FAQ/)
+  [Blog/News](https://shotcut.org/blog/)  I  [Forum](https://forum.shotcut.org/)  I  [Tutorials](https://shotcut.org/tutorials/)  I  [How-tos](https://shotcut.org/howtos/)  I  [FAQ](https://shotcut.org/FAQ/)

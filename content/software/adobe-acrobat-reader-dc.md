@@ -15,82 +15,82 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-acrobat-reader-dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/PDF/Adobe-Reader.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_adobe-acrobat-reader-dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/2083-adobe-reader-dc.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-acrobat-reader-dc/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.adobe.reader"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -113,21 +113,21 @@ initial_release: ["15 June 1993"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Document Viewer"]
 
@@ -261,6 +261,7 @@ rating:
   
   Acrobat Reader DC, has a set of premium features, which are activated on a purchase of subscription to Adobe Acrobat PDF Pack, Adobe Acrobat Export PDF, or Adobe Sign.
   
-  [News](https://helpx.adobe.com/reader/whats-new.html) I [Forum](https://community.adobe.com/t5/acrobat-reader/bd-p/acrobat-reader) I [FAQ](https://helpx.adobe.com/reader/faq.html)
+  [News](https://helpx.adobe.com/reader/whats-new.html)  I  [Forum](https://community.adobe.com/t5/acrobat-reader/bd-p/acrobat-reader)  I  [FAQ](https://helpx.adobe.com/reader/faq.html)
+
 
 

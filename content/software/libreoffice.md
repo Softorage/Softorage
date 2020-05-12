@@ -18,80 +18,80 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5131-libreoffice-productivity-suite.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-libreoffice-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://libreoffice.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_libreoffice_32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://libreoffice.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/libreoffice/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/Office-suites/LibreOffice.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Office/Office-Suites/LibreOffice-60713.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://libreoffice-mac.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -121,14 +121,14 @@ written_in: ["C++", "Java", "Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
 
 categories: ["Office Suite"]
 
@@ -277,7 +277,8 @@ note: |
   
    It is available in 115 languages.
    
-   [Blog](https://blog.documentfoundation.org/) I [Forum](https://ask.libreoffice.org/en/questions/) I [Wiki](https://wiki.documentfoundation.org/Main_Page) I [Documentation](https://wiki.documentfoundation.org/Documentation/Publications) I [IRC](https://irc.documentfoundation.org/) I [Planet](https://planet.documentfoundation.org/) I [Mailing lists](https://www.libreoffice.org/get-help/mailing-lists/) I [FAQ](https://www.libreoffice.org/get-help/frequently-asked-questions/)
+   [Blog](https://blog.documentfoundation.org/)  I  [Forum](https://ask.libreoffice.org/en/questions/)  I  [Wiki](https://wiki.documentfoundation.org/Main_Page)  I  [Documentation](https://wiki.documentfoundation.org/Documentation/Publications)  I  [IRC](https://irc.documentfoundation.org/)  I  [Planet](https://planet.documentfoundation.org/)  I  [Mailing lists](https://www.libreoffice.org/get-help/mailing-lists/)  I  [FAQ](https://www.libreoffice.org/get-help/frequently-asked-questions/)
   
+
 
 

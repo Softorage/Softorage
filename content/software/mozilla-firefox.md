@@ -17,85 +17,85 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_mozilla-firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_mozilla-firefox-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/mozilla-firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-firefox-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/19-mozilla-firefox.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Mozilla-Firefox-Final.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://mozilla-firefox.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Firefox)"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Firefox Lite)"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.rocket"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://mozilla-firefox.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -125,25 +125,25 @@ written_in: ["C", "C++", "HTML", "JavaScript", "Rust"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "unofficial"
+        official: false
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -273,8 +273,9 @@ note: |
 ---
   Mozilla Firefox (or simply Firefox) is a free and open-source [web browser](/categories/web-browser) developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox is available for Windows, macOS, Linux, BSD illumos and Solaris operating systems. Its sibling, Firefox for Android, is also available. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards. In 2017, Firefox began incorporating new technology under the code name Quantum to promote parallelism and a more intuitive user interface. An additional version, Firefox for iOS, was released on November 12, 2015. Due to platform restrictions, it uses the WebKit layout engine instead of Gecko, as with all other iOS web browsers.
   
-  [Blog](https://blog.mozilla.org/) I [Forum](https://support.mozilla.org/en-US/questions) I [News/Announcements](https://blog.mozilla.org/press/) I [Wiki](https://wiki.mozilla.org/Firefox) I [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding) I [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
+  [Blog](https://blog.mozilla.org/)  I  [Forum](https://support.mozilla.org/en-US/questions)  I  [News/Announcements](https://blog.mozilla.org/press/)  I  [Wiki](https://wiki.mozilla.org/Firefox)  I  [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding)  I  [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
   
+
 
 
 

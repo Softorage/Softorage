@@ -32,14 +32,14 @@ written_in: ["Java", "Scala", "Perl 6"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - else:
       - name: "Java"
-        type: "official"
+        official: true
       - name: "Scala"
-        type: "official"
+        official: true
 
 categories: ["Machine Learning", "Framework"]
 
@@ -82,8 +82,9 @@ note: |
   
   A *mahout* is a word used in South Asian countries to describe one who drives an elephant as its master. The name comes from its close association with [Apache Hadoop](/software/apache-hadoop) which uses an elephant as its logo. Many of the implementations use the [Apache Hadoop](/software/apache-hadoop) platform.
   
-  [Documentation](https://mahout.apache.org/docs/latest/index.html) I [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists) I [FAQ](https://mahout.apache.org/general/faq.html) I [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
+  [Documentation](https://mahout.apache.org/docs/latest/index.html)  I  [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists)  I  [FAQ](https://mahout.apache.org/general/faq.html)  I  [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
   
+
 
 
 

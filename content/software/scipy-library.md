@@ -24,16 +24,16 @@ written_in: ["Python", "Fortran", "C", "C++"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "unofficial"
+        official: false
   - else:
       - name: "Python"
-        type: "official"
+        official: true
 
 categories: ["Scientific Computing", "Framework"]
 
@@ -80,7 +80,8 @@ rating:
   
   See [NumPy](/software/numpy/), [Matplotlib](/software/matplotlib/), [pandas](/software/pandas/) and [SymPy](/software/sympy/).
   
-  [Documentation](https://docs.scipy.org/doc/) I [Mailing lists](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/scipy) I [IRC](https://webchat.freenode.net/?channels=scipy) I [FAQ](https://www.scipy.org/scipylib/faq.html)
+  [Documentation](https://docs.scipy.org/doc/)  I  [Mailing lists](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/scipy)  I  [IRC](https://webchat.freenode.net/?channels=scipy)  I  [FAQ](https://www.scipy.org/scipylib/faq.html)
+
 
 
 

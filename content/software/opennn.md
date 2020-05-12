@@ -24,14 +24,14 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - else:
       - name: "C++"
-        type: "official"
+        official: true
 
 categories: ["Neural Networks", "Deep Learning", "Data Mining", "Framework"]
 
@@ -79,6 +79,7 @@ rating:
   It implements multiprocessing programming by means of OpenMP and GPU acceleration with CUDA.
   
   [Documentation](http://www.opennn.net/documentation/)
+
 
 
 

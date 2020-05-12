@@ -17,109 +17,109 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_avast_antivirus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Avast-Free-Antivirus/3000-2239_4-10019223.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://avast.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-avast-antivirus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Antivirus/Avast-Home-Edition.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Passwords)"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.passwordmanager"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (VPN)"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.vpn"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://avast.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/26644/avast"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-avast-mac-security/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://avast-2015.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/avast-security-photo-vault/id1276551855"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store (Passwords)"
     url: "https://apps.apple.com/app/avast-passwords-secure-password/id1114498254"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic (VPN)"
     url: "https://avast.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store (VPN)"
     url: "https://apps.apple.com/app/avast-secureline-vpn-proxy/id793096595"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -140,19 +140,19 @@ developer: ["Avast Software s.r.o."]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Security", "Antivirus"]
 
@@ -286,7 +286,8 @@ rating:
 ---
   Avast Antivirus is a family of internet [security applications](/categories/security/) developed by Avast for Microsoft Windows, macOS, Android and iOS. The Avast Antivirus products include free and proprietary versions that provide [computer security](/categories/security/), [browser](/categories/web-browser/) security, [antivirus software](/categories/antivirus/), firewall, anti-phishing, antispyware, and anti-spam among other services.
   
-  [Blog](https://blog.avast.com/) I [Forum](https://forum.avast.com/) I [Documentation](https://www.avast.com/download-documentation) I [FAQ](https://support.avast.com/article/Antivirus-FAQ/)
+  [Blog](https://blog.avast.com/)  I  [Forum](https://forum.avast.com/)  I  [Documentation](https://www.avast.com/download-documentation)  I  [FAQ](https://support.avast.com/article/Antivirus-FAQ/)
+
 
 
 

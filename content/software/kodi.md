@@ -17,111 +17,111 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/kodi/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Kodi/3000-2139_4-10913726.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-kodi/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FossHub"
     url: "https://www.fosshub.com/Kodi.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Uptodown"
     url: "https://xbmc.en.uptodown.com/android"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://kodi.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-kodi/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://kodi.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/kodi/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=org.xbmc.kodi"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://kodi.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/kodi/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "APKPure"
     url: "https://apkpure.com/kodi/org.xbmc.kodi"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/kodi/iphone/"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
 
 sysreq:
   -
@@ -138,23 +138,23 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
         arch: ["x64"]
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Media Player", "HTPC"]
 
@@ -321,8 +321,7 @@ rating:
   - name: "G2CROWD"
     rate: [4, 5]
     num: 11
-
 ---
   Kodi (formerly XBMC) is a [home theater](/categories/htpc/) and [media player](/categories/media-player/) software application developed by the XBMC Foundation, a non-profit technology consortium. It is available for multiple operating-systems and hardware platforms, with a 10-foot user interface for use with televisions and remote controls. It allows users to play and view most streaming media, such as videos, music, podcasts, and videos from the Internet, as well as all common digital media files from local and network storage media.
   
-  [Blog/News](https://kodi.tv/blog) I [Forum](https://forum.kodi.tv/) I [Wiki](https://kodi.wiki/view/Main_Page) I [FAQ](https://kodi.wiki/view/FAQs)
+  [Blog/News](https://kodi.tv/blog)  I  [Forum](https://forum.kodi.tv/)  I  [Wiki](https://kodi.wiki/view/Main_Page)  I  [FAQ](https://kodi.wiki/view/FAQs)

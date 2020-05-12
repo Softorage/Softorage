@@ -26,11 +26,11 @@ written_in: ["C++", "C", "Shell", "Qt"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Document Viewer"]
 
@@ -76,6 +76,7 @@ note: |
   Xpdf is also used as a back-end for other PDF readers frontends such as KPDF and GPDF, and its engine, without the X11 display components, is used for PDF viewers including BePDF on BeOS, '!PDF' on RISC OS, on PalmPDF on Palm OS and on Windows Mobile.
   
   [Forum](http://forum.xpdfreader.com/)
+
 
 
 

@@ -38,9 +38,9 @@ written_in: ["Java", "C++", "C"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
 
 categories: ["Distributed File System", "Framework"]
 
@@ -90,7 +90,8 @@ note: |
   
   When a node fails, processing is re-directed to the remaining nodes in the cluster and data is automatically re-replicated in preparation for future node failures, making Apache Hadoop resilient.
   
-  [Blog](https://blogs.apache.org/hadoop/) I [News](https://hadoop.apache.org/news.html) I [Mailing lists](https://hadoop.apache.org/mailing_lists.html) I [Wiki](https://wiki.apache.org/hadoop) I [Documentation](https://hadoop.apache.org/docs/current/) I [FAQ](https://wiki.apache.org/hadoop/FAQ) I [IRC](https://webchat.freenode.net/?channels=hadoop)
+  [Blog](https://blogs.apache.org/hadoop/)  I  [News](https://hadoop.apache.org/news.html)  I  [Mailing lists](https://hadoop.apache.org/mailing_lists.html)  I  [Wiki](https://wiki.apache.org/hadoop)  I  [Documentation](https://hadoop.apache.org/docs/current/)  I  [FAQ](https://wiki.apache.org/hadoop/FAQ)  I  [IRC](https://webchat.freenode.net/?channels=hadoop)
+
 
 
 

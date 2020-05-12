@@ -17,78 +17,78 @@ get_it:
     platform:
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/testdisk/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/TestDisk-and-PhotoRec/3000-2248_4-10511775.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4171-testdisk.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-testdisk/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://testdisk.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://testdisk.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FossHub"
     url: "https://www.fosshub.com/TestDisk-and-PhotoRec.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Uptodown"
     url: "https://testdisk-and-photorec.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
 
 developer: ["Christophe Grenier"]
 
@@ -99,13 +99,13 @@ written_in: ["C", "C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
 
 categories: ["Data Recovery", "Utility"]
@@ -201,8 +201,7 @@ rating:
     num: 12
   - name: "TechRadar"
     rate: [4, 5]
-
 ---
   TestDisk is an open source [data recovery](/categories/data-recovery/) [utility](/categories/utility/) that runs exclusively from the command-line interface and allows users to check and undelete partitions from a given disk drive. It is primarily designed to help recover lost data storage partitions and/or make non-booting disks bootable again; when these symptoms are caused by faulty software, certain types of viruses or human error (such as accidentally erasing a partition table). It can also be used to collect detailed information about a corrupted drive.
   
-  [Forum](https://forum.cgsecurity.org/phpBB3/) I [Documentation](https://www.cgsecurity.org/wiki/TestDisk#Documentation) I [FAQ](https://www.cgsecurity.org/wiki/TestDisk_FAQ)
+  [Forum](https://forum.cgsecurity.org/phpBB3/)  I  [Documentation](https://www.cgsecurity.org/wiki/TestDisk#Documentation)  I  [FAQ](https://www.cgsecurity.org/wiki/TestDisk_FAQ)

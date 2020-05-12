@@ -18,19 +18,19 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Unix(like)"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
 
 developer: ["Bjorn Erik Pedersen", "Steve Francia <OD>", "Community"]
 
@@ -43,16 +43,16 @@ written_in: ["Golang"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Unix(like)"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
 
 categories: ["Static Site Generator", "Blog Publishing System"]
@@ -74,8 +74,8 @@ source:
     - dskp: ["https://github.com/gohugoio/hugo/releases", "https://github.com/gohugoio/hugo/releases/tag/v0.69.0"]
   license: ["https://gohugo.io/about/license/"]
   status: ["https://github.com/gohugoio/hugo/graphs/contributors", "https://gohugo.io/news/"]
-
 ---
   Hugo is a [static site generator](/categories/static-site-generator/) written in Go. It takes data files, i18n bundles, configuration, templates for layouts, static files, and content written in Markdown and renders a static website. Some notable features are multilingual support, image processing, custom output formats, and shortcodes.
   
-  [News](https://gohugo.io/news/) I [Forum](https://discourse.gohugo.io/) I [Documentation](https://gohugo.io/documentation/) I [FAQ](https://gohugo.io/troubleshooting/faq/) I [Gitter for Devs](https://gitter.im/spf13/hugo)
+  [News](https://gohugo.io/news/)  I  [Forum](https://discourse.gohugo.io/)  I  [Documentation](https://gohugo.io/documentation/)  I  [FAQ](https://gohugo.io/troubleshooting/faq/)  I  [Gitter for Devs](https://gitter.im/spf13/hugo)
+

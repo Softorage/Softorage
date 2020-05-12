@@ -18,84 +18,84 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-atom-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-atom-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Uptodown"
     url: "https://atom.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://atom.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6540-atom-text-editor.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/53196/atom"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://atom.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-atom/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
 
 developer: ["GitHub Inc."]
 
@@ -108,13 +108,13 @@ written_in: ["JavaScript", "CSS", "CoffeeScript"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Text Editor", "Source Code Editor"]
 
@@ -210,10 +210,10 @@ rating:
   - name: "Slant"
     rate: [76, 100]
     num: 1660
-
 ---
   Atom is a [text editor](/categories/text-editor/) and [source code editor](/categories/source-code-editor/) developed by GitHub, with support for plug-ins written in Node.js, and embedded Git Control. It is built with web technologies like HTML, CSS, JavaScript, specifically CoffeeScript and Less. It is based on Electron framework that enables cross-platform desktop applications using [Chromium](/software/chromium-web-browser/) and Node.js.
   
   Atom has installable packages that add extra functionality to it. An example is Teletype, which allows collaborating on code right from the editor.
   
-  [Blog](https://blog.atom.io/) I [Forum](https://discuss.atom.io/) I [Documentation](https://atom.io/docs) I [FAQ](https://atom.io/faq) I [IRC](https://webchat.freenode.net/?channels=atom)
+  [Blog](https://blog.atom.io/)  I  [Forum](https://discuss.atom.io/)  I  [Documentation](https://atom.io/docs)  I  [FAQ](https://atom.io/faq)  I  [IRC](https://webchat.freenode.net/?channels=atom)
+

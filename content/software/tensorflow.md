@@ -38,36 +38,36 @@ written_in: ["C++", "Python", "CUDA"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - else:
       - name: "Python"
-        type: "official"
+        official: true
       - name: "JavaScript"
-        type: "official"
+        official: true
       - name: "C++"
-        type: "official"
+        official: true
       - name: "Java"
-        type: "official"
+        official: true
       - name: "Go"
-        type: "official"
+        official: true
       - name: "Swift"
-        type: "official"
+        official: true
       - name: "C#"
-        type: "unofficial"
+        official: false
       - name: "Haskell"
-        type: "unofficial"
+        official: false
       - name: "Julia"
-        type: "unofficial"
+        official: false
       - name: "Ruby"
-        type: "unofficial"
+        official: false
       - name: "Rust"
-        type: "unofficial"
+        official: false
       - name: "Scala"
-        type: "unofficial"
+        official: false
 
 categories: ["Machine Learning", "Artificial Intelligence", "Deep Learning", "Framework"]
 
@@ -125,7 +125,8 @@ note: |
   
   It comes with strong support for [machine learning](/categories/machine-learning) and [deep learning](/categories/deep-learning) and the flexible numerical computation core is used across many other scientific domains.
   
-  [Blog](https://medium.com/tensorflow) I [Mailing list](https://www.tensorflow.org/community/lists) I [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow) I [Tutorials](https://www.tensorflow.org/tutorials/) I [FAQ](https://www.tensorflow.org/guide/faq)
+  [Blog](https://medium.com/tensorflow)  I  [Mailing list](https://www.tensorflow.org/community/lists)  I  [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow)  I  [Tutorials](https://www.tensorflow.org/tutorials/)  I  [FAQ](https://www.tensorflow.org/guide/faq)
+
 
 
 

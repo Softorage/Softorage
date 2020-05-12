@@ -18,25 +18,25 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/MusicBrainz-Picard/3000-2170_4-166444.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://musicbrainz-picard.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/26543/musicbrainz-picard"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 developer: ["MusicBrainz"]
 
@@ -49,11 +49,11 @@ written_in: ["Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
 
 categories: ["Tag Editor", "Acoustic Fingerprinter"]
 
@@ -135,7 +135,8 @@ rating:
   
   MusicBrainz is an open source database of music. The MusicBrainz Picard tool uses this database to identify and tag a song. It checks the songs against the MusicBrainz database to see if it can find a match. MusicBrainz Picard is an [acoustic fingerprinter](/categories/acoustic-fingerprinter), so if it can’t find a match, it uses AcoustID (a database of audio fingerprints) in order to figure out the song.
   
-  [Forum](https://community.metabrainz.org/c/picard) I [Documentation](https://picard.musicbrainz.org/docs/)
+  [Forum](https://community.metabrainz.org/c/picard)  I  [Documentation](https://picard.musicbrainz.org/docs/)
   
+
 
 

@@ -18,59 +18,59 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_lmms/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://lmms.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-lmms-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://lmms.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/LMMS-32-bit/3000-2170_4-10967914.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/LMMS-64-bit/3000-2170_4-75289588.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/lmms/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/55961/lmms"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -93,12 +93,12 @@ written_in: ["C++", "C", "Qt"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Digital Audio Workstation"]
 
@@ -184,8 +184,9 @@ rating:
   
   It allows users to sequence, compose, mix and automate songs in one interface, note playback via MIDI or typing keyboard, consolidate instrument tracks using Beat+Bassline Editor, fine tune patterns, notes, chords and melodies using Piano Roll Editor. It has built-in 64-bit VST instrument support with 32-bit VST bridge (64-bit Windows) and drop-in "Linux Audio Developer's Simple Plugin API" (LADSPA) plug-in support, drop-in VST ® effect plug-in support (Linux and Windows).
   
-  [Forum](https://lmms.io/forum/) I [Wiki](https://lmms.io/wiki/index.php?title=Main_Page) I [Developer Wiki](https://github.com/LMMS/lmms/wiki) I [Documentation(wiki)](https://lmms.io/documentation/) I [User FAQ](https://lmms.io/documentation/User_FAQ) I [Mailing lists](https://sourceforge.net/p/lmms/mailman/) I [IRC](https://webchat.freenode.net/?channels=lmms) I [Discord](https://lmms.io/chat/)
+  [Forum](https://lmms.io/forum/)  I  [Wiki](https://lmms.io/wiki/index.php?title=Main_Page)  I  [Developer Wiki](https://github.com/LMMS/lmms/wiki)  I  [Documentation(wiki)](https://lmms.io/documentation/)  I  [User FAQ](https://lmms.io/documentation/User_FAQ)  I  [Mailing lists](https://sourceforge.net/p/lmms/mailman/)  I  [IRC](https://webchat.freenode.net/?channels=lmms)  I  [Discord](https://lmms.io/chat/)
   
+
 
 
 

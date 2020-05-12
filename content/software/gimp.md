@@ -17,63 +17,63 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-gimp/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/GIMP.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://the-gimp.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://gimp.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_the-gimp_32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/GIMP/3000-2192_4-10322178.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/14597/gimp"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -92,13 +92,13 @@ written_in: ["C", "GTK/GTK+"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["Raster Graphics Editor"]
 
@@ -237,7 +237,8 @@ note: |
   
   GIMP allows to create images with tools for airbrushing, penciling, cloning, and creating gradients. Power users can create their own brushes and patterns to use later. It also allows users to manipulate images imported into the program, further allowing to crop, add text, resize, and create nested layers. Creations can be animated as well.
   
-  [News](https://www.gimp.org/news/) I [Wiki](https://wiki.gimp.org/) I [Documentation](https://www.gimp.org/docs/) I [User FAQ](https://www.gimp.org/docs/userfaq.html) I [Books](https://www.gimp.org/books/) I [Mailing lists](https://www.gimp.org/mail_lists.html) I [IRC](https://www.gimp.org/irc.html)
+  [News](https://www.gimp.org/news/)  I  [Wiki](https://wiki.gimp.org/)  I  [Documentation](https://www.gimp.org/docs/)  I  [User FAQ](https://www.gimp.org/docs/userfaq.html)  I  [Books](https://www.gimp.org/books/)  I  [Mailing lists](https://www.gimp.org/mail_lists.html)  I  [IRC](https://www.gimp.org/irc.html)
   
+
 
 

@@ -24,16 +24,16 @@ written_in: ["Java"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
   - else:
       - name: "Java"
-        type: "official"
+        official: true
 
 categories: ["Data Mining", "Framework"]
 
@@ -81,7 +81,8 @@ rating:
   > ELKI is an open source data mining software with the focus on cluster analysis and outlier detection. In contrast to most other tools, it has support for index structures.
   > \- [Stack Overflow](https://stackoverflow.com/tags/elki/info)
   
-  [Mailing list](https://elki-project.github.io#bug-reports-and-contact) I [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/elki) I [FAQ](https://elki-project.github.io/faq)
+  [Mailing list](https://elki-project.github.io#bug-reports-and-contact)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/elki)  I  [FAQ](https://elki-project.github.io/faq)
+
 
 
 

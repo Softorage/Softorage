@@ -17,128 +17,128 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-photoshop.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-photoshop-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/photoshop/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-photoshop.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-photoshop/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/adobe-photoshop/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic (Touch)"
     url: "https://adobe-photoshop-touch.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic (Express)"
     url: "https://adobe-photoshop-express.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida (Express)"
     url: "https://www.malavida.com/en/soft/photoshop/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic (Touch)"
     url: "https://adobe-photoshop-touch.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic (Express)"
     url: "https://adobe-photoshop-express.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida (Express)"
     url: "https://www.malavida.com/en/soft/photoshop/iphone/"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Express)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.psmobile"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Mix)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.photoshopmix"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Fix)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.adobephotoshopfix"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/adobe-photoshop/id1457771281"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store (Express)"
     url: "https://apps.apple.com/app/photoshop-express-photo-editor/id331975235"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store (Fix)"
     url: "https://apps.apple.com/app/adobe-photoshop-fix/id1033713849"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store (Sketch)"
     url: "https://apps.apple.com/app/adobe-photoshop-sketch/id839085644"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store (Mix)"
     url: "https://apps.apple.com/app/adobe-photoshop-mix-cut-out-combine-create/id885271158"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -173,10 +173,10 @@ initial_release: ["19 February 1990"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x64"]
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Raster Graphics Editor"]
 
@@ -355,7 +355,8 @@ rating:
   
   Photoshop's naming scheme was initially based on version numbers. However, in October 2002 (following the introduction of Creative Suite branding), each new version of Photoshop was designated with "CS" plus a number; e.g., the eighth major version of Photoshop was Photoshop CS and the ninth was Photoshop CS2. Photoshop CS3 through CS6 were also distributed in two different editions: Standard and Extended. With the introduction of the Creative Cloud branding in June 2013 (and in turn, the change of the "CS" suffix to "CC"), Photoshop's licensing scheme was changed to that of software as a service rental model.
   
-  [Blog](https://theblog.adobe.com/creative-cloud/photoshop/) I [Forum](https://community.adobe.com/t5/photoshop/bd-p/photoshop) I [User Guide](https://helpx.adobe.com/in/photoshop/user-guide.html) I [FAQ](https://helpx.adobe.com/in/photoshop/faq.html)
+  [Blog](https://theblog.adobe.com/creative-cloud/photoshop/)  I  [Forum](https://community.adobe.com/t5/photoshop/bd-p/photoshop)  I  [User Guide](https://helpx.adobe.com/in/photoshop/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/photoshop/faq.html)
+
 
 
 

@@ -17,103 +17,103 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/uc-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_ucbrowser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://uc-browser.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://uc-browser.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5702-uc-browser-for-android.html"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (UC Browser)"
     url: "https://play.google.com/store/apps/details?id=com.UCMobile.intl"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (UC Mini)"
     url: "https://play.google.com/store/apps/details?id=com.uc.browser.en"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (UC Turbo)"
     url: "https://play.google.com/store/apps/details?id=com.ucturbo"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic (UC Browser)"
     url: "https://uc-browser.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic (UC Mini)"
     url: "https://uc-browser-mini-for-android-go.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic (UC HD)"
     url: "https://uc-browser-hd.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/uc-browser/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "APKPure"
     url: "https://apkpure.com/uc-browser/com.UCMobile.intl/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/uc-browser/id1048518592"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://uc-browser.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/uc-browser/iphone/"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -132,22 +132,22 @@ developer: ["UCWeb", "Alibaba Group"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - else:
       - name: "Java"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -315,8 +315,9 @@ rating:
   
   There have been [privacy concerns regarding UC Browser as at 2015](https://citizenlab.ca/2015/05/a-chatty-squirrel-privacy-and-security-issues-with-uc-browser/).
   
-  [News](http://www.ucweb.com/press/) I [FAQ](http://www.ucweb.com/ucbrowser/help/)
+  [News](http://www.ucweb.com/press/)  I  [FAQ](http://www.ucweb.com/ucbrowser/help/)
   
+
 
 
 

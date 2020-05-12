@@ -18,89 +18,89 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "GitHub Releases | Authentic"
     url: "https://github.com/giorgiotani/PeaZip/releases/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "FossHub"
     url: "https://www.fosshub.com/PeaZip.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5078-peazip-for-linux.html"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Compression-Tools/PeaZip-Portable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_peazip/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/PeaZip/3000-2250_4-10602256.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/PeaZip-64-bit/3000-2250_4-75179694.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-peazip-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-peazip-portable-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://peazip.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/System/Archiving/PeaZip-19508.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 developer: ["Giorgio Tani"]
 
@@ -113,13 +113,13 @@ written_in: ["C++", "Pascal", "Delphi/Kylix", "Object Pascal"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["File Archiver", "File Manager", "Encryption", "Data Erasure"]
 
@@ -250,8 +250,7 @@ rating:
     num: 120
   - name: "TechRadar"
     rate: [4.5, 5]
-
 ---
   PeaZip is free [file archiver](/categories/file-archiver/) utility, based on Open Source technologies of 7-Zip, p7zip, Brotli, FreeArc, PAQ, Zstandard, and [PEA](https://www.peazip.org/pea-archiving-utility.html) projects. PeaZip works as a [compression](/categories/file-archiver/) and [encryption utility](/categories/encryption/). It can open extract 180+ archive formats; full list can be found [here](https://www.peazip.org/peazip-free-archiver.html).
   
-  [News](https://sourceforge.net/p/peazip/news/) I [Forum/Tickets](https://sourceforge.net/p/peazip/tickets/) I [Wiki](https://sourceforge.net/p/peazip/wiki/Home/) I [Online Tutorials](https://www.peazip.org/peazip-help.html) I [FAQ](https://www.peazip.org/peazip-help-faq.html)
+  [News](https://sourceforge.net/p/peazip/news/)  I  [Forum/Tickets](https://sourceforge.net/p/peazip/tickets/)  I  [Wiki](https://sourceforge.net/p/peazip/wiki/Home/)  I  [Online Tutorials](https://www.peazip.org/peazip-help.html)  I  [FAQ](https://www.peazip.org/peazip-help-faq.html)

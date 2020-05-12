@@ -17,91 +17,91 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/ccleaner/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://ccleaner.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Security/Secure-cleaning/CCleaner.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/132-ccleaner.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/ccleaner/#gref"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-ccleaner/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://ccleaner.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.piriform.ccleaner"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://ccleaner.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_ccleaner_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/CCleaner/3000-2144_4-75453127.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-ccleaner/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/41220/ccleaner"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -117,15 +117,15 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
 
 categories: ["Utility"]
 
@@ -283,7 +283,8 @@ rating:
 ---
   CCleaner is a [utility](/categories/utility) used to clean potentially unwanted files and invalid Windows Registry entries from a computer. It is system optimization, privacy and cleaning tool. It removes unused files from system - temporary files, broken shortcuts, allowing Windows to run faster and freeing up hard disk space, helps you uninstall software and select which programs start with Windows. It cleans traces of online activities such as Internet history. It contains a registry cleaner.
   
-  [Blog](https://www.ccleaner.com/news/blog) I [Community Forum](https://forum.piriform.com/) I [Press Releases](https://www.ccleaner.com/about/press-releases) I [Documentation](https://www.ccleaner.com/docs/ccleaner) I [FAQ](https://www.ccleaner.com/ccleaner/faq)
+  [Blog](https://www.ccleaner.com/news/blog)  I  [Community Forum](https://forum.piriform.com/)  I  [Press Releases](https://www.ccleaner.com/about/press-releases)  I  [Documentation](https://www.ccleaner.com/docs/ccleaner)  I  [FAQ](https://www.ccleaner.com/ccleaner/faq)
   
+
 
 

@@ -18,31 +18,31 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://wings-3d.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/wings-3d/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Wings-3D/3000-6677_4-10514566.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://wings-3d.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -61,13 +61,13 @@ written_in: ["Erlang", "GLSL", "C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["3D Computing Graphics", "Subdivision Modeler"]
 
@@ -159,7 +159,8 @@ note: |
   
   Wings 3D is a [3D computer graphics](/categories/3d-computing-graphics) software and [subdivision modeler](/categories/subdivision-modeler), often used in combination with other software, whereby models made in Wings 3D are exported to applications more specialized in rendering and animation such as [Blender](/software/blender/).
   
-  [Forum](http://www.wings3d.com/forum/) I [Documentation](http://www.wings3d.com/?page_id=87) I [News](http://www.wings3d.com/?page_id=76) I [User Manual](http://www.wings3d.com/?page_id=252) I [FAQ](http://www.wings3d.com/forum/archive/index.php?thread-1106.html)
+  [Forum](http://www.wings3d.com/forum/)  I  [Documentation](http://www.wings3d.com/?page_id=87)  I  [News](http://www.wings3d.com/?page_id=76)  I  [User Manual](http://www.wings3d.com/?page_id=252)  I  [FAQ](http://www.wings3d.com/forum/archive/index.php?thread-1106.html)
   
+
 
 

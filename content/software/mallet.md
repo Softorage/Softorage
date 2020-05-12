@@ -22,16 +22,16 @@ written_in: ["Java"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
   - else:
       - name: "Java"
-        type: "official"
+        official: true
 
 categories: ["Machine Learning", "Framework"]
 
@@ -87,6 +87,7 @@ note: |
   > In addition to sophisticated Machine Learning applications, MALLET includes routines for transforming text documents into numerical representations that can then be processed efficiently. This process is implemented through a flexible system of "pipes", which handle distinct tasks such as tokenizing strings, removing stopwords, and converting sequences into count vectors.
   > \- [Official website](http://mallet.cs.umass.edu/)
   
-  [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/mallet) I [API Reference](http://mallet.cs.umass.edu/api)
+  [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/mallet)  I  [API Reference](http://mallet.cs.umass.edu/api)
+
 
 

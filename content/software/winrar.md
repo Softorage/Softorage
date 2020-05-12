@@ -18,100 +18,100 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_winrar_64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/67-winrar.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
       - name: "FreeBSD"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/WinRAR-64-bit/3000-2250_4-10965579.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-winrar-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://winrar.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://winrar.en.softonic.com/download"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://winrar-64bit.en.softonic.com/download"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.rarlab.rar&hl=en_IN"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://rar-for-android.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5169-winrar-for-mac.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_winrar_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-rar-for-mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -126,23 +126,23 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
         arch: ["x64"]
       - name: "Unix(like)"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
 
 categories: ["File Archiver"]
 
@@ -281,7 +281,8 @@ rating:
   
   WinRAR recognises and selects the best compression method for decompressing multi-media files; the compression algorithm compresses multi-media files, executables and object libraries. Split archives into separate volumes in order to save them on several disks. 128 bit and 256 bit password encryption and authenticated signature technology is included.
   
-  [News](https://www.win-rar.com/latestnews.html?&L=0) I [Manual](http://acritum.com/software/manuals/winrar/) I [documentation.HELP!](https://documentation.help/WinRAR/) I [FAQ](https://www.win-rar.com/faq.html?&L=0)
+  [News](https://www.win-rar.com/latestnews.html?&L=0)  I  [Manual](http://acritum.com/software/manuals/winrar/)  I  [documentation.HELP!](https://documentation.help/WinRAR/)  I  [FAQ](https://www.win-rar.com/faq.html?&L=0)
   
+
 
 

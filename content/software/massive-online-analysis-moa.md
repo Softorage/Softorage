@@ -3,7 +3,7 @@ title: "Massive Online Analysis (MOA)"
 
 description: "A framework for data stream mining including machine learning algorithms such as classification, regression, clustering, outlier detection, concept drift detection and recommender systems and tools for evaluation"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/massive-online-analysis-moa.jpg?h=64"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/massive-online-analysis-moa.png?h=64"
 
 status: ["Active"]
 
@@ -26,7 +26,7 @@ written_in: ["Java"]
 platform:
   - else:
       - name: "Java"
-        type: "official"
+        official: true
 
 categories: ["Machine Learning", "Data Mining", "Framework"]
 
@@ -60,7 +60,8 @@ note: |
   
   MOA allows to build and run experiments of [machine learning](/categories/machine-learning) or [data mining](/categories/data-mining) on evolving data streams. It is also possible to use [WEKA](/software/weka/) classifiers from MOA, and MOA classifiers and streams from [WEKA](/software/weka/).
   
-  [Blog](https://moa.cms.waikato.ac.nz/blog/) I [Documentation](https://moa.cms.waikato.ac.nz/documentation/) I [Mailing list - Users](https://groups.google.com/group/moa-users) I [Mailing list - Developers](https://groups.google.com/group/moa-development)
+  [Blog](https://moa.cms.waikato.ac.nz/blog/)  I  [Documentation](https://moa.cms.waikato.ac.nz/documentation/)  I  [Mailing list - Users](https://groups.google.com/group/moa-users)  I  [Mailing list - Developers](https://groups.google.com/group/moa-development)
+
 
 
 

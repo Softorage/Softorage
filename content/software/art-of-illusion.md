@@ -17,31 +17,31 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Art-of-Illusion.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/art-of-illusion/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/19836/art-of-illusion"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -60,13 +60,13 @@ written_in: ["Java", "Shell"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["3D Computing Graphics"]
 
@@ -145,7 +145,8 @@ note: |
   
   Art of Illusion has been entirely written in Java.
   
-  [Forum](https://sourceforge.net/p/aoi/discussion/) I [Documentation](http://www.artofillusion.org/documentation) I [FAQ](http://www.artofillusion.org/faq)
+  [Forum](https://sourceforge.net/p/aoi/discussion/)  I  [Documentation](http://www.artofillusion.org/documentation)  I  [FAQ](http://www.artofillusion.org/faq)
   
+
 
 

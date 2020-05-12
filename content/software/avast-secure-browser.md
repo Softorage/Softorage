@@ -17,49 +17,49 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_avast-secure-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6707-avast-secure-browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://secure-browser.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Avast-Secure-Browser.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-avast-secure-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://avast-secure-browser.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/avast-secure-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -72,7 +72,7 @@ written_in: ["C++", "C", "HTML", "JavaScript"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -139,6 +139,7 @@ rating:
   
   It has features such as Ad Block, Bank mode, Passwords, Video downloader, Anti-tracking & Anti-fingerprinting, Anti-fishing, etc.
   
-  [Blog](https://blog.avast.com/topic/browser) I [Forum](https://forum.avast.com/index.php?board=78.0) I [FAQ](https://support.avast.com/en-in/article/Secure-Browser-FAQ)
+  [Blog](https://blog.avast.com/topic/browser)  I  [Forum](https://forum.avast.com/index.php?board=78.0)  I  [FAQ](https://support.avast.com/en-in/article/Secure-Browser-FAQ)
+
 
 

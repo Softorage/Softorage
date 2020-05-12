@@ -24,13 +24,13 @@ written_in: ["Pascal(WEB)"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["TeX Distribution"]
 
@@ -56,7 +56,8 @@ source:
   
   Since the 2009 release of TeX Live, it includes [TeXworks](/software/texworks/), a graphical editor. There is also [MacTeX](/software/mactex/) for macOS which comprises TeX Live as well as some additional tools for using TeX on the Mac.
   
-  [Documentation](https://www.tug.org/texlive/doc.html) I [Mailing lists](https://www.tug.org/texlive/lists.html)
+  [Documentation](https://www.tug.org/texlive/doc.html)  I  [Mailing lists](https://www.tug.org/texlive/lists.html)
+
 
 
 

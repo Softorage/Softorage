@@ -29,11 +29,11 @@ written_in: ["Python", "Cython"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Machine Learning", "Data Mining", "Data Analysis", "Data Visualization"]
 
@@ -84,7 +84,8 @@ rating:
   
   Orange components are called widgets. Widgets cover a wide variety, ranging from simple [data visualization](/categories/data-visualization), subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling. Orange is used for [data analysis](/categories/[data-analysis) as well.
   
-  [Blog](https://blog.biolab.si/) I [Stack Overflow(QA)](https://stackoverflow.com/questions/tagged/orange) I [Community](https://orange.biolab.si/community/) I [Stack Exchange(data-science)](https://datascience.stackexchange.com/questions/tagged/orange) I [Wiki](https://github.com/biolab/orange3/wiki) I [Documentation](https://orange.biolab.si/docs/) I [FAQ](https://orange.biolab.si/faq/)
+  [Blog](https://blog.biolab.si/)  I  [Stack Overflow(QA)](https://stackoverflow.com/questions/tagged/orange)  I  [Community](https://orange.biolab.si/community/)  I  [Stack Exchange(data-science)](https://datascience.stackexchange.com/questions/tagged/orange)  I  [Wiki](https://github.com/biolab/orange3/wiki)  I  [Documentation](https://orange.biolab.si/docs/)  I  [FAQ](https://orange.biolab.si/faq/)
+
 
 
 

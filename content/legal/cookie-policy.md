@@ -31,12 +31,16 @@ In addition to the cookies Softorage sets when you visit our websites, third par
 
 Some of the cookies we commonly use are listed below. This list is not exhaustive, but it is intended to illustrate the main reasons we typically set cookies. If you visit one of our websites, the site may set some or all of the following cookies:
 
+<div class="table-responsive-lg" style="overflow: auto;">
+
 | Cookie Name | Description | Cookie Category | Expiry |
 |-------------|-------------|-----------------|--------|
 | _ga | It is used for visitor tracking. This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports. | Third Party Performance (Google Analytics) | Persistent (2 years) |
 | _gid | This cookie is used to store “Session ID” and to group the entire session’s activity together for each user. | Third Party Performance (Google Analytics) | Session (1 day) |
 | _gat | This cookie is used to throttle the request rate - limiting the collection of data on high traffic sites. | Third Party Performance (Google Analytics) | Session (49 seconds) |
 | __cfduid | Cookie assoiated with sites using CloudFlare, used to speed up page load times. According to CloudFlare, it is used to override any security restrictions based on the IP address the visitor is coming from. It does not contain any user identification information. | Targeting cookies | Persistent (1 month) |
+
+</div>
 
 By using our website you agree that we can place these types of cookies on your device.
 

@@ -22,13 +22,13 @@ written_in: ["Java", "R", "Python", "Scala"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["Machine Learning", "Deep Learning"]
 
@@ -72,7 +72,8 @@ note: |
   
   Apache SystemML is customizable with R-like and Python-like languages. It also supports multiple execution modes, including Spark MLContext API, Spark Batch, Hadoop Batch, Standalone, and JMLC and automatic optimization based on data and cluster characteristics to ensure both efficiency and scalability.
   
-  [Documentation](https://systemml.apache.org/documentation.html) I [Mailing lists](https://systemml.apache.org/community.html#mailing-list)
+  [Documentation](https://systemml.apache.org/documentation.html)  I  [Mailing lists](https://systemml.apache.org/community.html#mailing-list)
+
 
 
 

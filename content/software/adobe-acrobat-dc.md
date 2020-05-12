@@ -17,52 +17,52 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_adobe_acrobat_pro_dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/adobe-acrobat-professional/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-acrobat-professional.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4683-adobe-acrobat-pro.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-acrobat-pro-dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/adobe-acrobat/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-acrobat-pro-dc/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -87,9 +87,9 @@ initial_release: ["15 June 1993"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Desktop Publishing", "Document Viewer"]
 
@@ -189,6 +189,7 @@ rating:
   
   Its features include, edit scanned documents; create protected PDFs; export PDFs to MS Office; fill, sign, and send forms; delete sensitive information; work with Dropbox, Box, Google Drive, and OneDrive.
   
-  [Blog](https://theblog.adobe.com/document-cloud/acrobat-dc/) I [Release Notes](https://helpx.adobe.com/in/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes) I [Forum](https://community.adobe.com/t5/acrobat/bd-p/acrobat) | [User Guide](https://helpx.adobe.com/acrobat/user-guide.html) I [FAQ](https://helpx.adobe.com/in/acrobat/faq.html)
+  [Blog](https://theblog.adobe.com/document-cloud/acrobat-dc/)  I  [Release Notes](https://helpx.adobe.com/in/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes)  I  [Forum](https://community.adobe.com/t5/acrobat/bd-p/acrobat) | [User Guide](https://helpx.adobe.com/acrobat/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/acrobat/faq.html)
+
 
 

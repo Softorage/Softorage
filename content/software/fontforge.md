@@ -19,13 +19,13 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/48689/fontforge"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -46,11 +46,11 @@ written_in: ["C", "Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Font Editor"]
 
@@ -120,7 +120,8 @@ rating:
   
   The FontForge source code includes a number of utility programs, including 'showttf' which shows the contents of binary font files, and a WOFF converter and deconverter.
   
-  [Online Book](http://designwithfontforge.com/) I [Documentation](https://fontforge.org/en-US/documentation/) I [FAQ](https://fontforge.org/en-US/faq/) I [Wiki](https://github.com/fontforge/fontforge/wiki) I [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
+  [Online Book](http://designwithfontforge.com/)  I  [Documentation](https://fontforge.org/en-US/documentation/)  I  [FAQ](https://fontforge.org/en-US/faq/)  I  [Wiki](https://github.com/fontforge/fontforge/wiki)  I  [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
   
+
 
 

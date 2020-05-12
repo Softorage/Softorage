@@ -17,94 +17,94 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/qbittorrent/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://qbittorrent.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5292-qbittorrent.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_qbittorrent_32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-qbittorrent-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-qbittorrent-portable/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "true"
+        official: true
+        portable: true
   - from: "FossHub"
     url: "https://www.fosshub.com/qBittorrent.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://qbittorrent.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-qbittorrent/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_qbittorrent_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
 
 developer: ["Christophe Dumez<OD>", "Sledgehammer999", "Community"]
 
@@ -117,13 +117,13 @@ written_in: ["C++", "Python"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
 
 categories: ["BitTorrent Client"]
 
@@ -240,7 +240,6 @@ rating:
   - name: "SourceForge"
     rate: [4.6, 5]
     num: 196
-
 ---
   qBittorrent is a cross-platform free and open-source [BitTorrent client](/categories/bittorrent-client/).
   
@@ -271,4 +270,4 @@ rating:
   14. Cross-platform: Windows, Linux, macOS, FreeBSD, OS/2
   15. Available in ~70 languages
   
-  [News](https://www.qbittorrent.org/news.php) I [Forum](https://forum.qbittorrent.org/) I [Wiki](https://wiki.qbittorrent.org/) I [FAQ](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions) I [IRC](https://webchat.freenode.net/?channels=qbittorrent)
+  [News](https://www.qbittorrent.org/news.php)  I  [Forum](https://forum.qbittorrent.org/)  I  [Wiki](https://wiki.qbittorrent.org/)  I  [FAQ](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions)  I  [IRC](https://webchat.freenode.net/?channels=qbittorrent)

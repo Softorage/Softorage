@@ -20,7 +20,7 @@ written_in: ["Java"]
 platform:
   - else:
       - name: "Java"
-        type: "official"
+        official: true
 
 categories: ["Data Mining", "Machine Learning", "Framework"]
 
@@ -47,7 +47,8 @@ note: |
 ---
   Yooreeka is a library for [data mining](/categories/data-mining), [machine learning](/categories/machine-learning), soft computing, and mathematical analysis. It also provides examples.
   
-  [Google Code I Archive](https://code.google.com/archive/p/yooreeka/)
+  [Google Code  I  Archive](https://code.google.com/archive/p/yooreeka/)
+
 
 
 

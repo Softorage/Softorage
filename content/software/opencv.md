@@ -30,27 +30,27 @@ written_in: ["C++", "C"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Unix(like)"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
       - name: "Maemo"
-        type: "official"
+        official: true
   - else:
       - name: "C++"
-        type: "official"
+        official: true
       - name: "Python"
-        type: "official"
+        official: true
       - name: "Java"
-        type: "official"
+        official: true
 
 categories: ["Computer Vision", "Machine Learning", "Framework"]
 
@@ -115,7 +115,8 @@ note: |
   
   OpenCV supports the [deep learning](/categories/deep-learning) frameworks [TensorFlow](/software/tensorflow/), [Torch](/software/torch/)/[PyTorch](/software/pytorch/) and [Caffe](/software/caffe/).
   
-  [News](https://opencv.org/news.html) I [Q&A Forum](http://answers.opencv.org/questions/) I [Documentation](https://docs.opencv.org/) I [Wiki](https://github.com/opencv/opencv/wiki) I [IRC](https://webchat.freenode.net/?channels=opencv)
+  [News](https://opencv.org/news.html)  I  [Q&A Forum](http://answers.opencv.org/questions/)  I  [Documentation](https://docs.opencv.org/)  I  [Wiki](https://github.com/opencv/opencv/wiki)  I  [IRC](https://webchat.freenode.net/?channels=opencv)
+
 
 
 

@@ -17,53 +17,53 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-webtorrent-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6903-webtorrent-desktop.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-webtorrent/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softpedia"
     url: "https://mac.softpedia.com/get/Internet-Utilities/WebTorrent.shtml"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
 
 developer: ["Feross Aboukhadijeh"]
 
@@ -76,14 +76,14 @@ written_in: ["Java"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
   - else:
       - name: "Web Browser"
-        type: "official"
+        official: true
 
 categories: ["BitTorrent Client", "WebRTC-Torrent Client"]
 
@@ -132,8 +132,7 @@ rating:
     rate: [4.9, 5]
     num: 16
     remarks: "macOS"
-
 ---
   WebTorrent is a peer-to-peer (P2P) streaming [torrent client](/categories/bittorrent-client/) written in JavaScript by Feross Aboukhadijeh. WebTorrent uses the same protocol as BitTorrent but uses a different transport. WebTorrent primarily relies on WebRTC connections, while BitTorrent uses TCP connections and UDP datagrams directly.
   
-  [Dev Documentation](https://webtorrent.io/docs) I [FAQ](https://webtorrent.io/faq) I [IRC](https://webchat.freenode.net/?channels=webtorrent)
+  [Dev Documentation](https://webtorrent.io/docs)  I  [FAQ](https://webtorrent.io/faq)  I  [IRC](https://webchat.freenode.net/?channels=webtorrent)

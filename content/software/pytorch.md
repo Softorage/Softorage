@@ -28,16 +28,16 @@ written_in: ["Python", "C++", "CUDA", "C"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "official"
+        official: true
   - else:
       - name: "Python"
-        type: "official"
+        official: true
       - name: "C++"
-        type: "official"
+        official: true
 
 categories: ["Machine Learning", "Deep Learning", "Neural Networks", "Framework"]
 
@@ -86,7 +86,8 @@ rating:
   > PyTorch also includes standard defined neural network layers, deep learning optimizers, data loading utilities, and multi-gpu and multi-node support. Functions are executed immediately instead of enqueued in a static graph, improving ease of use and a sophisticated debugging experience.
   > \- [NVIDIA - DEEP LEARNING FRAMEWORKS DOCUMENTATION](https://docs.nvidia.com/deeplearning/dgx/pytorch-release-notes/overview.html)
   
-  [Blog](https://pytorch.org/blog) I [Documentation](https://pytorch.org/docs) I [Slack](https://pytorch.slack.com/) I [FAQ](https://pytorch.org/docs/stable/notes/faq.html) I [PyTorch Discuss Q&A](https://discuss.pytorch.org/) I [Wiki](https://github.com/pytorch/pytorch/wiki)
+  [Blog](https://pytorch.org/blog)  I  [Documentation](https://pytorch.org/docs)  I  [Slack](https://pytorch.slack.com/)  I  [FAQ](https://pytorch.org/docs/stable/notes/faq.html)  I  [PyTorch Discuss Q&A](https://discuss.pytorch.org/)  I  [Wiki](https://github.com/pytorch/pytorch/wiki)
+
 
 
 

@@ -18,79 +18,79 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "Softpedia (Portable)"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/CD-DVD-Tools/Etcher-Portable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/CD-DVD-Tools/Data-CD-DVD-Burning/Etcher.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6931-etcher.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "Softonic (1)"
     url: "https://etcher.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic (2)"
     url: "https://balenaetcher.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-etcher/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/61189/balenaetcher"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Etcher/3000-18511_4-77521842.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://etcher.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -107,12 +107,12 @@ written_in: ["JavaScript", "HTML", "CSS", "C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
 
 categories: ["Live USB Creator"]
@@ -207,6 +207,7 @@ note: |
   
   Etcher was developed using the Electron framework. balenaEtcher was originally called Etcher, but its name was changed on October 29, 2018 when Resin.io changed its name to Balena.
   
-  [Blog](https://www.balena.io/blog/tag/etcher/) I [Support](https://github.com/balena-io/etcher/blob/master/SUPPORT.md) I [Forum](https://forums.balena.io/c/etcher) I [Documentation](https://github.com/balena-io/etcher/blob/master/docs/USER-DOCUMENTATION.md) I [FAQ](https://www.balena.io/etcher/#faq) I [Mailing list](https://us3.list-manage.com/subscribe?u=87871f17defba2d203db77a92&id=1fc3119ed2)
+  [Blog](https://www.balena.io/blog/tag/etcher/)  I  [Support](https://github.com/balena-io/etcher/blob/master/SUPPORT.md)  I  [Forum](https://forums.balena.io/c/etcher)  I  [Documentation](https://github.com/balena-io/etcher/blob/master/docs/USER-DOCUMENTATION.md)  I  [FAQ](https://www.balena.io/etcher/#faq)  I  [Mailing list](https://us3.list-manage.com/subscribe?u=87871f17defba2d203db77a92&id=1fc3119ed2)
+
 
 

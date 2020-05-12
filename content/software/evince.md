@@ -17,31 +17,31 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://evince.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "CNET"
     url: "https://download.cnet.com/Evince/3000-10743_4-75362773.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/evince/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Evince-3819.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 developer: ["The Evince Team"]
 
@@ -54,9 +54,9 @@ written_in: ["C", "C++"]
 platform:
   - dskp:
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "Windows"
-        type: "unofficial"
+        official: false
 
 categories: ["Document Viewer"]
 
@@ -132,7 +132,8 @@ rating:
 ---
   Evince is a [document viewer](/categories/document-viewer) for PDF, PostScript, DjVu, TIFF, XPS and DVI formats. It was designed for the GNOME desktop environment. The developers of Evince intended to replace the multiple GNOME document viewers with a single and simple application. The Evince motto sums up the project aim: "Simply a Document Viewer". GNOME releases have included Evince since GNOME 2.12 (September 2005). Evince code consists mainly of C, with a small part (the code that interfaces with Poppler) written in C++. A large number of Linux distributions – including Ubuntu, Fedora and Linux Mint – include Evince as the default document-viewer. Evince is free and open-source software subject to the requirements of the GNU General Public License version 2 or later. The Evince FAQ highlights the meaning of the word "Evince" as "to show or express something clearly".
   
-  [News](https://gitlab.gnome.org/GNOME/evince/blob/master/NEWS) I [Documentation](https://help.gnome.org/users/evince/stable/) I [FAQ](https://wiki.gnome.org/Apps/Evince/FrequentlyAskedQuestions) I [Mailing list](https://mail.gnome.org/mailman/listinfo/evince-list)
+  [News](https://gitlab.gnome.org/GNOME/evince/blob/master/NEWS)  I  [Documentation](https://help.gnome.org/users/evince/stable/)  I  [FAQ](https://wiki.gnome.org/Apps/Evince/FrequentlyAskedQuestions)  I  [Mailing list](https://mail.gnome.org/mailman/listinfo/evince-list)
   
+
 
 

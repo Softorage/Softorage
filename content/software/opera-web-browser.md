@@ -17,99 +17,99 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Opera-for-Windows-without-Java.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/393-opera-browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://opera.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-opera-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/6297/opera"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-opera/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_opera_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://opera.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Opera)"
     url: "https://play.google.com/store/apps/details?id=com.opera.browser"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Opera Touch)"
     url: "https://play.google.com/store/apps/details?id=com.opera.touch"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Google Play Store (Opera Mini)"
     url: "https://play.google.com/store/apps/details?id=com.opera.mini.native"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://opera.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://opera-browser.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
-        type: "official"
+        official: true
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/id1411869974"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -126,22 +126,22 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
   - smp:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
   - tab:
       - name: "Android"
-        type: "official"
+        official: true
       - name: "iOS"
-        type: "official"
+        official: true
 
 categories: ["Web Browser"]
 
@@ -318,8 +318,9 @@ rating:
   
   Privacy: In 2016, Opera was sold to a group of Chinese companies and investors. According to its privacy policy, Opera collects data on its users, including names, IP addresses and search terms. It also reserves the right to share that data with third-party applications but doesn’t give specifics. The company that operates the VPN service for Opera, SurfEasy, essentially collects everything it can from users, including browsing history, IP address and bandwidth usage while using the VPN. One can turn off some data collection by disabling certain features in the settings.
         
-  [Blog/News](https://blogs.opera.com/news/) I [Blog Desktop](https://blogs.opera.com/desktop/) I [Blog Mobile](https://blogs.opera.com/mobile/) I [Blog Security](https://blogs.opera.com/security/) I [Forum](https://forums.opera.com/) I [Help](https://help.opera.com/en/get-started/) I [FAQ](https://help.opera.com/en/faq/)
+  [Blog/News](https://blogs.opera.com/news/)  I  [Blog Desktop](https://blogs.opera.com/desktop/)  I  [Blog Mobile](https://blogs.opera.com/mobile/)  I  [Blog Security](https://blogs.opera.com/security/)  I  [Forum](https://forums.opera.com/)  I  [Help](https://help.opera.com/en/get-started/)  I  [FAQ](https://help.opera.com/en/faq/)
   
+
 
 
 

@@ -18,7 +18,7 @@ developer: ["MacTeX TeXnical working group"]
 platform:
   - dskp:
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["TeX Distribution"]
 
@@ -38,7 +38,8 @@ source:
   
   See [TeX Live](/software/tex-live/).
   
-  [FAQ](https://www.tug.org/mactex/faq/) I [About](https://www.tug.org/mactex/aboutmactex.html)
+  [FAQ](https://www.tug.org/mactex/faq/)  I  [About](https://www.tug.org/mactex/aboutmactex.html)
+
 
 
 

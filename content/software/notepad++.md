@@ -18,97 +18,97 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_notepad_64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-notepad-32/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-notepad-64/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Uptodown"
     url: "https://notepad.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/Text-editors/Notepad-plus-plus.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Office/Suites-editors/Notepad-plusplus-Portable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "true"
+        official: true
+        portable: true
   - from: "Softonic"
     url: "https://notepad-plus.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "Softonic"
     url: "https://notepad-portable.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
-        portable: "true"
+        official: true
+        portable: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/2010-notepad.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
-        portable: "true"
+        official: true
+        portable: true
   - from: "CNET"
     url: "https://download.cnet.com/Notepad/3000-2352_4-10327521.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Notepad-64-bit/3000-2352_4-77388575.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
-        portable: "false"
+        official: true
+        portable: false
 
 developer: ["Don Ho"]
 
@@ -121,7 +121,7 @@ written_in: ["C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32", "x64"]
 
 categories: ["Text Editor", "Source Code Editor"]
@@ -253,7 +253,6 @@ rating:
   - name: "Capterra"
     rate: [4.7, 5]
     num: 520
-
 ---
   Notepad++ is a free [source code editor](/categories/source-code-editor/) and Notepad replacement that supports several languages. Based on the editing component Scintilla, it is written in C++ and uses pure Win32 API and STL to provide higher execution speed and smaller program size.
   
@@ -265,4 +264,4 @@ rating:
   * Tab interface
   * Document Map
   
-  [News](https://notepad-plus-plus.org/news/) I [Forum](https://community.notepad-plus-plus.org/) I [Gitter Chat](https://gitter.im/notepad-plus-plus/notepad-plus-plus) I [User Manual](https://npp-user-manual.org/)
+  [News](https://notepad-plus-plus.org/news/)  I  [Forum](https://community.notepad-plus-plus.org/)  I  [Gitter Chat](https://gitter.im/notepad-plus-plus/notepad-plus-plus)  I  [User Manual](https://npp-user-manual.org/)

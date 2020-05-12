@@ -17,49 +17,49 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FossHub"
     url: "https://www.fosshub.com/Rufus.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/rufus-usb/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://rufus.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://rufus-usb.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6062-rufus.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-rufus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_rufus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -76,7 +76,7 @@ written_in: ["C", "C++", "C#"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
         arch: ["x32"]
 
 categories: ["Live USB Creator"]
@@ -169,6 +169,7 @@ rating:
   Rufus supports a variety of bootable .iso files, including various Linux distributions and Windows installation .iso files, as well as raw disk image files (including compressed ones). If needed, it can install a bootloader such as SYSLINUX or GRUB onto the flash drive to render it bootable. It also allows the installation of MS-DOS or FreeDOS onto a flash drive as well as the creation of Windows To Go bootable media. It supports formatting flash drives as FAT, FAT32, NTFS, exFAT, UDF or ReFS filesystems. Rufus can compute the MD5, SHA-1 and SHA-256 hashes of the currently selected image.
   
   [FAQ](https://github.com/pbatard/rufus/wiki/FAQ) 
+
 
 
 

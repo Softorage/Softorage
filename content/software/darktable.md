@@ -18,43 +18,43 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/darktable/linux/"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-darktable/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/darktable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Multimedia/Graphics/darktable-51811.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/45193/darktable"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -75,11 +75,11 @@ written_in: ["C", "Lua", "C++"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
 
 categories: ["Photo post-Production", "Photography Workflow"]
 
@@ -165,7 +165,8 @@ note: |
   
   All editing is fully non-destructive and only operates on cached image buffers for display. The full image is only converted during export. Raw image loading is done using rawspeed, high-dynamic range and standard image formats such as jpeg are also supported. The core operates completely on floating point values, so darktable can not only be used for photography but also for scientifically acquired images or output of renderers (high dynamic range).
   
-  [Blog](https://www.darktable.org/blog/) I [Forum](https://discuss.pixls.us/c/software/darktable) I [User Manual](http://www.darktable.org/usermanual/en/) I [News](https://www.darktable.org/news/) I [Users' Wiki](https://redmine.darktable.org/projects/users/wiki) I [Development Wiki](https://redmine.darktable.org/projects/darktable/wiki) I [FAQ](https://www.darktable.org/about/faq/) I [Mailing list](https://www.darktable.org/contact/)
+  [Blog](https://www.darktable.org/blog/)  I  [Forum](https://discuss.pixls.us/c/software/darktable)  I  [User Manual](http://www.darktable.org/usermanual/en/)  I  [News](https://www.darktable.org/news/)  I  [Users' Wiki](https://redmine.darktable.org/projects/users/wiki)  I  [Development Wiki](https://redmine.darktable.org/projects/darktable/wiki)  I  [FAQ](https://www.darktable.org/about/faq/)  I  [Mailing list](https://www.darktable.org/contact/)
   
+
 
 

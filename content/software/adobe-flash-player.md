@@ -17,69 +17,69 @@ get_it:
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
-        type: "official"
+        official: true
   - from: "Uptodown"
     url: "https://adobe-flash-player.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
-        type: "official"
+        official: true
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/WEB-Design/Flash/Macromedia-Flash-Player.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/1127-adobe-flash-player.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
       - name: "Linux"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-flash-player.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/download_adobe-flash-player/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-flash-player.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "Softonic"
     url: "https://adobe-flash-player.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["dskp"]
-        type: "official"
+        official: true
   - from: "FileHippo"
     url: "https://filehippo.com/android/download_adobe-flash-player/"
     platform:
       - name: "Android"
         hardware: ["dskp"]
-        type: "official"
+        official: true
 
 sysreq:
   -
@@ -94,11 +94,11 @@ initial_release: ["01 January 1996"]
 platform:
   - dskp:
       - name: "Windows"
-        type: "official"
+        official: true
       - name: "macOS"
-        type: "official"
+        official: true
       - name: "Linux"
-        type: "official"
+        official: true
 
 categories: ["Runtime System", "Browser Extension"]
 
@@ -212,6 +212,7 @@ rating:
 ---
   Adobe Flash Player (labeled Shockwave Flash in [Internet Explorer](/software/internet-explorer/) and [Firefox](/software/mozilla-firefox/)) is computer software for using content created on the Adobe Flash platform, including viewing multimedia contents, executing rich Internet applications, and streaming audio and video. Flash Player can run from a [web browser](/categories/web-browser/) as a [browser plug-in](/categories/browser-extension/) or on supported mobile devices. Flash Player runs SWF files that can be created by Adobe Flash Professional, Adobe Flash Builder or by third party tools such as FlashDevelop. Flash Player supports [vector graphics](/categories/vector-graphics-editor/), [3D graphics](/categories/3d-computing-graphics/), embedded audio, video and [raster graphics](/categories/raster-graphics-editor), and a scripting language called ActionScript (based on ECMAScript).
   
-  [Archived Versions](https://helpx.adobe.com/flash-player/kb/archived-flash-player-versions.html) I [Blog](https://blogs.adobe.com/flashplayer/) I [Forum](https://community.adobe.com/t5/flash-player/bd-p/flash-player) I [FAQ](https://helpx.adobe.com/in/flash-player/kb/flash-player-faq.html) 
+  [Archived Versions](https://helpx.adobe.com/flash-player/kb/archived-flash-player-versions.html)  I  [Blog](https://blogs.adobe.com/flashplayer/)  I  [Forum](https://community.adobe.com/t5/flash-player/bd-p/flash-player)  I  [FAQ](https://helpx.adobe.com/in/flash-player/kb/flash-player-faq.html) 
+
 
 
