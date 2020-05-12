@@ -26,7 +26,9 @@ By contributing, you help us build it!
 <div class="card">
 <div class="card-body">
 
-## Donate - not available yet
+## Donate
+
+We are not currently asking for or taking any donations. Still, if you feel generous, [drop us an email](mailto:contact@softorage.com)!
 
 </div>
 </div>

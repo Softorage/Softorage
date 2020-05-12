@@ -47,10 +47,12 @@
             {{- end -}}
           </div>
         {{- end -}}
+        
+        <!-- Title and Description -->
         <div class="col">
-          <h1 class="display-4 tg">{{ replace (replace .Title "(" "<span class='small' style='font-weight: 300; font-size: 1.2rem;'>") ")" "</span>" | safeHTML }}</h1>
+          <h1 class="display-4 tg" style="overflow-x: auto;">{{ replace (replace .Title "(" "<span class='small' style='font-weight: 300; font-size: 1.2rem;'>") ")" "</span>" | safeHTML }}</h1>
           {{- if .Params.description -}}
-            <p class="small" style="color:#8e0090;//#fc4aff//">{{ .Params.description }}</p>
+            <p class="small" style="color: #8e0090;/*#fc4aff*/">{{ .Params.description }}</p>
           {{- end -}}
           
           {{ if not .Params.image }}
