@@ -274,7 +274,3 @@ rating:
   
   [Reference Manual](https://docs.blender.org/manual/en/latest/index.html)  I  [News](https://www.blender.org/news/)  I  [Community](https://www.blender.org/community/)  I  [Stack Exchange(QA)](https://blender.stackexchange.com/)  I  [Wiki](https://wiki.blender.org/wiki/Main_Page)  I  [Discord(community-managed)](https://discordapp.com/invite/blender)  I  [Developers Blog](https://code.blender.org/)  I  [Developers Forum](https://devtalk.blender.org/)  I  [IRC](https://wiki.blender.org/wiki/Communication/Contact/IRC)
   
-
-
-
-
