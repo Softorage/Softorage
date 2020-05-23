@@ -14,9 +14,10 @@ get_it:
     url: "https://orange.biolab.si/download/"
 
 sysreq:
-  -
-    min: "Python 3.4, PyQt4"
-    recm: "Python 3.5 for Anaconda, PyQt5"
+  General:
+    -
+      min: "Python 3.4, PyQt4"
+      recm: "Python 3.5 for Anaconda, PyQt5"
 
 developer: ["Bioinformatics Lab at University of Ljubljana", "Slovenia"]
 
@@ -85,6 +86,7 @@ rating:
   Orange components are called widgets. Widgets cover a wide variety, ranging from simple [data visualization](/categories/data-visualization), subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling. Orange is used for [data analysis](/categories/[data-analysis) as well.
   
   [Blog](https://blog.biolab.si/)  I  [Stack Overflow(QA)](https://stackoverflow.com/questions/tagged/orange)  I  [Community](https://orange.biolab.si/community/)  I  [Stack Exchange(data-science)](https://datascience.stackexchange.com/questions/tagged/orange)  I  [Wiki](https://github.com/biolab/orange3/wiki)  I  [Documentation](https://orange.biolab.si/docs/)  I  [FAQ](https://orange.biolab.si/faq/)
+
 
 
 

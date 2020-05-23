@@ -62,12 +62,13 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Windows XP/Vista/7/8/8.1/10"
-  -
-    min: "1 GB of free disk space mainly for driver download and installation"
-  -
-    min: "1024*768 screen resolution and above"
+  General:
+    -
+      min: "Windows XP/Vista/7/8/8.1/10"
+    -
+      min: "1 GB of free disk space mainly for driver download and installation"
+    -
+      min: "1024*768 screen resolution and above"
 
 developer: ["IObit"]
 
@@ -179,5 +180,6 @@ rating:
   It is known for 'Game Mode' setting, which optimizes drivers to improve their performance in games so as to enhance the gaming experience.
   
   [News](https://forums.iobit.com/forum/general-forums/news-offers)  I  [Forum](https://forums.iobit.com/)  I  [User Manual](https://www.iobit.com/product-manuals/db-help/)  I  [FAQ](https://www.iobit.com/en/allfaq.php#p109)
+
 
 

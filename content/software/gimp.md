@@ -76,10 +76,11 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "128 MB RAM"
-  -
-    min: "20 MB+ free space on hard disk | 60 MB+ with data files"
+  General:
+    -
+      min: "128 MB RAM"
+    -
+      min: "20 MB+ free space on hard disk | 60 MB+ with data files"
 
 developer: ["Spencer Kimball<OD>", "Peter Mattis<OD>", "The GIMP Development Team"]
 
@@ -239,6 +240,7 @@ note: |
   
   [News](https://www.gimp.org/news/)  I  [Wiki](https://wiki.gimp.org/)  I  [Documentation](https://www.gimp.org/docs/)  I  [User FAQ](https://www.gimp.org/docs/userfaq.html)  I  [Books](https://www.gimp.org/books/)  I  [Mailing lists](https://www.gimp.org/mail_lists.html)  I  [IRC](https://www.gimp.org/irc.html)
   
+
 
 
 

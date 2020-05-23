@@ -112,10 +112,11 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Windows: Windows 7 or later | macOS: OS X El Capitan 10.11 or later | Linux: 64-bit Ubuntu 16.04 or later"
-  -
-    min: "Windows: Intel Pentium 4 / AMD Athlon 64 processor or later with support for SSE2 | Linux: Intel Pentium 4 / AMD Athlon 64 processor or later with support for SSE2"
+  General:
+    -
+      min: "Windows: Windows 7 or later | macOS: OS X El Capitan 10.11 or later | Linux: 64-bit Ubuntu 16.04 or later"
+    -
+      min: "Windows: Intel Pentium 4 / AMD Athlon 64 processor or later with support for SSE2 | Linux: Intel Pentium 4 / AMD Athlon 64 processor or later with support for SSE2"
 
 developer: ["Opera Software"]
 
@@ -320,6 +321,7 @@ rating:
         
   [Blog/News](https://blogs.opera.com/news/)  I  [Blog Desktop](https://blogs.opera.com/desktop/)  I  [Blog Mobile](https://blogs.opera.com/mobile/)  I  [Blog Security](https://blogs.opera.com/security/)  I  [Forum](https://forums.opera.com/)  I  [Help](https://help.opera.com/en/get-started/)  I  [FAQ](https://help.opera.com/en/faq/)
   
+
 
 
 

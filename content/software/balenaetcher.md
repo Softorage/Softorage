@@ -93,8 +93,9 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Linux (most distros);   macOS 10.10 (Yosemite) and later;   Microsoft Windows 7 and later;     See Notes for more info."
+  General:
+    -
+      min: "Linux (most distros);   macOS 10.10 (Yosemite) and later;   Microsoft Windows 7 and later;     See Notes for more info."
 
 developer: ["Balena Inc."]
 
@@ -208,6 +209,7 @@ note: |
   Etcher was developed using the Electron framework. balenaEtcher was originally called Etcher, but its name was changed on October 29, 2018 when Resin.io changed its name to Balena.
   
   [Blog](https://www.balena.io/blog/tag/etcher/)  I  [Support](https://github.com/balena-io/etcher/blob/master/SUPPORT.md)  I  [Forum](https://forums.balena.io/c/etcher)  I  [Documentation](https://github.com/balena-io/etcher/blob/master/docs/USER-DOCUMENTATION.md)  I  [FAQ](https://www.balena.io/etcher/#faq)  I  [Mailing list](https://us3.list-manage.com/subscribe?u=87871f17defba2d203db77a92&id=1fc3119ed2)
+
 
 
 

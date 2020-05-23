@@ -90,12 +90,13 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "500 MHz CPU"
-  -
-    min: "256 MB RAM"
-  -
-    min: "30 MB hard drive space for installation"
+  General:
+    -
+      min: "500 MHz CPU"
+    -
+      min: "256 MB RAM"
+    -
+      min: "30 MB hard drive space for installation"
 
 developer: ["Disc Soft Ltd."]
 
@@ -260,6 +261,7 @@ note: |
   
   [Blog](https://blog.daemon-tools.cc/home)  I  [Forum](https://forum.daemon-tools.cc/)  I  [FAQ](https://www.daemon-tools.cc/support/faq)
   
+
 
 
 

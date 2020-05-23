@@ -65,20 +65,21 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Processor: Windows (Pro/Standard) - 1.5GHz or faster processor | macOS (Standard) - Intel processor"
-  -
-    min: "OS: Windows (Pro/Standard) - Windows Server 2008 R2 (64 bit), 2012 (64 bit), 2012 R2 (64 bit), 2016 (64 bit), or 2019 (64 bit); Windows 7 SP1 (32 bit and 64 bit), Windows 8, 8.1 (32 bit and 64 bit), or Windows 10 (32 bit and 64 bit) | macOS (Standard) - macOS v10.12, macOS v10.13, macOS v10.14, or macOS v10.1"
-  -
-    min: "RAM: Windows (Pro/Standard): 1GB | macOS (Standard): 1GB"
-  -
-    min: "Hard Disk Space: Windows (Pro/Standard) - 4.5GB | macOS (Standard) - 2.75GB"
-  -
-    min: "Screen Resolution: Windows (Pro/Standard): 1024x768 | macOS (Standard): 1024x768"
-  -
-    min: "Others: Windows (Pro/Standard) - Internet Explorer 11, Firefox (ESR), or Chrome | macOS (Standard) - Safari 10.0 or 11.0 (browser plug-in for Safari supported on 64-bit Intel processor only)"
-  -
-    min: "Optional: Windows (Pro/Standard) - Video hardware acceleration"
+  General:
+    -
+      min: "Processor: Windows (Pro/Standard) - 1.5GHz or faster processor | macOS (Standard) - Intel processor"
+    -
+      min: "OS: Windows (Pro/Standard) - Windows Server 2008 R2 (64 bit), 2012 (64 bit), 2012 R2 (64 bit), 2016 (64 bit), or 2019 (64 bit); Windows 7 SP1 (32 bit and 64 bit), Windows 8, 8.1 (32 bit and 64 bit), or Windows 10 (32 bit and 64 bit) | macOS (Standard) - macOS v10.12, macOS v10.13, macOS v10.14, or macOS v10.1"
+    -
+      min: "RAM: Windows (Pro/Standard): 1GB | macOS (Standard): 1GB"
+    -
+      min: "Hard Disk Space: Windows (Pro/Standard) - 4.5GB | macOS (Standard) - 2.75GB"
+    -
+      min: "Screen Resolution: Windows (Pro/Standard): 1024x768 | macOS (Standard): 1024x768"
+    -
+      min: "Others: Windows (Pro/Standard) - Internet Explorer 11, Firefox (ESR), or Chrome | macOS (Standard) - Safari 10.0 or 11.0 (browser plug-in for Safari supported on 64-bit Intel processor only)"
+    -
+      min: "Optional: Windows (Pro/Standard) - Video hardware acceleration"
 
 developer: ["Adobe Inc."]
 
@@ -190,6 +191,7 @@ rating:
   Its features include, edit scanned documents; create protected PDFs; export PDFs to MS Office; fill, sign, and send forms; delete sensitive information; work with Dropbox, Box, Google Drive, and OneDrive.
   
   [Blog](https://theblog.adobe.com/document-cloud/acrobat-dc/)  I  [Release Notes](https://helpx.adobe.com/in/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes)  I  [Forum](https://community.adobe.com/t5/acrobat/bd-p/acrobat) | [User Guide](https://helpx.adobe.com/acrobat/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/acrobat/faq.html)
+
 
 
 

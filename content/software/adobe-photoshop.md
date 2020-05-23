@@ -141,30 +141,31 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Processor: Windows - Intel® or AMD processor with 64-bit support; 2 GHz or faster processor | macOS - Multicore Intel processor with 64-bit support"
-    recm: ""
-  -
-    min: "Operating system: Windows - Microsoft Windows 7 with Service Pack 1 (64-bit), Microsoft Windows 10 October 2018 update (64-bit) version 1809 or later | macOS - macOS version 10.13 (High Sierra), macOS version 10.14 (Mojave), macOS version 10.15 (Catalina)"
-    recm: ""
-  -
-    min: "RAM: Windows/macOS - 2 GB or more of RAM"
-    recm: "RAM: Windows/macOS - 8 GB of RAM"
-  -
-    min: "Graphics card: Windows/macOS - nVidia GeForce GTX 1050 or equivalent"
-    recm: "Graphics card: Windows/macOS - nVidia GeForce GTX 1660 or Quadro T1000"
-  -
-    min: "Hard disk space: Windows - 3.1 GB or more of available hard-disk space for 64-bit installation; additional free space required during installation (cannot install on a volume that uses a case-sensitive file system) | macOS - 4 GB or more of available hard-disk space for installation; additional free space required during installation (cannot install on a volume that uses a case-sensitive file system)"
-    recm: ""
-  -
-    min: "Monitor resolution: Windows/macOS - 1280 x 800 display at 100% UI scaling with 16-bit color and 512 MB or more of dedicated VRAM"
-    recm: "Monitor resolution: Windows/macOS - 2 GB of VRAM"
-  -
-    min: "OpenGL: Windows/macOS - OpenGL 2.0-capable system"
-    recm: ""
-  -
-    min: "Internet: Windows/macOS - Internet connection and registration are necessary for required software activation, validation of subscriptions, and access to online services"
-    recm: ""
+  General:
+    -
+      min: "Processor: Windows - Intel® or AMD processor with 64-bit support; 2 GHz or faster processor | macOS - Multicore Intel processor with 64-bit support"
+      recm: ""
+    -
+      min: "Operating system: Windows - Microsoft Windows 7 with Service Pack 1 (64-bit), Microsoft Windows 10 October 2018 update (64-bit) version 1809 or later | macOS - macOS version 10.13 (High Sierra), macOS version 10.14 (Mojave), macOS version 10.15 (Catalina)"
+      recm: ""
+    -
+      min: "RAM: Windows/macOS - 2 GB or more of RAM"
+      recm: "RAM: Windows/macOS - 8 GB of RAM"
+    -
+      min: "Graphics card: Windows/macOS - nVidia GeForce GTX 1050 or equivalent"
+      recm: "Graphics card: Windows/macOS - nVidia GeForce GTX 1660 or Quadro T1000"
+    -
+      min: "Hard disk space: Windows - 3.1 GB or more of available hard-disk space for 64-bit installation; additional free space required during installation (cannot install on a volume that uses a case-sensitive file system) | macOS - 4 GB or more of available hard-disk space for installation; additional free space required during installation (cannot install on a volume that uses a case-sensitive file system)"
+      recm: ""
+    -
+      min: "Monitor resolution: Windows/macOS - 1280 x 800 display at 100% UI scaling with 16-bit color and 512 MB or more of dedicated VRAM"
+      recm: "Monitor resolution: Windows/macOS - 2 GB of VRAM"
+    -
+      min: "OpenGL: Windows/macOS - OpenGL 2.0-capable system"
+      recm: ""
+    -
+      min: "Internet: Windows/macOS - Internet connection and registration are necessary for required software activation, validation of subscriptions, and access to online services"
+      recm: ""
 
 developer: ["Adobe Inc."]
 
@@ -356,6 +357,7 @@ rating:
   Photoshop's naming scheme was initially based on version numbers. However, in October 2002 (following the introduction of Creative Suite branding), each new version of Photoshop was designated with "CS" plus a number; e.g., the eighth major version of Photoshop was Photoshop CS and the ninth was Photoshop CS2. Photoshop CS3 through CS6 were also distributed in two different editions: Standard and Extended. With the introduction of the Creative Cloud branding in June 2013 (and in turn, the change of the "CS" suffix to "CC"), Photoshop's licensing scheme was changed to that of software as a service rental model.
   
   [Blog](https://theblog.adobe.com/creative-cloud/photoshop/)  I  [Forum](https://community.adobe.com/t5/photoshop/bd-p/photoshop)  I  [User Guide](https://helpx.adobe.com/in/photoshop/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/photoshop/faq.html)
+
 
 
 

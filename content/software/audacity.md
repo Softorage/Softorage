@@ -74,12 +74,13 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "512MB to 1GB RAM for Windows | 256MB for linux | 1GB (2GB for OS X 10.7 and later or macOS) RAM for mac"
-    recm: "2GB to 4GB RAM for Windows | 1GB for Linux |  2GB (4GB for OS X 10.7 and later or macOS) RAM for mac"
-  -
-    min: "1GHz processor speed for Windows | 700MHz for linux | 1GHz (2GHz for OS X 10.7 and later or macOS) for mac"
-    recm: "1GHz to 2GHz processor speed for Windows | 2GHz for Linux | 2GHz for mac"
+  General:
+    -
+      min: "512MB to 1GB RAM for Windows | 256MB for linux | 1GB (2GB for OS X 10.7 and later or macOS) RAM for mac"
+      recm: "2GB to 4GB RAM for Windows | 1GB for Linux |  2GB (4GB for OS X 10.7 and later or macOS) RAM for mac"
+    -
+      min: "1GHz processor speed for Windows | 700MHz for linux | 1GHz (2GHz for OS X 10.7 and later or macOS) for mac"
+      recm: "1GHz to 2GHz processor speed for Windows | 2GHz for Linux | 2GHz for mac"
 
 developer: ["The Audacity Team"]
 
@@ -237,6 +238,7 @@ note: |
   
   [Blog](https://www.audacityteam.org/posts/)  I  [Forum](https://forum.audacityteam.org/)  I  [News](https://www.audacityteam.org/about/news/)  I  [Manual](https://manual.audacityteam.org/)  I  [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page)  I  [Documentation](https://www.audacityteam.org/help/documentation/)  I  [FAQ](https://manual.audacityteam.org/man/faq.html)
   
+
 
 
 

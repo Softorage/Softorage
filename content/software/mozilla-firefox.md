@@ -98,21 +98,22 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: ""
-    recm: "Windows 7, 8, 10 | macOS 10.9, macOS 10.10, macOS 10.11, macOS 10.12, macOS 10.13 | GNU/Linux"
-  -
-    min: "For GNU/Linux: Firefox will not run at all without the following libraries or packages- GTK+ 3.4 or higher, GLib 2.22 or higher, Pango 1.22 or higher, X.Org 1.0 or higher (1.7 or higher is recommended), libstdc++ 4.6.1 or higher"
-    recm: "For GNU/Linux: Minimum required packages plus- NetworkManager 0.7 or higher, DBus 1.0 or higher, GNOME 2.16 or higher, PulseAudio"
-  -
-    min: ""
-    recm: "Pentium 4 or newer processor that supports SSE2 for Windows | Macintosh computer with an Intel x86 processor for macOS"
-  -
-    min: ""
-    recm: "512MB RAM / 2GB for 64bit version"
-  -
-    min: ""
-    recm: "200MB free hard disk space"
+  General:
+    -
+      min: ""
+      recm: "Windows 7, 8, 10 | macOS 10.9, macOS 10.10, macOS 10.11, macOS 10.12, macOS 10.13 | GNU/Linux"
+    -
+      min: "For GNU/Linux: Firefox will not run at all without the following libraries or packages- GTK+ 3.4 or higher, GLib 2.22 or higher, Pango 1.22 or higher, X.Org 1.0 or higher (1.7 or higher is recommended), libstdc++ 4.6.1 or higher"
+      recm: "For GNU/Linux: Minimum required packages plus- NetworkManager 0.7 or higher, DBus 1.0 or higher, GNOME 2.16 or higher, PulseAudio"
+    -
+      min: ""
+      recm: "Pentium 4 or newer processor that supports SSE2 for Windows | Macintosh computer with an Intel x86 processor for macOS"
+    -
+      min: ""
+      recm: "512MB RAM / 2GB for 64bit version"
+    -
+      min: ""
+      recm: "200MB free hard disk space"
 
 developer: ["Mozilla Foundation and its contributors", "Mozilla Corporation"]
 
@@ -275,6 +276,7 @@ note: |
   
   [Blog](https://blog.mozilla.org/)  I  [Forum](https://support.mozilla.org/en-US/questions)  I  [News/Announcements](https://blog.mozilla.org/press/)  I  [Wiki](https://wiki.mozilla.org/Firefox)  I  [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding)  I  [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
   
+
 
 
 

@@ -116,16 +116,17 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Operating system: 32- or 64-bit Windows 7 - 10, Apple macOS 10.10 - 10.15, or 64-bit Linux with at least glibc 2.19"
-  -
-    min: "CPU: x86-64 Intel or AMD; at least one 2 GHz core for SD, 2 cores for HD, and 4 cores for 4K"
-  -
-    min: "GPU: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers"
-  -
-    min: "RAM: At least 4 GB for SD, 8 GB for HD, and 16 GB for 4K"
-  -
-    min: "Network: Shotcut does NOT require access to the network to activate, check a subscription, or send usage analytics. However, some links in the Help menu do link out to this web site."
+  General:
+    -
+      min: "Operating system: 32- or 64-bit Windows 7 - 10, Apple macOS 10.10 - 10.15, or 64-bit Linux with at least glibc 2.19"
+    -
+      min: "CPU: x86-64 Intel or AMD; at least one 2 GHz core for SD, 2 cores for HD, and 4 cores for 4K"
+    -
+      min: "GPU: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers"
+    -
+      min: "RAM: At least 4 GB for SD, 8 GB for HD, and 16 GB for 4K"
+    -
+      min: "Network: Shotcut does NOT require access to the network to activate, check a subscription, or send usage analytics. However, some links in the Help menu do link out to this web site."
 
 developer: ["Dan Dennedy", "Meltytech LLC", "Charlie Yates <OD>"]
 
@@ -296,3 +297,4 @@ rating:
   Shotcut is a free and open-source cross-platform [video editing application](/categories/video-editor/), developed on the MLT Multimedia Framework. It supports video, audio, and image formats via FFmpeg, and uses a timeline for non-linear video editing of multiple tracks that may be composed of various file formats.
   
   [Blog/News](https://shotcut.org/blog/)  I  [Forum](https://forum.shotcut.org/)  I  [Tutorials](https://shotcut.org/tutorials/)  I  [How-tos](https://shotcut.org/howtos/)  I  [FAQ](https://shotcut.org/FAQ/)
+

@@ -57,12 +57,13 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "A CPU that supports SSE2 (almost all Intel CPUs after Pentium 4)"
-    recm: "New generation CPUs"
-  -
-    min: "Less than 4GB RAM and more than 4 to 8GB swap space"
-    recm: "4GB or more RAM and 4 to 8GB swap space"
+  General:
+    -
+      min: "A CPU that supports SSE2 (almost all Intel CPUs after Pentium 4)"
+      recm: "New generation CPUs"
+    -
+      min: "Less than 4GB RAM and more than 4 to 8GB swap space"
+      recm: "4GB or more RAM and 4 to 8GB swap space"
 
 developer: ["Johannes Hanika<OD>", "Others"]
 
@@ -167,6 +168,7 @@ note: |
   
   [Blog](https://www.darktable.org/blog/)  I  [Forum](https://discuss.pixls.us/c/software/darktable)  I  [User Manual](http://www.darktable.org/usermanual/en/)  I  [News](https://www.darktable.org/news/)  I  [Users' Wiki](https://redmine.darktable.org/projects/users/wiki)  I  [Development Wiki](https://redmine.darktable.org/projects/darktable/wiki)  I  [FAQ](https://www.darktable.org/about/faq/)  I  [Mailing list](https://www.darktable.org/contact/)
   
+
 
 
 

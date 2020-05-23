@@ -104,9 +104,10 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "There are no minimum memory or hard drive requirements"
-    recm: "For Windows NT4, ME and 98, we recommend CCleaner Version 2.  For 2000 we recommend Version 3."
+  General:
+    -
+      min: "There are no minimum memory or hard drive requirements"
+      recm: "For Windows NT4, ME and 98, we recommend CCleaner Version 2.  For 2000 we recommend Version 3."
 
 developer: ["Piriform"]
 
@@ -285,6 +286,7 @@ rating:
   
   [Blog](https://www.ccleaner.com/news/blog)  I  [Community Forum](https://forum.piriform.com/)  I  [Press Releases](https://www.ccleaner.com/about/press-releases)  I  [Documentation](https://www.ccleaner.com/docs/ccleaner)  I  [FAQ](https://www.ccleaner.com/ccleaner/faq)
   
+
 
 
 

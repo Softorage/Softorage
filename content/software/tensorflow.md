@@ -14,18 +14,19 @@ get_it:
     url: "https://www.tensorflow.org/install/"
 
 sysreq:
-  -
-    min: "v2.7 for Python 2"
-    recm: "v3.3+ for Python 3"
-  -
-    min: "NVIDIA CUDA 7.5"
-    recm: "NVIDIA CUDA 8.0 required for Pascal GPUs"
-  -
-    min: "Hardware: NVIDIA® GPU card with CUDA® Compute Capability 3.5 or higher"
-    recm: ""
-  -
-    min: "Software: NVIDIA® GPU drivers —CUDA 9.0 requires 384.x or higher, CUDA® Toolkit —TensorFlow supports CUDA 9.0, CUPTI ships with the CUDA Toolkit, cuDNN SDK (>= 7.2)"
-    recm: "Minimum Software plus: NCCL 2.2 for multiple GPU support, TensorRT 4.0 to improve latency and throughput for inference on some models"
+  General:
+    -
+      min: "v2.7 for Python 2"
+      recm: "v3.3+ for Python 3"
+    -
+      min: "NVIDIA CUDA 7.5"
+      recm: "NVIDIA CUDA 8.0 required for Pascal GPUs"
+    -
+      min: "Hardware: NVIDIA® GPU card with CUDA® Compute Capability 3.5 or higher"
+      recm: ""
+    -
+      min: "Software: NVIDIA® GPU drivers —CUDA 9.0 requires 384.x or higher, CUDA® Toolkit —TensorFlow supports CUDA 9.0, CUPTI ships with the CUDA Toolkit, cuDNN SDK (>= 7.2)"
+      recm: "Minimum Software plus: NCCL 2.2 for multiple GPU support, TensorRT 4.0 to improve latency and throughput for inference on some models"
 
 developer: ["Google Brain Team"]
 
@@ -126,6 +127,7 @@ note: |
   It comes with strong support for [machine learning](/categories/machine-learning) and [deep learning](/categories/deep-learning) and the flexible numerical computation core is used across many other scientific domains.
   
   [Blog](https://medium.com/tensorflow)  I  [Mailing list](https://www.tensorflow.org/community/lists)  I  [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow)  I  [Tutorials](https://www.tensorflow.org/tutorials/)  I  [FAQ](https://www.tensorflow.org/guide/faq)
+
 
 
 

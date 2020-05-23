@@ -14,18 +14,19 @@ get_it:
     url: "https://hadoop.apache.org/releases.html"
 
 sysreq:
-  -
-    min: "Software: Java 7 for Apache Hadoop v2.7 or later | Java 6 is supported by v2.6 or earlier"
-    optm: "Hardware: Intel Core 2  Duo/Quad/hex/Octa or higher end 64 bit processor PC or Laptop (Minimum operating frequency of 2.5GHz)"
-  -
-    min: "Software: SSH installed and SSHD running to use the Hadoop scripts that manage remote Hadoop daemons"
-    optm: "Hardware: Hard Disk capacity of 1 - 4 TB"
-  -
-    min: ""
-    optm: "Hardware: 64 - 512 GB RAM"
-  -
-    min: ""
-    optm: "Hardware: 10 Gigabit Ethernet or Bonded Gigabit Ethernet"
+  General:
+    -
+      min: "Software: Java 7 for Apache Hadoop v2.7 or later | Java 6 is supported by v2.6 or earlier"
+      optm: "Hardware: Intel Core 2  Duo/Quad/hex/Octa or higher end 64 bit processor PC or Laptop (Minimum operating frequency of 2.5GHz)"
+    -
+      min: "Software: SSH installed and SSHD running to use the Hadoop scripts that manage remote Hadoop daemons"
+      optm: "Hardware: Hard Disk capacity of 1 - 4 TB"
+    -
+      min: ""
+      optm: "Hardware: 64 - 512 GB RAM"
+    -
+      min: ""
+      optm: "Hardware: 10 Gigabit Ethernet or Bonded Gigabit Ethernet"
 
 developer: ["Apache Software Foundation"]
 
@@ -91,6 +92,7 @@ note: |
   When a node fails, processing is re-directed to the remaining nodes in the cluster and data is automatically re-replicated in preparation for future node failures, making Apache Hadoop resilient.
   
   [Blog](https://blogs.apache.org/hadoop/)  I  [News](https://hadoop.apache.org/news.html)  I  [Mailing lists](https://hadoop.apache.org/mailing_lists.html)  I  [Wiki](https://wiki.apache.org/hadoop)  I  [Documentation](https://hadoop.apache.org/docs/current/)  I  [FAQ](https://wiki.apache.org/hadoop/FAQ)  I  [IRC](https://webchat.freenode.net/?channels=hadoop)
+
 
 
 

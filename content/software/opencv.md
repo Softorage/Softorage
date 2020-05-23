@@ -14,10 +14,11 @@ get_it:
     url: "https://opencv.org/releases.html"
 
 sysreq:
-  -
-    min: "700 MHz single core CPU"
-  -
-    min: "256 MB RAM"
+  General:
+    -
+      min: "700 MHz single core CPU"
+    -
+      min: "256 MB RAM"
 
 developer: ["Intel Corporation", "Willow Garage", "Itseez"]
 
@@ -116,6 +117,7 @@ note: |
   OpenCV supports the [deep learning](/categories/deep-learning) frameworks [TensorFlow](/software/tensorflow/), [Torch](/software/torch/)/[PyTorch](/software/pytorch/) and [Caffe](/software/caffe/).
   
   [News](https://opencv.org/news.html)  I  [Q&A Forum](http://answers.opencv.org/questions/)  I  [Documentation](https://docs.opencv.org/)  I  [Wiki](https://github.com/opencv/opencv/wiki)  I  [IRC](https://webchat.freenode.net/?channels=opencv)
+
 
 
 

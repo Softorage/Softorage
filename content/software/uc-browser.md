@@ -116,16 +116,17 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Operating System: Windows XP/ Windows Vista/ Windows 7/ Windows 8.1 / Windows 10"
-  -
-    min: "Processor: 1 GHz or faster"
-  -
-    min: "Memory: 512 MB"
-  -
-    min: "Hard disk space: 512 MB available"
-  -
-    min: "Video card: 1366 × 768 screen resolution"
+  General:
+    -
+      min: "Operating System: Windows XP/ Windows Vista/ Windows 7/ Windows 8.1 / Windows 10"
+    -
+      min: "Processor: 1 GHz or faster"
+    -
+      min: "Memory: 512 MB"
+    -
+      min: "Hard disk space: 512 MB available"
+    -
+      min: "Video card: 1366 × 768 screen resolution"
 
 developer: ["UCWeb", "Alibaba Group"]
 
@@ -317,6 +318,7 @@ rating:
   
   [News](http://www.ucweb.com/press/)  I  [FAQ](http://www.ucweb.com/ucbrowser/help/)
   
+
 
 
 

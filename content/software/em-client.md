@@ -20,28 +20,24 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-em-client/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/eM-Client/3000-2367_4-10813093.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/E-mail/E-mail-Clients/eM-Client.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["eM Client Inc."]
 
@@ -137,3 +133,4 @@ rating:
   eM Client is an [e-mail client](/categories/email-client/) for sending and receiving e-mails, managing [calendars](/categories/calendar/), contacts, and tasks. It was developed as a user-friendly alternative to existing [e-mail clients](/categories/email-client/) and [calendar](/categories/calendar/) solutions. It supports PGP encryption, backup, table editor, image editing and auto-replies for Gmail. eM Client requires Microsoft .NET Framework 2.0 installation.
   
   [Blog](https://www.emclient.com/blog/)  I  [Forum](https://forum.emclient.com/emclient)  I  [Documentation - PDF](https://www.emclient.com/tools/documentation.pdf)  I  [FAQ](https://www.emclient.com/faq-getting-started)  I  [Tutorials](https://www.emclient.com/tutorials)
+

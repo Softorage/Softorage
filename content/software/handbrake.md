@@ -18,14 +18,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/CD-DVD-Tools/CD-DVD-Rip-Other-Tools/HandBrake.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FossHub"
     url: "https://www.fosshub.com/HandBrake.html"
     platform:
@@ -33,7 +31,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
@@ -42,7 +39,6 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4785-handbrake.html"
     platform:
@@ -50,7 +46,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
@@ -59,25 +54,21 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://handbrake.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/HandBrake/3000-2194_4-10808250.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-handbrake-32/"
     platform:
@@ -85,7 +76,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-handbrake-64/"
     platform:
@@ -93,7 +83,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_handbrake_32/"
     platform:
@@ -101,7 +90,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_handbrake_64/"
     platform:
@@ -109,39 +97,35 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/12987/handbrake"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/HandBrake/3000-2140_4-43951.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://handbrake.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-handbrake/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
-  -
-    recm: "Visit https://handbrake.fr/docs/en/1.0.0/technical/system-requirements.html"
+  General:
+    -
+      recm: "Visit https://handbrake.fr/docs/en/1.0.0/technical/system-requirements.html"
 
 developer: ["Eric Petit <OD>", "The HandBrake Team"]
 
@@ -321,3 +305,4 @@ rating:
   HandBrake is a free and open-source [video transcoder](/categories/video-transcoder/) to convert video from one format to another, and to rip CD/DVD to popular video formats. It transcodes video and audio from nearly any format to a handful of modern ones, but it does not defeat or circumvent copy protection. Its developers removed libdvdcss (the open-source library responsible for unscrambling DVDs encrypted with the Content Scramble System (CSS)) from the application in version 0.9.2.
   
   [News](https://handbrake.fr/news.php)  I  [Forum](https://forum.handbrake.fr/)  I  [Documentation](https://handbrake.fr/docs)  I  [IRC](https://webchat.freenode.net/?channels=handbrake)
+

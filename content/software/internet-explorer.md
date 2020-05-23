@@ -69,20 +69,21 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Computer/processor: 1 gigahertz (GHz) 32-bit (x86) or 64-bit (x64)"
-  -
-    min: "Operating system: Windows 10 (32-bit or 64-bit); Windows 8.1 Update (32-bit or 64-bit); Windows 7 with SP1 (32-bit or 64-bit); Windows Server 2012 R2; Windows Server 2008 R2 with SP1 (64-bit only)"
-  -
-    min: "Memory: Windows 10 (32-bit)-1 GB; Windows 10 (64-bit)-2 GB; Windows 8.1 Update (32-bit)-1 GB; Windows 8.1 Update (64-bit)-2 GB; Windows 7 with SP1 (32-bit or 64-bit)-512 MB; Windows Server 2012 R2-512 MB; Windows Server 2008 R2 with SP1 (64-bit only)-512 MB"
-  -
-    min: "Hard drive space: Windows 10 (32-bit)-16 GB; Windows 10 (64-bit)-20 GB; Windows 8.1 Update (32-bit)-16 GB; Windows 8.1 Update (64-bit)-20 GB; Windows 7 with SP1 (32-bit)-70 MB; Windows 7 with SP1 (64-bit)-120 MB; Windows Server 2012 R2-32 GB; Windows Server 2008 R2 with SP1 (64-bit only)-200 MB"
-  -
-    min: "Drive: CD-ROM drive (if installing from a CD-ROM)"
-  -
-    min: "Display: Super VGA (800 x 600) or higher-resolution monitor with 256 colors"
-  -
-    min: "Peripherals: Internet connection and a compatible pointing device"
+  General:
+    -
+      min: "Computer/processor: 1 gigahertz (GHz) 32-bit (x86) or 64-bit (x64)"
+    -
+      min: "Operating system: Windows 10 (32-bit or 64-bit); Windows 8.1 Update (32-bit or 64-bit); Windows 7 with SP1 (32-bit or 64-bit); Windows Server 2012 R2; Windows Server 2008 R2 with SP1 (64-bit only)"
+    -
+      min: "Memory: Windows 10 (32-bit)-1 GB; Windows 10 (64-bit)-2 GB; Windows 8.1 Update (32-bit)-1 GB; Windows 8.1 Update (64-bit)-2 GB; Windows 7 with SP1 (32-bit or 64-bit)-512 MB; Windows Server 2012 R2-512 MB; Windows Server 2008 R2 with SP1 (64-bit only)-512 MB"
+    -
+      min: "Hard drive space: Windows 10 (32-bit)-16 GB; Windows 10 (64-bit)-20 GB; Windows 8.1 Update (32-bit)-16 GB; Windows 8.1 Update (64-bit)-20 GB; Windows 7 with SP1 (32-bit)-70 MB; Windows 7 with SP1 (64-bit)-120 MB; Windows Server 2012 R2-32 GB; Windows Server 2008 R2 with SP1 (64-bit only)-200 MB"
+    -
+      min: "Drive: CD-ROM drive (if installing from a CD-ROM)"
+    -
+      min: "Display: Super VGA (800 x 600) or higher-resolution monitor with 256 colors"
+    -
+      min: "Peripherals: Internet connection and a compatible pointing device"
 
 developer: ["Microsoft Corporation"]
 
@@ -246,6 +247,7 @@ rating:
   On March 17, 2015, Microsoft announced that [Microsoft Edge](/software/microsoft-edge/) would replace Internet Explorer as the default browser on its Windows 10 devices.
   
   [Forum](https://social.technet.microsoft.com/Forums/ie/)  I  [Documentation](https://docs.microsoft.com/en-us/internet-explorer/)  I  [Lifecycle FAQ](https://support.microsoft.com/en-in/help/17454/lifecycle-faq-internet-explorer)  I  [FAQ for IT Pros](https://docs.microsoft.com/en-us/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
+
 
 
 

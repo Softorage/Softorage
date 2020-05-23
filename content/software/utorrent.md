@@ -80,8 +80,9 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "No specific requirements"
+  General:
+    -
+      min: "No specific requirements"
 
 developer: ["Ludvig Strigeus<OD>", "BitTorrent Inc."]
 
@@ -233,6 +234,7 @@ rating:
   
   [Blog](http://blog.utorrent.com/)  I  [Forum](https://forum.utorrent.com/)  I  [Help](http://help.utorrent.com/)  I  [documentation.HELP!](https://documentation.help/uTorrent/)  I  [FAQ](http://help.utorrent.com/customer/portal/topics/822087/articles)
   
+
 
 
 

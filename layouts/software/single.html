@@ -1,11 +1,14 @@
 {{ define "main" -}}
 
+<!-- Initialize a variable as Scratch, used in social and system requirements -->
+{{- $scratch := newScratch }}
+
 <!-- Tell Hugo whether in 'System Requirements' Minimum or Recomended or Optimal data fields are present -->
 <!-- We want the whole Minimum column to exist even if one specification has Minimum specification stated in data file. Same goes for recommended and optimal. -->
 {{- $recommended := false -}}
 {{- $optimal := false -}}
 {{- $minimum := false -}}
-{{- if .Params.sysreq -}}
+{{/*- if .Params.sysreq -}}
   {{- range .Params.sysreq -}}
     {{- if .min -}}
       {{- $minimum = true -}}
@@ -17,8 +20,8 @@
       {{- $optimal = true -}}
     {{- end -}}
     {{/*- if minimum and recommended and optimal all are true then break -*/}}
-  {{- end -}}
-{{- end }}
+  {{/*- end -}}
+{{- end */}}
 
 <!-- using printf to concatenate strings -->
 {{- $no_content := printf "%s%s%s" "Not available, but <a href='/contribute/'>we appreciate help!</a> You can help us <a href='https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/" .File.Path "'>improve this page</a>." -}}
@@ -137,15 +140,15 @@
                   <!-- we have enabled tabbable tabs for following, i.e., with id download-tab-->
                   <ul class="nav nav-tabs rounded-lg shadow-sm justify-content-center" id="download-tab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active text-success" id="download-tab-authentic" data-toggle="tab" href="#download-authentic" role="tab" aria-controls="download-authentic" aria-selected="true">Recommended</a>
+                      <a class="nav-link active text-success" data-toggle="tab" href="#download-authentic" role="tab" aria-controls="authentic" aria-selected="true">Recommended</a>
                     </li>
                     
                     <li class="nav-item">
-                      <a class="nav-link text-clr2" id="download-tab-desktop" data-toggle="tab" href="#download-dskp" role="tab" aria-controls="download-dskp" aria-selected="false">{{ site.Data.icons.desktop | safeHTML }}</a>
+                      <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp" role="tab" aria-controls="desktop" aria-selected="false">{{ site.Data.icons.desktop | safeHTML }}</a>
                     </li>
                     
                     <li class="nav-item">
-                      <a class="nav-link text-clr2" id="download-tab-smptb" data-toggle="tab" href="#download-smptb" role="tab" aria-controls="download-smptb" aria-selected="false">{{ site.Data.icons.mobile | safeHTML }} / {{ site.Data.icons.tab | safeHTML }}</a>
+                      <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb" role="tab" aria-controls="smartphone/tab" aria-selected="false">{{ site.Data.icons.mobile | safeHTML }} / {{ site.Data.icons.tab | safeHTML }}</a>
                     </li>
                   </ul>
                   
@@ -155,7 +158,7 @@
                   {{ $download_available := false }}
                   
                   <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="download-tab-authentic">
+                    <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="authentic-tab">
                       {{- range .Params.get_it -}}
                         {{ if (in .from "Authentic") | or (in .from "Google Play") | or (in .from "Apple App") }}
                           <a href="{{ .url }}" class="btn btn{{ if eq .from "Authentic" }} bg-success-light text-success{{ else }}-sm btn-primary{{ end }} m-2"
@@ -174,28 +177,28 @@
                       {{ end -}}
                     </div>
                     
-                    <div class="tab-pane fade" id="download-dskp" role="tabpanel" aria-labelledby="download-tab-desktop">
+                    <div class="tab-pane fade" id="download-dskp" role="tabpanel" aria-labelledby="desktop-tab">
                       <div class="row my-2">
                         <div class="col-3">
                           <ul class="nav nav-pills flex-column" role="tablist" aria-orientation="vertical">
                             <li class="nav-item">
-                              <a class="nav-link active text-clr2" id="download-tab-dskp-windows" data-toggle="tab" href="#download-dskp-windows" role="tab" aria-controls="download-dskp-windows" aria-selected="true">Windows</a>
+                              <a class="nav-link active text-clr2" data-toggle="tab" href="#download-dskp-windows" role="tab" aria-controls="windows" aria-selected="true">Windows</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" id="download-tab-dskp-linux" data-toggle="tab" href="#download-dskp-linux" role="tab" aria-controls="download-dskp-linux" aria-selected="false">Linux</a>
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-linux" role="tab" aria-controls="linux" aria-selected="false">Linux</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" id="download-tab-dskp-macOS" data-toggle="tab" href="#download-dskp-macOS" role="tab" aria-controls="download-dskp-macOS" aria-selected="false">macOS</a>
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-macOS" role="tab" aria-controls="macOS" aria-selected="false">macOS</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" id="download-tab-dskp-other" data-toggle="tab" href="#download-dskp-other" role="tab" aria-controls="download-dskp-other" aria-selected="false">Other</a>
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-other" role="tab" aria-controls="other" aria-selected="false">Other</a>
                             </li>
                           </ul>
                         </div>
                         {{ $platform_download_not_available := "No download available for " }}
                         <div class="col-9">
                           <div class="tab-content">
-                            <div class="tab-pane fade show active" id="download-dskp-windows" role="tabpanel" aria-labelledby="download-tab-dskp-windows">
+                            <div class="tab-pane fade show active" id="download-dskp-windows" role="tabpanel" aria-labelledby="windows-tab">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -215,7 +218,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-dskp-linux" role="tabpanel" aria-labelledby="download-tab-dskp-linux">
+                            <div class="tab-pane fade" id="download-dskp-linux" role="tabpanel" aria-labelledby="linux-tab">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -235,7 +238,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-dskp-macOS" role="tabpanel" aria-labelledby="download-tab-dskp-macOS">
+                            <div class="tab-pane fade" id="download-dskp-macOS" role="tabpanel" aria-labelledby="macOS-tab">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -255,7 +258,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-dskp-other" role="tabpanel" aria-labelledby="download-tab-dskp-other">
+                            <div class="tab-pane fade" id="download-dskp-other" role="tabpanel" aria-labelledby="other-tab">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 <!-- if the item has platform field -->
                                 {{ if $download_item.platform }}
@@ -286,18 +289,18 @@
                       </div> <!-- row -->
                     </div>
                     
-                    <div class="tab-pane fade" id="download-smptb" role="tabpanel" aria-labelledby="download-tab-smptb">
+                    <div class="tab-pane fade" id="download-smptb" role="tabpanel" aria-labelledby="smptb-tab">
                       <div class="row my-2">
                         <div class="col-3">
                           <ul class="nav nav-pills flex-column" role="tablist" aria-orientation="vertical">
                             <li class="nav-item">
-                              <a class="nav-link text-clr2 active" id="download-tab-smptb-android" data-toggle="tab" href="#download-smptb-android" role="tab" aria-controls="download-smptb-android" aria-selected="true">Android</a>
+                              <a class="nav-link text-clr2 active" data-toggle="tab" href="#download-smptb-android" role="tab" aria-controls="android" aria-selected="true">Android</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" id="download-tab-smptb-ios" data-toggle="tab" href="#download-smptb-ios" role="tab" aria-controls="download-smptb-ios" aria-selected="false">iOS</a>
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb-ios" role="tab" aria-controls="ios" aria-selected="false">iOS</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" id="download-tab-smptb-other" data-toggle="tab" href="#download-smptb-other" role="tab" aria-controls="download-smptb-other" aria-selected="false">Other</a>
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb-other" role="tab" aria-controls="other" aria-selected="false">Other</a>
                             </li>
                           </ul>
                         </div>
@@ -306,7 +309,7 @@
                              for now we are showing links for google play and apple app store in android and ios section too, though they are present in authentic(recommended) section too.
                           -->
                           <div class="tab-content">
-                            <div class="tab-pane fade show active" id="download-smptb-android" role="tabpanel" aria-labelledby="download-tab-smptb-android">
+                            <div class="tab-pane fade show active" id="download-smptb-android" role="tabpanel" aria-labelledby="android-tab">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -326,7 +329,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-smptb-ios" role="tabpanel" aria-labelledby="download-tab-smptb-ios">
+                            <div class="tab-pane fade" id="download-smptb-ios" role="tabpanel" aria-labelledby="ios-tab">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -346,7 +349,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-smptb-other" role="tabpanel" aria-labelledby="download-tab-smptb-other">
+                            <div class="tab-pane fade" id="download-smptb-other" role="tabpanel" aria-labelledby="other-tab">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 <!-- if the item has platform field -->
                                 {{ if $download_item.platform }}
@@ -526,10 +529,11 @@
             </div>
           </div>
           <p class="card-text mt-3">
+          
+          <!-- We will be using .Scratch here, as there is involved rewriting of variables multiple times -->
+          
             {{- if .Params.social }}
-              <!-- We will be using .Scratch here, as there is involved rewriting of variables multiple times -->
-              <!-- Initialize a variable as Scratch -->
-              {{- $scratch := newScratch }}
+              
               <!-- Range through all elements from the social param and assign (Set) respective value to $scratch -->
               {{- range $index, $element := .Params.social }}
                 {{- if eq $element.name "Wikipedia" -}}
@@ -606,54 +610,123 @@
             </div>
           </div>
           <div class="card-text mt-3">
-            {{- if (or (or $minimum $recommended) $optimal) -}}
-              <div class="table-responsive-md">
-                <table class="text-antinav">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      {{- if $minimum -}}
-                        <th scope="col">Minimum</th>
-                      {{- end }}
-                      {{- if $recommended -}}
-                        <th scope="col">Recommended</th>
-                      {{- end }}
-                      {{- if $optimal -}}
-                        <th scope="col">Optimal</th>
-                      {{- end -}}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {{- range $index, $element := .Params.sysreq -}}
-                      <tr>
-                        <th scope="row">{{ add $index 1 }}</th>
-                        {{- if $minimum -}}
-                          <td>
-                            {{- if $element.min }}
-                              {{- $element.min }}
-                            {{- end -}}
-                          </td>
-                        {{- end }}
-                        {{- if $recommended -}}
-                          <td>
-                            {{- if $element.recm }}
-                              {{- $element.recm -}}
-                            {{- end -}}
-                          </td>
-                        {{- end }}
-                        {{- if $optimal -}}
-                          <td>
-                            {{- if $element.optm }}
-                              {{- $element.optm }}
-                            {{- end -}}
-                          </td>
-                        {{- end -}}
-                      </tr>
+            {{ if .Params.sysreq }}
+          
+              <!-- declare variable $tabNames as an empty array (slice), to store names of navs -->
+              {{ $tabNames := slice }}
+              <!-- $arrayItemNumberSysReq stores number of current nav (less 1; array style) -->
+              {{ $arrayItemNumberSysReq := 0 }}
+              <!-- $arrayItemNumberSysReqMaxCount stores total number of navs (less 1) -->
+              {{ $arrayItemNumberSysReqMaxCount := sub (len .Params.sysreq) 1 }}
+              
+              <!-- range through map .Params.sysreq; $name is key, $element is value -->
+              {{- range $name, $element := .Params.sysreq -}}
+                {{ $tabNames = $tabNames | append $name }}
+              {{ end }}
+              
+              <ul class="nav nav-tabs rounded-lg shadow-sm" id="download-tab" role="tablist">
+              
+                {{ range $i, $e := $tabNames }}
+                
+                  <li class="nav-item">
+                    <a class="nav-link{{ if not $i }} active{{ end }} text-clr2 small font-weight-bold" id="sysreq-{{$e}}-tab" data-toggle="tab" href="#sysreq-tab-{{$e}}" role="tab" aria-controls="sysreq-tab-{{$e}}"{{ if not $i }} aria-selected="true"{{ end }}>{{ $e | upper }}</a>
+                  </li>
+                
+                {{ end }}
+                
+              </ul>
+              
+              <div class="tab-content" id="myTabContent">
+                
+                <!-- range through map .Params.sysreq; $name is key -->
+                {{- range $name, $element := .Params.sysreq -}}
+                  
+                  {{ range $index, $rowElement := $element  }}
+                  
+                    {{- if $rowElement.min -}}
+                      {{- $minimum = true -}}
                     {{- end -}}
-                  </tbody>
-                </table>
+                    {{- if $rowElement.recm -}}
+                      {{- $recommended = true -}}
+                    {{- end -}}
+                    {{- if $rowElement.optm -}}
+                      {{- $optimal = true -}}
+                    {{- end -}}
+                    {{/*- if minimum and recommended and optimal all are true then break -*/}}
+                  
+                  {{ end }}
+                  
+                  <div class="tab-pane fade{{ if not $arrayItemNumberSysReq }} show active{{ end }}" id="sysreq-tab-{{ $name }}" role="tabpanel" aria-labelledby="sysreq-{{ $name }}-tab">
+                    
+                    <div class="table-responsive-md">
+                      <table class="text-antinav">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            {{- if $minimum -}}
+                              <th scope="col">Minimum</th>
+                            {{- end }}
+                            {{- if $recommended -}}
+                              <th scope="col">Recommended</th>
+                            {{- end }}
+                            {{- if $optimal -}}
+                              <th scope="col">Optimal</th>
+                            {{- end -}}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- range through array $element; $index is iteration count -->
+                          {{- range $index, $rowElement := $element  -}}
+                            <tr>
+                            
+                              <th scope="row">{{ add $index 1 }}</th>
+                                {{- if $minimum -}}
+                                <td>
+                                  {{- if $rowElement.min }}
+                                    {{- $rowElement.min }}
+                                  {{- end -}}
+                                </td>
+                                {{- end }}
+                                {{- if $recommended -}}
+                                <td>
+                                  {{- if $rowElement.recm }}
+                                    {{- $rowElement.recm -}}
+                                  {{- end -}}
+                                </td>
+                                {{- end }}
+                                {{- if $optimal -}}
+                                <td>
+                                  {{- if $rowElement.optm }}
+                                    {{- $rowElement.optm }}
+                                  {{- end -}}
+                                </td>
+                                {{- end }}
+                                
+                            </tr>
+                          {{- end -}}
+                        </tbody>
+                      </table>
+                    <!-- /table-responsive -->
+                    </div>
+                  
+                  </div>
+                  
+                  {{ if not (eq $arrayItemNumberSysReq $arrayItemNumberSysReqMaxCount) }}
+                    <!-- if not last iteration, keep up counting current loop iteration -->
+                    {{ $arrayItemNumberSysReq = add $arrayItemNumberSysReq 1 }}
+                  {{ else }}
+                    <!-- else, reset count to zero for further use if any -->
+                    {{ $arrayItemNumberSysReq = 0 }}
+                  {{ end }}
+                  
+                  {{- $recommended = false -}}
+                  {{- $optimal = false -}}
+                  {{- $minimum = false -}}
+                  
+                {{ end }}
+              
               </div>
-              <!-- /table-responsive -->
+            
             {{- else -}}
               {{ $no_content | safeHTML }}
             {{- end -}}

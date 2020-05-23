@@ -94,21 +94,22 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Microsoft Windows 7 SP1, Windows 8, Windows Server 2012, or Windows 10 | Linux kernel version 2.6.18, glibc2 version 2.5, gtk version 2.10.4 | macOS 10.9 (Mavericks) or higher"
-    recm: ""
-  -
-    min: "Pentium-compatible PC for Windows & Linux | Intel processor for mac"
-    recm: "Pentium III, Athlon or more-recent system for Windows & Linux"
-  -
-    min: "256 MB RAM for Windows & Linux | 512 MB for mac"
-    recm: "512 MB RAM for Windows & Linux"
-  -
-    min: "Up to 1.5 GB available hard disk space for Windows and Linux | 800 MB for mac"
-    recm: ""
-  -
-    min: "1024x768 resolution with 256 colors"
-    recm: ""
+  General:
+    -
+      min: "Microsoft Windows 7 SP1, Windows 8, Windows Server 2012, or Windows 10 | Linux kernel version 2.6.18, glibc2 version 2.5, gtk version 2.10.4 | macOS 10.9 (Mavericks) or higher"
+      recm: ""
+    -
+      min: "Pentium-compatible PC for Windows & Linux | Intel processor for mac"
+      recm: "Pentium III, Athlon or more-recent system for Windows & Linux"
+    -
+      min: "256 MB RAM for Windows & Linux | 512 MB for mac"
+      recm: "512 MB RAM for Windows & Linux"
+    -
+      min: "Up to 1.5 GB available hard disk space for Windows and Linux | 800 MB for mac"
+      recm: ""
+    -
+      min: "1024x768 resolution with 256 colors"
+      recm: ""
 
 developer: ["The Document Foundation", "Star Division<OD>"]
 
@@ -279,6 +280,7 @@ note: |
    
    [Blog](https://blog.documentfoundation.org/)  I  [Forum](https://ask.libreoffice.org/en/questions/)  I  [Wiki](https://wiki.documentfoundation.org/Main_Page)  I  [Documentation](https://wiki.documentfoundation.org/Documentation/Publications)  I  [IRC](https://irc.documentfoundation.org/)  I  [Planet](https://planet.documentfoundation.org/)  I  [Mailing lists](https://www.libreoffice.org/get-help/mailing-lists/)  I  [FAQ](https://www.libreoffice.org/get-help/frequently-asked-questions/)
   
+
 
 
 

@@ -14,10 +14,11 @@ get_it:
     url: "https://www.mlpack.org/download.html"
 
 sysreq:
-  -
-    min: "Dependencies: Armadillo >= 6.500.0 (with LAPACK support), Boost (math_c99, program_options, serialization, unit_test_framework, heap, spirit) >= 1.49"
-  -
-    min: "For Python bindings: setuptools, cython >= 0.24, numpy, pandas >= 0.15.0, pytest-runner"
+  General:
+    -
+      min: "Dependencies: Armadillo >= 6.500.0 (with LAPACK support), Boost (math_c99, program_options, serialization, unit_test_framework, heap, spirit) >= 1.49"
+    -
+      min: "For Python bindings: setuptools, cython >= 0.24, numpy, pandas >= 0.15.0, pytest-runner"
 
 developer: ["FASTLab at Georgia Tech<OD>", "Other contributors"]
 
@@ -83,6 +84,7 @@ rating:
   
   [Developement Blog](https://www.mlpack.org/gsocblog/)  I  [Documentation](https://www.mlpack.org/docs.html)  I  [Wiki](https://github.com/mlpack/mlpack/wiki)  I  [Mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack)  I  [IRC](https://webchat.freenode.net/?channels=mlpack)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/mlpack)
   
+
 
 
 

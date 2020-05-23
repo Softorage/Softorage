@@ -114,8 +114,9 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "120 MB of free RAM (since v4.20)"
+  General:
+    -
+      min: "120 MB of free RAM (since v4.20)"
 
 developer: ["Eugene Roshal<OD> of win.rar GmbH", "Alexander L. Roshal"]
 
@@ -283,6 +284,7 @@ rating:
   
   [News](https://www.win-rar.com/latestnews.html?&L=0)  I  [Manual](http://acritum.com/software/manuals/winrar/)  I  [documentation.HELP!](https://documentation.help/WinRAR/)  I  [FAQ](https://www.win-rar.com/faq.html?&L=0)
   
+
 
 
 

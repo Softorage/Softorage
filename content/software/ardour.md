@@ -26,24 +26,25 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "400mhz Intel Pentium equivalent CPU"
-    recm: "1-3GHz Processor, Athlons dual CPU system"
-  -
-    min: "1GB RAM"
-    recm: "2GB RAM or more"
-  -
-    min: "JACK Audio Connection Kit"
-    recm: "Rui Nuno Capela's GUI for JACK: qjackctl"
-  -
-    min: "350MB for linux & 600MB for macOS of disk storage available"
-    recm: ""
-  -
-    min: "Any of the audio cards based on the ICE1712 or ICE1724 chipsets will work well (Terratec and M-Audio use these, as well as the EZ8), and the Ensoniq cards and onboard chipsets"
-    recm: "The RME Hammerfall series and the M-Audio Delta series audio interface"
-  -
-    min: "2-4 channels: M-Audio Delta 44, 66 or 2496; 2-12 channels: M-Audio Delta 1010"
-    recm: "more than 12 channels: RME HDSP, RME HDSPe; more than 26 channels: RME MADI"
+  General:
+    -
+      min: "400mhz Intel Pentium equivalent CPU"
+      recm: "1-3GHz Processor, Athlons dual CPU system"
+    -
+      min: "1GB RAM"
+      recm: "2GB RAM or more"
+    -
+      min: "JACK Audio Connection Kit"
+      recm: "Rui Nuno Capela's GUI for JACK: qjackctl"
+    -
+      min: "350MB for linux & 600MB for macOS of disk storage available"
+      recm: ""
+    -
+      min: "Any of the audio cards based on the ICE1712 or ICE1724 chipsets will work well (Terratec and M-Audio use these, as well as the EZ8), and the Ensoniq cards and onboard chipsets"
+      recm: "The RME Hammerfall series and the M-Audio Delta series audio interface"
+    -
+      min: "2-4 channels: M-Audio Delta 44, 66 or 2496; 2-12 channels: M-Audio Delta 1010"
+      recm: "more than 12 channels: RME HDSP, RME HDSPe; more than 26 channels: RME MADI"
 
 developer: ["Paul Davis", "David Robillard", "Robin Gareus", "Nick Mainsbridge", "Colin Fletcher", "Ben Loftis", "Tim Mayberry", "Others"]
 
@@ -113,6 +114,7 @@ note: |
   
   [IRC](http://webchat.freenode.net/?channels=ardour)  I  [Blog](https://discourse.ardour.org/c/blog)  I  [News](https://community.ardour.org/news)  I  [Forum](https://discourse.ardour.org/)  I  [Manual](http://manual.ardour.org/toc/)  I  [FAQ](https://community.ardour.org/realfaq)  I  [Mailing lists](https://ardour.org/community.html#mailinglists)
   
+
 
 
 

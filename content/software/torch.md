@@ -14,12 +14,13 @@ get_it:
     url: "http://torch.ch/docs/getting-started.html#_"
 
 sysreq:
-  -
-    recm: "NVIDIA® CUDA® 7.5 or newer (For Pascal GPUs, CUDA 8.0 or newer)"
-  -
-    recm: "cuDNN v5.0 or newer"
-  -
-    recm: "Ubuntu 14.x or newer (or any 64-bit Linux if you choose to build from source)"
+  General:
+    -
+      recm: "NVIDIA® CUDA® 7.5 or newer (For Pascal GPUs, CUDA 8.0 or newer)"
+    -
+      recm: "cuDNN v5.0 or newer"
+    -
+      recm: "Ubuntu 14.x or newer (or any 64-bit Linux if you choose to build from source)"
 
 developer: ["Ronan Collobert<OD>", "Koray Kavukcuoglu<OD>", "Clement Farabet<OD>", "Soumith Chintala", "Community"]
 
@@ -73,6 +74,7 @@ note: |
   
   [Documentation](http://torch.ch/docs/getting-started.html#_)  I  [Wiki](https://github.com/torch/torch7/wiki/Cheatsheet)  I  [Mailing list](https://groups.google.com/forum/embed/?place=forum%2Ftorch7#!forum/torch7)  I  [Gitter chat](https://gitter.im/torch/torch7)
   
+
 
 
 

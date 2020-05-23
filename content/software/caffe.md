@@ -12,18 +12,19 @@ get_it:
     url: "http://caffe.berkeleyvision.org/installation.html"
 
 sysreq:
-  -
-    min: "CUDA v5.5, and 5.0 (considered legacy)"
-    recm: "CUDA v6.*"
-    optm: "CUDA v7+"
-  -
-    min: "Basic Linear Algebra Subprograms via ATLAS, MKL, or OpenBLAS I Boost >= 1.55 I protobuf, glog, gflags, hdf5"
-    recm: "Minimum plus (optional): OpenCV >= 2.4 including 3.0 I IO libraries: lmdb, leveldb (note: leveldb requires snappy) I cuDNN for GPU acceleration (v6)"
-    optm: ""
-  -
-    min: "For Python Caffe: Python 2.7 or Python 3.3+, numpy (>= 1.7), boost-provided boost.python I For MATLAB Caffe: MATLAB with the mex compiler."
-    recm: ""
-    optm: ""
+  General:
+    -
+      min: "CUDA v5.5, and 5.0 (considered legacy)"
+      recm: "CUDA v6.*"
+      optm: "CUDA v7+"
+    -
+      min: "Basic Linear Algebra Subprograms via ATLAS, MKL, or OpenBLAS I Boost >= 1.55 I protobuf, glog, gflags, hdf5"
+      recm: "Minimum plus (optional): OpenCV >= 2.4 including 3.0 I IO libraries: lmdb, leveldb (note: leveldb requires snappy) I cuDNN for GPU acceleration (v6)"
+      optm: ""
+    -
+      min: "For Python Caffe: Python 2.7 or Python 3.3+, numpy (>= 1.7), boost-provided boost.python I For MATLAB Caffe: MATLAB with the mex compiler."
+      recm: ""
+      optm: ""
 
 developer: ["Yangqing Jia<OD>", "Berkeley Vision and Learning Center(BVLC)/Berkeley AI Research(BAIR)"]
 
@@ -86,6 +87,7 @@ rating:
   > Caffe can process over 60M images per day with a single NVIDIA K40 GPU*. That’s 1 ms/image for inference and 4 ms/image for learning and more recent library versions and hardware are faster still. \- [Official website](http://caffe.berkeleyvision.org/#why-caffe)
   
   [Documentation](http://caffe.berkeleyvision.org/#Documentation)  I  [Mailing list - Users](https://groups.google.com/forum/#!forum/caffe-users)
+
 
 
 

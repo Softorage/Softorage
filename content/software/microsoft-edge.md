@@ -85,22 +85,23 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Computer/processor: 1 gigahertz (GHz) or faster (32-bit (x86) or 64-bit (x64))"
-  -
-    min: "Operating system: Windows 10 (32-bit or 64-bit); Windows 10 Mobile"
-  -
-    min: "Memory: Windows 10 (32-bit) - 1 GB; Windows 10 (64-bit) - 2 GB"
-  -
-    min: "Hard drive space: Windows 10 (32-bit) - 16 GB; Windows 10 (64-bit) - 20 GB"
-  -
-    min: "DVD drive: DVD-ROM drive (if installing from a DVD-ROM)  "
-  -
-    min: "Display: Super VGA (800 x 600) or higher-resolution monitor with 256 colors"
-  -
-    min: "Graphics card: Microsoft DirectX 9 or later with Windows Display Driver Model (WDDM) 1.0 driver"
-  -
-    min: "Peripherals: Internet connection and a compatible pointing device"
+  General:
+    -
+      min: "Computer/processor: 1 gigahertz (GHz) or faster (32-bit (x86) or 64-bit (x64))"
+    -
+      min: "Operating system: Windows 10 (32-bit or 64-bit); Windows 10 Mobile"
+    -
+      min: "Memory: Windows 10 (32-bit) - 1 GB; Windows 10 (64-bit) - 2 GB"
+    -
+      min: "Hard drive space: Windows 10 (32-bit) - 16 GB; Windows 10 (64-bit) - 20 GB"
+    -
+      min: "DVD drive: DVD-ROM drive (if installing from a DVD-ROM)  "
+    -
+      min: "Display: Super VGA (800 x 600) or higher-resolution monitor with 256 colors"
+    -
+      min: "Graphics card: Microsoft DirectX 9 or later with Windows Display Driver Model (WDDM) 1.0 driver"
+    -
+      min: "Peripherals: Internet connection and a compatible pointing device"
 
 developer: ["Microsoft Corporation"]
 
@@ -256,6 +257,7 @@ note: |
   Microsoft Edge is a [web browser](/categories/web-browser) developed by Microsoft. Edge includes integration with Cortana and has extensions hosted on the Microsoft Store. Unlike [Internet Explorer](/software/internet-explorer/), Edge does not support the legacy ActiveX and BHO technologies. Originally built with Microsoft's own EdgeHTML and Chakra engines, in 2019 Edge was rebuilt as a [Chromium](/software/chromium-web-browser/)-based browser, using the Blink and V8 engines. Though, for iOS, Microsoft Edge is based on WebKit. Microsoft released the first [Chromium](/software/chromium-web-browser/)-based Edge version on January 15, 2020.
   
   [Devs Blog](https://blogs.windows.com/msedgedev/)  I  [Forum](https://answers.microsoft.com/en-us/edge/forum)  I  [Documentation](https://docs.microsoft.com/en-us/microsoft-edge/)  I  [Deploy Documentation](https://docs.microsoft.com/en-us/deployedge/)  I  [FAQ for IT Pros](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-faq)  I  [FAQ for Enterprise](https://docs.microsoft.com/en-us/deployedge/faqs-edge-in-the-enterprise)
+
 
 
 

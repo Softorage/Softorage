@@ -45,10 +45,11 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Windows 7 | MacOS X Sierra | Linux Ubuntu 16.04"
-  -
-    min: "OpenGL 2.1 for Windows |   OpenGL 2.1 or mesa for Linux | Intel mac"
+  General:
+    -
+      min: "Windows 7 | MacOS X Sierra | Linux Ubuntu 16.04"
+    -
+      min: "OpenGL 2.1 for Windows |   OpenGL 2.1 or mesa for Linux | Intel mac"
 
 developer: ["Björn Gustavsson", "Dan Gudmundsson", "Others"]
 
@@ -161,6 +162,7 @@ note: |
   
   [Forum](http://www.wings3d.com/forum/)  I  [Documentation](http://www.wings3d.com/?page_id=87)  I  [News](http://www.wings3d.com/?page_id=76)  I  [User Manual](http://www.wings3d.com/?page_id=252)  I  [FAQ](http://www.wings3d.com/forum/archive/index.php?thread-1106.html)
   
+
 
 
 

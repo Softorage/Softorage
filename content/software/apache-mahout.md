@@ -14,12 +14,13 @@ get_it:
     url: "https://mahout.apache.org/general/downloads"
 
 sysreq:
-  -
-    min: "Java 1.6.x"
-  -
-    min: "Maven 3.x to build the source code"
-  -
-    min: "If implemented to work on Apache Hadoop clusters, Hadoop 0.20.0"
+  General:
+    -
+      min: "Java 1.6.x"
+    -
+      min: "Maven 3.x to build the source code"
+    -
+      min: "If implemented to work on Apache Hadoop clusters, Hadoop 0.20.0"
 
 developer: ["Apache Software Foundation"]
 
@@ -84,6 +85,7 @@ note: |
   
   [Documentation](https://mahout.apache.org/docs/latest/index.html)  I  [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists)  I  [FAQ](https://mahout.apache.org/general/faq.html)  I  [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
   
+
 
 
 

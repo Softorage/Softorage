@@ -93,18 +93,19 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Processor: Windows - 1.5GHz or faster processor | macOS - Intel processor"
-  -
-    min: "OS: Windows - Windows Server 2008 R2 (64 bit), 2012 (64 bit), 2012 R2 (64 bit), 2016 (64 bit), or 2019 (64 bit); Windows 7 SP1 (32 bit and 64 bit), Windows 8, 8.1 (32 bit and 64 bit), or Windows 10 (32 bit and 64 bit) | macOS - macOS v10.12, macOS v10.13, macOS v10.14, or macOS v10.15"
-  -
-    min: "RAM: Windows/macOS - 1GB"
-  -
-    min: "Hard Disk Space: Windows/macOS - 380MB"
-  -
-    min: "Screen Resolution: Windows/macOS - 1024x768"
-  -
-    min: "Other: Windows - Internet Explorer 11 | macOS - Safari 10.0, or 11.0 (browser plug-in for Safari supported on 64-bit Intel processor only)"
+  General:
+    -
+      min: "Processor: Windows - 1.5GHz or faster processor | macOS - Intel processor"
+    -
+      min: "OS: Windows - Windows Server 2008 R2 (64 bit), 2012 (64 bit), 2012 R2 (64 bit), 2016 (64 bit), or 2019 (64 bit); Windows 7 SP1 (32 bit and 64 bit), Windows 8, 8.1 (32 bit and 64 bit), or Windows 10 (32 bit and 64 bit) | macOS - macOS v10.12, macOS v10.13, macOS v10.14, or macOS v10.15"
+    -
+      min: "RAM: Windows/macOS - 1GB"
+    -
+      min: "Hard Disk Space: Windows/macOS - 380MB"
+    -
+      min: "Screen Resolution: Windows/macOS - 1024x768"
+    -
+      min: "Other: Windows - Internet Explorer 11 | macOS - Safari 10.0, or 11.0 (browser plug-in for Safari supported on 64-bit Intel processor only)"
 
 developer: ["Adobe Inc."]
 
@@ -262,6 +263,7 @@ rating:
   Acrobat Reader DC, has a set of premium features, which are activated on a purchase of subscription to Adobe Acrobat PDF Pack, Adobe Acrobat Export PDF, or Adobe Sign.
   
   [News](https://helpx.adobe.com/reader/whats-new.html)  I  [Forum](https://community.adobe.com/t5/acrobat-reader/bd-p/acrobat-reader)  I  [FAQ](https://helpx.adobe.com/reader/faq.html)
+
 
 
 

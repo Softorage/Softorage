@@ -94,26 +94,27 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "32-bit dual core 2Ghz CPU with SSE2 support"
-    recm: "64-bit quad core CPU"
-    optm: "64-bit eight core CPU"
-  -
-    min: "2 GB RAM"
-    recm: "8 GB RAM"
-    optm: "16 GB RAM"
-  -
-    min: "1280×768 Display"
-    recm: "Full HD Display"
-    optm: "Full HD display"
-  -
-    min: "OpenGL 2.1 compatible graphics with 512 MB RAM"
-    recm: "OpenGL 3.2 compatible graphics with 2 GB RAM"
-    optm: "Dual OpenGL 3.2 compatible graphics cards with 4 GB RAM"
-  -
-    min: "Mouse or trackpad"
-    recm: "Three button mouse"
-    optm: "Three button mouse and graphics tablet"
+  General:
+    -
+      min: "32-bit dual core 2Ghz CPU with SSE2 support"
+      recm: "64-bit quad core CPU"
+      optm: "64-bit eight core CPU"
+    -
+      min: "2 GB RAM"
+      recm: "8 GB RAM"
+      optm: "16 GB RAM"
+    -
+      min: "1280×768 Display"
+      recm: "Full HD Display"
+      optm: "Full HD display"
+    -
+      min: "OpenGL 2.1 compatible graphics with 512 MB RAM"
+      recm: "OpenGL 3.2 compatible graphics with 2 GB RAM"
+      optm: "Dual OpenGL 3.2 compatible graphics cards with 4 GB RAM"
+    -
+      min: "Mouse or trackpad"
+      recm: "Three button mouse"
+      optm: "Three button mouse and graphics tablet"
 
 developer: ["Blender Foundation"]
 
@@ -274,3 +275,4 @@ rating:
   
   [Reference Manual](https://docs.blender.org/manual/en/latest/index.html)  I  [News](https://www.blender.org/news/)  I  [Community](https://www.blender.org/community/)  I  [Stack Exchange(QA)](https://blender.stackexchange.com/)  I  [Wiki](https://wiki.blender.org/wiki/Main_Page)  I  [Discord(community-managed)](https://discordapp.com/invite/blender)  I  [Developers Blog](https://code.blender.org/)  I  [Developers Forum](https://devtalk.blender.org/)  I  [IRC](https://wiki.blender.org/wiki/Communication/Contact/IRC)
   
+

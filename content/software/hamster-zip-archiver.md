@@ -14,39 +14,33 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://hamster-archiver.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5296-hamster-free-zip-archiver.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://hamster-free-zip-archiver.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/hamster-free-zip-archiver/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["HamsterSoft"]
 
@@ -99,3 +93,4 @@ rating:
     rate: [3.5, 5]
 ---
   Hamster Zip Archiver is a free [file archiver](/categories/file-archiver/) for Windows developed by Hamstersoft, with focus on simplicity and looks. It supports zip, 7z, arj, bz2, tbz, gzip, deb, dmg, img, gz, tgz, hfs, lzh, rmp, pkg, z, taz, cab, iso, rar, tar, wim, swm, jar, along with some other formats.
+

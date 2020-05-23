@@ -28,12 +28,13 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "192MB free RAM"
-    recm: "512MB free RAM"
-  -
-    min: "A color monitor"
-    recm: ""
+  General:
+    -
+      min: "192MB free RAM"
+      recm: "512MB free RAM"
+    -
+      min: "A color monitor"
+      recm: ""
 
 developer: ["George Williams", "Frank Trampe", "Ben Martin", "Adrien Tétar", "Khaled Hosny", "Jeremy Tan"]
 
@@ -122,6 +123,7 @@ rating:
   
   [Online Book](http://designwithfontforge.com/)  I  [Documentation](https://fontforge.org/en-US/documentation/)  I  [FAQ](https://fontforge.org/en-US/faq/)  I  [Wiki](https://github.com/fontforge/fontforge/wiki)  I  [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
   
+
 
 
 

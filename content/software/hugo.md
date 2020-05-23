@@ -79,3 +79,4 @@ source:
   
   [News](https://gohugo.io/news/)  I  [Forum](https://discourse.gohugo.io/)  I  [Documentation](https://gohugo.io/documentation/)  I  [FAQ](https://gohugo.io/troubleshooting/faq/)  I  [Gitter for Devs](https://gitter.im/spf13/hugo)
 
+

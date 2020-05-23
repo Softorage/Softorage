@@ -14,9 +14,10 @@ get_it:
     url: "https://deeplearning4j.org/docs/latest/deeplearning4j-quickstart"
 
 sysreq:
-  -
-    min: "4 GB RAM"
-    recm: "8 GB RAM"
+  General:
+    -
+      min: "4 GB RAM"
+      recm: "8 GB RAM"
 
 developer: ["Adam Gibson", "Chris Nicholson", "Josh Patterson", "Others"]
 
@@ -105,6 +106,7 @@ note: |
   Deeplearning4j includes implementations of the restricted Boltzmann machine, deep auto-encoder, deep belief net, stacked denoising auto-encoder and recursive neural tensor network, word2vec, doc2vec, and GloVe. These algorithms also include distributed parallel versions that integrate with [Apache Hadoop](/software/apache-hadoop) and [Apache Spark](/software/apache-spark).
   
   [Release Notes](https://deeplearning4j.org/release-notes)  I  [Gitter chat](https://gitter.im/deeplearning4j/deeplearning4j)  I  [Documentation](https://deeplearning4j.org/docs/latest/)  I  [Tutorials](https://deeplearning4j.org/tutorials/setup)  I  [API Reference](https://deeplearning4j.org/api/latest/)  I  [Sample Projects](https://github.com/deeplearning4j/dl4j-examples)  I  [FAQ](https://deeplearning4j.org/faq)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/deeplearning4j)
+
 
 
 

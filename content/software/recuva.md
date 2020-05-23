@@ -18,7 +18,6 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/System/Backup-and-Recovery/Portable-Recuva.shtml"
     platform:
@@ -32,14 +31,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://recuva.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://recuva-portable.en.softonic.com/"
     platform:
@@ -53,18 +50,17 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_recuva/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
-  -
-    min: "Windows 10, 8.1, 7, Vista and XP. Including both 32-bit and 64-bit versions, but not RT tablet editions."
+  General:
+    -
+      min: "Windows 10, 8.1, 7, Vista and XP. Including both 32-bit and 64-bit versions, but not RT tablet editions."
 
 developer: ["Piriform"]
 
@@ -180,4 +176,5 @@ rating:
   Recuva is a [data recovery](/categories/data-recovery/) and an undeletion program for Windows, developed by Piriform. It is able to undelete files that have been marked as deleted (the operating system marks the areas of the disk in which deleted files were stored as free space). It can recover files deleted from internal and external hard disk drives, USB flash drives, memory cards, portable media players or all random-access storage mediums with a supported file system.
   
   [Forum](https://community.ccleaner.com/forum/16-recuva/)  I  [Documentation](https://www.ccleaner.com/docs/recuva)  I  [FAQ](https://www.ccleaner.com/recuva/faq)
+
 

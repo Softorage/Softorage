@@ -34,10 +34,11 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "OpenGL ES 3.0 compatible hardware"
-  -
-    min: "For the Mono version, Mono SDK 5.12.0 (other versions won't work)"
+  General:
+    -
+      min: "OpenGL ES 3.0 compatible hardware"
+    -
+      min: "For the Mono version, Mono SDK 5.12.0 (other versions won't work)"
 
 developer: ["Juan Linietsky<OD>", "Ariel Manzur<OD>", "Community"]
 
@@ -116,6 +117,7 @@ rating:
   
   [Documentation](https://docs.godotengine.org/)  I  [News](https://godotengine.org/news)  I  [Question/Answers](https://godotengine.org/qa/)  I  [IRC](http://webchat.freenode.net/?channels=#godotengine)  I  [Developer Forum](https://godotforums.org/)  I  [FAQ](http://docs.godotengine.org/en/3.0/about/faq.html)
   
+
 
 
 

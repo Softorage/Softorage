@@ -44,10 +44,11 @@ get_it:
         official: true
 
 sysreq:
-  -
-    recm: "A keyboard with a numberpad"
-  -
-    recm: "Single button mouse or a 3-button mouse with a scroll wheel"
+  General:
+    -
+      recm: "A keyboard with a numberpad"
+    -
+      recm: "Single button mouse or a 3-button mouse with a scroll wheel"
 
 developer: ["Peter Eastman", "Others"]
 
@@ -147,6 +148,7 @@ note: |
   
   [Forum](https://sourceforge.net/p/aoi/discussion/)  I  [Documentation](http://www.artofillusion.org/documentation)  I  [FAQ](http://www.artofillusion.org/faq)
   
+
 
 
 

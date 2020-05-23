@@ -96,18 +96,19 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Windows 2000 SP4, Windows XP, Vista or 7"
-    recm: ""
-  -
-    min: "512MB RAM"
-    recm: "1 to 2GB RAM for mac"
-  -
-    min: "Pentium III – 750MHz processor for Windows | PowerPC or Intel-based processor for mac"
-    recm: "Dual Core Intel processors for mac"
-  -
-    min: "Ghostscript 8.7+ for Windows | Ghostscript 8.6+ for mac"
-    recm: ""
+  General:
+    -
+      min: "Windows 2000 SP4, Windows XP, Vista or 7"
+      recm: ""
+    -
+      min: "512MB RAM"
+      recm: "1 to 2GB RAM for mac"
+    -
+      min: "Pentium III – 750MHz processor for Windows | PowerPC or Intel-based processor for mac"
+      recm: "Dual Core Intel processors for mac"
+    -
+      min: "Ghostscript 8.7+ for Windows | Ghostscript 8.6+ for mac"
+      recm: ""
 
 developer: ["The Scribus Team"]
 
@@ -267,6 +268,7 @@ rating:
   
   [Blog](https://rants.scribus.net/)  I  [Forum](http://forums.scribus.net/)  I  [News](https://www.scribus.net/category/news/)  I  [Wiki](https://wiki.scribus.net/canvas/Scribus)  I  [Video Tutorials](https://wiki.scribus.net/canvas/Scribus_Video_Tutorials)  I  [Get Stated](https://wiki.scribus.net/canvas/Get_Started_with_Scribus)  I  [Docs](https://wiki.scribus.net/canvas/Help:TOC)  I  [Mailing list](http://lists.scribus.net/mailman/listinfo)  I  [FAQ](https://wiki.scribus.net/canvas/Category:FAQ)  I  [IRC](https://webchat.freenode.net/?channels=scribus)
   
+
 
 
 

@@ -14,26 +14,27 @@ get_it:
     url: "https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine"
 
 sysreq:
-  -
-    recm: "OS: Windows 8.1 Pro (64 bit), Windows 10 (64 bit), Windows Server 2012 R2 Standard and later I Ubuntu 16.04 LTS (64 bit)"
-  -
-    recm: "Compiler: Visual Studio Enterprise 2017 for Windows I GNU C++ 5.4.0 for Linux"
-  -
-    recm: "MPI: Microsoft MPI v. 7.0 for Windows I Open MPI v. 1.10.7 for Linux"
-  -
-    recm: "Math Library: Intel® MKLML library for Windows and Linux"
-  -
-    recm: "NVIDIA Components: NVIDIA CUDA 9.0, NVIDIA cuDNN 7.0 for CUDA 9.0, NVIDIA CUB 1.7.4 for Windows and Linux"
-  -
-    recm: "OpenCV: OpenCV v.3.1.0 for Windows and Linux"
-  -
-    recm: "zlib Library: zlib v.1.2.8 for Windows and Linux"
-  -
-    recm: "libzip Library: libzip v.1.1.3 for Windows I libzip v.1.1.2 for Linux"
-  -
-    recm: "Java: Java SE Development Kit 8 v1.8.0_131, 64-bit for Windows I OpenJDK 7, 64-bit for Linux"
-  -
-    recm: "Anaconda Python: Anaconda3 4.1.1 (64 bit) for Windows and Linux"
+  General:
+    -
+      recm: "OS: Windows 8.1 Pro (64 bit), Windows 10 (64 bit), Windows Server 2012 R2 Standard and later I Ubuntu 16.04 LTS (64 bit)"
+    -
+      recm: "Compiler: Visual Studio Enterprise 2017 for Windows I GNU C++ 5.4.0 for Linux"
+    -
+      recm: "MPI: Microsoft MPI v. 7.0 for Windows I Open MPI v. 1.10.7 for Linux"
+    -
+      recm: "Math Library: Intel® MKLML library for Windows and Linux"
+    -
+      recm: "NVIDIA Components: NVIDIA CUDA 9.0, NVIDIA cuDNN 7.0 for CUDA 9.0, NVIDIA CUB 1.7.4 for Windows and Linux"
+    -
+      recm: "OpenCV: OpenCV v.3.1.0 for Windows and Linux"
+    -
+      recm: "zlib Library: zlib v.1.2.8 for Windows and Linux"
+    -
+      recm: "libzip Library: libzip v.1.1.3 for Windows I libzip v.1.1.2 for Linux"
+    -
+      recm: "Java: Java SE Development Kit 8 v1.8.0_131, 64-bit for Windows I OpenJDK 7, 64-bit for Linux"
+    -
+      recm: "Anaconda Python: Anaconda3 4.1.1 (64 bit) for Windows and Linux"
 
 developer: ["Microsoft Research"]
 
@@ -105,6 +106,7 @@ note: |
   The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through [deep learning](/categories/deep-learning) by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
   
   [News](https://docs.microsoft.com/en-us/cognitive-toolkit/news)  I  [Documentation](https://docs.microsoft.com/en-us/cognitive-toolkit/)  I  [FAQ](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-FAQ)  I  [Blog](https://www.microsoft.com/en-us/cognitive-toolkit/blog/)
+
 
 
 

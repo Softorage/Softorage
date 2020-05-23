@@ -102,10 +102,11 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "Windows: Windows 7, Windows 8, Windows 8.1, Windows 10 or later (Servers require Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016) | macOS: OS X Yosemite 10.10 or later | Linux: 64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.3+, or Fedora Linux 24+"
-  -
-    min: "Windows: An Intel Pentium 4 processor or later that's SSE2 capable | Linux: An Intel Pentium 4 processor or later that's SSE2 capable"
+  General:
+    -
+      min: "Windows: Windows 7, Windows 8, Windows 8.1, Windows 10 or later (Servers require Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016) | macOS: OS X Yosemite 10.10 or later | Linux: 64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.3+, or Fedora Linux 24+"
+    -
+      min: "Windows: An Intel Pentium 4 processor or later that's SSE2 capable | Linux: An Intel Pentium 4 processor or later that's SSE2 capable"
 
 developer: ["Google LLC"]
 
@@ -302,6 +303,7 @@ note: |
   
   [Blog](https://blog.google/products/chrome/)  I  [Help Community](https://support.google.com/chrome/community)  I  [Enterprise Community](https://support.google.com/chrome/a/threads)  I  [API Index](https://developer.chrome.com/apps/api_index)  I  [Chrome & Chrome Web Store FAQ](https://developer.chrome.com/webstore/faq)  I  [Mobile Chrome FAQ](https://developer.chrome.com/multidevice/faq)  I  [Extensions FAQ](https://developer.chrome.com/extensions/faq)
   
+
 
 
 

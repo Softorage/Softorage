@@ -62,8 +62,9 @@ get_it:
         official: true
 
 sysreq:
-  -
-    min: "A PC running Windows 10, 8.1, 8 or 7"
+  General:
+    -
+      min: "A PC running Windows 10, 8.1, 8 or 7"
 
 developer: ["Avast Software s.r.o."]
 
@@ -140,6 +141,7 @@ rating:
   It has features such as Ad Block, Bank mode, Passwords, Video downloader, Anti-tracking & Anti-fingerprinting, Anti-fishing, etc.
   
   [Blog](https://blog.avast.com/topic/browser)  I  [Forum](https://forum.avast.com/index.php?board=78.0)  I  [FAQ](https://support.avast.com/en-in/article/Secure-Browser-FAQ)
+
 
 
 

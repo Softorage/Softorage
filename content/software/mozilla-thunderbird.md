@@ -19,7 +19,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/E-mail/Portable-Thunderbird.shtml"
     platform:
@@ -35,16 +34,13 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "TechSpot beta"
     url: "https://www.techspot.com/downloads/4907-mozilla-thunderbird-beta.html"
     platform:
@@ -52,44 +48,37 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://thunderbird.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://mozilla-thunderbird.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_thunderbird/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Thunderbird/3000-2367_4-10213643.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-thunderbird-32/"
     platform:
@@ -97,7 +86,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-thunderbird-64/"
     platform:
@@ -105,7 +93,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-thunderbird-portable/"
     platform:
@@ -119,32 +106,29 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_thunderbird_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://mozilla-thunderbird.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-thunderbird/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
-  -
-    min: "See note."
+  General:
+    -
+      min: "See note."
 
 developer: ["Mozilla Foundation", "MZLA Technologies Corporation"]
 
@@ -340,4 +324,5 @@ note: |
   Thunderbird is an [email](/categories/email-client/), [news feed](/categories/news-reader/), [RSS feed](/categories/feed-reader/), and [chat](/categories/instant-messaging/) (XMPP, IRC, Twitter) client. Its features include message management; junk filtering; extensions and themes; standards support: POP,IMAP, LDAP, S/MIME, OpenPGP; file formats supported: mbox, maildir; file linking; HTML code insertion; cross-platform support for Linux, macOS, Windows, with unofficial ports for FreeBSD, OpenBSD; localization; and security.
   
   [Blog](https://blog.thunderbird.net/)  I  [Forum](https://support.mozilla.org/en-US/products/thunderbird/support-forum)  I  [Documentation](https://wiki.mozilla.org/Thunderbird/Docs)  I  [FAQ](https://support.mozilla.org/en-US/kb/thunderbird-faq)
+
 
