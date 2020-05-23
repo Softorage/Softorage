@@ -137,15 +137,15 @@
                   <!-- we have enabled tabbable tabs for following, i.e., with id download-tab-->
                   <ul class="nav nav-tabs rounded-lg shadow-sm justify-content-center" id="download-tab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active text-success" data-toggle="tab" href="#download-authentic" role="tab" aria-controls="authentic" aria-selected="true">Recommended</a>
+                      <a class="nav-link active text-success" id="download-tab-authentic" data-toggle="tab" href="#download-authentic" role="tab" aria-controls="download-authentic" aria-selected="true">Recommended</a>
                     </li>
                     
                     <li class="nav-item">
-                      <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp" role="tab" aria-controls="desktop" aria-selected="false">{{ site.Data.icons.desktop | safeHTML }}</a>
+                      <a class="nav-link text-clr2" id="download-tab-desktop" data-toggle="tab" href="#download-dskp" role="tab" aria-controls="download-dskp" aria-selected="false">{{ site.Data.icons.desktop | safeHTML }}</a>
                     </li>
                     
                     <li class="nav-item">
-                      <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb" role="tab" aria-controls="smartphone/tab" aria-selected="false">{{ site.Data.icons.mobile | safeHTML }} / {{ site.Data.icons.tab | safeHTML }}</a>
+                      <a class="nav-link text-clr2" id="download-tab-smptb" data-toggle="tab" href="#download-smptb" role="tab" aria-controls="download-smptb" aria-selected="false">{{ site.Data.icons.mobile | safeHTML }} / {{ site.Data.icons.tab | safeHTML }}</a>
                     </li>
                   </ul>
                   
@@ -155,7 +155,7 @@
                   {{ $download_available := false }}
                   
                   <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="authentic-tab">
+                    <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="download-tab-authentic">
                       {{- range .Params.get_it -}}
                         {{ if (in .from "Authentic") | or (in .from "Google Play") | or (in .from "Apple App") }}
                           <a href="{{ .url }}" class="btn btn{{ if eq .from "Authentic" }} bg-success-light text-success{{ else }}-sm btn-primary{{ end }} m-2"
@@ -174,28 +174,28 @@
                       {{ end -}}
                     </div>
                     
-                    <div class="tab-pane fade" id="download-dskp" role="tabpanel" aria-labelledby="desktop-tab">
+                    <div class="tab-pane fade" id="download-dskp" role="tabpanel" aria-labelledby="download-tab-desktop">
                       <div class="row my-2">
                         <div class="col-3">
                           <ul class="nav nav-pills flex-column" role="tablist" aria-orientation="vertical">
                             <li class="nav-item">
-                              <a class="nav-link active text-clr2" data-toggle="tab" href="#download-dskp-windows" role="tab" aria-controls="windows" aria-selected="true">Windows</a>
+                              <a class="nav-link active text-clr2" id="download-tab-dskp-windows" data-toggle="tab" href="#download-dskp-windows" role="tab" aria-controls="download-dskp-windows" aria-selected="true">Windows</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-linux" role="tab" aria-controls="linux" aria-selected="false">Linux</a>
+                              <a class="nav-link text-clr2" id="download-tab-dskp-linux" data-toggle="tab" href="#download-dskp-linux" role="tab" aria-controls="download-dskp-linux" aria-selected="false">Linux</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-macOS" role="tab" aria-controls="macOS" aria-selected="false">macOS</a>
+                              <a class="nav-link text-clr2" id="download-tab-dskp-macOS" data-toggle="tab" href="#download-dskp-macOS" role="tab" aria-controls="download-dskp-macOS" aria-selected="false">macOS</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+                              <a class="nav-link text-clr2" id="download-tab-dskp-other" data-toggle="tab" href="#download-dskp-other" role="tab" aria-controls="download-dskp-other" aria-selected="false">Other</a>
                             </li>
                           </ul>
                         </div>
                         {{ $platform_download_not_available := "No download available for " }}
                         <div class="col-9">
                           <div class="tab-content">
-                            <div class="tab-pane fade show active" id="download-dskp-windows" role="tabpanel" aria-labelledby="windows-tab">
+                            <div class="tab-pane fade show active" id="download-dskp-windows" role="tabpanel" aria-labelledby="download-tab-dskp-windows">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -215,7 +215,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-dskp-linux" role="tabpanel" aria-labelledby="linux-tab">
+                            <div class="tab-pane fade" id="download-dskp-linux" role="tabpanel" aria-labelledby="download-tab-dskp-linux">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -235,7 +235,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-dskp-macOS" role="tabpanel" aria-labelledby="macOS-tab">
+                            <div class="tab-pane fade" id="download-dskp-macOS" role="tabpanel" aria-labelledby="download-tab-dskp-macOS">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -255,7 +255,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-dskp-other" role="tabpanel" aria-labelledby="other-tab">
+                            <div class="tab-pane fade" id="download-dskp-other" role="tabpanel" aria-labelledby="download-tab-dskp-other">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 <!-- if the item has platform field -->
                                 {{ if $download_item.platform }}
@@ -286,18 +286,18 @@
                       </div> <!-- row -->
                     </div>
                     
-                    <div class="tab-pane fade" id="download-smptb" role="tabpanel" aria-labelledby="smptb-tab">
+                    <div class="tab-pane fade" id="download-smptb" role="tabpanel" aria-labelledby="download-tab-smptb">
                       <div class="row my-2">
                         <div class="col-3">
                           <ul class="nav nav-pills flex-column" role="tablist" aria-orientation="vertical">
                             <li class="nav-item">
-                              <a class="nav-link text-clr2 active" data-toggle="tab" href="#download-smptb-android" role="tab" aria-controls="android" aria-selected="true">Android</a>
+                              <a class="nav-link text-clr2 active" id="download-tab-smptb-android" data-toggle="tab" href="#download-smptb-android" role="tab" aria-controls="download-smptb-android" aria-selected="true">Android</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb-ios" role="tab" aria-controls="ios" aria-selected="false">iOS</a>
+                              <a class="nav-link text-clr2" id="download-tab-smptb-ios" data-toggle="tab" href="#download-smptb-ios" role="tab" aria-controls="download-smptb-ios" aria-selected="false">iOS</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb-other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+                              <a class="nav-link text-clr2" id="download-tab-smptb-other" data-toggle="tab" href="#download-smptb-other" role="tab" aria-controls="download-smptb-other" aria-selected="false">Other</a>
                             </li>
                           </ul>
                         </div>
@@ -306,7 +306,7 @@
                              for now we are showing links for google play and apple app store in android and ios section too, though they are present in authentic(recommended) section too.
                           -->
                           <div class="tab-content">
-                            <div class="tab-pane fade show active" id="download-smptb-android" role="tabpanel" aria-labelledby="android-tab">
+                            <div class="tab-pane fade show active" id="download-smptb-android" role="tabpanel" aria-labelledby="download-tab-smptb-android">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -326,7 +326,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-smptb-ios" role="tabpanel" aria-labelledby="ios-tab">
+                            <div class="tab-pane fade" id="download-smptb-ios" role="tabpanel" aria-labelledby="download-tab-smptb-ios">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
@@ -346,7 +346,7 @@
                                 {{ end }}
                               {{ end -}}
                             </div>
-                            <div class="tab-pane fade" id="download-smptb-other" role="tabpanel" aria-labelledby="other-tab">
+                            <div class="tab-pane fade" id="download-smptb-other" role="tabpanel" aria-labelledby="download-tab-smptb-other">
                               {{- range $index, $download_item := sort .Params.get_it "from" -}} 
                                 <!-- if the item has platform field -->
                                 {{ if $download_item.platform }}
