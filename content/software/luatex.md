@@ -59,7 +59,3 @@ note: |
   
   [Mailing list](http://www.luatex.org/support.html)  I  [Wiki](http://wiki.luatex.org/index.php/Main_Page)  I  [Documentation](http://www.luatex.org/documentation.html)  I  [FAQ](http://www.luatex.org/faq.html)  I  [Stack Exchange](https://tex.stackexchange.com/questions/tagged/luatex)
 
-
-
-
-

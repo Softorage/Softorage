@@ -62,7 +62,3 @@ note: |
   
   [Blog](https://moa.cms.waikato.ac.nz/blog/)  I  [Documentation](https://moa.cms.waikato.ac.nz/documentation/)  I  [Mailing list - Users](https://groups.google.com/group/moa-users)  I  [Mailing list - Developers](https://groups.google.com/group/moa-development)
 
-
-
-
-

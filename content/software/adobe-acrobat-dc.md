@@ -65,7 +65,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Processor: Windows (Pro/Standard) - 1.5GHz or faster processor | macOS (Standard) - Intel processor"
     -
@@ -102,7 +102,8 @@ source:
   initial_release: ["https://theblog.adobe.com/evolution-digital-document-celebrating-adobe-acrobats-25th-anniversary/"]
   platform:
     - dskp: ["https://helpx.adobe.com/acrobat/system-requirements.html"]
-  sysreq: ["https://helpx.adobe.com/acrobat/system-requirements.html"]
+  sysreq:
+    general: ["https://helpx.adobe.com/acrobat/system-requirements.html"]
   license: ["https://www.adobe.com/legal/licenses-terms.html", "https://www.adobe.com/legal/terms.html"]
   rating:
     - name: "Softpedia"
@@ -191,7 +192,3 @@ rating:
   Its features include, edit scanned documents; create protected PDFs; export PDFs to MS Office; fill, sign, and send forms; delete sensitive information; work with Dropbox, Box, Google Drive, and OneDrive.
   
   [Blog](https://theblog.adobe.com/document-cloud/acrobat-dc/)  I  [Release Notes](https://helpx.adobe.com/in/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes)  I  [Forum](https://community.adobe.com/t5/acrobat/bd-p/acrobat) | [User Guide](https://helpx.adobe.com/acrobat/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/acrobat/faq.html)
-
-
-
-

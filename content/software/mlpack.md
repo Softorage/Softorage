@@ -14,7 +14,7 @@ get_it:
     url: "https://www.mlpack.org/download.html"
 
 sysreq:
-  General:
+  general:
     -
       min: "Dependencies: Armadillo >= 6.500.0 (with LAPACK support), Boost (math_c99, program_options, serialization, unit_test_framework, heap, spirit) >= 1.49"
     -
@@ -60,7 +60,8 @@ source:
   platform:
     - dskp: ["https://www.mlpack.org/docs/mlpack-3.0.4/doxygen/build.html"]
     - else: ["https://www.mlpack.org/about.html"]
-  sysreq: ["https://www.mlpack.org/docs/mlpack-3.0.4/doxygen/build.html"]
+  sysreq:
+    general: ["https://www.mlpack.org/docs/mlpack-3.0.4/doxygen/build.html"]
   license: ["https://www.mlpack.org/about.html"]
   rating:
     - name: "OpenReview"
@@ -84,8 +85,4 @@ rating:
   
   [Developement Blog](https://www.mlpack.org/gsocblog/)  I  [Documentation](https://www.mlpack.org/docs.html)  I  [Wiki](https://github.com/mlpack/mlpack/wiki)  I  [Mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack)  I  [IRC](https://webchat.freenode.net/?channels=mlpack)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/mlpack)
   
-
-
-
-
 

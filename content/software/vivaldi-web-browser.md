@@ -291,7 +291,3 @@ note: |
   
   [Blog](https://vivaldi.com/blog/)  I  [Press Releases](https://vivaldi.com/press/releases/)  I  [Forum](https://forum.vivaldi.net/)  I  [Help](https://help.vivaldi.com/)  I  [FAQ](https://help.vivaldi.com/faq/)  I  [Security Related FAQ](https://help.vivaldi.com/faq/)
   
-
-
-
-

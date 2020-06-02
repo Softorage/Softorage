@@ -58,7 +58,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Windows 10, 8.1, 7, Vista and XP. Including both 32-bit and 64-bit versions, but not RT tablet editions."
 
@@ -85,7 +85,8 @@ source:
   initial_release: ["https://web.archive.org/web/20200416003000/https://www.ccleaner.com/recuva/version-history"]
   platform:
     - dskp: ["https://web.archive.org/web/20200508063810/https://www.ccleaner.com/recuva/download"]
-  sysreq: ["https://web.archive.org/web/20200508063810/https://www.ccleaner.com/recuva/download"]
+  sysreq:
+    general: ["https://web.archive.org/web/20200508063810/https://www.ccleaner.com/recuva/download"]
   license: ["https://www.ccleaner.com/recuva/download"]
   rating:
     - name: "Softpedia"
@@ -176,5 +177,4 @@ rating:
   Recuva is a [data recovery](/categories/data-recovery/) and an undeletion program for Windows, developed by Piriform. It is able to undelete files that have been marked as deleted (the operating system marks the areas of the disk in which deleted files were stored as free space). It can recover files deleted from internal and external hard disk drives, USB flash drives, memory cards, portable media players or all random-access storage mediums with a supported file system.
   
   [Forum](https://community.ccleaner.com/forum/16-recuva/)  I  [Documentation](https://www.ccleaner.com/docs/recuva)  I  [FAQ](https://www.ccleaner.com/recuva/faq)
-
 

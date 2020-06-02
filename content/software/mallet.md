@@ -88,7 +88,3 @@ note: |
   > \- [Official website](http://mallet.cs.umass.edu/)
   
   [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/mallet)  I  [API Reference](http://mallet.cs.umass.edu/api)
-
-
-
-

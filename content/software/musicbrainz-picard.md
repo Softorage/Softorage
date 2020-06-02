@@ -137,7 +137,3 @@ rating:
   
   [Forum](https://community.metabrainz.org/c/picard)  I  [Documentation](https://picard.musicbrainz.org/docs/)
   
-
-
-
-

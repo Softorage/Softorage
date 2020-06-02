@@ -171,4 +171,3 @@ rating:
   f.lux is a [utility](/categories/utility/) software that adjusts a display's [color temperature](/categories/color-temperature-adjustment/) according to location and time of day. The program is designed to reduce eye strain during night-time use, helping to reduce disruption of sleep patterns.
   
   [Blog/News](https://justgetflux.com/news/)  I  [Forum](https://forum.justgetflux.com/)  I  [FAQ](https://justgetflux.com/faq.html)
-

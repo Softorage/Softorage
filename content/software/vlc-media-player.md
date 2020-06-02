@@ -141,7 +141,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Primarily vary by video being played, depending upon its quality"
 
@@ -373,7 +373,3 @@ rating:
   
   [News](https://www.videolan.org/news.html)  I  [Forum](https://forum.videolan.org/)  I  [Wiki](https://wiki.videolan.org/)  I  [Documentation](https://wiki.videolan.org/Documentation)  I  [FAQ](https://www.videolan.org/support/faq.html)  I  [IRC](https://webchat.freenode.net/?channels=videolan)
   
-
-
-
-

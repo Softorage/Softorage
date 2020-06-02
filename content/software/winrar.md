@@ -114,7 +114,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "120 MB of free RAM (since v4.20)"
 
@@ -164,7 +164,8 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=WinRAR&oldid=930943091"]
   platform:
     - dskp: ["https://www.win-rar.com/download.html?&L=0"]
-  sysreq: ["https://www.rarlab.com/rarnew.htm"]
+  sysreq:
+    general: ["https://www.rarlab.com/rarnew.htm"]
   license: ["https://www.rarlab.com/license.htm", "https://en.wikipedia.org/w/index.php?title=WinRAR&oldid=930943091", "https://play.google.com/store/apps/details?id=com.rarlab.rar&hl=en_IN"]
   rating:
     - name: "FileHippo"
@@ -284,7 +285,3 @@ rating:
   
   [News](https://www.win-rar.com/latestnews.html?&L=0)  I  [Manual](http://acritum.com/software/manuals/winrar/)  I  [documentation.HELP!](https://documentation.help/WinRAR/)  I  [FAQ](https://www.win-rar.com/faq.html?&L=0)
   
-
-
-
-

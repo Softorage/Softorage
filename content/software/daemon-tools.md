@@ -90,7 +90,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "500 MHz CPU"
     -
@@ -129,7 +129,8 @@ source:
   initial_release: ["https://www.oldapps.com/daemon_tools.php"]
   platform:
     - dskp: ["https://www.daemon-tools.cc/downloads", "https://www.daemon-tools.cc/products/dtMacLite"]
-  sysreq: ["https://www.daemon-tools.cc/support/faq#system_requirements"]
+  sysreq:
+    general: ["https://www.daemon-tools.cc/support/faq#system_requirements"]
   rating:
     - name: "TechSpot"
       type: "user"
@@ -261,7 +262,3 @@ note: |
   
   [Blog](https://blog.daemon-tools.cc/home)  I  [Forum](https://forum.daemon-tools.cc/)  I  [FAQ](https://www.daemon-tools.cc/support/faq)
   
-
-
-
-

@@ -82,7 +82,3 @@ rating:
   
   [Documentation](https://docs.scipy.org/doc/)  I  [Mailing lists](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/scipy)  I  [IRC](https://webchat.freenode.net/?channels=scipy)  I  [FAQ](https://www.scipy.org/scipylib/faq.html)
 
-
-
-
-

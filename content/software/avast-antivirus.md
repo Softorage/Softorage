@@ -122,7 +122,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Windows 10 except Mobile and IoT Edition (32 or 64-bit); Windows 8/8.1 except RT and Starter Edition (32 or 64-bit); Windows 7 SP1 or higher, any Edition (32 or 64-bit)"
     -
@@ -177,7 +177,8 @@ source:
   platform:
     - dskp: ["https://www.avast.com/store", "https://www.avast.com/free-antivirus-download", "https://www.avast.com/free-mac-security"]
     - smptb: ["https://www.avast.com/store", "https://www.avast.com/free-mobile-security", "https://www.avast.com/free-ios-security"]
-  sysreq: ["https://support.avast.com/article/Antivirus-FAQ/#requirements"]
+  sysreq:
+    general: ["https://support.avast.com/article/Antivirus-FAQ/#requirements"]
   license: ["https://en.wikipedia.org/w/index.php?title=Antivirus_software&oldid=934192056", "https://www.avast.com/eula"]
   rating:
     - name: "TechSpot"
@@ -288,8 +289,4 @@ rating:
   Avast Antivirus is a family of internet [security applications](/categories/security/) developed by Avast for Microsoft Windows, macOS, Android and iOS. The Avast Antivirus products include free and proprietary versions that provide [computer security](/categories/security/), [browser](/categories/web-browser/) security, [antivirus software](/categories/antivirus/), firewall, anti-phishing, antispyware, and anti-spam among other services.
   
   [Blog](https://blog.avast.com/)  I  [Forum](https://forum.avast.com/)  I  [Documentation](https://www.avast.com/download-documentation)  I  [FAQ](https://support.avast.com/article/Antivirus-FAQ/)
-
-
-
-
 

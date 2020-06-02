@@ -85,7 +85,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       recm: "Supported OS: Windows 10, Windows 8, Windows 7, Vista. For XP use v3.1.2"
 
@@ -118,7 +118,8 @@ source:
   written_in: ["https://github.com/sumatrapdfreader/sumatrapdf"]
   platform:
     - dskp: ["https://www.sumatrapdfreader.org/download-free-pdf-viewer.html"]
-  sysreq: ["https://www.sumatrapdfreader.org/download-free-pdf-viewer.html"]
+  sysreq:
+    general: ["https://www.sumatrapdfreader.org/download-free-pdf-viewer.html"]
   license: ["https://github.com/sumatrapdfreader/sumatrapdf#sumatrapdf-reader", "https://github.com/sumatrapdfreader/sumatrapdf/blob/master/AUTHORS", "https://github.com/sumatrapdfreader/sumatrapdf/blob/master/COPYING.BSD", "https://github.com/sumatrapdfreader/sumatrapdf/blob/master/COPYING"]
   rating:
     - name: "FossHub"
@@ -207,5 +208,4 @@ rating:
   Sumatra is a [document viewer](/categories/document-viewer) for Windows with support for PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR). It is considered to be a lightweight and portable alternative to [Adobe Reader](/software/adobe-acrobat-reader-dc/).
    
   [Forum](https://forum.sumatrapdfreader.org/)  I  [News](https://www.sumatrapdfreader.org/docs/Version-history.html)  I  [Documentation](https://www.sumatrapdfreader.org/docs/SumatraPDF-documentation.html)  I  [Manual](https://www.sumatrapdfreader.org/manual.html)
-
 

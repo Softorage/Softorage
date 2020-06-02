@@ -204,4 +204,3 @@ rating:
   
   [Blog](https://blog.atom.io/)  I  [Forum](https://discuss.atom.io/)  I  [Documentation](https://atom.io/docs)  I  [FAQ](https://atom.io/faq)  I  [IRC](https://webchat.freenode.net/?channels=atom)
 
-

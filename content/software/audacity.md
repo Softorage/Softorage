@@ -74,7 +74,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "512MB to 1GB RAM for Windows | 256MB for linux | 1GB (2GB for OS X 10.7 and later or macOS) RAM for mac"
       recm: "2GB to 4GB RAM for Windows | 1GB for Linux |  2GB (4GB for OS X 10.7 and later or macOS) RAM for mac"
@@ -119,7 +119,8 @@ source:
   written_in: ["https://github.com/audacity/audacity", "https://en.wikipedia.org/w/index.php?title=Audacity_(audio_editor)&oldid=875154652"]
   platform:
     - dskp: ["https://www.audacityteam.org/download/"]
-  sysreq: ["https://www.audacityteam.org/download/windows/", "https://www.audacityteam.org/download/mac/", "https://www.audacityteam.org/download/linux/"]
+  sysreq:
+    general: ["https://www.audacityteam.org/download/windows/", "https://www.audacityteam.org/download/mac/", "https://www.audacityteam.org/download/linux/"]
   license: ["https://www.audacityteam.org/copyright/", "https://www.audacityteam.org/about/license/"]
   rating:
     - name: "TechRadar"
@@ -238,7 +239,3 @@ note: |
   
   [Blog](https://www.audacityteam.org/posts/)  I  [Forum](https://forum.audacityteam.org/)  I  [News](https://www.audacityteam.org/about/news/)  I  [Manual](https://manual.audacityteam.org/)  I  [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page)  I  [Documentation](https://www.audacityteam.org/help/documentation/)  I  [FAQ](https://manual.audacityteam.org/man/faq.html)
   
-
-
-
-

@@ -96,7 +96,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Windows 2000 SP4, Windows XP, Vista or 7"
       recm: ""
@@ -144,7 +144,8 @@ source:
   written_in: ["https://www.scribus.net/contribute/"]
   platform:
     - dskp: ["https://www.scribus.net/downloads/stable-branch/"]
-  sysreq: ["https://wiki.scribus.net/canvas/Official:Windows", "https://wiki.scribus.net/canvas/Official:MacOS_Readme"]
+  sysreq:
+    general: ["https://wiki.scribus.net/canvas/Official:Windows", "https://wiki.scribus.net/canvas/Official:MacOS_Readme"]
   license: ["https://wiki.scribus.net/canvas/Help:About_Scribus_Copyright"]
   rating:
     - name: "TechRadar"
@@ -268,7 +269,3 @@ rating:
   
   [Blog](https://rants.scribus.net/)  I  [Forum](http://forums.scribus.net/)  I  [News](https://www.scribus.net/category/news/)  I  [Wiki](https://wiki.scribus.net/canvas/Scribus)  I  [Video Tutorials](https://wiki.scribus.net/canvas/Scribus_Video_Tutorials)  I  [Get Stated](https://wiki.scribus.net/canvas/Get_Started_with_Scribus)  I  [Docs](https://wiki.scribus.net/canvas/Help:TOC)  I  [Mailing list](http://lists.scribus.net/mailman/listinfo)  I  [FAQ](https://wiki.scribus.net/canvas/Category:FAQ)  I  [IRC](https://webchat.freenode.net/?channels=scribus)
   
-
-
-
-

@@ -98,7 +98,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: ""
       recm: "Windows 7, 8, 10 | macOS 10.9, macOS 10.10, macOS 10.11, macOS 10.12, macOS 10.13 | GNU/Linux"
@@ -164,7 +164,8 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=Firefox&oldid=878328541", "http://www.infoworld.com/article/3165424/web-browsers/mozilla-binds-firefoxs-fate-to-the-rust-language.html"]
   platform:
     - dskp: ["https://www.mozilla.org/en-US/firefox/new/", "https://en.wikipedia.org/w/index.php?title=Firefox&oldid=878328541", "https://svnweb.freebsd.org/ports/head/www/firefox/", "http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/www/mozilla-firefox/", "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/www/firefox/", "https://wiki.openindiana.org/oi/Firefox", "https://pkgsrc.joyent.com/install-on-illumos/", "https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox", "https://ftp.mozilla.org/pub/firefox/releases/52.0esr/contrib/solaris_pkgadd/README.txt"]
-  sysreq: ["https://www.mozilla.org/en-US/firefox/62.0/system-requirements/"]
+  sysreq:
+    general: ["https://www.mozilla.org/en-US/firefox/62.0/system-requirements/"]
   license: ["https://www.mozilla.org/foundation/licensing.html", "https://www.mozilla.org/en-US/about/legal/eula/"]
   rating:
     - name: "G2CROWD"
@@ -276,8 +277,4 @@ note: |
   
   [Blog](https://blog.mozilla.org/)  I  [Forum](https://support.mozilla.org/en-US/questions)  I  [News/Announcements](https://blog.mozilla.org/press/)  I  [Wiki](https://wiki.mozilla.org/Firefox)  I  [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding)  I  [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
   
-
-
-
-
 

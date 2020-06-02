@@ -127,4 +127,3 @@ rating:
   WebTorrent is a peer-to-peer (P2P) streaming [torrent client](/categories/bittorrent-client/) written in JavaScript by Feross Aboukhadijeh. WebTorrent uses the same protocol as BitTorrent but uses a different transport. WebTorrent primarily relies on WebRTC connections, while BitTorrent uses TCP connections and UDP datagrams directly.
   
   [Dev Documentation](https://webtorrent.io/docs)  I  [FAQ](https://webtorrent.io/faq)  I  [IRC](https://webchat.freenode.net/?channels=webtorrent)
-

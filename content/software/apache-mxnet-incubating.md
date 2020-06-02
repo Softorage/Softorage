@@ -78,7 +78,3 @@ source:
   
   [API](https://mxnet.apache.org/api/)  I  [Examples](https://github.com/apache/incubator-mxnet/tree/master/example)  I  [Tutorials](https://mxnet.apache.org/versions/master/tutorials/index.html)  I  [FAQ](https://mxnet.apache.org/versions/master/faq/index.html)  I  [Wiki](https://cwiki.apache.org/confluence/display/MXNET/Apache+MXNet+Home)  I  [Forum](https://discuss.mxnet.io/)  I  [Blog](https://blogs.apache.org/mxnet/)  I  [News/Changelog](https://github.com/apache/incubator-mxnet/blob/master/NEWS.md)  I  [User Mailing list](https://lists.apache.org/list.html?user@mxnet.apache.org)  I  [Developer Mailing list](https://lists.apache.org/list.html?dev@mxnet.apache.org)
 
-
-
-
-

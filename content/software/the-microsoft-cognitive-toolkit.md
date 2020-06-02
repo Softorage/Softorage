@@ -14,7 +14,7 @@ get_it:
     url: "https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine"
 
 sysreq:
-  General:
+  general:
     -
       recm: "OS: Windows 8.1 Pro (64 bit), Windows 10 (64 bit), Windows Server 2012 R2 Standard and later I Ubuntu 16.04 LTS (64 bit)"
     -
@@ -78,7 +78,8 @@ source:
   platform:
     - dskp: ["https://docs.microsoft.com/en-us/cognitive-toolkit/", "https://docs.microsoft.com/en-us/cognitive-toolkit/Setup-CNTK-on-your-machine"]
     - else: ["https://www.microsoft.com/en-us/cognitive-toolkit/#features"]
-  sysreq: ["https://docs.microsoft.com/en-us/cognitive-toolkit/test-configurations"]
+  sysreq:
+    general: ["https://docs.microsoft.com/en-us/cognitive-toolkit/test-configurations"]
   license: ["https://github.com/Microsoft/CNTK/blob/master/LICENSE.md"]
   rating:
     - name: "Capterra"
@@ -106,8 +107,4 @@ note: |
   The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through [deep learning](/categories/deep-learning) by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
   
   [News](https://docs.microsoft.com/en-us/cognitive-toolkit/news)  I  [Documentation](https://docs.microsoft.com/en-us/cognitive-toolkit/)  I  [FAQ](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-FAQ)  I  [Blog](https://www.microsoft.com/en-us/cognitive-toolkit/blog/)
-
-
-
-
 

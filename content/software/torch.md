@@ -14,7 +14,7 @@ get_it:
     url: "http://torch.ch/docs/getting-started.html#_"
 
 sysreq:
-  General:
+  general:
     -
       recm: "NVIDIA® CUDA® 7.5 or newer (For Pascal GPUs, CUDA 8.0 or newer)"
     -
@@ -60,7 +60,8 @@ source:
   platform:
     - dskp: ["http://torch.ch/docs/getting-started.html#_"]
     - else: ["http://torch.ch/#what-is-torch"]
-  sysreq: ["https://www.nvidia.com/en-gb/data-center/gpu-accelerated-applications/torch/"]
+  sysreq:
+    general: ["https://www.nvidia.com/en-gb/data-center/gpu-accelerated-applications/torch/"]
   license: ["https://github.com/torch/torch7/blob/master/COPYRIGHT.txt"]
   status: ["https://github.com/torch/torch7#development-status"]
 
@@ -74,8 +75,4 @@ note: |
   
   [Documentation](http://torch.ch/docs/getting-started.html#_)  I  [Wiki](https://github.com/torch/torch7/wiki/Cheatsheet)  I  [Mailing list](https://groups.google.com/forum/embed/?place=forum%2Ftorch7#!forum/torch7)  I  [Gitter chat](https://gitter.im/torch/torch7)
   
-
-
-
-
 

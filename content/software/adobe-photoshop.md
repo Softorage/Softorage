@@ -141,7 +141,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Processor: Windows - Intel® or AMD processor with 64-bit support; 2 GHz or faster processor | macOS - Multicore Intel processor with 64-bit support"
       recm: ""
@@ -193,7 +193,8 @@ source:
   initial_release: ["https://www.businessinsider.com/heres-what-adobe-photoshop-looked-like-25-years-ago-today-2015-2?IR=T", "https://dayintechhistory.com/dith/february-19-1990-adobe-photoshop-1-0-released/"]
   platform:
     - dskp: ["https://helpx.adobe.com/photoshop/system-requirements.html"]
-  sysreq: ["https://helpx.adobe.com/photoshop/system-requirements.html"]
+  sysreq:
+    general: ["https://helpx.adobe.com/photoshop/system-requirements.html"]
   license: ["https://en.wikipedia.org/w/index.php?title=Adobe_Photoshop&oldid=931997660", "https://www.adobe.com/legal/terms.html", "https://www.adobe.com/legal/licenses-terms.html"]
   rating:
     - name: "CNET"
@@ -357,8 +358,4 @@ rating:
   Photoshop's naming scheme was initially based on version numbers. However, in October 2002 (following the introduction of Creative Suite branding), each new version of Photoshop was designated with "CS" plus a number; e.g., the eighth major version of Photoshop was Photoshop CS and the ninth was Photoshop CS2. Photoshop CS3 through CS6 were also distributed in two different editions: Standard and Extended. With the introduction of the Creative Cloud branding in June 2013 (and in turn, the change of the "CS" suffix to "CC"), Photoshop's licensing scheme was changed to that of software as a service rental model.
   
   [Blog](https://theblog.adobe.com/creative-cloud/photoshop/)  I  [Forum](https://community.adobe.com/t5/photoshop/bd-p/photoshop)  I  [User Guide](https://helpx.adobe.com/in/photoshop/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/photoshop/faq.html)
-
-
-
-
 

@@ -112,7 +112,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Windows: Windows 7 or later | macOS: OS X El Capitan 10.11 or later | Linux: 64-bit Ubuntu 16.04 or later"
     -
@@ -169,7 +169,8 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=Opera_(web_browser)&oldid=934545821"]
   platform:
     - dskp: ["https://www.opera.com/hi/download"]
-  sysreq: ["https://www.opera.com/hi/download/requirements"]
+  sysreq:
+    general: ["https://www.opera.com/hi/download/requirements"]
   license: ["https://www.opera.com/hi/eula/computers", "https://www.opera.com/hi/eula/mobile", "https://en.wikipedia.org/w/index.php?title=Opera_(web_browser)&oldid=934545821"]
   rating:
     - name: "FileHippo"
@@ -321,8 +322,4 @@ rating:
         
   [Blog/News](https://blogs.opera.com/news/)  I  [Blog Desktop](https://blogs.opera.com/desktop/)  I  [Blog Mobile](https://blogs.opera.com/mobile/)  I  [Blog Security](https://blogs.opera.com/security/)  I  [Forum](https://forums.opera.com/)  I  [Help](https://help.opera.com/en/get-started/)  I  [FAQ](https://help.opera.com/en/faq/)
   
-
-
-
-
 

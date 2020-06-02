@@ -14,7 +14,7 @@ get_it:
     url: "https://scikit-learn.org/stable/install.html"
 
 sysreq:
-  General:
+  general:
     -
       min: "Python (>= 2.7 or >= 3.4), NumPy (>= 1.8.2), SciPy (>= 0.13.3)."
 
@@ -58,7 +58,8 @@ source:
   platform:
     - dskp: ["https://scikit-learn.org/stable/install.html"]
     - else: ["https://scikit-learn.org/"]
-  sysreq: ["https://scikit-learn.org/stable/install.html"]
+  sysreq:
+    general: ["https://scikit-learn.org/stable/install.html"]
   license: ["https://github.com/scikit-learn/scikit-learn/blob/master/COPYING"]
   rating:
     - name: "InfoWorld"
@@ -91,8 +92,4 @@ note: |
   * Preprocessing : Feature extraction and normalization
   
   [Documentation](https://scikit-learn.org/stable/documentation.html)  I  [Wiki](https://github.com/scikit-learn/scikit-learn/wiki)  I  [Mailing list](https://mail.python.org/mailman/listinfo/scikit-learn)  I  [Stack Overflow](https://stackoverflow.com/questions/tagged/scikit-learn)  I  [FAQ](https://scikit-learn.org/stable/faq.html)  I  [IRC](https://webchat.freenode.net/?channels=scikit-learn)
-
-
-
-
 

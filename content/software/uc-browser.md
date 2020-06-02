@@ -116,7 +116,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Operating System: Windows XP/ Windows Vista/ Windows 7/ Windows 8.1 / Windows 10"
     -
@@ -167,7 +167,8 @@ source:
   developer: ["https://en.wikipedia.org/w/index.php?title=UC_Browser&oldid=934704383", "https://m.ucweb.com/English/UCMobileCompany/terms.html"]
   platform:
     - dskp: ["http://www.ucweb.com/ucbrowser/download/"]
-  sysreq: ["https://softlay.net/browser-plugin/download-uc-browser.html"]
+  sysreq:
+    general: ["https://softlay.net/browser-plugin/download-uc-browser.html"]
   license: ["https://m.ucweb.com/English/UCMobileCompany/terms.html"]
   rating:
     - name: "FileHorse"
@@ -318,8 +319,4 @@ rating:
   
   [News](http://www.ucweb.com/press/)  I  [FAQ](http://www.ucweb.com/ucbrowser/help/)
   
-
-
-
-
 

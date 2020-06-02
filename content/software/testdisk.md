@@ -193,4 +193,3 @@ rating:
   TestDisk is an open source [data recovery](/categories/data-recovery/) [utility](/categories/utility/) that runs exclusively from the command-line interface and allows users to check and undelete partitions from a given disk drive. It is primarily designed to help recover lost data storage partitions and/or make non-booting disks bootable again; when these symptoms are caused by faulty software, certain types of viruses or human error (such as accidentally erasing a partition table). It can also be used to collect detailed information about a corrupted drive.
   
   [Forum](https://forum.cgsecurity.org/phpBB3/)  I  [Documentation](https://www.cgsecurity.org/wiki/TestDisk#Documentation)  I  [FAQ](https://www.cgsecurity.org/wiki/TestDisk_FAQ)
-

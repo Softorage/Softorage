@@ -62,7 +62,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "A PC running Windows 10, 8.1, 8 or 7"
 
@@ -89,7 +89,8 @@ source:
   written_in: ["https://www.openhub.net/p/chrome/analyses/latest/languages_summary#analyses_language_table"]
   platform:
     - dskp: ["https://www.avast.com/secure-browser#requirements"]
-  sysreq: ["https://www.avast.com/secure-browser#requirements"]
+  sysreq:
+    general: ["https://www.avast.com/secure-browser#requirements"]
   license: ["https://en.wikipedia.org/w/index.php?title=Avast_Secure_Browser&oldid=936662567", "https://www.avast.com/eula"]
   rating:
     - name: "Softonic"
@@ -141,7 +142,3 @@ rating:
   It has features such as Ad Block, Bank mode, Passwords, Video downloader, Anti-tracking & Anti-fingerprinting, Anti-fishing, etc.
   
   [Blog](https://blog.avast.com/topic/browser)  I  [Forum](https://forum.avast.com/index.php?board=78.0)  I  [FAQ](https://support.avast.com/en-in/article/Secure-Browser-FAQ)
-
-
-
-

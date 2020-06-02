@@ -58,7 +58,3 @@ source:
   
   [Documentation](https://www.tug.org/texlive/doc.html)  I  [Mailing lists](https://www.tug.org/texlive/lists.html)
 
-
-
-
-

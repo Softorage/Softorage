@@ -14,7 +14,7 @@ get_it:
     url: "https://mahout.apache.org/general/downloads"
 
 sysreq:
-  General:
+  general:
     -
       min: "Java 1.6.x"
     -
@@ -60,7 +60,8 @@ source:
   platform:
     - dskp: ["https://mahout.apache.org/general/downloads#environment", "https://github.com/apache/mahout#setting-up-your-environment"]
     - else: ["https://mahout.apache.org/"]
-  sysreq: ["https://mahout.apache.org/users/basics/system-requirements.html"]
+  sysreq:
+    general: ["https://mahout.apache.org/users/basics/system-requirements.html"]
   license: ["https://github.com/apache/mahout/blob/master/LICENSE.txt"]
   rating:
     - name: "G2CROWD"
@@ -85,8 +86,4 @@ note: |
   
   [Documentation](https://mahout.apache.org/docs/latest/index.html)  I  [Mailing Lists/IRC](https://mahout.apache.org/general/mailing-lists)  I  [FAQ](https://mahout.apache.org/general/faq.html)  I  [Wiki](https://mahout.apache.org/general/mahout-wiki.html)
   
-
-
-
-
 

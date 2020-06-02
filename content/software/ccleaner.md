@@ -104,7 +104,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "There are no minimum memory or hard drive requirements"
       recm: "For Windows NT4, ME and 98, we recommend CCleaner Version 2.  For 2000 we recommend Version 3."
@@ -151,7 +151,8 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=CCleaner&oldid=927894092", "https://forum.piriform.com/topic/28189-what-language-is-ccleander-written-in/?do=findComment&comment=169099"]
   platform:
     - dskp: ["https://www.ccleaner.com/ccleaner/download?pc", "https://www.ccleaner.com/ccleaner/download?mac", "https://en.wikipedia.org/w/index.php?title=CCleaner&oldid=927894092"]
-  sysreq: ["https://www.ccleaner.com/docs/ccleaner/introducing-ccleaner/system-requirements"]
+  sysreq:
+    general: ["https://www.ccleaner.com/docs/ccleaner/introducing-ccleaner/system-requirements"]
   license: ["https://www.ccleaner.com/ccleaner/download", "https://en.wikipedia.org/w/index.php?title=CCleaner&oldid=927894092"]
   rating:
     - name: "FileHippo"
@@ -286,7 +287,3 @@ rating:
   
   [Blog](https://www.ccleaner.com/news/blog)  I  [Community Forum](https://forum.piriform.com/)  I  [Press Releases](https://www.ccleaner.com/about/press-releases)  I  [Documentation](https://www.ccleaner.com/docs/ccleaner)  I  [FAQ](https://www.ccleaner.com/ccleaner/faq)
   
-
-
-
-

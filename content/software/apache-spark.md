@@ -14,7 +14,7 @@ get_it:
     url: "https://spark.apache.org/downloads.html"
 
 sysreq:
-  General:
+  general:
     -
       min: "Hard Disk: 4-8 disks per node"
     -
@@ -70,7 +70,8 @@ source:
   platform:
     - dskp: ["https://spark.apache.org/docs/latest/"]
     - else: ["https://jaceklaskowski.gitbooks.io/mastering-apache-spark/spark-overview.html"]
-  sysreq: ["https://spark.apache.org/docs/2.4.0/hardware-provisioning.html"]
+  sysreq:
+    general: ["https://spark.apache.org/docs/2.4.0/hardware-provisioning.html"]
   license: ["https://github.com/apache/spark/blob/master/LICENSE"]
   rating:
     - name: "TrustRadius"
@@ -108,8 +109,4 @@ rating:
   4. [**GraphX**](https://spark.apache.org/graphx/) is Apache Spark's API for graphs and graph-parallel computation.
   
   [News](https://spark.apache.org/news/)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/apache-spark)  I  [Community/Mailing Lists](https://spark.apache.org/community.html)  I  [Documentation](https://spark.apache.org/documentation.html)  I  [FAQ](https://spark.apache.org/faq.html)  I  [IRC](https://webchat.freenode.net/?channels=apache-spark)
-
-
-
-
 

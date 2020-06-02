@@ -73,7 +73,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "1 GHz CPU"
     -
@@ -122,7 +122,8 @@ source:
   written_in: ["https://lmms.io/get-involved/", "https://github.com/LMMS/lmms"]
   platform:
     - dskp: ["https://lmms.io/download/"]
-  sysreq: ["https://lmms.io/documentation/Requirements"]
+  sysreq:
+    general: ["https://lmms.io/documentation/Requirements"]
   license: ["https://github.com/LMMS/lmms/blob/stable-1.2/LICENSE.txt"]
   rating:
     - name: "Gizmo's Freeware"
@@ -187,8 +188,4 @@ rating:
   
   [Forum](https://lmms.io/forum/)  I  [Wiki](https://lmms.io/wiki/index.php?title=Main_Page)  I  [Developer Wiki](https://github.com/LMMS/lmms/wiki)  I  [Documentation(wiki)](https://lmms.io/documentation/)  I  [User FAQ](https://lmms.io/documentation/User_FAQ)  I  [Mailing lists](https://sourceforge.net/p/lmms/mailman/)  I  [IRC](https://webchat.freenode.net/?channels=lmms)  I  [Discord](https://lmms.io/chat/)
   
-
-
-
-
 

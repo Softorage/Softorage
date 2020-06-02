@@ -45,7 +45,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Windows 7 | MacOS X Sierra | Linux Ubuntu 16.04"
     -
@@ -85,7 +85,8 @@ source:
   written_in: ["https://github.com/dgud/wings"]
   platform:
     - dskp: ["http://www.wings3d.com/?page_id=84"]
-  sysreq: ["http://www.wings3d.com/?page_id=84"]
+  sysreq:
+    general: ["http://www.wings3d.com/?page_id=84"]
   license: ["https://github.com/dgud/wings/blob/master/license.terms", "https://en.wikipedia.org/w/index.php?title=Wings_3D&oldid=875117731"]
   rating:
     - name: "SourceForge"
@@ -162,7 +163,3 @@ note: |
   
   [Forum](http://www.wings3d.com/forum/)  I  [Documentation](http://www.wings3d.com/?page_id=87)  I  [News](http://www.wings3d.com/?page_id=76)  I  [User Manual](http://www.wings3d.com/?page_id=252)  I  [FAQ](http://www.wings3d.com/forum/archive/index.php?thread-1106.html)
   
-
-
-
-

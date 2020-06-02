@@ -94,7 +94,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Microsoft Windows 7 SP1, Windows 8, Windows Server 2012, or Windows 10 | Linux kernel version 2.6.18, glibc2 version 2.5, gtk version 2.10.4 | macOS 10.9 (Mavericks) or higher"
       recm: ""
@@ -156,7 +156,8 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=LibreOffice&oldid=877694401", "https://wiki.documentfoundation.org/ReleaseNotes/4.0"]
   platform:
     - dskp: ["https://www.libreoffice.org/download/download/"]
-  sysreq: ["https://www.libreoffice.org/get-help/system-requirements/"]
+  sysreq:
+    general: ["https://www.libreoffice.org/get-help/system-requirements/"]
   license: ["https://www.libreoffice.org/about-us/licenses/"]
   rating:
     - name: "TechRadar"
@@ -280,7 +281,3 @@ note: |
    
    [Blog](https://blog.documentfoundation.org/)  I  [Forum](https://ask.libreoffice.org/en/questions/)  I  [Wiki](https://wiki.documentfoundation.org/Main_Page)  I  [Documentation](https://wiki.documentfoundation.org/Documentation/Publications)  I  [IRC](https://irc.documentfoundation.org/)  I  [Planet](https://planet.documentfoundation.org/)  I  [Mailing lists](https://www.libreoffice.org/get-help/mailing-lists/)  I  [FAQ](https://www.libreoffice.org/get-help/frequently-asked-questions/)
   
-
-
-
-

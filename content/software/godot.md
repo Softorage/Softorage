@@ -34,7 +34,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "OpenGL ES 3.0 compatible hardware"
     -
@@ -84,7 +84,8 @@ source:
   written_in: ["https://github.com/godotengine/godot"]
   platform:
     - dskp: ["https://godotengine.org/download"]
-  sysreq: ["https://godotengine.org/download/"]
+  sysreq:
+    general: ["https://godotengine.org/download/"]
   license: ["https://godotengine.org/license", "https://github.com/godotengine/godot/blob/master/LICENSE.txt"]
   rating:
     - name: "Steam"
@@ -117,7 +118,3 @@ rating:
   
   [Documentation](https://docs.godotengine.org/)  I  [News](https://godotengine.org/news)  I  [Question/Answers](https://godotengine.org/qa/)  I  [IRC](http://webchat.freenode.net/?channels=#godotengine)  I  [Developer Forum](https://godotforums.org/)  I  [FAQ](http://docs.godotengine.org/en/3.0/about/faq.html)
   
-
-
-
-

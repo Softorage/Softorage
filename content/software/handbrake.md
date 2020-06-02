@@ -123,7 +123,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       recm: "Visit https://handbrake.fr/docs/en/1.0.0/technical/system-requirements.html"
 
@@ -305,4 +305,3 @@ rating:
   HandBrake is a free and open-source [video transcoder](/categories/video-transcoder/) to convert video from one format to another, and to rip CD/DVD to popular video formats. It transcodes video and audio from nearly any format to a handful of modern ones, but it does not defeat or circumvent copy protection. Its developers removed libdvdcss (the open-source library responsible for unscrambling DVDs encrypted with the Content Scramble System (CSS)) from the application in version 0.9.2.
   
   [News](https://handbrake.fr/news.php)  I  [Forum](https://forum.handbrake.fr/)  I  [Documentation](https://handbrake.fr/docs)  I  [IRC](https://webchat.freenode.net/?channels=handbrake)
-

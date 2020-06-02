@@ -40,7 +40,3 @@ source:
   
   [FAQ](https://www.tug.org/mactex/faq/)  I  [About](https://www.tug.org/mactex/aboutmactex.html)
 
-
-
-
-

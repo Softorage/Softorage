@@ -80,7 +80,3 @@ rating:
   
   [Documentation](http://www.opennn.net/documentation/)
 
-
-
-
-

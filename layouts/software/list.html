@@ -177,9 +177,18 @@ var a = [1,2,3];
 var b = [5,4,3];
 a.extend(b);
 */
+
+
 var softwareListOptions = {
   valueNames: ["name", "description", "category"]
 };
+
+/*
+Created a new List object
+Where,
+  * software-list is id of the element where search is to be performed
+  * softwareListOptions is a custom object with key 'valueNames', values of which are class-names. These class-names are given to elements, HTML-content of which shall be considered for search operation.
+*/
 var softwareList = new List("software-list", softwareListOptions);
 
 /* a prior failed implementation; will keep for some time
@@ -207,7 +216,7 @@ if (window.matchMedia('(min-width: 650px)').matches) {
 } else {
   searchBarByUserDevice = "#search_page_main_search_mob";
 
-  /* When the user scrolls down, hide the div. When the user scrolls up, show the navbar 
+  /* When the user scrolls down, hide the div. When the user scrolls up, show the navbar */
   /* problem: navbar doesnt shrink when div is hidden
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {

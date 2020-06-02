@@ -12,7 +12,7 @@ get_it:
     url: "http://caffe.berkeleyvision.org/installation.html"
 
 sysreq:
-  General:
+  general:
     -
       min: "CUDA v5.5, and 5.0 (considered legacy)"
       recm: "CUDA v6.*"
@@ -66,7 +66,8 @@ source:
   platform:
     - dskp: ["http://caffe.berkeleyvision.org/installation.html#installation"]
     - else: ["http://caffe.berkeleyvision.org/installation.html#python", "http://caffe.berkeleyvision.org/installation.html#matlab"]
-  sysreq: ["http://caffe.berkeleyvision.org/installation.html#prerequisites"]
+  sysreq:
+    general: ["http://caffe.berkeleyvision.org/installation.html#prerequisites"]
   license: ["https://github.com/BVLC/caffe/blob/master/LICENSE"]
   rating:
     - name: "InfoWorld"
@@ -87,8 +88,4 @@ rating:
   > Caffe can process over 60M images per day with a single NVIDIA K40 GPU*. That’s 1 ms/image for inference and 4 ms/image for learning and more recent library versions and hardware are faster still. \- [Official website](http://caffe.berkeleyvision.org/#why-caffe)
   
   [Documentation](http://caffe.berkeleyvision.org/#Documentation)  I  [Mailing list - Users](https://groups.google.com/forum/#!forum/caffe-users)
-
-
-
-
 

@@ -137,7 +137,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       recm: "Windows: Windows 7, Windows 8, Windows 8.1, Windows 10 or later | macOS: OS X Yosemite 10.10 or later | Linux: 64-bit Ubuntu 16.04+, Mint 17+, Debian 9+, openSUSE 15+, Fedora Linux 28+, or CentOS/RHEL 8+"
     -
@@ -195,7 +195,8 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=Brave_(web_browser)&oldid=935081446", "https://github.com/brave/brave-browser"]
   platform:
     - dskp: ["https://brave.com/download/", "https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux"]
-  sysreq: ["https://support.brave.com/hc/en-us/articles/360021357112-What-are-the-system-requirements-to-install-Brave-"]
+  sysreq:
+    general: ["https://support.brave.com/hc/en-us/articles/360021357112-What-are-the-system-requirements-to-install-Brave-"]
   license: ["https://github.com/brave/brave-browser/blob/master/LICENSE"]
   rating:
     - name: "FossHub"
@@ -332,6 +333,5 @@ rating:
   
   [Blog](https://brave.com/blog/)  I  [Community Forum](https://community.brave.com/)  I  [Developers' Wiki](https://github.com/brave/brave-browser/wiki)  I  [FAQ](https://brave.com/faq/)  I  [Brave Creators FAQ](https://support.brave.com/hc/en-us/articles/360025397851-Frequently-Asked-Questions)  I  [Brave Rewards FAQ](https://support.brave.com/hc/en-us/articles/360027276731-Brave-Rewards-FAQ)  I  [Brave Ads FAQ](https://support.brave.com/hc/en-us/articles/360026361072-Brave-Ads-FAQ)
   
-
 
 

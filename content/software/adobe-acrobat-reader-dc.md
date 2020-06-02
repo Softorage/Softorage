@@ -93,7 +93,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Processor: Windows - 1.5GHz or faster processor | macOS - Intel processor"
     -
@@ -141,7 +141,8 @@ source:
   platform:
     - dskp: ["https://get.adobe.com/reader/otherversions/", "https://helpx.adobe.com/reader/system-requirements.html"]
     - smptb: ["https://get.adobe.com/reader/otherversions/", "https://helpx.adobe.com/reader/system-requirements.html"]
-  sysreq: ["https://helpx.adobe.com/reader/system-requirements.html"]
+  sysreq:
+    general: ["https://helpx.adobe.com/reader/system-requirements.html"]
   license: ["https://www.adobe.com/content/dam/cc/en/legal/licenses-terms/pdf/Reader-EULA-en_US-20181207.pdf", "https://www.adobe.com/legal/licenses-terms.html"]
   rating:
     - name: "FileHorse"
@@ -263,7 +264,3 @@ rating:
   Acrobat Reader DC, has a set of premium features, which are activated on a purchase of subscription to Adobe Acrobat PDF Pack, Adobe Acrobat Export PDF, or Adobe Sign.
   
   [News](https://helpx.adobe.com/reader/whats-new.html)  I  [Forum](https://community.adobe.com/t5/acrobat-reader/bd-p/acrobat-reader)  I  [FAQ](https://helpx.adobe.com/reader/faq.html)
-
-
-
-

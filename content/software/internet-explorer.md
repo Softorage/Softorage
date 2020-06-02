@@ -69,7 +69,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Computer/processor: 1 gigahertz (GHz) 32-bit (x86) or 64-bit (x64)"
     -
@@ -116,7 +116,8 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=Internet_Explorer&action=info", "https://en.wikipedia.org/w/index.php?title=Trident_(software)&oldid=915043098", "https://github.com/Microsoft/ChakraCore"]
   platform:
     - dskp: ["https://news.microsoft.com/2000/05/15/microsoft-unveils-internet-explorer-for-mac-os-x/", "https://support.microsoft.com/en-in/help/17621/internet-explorer-downloads", "https://www.webdevelopersnotes.com/internet-explorer-for-mac-released"]
-  sysreq: ["https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/system-requirements-and-language-support-for-ie11", "https://support.microsoft.com/en-us/help/11531/internet-explorer-system-requirements"]
+  sysreq:
+    general: ["https://docs.microsoft.com/en-us/internet-explorer/ie11-deploy-guide/system-requirements-and-language-support-for-ie11", "https://support.microsoft.com/en-us/help/11531/internet-explorer-system-requirements"]
   license: ["https://en.wikipedia.org/w/index.php?title=Internet_Explorer&oldid=936042677"]
   rating:
     - name: "FileHorse"
@@ -247,8 +248,4 @@ rating:
   On March 17, 2015, Microsoft announced that [Microsoft Edge](/software/microsoft-edge/) would replace Internet Explorer as the default browser on its Windows 10 devices.
   
   [Forum](https://social.technet.microsoft.com/Forums/ie/)  I  [Documentation](https://docs.microsoft.com/en-us/internet-explorer/)  I  [Lifecycle FAQ](https://support.microsoft.com/en-in/help/17454/lifecycle-faq-internet-explorer)  I  [FAQ for IT Pros](https://docs.microsoft.com/en-us/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
-
-
-
-
 

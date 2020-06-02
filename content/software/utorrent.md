@@ -80,7 +80,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "No specific requirements"
 
@@ -126,7 +126,8 @@ source:
   written_in: ["https://www.mentofacturing.com/Vincent/implementations.html"]
   platform:
     - dskp: ["https://www.utorrent.com/downloads/linux", "https://www.utorrent.com/downloads/win", "https://www.utorrent.com/downloads/mac"]
-  sysreq: ["http://help.utorrent.com/customer/portal/articles/164783"]
+  sysreq:
+    general: ["http://help.utorrent.com/customer/portal/articles/164783"]
   license: ["https://en.wikipedia.org/w/index.php?title=%CE%9CTorrent&oldid=919655337", "https://www.bittorrent.com/legal/terms-of-use", "https://www.bittorrent.com/legal/eula"]
   rating:
     - name: "FileHippo"
@@ -234,7 +235,3 @@ rating:
   
   [Blog](http://blog.utorrent.com/)  I  [Forum](https://forum.utorrent.com/)  I  [Help](http://help.utorrent.com/)  I  [documentation.HELP!](https://documentation.help/uTorrent/)  I  [FAQ](http://help.utorrent.com/customer/portal/topics/822087/articles)
   
-
-
-
-

@@ -76,7 +76,3 @@ note: |
   [Documentation](https://matplotlib.org/#documentation)  I  [Users' Guide](https://matplotlib.org/users/)  I  [API docs](https://matplotlib.org/api/)  I  [FAQ](https://matplotlib.org/faq/)  I  [Wiki](https://github.com/matplotlib/matplotlib/wiki)  I  [Gitter chat](https://gitter.im/matplotlib/matplotlib)  I  [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/matplotlib)  I  Mailing list: [Users](https://mail.python.org/mailman/listinfo/matplotlib-users), [Developers](https://mail.python.org/mailman/listinfo/matplotlib-devel), [Announcements](https://mail.python.org/mailman/listinfo/matplotlib-announce)
   
 
-
-
-
-

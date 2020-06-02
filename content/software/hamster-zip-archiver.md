@@ -93,4 +93,3 @@ rating:
     rate: [3.5, 5]
 ---
   Hamster Zip Archiver is a free [file archiver](/categories/file-archiver/) for Windows developed by Hamstersoft, with focus on simplicity and looks. It supports zip, 7z, arj, bz2, tbz, gzip, deb, dmg, img, gz, tgz, hfs, lzh, rmp, pkg, z, taz, cab, iso, rar, tar, wim, swm, jar, along with some other formats.
-

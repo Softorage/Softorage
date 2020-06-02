@@ -257,7 +257,3 @@ note: |
   
   [Questions for Inkscape](https://answers.launchpad.net/inkscape/)  I  [News](https://inkscape.org/news/)  I  [Community Forum](https://inkscape.org/forums/)  I  [Wiki](http://wiki.inkscape.org/wiki/index.php/Inkscape)  I  [IRC](irc://irc.freenode.org/#inkscape)  I  [Mailing lists](https://inkscape.org/community/mailing-lists/)  I  [FAQ](https://inkscape.org/learn/faq/)
   
-
-
-
-

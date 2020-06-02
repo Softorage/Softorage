@@ -600,8 +600,11 @@
               <span class="float-right">
                 {{- if .Params.source.sysreq -}}
                   <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
-                    {{- range $index, $element := .Params.source.sysreq -}}
-                      {{ add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
+                    {{- range $nav_name, $nav_element := .Params.source.sysreq }}
+                      <span class='small font-weight-bold'>{{ upper $nav_name }}</span> :<br>
+                      {{- range $index, $src_element := $nav_element -}}
+                        {{ add $index 1 }} {{ if reflect.IsSlice $src_element }}<a href='{{ index $src_element 0 }}'>{{ index $src_element 1 }}</a>{{ else }}<a href='{{ $src_element }}'>{{ $src_element }}</a>{{ end }}<br>
+                      {{- end }}
                     {{- end -}}
                   "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                 {{- end -}}
@@ -612,8 +615,8 @@
           <div class="card-text mt-3">
             {{ if .Params.sysreq }}
           
-              <!-- declare variable $tabNames as an empty array (slice), to store names of navs -->
-              {{ $tabNames := slice }}
+              <!-- declare variable $navNames as an empty array (slice), to store names of navs -->
+              {{ $navNames := slice }}
               <!-- $arrayItemNumberSysReq stores number of current nav (less 1; array style) -->
               {{ $arrayItemNumberSysReq := 0 }}
               <!-- $arrayItemNumberSysReqMaxCount stores total number of navs (less 1) -->
@@ -621,12 +624,12 @@
               
               <!-- range through map .Params.sysreq; $name is key, $element is value -->
               {{- range $name, $element := .Params.sysreq -}}
-                {{ $tabNames = $tabNames | append $name }}
+                {{ $navNames = $navNames | append $name }} <!-- store all navs names in $navNames array (slice) -->
               {{ end }}
               
               <ul class="nav nav-tabs rounded-lg shadow-sm" id="download-tab" role="tablist">
               
-                {{ range $i, $e := $tabNames }}
+                {{ range $i, $e := $navNames }}
                 
                   <li class="nav-item">
                     <a class="nav-link{{ if not $i }} active{{ end }} text-clr2 small font-weight-bold" id="sysreq-{{$e}}-tab" data-toggle="tab" href="#sysreq-tab-{{$e}}" role="tab" aria-controls="sysreq-tab-{{$e}}"{{ if not $i }} aria-selected="true"{{ end }}>{{ $e | upper }}</a>

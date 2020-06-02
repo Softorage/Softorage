@@ -62,7 +62,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Windows 7 or later"
 
@@ -95,7 +95,8 @@ source:
   written_in: ["https://github.com/pbatard/rufus"]
   platform:
     - dskp: ["https://rufus.ie/"]
-  sysreq: ["https://rufus.ie/"]
+  sysreq:
+    general: ["https://rufus.ie/"]
   license: ["https://github.com/pbatard/rufus/blob/master/LICENSE.txt"]
   rating:
     - name: "FossHub"
@@ -170,8 +171,4 @@ rating:
   Rufus supports a variety of bootable .iso files, including various Linux distributions and Windows installation .iso files, as well as raw disk image files (including compressed ones). If needed, it can install a bootloader such as SYSLINUX or GRUB onto the flash drive to render it bootable. It also allows the installation of MS-DOS or FreeDOS onto a flash drive as well as the creation of Windows To Go bootable media. It supports formatting flash drives as FAT, FAT32, NTFS, exFAT, UDF or ReFS filesystems. Rufus can compute the MD5, SHA-1 and SHA-256 hashes of the currently selected image.
   
   [FAQ](https://github.com/pbatard/rufus/wiki/FAQ) 
-
-
-
-
 

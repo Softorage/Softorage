@@ -62,7 +62,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Windows XP/Vista/7/8/8.1/10"
     -
@@ -92,7 +92,8 @@ source:
   developer: ["https://www.iobit.com/en/driver-booster.php"]
   platform:
     - dskp: ["https://www.iobit.com/en/driver-booster.php", "https://www.iobit.com/product-manuals/db-help/#System-Requirements"]
-  sysreq: ["https://www.iobit.com/product-manuals/db-help/#System-Requirements"]
+  sysreq:
+    general: ["https://www.iobit.com/product-manuals/db-help/#System-Requirements"]
   license: ["https://www.iobit.com/en/driver-booster.php"]
   rating:
     - name: "Softpedia"
@@ -180,6 +181,5 @@ rating:
   It is known for 'Game Mode' setting, which optimizes drivers to improve their performance in games so as to enhance the gaming experience.
   
   [News](https://forums.iobit.com/forum/general-forums/news-offers)  I  [Forum](https://forums.iobit.com/)  I  [User Manual](https://www.iobit.com/product-manuals/db-help/)  I  [FAQ](https://www.iobit.com/en/allfaq.php#p109)
-
 
 

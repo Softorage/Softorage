@@ -47,7 +47,3 @@ note: |
   
   [News](https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/NEWS)  I  [TUG page](http://www.tug.org/xetex/)  I  [Mailing list](http://www.tug.org/mailman/listinfo/xetex)
 
-
-
-
-

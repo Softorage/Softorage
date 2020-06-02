@@ -76,7 +76,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "128 MB RAM"
     -
@@ -122,7 +122,8 @@ source:
   written_in: ["https://gitlab.gnome.org/GNOME/gimp/graphs/master/charts", "https://gitlab.gnome.org/GNOME/gimp", "https://www.gimp.org/about/ancient_history.html"]
   platform:
     - dskp: ["https://www.gimp.org/downloads/"]
-  sysreq: ["https://www.unixmen.com/13-reasons-to-choose-gimp-over-photoshop/"]
+  sysreq:
+    general: ["https://www.unixmen.com/13-reasons-to-choose-gimp-over-photoshop/"]
   license: ["https://gitlab.gnome.org/GNOME/gimp/blob/master/COPYING", "https://en.wikipedia.org/wiki/GIMP"]
   rating:
     - name: "TechRadar"
@@ -240,7 +241,3 @@ note: |
   
   [News](https://www.gimp.org/news/)  I  [Wiki](https://wiki.gimp.org/)  I  [Documentation](https://www.gimp.org/docs/)  I  [User FAQ](https://www.gimp.org/docs/userfaq.html)  I  [Books](https://www.gimp.org/books/)  I  [Mailing lists](https://www.gimp.org/mail_lists.html)  I  [IRC](https://www.gimp.org/irc.html)
   
-
-
-
-

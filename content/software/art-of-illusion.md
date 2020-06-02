@@ -44,7 +44,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       recm: "A keyboard with a numberpad"
     -
@@ -84,7 +84,8 @@ source:
   written_in: ["https://github.com/ArtOfIllusion/ArtOfIllusion", "https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872"]
   platform:
     - dskp: ["http://www.artofillusion.org/downloads", "https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872"]
-  sysreq: ["https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872"]
+  sysreq:
+    general: ["https://en.wikipedia.org/w/index.php?title=Art_of_Illusion&oldid=858254872"]
   license: ["http://www.artofillusion.org/license"]
   rating:
     - name: "G2CROWD"
@@ -148,7 +149,3 @@ note: |
   
   [Forum](https://sourceforge.net/p/aoi/discussion/)  I  [Documentation](http://www.artofillusion.org/documentation)  I  [FAQ](http://www.artofillusion.org/faq)
   
-
-
-
-

@@ -14,7 +14,7 @@ get_it:
     url: "https://opencv.org/releases.html"
 
 sysreq:
-  General:
+  general:
     -
       min: "700 MHz single core CPU"
     -
@@ -80,7 +80,8 @@ source:
     - dskp: ["https://opencv.org/platforms/", "https://opencv.org/releases.html"]
     - smptb: ["https://opencv.org/platforms/"]
     - else: ["https://opencv.org/"]
-  sysreq: ["http://answers.opencv.org/question/179923/laptop-minimum-system-requirement-for-opencv/"]
+  sysreq:
+    general: ["http://answers.opencv.org/question/179923/laptop-minimum-system-requirement-for-opencv/"]
   license: ["https://github.com/opencv/opencv/blob/master/LICENSE"]
   rating:
     - name: "G2CROWD"
@@ -117,8 +118,4 @@ note: |
   OpenCV supports the [deep learning](/categories/deep-learning) frameworks [TensorFlow](/software/tensorflow/), [Torch](/software/torch/)/[PyTorch](/software/pytorch/) and [Caffe](/software/caffe/).
   
   [News](https://opencv.org/news.html)  I  [Q&A Forum](http://answers.opencv.org/questions/)  I  [Documentation](https://docs.opencv.org/)  I  [Wiki](https://github.com/opencv/opencv/wiki)  I  [IRC](https://webchat.freenode.net/?channels=opencv)
-
-
-
-
 

@@ -81,7 +81,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "For operating systems requirements: https://www.mediamonkey.com/support/index.php?/Knowledgebase/Article/View/55/2/what-operating-systems-is-mediamonkey-compatible-with    For devices compatibility: https://www.mediamonkey.com/wiki/index.php/Compatible_Devices"
 
@@ -209,4 +209,3 @@ rating:
   MediaMonkey is a [media player](/categories/media-player/) and media library application for organizing and playing audio. It uses SQLite to manage its database. It can be extended to handle video and other media formats, with the help of plugins. Freemium version has features like media management, record & convert, burn, and more of them can be seen [here](https://www.mediamonkey.com/information/free/). Premium gold license unlocks additional features such as the ability to have multiple media collections, the ability to organize files automatically, and more can be seen [here](https://www.mediamonkey.com/information/gold/). Both freemium and premium editions can be extensively enhanced with skins, third-party plugins, and user-generated extension scripts.
   
   [News](https://www.mediamonkey.com/news/)  I  [Forum](https://www.mediamonkey.com/forum/)  I  [Documentation v4](https://www.mediamonkey.com/wiki/index.php/WebHelp:Content/4.0)  I  [FAQ/Support](https://www.mediamonkey.com/support/)  I  [Wiki](https://www.mediamonkey.com/wiki/index.php?title=Main_Page)
-

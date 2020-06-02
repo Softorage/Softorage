@@ -16,7 +16,7 @@ get_it:
     url: "https://www.nuget.org/packages/Accord/"
 
 sysreq:
-  General:
+  general:
     -
       recm: ".NET Framework"
 
@@ -59,7 +59,8 @@ source:
   written_in: ["https://github.com/accord-net/framework/"]
   platform:
     - dskp: ["https://stackoverflow.com/questions/38118548/how-to-install-nuget-from-command-line-on-linux", "https://docs.microsoft.com/en-us/nuget/what-is-nuget"]
-  sysreq: ["https://www.softpedia.com/get/Programming/Components-Libraries/Accord-NET-Framework.shtml"]
+  sysreq:
+    general: ["https://www.softpedia.com/get/Programming/Components-Libraries/Accord-NET-Framework.shtml"]
   license: ["https://github.com/accord-net/framework/blob/master/Copyright.txt", "http://accord-framework.net/license.html"]
   rating:
     - name: "SourceForge"
@@ -85,8 +86,4 @@ rating:
   The Accord.NET Framework has been featured in multiple books such as [Mastering.NET Machine Learning](https://www.packtpub.com/big-data-and-business-intelligence/mastering-net-machine-learning) by PACKT publishing and [F# for Machine Learning Applications](https://www.packtpub.com/big-data-and-business-intelligence/f-machine-learning), featured in [QCON San Francisco](https://www.infoq.com/presentations/accord-net-machine-learning), and currently accumulates more than 1,500 forks in GitHub.
   
   [Documentation](http://accord-framework.net/docs/html/R_Project_Accord_NET.htm)  I  [Wiki](https://github.com/accord-net/framework/wiki)  I  [Publications](http://accord-framework.net/publications.html)  I  [Sample Applications](http://accord-framework.net/samples.html)
-
-
-
-
 

@@ -14,7 +14,7 @@ get_it:
     url: "https://pytorch.org/get-started/locally/"
 
 sysreq:
-  General:
+  general:
     -
       min: "Linux distributions that use glibc >= v2.17 I macOS 10.10 (Yosemite) or above I Windows 7 and greater; Windows 10 or greater recommended, Windows Server 2008 r2 and greater"
 
@@ -62,7 +62,8 @@ source:
   platform:
     - dskp: ["https://pytorch.org/get-started/locally/"]
     - else: ["https://github.com/pytorch/pytorch/blob/master/README.md#extensions-without-pain", "https://github.com/pytorch/pytorch/blob/master/README.md#python-first"]
-  sysreq: ["https://pytorch.org/get-started/locally/"]
+  sysreq:
+    general: ["https://pytorch.org/get-started/locally/"]
   license: ["https://github.com/pytorch/pytorch/blob/master/LICENSE"]
   rating:
     - name: "InfoWorld"
@@ -88,8 +89,4 @@ rating:
   > \- [NVIDIA - DEEP LEARNING FRAMEWORKS DOCUMENTATION](https://docs.nvidia.com/deeplearning/dgx/pytorch-release-notes/overview.html)
   
   [Blog](https://pytorch.org/blog)  I  [Documentation](https://pytorch.org/docs)  I  [Slack](https://pytorch.slack.com/)  I  [FAQ](https://pytorch.org/docs/stable/notes/faq.html)  I  [PyTorch Discuss Q&A](https://discuss.pytorch.org/)  I  [Wiki](https://github.com/pytorch/pytorch/wiki)
-
-
-
-
 

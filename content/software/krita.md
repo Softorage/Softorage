@@ -92,7 +92,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       recm: "Windows7 or higher, OSX 10.11, Linux"
     -
@@ -148,7 +148,8 @@ source:
   written_in: ["https://en.wikipedia.org/w/index.php?title=Krita&oldid=877276791", "https://krita.org/en/get-involved/developers/"]
   platform:
     - dskp: ["https://krita.org/en/download/krita-desktop/", "https://en.wikipedia.org/w/index.php?title=Krita&oldid=877276791"]
-  sysreq: ["https://krita.org/en/download/krita-desktop/"]
+  sysreq:
+    general: ["https://krita.org/en/download/krita-desktop/"]
   license: ["https://phabricator.kde.org/source/krita/browse/master/COPYING"]
   rating:
     - name: "G2CROWD"
@@ -241,7 +242,3 @@ rating:
   
   [Forum](https://forum.kde.org/viewforum.php?f=136)  I  [Documentation(Manual)](https://docs.krita.org/en/)  I  [Wiki](https://userbase.kde.org/Krita/en)  I  [News](https://krita.org/en/news/)  I  [FAQ](https://docs.krita.org/en/KritaFAQ.html)  I  [Mailing list](https://krita.org/en/mailing-lists/)  I  [IRC](https://krita.org/en/irc/)
   
-
-
-
-

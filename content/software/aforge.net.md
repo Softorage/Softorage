@@ -69,7 +69,3 @@ rating:
   
   [News Archive](http://www.aforgenet.com/news/)  I  [Forum](http://www.aforgenet.com/forum/)  I  [Documentation](http://www.aforgenet.com/framework/docs/)
 
-
-
-
-

@@ -85,7 +85,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "Computer/processor: 1 gigahertz (GHz) or faster (32-bit (x86) or 64-bit (x64))"
     -
@@ -144,7 +144,8 @@ source:
   platform:
     - dskp: ["https://www.microsoft.com/en-us/edge", "https://windowsedition.com/install-microsoft-edge-chromium-windows-10-32-bit/"]
     - smptb: ["https://www.microsoft.com/en-us/edge"]
-  sysreq: ["https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge"]
+  sysreq:
+    general: ["https://docs.microsoft.com/en-us/microsoft-edge/deploy/about-microsoft-edge"]
   license: ["https://en.wikipedia.org/w/index.php?title=Microsoft_Edge&oldid=936188132"]
   rating:
     - name: "Softpedia"
@@ -257,8 +258,4 @@ note: |
   Microsoft Edge is a [web browser](/categories/web-browser) developed by Microsoft. Edge includes integration with Cortana and has extensions hosted on the Microsoft Store. Unlike [Internet Explorer](/software/internet-explorer/), Edge does not support the legacy ActiveX and BHO technologies. Originally built with Microsoft's own EdgeHTML and Chakra engines, in 2019 Edge was rebuilt as a [Chromium](/software/chromium-web-browser/)-based browser, using the Blink and V8 engines. Though, for iOS, Microsoft Edge is based on WebKit. Microsoft released the first [Chromium](/software/chromium-web-browser/)-based Edge version on January 15, 2020.
   
   [Devs Blog](https://blogs.windows.com/msedgedev/)  I  [Forum](https://answers.microsoft.com/en-us/edge/forum)  I  [Documentation](https://docs.microsoft.com/en-us/microsoft-edge/)  I  [Deploy Documentation](https://docs.microsoft.com/en-us/deployedge/)  I  [FAQ for IT Pros](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-faq)  I  [FAQ for Enterprise](https://docs.microsoft.com/en-us/deployedge/faqs-edge-in-the-enterprise)
-
-
-
-
 

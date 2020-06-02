@@ -74,7 +74,3 @@ note: |
   
   [Documentation](https://systemml.apache.org/documentation.html)  I  [Mailing lists](https://systemml.apache.org/community.html#mailing-list)
 
-
-
-
-

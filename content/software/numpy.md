@@ -78,7 +78,3 @@ rating:
   
   [Mailing list](https://www.scipy.org/scipylib/mailing-lists.html#mailing-lists)  I  [FAQ](https://www.scipy.org/scipylib/faq.html#general-questions-about-numpy)  I  [Wiki](https://github.com/numpy/numpy/wiki)  I  [Documentation](https://docs.scipy.org/doc/)  I  [Stack Overflow](https://stackoverflow.com/questions/tagged/numpy)
 
-
-
-
-

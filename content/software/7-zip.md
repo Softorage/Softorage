@@ -280,4 +280,3 @@ rating:
   
   [History/Changelog](https://www.7-zip.org/history.txt)  I  [Forum](https://sourceforge.net/p/sevenzip/discussion/)  I  [Wiki](https://sourceforge.net/p/sevenzip/wiki/Home/)  I  [documentation.HELP!](https://documentation.help/7-Zip/)  I  [FAQ](https://www.7-zip.org/faq.html)
 
-

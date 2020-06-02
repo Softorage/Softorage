@@ -28,7 +28,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "192MB free RAM"
       recm: "512MB free RAM"
@@ -74,7 +74,8 @@ source:
   written_in: ["https://github.com/fontforge/fontforge"]
   platform:
     - dskp: ["http://fontforge.org/en-US/downloads/"]
-  sysreq: ["https://fontforge.org/faq.html#Minimum"]
+  sysreq:
+    general: ["https://fontforge.org/faq.html#Minimum"]
   license: ["https://github.com/fontforge/fontforge/blob/master/LICENSE"]
   rating:
     - name: "OSDN"
@@ -123,7 +124,3 @@ rating:
   
   [Online Book](http://designwithfontforge.com/)  I  [Documentation](https://fontforge.org/en-US/documentation/)  I  [FAQ](https://fontforge.org/en-US/faq/)  I  [Wiki](https://github.com/fontforge/fontforge/wiki)  I  [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
   
-
-
-
-

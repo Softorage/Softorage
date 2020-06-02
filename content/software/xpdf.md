@@ -77,7 +77,3 @@ note: |
   
   [Forum](http://forum.xpdfreader.com/)
 
-
-
-
-

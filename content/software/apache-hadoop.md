@@ -14,7 +14,7 @@ get_it:
     url: "https://hadoop.apache.org/releases.html"
 
 sysreq:
-  General:
+  general:
     -
       min: "Software: Java 7 for Apache Hadoop v2.7 or later | Java 6 is supported by v2.6 or earlier"
       optm: "Hardware: Intel Core 2  Duo/Quad/hex/Octa or higher end 64 bit processor PC or Laptop (Minimum operating frequency of 2.5GHz)"
@@ -60,7 +60,8 @@ source:
   written_in: ["https://github.com/apache/hadoop"]
   platform:
     - dskp: ["https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html", "https://wiki.apache.org/hadoop/Hadoop2OnWindows"]
-  sysreq: ["https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html", "https://wiki.apache.org/hadoop/HadoopJavaVersions", "https://www.dezyre.com/article/what-are-the-pre-requisites-to-learn-hadoop/170"]
+  sysreq:
+    general: ["https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html", "https://wiki.apache.org/hadoop/HadoopJavaVersions", "https://www.dezyre.com/article/what-are-the-pre-requisites-to-learn-hadoop/170"]
   license: ["https://hadoop.apache.org/releases.html", "https://github.com/apache/hadoop/blob/trunk/LICENSE.txt"]
   rating:
     - name: "TrustRadius"
@@ -92,8 +93,4 @@ note: |
   When a node fails, processing is re-directed to the remaining nodes in the cluster and data is automatically re-replicated in preparation for future node failures, making Apache Hadoop resilient.
   
   [Blog](https://blogs.apache.org/hadoop/)  I  [News](https://hadoop.apache.org/news.html)  I  [Mailing lists](https://hadoop.apache.org/mailing_lists.html)  I  [Wiki](https://wiki.apache.org/hadoop)  I  [Documentation](https://hadoop.apache.org/docs/current/)  I  [FAQ](https://wiki.apache.org/hadoop/FAQ)  I  [IRC](https://webchat.freenode.net/?channels=hadoop)
-
-
-
-
 

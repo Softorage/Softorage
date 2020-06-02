@@ -254,4 +254,3 @@ rating:
   PeaZip is free [file archiver](/categories/file-archiver/) utility, based on Open Source technologies of 7-Zip, p7zip, Brotli, FreeArc, PAQ, Zstandard, and [PEA](https://www.peazip.org/pea-archiving-utility.html) projects. PeaZip works as a [compression](/categories/file-archiver/) and [encryption utility](/categories/encryption/). It can open extract 180+ archive formats; full list can be found [here](https://www.peazip.org/peazip-free-archiver.html).
   
   [News](https://sourceforge.net/p/peazip/news/)  I  [Forum/Tickets](https://sourceforge.net/p/peazip/tickets/)  I  [Wiki](https://sourceforge.net/p/peazip/wiki/Home/)  I  [Online Tutorials](https://www.peazip.org/peazip-help.html)  I  [FAQ](https://www.peazip.org/peazip-help-faq.html)
-

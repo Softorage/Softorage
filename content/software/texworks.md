@@ -58,7 +58,3 @@ source:
   
   [Mailing list](https://tug.org/mailman/listinfo/texworks)
 
-
-
-
-

@@ -108,7 +108,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "visit https://kodi.wiki/view/Supported_hardware"
 
@@ -310,4 +310,3 @@ rating:
   Kodi (formerly XBMC) is a [home theater](/categories/htpc/) and [media player](/categories/media-player/) software application developed by the XBMC Foundation, a non-profit technology consortium. It is available for multiple operating-systems and hardware platforms, with a 10-foot user interface for use with televisions and remote controls. It allows users to play and view most streaming media, such as videos, music, podcasts, and videos from the Internet, as well as all common digital media files from local and network storage media.
   
   [Blog/News](https://kodi.tv/blog)  I  [Forum](https://forum.kodi.tv/)  I  [Wiki](https://kodi.wiki/view/Main_Page)  I  [FAQ](https://kodi.wiki/view/FAQs)
-

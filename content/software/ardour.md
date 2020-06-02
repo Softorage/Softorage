@@ -26,7 +26,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "400mhz Intel Pentium equivalent CPU"
       recm: "1-3GHz Processor, Athlons dual CPU system"
@@ -82,7 +82,8 @@ source:
   written_in: ["https://github.com/Ardour/ardour"]
   platform:
     - dskp: ["https://community.ardour.org/download"]
-  sysreq: ["https://community.ardour.org/linux_system_requirements", "https://ardour.org/requirements.html"]
+  sysreq:
+    general: ["https://community.ardour.org/linux_system_requirements", "https://ardour.org/requirements.html"]
   license: ["https://community.ardour.org/download", "https://ardour.org/copying.html"]
   rating:
     - name: "G2CROWD"
@@ -114,7 +115,3 @@ note: |
   
   [IRC](http://webchat.freenode.net/?channels=ardour)  I  [Blog](https://discourse.ardour.org/c/blog)  I  [News](https://community.ardour.org/news)  I  [Forum](https://discourse.ardour.org/)  I  [Manual](http://manual.ardour.org/toc/)  I  [FAQ](https://community.ardour.org/realfaq)  I  [Mailing lists](https://ardour.org/community.html#mailinglists)
   
-
-
-
-

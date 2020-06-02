@@ -57,7 +57,7 @@ get_it:
         official: true
 
 sysreq:
-  General:
+  general:
     -
       min: "A CPU that supports SSE2 (almost all Intel CPUs after Pentium 4)"
       recm: "New generation CPUs"
@@ -105,7 +105,8 @@ source:
   written_in: ["https://github.com/darktable-org/darktable"]
   platform:
     - dskp: ["https://www.darktable.org/install/"]
-  sysreq: ["https://www.darktable.org/about/faq/#faq-sigill", "https://www.darktable.org/2012/03/darktable-and-memory/", "https://lewiscollard.com/computar/darktable-linux-review/"]
+  sysreq:
+    general: ["https://www.darktable.org/about/faq/#faq-sigill", "https://www.darktable.org/2012/03/darktable-and-memory/", "https://lewiscollard.com/computar/darktable-linux-review/"]
   license: ["https://www.darktable.org/about/"]
   rating:
     - name: "FossHub"
@@ -168,7 +169,3 @@ note: |
   
   [Blog](https://www.darktable.org/blog/)  I  [Forum](https://discuss.pixls.us/c/software/darktable)  I  [User Manual](http://www.darktable.org/usermanual/en/)  I  [News](https://www.darktable.org/news/)  I  [Users' Wiki](https://redmine.darktable.org/projects/users/wiki)  I  [Development Wiki](https://redmine.darktable.org/projects/darktable/wiki)  I  [FAQ](https://www.darktable.org/about/faq/)  I  [Mailing list](https://www.darktable.org/contact/)
   
-
-
-
-

@@ -14,7 +14,7 @@ get_it:
     url: "https://www.tensorflow.org/install/"
 
 sysreq:
-  General:
+  general:
     -
       min: "v2.7 for Python 2"
       recm: "v3.3+ for Python 3"
@@ -92,7 +92,8 @@ source:
   platform:
     - dskp: ["https://www.tensorflow.org/install/"]
     - else: ["https://www.tensorflow.org/api_docs"]
-  sysreq: ["https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781786469786/2/ch02lvl1sec18/requirements-for-running-tensorflow-with-gpu-from-nvidia", "https://www.tensorflow.org/install/gpu"]
+  sysreq:
+    general: ["https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781786469786/2/ch02lvl1sec18/requirements-for-running-tensorflow-with-gpu-from-nvidia", "https://www.tensorflow.org/install/gpu"]
   license: ["https://github.com/tensorflow/tensorflow/blob/master/LICENSE"]
   rating:
     - name: "InfoWorld"
@@ -127,8 +128,4 @@ note: |
   It comes with strong support for [machine learning](/categories/machine-learning) and [deep learning](/categories/deep-learning) and the flexible numerical computation core is used across many other scientific domains.
   
   [Blog](https://medium.com/tensorflow)  I  [Mailing list](https://www.tensorflow.org/community/lists)  I  [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow)  I  [Tutorials](https://www.tensorflow.org/tutorials/)  I  [FAQ](https://www.tensorflow.org/guide/faq)
-
-
-
-
 
