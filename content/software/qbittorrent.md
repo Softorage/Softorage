@@ -271,4 +271,3 @@ rating:
   15. Available in ~70 languages
   
   [News](https://www.qbittorrent.org/news.php)  I  [Forum](https://forum.qbittorrent.org/)  I  [Wiki](https://wiki.qbittorrent.org/)  I  [FAQ](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions)  I  [IRC](https://webchat.freenode.net/?channels=qbittorrent)
-

@@ -222,6 +222,3 @@ rating:
   GOM Player is a [media player](/categories/media-player/) developed by the GOM & Company of South Korea. Its main features include the ability to play some broken media files and find missing codecs using a codec finder service.
   
   [FAQ](https://www.gomlab.com/faq/?product=GOMPLAYER)
-
-
-

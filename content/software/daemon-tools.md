@@ -267,11 +267,10 @@ rating:
     rate: [4, 5]
     remarks: "(Lite) Windows"
 
-note: * See [this page](https://www.daemon-tools.cc/support/faq#system_requirements) to know various Windows versions for which DAEMON Tools is available.
-
+note: |
+  * See [this page](https://www.daemon-tools.cc/support/faq#system_requirements) to know various Windows versions for which DAEMON Tools is available.
 ---
   DAEMON Tools is a [virtual drive](/categories/virtual-drive/) and [optical disc authoring program](/categories/optical-disc-authoring/). It was originally a successor of Generic SafeDisc emulator and incorporated all of its features. It supports image compression, image password protection (to .mds and .mdx images), image creation (supported output formats include .iso, .mds/.mdf and .mdx), along with more advanced features for premium versions such as Pro and Ultra.
   
   [Blog](https://blog.daemon-tools.cc/home)  I  [Forum](https://forum.daemon-tools.cc/)  I  [FAQ](https://www.daemon-tools.cc/support/faq)
   
-

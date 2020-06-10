@@ -300,11 +300,10 @@ rating:
   - name: "PCWorld"
     rate: [4, 5]
 
-note: * Though Vivaldi is a proprietary software, the changes that they have made to [Chromium](/software/chromium-web-browser/) browser's source code are released under a BSD license. They can be found [here](https://vivaldi.com/source/). Check [this](https://help.vivaldi.com/article/is-vivaldi-open-source/) out for more info.
-
+note: |
+  * Though Vivaldi is a proprietary software, the changes that they have made to [Chromium](/software/chromium-web-browser/) browser's source code are released under a BSD license. They can be found [here](https://vivaldi.com/source/). Check [this](https://help.vivaldi.com/article/is-vivaldi-open-source/) out for more info.
 ---
   Vivaldi is a freeware, cross-platform [web browser](/categories/web-browser/) developed by Vivaldi Technologies, a company founded by [Opera](/software/opera-web-browser/) Software co-founder and former CEO Jon Stephenson von Tetzchner and Tatsuki Tomita. It is based on [Chromium](/software/chromium-web-browser/) [web browser](/categories/web-browser/), which uses Blink browser engine and V8 JavaScript engine. It is available for general users but is primarily targeted towards technically-inclined users as well as former [Opera](/software/opera-web-browser/) users disgruntled by its transition from the Presto layout engine to a [Chromium](/software/chromium-web-browser/)-based browser. Despite also being [Chromium](/software/chromium-web-browser/)-based, Vivaldi aims to revive the features of the Presto-based [Opera](/software/opera-web-browser/) with its own proprietary modifications.
   
   [Blog](https://vivaldi.com/blog/)  I  [Press Releases](https://vivaldi.com/press/releases/)  I  [Forum](https://forum.vivaldi.net/)  I  [Help](https://help.vivaldi.com/)  I  [FAQ](https://help.vivaldi.com/faq/)  I  [Security Related FAQ](https://help.vivaldi.com/faq/)
   
-

@@ -86,5 +86,3 @@ rating:
   The Accord.NET Framework has been featured in multiple books such as [Mastering.NET Machine Learning](https://www.packtpub.com/big-data-and-business-intelligence/mastering-net-machine-learning) by PACKT publishing and [F# for Machine Learning Applications](https://www.packtpub.com/big-data-and-business-intelligence/f-machine-learning), featured in [QCON San Francisco](https://www.infoq.com/presentations/accord-net-machine-learning), and currently accumulates more than 1,500 forks in GitHub.
   
   [Documentation](http://accord-framework.net/docs/html/R_Project_Accord_NET.htm)  I  [Wiki](https://github.com/accord-net/framework/wiki)  I  [Publications](http://accord-framework.net/publications.html)  I  [Sample Applications](http://accord-framework.net/samples.html)
-
-

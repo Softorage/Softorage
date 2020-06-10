@@ -365,4 +365,3 @@ rating:
   
   [Blog](https://brave.com/blog/)  I  [Community Forum](https://community.brave.com/)  I  [Developers' Wiki](https://github.com/brave/brave-browser/wiki)  I  [FAQ](https://brave.com/faq/)  I  [Brave Creators FAQ](https://support.brave.com/hc/en-us/articles/360025397851-Frequently-Asked-Questions)  I  [Brave Rewards FAQ](https://support.brave.com/hc/en-us/articles/360027276731-Brave-Rewards-FAQ)  I  [Brave Ads FAQ](https://support.brave.com/hc/en-us/articles/360026361072-Brave-Ads-FAQ)
   
-

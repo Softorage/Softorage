@@ -120,8 +120,8 @@ rating:
     rate: [4.8, 5]
     num: 4
 
-note: * In [System Requirements](#sysreq), the presented set of product versions is not restrictive, i.e. CNTK may work well in many other configurations.
-
+note: |
+  * In [System Requirements](#sysreq), the presented set of product versions is not restrictive, i.e. CNTK may work well in many other configurations.
 ---
   The Microsoft Cognitive Toolkit—previously known as CNTK—is an open-source toolkit for commercial-grade distributed [deep learning](/categories/deep-learning). It describes [neural networks](/categories/neural-networks) as a series of computational steps via a directed graph. 
   

@@ -292,5 +292,3 @@ rating:
   p7zip is the port of the command line version of 7-Zip to Linux/Posix. 7za.exe version of 7-Zip is available for Unix-like operating systems (including Linux, FreeBSD, and macOS), FreeDOS, OpenVMS, AmigaOS 4, and MorphOS under the p7zip project.
   
   [History/Changelog](https://www.7-zip.org/history.txt)  I  [Forum](https://sourceforge.net/p/sevenzip/discussion/)  I  [Wiki](https://sourceforge.net/p/sevenzip/wiki/Home/)  I  [documentation.HELP!](https://documentation.help/7-Zip/)  I  [FAQ](https://www.7-zip.org/faq.html)
-
-

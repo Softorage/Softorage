@@ -303,4 +303,3 @@ rating:
   
   [Blog](https://www.ccleaner.com/news/blog)  I  [Community Forum](https://forum.piriform.com/)  I  [Press Releases](https://www.ccleaner.com/about/press-releases)  I  [Documentation](https://www.ccleaner.com/docs/ccleaner)  I  [FAQ](https://www.ccleaner.com/ccleaner/faq)
   
-

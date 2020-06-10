@@ -49,5 +49,3 @@ source:
   
   [OpenCog Brainwave Blog](https://blog.opencog.org/)  I  [OpenCog Foundation Feed](https://opencog.org/feed/)  I  [AI Documentation](https://wiki.opencog.org/w/AI_Documentation)  I  [Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project)  I  [FAQ](https://opencog.org/faq/)  I  [Mailing list](https://groups.google.com/forum/#!forum/opencog)  I  [IRC](https://webchat.freenode.net/?channels=opencog)
   
-
-

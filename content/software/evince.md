@@ -139,4 +139,3 @@ rating:
   
   [News](https://gitlab.gnome.org/GNOME/evince/blob/master/NEWS)  I  [Documentation](https://help.gnome.org/users/evince/stable/)  I  [FAQ](https://wiki.gnome.org/Apps/Evince/FrequentlyAskedQuestions)  I  [Mailing list](https://mail.gnome.org/mailman/listinfo/evince-list)
   
-

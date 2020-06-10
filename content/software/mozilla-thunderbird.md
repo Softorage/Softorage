@@ -361,4 +361,3 @@ rating:
   
   [Blog](https://blog.thunderbird.net/)  I  [Forum](https://support.mozilla.org/en-US/products/thunderbird/support-forum)  I  [Documentation](https://wiki.mozilla.org/Thunderbird/Docs)  I  [FAQ](https://support.mozilla.org/en-US/kb/thunderbird-faq)
   
-

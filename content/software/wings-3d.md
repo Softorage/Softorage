@@ -174,8 +174,8 @@ rating:
     num: 8
     remarks: "macOS"
 
-note: * To run Wing 3D on Unix(like) systems, it needs to built from source code.[[source]](http://www.wings3d.com/?page_id=84)
-
+note: |
+  * To run Wing 3D on Unix(like) systems, it needs to built from source code.[[source]](http://www.wings3d.com/?page_id=84)
 ---
   Wings 3D is a tool specifically designed to import and modify models through subdivision - a polygonal modeling technique that allows very well-defined polygons.
   

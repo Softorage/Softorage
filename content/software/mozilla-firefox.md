@@ -294,9 +294,9 @@ rating:
     num: 876
     remarks: "Android"
 
-note: * Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
-* Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)
-
+note: |
+  * Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
+  * Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)
 ---
   Mozilla Firefox (or simply Firefox) is a free and open-source [web browser](/categories/web-browser) developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox is available for Windows, macOS, Linux, BSD illumos and Solaris operating systems. Its sibling, Firefox for Android, is also available. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards. In 2017, Firefox began incorporating new technology under the code name Quantum to promote parallelism and a more intuitive user interface. An additional version, Firefox for iOS, was released on November 12, 2015. Due to platform restrictions, it uses the WebKit layout engine instead of Gecko, as with all other iOS web browsers.
   

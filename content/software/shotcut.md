@@ -317,4 +317,3 @@ rating:
   Shotcut is a free and open-source cross-platform [video editing application](/categories/video-editor/), developed on the MLT Multimedia Framework. It supports video, audio, and image formats via FFmpeg, and uses a timeline for non-linear video editing of multiple tracks that may be composed of various file formats.
   
   [Blog/News](https://shotcut.org/blog/)  I  [Forum](https://forum.shotcut.org/)  I  [Tutorials](https://shotcut.org/tutorials/)  I  [How-tos](https://shotcut.org/howtos/)  I  [FAQ](https://shotcut.org/FAQ/)
-

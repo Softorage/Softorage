@@ -256,8 +256,8 @@ rating:
     rate: [4.8, 5]
     num: 14
 
-note: * Legacy versions for [Windows](https://www.audacityteam.org/download/legacy-windows/) and [mac](https://www.audacityteam.org/download/legacy-mac/) are also available.
-
+note: |
+  * Legacy versions for [Windows](https://www.audacityteam.org/download/legacy-windows/) and [mac](https://www.audacityteam.org/download/legacy-mac/) are also available.
 ---
   Audacity imports sounds and music, puts sound effects against individual tracks and mixes things like music tracks and podcasts together. Audacity comes with many professional editing and recording functions. It's possible to create both live recordings as well as cut tracks. In addition, Audacity has an audio toolbox with countless effects, an equalizer and frequency analysis on board.
   
@@ -265,4 +265,3 @@ note: * Legacy versions for [Windows](https://www.audacityteam.org/download/lega
   
   [Blog](https://www.audacityteam.org/posts/)  I  [Forum](https://forum.audacityteam.org/)  I  [News](https://www.audacityteam.org/about/news/)  I  [Manual](https://manual.audacityteam.org/)  I  [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page)  I  [Documentation](https://www.audacityteam.org/help/documentation/)  I  [FAQ](https://manual.audacityteam.org/man/faq.html)
   
-

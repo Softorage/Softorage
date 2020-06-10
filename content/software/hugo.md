@@ -82,5 +82,3 @@ source:
   Hugo is a [static site generator](/categories/static-site-generator/) written in Go. It takes data files, i18n bundles, configuration, templates for layouts, static files, and content written in Markdown and renders a static website. Some notable features are multilingual support, image processing, custom output formats, and shortcodes.
   
   [News](https://gohugo.io/news/)  I  [Forum](https://discourse.gohugo.io/)  I  [Documentation](https://gohugo.io/documentation/)  I  [FAQ](https://gohugo.io/troubleshooting/faq/)  I  [Gitter for Devs](https://gitter.im/spf13/hugo)
-
-

@@ -126,4 +126,3 @@ rating:
   
   [Online Book](http://designwithfontforge.com/)  I  [Documentation](https://fontforge.org/en-US/documentation/)  I  [FAQ](https://fontforge.org/en-US/faq/)  I  [Wiki](https://github.com/fontforge/fontforge/wiki)  I  [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
   
-

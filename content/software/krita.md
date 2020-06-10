@@ -256,4 +256,3 @@ rating:
   
   [Forum](https://forum.kde.org/viewforum.php?f=136)  I  [Documentation(Manual)](https://docs.krita.org/en/)  I  [Wiki](https://userbase.kde.org/Krita/en)  I  [News](https://krita.org/en/news/)  I  [FAQ](https://docs.krita.org/en/KritaFAQ.html)  I  [Mailing list](https://krita.org/en/mailing-lists/)  I  [IRC](https://krita.org/en/irc/)
   
-

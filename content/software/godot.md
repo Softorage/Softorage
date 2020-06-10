@@ -121,4 +121,3 @@ rating:
   
   [Documentation](https://docs.godotengine.org/)  I  [News](https://godotengine.org/news)  I  [Question/Answers](https://godotengine.org/qa/)  I  [IRC](http://webchat.freenode.net/?channels=#godotengine)  I  [Developer Forum](https://godotforums.org/)  I  [FAQ](http://docs.godotengine.org/en/3.0/about/faq.html)
   
-

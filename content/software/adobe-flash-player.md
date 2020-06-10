@@ -241,4 +241,3 @@ rating:
   
   [Archived Versions](https://helpx.adobe.com/flash-player/kb/archived-flash-player-versions.html)  I  [Blog](https://blogs.adobe.com/flashplayer/)  I  [Forum](https://community.adobe.com/t5/flash-player/bd-p/flash-player)  I  [FAQ](https://helpx.adobe.com/in/flash-player/kb/flash-player-faq.html) 
   
-

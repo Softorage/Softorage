@@ -223,8 +223,8 @@ rating:
     num: 10
     remarks: "macOS"
 
-note: * Etcher will run on any platform officially supported by [Electron](https://electronjs.org/). Read more in their [documentation](https://electronjs.org/docs/tutorial/support#supported-platforms).
-
+note: |
+  * Etcher will run on any platform officially supported by [Electron](https://electronjs.org/). Read more in their [documentation](https://electronjs.org/docs/tutorial/support#supported-platforms).
 ---
   Etcher is a OS [image flasher](/categories/live-usb-creator/) built with web technologies, a utility used for writing image files such as .iso and .img files, as well as zipped folders onto storage media to create live SD cards and USB flash drives. It protects from accidentally writing to hard-drives and ensures every byte of data was written correctly. It can flash directly Raspberry Pi devices that support the usbboot protocol.
   
@@ -232,4 +232,3 @@ note: * Etcher will run on any platform officially supported by [Electron](https
   
   [Blog](https://www.balena.io/blog/tag/etcher/)  I  [Support](https://github.com/balena-io/etcher/blob/master/SUPPORT.md)  I  [Forum](https://forums.balena.io/c/etcher)  I  [Documentation](https://github.com/balena-io/etcher/blob/master/docs/USER-DOCUMENTATION.md)  I  [FAQ](https://www.balena.io/etcher/#faq)  I  [Mailing list](https://us3.list-manage.com/subscribe?u=87871f17defba2d203db77a92&id=1fc3119ed2)
   
-

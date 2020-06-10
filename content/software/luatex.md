@@ -47,8 +47,8 @@ source:
   license: ["https://serveur-svn.lri.fr/svn/modhel/luatex/trunk/COPYING", "https://github.com/TeX-Live/luatex/blob/trunk/COPYING", "http://www.luatex.org/svn/trunk/COPYING"]
   status: ["https://serveur-svn.lri.fr/svn/modhel/luatex/trunk/source/texk/web2c/luatexdir/NEWS", "https://github.com/TeX-Live/luatex/graphs/contributors"]
 
-note: * Username and password for repository are [given on official website](http://www.luatex.org/download.html); both `anonsvn`.
-
+note: |
+  * Username and password for repository are [given on official website](http://www.luatex.org/download.html); both `anonsvn`.
 ---
   LuaTeX is a TeX-based computer [typesetting](/categories/typesetting) system which is an extended version of pdfTeX using Lua as an embedded scripting language.
   
@@ -57,5 +57,3 @@ note: * Username and password for repository are [given on official website](htt
   See [XeTeX](/software/xetex/), [LuaTeX](/software/luatex/).
   
   [Mailing list](http://www.luatex.org/support.html)  I  [Wiki](http://wiki.luatex.org/index.php/Main_Page)  I  [Documentation](http://www.luatex.org/documentation.html)  I  [FAQ](http://www.luatex.org/faq.html)  I  [Stack Exchange](https://tex.stackexchange.com/questions/tagged/luatex)
-
-

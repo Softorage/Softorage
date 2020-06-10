@@ -336,5 +336,3 @@ rating:
   
   [News](http://www.ucweb.com/press/)  I  [FAQ](http://www.ucweb.com/ucbrowser/help/)
   
-
-

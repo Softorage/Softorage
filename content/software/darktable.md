@@ -166,8 +166,8 @@ rating:
     num: 30
     remarks: "macOS"
 
-note: * Detailed synopsis regarding [System Requirements](#sysreq) can be found at [this link](https://www.darktable.org/2012/03/darktable-and-memory/).
-
+note: |
+  * Detailed synopsis regarding [System Requirements](#sysreq) can be found at [this link](https://www.darktable.org/2012/03/darktable-and-memory/).
 ---
   darktable is a free and open-source [photography workflow](/categories/photography-workflow) application and raw developer. Rather than being a [raster graphics editor](raster-graphics-editor) like Adobe Photoshop or [GIMP](/software/gimp), it comprises a subset of image editing operations specifically aimed at non-destructive raw [photo post-production](photo-post-production). It is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
   
@@ -175,4 +175,3 @@ note: * Detailed synopsis regarding [System Requirements](#sysreq) can be found 
   
   [Blog](https://www.darktable.org/blog/)  I  [Forum](https://discuss.pixls.us/c/software/darktable)  I  [User Manual](http://www.darktable.org/usermanual/en/)  I  [News](https://www.darktable.org/news/)  I  [Users' Wiki](https://redmine.darktable.org/projects/users/wiki)  I  [Development Wiki](https://redmine.darktable.org/projects/darktable/wiki)  I  [FAQ](https://www.darktable.org/about/faq/)  I  [Mailing list](https://www.darktable.org/contact/)
   
-

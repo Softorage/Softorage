@@ -144,46 +144,29 @@ sysreq:
     -
       min: "Processor: Intel Core 2 Duo, AMD Athlon X2, or better"
     -
-      min: "Free RAM: 
-* 256 MB for transcoding standard definition video
-* 1 GB for transcoding high definition video
-* 2 GB or more for transcoding 4K video"
+      min: "Free RAM: \n* 256 MB for transcoding standard definition video\n* 1 GB for transcoding high definition video\n* 2 GB or more for transcoding 4K video"
     -
       min: "Screen Resolution: 1024x768 or better"
     -
-      min: "System Storage: 
-* 50 MB for the HandBrake app
-* 2 GB or more recommended for processing and storing new videos"
+      min: "System Storage: \n* 50 MB for the HandBrake app\n* 2 GB or more recommended for processing and storing new videos"
   macos:
     -
-      min: "Processor: Intel Core 2 Duo or better
-* 32-bit Intel Macs (2007 and earlier) cannot run recent 64-bit HandBrake releases
-* 2010 models and newer are recommended, as older Macs are often quite slow for processing video"
+      min: "Processor: Intel Core 2 Duo or better\n* 32-bit Intel Macs (2007 and earlier) cannot run recent 64-bit HandBrake releases\n* 2010 models and newer are recommended, as older Macs are often quite slow for processing video"
     -
-      min: "Free RAM: 
-* 256 MB for transcoding standard definition video
-* 1 GB for transcoding high definition video
-* 2 GB or more for transcoding 4K video  "
+      min: "Free RAM: \n* 256 MB for transcoding standard definition video\n* 1 GB for transcoding high definition video\n* 2 GB or more for transcoding 4K video  "
     -
       min: "Screen Resolution: 1024x768 or better"
     -
-      min: "System Storage: 
-* 50 MB for the HandBrake app
-* 2 GB or more recommended for processing and storing new videos"
+      min: "System Storage: \n* 50 MB for the HandBrake app\n* 2 GB or more recommended for processing and storing new videos"
   windows:
     -
       min: "Processor: Intel Core 2 Duo, AMD Athlon X2, or better"
     -
-      min: "Free RAM: 
-* 256 MB for transcoding standard definition video
-* 1 GB for transcoding high definition video
-* 2 GB or more for transcoding 4K video"
+      min: "Free RAM: \n* 256 MB for transcoding standard definition video\n* 1 GB for transcoding high definition video\n* 2 GB or more for transcoding 4K video"
     -
       min: "Screen Resolution: 1024x768 or better (higher if running in High-DPI Mode, above 96 DPI or 100%)"
     -
-      min: "System Storage: 
-* 50 MB for the HandBrake app
-* 2 GB or more recommended for processing and storing new videos"
+      min: "System Storage: \n* 50 MB for the HandBrake app\n* 2 GB or more recommended for processing and storing new videos"
     -
       min: "See note."
 
@@ -366,13 +349,12 @@ rating:
   - name: "TechRadar"
     rate: [4, 5]
 
-note: HandBrake’s QuickSync and OpenCL features are only supported on Windows. QuickSync requires a 2nd generation (Sandy Bridge) or newer Intel Core series processor with integrated Intel HD Graphics enabled and a directly connected display.1 OpenCL scaling is experimental and requires an AMD or Intel GPU with OpenCL 1.2 or later.
-
-In lieu of a physically connected display, a display emulator adapter such as Headless Ghost will enable GPU functions such as QuickSync when connected to the Intel HD Graphics output port.
-
+note: |
+  HandBrake’s QuickSync and OpenCL features are only supported on Windows. QuickSync requires a 2nd generation (Sandy Bridge) or newer Intel Core series processor with integrated Intel HD Graphics enabled and a directly connected display.1 OpenCL scaling is experimental and requires an AMD or Intel GPU with OpenCL 1.2 or later.
+  
+  In lieu of a physically connected display, a display emulator adapter such as Headless Ghost will enable GPU functions such as QuickSync when connected to the Intel HD Graphics output port.
 ---
   HandBrake is a free and open-source [video transcoder](/categories/video-transcoder/) to convert video from one format to another, and to rip CD/DVD to popular video formats. It transcodes video and audio from nearly any format to a handful of modern ones, but it does not defeat or circumvent copy protection. Its developers removed libdvdcss (the open-source library responsible for unscrambling DVDs encrypted with the Content Scramble System (CSS)) from the application in version 0.9.2.
   
   [News](https://handbrake.fr/news.php)  I  [Forum](https://forum.handbrake.fr/)  I  [Documentation](https://handbrake.fr/docs)  I  [IRC](https://webchat.freenode.net/?channels=handbrake)
   
-

@@ -39,5 +39,3 @@ source:
   See [TeX Live](/software/tex-live/).
   
   [FAQ](https://www.tug.org/mactex/faq/)  I  [About](https://www.tug.org/mactex/aboutmactex.html)
-
-

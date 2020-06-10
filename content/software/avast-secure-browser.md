@@ -150,4 +150,3 @@ rating:
   It has features such as Ad Block, Bank mode, Passwords, Video downloader, Anti-tracking & Anti-fingerprinting, Anti-fishing, etc.
   
   [Blog](https://blog.avast.com/topic/browser)  I  [Forum](https://forum.avast.com/index.php?board=78.0)  I  [FAQ](https://support.avast.com/en-in/article/Secure-Browser-FAQ)
-

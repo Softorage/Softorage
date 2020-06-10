@@ -323,8 +323,8 @@ rating:
     num: 179
     remarks: "Windows"
 
-note: * [LibreOffice website](https://www.libreoffice.org/) mentions twitter handles [@tdforg](https://twitter.com/tdforg), [@libreoffice](https://twitter.com/libreoffice), [@AskLibreOffice](https://twitter.com/AskLibreOffice), [@LibreOfficeBugs](https://twitter.com/LibreOfficeBugs).
-
+note: |
+  * [LibreOffice website](https://www.libreoffice.org/) mentions twitter handles [@tdforg](https://twitter.com/tdforg), [@libreoffice](https://twitter.com/libreoffice), [@AskLibreOffice](https://twitter.com/AskLibreOffice), [@LibreOfficeBugs](https://twitter.com/LibreOfficeBugs).
 ---
   LibreOffice is a free and open-source [office suite](/categories/office-suite), a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice.
   
@@ -334,4 +334,3 @@ note: * [LibreOffice website](https://www.libreoffice.org/) mentions twitter han
    
    [Blog](https://blog.documentfoundation.org/)  I  [Forum](https://ask.libreoffice.org/en/questions/)  I  [Wiki](https://wiki.documentfoundation.org/Main_Page)  I  [Documentation](https://wiki.documentfoundation.org/Documentation/Publications)  I  [IRC](https://irc.documentfoundation.org/)  I  [Planet](https://planet.documentfoundation.org/)  I  [Mailing lists](https://www.libreoffice.org/get-help/mailing-lists/)  I  [FAQ](https://www.libreoffice.org/get-help/frequently-asked-questions/)
   
-

@@ -79,5 +79,3 @@ rating:
   It implements multiprocessing programming by means of OpenMP and GPU acceleration with CUDA.
   
   [Documentation](http://www.opennn.net/documentation/)
-
-

@@ -321,11 +321,10 @@ rating:
   - name: "PCMag"
     rate: [4, 5]
 
-note: * Google Chrome was mistakenly released on 02 September 2008. Its first stable public version was released on 11 December 2008. See [Initial Release](#initial_release).
-
+note: |
+  * Google Chrome was mistakenly released on 02 September 2008. Its first stable public version was released on 11 December 2008. See [Initial Release](#initial_release).
 ---
   The Google Chrome [Web browser](/categories/web-browser) is based on the open source [Chromium](/software/chromium-web-browser) project. Google released Chrome in 2008 and issues several updates a year. It is available for Windows, macOS, Linux, Android and iOS operating systems. The Google Chrome browser takes a sandboxing-based approach to Web security. Each open website runs as its own process, which helps prevent malicious code on one page from affecting others (or the computer operating system at large). The browser also supports Web standards such as HTML5 and cascading style sheets (CSS).
   
   [Blog](https://blog.google/products/chrome/)  I  [Help Community](https://support.google.com/chrome/community)  I  [Enterprise Community](https://support.google.com/chrome/a/threads)  I  [API Index](https://developer.chrome.com/apps/api_index)  I  [Chrome & Chrome Web Store FAQ](https://developer.chrome.com/webstore/faq)  I  [Mobile Chrome FAQ](https://developer.chrome.com/multidevice/faq)  I  [Extensions FAQ](https://developer.chrome.com/extensions/faq)
   
-

@@ -126,19 +126,14 @@ get_it:
 sysreq:
   linux:
     -
-      min: "CPU: x86 or x86-64 processor such as: Intel Pentium 4/ Pentium M, AMD Athlon 64 / Opteron, or newer CPU (that support SSE2, which all CPUs made within the last 10-years does).
-* If your GPU/VPU does not support hardware video decoding then you will require a fast modern processor is required to decode some 1080p videos encoded in H.264, VC-1/WMV9, HEVC/H.265 VP9, etc"
+      min: "CPU: x86 or x86-64 processor such as: Intel Pentium 4/ Pentium M, AMD Athlon 64 / Opteron, or newer CPU (that support SSE2, which all CPUs made within the last 10-years does).\n* If your GPU/VPU does not support hardware video decoding then you will require a fast modern processor is required to decode some 1080p videos encoded in H.264, VC-1/WMV9, HEVC/H.265 VP9, etc"
       recm: ""
     -
       min: "RAM: 1GB or more in a HTPC media player appliance-like computer dedicated for Kodi"
       recm: "RAM: 2GB or more in a computer for multipurpose use"
     -
-      min: "Graphics: AMD/Intel
-* Mesa 11.3 or later"
-      recm: "Graphics: AMD/ATI, Intel, or NVIDIA which support OpenGL 2.0 or later.
-
-AMD/Intel
-*  Mesa 17.1 or later (required for 10 bit HEVC)"
+      min: "Graphics: AMD/Intel\n* Mesa 11.3 or later"
+      recm: "Graphics: AMD/ATI, Intel, or NVIDIA which support OpenGL 2.0 or later.\n\nAMD/Intel\n*  Mesa 17.1 or later (required for 10 bit HEVC)"
     -
       min: "Video decoding: See https://kodi.wiki/view/Supported_hardware#Linux."
       recm: ""
@@ -157,8 +152,7 @@ AMD/Intel
       min: "OS: Windows 7"
       recm: "OS: Windows 10"
     -
-      min: "CPU: x86 or x86-64 processor such as: Intel Pentium 4/ Pentium M, AMD Athlon 64 / Opteron, or newer CPU (that support SSE2, which all CPUs made within the last 10-years does).
-* If your GPU/VPU does not support hardware video decoding then you will require a fast modern processor is required to decode some 1080p videos encoded in H.264, VC-1/WMV9, HEVC/H.265 VP9, etc"
+      min: "CPU: x86 or x86-64 processor such as: Intel Pentium 4/ Pentium M, AMD Athlon 64 / Opteron, or newer CPU (that support SSE2, which all CPUs made within the last 10-years does).\n* If your GPU/VPU does not support hardware video decoding then you will require a fast modern processor is required to decode some 1080p videos encoded in H.264, VC-1/WMV9, HEVC/H.265 VP9, etc"
       recm: ""
     -
       min: "RAM: 1GB or more in a HTPC media player appliance-like computer dedicated for Kodi"
@@ -376,4 +370,3 @@ rating:
   
   [Blog/News](https://kodi.tv/blog)  I  [Forum](https://forum.kodi.tv/)  I  [Wiki](https://kodi.wiki/view/Main_Page)  I  [FAQ](https://kodi.wiki/view/FAQs)
   
-

@@ -242,8 +242,8 @@ rating:
     rate: [3.5, 5]
     remarks: "macOS"
 
-note: * [System Requirements](#sysreq) could not be found on the [official website](https://www.gimp.org/). [System Requirements](#sysreq) stated [here](#sysreq) are from a page of 2011(see source).
-
+note: |
+  * [System Requirements](#sysreq) could not be found on the [official website](https://www.gimp.org/). [System Requirements](#sysreq) stated [here](#sysreq) are from a page of 2011(see source).
 ---
   GIMP (GNU Image Manipulation Program) is a free and open-source [raster graphics editor](/categories/raster-graphics-editor) used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.
   
@@ -251,4 +251,3 @@ note: * [System Requirements](#sysreq) could not be found on the [official websi
   
   [News](https://www.gimp.org/news/)  I  [Wiki](https://wiki.gimp.org/)  I  [Documentation](https://www.gimp.org/docs/)  I  [User FAQ](https://www.gimp.org/docs/userfaq.html)  I  [Books](https://www.gimp.org/books/)  I  [Mailing lists](https://www.gimp.org/mail_lists.html)  I  [IRC](https://www.gimp.org/irc.html)
   
-

@@ -220,4 +220,3 @@ rating:
   
   [Blog](https://theblog.adobe.com/document-cloud/acrobat-dc/)  I  [Release Notes](https://helpx.adobe.com/in/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes)  I  [Forum](https://community.adobe.com/t5/acrobat/bd-p/acrobat) | [User Guide](https://helpx.adobe.com/acrobat/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/acrobat/faq.html)
   
-

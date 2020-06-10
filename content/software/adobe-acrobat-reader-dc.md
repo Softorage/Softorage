@@ -294,4 +294,3 @@ rating:
   
   [News](https://helpx.adobe.com/reader/whats-new.html)  I  [Forum](https://community.adobe.com/t5/acrobat-reader/bd-p/acrobat-reader)  I  [FAQ](https://helpx.adobe.com/reader/faq.html)
   
-

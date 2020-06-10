@@ -82,5 +82,3 @@ rating:
   > \- [Stack Overflow](https://stackoverflow.com/tags/elki/info)
   
   [Mailing list](https://elki-project.github.io#bug-reports-and-contact)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/elki)  I  [FAQ](https://elki-project.github.io/faq)
-
-

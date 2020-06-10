@@ -57,5 +57,3 @@ source:
   Since the 2009 release of TeX Live, it includes [TeXworks](/software/texworks/), a graphical editor. There is also [MacTeX](/software/mactex/) for macOS which comprises TeX Live as well as some additional tools for using TeX on the Mac.
   
   [Documentation](https://www.tug.org/texlive/doc.html)  I  [Mailing lists](https://www.tug.org/texlive/lists.html)
-
-

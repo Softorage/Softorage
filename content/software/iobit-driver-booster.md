@@ -189,6 +189,3 @@ rating:
   It is known for 'Game Mode' setting, which optimizes drivers to improve their performance in games so as to enhance the gaming experience.
   
   [News](https://forums.iobit.com/forum/general-forums/news-offers)  I  [Forum](https://forums.iobit.com/)  I  [User Manual](https://www.iobit.com/product-manuals/db-help/)  I  [FAQ](https://www.iobit.com/en/allfaq.php#p109)
-
-
-

@@ -265,4 +265,3 @@ rating:
   * Document Map
   
   [News](https://notepad-plus-plus.org/news/)  I  [Forum](https://community.notepad-plus-plus.org/)  I  [Gitter Chat](https://gitter.im/notepad-plus-plus/notepad-plus-plus)  I  [User Manual](https://npp-user-manual.org/)
-

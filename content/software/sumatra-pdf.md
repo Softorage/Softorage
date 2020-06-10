@@ -216,5 +216,3 @@ rating:
   Sumatra is a [document viewer](/categories/document-viewer) for Windows with support for PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR). It is considered to be a lightweight and portable alternative to [Adobe Reader](/software/adobe-acrobat-reader-dc/).
    
   [Forum](https://forum.sumatrapdfreader.org/)  I  [News](https://www.sumatrapdfreader.org/docs/Version-history.html)  I  [Documentation](https://www.sumatrapdfreader.org/docs/SumatraPDF-documentation.html)  I  [Manual](https://www.sumatrapdfreader.org/manual.html)
-
-

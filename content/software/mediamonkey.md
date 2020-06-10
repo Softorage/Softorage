@@ -93,8 +93,7 @@ get_it:
 sysreq:
   general:
     -
-      min: "* For operating systems requirements: https://www.mediamonkey.com/support/index.php?/Knowledgebase/Article/View/55/2/what-operating-systems-is-mediamonkey-compatible-with
-* For devices compatibility: https://www.mediamonkey.com/wiki/index.php/Compatible_Devices"
+      min: "* For operating systems requirements: https://www.mediamonkey.com/support/index.php?/Knowledgebase/Article/View/55/2/what-operating-systems-is-mediamonkey-compatible-with\n* For devices compatibility: https://www.mediamonkey.com/wiki/index.php/Compatible_Devices"
 
 developer: ["Ventis Media Inc."]
 

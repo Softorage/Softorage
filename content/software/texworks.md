@@ -57,5 +57,3 @@ source:
   See [XeTeX](/software/xetex/), [TeX Live](/software/tex-live/).
   
   [Mailing list](https://tug.org/mailman/listinfo/texworks)
-
-

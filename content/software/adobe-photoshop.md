@@ -406,4 +406,3 @@ rating:
   
   [Blog](https://theblog.adobe.com/creative-cloud/photoshop/)  I  [Forum](https://community.adobe.com/t5/photoshop/bd-p/photoshop)  I  [User Guide](https://helpx.adobe.com/in/photoshop/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/photoshop/faq.html)
   
-

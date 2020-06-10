@@ -109,5 +109,3 @@ rating:
   4. [**GraphX**](https://spark.apache.org/graphx/) is Apache Spark's API for graphs and graph-parallel computation.
   
   [News](https://spark.apache.org/news/)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/apache-spark)  I  [Community/Mailing Lists](https://spark.apache.org/community.html)  I  [Documentation](https://spark.apache.org/documentation.html)  I  [FAQ](https://spark.apache.org/faq.html)  I  [IRC](https://webchat.freenode.net/?channels=apache-spark)
-
-

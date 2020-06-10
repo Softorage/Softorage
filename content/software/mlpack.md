@@ -85,5 +85,3 @@ rating:
   
   [Developement Blog](https://www.mlpack.org/gsocblog/)  I  [Documentation](https://www.mlpack.org/docs.html)  I  [Wiki](https://github.com/mlpack/mlpack/wiki)  I  [Mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack)  I  [IRC](https://webchat.freenode.net/?channels=mlpack)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/mlpack)
   
-
-

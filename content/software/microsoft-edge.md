@@ -262,12 +262,10 @@ rating:
   - name: "TopTenReviews"
     rate: [4.5, 5]
 
-note: * For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview) topic on Microsoft Docs website.
-* After installation of Microsoft Edge, license terms are viewable in Microsoft Edge at [edge://terms](edge://terms).
-
+note: |
+  * For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview) topic on Microsoft Docs website.
+  * After installation of Microsoft Edge, license terms are viewable in Microsoft Edge at [edge://terms](edge://terms).
 ---
   Microsoft Edge is a [web browser](/categories/web-browser) developed by Microsoft. Edge includes integration with Cortana and has extensions hosted on the Microsoft Store. Unlike [Internet Explorer](/software/internet-explorer/), Edge does not support the legacy ActiveX and BHO technologies. Originally built with Microsoft's own EdgeHTML and Chakra engines, in 2019 Edge was rebuilt as a [Chromium](/software/chromium-web-browser/)-based browser, using the Blink and V8 engines. Though, for iOS, Microsoft Edge is based on WebKit. Microsoft released the first [Chromium](/software/chromium-web-browser/)-based Edge version on January 15, 2020.
   
   [Devs Blog](https://blogs.windows.com/msedgedev/)  I  [Forum](https://answers.microsoft.com/en-us/edge/forum)  I  [Documentation](https://docs.microsoft.com/en-us/microsoft-edge/)  I  [Deploy Documentation](https://docs.microsoft.com/en-us/deployedge/)  I  [FAQ for IT Pros](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge-faq)  I  [FAQ for Enterprise](https://docs.microsoft.com/en-us/deployedge/faqs-edge-in-the-enterprise)
-
-

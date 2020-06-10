@@ -65,8 +65,8 @@ rating:
     rate: [4, 5]
     num: 1
 
-note: * Repository - https://github.com/tmyroadctfig/xpdf hasn't been updated after 2012, hence not included.
-
+note: |
+  * Repository - https://github.com/tmyroadctfig/xpdf hasn't been updated after 2012, hence not included.
 ---
   Xpdf is a free and open-source PDF [document viewer](/categories/document-viewer) for operating systems supported by the Qt toolkit. Versions prior to 4.00 were written for the X Window System and Motif.
   
@@ -75,5 +75,3 @@ note: * Repository - https://github.com/tmyroadctfig/xpdf hasn't been updated af
   Xpdf is also used as a back-end for other PDF readers frontends such as KPDF and GPDF, and its engine, without the X11 display components, is used for PDF viewers including BePDF on BeOS, '!PDF' on RISC OS, on PalmPDF on Palm OS and on Windows Mobile.
   
   [Forum](http://forum.xpdfreader.com/)
-
-
