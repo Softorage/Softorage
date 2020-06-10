@@ -1,7 +1,7 @@
 ---
 title: "Sumatra PDF"
 
-description: "A document viewer with support for PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) formats"
+description: "Sumatra PDF is a document viewer with support for PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) formats"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/sumatra-pdf.png?h=64"
 
@@ -19,6 +19,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
@@ -30,6 +31,7 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4301-sumatra-pdf.html"
     platform:
@@ -37,6 +39,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
@@ -57,6 +60,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://sumatra-pdf.en.uptodown.com/windows"
     platform:
@@ -64,18 +68,21 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_sumatrapdf/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://sumatra-pdf.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-sumatra-pdf-64/"
     platform:
@@ -83,6 +90,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -208,4 +216,5 @@ rating:
   Sumatra is a [document viewer](/categories/document-viewer) for Windows with support for PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR). It is considered to be a lightweight and portable alternative to [Adobe Reader](/software/adobe-acrobat-reader-dc/).
    
   [Forum](https://forum.sumatrapdfreader.org/)  I  [News](https://www.sumatrapdfreader.org/docs/Version-history.html)  I  [Documentation](https://www.sumatrapdfreader.org/docs/SumatraPDF-documentation.html)  I  [Manual](https://www.sumatrapdfreader.org/manual.html)
+
 

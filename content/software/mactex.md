@@ -1,7 +1,7 @@
 ---
 title: "MacTeX"
 
-description: "A redistribution of TeX Live, a typesetting environment which includes Mac-specific utilities and front-ends"
+description: "MacTeX is a redistribution of TeX Live, a typesetting environment which includes Mac-specific utilities and front-ends"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/mactex.png?h=64"
 
@@ -39,4 +39,5 @@ source:
   See [TeX Live](/software/tex-live/).
   
   [FAQ](https://www.tug.org/mactex/faq/)  I  [About](https://www.tug.org/mactex/aboutmactex.html)
+
 

@@ -1,7 +1,7 @@
 ---
 title: "Ardour"
 
-description: "A hard disk recorder and digital audio workstation (DAW) application. It runs on Linux, MacOS, FreeBSD and Microsoft Windows."
+description: "Ardour is a hard disk recorder and digital audio workstation (DAW) application. It runs on Linux, MacOS, FreeBSD and Microsoft Windows."
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/ardour.png?h=64"
 
@@ -18,12 +18,14 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/ardour/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -104,10 +106,9 @@ rating:
     num: 13
     remarks: "Windows"
 
-note: |
-  * [System Requirements](#sysreq) in detail can be seen [here](https://community.ardour.org/linux_system_requirements) & [here](https://ardour.org/requirements.html)
-  * Ardour is an "unsigned application", so OS X and later might ask for extra confirmation the first time you run it.
-  
+note: * [System Requirements](#sysreq) in detail can be seen [here](https://community.ardour.org/linux_system_requirements) & [here](https://ardour.org/requirements.html)
+* Ardour is an "unsigned application", so OS X and later might ask for extra confirmation the first time you run it.
+
 ---
   Ardour is a hard disk recorder and [digital audio workstation](/categories/digital-audio-workstation) application. It runs on Linux, macOS, FreeBSD and Microsoft Windows. Its primary author is Paul Davis, who is also responsible for the JACK Audio Connection Kit. Ardour is intended to be [digital audio workstation](/categories/digital-audio-workstation) software suitable for professional use.
   
@@ -115,3 +116,4 @@ note: |
   
   [IRC](http://webchat.freenode.net/?channels=ardour)  I  [Blog](https://discourse.ardour.org/c/blog)  I  [News](https://community.ardour.org/news)  I  [Forum](https://discourse.ardour.org/)  I  [Manual](http://manual.ardour.org/toc/)  I  [FAQ](https://community.ardour.org/realfaq)  I  [Mailing lists](https://ardour.org/community.html#mailinglists)
   
+

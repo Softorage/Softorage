@@ -1,7 +1,7 @@
 ---
 title: "Krita"
 
-description: "A free and open-source raster graphics editor, designed primarily for digital painting and animation purposes."
+description: "Krita is a free and open-source raster graphics editor, designed primarily for digital painting and animation purposes."
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/krita.png?h=64"
 
@@ -19,6 +19,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6842-krita.html"
     platform:
@@ -26,13 +27,16 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FossHub"
     url: "https://www.fosshub.com/Krita.html"
     platform:
@@ -40,19 +44,23 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://krita.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Krita.shtml"
     platform:
@@ -60,36 +68,42 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://krita.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_krita/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/krita/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Multimedia/Graphics/Krita-2254.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://krita.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -242,3 +256,4 @@ rating:
   
   [Forum](https://forum.kde.org/viewforum.php?f=136)  I  [Documentation(Manual)](https://docs.krita.org/en/)  I  [Wiki](https://userbase.kde.org/Krita/en)  I  [News](https://krita.org/en/news/)  I  [FAQ](https://docs.krita.org/en/KritaFAQ.html)  I  [Mailing list](https://krita.org/en/mailing-lists/)  I  [IRC](https://krita.org/en/irc/)
   
+

@@ -1,7 +1,7 @@
 ---
 title: "XeTeX"
 
-description: "A TeX typesetting engine using Unicode and supporting modern font technologies"
+description: "XeTeX is a TeX typesetting engine using Unicode and supporting modern font technologies"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/xetex.png?h=64"
 
@@ -34,9 +34,8 @@ source:
   license: ["https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/COPYING"]
   status: ["https://sourceforge.net/p/xetex/code/commit_browser", "https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/NEWS"]
 
-note: |
-  * XeTeX is included in [TeX Live](/software/tex-live/), so XeTeX is on [platforms](#platform) for which [TeX Live](/software/tex-live/) is available.
-  
+note: * XeTeX is included in [TeX Live](/software/tex-live/), so XeTeX is on [platforms](#platform) for which [TeX Live](/software/tex-live/) is available.
+
 ---
   > XeTeX is a TeX typesetting engine using Unicode and supporting modern font technologies such as OpenType, Graphite and Apple Advanced Typography (AAT). \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=XeTeX&oldid=877803914)
   
@@ -46,4 +45,5 @@ note: |
   See [TeX Live](/software/tex-live/).
   
   [News](https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/NEWS)  I  [TUG page](http://www.tug.org/xetex/)  I  [Mailing list](http://www.tug.org/mailman/listinfo/xetex)
+
 

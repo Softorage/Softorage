@@ -1,7 +1,7 @@
 ---
 title: "Hugo"
 
-description: "A static site generator & blog publishing system, written in Go"
+description: "Hugo is a static site generator & blog publishing system, written in Go"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/hugo.png?h=64"
 
@@ -19,18 +19,22 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Unix(like)"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
 
 developer: ["Bjorn Erik Pedersen", "Steve Francia <OD>", "Community"]
 
@@ -78,4 +82,5 @@ source:
   Hugo is a [static site generator](/categories/static-site-generator/) written in Go. It takes data files, i18n bundles, configuration, templates for layouts, static files, and content written in Markdown and renders a static website. Some notable features are multilingual support, image processing, custom output formats, and shortcodes.
   
   [News](https://gohugo.io/news/)  I  [Forum](https://discourse.gohugo.io/)  I  [Documentation](https://gohugo.io/documentation/)  I  [FAQ](https://gohugo.io/troubleshooting/faq/)  I  [Gitter for Devs](https://gitter.im/spf13/hugo)
+
 

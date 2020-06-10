@@ -1,7 +1,7 @@
 ---
 title: "Scribus"
 
-description: "A free and open source desktop publishing (DTP) application, designed for layout, typesetting, and preparation of files for professional-quality image-setting equipment"
+description: "Scibus is a free and open source desktop publishing (DTP) application, designed for layout, typesetting, and preparation of files for professional-quality image-setting equipment"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/scribus.png?h=64"
 
@@ -19,12 +19,15 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-scribus-32/"
     platform:
@@ -32,48 +35,56 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_scribus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://scribus.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/scribus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/22952/scribus"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://scribus.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-scribus/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Scribus/3000-6675_4-100490.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Scribus/3000-6675_4-10655204.html"
     platform:
@@ -81,6 +92,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Scribus-64-bit/3000-6675_4-75846779.html"
     platform:
@@ -88,27 +100,35 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Scribus-2148.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  macos:
     -
-      min: "Windows 2000 SP4, Windows XP, Vista or 7"
+      min: "RAM: 512 MB"
+      recm: "RAM: 1 to 2GB"
+    -
+      min: "Processor: PowerPC or Intel-based"
+      recm: "Processor: Dual Core Intel"
+    -
+      min: "Other: Ghostscript 8.6+"
       recm: ""
+  windows:
     -
-      min: "512MB RAM"
-      recm: "1 to 2GB RAM for mac"
+      min: "OS: Windows 2000 SP4, Windows XP, Vista or 7"
     -
-      min: "Pentium III – 750MHz processor for Windows | PowerPC or Intel-based processor for mac"
-      recm: "Dual Core Intel processors for mac"
+      min: "RAM: 512 MB"
     -
-      min: "Ghostscript 8.7+ for Windows | Ghostscript 8.6+ for mac"
-      recm: ""
+      min: "Processor: Pentium III – 750MHz"
+    -
+      min: "Other: Ghostscript 8.7+"
 
 developer: ["The Scribus Team"]
 
@@ -145,7 +165,8 @@ source:
   platform:
     - dskp: ["https://www.scribus.net/downloads/stable-branch/"]
   sysreq:
-    general: ["https://wiki.scribus.net/canvas/Official:Windows", "https://wiki.scribus.net/canvas/Official:MacOS_Readme"]
+    macos: ["https://wiki.scribus.net/canvas/Official:MacOS_Readme"]
+    windows: ["https://wiki.scribus.net/canvas/Official:Windows"]
   license: ["https://wiki.scribus.net/canvas/Help:About_Scribus_Copyright"]
   rating:
     - name: "TechRadar"

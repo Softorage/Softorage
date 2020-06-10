@@ -137,8 +137,8 @@
                   </button>
                 </div>
                 <div class="modal-body get-it-modal-body">
-                  <!-- we have enabled tabbable tabs for following, i.e., with id download-tab-->
-                  <ul class="nav nav-tabs rounded-lg shadow-sm justify-content-center" id="download-tab" role="tablist">
+                  <!-- we have enabled tabbable tabs for following -->
+                  <ul class="nav nav-tabs rounded-lg shadow-sm justify-content-center" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active text-success" data-toggle="tab" href="#download-authentic" role="tab" aria-controls="authentic" aria-selected="true">Recommended</a>
                     </li>
@@ -157,7 +157,7 @@
                   <!-- stores availability of download link for given platform -->
                   {{ $download_available := false }}
                   
-                  <div class="tab-content" id="myTabContent">
+                  <div class="tab-content" id="get_it_tab_content">
                     <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="authentic-tab">
                       {{- range .Params.get_it -}}
                         {{ if (in .from "Authentic") | or (in .from "Google Play") | or (in .from "Apple App") }}
@@ -627,8 +627,9 @@
                 {{ $navNames = $navNames | append $name }} <!-- store all navs names in $navNames array (slice) -->
               {{ end }}
               
-              <ul class="nav nav-tabs rounded-lg shadow-sm" id="download-tab" role="tablist">
-              
+              <ul class="nav nav-tabs rounded-lg shadow-sm" role="tablist">
+                <!-- we have sorted this range in desc order, we must also sort div.tab-content range in desc order wrt key to achive needed result -->
+                {{/* range $i, $e := sort $navNames "value" "desc" */}}
                 {{ range $i, $e := $navNames }}
                 
                   <li class="nav-item">
@@ -639,12 +640,12 @@
                 
               </ul>
               
-              <div class="tab-content" id="myTabContent">
+              <div class="tab-content" id="sysreq_tab_content">
                 
+                <!-- https://discourse.gohugo.io/t/how-to-sort-in-reverse-order-by-preserving-the-order/25827/9 -->
                 <!-- range through map .Params.sysreq; $name is key -->
                 {{- range $name, $element := .Params.sysreq -}}
-                  
-                  {{ range $index, $rowElement := $element  }}
+                  {{ range $i, $rowElement := $element }}
                   
                     {{- if $rowElement.min -}}
                       {{- $minimum = true -}}
@@ -686,21 +687,21 @@
                                 {{- if $minimum -}}
                                 <td>
                                   {{- if $rowElement.min }}
-                                    {{- $rowElement.min }}
+                                    {{- safeHTML (replace (markdownify (replace $rowElement.min " | " "  I  ")) "  I  " " | ") }}
                                   {{- end -}}
                                 </td>
                                 {{- end }}
                                 {{- if $recommended -}}
                                 <td>
                                   {{- if $rowElement.recm }}
-                                    {{- $rowElement.recm -}}
+                                    {{- safeHTML (replace (markdownify (replace $rowElement.recm " | " "  I  ")) "  I  " " | ") -}}
                                   {{- end -}}
                                 </td>
                                 {{- end }}
                                 {{- if $optimal -}}
                                 <td>
                                   {{- if $rowElement.optm }}
-                                    {{- $rowElement.optm }}
+                                    {{- safeHTML (replace (markdownify (replace $rowElement.optm " | " "  I  ")) "  I  " " | ") }}
                                   {{- end -}}
                                 </td>
                                 {{- end }}
@@ -1078,9 +1079,3 @@
 </div>
 
 {{- end }}
-{{ define "script" }}
-$("#download-tab a").click(function (e) {
-  e.preventDefault();  
-  $(this).tab("show");
-});
-{{ end }}

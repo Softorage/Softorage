@@ -1,7 +1,7 @@
 ---
 title: "Mozilla Thunderbird"
 
-description: "A cross-platform email client, news client, RSS, and chat client developed by the Mozilla Foundation"
+description: "Mozilla Thunderbird is a cross-platform email client, news client, RSS, and chat client developed by the Mozilla Foundation"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/mozilla-thunderbird.png?h=64"
 
@@ -19,6 +19,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/E-mail/Portable-Thunderbird.shtml"
     platform:
@@ -34,13 +35,16 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "TechSpot beta"
     url: "https://www.techspot.com/downloads/4907-mozilla-thunderbird-beta.html"
     platform:
@@ -48,37 +52,44 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://thunderbird.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://mozilla-thunderbird.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_thunderbird/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Thunderbird/3000-2367_4-10213643.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-thunderbird-32/"
     platform:
@@ -86,6 +97,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-thunderbird-64/"
     platform:
@@ -93,6 +105,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-thunderbird-portable/"
     platform:
@@ -106,29 +119,52 @@ get_it:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_thunderbird_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://mozilla-thunderbird.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-thunderbird/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  linux:
     -
-      min: "See note."
+      min: "Thunderbird will not run at all without the following libraries or packages- GTK+ 3.4 or higher, GLib 2.22 or higher, Pango 1.22 or higher, X.Org 1.0 or higher (1.7 or higher is recommended), libstdc++ 4.7 or higher"
+      recm: "Minimum required packages plus- NetworkManager 0.7 or higher, DBus 1.0 or higher, GNOME 2.16 or higher"
+  macos:
+    -
+      min: "OS: Mac OS X 10.9, Mac OS X 10.10, Mac OS X 10.11, Mac OS X 10.12, Mac OS X 10.13, Mac OS X 10.14, Mac OS X 10.15"
+    -
+      min: "Processor: Intel x86"
+    -
+      min: "RAM: 512 MB"
+    -
+      min: "Hard drive space: 200 MB"
+  windows:
+    -
+      min: "OS: Windows 7, Windows 8, Windows 10, Windows Server 2008 R2"
+    -
+      min: "Processor: Pentium 4 or newer processor that supports SSE2"
+    -
+      min: "RAM: 1GB"
+    -
+      min: "Hard drive space: 200 MB"
 
 developer: ["Mozilla Foundation", "MZLA Technologies Corporation"]
 
@@ -170,6 +206,10 @@ source:
   written_in: ["https://searchfox.org/comm-central/source", "https://searchfox.org/comm-central/source/common/src", "https://en.wikipedia.org/w/index.php?title=Mozilla_Thunderbird&oldid=951454791"]
   platform:
     - dskp: ["https://www.thunderbird.net/en-US/thunderbird/68.7.0/system-requirements", "https://en.wikipedia.org/w/index.php?title=Mozilla_Thunderbird&oldid=951454791", "https://www.freshports.org/mail/thunderbird/", "http://ports.su/mail/mozilla-thunderbird,-main"]
+  sysreq:
+    linux: ["https://www.thunderbird.net/en-US/thunderbird/68.7.0/system-requirements/"]
+    macos: ["https://www.thunderbird.net/en-US/thunderbird/68.7.0/system-requirements/"]
+    window: ["https://www.thunderbird.net/en-US/thunderbird/68.7.0/system-requirements/"]
   license: ["https://www.mozilla.org/en-US/about/legal/eula/thunderbird-2/"]
   rating:
     - name: "Softpedia"
@@ -316,12 +356,9 @@ rating:
     rate: [4, 5]
   - name: "PCMag"
     rate: [4, 5]
-
-note: |
-  * System requirements for v68.0.7 can be seen [here](https://www.thunderbird.net/en-US/thunderbird/68.7.0/system-requirements/).
-  
 ---
   Thunderbird is an [email](/categories/email-client/), [news feed](/categories/news-reader/), [RSS feed](/categories/feed-reader/), and [chat](/categories/instant-messaging/) (XMPP, IRC, Twitter) client. Its features include message management; junk filtering; extensions and themes; standards support: POP,IMAP, LDAP, S/MIME, OpenPGP; file formats supported: mbox, maildir; file linking; HTML code insertion; cross-platform support for Linux, macOS, Windows, with unofficial ports for FreeBSD, OpenBSD; localization; and security.
   
   [Blog](https://blog.thunderbird.net/)  I  [Forum](https://support.mozilla.org/en-US/products/thunderbird/support-forum)  I  [Documentation](https://wiki.mozilla.org/Thunderbird/Docs)  I  [FAQ](https://support.mozilla.org/en-US/kb/thunderbird-faq)
+  
 

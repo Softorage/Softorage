@@ -1,7 +1,7 @@
 ---
 title: "Opera (Web Browser)"
 
-description: "A freeware Chromium-based web browser developed by Opera Software; with variants Opera Mini, Opera Touch"
+description: "Opera is a freeware Chromium-based web browser developed by Opera Software; with variants Opera Mini, Opera Touch"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/opera-web-browser.png?h=64"
 
@@ -18,12 +18,14 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Opera-for-Windows-without-Java.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/393-opera-browser.html"
     platform:
@@ -31,18 +33,22 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://opera.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-opera-32/"
     platform:
@@ -50,73 +56,92 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/6297/opera"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-opera/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_opera_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://opera.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Google Play Store (Opera)"
     url: "https://play.google.com/store/apps/details?id=com.opera.browser"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Google Play Store (Opera Touch)"
     url: "https://play.google.com/store/apps/details?id=com.opera.touch"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Google Play Store (Opera Mini)"
     url: "https://play.google.com/store/apps/details?id=com.opera.mini.native"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://opera.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://opera-browser.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/id1411869974"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  linux:
     -
-      min: "Windows: Windows 7 or later | macOS: OS X El Capitan 10.11 or later | Linux: 64-bit Ubuntu 16.04 or later"
+      min: "OS: 64-bit Ubuntu 16.04 or later"
     -
-      min: "Windows: Intel Pentium 4 / AMD Athlon 64 processor or later with support for SSE2 | Linux: Intel Pentium 4 / AMD Athlon 64 processor or later with support for SSE2"
+      min: "Processor: Intel Pentium 4 / AMD Athlon 64 processor or later with support for SSE2"
+  macos:
+    -
+      min: "OS X El Capitan 10.11 or later"
+  windows:
+    -
+      min: "OS: Windows 7 or later"
+    -
+      min: "Processor: Intel Pentium 4 / AMD Athlon 64 processor or later with support for SSE2"
 
 developer: ["Opera Software"]
 
@@ -170,7 +195,9 @@ source:
   platform:
     - dskp: ["https://www.opera.com/hi/download"]
   sysreq:
-    general: ["https://www.opera.com/hi/download/requirements"]
+    linux: ["https://www.opera.com/hi/download/requirements"]
+    macos: ["https://www.opera.com/hi/download/requirements"]
+    windows: ["https://www.opera.com/hi/download/requirements"]
   license: ["https://www.opera.com/hi/eula/computers", "https://www.opera.com/hi/eula/mobile", "https://en.wikipedia.org/w/index.php?title=Opera_(web_browser)&oldid=934545821"]
   rating:
     - name: "FileHippo"
@@ -322,4 +349,3 @@ rating:
         
   [Blog/News](https://blogs.opera.com/news/)  I  [Blog Desktop](https://blogs.opera.com/desktop/)  I  [Blog Mobile](https://blogs.opera.com/mobile/)  I  [Blog Security](https://blogs.opera.com/security/)  I  [Forum](https://forums.opera.com/)  I  [Help](https://help.opera.com/en/get-started/)  I  [FAQ](https://help.opera.com/en/faq/)
   
-

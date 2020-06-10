@@ -1,7 +1,7 @@
 ---
 title: "7-Zip"
 
-description: "A file archiver, file manager developed by Igor Pavlov and was first released in 1999, available for Unix-like OSes under project p7zip"
+description: "7-Zip is a file archiver, file manager developed by Igor Pavlov and was first released in 1999, available for Unix-like OSes under project p7zip"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/7-zip.png?h=64"
 
@@ -18,6 +18,7 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/757-7-zip.html"
     platform:
@@ -25,6 +26,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         official: true
@@ -36,6 +38,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-7-zip-portable/"
     platform:
@@ -50,12 +53,14 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://7-zip.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://7-zip.en.softonic.com/"
     platform:
@@ -63,6 +68,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://7-zip-64-bit.en.softonic.com/"
     platform:
@@ -70,6 +76,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_7zip_32/"
     platform:
@@ -77,18 +84,21 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/7-Zip/3000-2250_4-10045185.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Compression-tools/7-Zip.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Compression-Tools/Windows-Portable-Applications-7-Zip-Portable.shtml"
     platform:
@@ -103,15 +113,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "SourceForge (p7zip)"
     url: "https://sourceforge.net/projects/p7zip/files/p7zip/"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Unix(like)"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 developer: ["Igor Pavlov"]
 
@@ -279,4 +292,5 @@ rating:
   p7zip is the port of the command line version of 7-Zip to Linux/Posix. 7za.exe version of 7-Zip is available for Unix-like operating systems (including Linux, FreeBSD, and macOS), FreeDOS, OpenVMS, AmigaOS 4, and MorphOS under the p7zip project.
   
   [History/Changelog](https://www.7-zip.org/history.txt)  I  [Forum](https://sourceforge.net/p/sevenzip/discussion/)  I  [Wiki](https://sourceforge.net/p/sevenzip/wiki/Home/)  I  [documentation.HELP!](https://documentation.help/7-Zip/)  I  [FAQ](https://www.7-zip.org/faq.html)
+
 

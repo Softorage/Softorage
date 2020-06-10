@@ -1,7 +1,7 @@
 ---
 title: "Art of Illusion"
 
-description: "3D-modeling software for creating and mapping textures and rendering both, still images and animations."
+description: "Art of Illusion is a 3D-modeling software for creating and mapping textures and rendering both, still images and animations."
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/art-of-illusion.png?h=64"
 
@@ -18,30 +18,35 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Art-of-Illusion/3000-2191_4-35319.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Art-of-Illusion.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/art-of-illusion/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/19836/art-of-illusion"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -135,9 +140,8 @@ rating:
     num: 139
     remarks: "Windows"
 
-note: |
-  * Absolute minimum requirements or recommendations for the system hardware have not been declared.
-  
+note: * Absolute minimum requirements or recommendations for the system hardware have not been declared.
+
 ---
   Art of Illusion is a [3D-graphics software](/categories/3d-computing-graphics), with similar intent of use as for example 3DS-Max or Maya of the commercial software packages or [Blender](/software/blender) or [Wings 3D](/software/wings-3d) on the freeware side. Though some sources seem to confuse 3D-modeling with CAD, Art of Illusion does not provide any CAD-features.
   
@@ -149,3 +153,4 @@ note: |
   
   [Forum](https://sourceforge.net/p/aoi/discussion/)  I  [Documentation](http://www.artofillusion.org/documentation)  I  [FAQ](http://www.artofillusion.org/faq)
   
+

@@ -1,7 +1,7 @@
 ---
 title: "Adobe Acrobat DC"
 
-description: "A commercial software developed by Adobe Inc., to view, print, annotate, as well as create, edit, convert, digitally sign, encrypt, export and publish PDF files"
+description: "Adobe Acrobat DC is a commercial software developed by Adobe Inc., to view, print, annotate, as well as create, edit, convert, digitally sign, encrypt, export and publish PDF files"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-acrobat-dc.png?h=64"
 
@@ -18,68 +18,94 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_adobe_acrobat_pro_dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/adobe-acrobat-professional/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-acrobat-professional.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4683-adobe-acrobat-pro.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-acrobat-pro-dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/adobe-acrobat/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-acrobat-pro-dc/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  macos:
     -
-      min: "Processor: Windows (Pro/Standard) - 1.5GHz or faster processor | macOS (Standard) - Intel processor"
+      min: "Processor: Intel processor"
     -
-      min: "OS: Windows (Pro/Standard) - Windows Server 2008 R2 (64 bit), 2012 (64 bit), 2012 R2 (64 bit), 2016 (64 bit), or 2019 (64 bit); Windows 7 SP1 (32 bit and 64 bit), Windows 8, 8.1 (32 bit and 64 bit), or Windows 10 (32 bit and 64 bit) | macOS (Standard) - macOS v10.12, macOS v10.13, macOS v10.14, or macOS v10.1"
+      min: "OS: macOS v10.12, macOS v10.13, macOS v10.14, or macOS v10.1"
     -
-      min: "RAM: Windows (Pro/Standard): 1GB | macOS (Standard): 1GB"
+      min: "RAM: 1GB"
     -
-      min: "Hard Disk Space: Windows (Pro/Standard) - 4.5GB | macOS (Standard) - 2.75GB"
+      min: "Hard Disk Space: 2.75GB"
     -
-      min: "Screen Resolution: Windows (Pro/Standard): 1024x768 | macOS (Standard): 1024x768"
+      min: "Screen Resolution: 1024x768"
     -
-      min: "Others: Windows (Pro/Standard) - Internet Explorer 11, Firefox (ESR), or Chrome | macOS (Standard) - Safari 10.0 or 11.0 (browser plug-in for Safari supported on 64-bit Intel processor only)"
+      min: "Others: Safari 10.0 or 11.0 (browser plug-in for Safari supported on 64-bit Intel processor only)"
     -
-      min: "Optional: Windows (Pro/Standard) - Video hardware acceleration"
+      min: "Availability: Standard version"
+  windows:
+    -
+      min: "Processor: 1.5GHz or faster processor"
+    -
+      min: "OS: Windows Server 2008 R2 (64 bit), 2012 (64 bit), 2012 R2 (64 bit), 2016 (64 bit), or 2019 (64 bit); Windows 7 SP1 (32 bit and 64 bit), Windows 8, 8.1 (32 bit and 64 bit), or Windows 10 (32 bit and 64 bit)"
+    -
+      min: "RAM: 1GB"
+    -
+      min: "Hard Disk Space: 4.5GB"
+    -
+      min: "Screen Resolution: 1024x768"
+    -
+      min: "Others: Internet Explorer 11, Firefox (ESR), or Chrome"
+    -
+      min: "Optional: Video hardware acceleration"
+    -
+      min: "Availability: Pro/Standard version"
 
 developer: ["Adobe Inc."]
 
@@ -103,7 +129,8 @@ source:
   platform:
     - dskp: ["https://helpx.adobe.com/acrobat/system-requirements.html"]
   sysreq:
-    general: ["https://helpx.adobe.com/acrobat/system-requirements.html"]
+    macos: ["https://helpx.adobe.com/acrobat/system-requirements.html"]
+    windows: ["https://helpx.adobe.com/acrobat/system-requirements.html"]
   license: ["https://www.adobe.com/legal/licenses-terms.html", "https://www.adobe.com/legal/terms.html"]
   rating:
     - name: "Softpedia"
@@ -192,3 +219,5 @@ rating:
   Its features include, edit scanned documents; create protected PDFs; export PDFs to MS Office; fill, sign, and send forms; delete sensitive information; work with Dropbox, Box, Google Drive, and OneDrive.
   
   [Blog](https://theblog.adobe.com/document-cloud/acrobat-dc/)  I  [Release Notes](https://helpx.adobe.com/in/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes)  I  [Forum](https://community.adobe.com/t5/acrobat/bd-p/acrobat) | [User Guide](https://helpx.adobe.com/acrobat/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/acrobat/faq.html)
+  
+

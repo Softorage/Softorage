@@ -1,7 +1,7 @@
 ---
 title: "TensorFlow"
 
-description: "An open-source software library for data-flow programming and machine learning applications such as neural networks"
+description: "TensorFlow is an open-source software library for data-flow programming and machine learning applications such as neural networks"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/tensorflow.png?h=64"
 
@@ -117,9 +117,8 @@ rating:
     rate: [4.5, 5]
     num: 43
 
-note: |
-  * TensorFlow, the TensorFlow logo and any related marks are trademarks of Google Inc.
-  
+note: * TensorFlow, the TensorFlow logo and any related marks are trademarks of Google Inc.
+
 ---
   TensorFlow is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices.
   
@@ -128,4 +127,5 @@ note: |
   It comes with strong support for [machine learning](/categories/machine-learning) and [deep learning](/categories/deep-learning) and the flexible numerical computation core is used across many other scientific domains.
   
   [Blog](https://medium.com/tensorflow)  I  [Mailing list](https://www.tensorflow.org/community/lists)  I  [Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow)  I  [Tutorials](https://www.tensorflow.org/tutorials/)  I  [FAQ](https://www.tensorflow.org/guide/faq)
+
 

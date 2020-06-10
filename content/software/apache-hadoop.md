@@ -1,7 +1,7 @@
 ---
 title: "Apache Hadoop"
 
-description: "A software framework for distributed storage that facilitates using a network of many computers to solve problems involving massive amounts of data and computation using MapReduce programming model"
+description: "Apache Hadoop is a software framework for distributed storage that facilitates using a network of many computers to solve problems involving massive amounts of data and computation using MapReduce programming model"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/apache-hadoop.png?h=64"
 
@@ -14,19 +14,20 @@ get_it:
     url: "https://hadoop.apache.org/releases.html"
 
 sysreq:
-  general:
+  hardware:
     -
-      min: "Software: Java 7 for Apache Hadoop v2.7 or later | Java 6 is supported by v2.6 or earlier"
-      optm: "Hardware: Intel Core 2  Duo/Quad/hex/Octa or higher end 64 bit processor PC or Laptop (Minimum operating frequency of 2.5GHz)"
+      min: "Intel Core 2  Duo/Quad/hex/Octa or higher end 64 bit processor PC or Laptop (Minimum operating frequency of 2.5GHz)"
     -
-      min: "Software: SSH installed and SSHD running to use the Hadoop scripts that manage remote Hadoop daemons"
-      optm: "Hardware: Hard Disk capacity of 1 - 4 TB"
+      min: "Hard Disk capacity of 1 - 4 TB"
     -
-      min: ""
-      optm: "Hardware: 64 - 512 GB RAM"
+      min: "64 - 512 GB RAM"
     -
-      min: ""
-      optm: "Hardware: 10 Gigabit Ethernet or Bonded Gigabit Ethernet"
+      min: "10 Gigabit Ethernet or Bonded Gigabit Ethernet"
+  software:
+    -
+      min: "Java 7 for Apache Hadoop v2.7 or later  I  Java 6 is supported by v2.6 or earlier"
+    -
+      min: "SSH installed and SSHD running to use the Hadoop scripts that manage remote Hadoop daemons"
 
 developer: ["Apache Software Foundation"]
 
@@ -61,7 +62,8 @@ source:
   platform:
     - dskp: ["https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html", "https://wiki.apache.org/hadoop/Hadoop2OnWindows"]
   sysreq:
-    general: ["https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html", "https://wiki.apache.org/hadoop/HadoopJavaVersions", "https://www.dezyre.com/article/what-are-the-pre-requisites-to-learn-hadoop/170"]
+    hardware: ["https://www.dezyre.com/article/what-are-the-pre-requisites-to-learn-hadoop/170"]
+    software: ["https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html", "https://wiki.apache.org/hadoop/HadoopJavaVersions"]
   license: ["https://hadoop.apache.org/releases.html", "https://github.com/apache/hadoop/blob/trunk/LICENSE.txt"]
   rating:
     - name: "TrustRadius"
@@ -80,10 +82,9 @@ rating:
     rate: [4.3, 5]
     num: 81
 
-note: |
-  * Apache, Apache Hadoop name and logo are trademarks of Apache Software Foundation.
-  * Hardware [System requirements](#sysreq) *(optimal)* are not from [official website](https://hadoop.apache.org/).
-  
+note: * Apache, Apache Hadoop name and logo are trademarks of Apache Software Foundation.
+* Hardware [System requirements](#sysreq) *(optimal)* are not from [official website](https://hadoop.apache.org/).
+
 ---
   Apache(TM) Hadoop(R) is a library framework that facilitate using a network of many computers to solve problems involving massive amounts of data and computation providing for [distributed storage](/categories/distributed-file-system) and processing of big data using the MapReduce programming model.
   
@@ -93,4 +94,5 @@ note: |
   When a node fails, processing is re-directed to the remaining nodes in the cluster and data is automatically re-replicated in preparation for future node failures, making Apache Hadoop resilient.
   
   [Blog](https://blogs.apache.org/hadoop/)  I  [News](https://hadoop.apache.org/news.html)  I  [Mailing lists](https://hadoop.apache.org/mailing_lists.html)  I  [Wiki](https://wiki.apache.org/hadoop)  I  [Documentation](https://hadoop.apache.org/docs/current/)  I  [FAQ](https://wiki.apache.org/hadoop/FAQ)  I  [IRC](https://webchat.freenode.net/?channels=hadoop)
+  
 

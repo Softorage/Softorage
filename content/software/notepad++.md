@@ -1,7 +1,7 @@
 ---
 title: "Notepad++"
 
-description: "A text and source code editor for Windows"
+description: "Notepad++ is a text and source code editor for Windows"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/notepad++.png?h=64"
 
@@ -19,6 +19,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_notepad_64/"
     platform:
@@ -26,6 +27,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-notepad-32/"
     platform:
@@ -33,6 +35,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-notepad-64/"
     platform:
@@ -40,12 +43,14 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://notepad.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/Text-editors/Notepad-plus-plus.shtml"
     platform:
@@ -53,6 +58,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Office/Suites-editors/Notepad-plusplus-Portable.shtml"
     platform:
@@ -66,6 +72,7 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://notepad-portable.en.softonic.com/"
     platform:
@@ -80,6 +87,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
@@ -92,6 +100,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Notepad-64-bit/3000-2352_4-77388575.html"
     platform:
@@ -99,6 +108,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
 
 developer: ["Don Ho"]
 
@@ -255,3 +265,4 @@ rating:
   * Document Map
   
   [News](https://notepad-plus-plus.org/news/)  I  [Forum](https://community.notepad-plus-plus.org/)  I  [Gitter Chat](https://gitter.im/notepad-plus-plus/notepad-plus-plus)  I  [User Manual](https://npp-user-manual.org/)
+

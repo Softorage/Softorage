@@ -1,7 +1,7 @@
 ---
 title: "TeXworks"
 
-description: "A TeX front-end program (working environment) that is GUI TeX editor"
+description: "TeXworks is a TeX front-end program (working environment) that is GUI TeX editor"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/texworks.png?h=64"
 
@@ -57,4 +57,5 @@ source:
   See [XeTeX](/software/xetex/), [TeX Live](/software/tex-live/).
   
   [Mailing list](https://tug.org/mailman/listinfo/texworks)
+
 

@@ -1,7 +1,7 @@
 ---
 title: "uTorrent"
 
-description: "A proprietary adware BitTorrent client owned and developed by BitTorrent, Inc."
+description: "uTorrent is a proprietary adware BitTorrent client owned and developed by BitTorrent, Inc."
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/utorrent.png?h=64"
 
@@ -18,66 +18,77 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_utorrent/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/uTorrent/3000-2196_4-10528327.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-utorrent/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/utorrent/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/File-Sharing/uTorrent.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://utorrent.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.utorrent.client"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_utorrent_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/29824/utorrent"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-utorrent/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -235,3 +246,4 @@ rating:
   
   [Blog](http://blog.utorrent.com/)  I  [Forum](https://forum.utorrent.com/)  I  [Help](http://help.utorrent.com/)  I  [documentation.HELP!](https://documentation.help/uTorrent/)  I  [FAQ](http://help.utorrent.com/customer/portal/topics/822087/articles)
   
+

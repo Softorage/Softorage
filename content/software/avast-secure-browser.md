@@ -1,7 +1,7 @@
 ---
 title: "Avast Secure Browser"
 
-description: "A web browser developed by Avast that focuses on Internet security and privacy"
+description: "Avast Secure Browser is a web browser developed by Avast that focuses on Internet security and privacy"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/avast-secure-browser.png?h=64"
 
@@ -18,48 +18,56 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_avast-secure-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6707-avast-secure-browser.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://secure-browser.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Avast-Secure-Browser.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-avast-secure-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://avast-secure-browser.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/avast-secure-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -142,3 +150,4 @@ rating:
   It has features such as Ad Block, Bank mode, Passwords, Video downloader, Anti-tracking & Anti-fingerprinting, Anti-fishing, etc.
   
   [Blog](https://blog.avast.com/topic/browser)  I  [Forum](https://forum.avast.com/index.php?board=78.0)  I  [FAQ](https://support.avast.com/en-in/article/Secure-Browser-FAQ)
+

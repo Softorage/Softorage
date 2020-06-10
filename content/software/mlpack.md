@@ -1,7 +1,7 @@
 ---
 title: "mlpack"
 
-description: "A scalable machine learning library in C++ with a modular C++ API for expert users"
+description: "mlpack is a scalable machine learning library in C++ with a modular C++ API for expert users"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/mlpack.png?h=64"
 
@@ -85,4 +85,5 @@ rating:
   
   [Developement Blog](https://www.mlpack.org/gsocblog/)  I  [Documentation](https://www.mlpack.org/docs.html)  I  [Wiki](https://github.com/mlpack/mlpack/wiki)  I  [Mailing list](http://lists.mlpack.org/mailman/listinfo/mlpack)  I  [IRC](https://webchat.freenode.net/?channels=mlpack)  I  [Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/mlpack)
   
+
 

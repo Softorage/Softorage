@@ -1,7 +1,7 @@
 ---
 title: "Godot"
 
-description: "A 2D and 3D cross-platform compatible game engine released as open source software under the MIT license"
+description: "Godot is a 2D and 3D cross-platform compatible game engine released as open source software under the MIT license"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/godot.png?h=64"
 
@@ -19,12 +19,14 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Gaming-Related/Godot-Engine.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://godot-engine.en.uptodown.com/windows"
     platform:
@@ -32,6 +34,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -118,3 +121,4 @@ rating:
   
   [Documentation](https://docs.godotengine.org/)  I  [News](https://godotengine.org/news)  I  [Question/Answers](https://godotengine.org/qa/)  I  [IRC](http://webchat.freenode.net/?channels=#godotengine)  I  [Developer Forum](https://godotforums.org/)  I  [FAQ](http://docs.godotengine.org/en/3.0/about/faq.html)
   
+

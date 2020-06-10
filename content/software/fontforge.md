@@ -1,7 +1,7 @@
 ---
 title: "FontForge"
 
-description: "A font editor which supports many common font formats."
+description: "FontForge is a font editor which supports many common font formats."
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/fontforge.png?h=64"
 
@@ -20,12 +20,14 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/48689/fontforge"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -124,3 +126,4 @@ rating:
   
   [Online Book](http://designwithfontforge.com/)  I  [Documentation](https://fontforge.org/en-US/documentation/)  I  [FAQ](https://fontforge.org/en-US/faq/)  I  [Wiki](https://github.com/fontforge/fontforge/wiki)  I  [Mailing list](https://sourceforge.net/projects/fontforge/lists/fontforge-users)
   
+

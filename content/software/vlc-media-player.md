@@ -1,7 +1,7 @@
 ---
 title: "VLC Media Player"
 
-description: "A free and open-source media player software and streaming media server developed by the VideoLAN project"
+description: "VLC Media Player is a free and open-source media player software and streaming media server developed by the VideoLAN project"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/vlc-media-player.png?h=64"
 
@@ -19,6 +19,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-vlc-64/"
     platform:
@@ -26,12 +27,14 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://vlc-media-player.en.uptodown.com/windows"
     platform:
@@ -39,6 +42,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_vlc-media-player_32/"
     platform:
@@ -46,6 +50,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_vlc_media_player_64/"
     platform:
@@ -53,6 +58,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/3562-vlc-media-player.html"
     platform:
@@ -60,12 +66,15 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html"
     platform:
@@ -73,72 +82,84 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_vlc_media_player-for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-vlc/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Multimedia/Video/VLC-2608.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=org.videolan.vlc"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://vlc-media-player.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vlc/iphone/"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -373,3 +394,4 @@ rating:
   
   [News](https://www.videolan.org/news.html)  I  [Forum](https://forum.videolan.org/)  I  [Wiki](https://wiki.videolan.org/)  I  [Documentation](https://wiki.videolan.org/Documentation)  I  [FAQ](https://www.videolan.org/support/faq.html)  I  [IRC](https://webchat.freenode.net/?channels=videolan)
   
+

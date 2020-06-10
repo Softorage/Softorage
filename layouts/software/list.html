@@ -33,6 +33,12 @@
           <div class="border rounded p-2">
             <div style="max-height:15rem;overflow-y:auto;">
               {{/* Previous implementation
+              
+              https://gohugo.io/content-management/taxonomies/
+              The configuration option preserveTaxonomyNames was removed in Hugo 0.55.
+              You can now use .Page.Title on the relevant taxonomy node to get the original value.
+              
+              
               - range $key, $value := site.Taxonomies.categories -}}
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="{{ lower (replace $key "-" "_") }}">
@@ -68,7 +74,7 @@
       <div class="card mb-3">
         <div class="card-body text-antinav">
           <div class="card-title align-middle">
-            <span class="h3">{{ add $index 1 }}</span>&nbsp;
+            <!--span class="h3">{{/* add $index 1 */}}</span>&nbsp;-->
             <a class="text-reset h3" href="{{ $element.Permalink }}" target="_blank"><span class="name">{{ replace (replace $element.Title "(" "<span class='small' style='font-weight: 300; font-size: 1rem;'>") ")" "</span>" | safeHTML }}</span></a>&nbsp; {{ site.Data.icons.externalLink | safeHTML }}&nbsp;&nbsp;
             <span class="text-muted small float-right">
               
@@ -222,9 +228,14 @@ if (window.matchMedia('(min-width: 650px)').matches) {
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("search_page_main_search_mob_div").style.transform = "translateY(0)";
+      document.getElementById("search_page_main_search_mob_div").style.display = "block";
+      /*$("#search_page_main_search_mob_div").css("transform", "translateY(0)");
+      $("#search_page_main_search_mob_div").parents("nav").height(72);
+      /*document.getElementById("search_page_main_search_mob_div").style.transform = "translateY(0)";
     } else {
-      document.getElementById("search_page_main_search_mob_div").style.transform = "translateY(-600%)";
+      /*document.getElementById("search_page_main_search_mob_div").style.transform = "translateY(-600%)";
+      document.getElementById("search_page_main_search_mob_div").style.display = "none";
+      
     }
     prevScrollpos = currentScrollPos;
   }*/

@@ -1,7 +1,7 @@
 ---
 title: "IPython"
 
-description: "A command shell for interactive computing"
+description: "IPython is a command shell for interactive computing"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/ipython.png?h=64"
 
@@ -54,20 +54,19 @@ source:
   license: ["https://github.com/ipython/ipython/blob/master/LICENSE"]
   status: ["https://github.com/ipython/ipython/graphs/contributors", "https://ipython.org/news.html"]
 
-note: |
-  > Many pieces which were previously part of IPython were split out in version 4, and now have their own documentation.
-  >
-  >  * Jupyter includes:
-  >     1 The Jupyter notebook and notebook file format
-  >     2 The Jupyter Qt console
-  >     3 The kernel messaging protocol
-  >     4 Many other components
-  >  * ipyparallel (formerly IPython.parallel)
-  >  * ipykernel (minimal docs, only release notes for the ipykernel package)
-  >  * ipywidgets (formerly IPython.html.widgets)
-  >  * Traitlets, the config system used by IPython and Jupyter
-  > \- [source](https://ipython.org/documentation.html#other-pieces)
-  
+note: > Many pieces which were previously part of IPython were split out in version 4, and now have their own documentation.
+>
+>  * Jupyter includes:
+>     1 The Jupyter notebook and notebook file format
+>     2 The Jupyter Qt console
+>     3 The kernel messaging protocol
+>     4 Many other components
+>  * ipyparallel (formerly IPython.parallel)
+>  * ipykernel (minimal docs, only release notes for the ipykernel package)
+>  * ipywidgets (formerly IPython.html.widgets)
+>  * Traitlets, the config system used by IPython and Jupyter
+> \- [source](https://ipython.org/documentation.html#other-pieces)
+
 ---
   > IPython (Interactive Python) is a command shell for interactive computing in multiple programming languages, originally developed for the Python programming language, that offers introspection, rich media, shell syntax, tab completion, and history. IPython provides the following features:
   > 
@@ -79,3 +78,4 @@ note: |
   > \- [Wikipedia](https://en.wikipedia.org/w/index.php?title=IPython&oldid=880851247)
   
   [News](https://ipython.org/news.html)  I  [Documentation](https://ipython.org/documentation.html)  I  [Mailing list](https://mail.python.org/mailman/listinfo/ipython-dev)  I  [Wiki](https://github.com/ipython/ipython/wiki)  I  [FAQ](https://ipython.org/faq.html)  I  [Stack Overflow Q&A](http://stackoverflow.com/questions/tagged/ipython)
+

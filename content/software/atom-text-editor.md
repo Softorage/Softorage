@@ -1,7 +1,7 @@
 ---
 title: "Atom (Text Editor)"
 
-description: "A text and source code editor developed by GitHub, with support for plug-ins written in Node.js, and embedded Git Control"
+description: "Atom is a text and source code editor developed by GitHub, with support for plug-ins written in Node.js, and embedded Git Control"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/atom-text-editor.png?h=64"
 
@@ -19,13 +19,16 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-atom-32/"
     platform:
@@ -33,6 +36,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-atom-64/"
     platform:
@@ -40,18 +44,21 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://atom.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://atom.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6540-atom-text-editor.html"
     platform:
@@ -59,30 +66,36 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/53196/atom"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://atom.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-atom/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 developer: ["GitHub Inc."]
 
@@ -203,4 +216,5 @@ rating:
   Atom has installable packages that add extra functionality to it. An example is Teletype, which allows collaborating on code right from the editor.
   
   [Blog](https://blog.atom.io/)  I  [Forum](https://discuss.atom.io/)  I  [Documentation](https://atom.io/docs)  I  [FAQ](https://atom.io/faq)  I  [IRC](https://webchat.freenode.net/?channels=atom)
+
 

@@ -1,7 +1,7 @@
 ---
 title: "GIMP"
 
-description: "A free and open-source raster graphics editor built with GTK toolkit"
+description: "GIMP is a free and open-source raster graphics editor built with GTK toolkit"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/gimp.png?h=64"
 
@@ -18,12 +18,15 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-gimp/"
     platform:
@@ -31,30 +34,35 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/GIMP.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://the-gimp.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/GIMP/3000-2192_4-10073935.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://gimp.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_the-gimp_32/"
     platform:
@@ -62,25 +70,28 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/GIMP/3000-2192_4-10322178.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/14597/gimp"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
     -
       min: "128 MB RAM"
     -
-      min: "20 MB+ free space on hard disk | 60 MB+ with data files"
+      min: "20 MB+ free space on hard disk, 60 MB+ with data files"
 
 developer: ["Spencer Kimball<OD>", "Peter Mattis<OD>", "The GIMP Development Team"]
 
@@ -231,9 +242,8 @@ rating:
     rate: [3.5, 5]
     remarks: "macOS"
 
-note: |
-  * [System Requirements](#sysreq) could not be found on the [official website](https://www.gimp.org/). [System Requirements](#sysreq) stated [here](#sysreq) are from a page of 2011(see source).
-  
+note: * [System Requirements](#sysreq) could not be found on the [official website](https://www.gimp.org/). [System Requirements](#sysreq) stated [here](#sysreq) are from a page of 2011(see source).
+
 ---
   GIMP (GNU Image Manipulation Program) is a free and open-source [raster graphics editor](/categories/raster-graphics-editor) used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.
   
@@ -241,3 +251,4 @@ note: |
   
   [News](https://www.gimp.org/news/)  I  [Wiki](https://wiki.gimp.org/)  I  [Documentation](https://www.gimp.org/docs/)  I  [User FAQ](https://www.gimp.org/docs/userfaq.html)  I  [Books](https://www.gimp.org/books/)  I  [Mailing lists](https://www.gimp.org/mail_lists.html)  I  [IRC](https://www.gimp.org/irc.html)
   
+

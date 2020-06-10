@@ -1,7 +1,7 @@
 ---
 title: "Audacity"
 
-description: "A free and open-source digital audio editor and recording application software"
+description: "Audacity is a free and open-source digital audio editor and recording application software"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/audacity.png?h=64"
 
@@ -18,69 +18,94 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://audacity.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://audacity.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_audacity/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Audacity/3000-2170_4-10058117.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-audacity/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-Editors-Recorders/Audacity.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/3194-audacity.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/audacity"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  linux:
     -
-      min: "512MB to 1GB RAM for Windows | 256MB for linux | 1GB (2GB for OS X 10.7 and later or macOS) RAM for mac"
-      recm: "2GB to 4GB RAM for Windows | 1GB for Linux |  2GB (4GB for OS X 10.7 and later or macOS) RAM for mac"
+      min: "RAM: 256MB"
+      recm: "RAM: 1GB"
     -
-      min: "1GHz processor speed for Windows | 700MHz for linux | 1GHz (2GHz for OS X 10.7 and later or macOS) for mac"
-      recm: "1GHz to 2GHz processor speed for Windows | 2GHz for Linux | 2GHz for mac"
+      min: "Processor speed: 700MHz"
+      recm: "Processor speed: 2GHz"
+  macos:
+    -
+      min: "RAM: 1GB (2GB for OS X 10.7 and later or macOS)"
+      recm: "RAM: 2GB (4GB for OS X 10.7 and later or macOS)"
+    -
+      min: "Processor speed: 1GHz (2GHz for OS X 10.7 and later or macOS)"
+      recm: "Processor speed: 2GHz"
+  windows:
+    -
+      min: "RAM: 512MB to 1GB"
+      recm: "RAM: 2GB to 4GB"
+    -
+      min: "Processor speed: 1GHz "
+      recm: "Processor speed: 1GHz to 2GHz"
 
 developer: ["The Audacity Team"]
 
@@ -120,7 +145,9 @@ source:
   platform:
     - dskp: ["https://www.audacityteam.org/download/"]
   sysreq:
-    general: ["https://www.audacityteam.org/download/windows/", "https://www.audacityteam.org/download/mac/", "https://www.audacityteam.org/download/linux/"]
+    linux: ["https://www.audacityteam.org/download/linux/"]
+    macos: ["https://www.audacityteam.org/download/mac/"]
+    windows: ["https://www.audacityteam.org/download/windows/"]
   license: ["https://www.audacityteam.org/copyright/", "https://www.audacityteam.org/about/license/"]
   rating:
     - name: "TechRadar"
@@ -229,9 +256,8 @@ rating:
     rate: [4.8, 5]
     num: 14
 
-note: |
-  * Legacy versions for [Windows](https://www.audacityteam.org/download/legacy-windows/) and [mac](https://www.audacityteam.org/download/legacy-mac/) are also available.
-  
+note: * Legacy versions for [Windows](https://www.audacityteam.org/download/legacy-windows/) and [mac](https://www.audacityteam.org/download/legacy-mac/) are also available.
+
 ---
   Audacity imports sounds and music, puts sound effects against individual tracks and mixes things like music tracks and podcasts together. Audacity comes with many professional editing and recording functions. It's possible to create both live recordings as well as cut tracks. In addition, Audacity has an audio toolbox with countless effects, an equalizer and frequency analysis on board.
   
@@ -239,3 +265,4 @@ note: |
   
   [Blog](https://www.audacityteam.org/posts/)  I  [Forum](https://forum.audacityteam.org/)  I  [News](https://www.audacityteam.org/about/news/)  I  [Manual](https://manual.audacityteam.org/)  I  [Wiki](https://wiki.audacityteam.org/wiki/Audacity_Wiki_Home_Page)  I  [Documentation](https://www.audacityteam.org/help/documentation/)  I  [FAQ](https://manual.audacityteam.org/man/faq.html)
   
+

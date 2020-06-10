@@ -1,7 +1,7 @@
 ---
 title: "Adobe Acrobat Reader DC"
 
-description: "A freemium software developed by Adobe Inc., to view, create, manipulate, print and manage files in Portable Document Format (PDF)"
+description: "Adobe Acrobat Reader DC is a freemium software developed by Adobe Inc., to view, create, manipulate, print and manage files in Portable Document Format (PDF)"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-acrobat-reader-dc.png?h=64"
 
@@ -16,96 +16,124 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-acrobat-reader-dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/PDF/Adobe-Reader.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_adobe-acrobat-reader-dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/2083-adobe-reader-dc.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-acrobat-reader-dc/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.adobe.reader"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  macos:
     -
-      min: "Processor: Windows - 1.5GHz or faster processor | macOS - Intel processor"
+      min: "Processor: Intel processor"
     -
-      min: "OS: Windows - Windows Server 2008 R2 (64 bit), 2012 (64 bit), 2012 R2 (64 bit), 2016 (64 bit), or 2019 (64 bit); Windows 7 SP1 (32 bit and 64 bit), Windows 8, 8.1 (32 bit and 64 bit), or Windows 10 (32 bit and 64 bit) | macOS - macOS v10.12, macOS v10.13, macOS v10.14, or macOS v10.15"
+      min: "OS: macOS v10.12, macOS v10.13, macOS v10.14, or macOS v10.15"
     -
-      min: "RAM: Windows/macOS - 1GB"
+      min: "RAM: 1GB"
     -
-      min: "Hard Disk Space: Windows/macOS - 380MB"
+      min: "Hard Disk Space: 380MB"
     -
-      min: "Screen Resolution: Windows/macOS - 1024x768"
+      min: "Screen Resolution: 1024x768"
     -
-      min: "Other: Windows - Internet Explorer 11 | macOS - Safari 10.0, or 11.0 (browser plug-in for Safari supported on 64-bit Intel processor only)"
+      min: "Other: Safari 10.0, or 11.0 (browser plug-in for Safari supported on 64-bit Intel processor only)"
+  windows:
+    -
+      min: "Processor: 1.5GHz or faster processor"
+    -
+      min: "OS: Windows Server 2008 R2 (64 bit), 2012 (64 bit), 2012 R2 (64 bit), 2016 (64 bit), or 2019 (64 bit); Windows 7 SP1 (32 bit and 64 bit), Windows 8, 8.1 (32 bit and 64 bit), or Windows 10 (32 bit and 64 bit)"
+    -
+      min: "RAM: 1GB"
+    -
+      min: "Hard Disk Space: 380MB"
+    -
+      min: "Screen Resolution: 1024x768"
+    -
+      min: "Other: Internet Explorer 11"
 
 developer: ["Adobe Inc."]
 
@@ -142,7 +170,8 @@ source:
     - dskp: ["https://get.adobe.com/reader/otherversions/", "https://helpx.adobe.com/reader/system-requirements.html"]
     - smptb: ["https://get.adobe.com/reader/otherversions/", "https://helpx.adobe.com/reader/system-requirements.html"]
   sysreq:
-    general: ["https://helpx.adobe.com/reader/system-requirements.html"]
+    macos: ["https://helpx.adobe.com/reader/system-requirements.html"]
+    windows: ["https://helpx.adobe.com/reader/system-requirements.html"]
   license: ["https://www.adobe.com/content/dam/cc/en/legal/licenses-terms/pdf/Reader-EULA-en_US-20181207.pdf", "https://www.adobe.com/legal/licenses-terms.html"]
   rating:
     - name: "FileHorse"
@@ -264,3 +293,5 @@ rating:
   Acrobat Reader DC, has a set of premium features, which are activated on a purchase of subscription to Adobe Acrobat PDF Pack, Adobe Acrobat Export PDF, or Adobe Sign.
   
   [News](https://helpx.adobe.com/reader/whats-new.html)  I  [Forum](https://community.adobe.com/t5/acrobat-reader/bd-p/acrobat-reader)  I  [FAQ](https://helpx.adobe.com/reader/faq.html)
+  
+

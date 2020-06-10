@@ -1,7 +1,7 @@
 ---
 title: "Caffe"
 
-description: "A deep learning framework made with expression, speed, and modularity in mind"
+description: "Caffe is a deep learning framework made with expression, speed, and modularity in mind"
 
 status: ["Active"]
 
@@ -88,4 +88,5 @@ rating:
   > Caffe can process over 60M images per day with a single NVIDIA K40 GPU*. That’s 1 ms/image for inference and 4 ms/image for learning and more recent library versions and hardware are faster still. \- [Official website](http://caffe.berkeleyvision.org/#why-caffe)
   
   [Documentation](http://caffe.berkeleyvision.org/#Documentation)  I  [Mailing list - Users](https://groups.google.com/forum/#!forum/caffe-users)
+
 

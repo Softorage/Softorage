@@ -1,7 +1,7 @@
 ---
 title: "qBittorrent"
 
-description: "A cross-platform free and open-source BitTorrent client"
+description: "qBittorrent is a cross-platform free and open-source BitTorrent client"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/qbittorrent.png?h=64"
 
@@ -18,18 +18,21 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/qbittorrent/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://qbittorrent.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5292-qbittorrent.html"
     platform:
@@ -37,12 +40,15 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_qbittorrent_32/"
     platform:
@@ -50,6 +56,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-qbittorrent-64/"
     platform:
@@ -57,6 +64,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-qbittorrent-portable/"
     platform:
@@ -71,27 +79,32 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://qbittorrent.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-qbittorrent/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_qbittorrent_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 developer: ["Christophe Dumez<OD>", "Sledgehammer999", "Community"]
 
@@ -258,3 +271,4 @@ rating:
   15. Available in ~70 languages
   
   [News](https://www.qbittorrent.org/news.php)  I  [Forum](https://forum.qbittorrent.org/)  I  [Wiki](https://wiki.qbittorrent.org/)  I  [FAQ](https://github.com/qbittorrent/qBittorrent/wiki/Frequently-Asked-Questions)  I  [IRC](https://webchat.freenode.net/?channels=qbittorrent)
+

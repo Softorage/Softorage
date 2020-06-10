@@ -1,7 +1,7 @@
 ---
 title: "Orange"
 
-description: "A component-based visual programming software package for data visualization, machine learning, data mining, and data analysis."
+description: "Orange is a component-based visual programming software package for data visualization, machine learning, data mining, and data analysis."
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/orange.png?h=64"
 
@@ -87,4 +87,5 @@ rating:
   Orange components are called widgets. Widgets cover a wide variety, ranging from simple [data visualization](/categories/data-visualization), subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling. Orange is used for [data analysis](/categories/[data-analysis) as well.
   
   [Blog](https://blog.biolab.si/)  I  [Stack Overflow(QA)](https://stackoverflow.com/questions/tagged/orange)  I  [Community](https://orange.biolab.si/community/)  I  [Stack Exchange(data-science)](https://datascience.stackexchange.com/questions/tagged/orange)  I  [Wiki](https://github.com/biolab/orange3/wiki)  I  [Documentation](https://orange.biolab.si/docs/)  I  [FAQ](https://orange.biolab.si/faq/)
+
 

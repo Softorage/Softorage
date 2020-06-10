@@ -1,7 +1,7 @@
 ---
 title: "MusicBrainz Picard"
 
-description: "A free and open-source software for identifying, tagging, and organizing digital audio recordings"
+description: "MusicBrainz Picard is a free and open-source software for identifying, tagging, and organizing digital audio recordings"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/musicbrainz-picard.png?h=64"
 
@@ -19,24 +19,28 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/MusicBrainz-Picard/3000-2170_4-166444.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://musicbrainz-picard.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/26543/musicbrainz-picard"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 developer: ["MusicBrainz"]
 
@@ -137,3 +141,4 @@ rating:
   
   [Forum](https://community.metabrainz.org/c/picard)  I  [Documentation](https://picard.musicbrainz.org/docs/)
   
+

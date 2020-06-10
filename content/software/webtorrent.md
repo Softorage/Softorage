@@ -1,7 +1,7 @@
 ---
 title: "WebTorrent"
 
-description: "A peer-to-peer (P2P) streaming torrent client written in JavaScript by Feross Aboukhadijeh"
+description: "WebTorrent is a peer-to-peer (P2P) streaming torrent client written in JavaScript by Feross Aboukhadijeh"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/webtorrent.png?h=64"
 
@@ -18,12 +18,15 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-webtorrent-64/"
     platform:
@@ -31,30 +34,36 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6903-webtorrent-desktop.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-webtorrent/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://mac.softpedia.com/get/Internet-Utilities/WebTorrent.shtml"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 developer: ["Feross Aboukhadijeh"]
 
@@ -127,3 +136,4 @@ rating:
   WebTorrent is a peer-to-peer (P2P) streaming [torrent client](/categories/bittorrent-client/) written in JavaScript by Feross Aboukhadijeh. WebTorrent uses the same protocol as BitTorrent but uses a different transport. WebTorrent primarily relies on WebRTC connections, while BitTorrent uses TCP connections and UDP datagrams directly.
   
   [Dev Documentation](https://webtorrent.io/docs)  I  [FAQ](https://webtorrent.io/faq)  I  [IRC](https://webchat.freenode.net/?channels=webtorrent)
+

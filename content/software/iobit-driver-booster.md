@@ -1,7 +1,7 @@
 ---
 title: "IObit Driver Booster"
 
-description: "A driver updater utility for Windows users to keep drivers and game components up to date"
+description: "IObit Driver Booster is a driver updater utility for Windows users to keep drivers and game components up to date"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/iobit-driver-booster.png?h=64"
 
@@ -18,48 +18,56 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/driver-booster/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://driver-booster.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo (Free)"
     url: "https://filehippo.com/download_driver-booster-free/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse (Free)"
     url: "https://www.filehorse.com/download-driver-booster-free/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse (Pro)"
     url: "https://www.filehorse.com/download-driver-booster-pro/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic (Free)"
     url: "https://driver-booster-free.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Driver-Booster/3000-18513_4-75992725.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -181,5 +189,6 @@ rating:
   It is known for 'Game Mode' setting, which optimizes drivers to improve their performance in games so as to enhance the gaming experience.
   
   [News](https://forums.iobit.com/forum/general-forums/news-offers)  I  [Forum](https://forums.iobit.com/)  I  [User Manual](https://www.iobit.com/product-manuals/db-help/)  I  [FAQ](https://www.iobit.com/en/allfaq.php#p109)
+
 
 

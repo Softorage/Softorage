@@ -18,12 +18,14 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Audio/Audio-CD-Rippers-Encoders/MediaMonkey.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Multimedia/Audio/MediaMonkey-Portable.shtml"
     platform:
@@ -37,53 +39,62 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-mediamonkey/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/MediaMonkey/3000-2141_4-10109807.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/3114-mediamonkey.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://mediamonkey.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic (Gold)"
     url: "https://mediamonkey-gold.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.ventismedia.android.mediamonkey"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://mediamonkey.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
 
 sysreq:
   general:
     -
-      min: "For operating systems requirements: https://www.mediamonkey.com/support/index.php?/Knowledgebase/Article/View/55/2/what-operating-systems-is-mediamonkey-compatible-with    For devices compatibility: https://www.mediamonkey.com/wiki/index.php/Compatible_Devices"
+      min: "* For operating systems requirements: https://www.mediamonkey.com/support/index.php?/Knowledgebase/Article/View/55/2/what-operating-systems-is-mediamonkey-compatible-with
+* For devices compatibility: https://www.mediamonkey.com/wiki/index.php/Compatible_Devices"
 
 developer: ["Ventis Media Inc."]
 
@@ -209,3 +220,4 @@ rating:
   MediaMonkey is a [media player](/categories/media-player/) and media library application for organizing and playing audio. It uses SQLite to manage its database. It can be extended to handle video and other media formats, with the help of plugins. Freemium version has features like media management, record & convert, burn, and more of them can be seen [here](https://www.mediamonkey.com/information/free/). Premium gold license unlocks additional features such as the ability to have multiple media collections, the ability to organize files automatically, and more can be seen [here](https://www.mediamonkey.com/information/gold/). Both freemium and premium editions can be extensively enhanced with skins, third-party plugins, and user-generated extension scripts.
   
   [News](https://www.mediamonkey.com/news/)  I  [Forum](https://www.mediamonkey.com/forum/)  I  [Documentation v4](https://www.mediamonkey.com/wiki/index.php/WebHelp:Content/4.0)  I  [FAQ/Support](https://www.mediamonkey.com/support/)  I  [Wiki](https://www.mediamonkey.com/wiki/index.php?title=Main_Page)
+  

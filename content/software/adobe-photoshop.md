@@ -1,7 +1,7 @@
 ---
 title: "Adobe Photoshop"
 
-description: "A raster graphics editor developed and published by Adobe Inc.; with Photoshop Express, Photoshop Mix, Photoshop Fix & Photoshop Touch as part of Photoshop family"
+description: "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc.; with Photoshop Express, Photoshop Mix, Photoshop Fix & Photoshop Touch as part of Photoshop family"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-photoshop.png?h=64"
 
@@ -18,12 +18,14 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-photoshop.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-photoshop-64/"
     platform:
@@ -31,140 +33,184 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/photoshop/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-photoshop.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-photoshop/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/adobe-photoshop/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic (Touch)"
     url: "https://adobe-photoshop-touch.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic (Express)"
     url: "https://adobe-photoshop-express.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Malavida (Express)"
     url: "https://www.malavida.com/en/soft/photoshop/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic (Touch)"
     url: "https://adobe-photoshop-touch.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic (Express)"
     url: "https://adobe-photoshop-express.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Malavida (Express)"
     url: "https://www.malavida.com/en/soft/photoshop/iphone/"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Google Play Store (Express)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.psmobile"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Google Play Store (Mix)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.photoshopmix"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Google Play Store (Fix)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.adobephotoshopfix"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/adobe-photoshop/id1457771281"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Apple App Store (Express)"
     url: "https://apps.apple.com/app/photoshop-express-photo-editor/id331975235"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Apple App Store (Fix)"
     url: "https://apps.apple.com/app/adobe-photoshop-fix/id1033713849"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Apple App Store (Sketch)"
     url: "https://apps.apple.com/app/adobe-photoshop-sketch/id839085644"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Apple App Store (Mix)"
     url: "https://apps.apple.com/app/adobe-photoshop-mix-cut-out-combine-create/id885271158"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  macos:
     -
-      min: "Processor: Windows - Intel® or AMD processor with 64-bit support; 2 GHz or faster processor | macOS - Multicore Intel processor with 64-bit support"
+      min: "Processor: Multicore Intel processor with 64-bit support"
       recm: ""
     -
-      min: "Operating system: Windows - Microsoft Windows 7 with Service Pack 1 (64-bit), Microsoft Windows 10 October 2018 update (64-bit) version 1809 or later | macOS - macOS version 10.13 (High Sierra), macOS version 10.14 (Mojave), macOS version 10.15 (Catalina)"
+      min: "Operating system: macOS version 10.13 (High Sierra), macOS version 10.14 (Mojave), macOS version 10.15 (Catalina)"
       recm: ""
     -
-      min: "RAM: Windows/macOS - 2 GB or more of RAM"
-      recm: "RAM: Windows/macOS - 8 GB of RAM"
+      min: "RAM: 2 GB or more of RAM"
+      recm: "RAM: 8 GB of RAM"
     -
-      min: "Graphics card: Windows/macOS - nVidia GeForce GTX 1050 or equivalent"
-      recm: "Graphics card: Windows/macOS - nVidia GeForce GTX 1660 or Quadro T1000"
+      min: "Graphics card: nVidia GeForce GTX 1050 or equivalent"
+      recm: "Graphics card: nVidia GeForce GTX 1660 or Quadro T1000"
     -
-      min: "Hard disk space: Windows - 3.1 GB or more of available hard-disk space for 64-bit installation; additional free space required during installation (cannot install on a volume that uses a case-sensitive file system) | macOS - 4 GB or more of available hard-disk space for installation; additional free space required during installation (cannot install on a volume that uses a case-sensitive file system)"
+      min: "Hard disk space: 4 GB or more of available hard-disk space for installation; additional free space required during installation (cannot install on a volume that uses a case-sensitive file system)"
       recm: ""
     -
-      min: "Monitor resolution: Windows/macOS - 1280 x 800 display at 100% UI scaling with 16-bit color and 512 MB or more of dedicated VRAM"
-      recm: "Monitor resolution: Windows/macOS - 2 GB of VRAM"
+      min: "Monitor resolution: 1280 x 800 display at 100% UI scaling with 16-bit color and 512 MB or more of dedicated VRAM"
+      recm: "Monitor resolution: 2 GB of VRAM"
     -
-      min: "OpenGL: Windows/macOS - OpenGL 2.0-capable system"
+      min: "OpenGL: OpenGL 2.0-capable system"
       recm: ""
     -
-      min: "Internet: Windows/macOS - Internet connection and registration are necessary for required software activation, validation of subscriptions, and access to online services"
+      min: "Internet: Internet connection and registration are necessary for required software activation, validation of subscriptions, and access to online services"
+      recm: ""
+  windows:
+    -
+      min: "Processor: Intel® or AMD processor with 64-bit support; 2 GHz or faster processor"
+      recm: ""
+    -
+      min: "Operating system: Microsoft Windows 7 with Service Pack 1 (64-bit), Microsoft Windows 10 October 2018 update (64-bit) version 1809 or later"
+      recm: ""
+    -
+      min: "RAM: 2 GB or more of RAM"
+      recm: "RAM: 8 GB of RAM"
+    -
+      min: "Graphics card: nVidia GeForce GTX 1050 or equivalent"
+      recm: "Graphics card: nVidia GeForce GTX 1660 or Quadro T1000"
+    -
+      min: "Hard disk space: 3.1 GB or more of available hard-disk space for 64-bit installation; additional free space required during installation (cannot install on a volume that uses a case-sensitive file system)"
+      recm: ""
+    -
+      min: "Monitor resolution: 1280 x 800 display at 100% UI scaling with 16-bit color and 512 MB or more of dedicated VRAM"
+      recm: "Monitor resolution: 2 GB of VRAM"
+    -
+      min: "OpenGL: OpenGL 2.0-capable system"
+      recm: ""
+    -
+      min: "Internet: Internet connection and registration are necessary for required software activation, validation of subscriptions, and access to online services"
       recm: ""
 
 developer: ["Adobe Inc."]
@@ -194,7 +240,8 @@ source:
   platform:
     - dskp: ["https://helpx.adobe.com/photoshop/system-requirements.html"]
   sysreq:
-    general: ["https://helpx.adobe.com/photoshop/system-requirements.html"]
+    macos: ["https://helpx.adobe.com/photoshop/system-requirements.html"]
+    windows: ["https://helpx.adobe.com/photoshop/system-requirements.html"]
   license: ["https://en.wikipedia.org/w/index.php?title=Adobe_Photoshop&oldid=931997660", "https://www.adobe.com/legal/terms.html", "https://www.adobe.com/legal/licenses-terms.html"]
   rating:
     - name: "CNET"
@@ -358,4 +405,5 @@ rating:
   Photoshop's naming scheme was initially based on version numbers. However, in October 2002 (following the introduction of Creative Suite branding), each new version of Photoshop was designated with "CS" plus a number; e.g., the eighth major version of Photoshop was Photoshop CS and the ninth was Photoshop CS2. Photoshop CS3 through CS6 were also distributed in two different editions: Standard and Extended. With the introduction of the Creative Cloud branding in June 2013 (and in turn, the change of the "CS" suffix to "CC"), Photoshop's licensing scheme was changed to that of software as a service rental model.
   
   [Blog](https://theblog.adobe.com/creative-cloud/photoshop/)  I  [Forum](https://community.adobe.com/t5/photoshop/bd-p/photoshop)  I  [User Guide](https://helpx.adobe.com/in/photoshop/user-guide.html)  I  [FAQ](https://helpx.adobe.com/in/photoshop/faq.html)
+  
 

@@ -1,7 +1,7 @@
 ---
 title: "Adobe Flash Player"
 
-description: "A computer software for using content created on the Adobe Flash platform, including viewing multimedia contents, executing rich Internet applications, and streaming audio and video"
+description: "Adobe Flash Player is a computer software for using content created on the Adobe Flash platform, including viewing multimedia contents, executing rich Internet applications, and streaming audio and video"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/adobe-flash-player.png?h=64"
 
@@ -18,13 +18,16 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://adobe-flash-player.en.uptodown.com/windows"
     platform:
@@ -32,61 +35,81 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/WEB-Design/Flash/Macromedia-Flash-Player.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/1127-adobe-flash-player.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-flash-player.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_adobe-flash-player/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-flash-player.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://adobe-flash-player.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/android/download_adobe-flash-player/"
     platform:
       - name: "Android"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  linux:
     -
-      min: "Windows: Microsoft® Windows® XP SP3 (32-bit), Windows Vista® (32-bit), Windows 7, Windows 8.1 and Windows 10 | macOS: Mac OS X v10.10 or later | Linux: YUM, TAR.GZ, RPM and APT packages for NPAPI and PPAPI"
+      min: "YUM, TAR.GZ, RPM and APT packages for NPAPI and PPAPI"
     -
-      min: "Windows: Latest versions of Microsoft Internet Explorer, Microsoft Edge, Mozilla Firefox, Google Chrome and Opera | macOS: Latest versions of Safari, Mozilla Firefox, Google Chrome, and Opera | Linux: Latest versions of Firefox or Google Chrome"
+      min: "Latest versions of Firefox or Google Chrome"
+  macos:
+    -
+      min: "Mac OS X v10.10 or later"
+    -
+      min: "Latest versions of Safari, Mozilla Firefox, Google Chrome, and Opera"
+  windows:
+    -
+      min: "Microsoft® Windows® XP SP3 (32-bit), Windows Vista® (32-bit), Windows 7, Windows 8.1 and Windows 10"
+    -
+      min: "Latest versions of Microsoft Internet Explorer, Microsoft Edge, Mozilla Firefox, Google Chrome and Opera"
 
 developer: ["FutureWave Macromedia <OD>", "Adobe Inc."]
 
@@ -116,7 +139,9 @@ source:
   platform:
     - dskp: ["https://get.adobe.com/flashplayer/otherversions/", "https://www.adobe.com/products/flashplayer/tech-specs.html"]
   sysreq:
-    general: ["https://www.adobe.com/products/flashplayer/tech-specs.html"]
+    linux: ["https://www.adobe.com/products/flashplayer/tech-specs.html"]
+    macos: ["https://www.adobe.com/products/flashplayer/tech-specs.html"]
+    windows: ["https://www.adobe.com/products/flashplayer/tech-specs.html"]
   license: ["https://www.adobe.com/content/dam/cc/en/legal/licenses-terms/pdf/Flash_Player_32_0.pdf", "https://www.adobe.com/legal/licenses-terms.html"]
   rating:
     - name: "Uptodown"
@@ -215,3 +240,5 @@ rating:
   Adobe Flash Player (labeled Shockwave Flash in [Internet Explorer](/software/internet-explorer/) and [Firefox](/software/mozilla-firefox/)) is computer software for using content created on the Adobe Flash platform, including viewing multimedia contents, executing rich Internet applications, and streaming audio and video. Flash Player can run from a [web browser](/categories/web-browser/) as a [browser plug-in](/categories/browser-extension/) or on supported mobile devices. Flash Player runs SWF files that can be created by Adobe Flash Professional, Adobe Flash Builder or by third party tools such as FlashDevelop. Flash Player supports [vector graphics](/categories/vector-graphics-editor/), [3D graphics](/categories/3d-computing-graphics/), embedded audio, video and [raster graphics](/categories/raster-graphics-editor), and a scripting language called ActionScript (based on ECMAScript).
   
   [Archived Versions](https://helpx.adobe.com/flash-player/kb/archived-flash-player-versions.html)  I  [Blog](https://blogs.adobe.com/flashplayer/)  I  [Forum](https://community.adobe.com/t5/flash-player/bd-p/flash-player)  I  [FAQ](https://helpx.adobe.com/in/flash-player/kb/flash-player-faq.html) 
+  
+

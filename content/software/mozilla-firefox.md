@@ -1,7 +1,7 @@
 ---
 title: "Mozilla Firefox"
 
-description: "An open source web browser developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation; with variant Firefox Lite"
+description: "Mozilla Firefox is an open source web browser developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation; with variant Firefox Lite"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/mozilla-firefox.png?h=64"
 
@@ -18,6 +18,7 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_mozilla-firefox/"
     platform:
@@ -25,6 +26,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_mozilla-firefox-64/"
     platform:
@@ -32,12 +34,14 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/mozilla-firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-firefox-32/"
     platform:
@@ -45,6 +49,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/19-mozilla-firefox.html"
     platform:
@@ -52,19 +57,23 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Mozilla-Firefox-Final.shtml"
     platform:
@@ -72,48 +81,63 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://mozilla-firefox.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Google Play Store (Firefox)"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Google Play Store (Firefox Lite)"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.rocket"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://mozilla-firefox.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  linux:
     -
-      min: ""
-      recm: "Windows 7, 8, 10 | macOS 10.9, macOS 10.10, macOS 10.11, macOS 10.12, macOS 10.13 | GNU/Linux"
+      min: "Firefox will not run at all without the following libraries or packages- GTK+ 3.4 or higher, GLib 2.22 or higher, Pango 1.22 or higher, X.Org 1.0 or higher (1.7 or higher is recommended), libstdc++ 4.6.1 or higher"
+      recm: "Minimum required packages plus- NetworkManager 0.7 or higher, DBus 1.0 or higher, GNOME 2.16 or higher, PulseAudio"
+  macos:
     -
-      min: "For GNU/Linux: Firefox will not run at all without the following libraries or packages- GTK+ 3.4 or higher, GLib 2.22 or higher, Pango 1.22 or higher, X.Org 1.0 or higher (1.7 or higher is recommended), libstdc++ 4.6.1 or higher"
-      recm: "For GNU/Linux: Minimum required packages plus- NetworkManager 0.7 or higher, DBus 1.0 or higher, GNOME 2.16 or higher, PulseAudio"
+      min: "OS: macOS 10.9, macOS 10.10, macOS 10.11, macOS 10.12, macOS 10.13 "
     -
-      min: ""
-      recm: "Pentium 4 or newer processor that supports SSE2 for Windows | Macintosh computer with an Intel x86 processor for macOS"
+      min: "Processor: Intel x86"
     -
-      min: ""
-      recm: "512MB RAM / 2GB for 64bit version"
+      min: "RAM: 512 MB"
     -
-      min: ""
-      recm: "200MB free hard disk space"
+      min: "Hard drive space: 200 MB"
+  windows:
+    -
+      min: "OS: Windows 7, 8, 10"
+      recm: ""
+    -
+      min: "Processor: Pentium 4 or newer processor that supports SSE2"
+      recm: ""
+    -
+      min: "RAM: 512MB"
+      recm: "RAM: 2GB for 64bit version"
+    -
+      min: "Hard drive space: 200MB"
+      recm: ""
 
 developer: ["Mozilla Foundation and its contributors", "Mozilla Corporation"]
 
@@ -165,7 +189,9 @@ source:
   platform:
     - dskp: ["https://www.mozilla.org/en-US/firefox/new/", "https://en.wikipedia.org/w/index.php?title=Firefox&oldid=878328541", "https://svnweb.freebsd.org/ports/head/www/firefox/", "http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/www/mozilla-firefox/", "http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/www/firefox/", "https://wiki.openindiana.org/oi/Firefox", "https://pkgsrc.joyent.com/install-on-illumos/", "https://github.com/oracle/solaris-userland/tree/master/components/desktop/firefox", "https://ftp.mozilla.org/pub/firefox/releases/52.0esr/contrib/solaris_pkgadd/README.txt"]
   sysreq:
-    general: ["https://www.mozilla.org/en-US/firefox/62.0/system-requirements/"]
+    linux: ["https://www.mozilla.org/en-US/firefox/62.0/system-requirements/"]
+    macos: ["https://www.mozilla.org/en-US/firefox/62.0/system-requirements/"]
+    windows: ["https://www.mozilla.org/en-US/firefox/62.0/system-requirements/"]
   license: ["https://www.mozilla.org/foundation/licensing.html", "https://www.mozilla.org/en-US/about/legal/eula/"]
   rating:
     - name: "G2CROWD"
@@ -268,13 +294,11 @@ rating:
     num: 876
     remarks: "Android"
 
-note: |
-  * Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
-  * Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)
-  
+note: * Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
+* Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)
+
 ---
   Mozilla Firefox (or simply Firefox) is a free and open-source [web browser](/categories/web-browser) developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox is available for Windows, macOS, Linux, BSD illumos and Solaris operating systems. Its sibling, Firefox for Android, is also available. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards. In 2017, Firefox began incorporating new technology under the code name Quantum to promote parallelism and a more intuitive user interface. An additional version, Firefox for iOS, was released on November 12, 2015. Due to platform restrictions, it uses the WebKit layout engine instead of Gecko, as with all other iOS web browsers.
   
   [Blog](https://blog.mozilla.org/)  I  [Forum](https://support.mozilla.org/en-US/questions)  I  [News/Announcements](https://blog.mozilla.org/press/)  I  [Wiki](https://wiki.mozilla.org/Firefox)  I  [Mailing list](https://groups.google.com/a/mozilla.com/forum/#!aboutgroup/fx-onboarding)  I  [FAQ](https://support.mozilla.org/en-US/kb/frequently-asked-questions)
   
-

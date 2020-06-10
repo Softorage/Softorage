@@ -18,30 +18,35 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://evince.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Evince/3000-10743_4-75362773.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/evince/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Text-Editing-Processing/Others/Evince-3819.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 developer: ["The Evince Team"]
 
@@ -134,3 +139,4 @@ rating:
   
   [News](https://gitlab.gnome.org/GNOME/evince/blob/master/NEWS)  I  [Documentation](https://help.gnome.org/users/evince/stable/)  I  [FAQ](https://wiki.gnome.org/Apps/Evince/FrequentlyAskedQuestions)  I  [Mailing list](https://mail.gnome.org/mailman/listinfo/evince-list)
   
+

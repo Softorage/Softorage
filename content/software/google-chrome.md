@@ -1,7 +1,7 @@
 ---
 title: "Google Chrome"
 
-description: "A cross-platform web browser developed by Google"
+description: "Google Chrome is a cross-platform web browser developed by Google"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/google-chrome.png?h=64"
 
@@ -18,12 +18,14 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://google-chrome.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://chrome-64-bit.en.softonic.com/"
     platform:
@@ -31,6 +33,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4718-google-chrome-for-windows.html"
     platform:
@@ -38,12 +41,15 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Google-Chrome.shtml"
     platform:
@@ -51,6 +57,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-google-chrome-64/"
     platform:
@@ -58,55 +65,71 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_google_chrome/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_google_chrome_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://chrome.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://chrome.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.android.chrome"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://chrome.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/google-chrome/id535886823"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  linux:
     -
-      min: "Windows: Windows 7, Windows 8, Windows 8.1, Windows 10 or later (Servers require Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016) | macOS: OS X Yosemite 10.10 or later | Linux: 64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.3+, or Fedora Linux 24+"
+      min: "OS: 64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.3+, or Fedora Linux 24+"
     -
-      min: "Windows: An Intel Pentium 4 processor or later that's SSE2 capable | Linux: An Intel Pentium 4 processor or later that's SSE2 capable"
+      min: "Processor: An Intel Pentium 4 processor or later that's SSE2 capable"
+  macos:
+    -
+      min: "OS: OS X Yosemite 10.10 or later"
+  windows:
+    -
+      min: "OS: Windows 7, Windows 8, Windows 8.1, Windows 10 or later (Servers require Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016)"
+    -
+      min: "Processor: An Intel Pentium 4 processor or later that's SSE2 capable"
 
 developer: ["Google LLC"]
 
@@ -157,7 +180,9 @@ source:
   platform:
     - dskp: ["https://www.google.com/chrome/", "https://support.google.com/chrome/forum/AAAAP1KN0B0oufeqVTMll8"]
   sysreq:
-    general: ["https://support.google.com/chrome/a/answer/7100626?hl=en"]
+    linux: ["https://support.google.com/chrome/a/answer/7100626?hl=en"]
+    macos: ["https://support.google.com/chrome/a/answer/7100626?hl=en"]
+    windows: ["https://support.google.com/chrome/a/answer/7100626?hl=en"]
   license: ["https://www.google.com/intl/en/chrome/privacy/eula_text.html", "https://en.wikipedia.org/w/index.php?title=Google_Chrome&oldid=933899946"]
   rating:
     - name: "Softonic"
@@ -296,9 +321,8 @@ rating:
   - name: "PCMag"
     rate: [4, 5]
 
-note: |
-  * Google Chrome was mistakenly released on 02 September 2008. Its first stable public version was released on 11 December 2008. See [Initial Release](#initial_release).
-  
+note: * Google Chrome was mistakenly released on 02 September 2008. Its first stable public version was released on 11 December 2008. See [Initial Release](#initial_release).
+
 ---
   The Google Chrome [Web browser](/categories/web-browser) is based on the open source [Chromium](/software/chromium-web-browser) project. Google released Chrome in 2008 and issues several updates a year. It is available for Windows, macOS, Linux, Android and iOS operating systems. The Google Chrome browser takes a sandboxing-based approach to Web security. Each open website runs as its own process, which helps prevent malicious code on one page from affecting others (or the computer operating system at large). The browser also supports Web standards such as HTML5 and cascading style sheets (CSS).
   

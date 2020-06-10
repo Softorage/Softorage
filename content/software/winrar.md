@@ -1,7 +1,7 @@
 ---
 title: "WinRAR"
 
-description: "A trialware file archiver utility for Windows, developed by Eugene Roshal of win.rar GmbH"
+description: "WinRAR is a trialware file archiver utility for Windows, developed by Eugene Roshal of win.rar GmbH"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/winrar.png?h=64"
 
@@ -19,6 +19,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_winrar_64/"
     platform:
@@ -26,6 +27,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/67-winrar.html"
     platform:
@@ -33,20 +35,25 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
       - name: "FreeBSD"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/WinRAR-64-bit/3000-2250_4-10965579.html"
     platform:
@@ -54,6 +61,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-winrar-64/"
     platform:
@@ -61,6 +69,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://winrar.en.uptodown.com/windows"
     platform:
@@ -68,6 +77,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://winrar.en.softonic.com/download"
     platform:
@@ -75,6 +85,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://winrar-64bit.en.softonic.com/download"
     platform:
@@ -82,36 +93,42 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.rarlab.rar&hl=en_IN"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://rar-for-android.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5169-winrar-for-mac.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_winrar_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-rar-for-mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
   general:
@@ -285,3 +302,4 @@ rating:
   
   [News](https://www.win-rar.com/latestnews.html?&L=0)  I  [Manual](http://acritum.com/software/manuals/winrar/)  I  [documentation.HELP!](https://documentation.help/WinRAR/)  I  [FAQ](https://www.win-rar.com/faq.html?&L=0)
   
+

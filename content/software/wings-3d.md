@@ -1,7 +1,7 @@
 ---
 title: "Wings 3D"
 
-description: "A free and open-source subdivision modeler inspired by Nendo and Mirai from Izware"
+description: "Wings 3D is a free and open-source subdivision modeler inspired by Nendo and Mirai from Izware"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/wings-3d.png?h=64"
 
@@ -19,37 +19,57 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://wings-3d.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/wings-3d/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Wings-3D/3000-6677_4-10514566.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://wings-3d.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
 
 sysreq:
-  general:
+  linux:
     -
-      min: "Windows 7 | MacOS X Sierra | Linux Ubuntu 16.04"
+      min: "OS: Ubuntu 18.04"
     -
-      min: "OpenGL 2.1 for Windows |   OpenGL 2.1 or mesa for Linux | Intel mac"
+      min: "OpenGL 2.1 or Mesa"
+  macos:
+    -
+      min: "OS: Mohave or Catalina"
+    -
+      min: "Intel mac"
+  unix:
+    -
+      min: "Need to build from source"
+    -
+      min: "OpenGL-2.1"
+  windows:
+    -
+      min: "OS: Windows 10 or later"
+    -
+      min: "OpenGL 2.1"
 
 developer: ["Björn Gustavsson", "Dan Gudmundsson", "Others"]
 
@@ -86,7 +106,10 @@ source:
   platform:
     - dskp: ["http://www.wings3d.com/?page_id=84"]
   sysreq:
-    general: ["http://www.wings3d.com/?page_id=84"]
+    linux: ["http://www.wings3d.com/?page_id=84"]
+    macos: ["http://www.wings3d.com/?page_id=84"]
+    unix: ["http://www.wings3d.com/?page_id=84"]
+    windows: ["http://www.wings3d.com/?page_id=84"]
   license: ["https://github.com/dgud/wings/blob/master/license.terms", "https://en.wikipedia.org/w/index.php?title=Wings_3D&oldid=875117731"]
   rating:
     - name: "SourceForge"
@@ -151,9 +174,8 @@ rating:
     num: 8
     remarks: "macOS"
 
-note: |
-  * To run Wing 3D on Unix(like) systems, it needs to built from source code.[[source]](http://www.wings3d.com/?page_id=84)
-  
+note: * To run Wing 3D on Unix(like) systems, it needs to built from source code.[[source]](http://www.wings3d.com/?page_id=84)
+
 ---
   Wings 3D is a tool specifically designed to import and modify models through subdivision - a polygonal modeling technique that allows very well-defined polygons.
   

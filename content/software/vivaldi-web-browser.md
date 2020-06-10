@@ -1,7 +1,7 @@
 ---
 title: "Vivaldi (Web Browser)"
 
-description: "A freeware, cross-platform web browser developed by Vivaldi Technologies"
+description: "Vivaldi is a freeware, cross-platform web browser developed by Vivaldi Technologies"
 
 image: "https://cdn.statically.io/img/img.softorage.com/software-logo/vivaldi-web-browser.png?h=64"
 
@@ -18,6 +18,7 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Vivaldi-64-bit/3000-2356_4-76472369.html"
     platform:
@@ -25,6 +26,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-vivaldi-64/"
     platform:
@@ -32,18 +34,21 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vivaldi/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://vivaldi-browser.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6692-vivaldi-browser.html"
     platform:
@@ -51,37 +56,44 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "Uptodown"
     url: "https://vivaldi.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-vivaldi/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/53990/vivaldi"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vivaldi/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
+        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Internet/HTTP-WWW-/Vivaldi-103720.shtml"
     platform:
@@ -89,30 +101,35 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
+        portable: false
   - from: "APKMirror"
     url: "https://www.apkmirror.com/apk/vivaldi-technologies/vivaldi-browser-beta/vivaldi-browser-beta-2-9-1741-33-release/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Softonic"
     url: "https://vivaldi-browser.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.vivaldi.browser"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/vivaldi/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
+        portable: false
 
 developer: ["Vivaldi Technologies AS"]
 
@@ -283,11 +300,11 @@ rating:
   - name: "PCWorld"
     rate: [4, 5]
 
-note: |
-  * Though Vivaldi is a proprietary software, the changes that they have made to [Chromium](/software/chromium-web-browser/) browser's source code are released under a BSD license. They can be found [here](https://vivaldi.com/source/). Check [this](https://help.vivaldi.com/article/is-vivaldi-open-source/) out for more info.
-  
+note: * Though Vivaldi is a proprietary software, the changes that they have made to [Chromium](/software/chromium-web-browser/) browser's source code are released under a BSD license. They can be found [here](https://vivaldi.com/source/). Check [this](https://help.vivaldi.com/article/is-vivaldi-open-source/) out for more info.
+
 ---
   Vivaldi is a freeware, cross-platform [web browser](/categories/web-browser/) developed by Vivaldi Technologies, a company founded by [Opera](/software/opera-web-browser/) Software co-founder and former CEO Jon Stephenson von Tetzchner and Tatsuki Tomita. It is based on [Chromium](/software/chromium-web-browser/) [web browser](/categories/web-browser/), which uses Blink browser engine and V8 JavaScript engine. It is available for general users but is primarily targeted towards technically-inclined users as well as former [Opera](/software/opera-web-browser/) users disgruntled by its transition from the Presto layout engine to a [Chromium](/software/chromium-web-browser/)-based browser. Despite also being [Chromium](/software/chromium-web-browser/)-based, Vivaldi aims to revive the features of the Presto-based [Opera](/software/opera-web-browser/) with its own proprietary modifications.
   
   [Blog](https://vivaldi.com/blog/)  I  [Press Releases](https://vivaldi.com/press/releases/)  I  [Forum](https://forum.vivaldi.net/)  I  [Help](https://help.vivaldi.com/)  I  [FAQ](https://help.vivaldi.com/faq/)  I  [Security Related FAQ](https://help.vivaldi.com/faq/)
   
+
