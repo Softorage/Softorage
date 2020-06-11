@@ -145,7 +145,7 @@ source:
   initial_release: ["https://medium.com/@jaelee0409/filezilla-tutorial-505ccb10817d"]
   platform:
     - dskp: ["https://filezilla-project.org/download.php?show_all=1"]
-undefined  license: ["https://filezilla-project.org/license.php"]
+  license: ["https://filezilla-project.org/license.php"]
   rating:
     - name: "FossHub"
       type: "user"
