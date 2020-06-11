@@ -203,7 +203,14 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "Windows") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}" {{- if eq .official false }} data-toggle="tooltip" data-placement="top" title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Windows Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      <a href="{{ $download_item.url }}"
+                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .portable }}Portable {{ end }}
+                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                        {{- if not .official }}
+                                          {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Windows Unofficial Version
+                                        {{- end }}"
+                                      {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a>
                                       {{ $download_available = true }}
                                     {{ end }}
                                   {{ end }}
@@ -223,7 +230,14 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "Linux") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}" {{- if eq .official false }} data-toggle="tooltip" data-placement="top" title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Linux Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      <a href="{{ $download_item.url }}"
+                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .portable }}Portable {{ end }}
+                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                        {{- if not .official }}
+                                          {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Linux Unofficial Version
+                                        {{- end }}"
+                                      {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
                                       {{ $download_available = true }}
                                     {{ end }}
                                   {{ end }}
@@ -243,7 +257,14 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "macOS") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}" {{- if eq .official false }} data-toggle="tooltip" data-placement="top" title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} macOS Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      <a href="{{ $download_item.url }}"
+                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .portable }}Portable {{ end }}
+                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                        {{- if not .official }}
+                                          {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} macOS Unofficial Version
+                                        {{- end }}"
+                                      {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
                                       {{ $download_available = true }}
                                     {{ end }}
                                   {{ end }}
@@ -314,7 +335,14 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "smptb" | and (eq .name "Android") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}" {{- if eq .official false }} title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Android Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      <a href="{{ $download_item.url }}"
+                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .portable }}Portable {{ end }}
+                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                        {{- if not .official }}
+                                          {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Android Unofficial Version
+                                        {{- end }}"
+                                      {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
                                       {{ $download_available = true }}
                                     {{ end }}
                                   {{ end }}
@@ -334,7 +362,14 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "smptb" | and (eq .name "iOS") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}" {{- if eq .official false }} title="{{ $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} iOS Unofficial Version" {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
+                                      <a href="{{ $download_item.url }}"
+                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .portable }}Portable {{ end }}
+                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                        {{- if not .official }}
+                                          {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} iOS Unofficial Version
+                                        {{- end }}"
+                                      {{- end }} class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} {{- if .arch }} {{ delimit .arch "/" }} {{- end }}</a> 
                                       {{ $download_available = true }}
                                     {{ end }}
                                   {{ end }}
