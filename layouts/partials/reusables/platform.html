@@ -29,9 +29,9 @@
           {{- end }}
         {{- else if eq .name "Unix(like)" }}
           {{- if .official -}}
-            <span class='fa-2x' title='Unix-like OS'>{{ site.Data.icons.unix | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unix-like OS'>{{ site.Data.icons.unix | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else }}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for Unix-like OS'>{{ site.Data.icons.unix | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Unix-like OS'>{{ site.Data.icons.unix | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else }}
           {{- if .official -}}
