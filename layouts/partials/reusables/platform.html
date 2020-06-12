@@ -11,21 +11,21 @@
       {{- range (sort .dskp "name" "desc") -}}
         {{ if eq .name "Linux" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "Windows" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "macOS" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else }}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "Unix(like)" }}
           {{- if .official -}}
@@ -49,21 +49,21 @@
       {{- range (sort .smp "name") -}}
         {{ if eq .name "Android" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "iOS" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "Windows" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else }}
           {{- if .official -}}
@@ -81,21 +81,21 @@
       {{- range (sort .tab "name") -}}
         {{ if eq .name "Android" }}
           {{- if .official }}
-          <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "iOS" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "Windows" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else }}
           {{- if .official -}}
