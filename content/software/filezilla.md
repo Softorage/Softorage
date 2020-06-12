@@ -239,6 +239,6 @@ rating:
     num: 580
 
 ---
-  FileZilla is a free and open source software, cross-platform [FTP application](/categories/), consisting of FileZilla Client and FileZilla Server. Client supports FTP, FTP over TLS (FTPS) and SFTP. FileZilla Server is an FTP and FTPS Server.
+  FileZilla is a free and open source software, cross-platform [FTP application](/categories/ftp-client/), consisting of FileZilla Client and FileZilla Server. Client supports FTP, FTP over TLS (FTPS) and SFTP. FileZilla Server is an FTP and FTPS Server.
   
   [Forum](https://forum.filezilla-project.org/)  I  [Wiki](https://wiki.filezilla-project.org/Main_Page)  I  [Documentation](https://wiki.filezilla-project.org/Documentation)  I  [FAQ](https://filezilla-project.org/faq.php)  I  [IRC](https://webchat.freenode.net/?channels=filezilla)
