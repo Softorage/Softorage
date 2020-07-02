@@ -120,7 +120,7 @@ developer: ["KDE"]
 
 initial_release: ["21 June 2005"]
 
-repository: ["https://phabricator.kde.org/source/krita/", "https://cgit.kde.org/krita.git"]
+repository: ["https://invent.kde.org/graphics/krita"]
 
 written_in: ["C++"]
 
