@@ -212,4 +212,4 @@ rating:
   
   It supports use of plugins. It has a password generator and synchronization function, supports two-factor authentication, and a Secure Desktop mode. It can use a two-channel auto-type obfuscation feature to offer additional protection against keyloggers. It can import from over 30 other most commonly used password managers.
   
-  [News](https://keepass.info/news/news_all.html)  I  [Forum](https://sourceforge.net/p/keepass/discussion/)  I  [Documentation/Help](https://keepass.info/help/base/index.html)  I  [FAQ](https://keepass.info/help/base/faq_tech.html)
+  [News](https://keepass.info/news/news_all.html)  I  [Forum](https://sourceforge.net/p/keepass/discussion/)  I  [Documentation/Help](https://keepass.info/help/base/index.html)  I  [FAQ](https://keepass.info/help/base/faq.html)  I  [Technical FAQ](https://keepass.info/help/base/faq_tech.html)  I  [Additional FAQ](https://keepass.info/help/kb/faq.html)
