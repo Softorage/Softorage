@@ -51,7 +51,7 @@ We are not currently asking for or taking any donations. Still, if you feel gene
 ## Get involved
 
 Softorage is a fully open source project where every contribution matters.  
-Join in, be part of the community and help create the software directory that everyone would want to love.
+Join in, be part of the community and help create the software directory that everyone would want to love!
 
 <a class="btn bg-nav" href="/get-involved/"><span class="text-clr2">Learn more</span></a>
 
