@@ -143,7 +143,7 @@ platform:
 
 categories: ["Non-Linear Editing", "Video Editor"]
 
-license: ["Freemium", "Commercial"]
+license: ["Proprietary", "Freemium", "Commercial"]
 
 social:
   - name: "Facebook"

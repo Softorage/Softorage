@@ -127,7 +127,7 @@ platform:
 
 categories: ["Form Filler", "Password Manager", "Browser Extension"]
 
-license: ["Freemium", "Trialware", "Commercial"]
+license: ["Proprietary", "Freemium", "Trialware", "Commercial"]
 
 social:
   - name: "Facebook"
