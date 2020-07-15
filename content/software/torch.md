@@ -68,9 +68,9 @@ source:
 note: |
   * Torch is not in active development. Check out actively maintained [ATen](https://github.com/pytorch/pytorch/tree/master/aten) (which is part of [PyTorch](/software/pytorch)).
 ---
-  Torch is a scientific computing framework with support for [machine learning](/categories/machine-learning) algorithms. It provides N-dimensional arrays, with support for routines for indexing, slicing, transposing, etc.
+  Torch is a scientific computing framework with support for [machine learning](/categories/machine-learning/) algorithms. It provides N-dimensional arrays, with support for routines for indexing, slicing, transposing, etc.
   
-  Torch puts GPU first. It has an interface to C via LuaJIT, linear algebra & numeric optimization routines, [neural network](/categories/neural-network) and energy-based models. It is embeddable, with ports to iOS and Android backends.
+  Torch puts GPU first. It has an interface to C via LuaJIT, linear algebra & numeric optimization routines, [neural network](/categories/neural-networks/) and energy-based models. It is embeddable, with ports to iOS and Android backends.
   
   [Documentation](http://torch.ch/docs/getting-started.html#_)  I  [Wiki](https://github.com/torch/torch7/wiki/Cheatsheet)  I  [Mailing list](https://groups.google.com/forum/embed/?place=forum%2Ftorch7#!forum/torch7)  I  [Gitter chat](https://gitter.im/torch/torch7)
   

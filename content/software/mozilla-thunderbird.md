@@ -357,7 +357,7 @@ rating:
   - name: "PCMag"
     rate: [4, 5]
 ---
-  Thunderbird is an [email](/categories/email-client/), [news feed](/categories/news-reader/), [RSS feed](/categories/feed-reader/), and [chat](/categories/instant-messaging/) (XMPP, IRC, Twitter) client. Its features include message management; junk filtering; extensions and themes; standards support: POP,IMAP, LDAP, S/MIME, OpenPGP; file formats supported: mbox, maildir; file linking; HTML code insertion; cross-platform support for Linux, macOS, Windows, with unofficial ports for FreeBSD, OpenBSD; localization; and security.
+  Thunderbird is an [email](/categories/email-client/), [news feed](/categories/news-reader/), [RSS feed](/categories/feed-reader/), and [chat](/categories/instant-messenger/) (XMPP, IRC, Twitter) client. Its features include message management; junk filtering; extensions and themes; standards support: POP,IMAP, LDAP, S/MIME, OpenPGP; file formats supported: mbox, maildir; file linking; HTML code insertion; cross-platform support for Linux, macOS, Windows, with unofficial ports for FreeBSD, OpenBSD; localization; and security.
   
   [Blog](https://blog.thunderbird.net/)  I  [Forum](https://support.mozilla.org/en-US/products/thunderbird/support-forum)  I  [Documentation](https://wiki.mozilla.org/Thunderbird/Docs)  I  [FAQ](https://support.mozilla.org/en-US/kb/thunderbird-faq)
   

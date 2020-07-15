@@ -167,7 +167,7 @@ developer: ["The Document Foundation", "Star Division<OD>"]
 
 initial_release: ["25 January 2011"]
 
-repository: ["git.libreoffice.org/core"]
+repository: ["https://git.libreoffice.org/core"]
 
 written_in: ["C++", "Java", "Python"]
 

@@ -994,7 +994,7 @@
         <p class="card-text mt-3">
           {{- if .Params.repository }}
             {{- range $index, $element := .Params.repository }}
-              {{- if $index }}, {{ end }}<a href="{{ $element }}">{{ $element }}</a>
+              {{- if $index }}, {{ end }}<a href="{{ safeURL $element }}">{{ $element }}</a>
             {{- end }}
           {{- else if in .Params.license "Proprietary" -}}
             {{- $.Title }} being a proprietary software, its source code is not publicly hosted.

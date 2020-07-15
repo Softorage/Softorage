@@ -190,6 +190,6 @@ rating:
     rate: [4.5, 5]
 
 ---
-  HitFilm Express is a [video editing](/categories/video-editing/) software with VFX tools to make content, films or gaming videos. It supports MP4 H.264 import & export, AVCHD import, QuickTime import (QuickTime install required on Windows) and AVI, M2T, M2TS, MTS, MXF (DVCPro HD), DV, HDV, WMV video import.
+  HitFilm Express is a [video editing](/categories/video-editor/) software with VFX tools to make content, films or gaming videos. It supports MP4 H.264 import & export, AVCHD import, QuickTime import (QuickTime install required on Windows) and AVI, M2T, M2TS, MTS, MXF (DVCPro HD), DV, HDV, WMV video import.
   
   [Forum](https://fxhome.com/forum/categories/express-support)  I  [FAQ](https://fxhome.com/faqs/hitfilm-express)  I  [Documentation](https://fxhome.com/reference-manuals/hitfilm-express)

@@ -145,7 +145,7 @@ rating:
     num: 45
     remarks: "Windows"
 ---
-  Avast Secure Browser is a free [Chromium](/software/chromium-web-browser/) based [web browser](/categories/web-browser/) developed by Avast that focuses on [internet security](/categories/security-software/) and privacy. Avast Secure Browser was originally called "SafeZone" before being revamped and rebranded as 'Avast Secure Browser' in early 2018. Before the revamp and rename, SafeZone's design was similar to that of the [Opera browser](/software/opera-web-browser/).
+  Avast Secure Browser is a free [Chromium](/software/chromium-web-browser/) based [web browser](/categories/web-browser/) developed by Avast that focuses on [internet security](/categories/security/) and privacy. Avast Secure Browser was originally called "SafeZone" before being revamped and rebranded as 'Avast Secure Browser' in early 2018. Before the revamp and rename, SafeZone's design was similar to that of the [Opera browser](/software/opera-web-browser/).
   
   It has features such as Ad Block, Bank mode, Passwords, Video downloader, Anti-tracking & Anti-fingerprinting, Anti-fishing, etc.
   
