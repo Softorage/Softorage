@@ -1,0 +1,11 @@
+<!-- resources.Get creates a new resource object based on a path to a file in the /assets directory. Then, we use resources.ExecuteAsTemplate with the resource type destination as "assets/css/main.scss". The dot (.) passes the context. -->
+{{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS -}}
+
+<!-- Run PostCSS on $css, only if on Production Environment, since its builds take considerably more time -->
+{{ if eq hugo.Environment "production" -}}
+  {{- $css = $css | postCSS | fingerprint }}
+{{- else }}
+  {{- $css = $css | fingerprint }}
+{{- end }}
+
+{{ return $css }}

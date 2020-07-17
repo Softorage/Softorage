@@ -7,7 +7,7 @@
     
     <!-- Position COVID19 message alert -->
     <div style="position: fixed; top: 32rem; right: 0; z-index: 1030;">
-      <div class="alert alert-warning border-right-0 shadow-sm show" role="alert">
+      <div class="alert alert-warning border-right-0 shadow-sm show small" role="alert">
         Stay home. Stay safe!
         <!--button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">×</span>
@@ -19,17 +19,11 @@
     {{ end }}
     {{ partial "footer.html" . }}
     {{/* use tag partialCached for footer and for such elements which are common for all pages like header but not head, once the jekyll-include-cache plugin is activated */}}
-    <!-- SCRIPTS -->
-    <!--{{/*
-    util.js must come first; tooltip.js is a dependency for popover.js; index.js shall come at last; others may follow any order 
-    (resources.Get "js/bootstrap/alert.js")  (resources.Get "js/bootstrap/button.js")
-    */}}-->
-    {{ $js_twbs := slice (resources.Get "js/bootstrap/util.js") (resources.Get "js/bootstrap/collapse.js") (resources.Get "js/bootstrap/tab.js") (resources.Get "js/bootstrap/tooltip.js") (resources.Get "js/bootstrap/popover.js") (resources.Get "js/bootstrap/modal.js") (resources.Get "js/bootstrap/index.js") | resources.Concat "js/bootstrap.slim.js" }}
-    {{- $js_jquery := resources.Get "js/jquery.slim.js" }}
-    {{- $js_popperjs := resources.Get "js/popper.min.js" }}
-    {{- $js := slice $js_jquery $js_popperjs $js_twbs | resources.Concat "assets/js/main.js" | minify | fingerprint }}
+    <!--  -->
+    {{ $js := (partial "reusables/js-resource.html" .) }}
     <!-- Combined JavaScript file -->
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+    
     <!-- 
     Unminified JS to turn navbar solid on scroll
     
@@ -78,6 +72,75 @@
         "policy": "Cookie Consent"
       }
     });
+    
+    // PWA service worker
+    // Thanks: 
+    // https://github.com/wildhaber/offline-first-sw
+    // https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/
+    
+    // Service Worker file: {{ $js_sw := resources.Get "sw.js" | resources.ExecuteAsTemplate "/sw.js" . | minify }}
+    if("serviceWorker" in navigator) {
+
+      /**
+        * Define if <link rel="next|prev|prefetch"> should
+        * be preloaded when accessing this page
+        */
+      const PREFETCH = true;
+
+      /**
+        * Define which link-rel's should be preloaded if enabled.
+        */
+      const PREFETCH_LINK_RELS = ["index","next", "prev", "prefetch"];
+
+      /**
+        * prefetchCache
+        */
+      function prefetchCache() {
+          if(navigator.serviceWorker.controller) {
+
+              let links = document.querySelectorAll(
+                  PREFETCH_LINK_RELS.map((rel) => {
+                      return "link[rel='+rel+']";
+                  }).join(",")
+              );
+
+              if(links.length > 0) {
+                  Array.from(links)
+                      .map((link) => {
+                          let href = link.getAttribute("href");
+                          navigator.serviceWorker.controller.postMessage({
+                              action : "cache",
+                              url : href,
+                          });
+                      });
+              }
+
+
+          }
+      }
+
+      /**
+        * Register Service Worker
+        */
+      navigator.serviceWorker
+          .register({{ $js_sw.RelPermalink }}, { scope: "/" })
+          .then(() => {
+              console.info("Service Worker for Softorage Registered!");
+          }, err => console.error("Service Worker Registration for Softorage Failed :( - ", err));
+
+      /**
+        * Wait if ServiceWorker is ready
+        */
+      navigator.serviceWorker
+          .ready
+          .then(() => {
+              if(PREFETCH) {
+                  prefetchCache();
+              }
+              console.info("Service Worker for Softorage Ready! :)");
+          });
+
+    }
     </script>
     {{/*
     <!--

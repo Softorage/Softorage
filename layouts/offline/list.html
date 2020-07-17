@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container-fluid d-flex flex-column" style="height:100vh; background: url('https://cdn.statically.io/img/img.softorage.com/background-cover/oops.jpg') rgba(255, 255, 255, 0.85) no-repeat center 35%; background-attachment: fixed; background-size: cover; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.85); overflow-y: auto;">
+  <div style="height:3.5rem;"></div>
+  <br>
+  <div class="my-auto">
+    <div class="container my-auto text-left align-middle">
+      <span class="text-clr1 display-1">Offline :(</span>
+      <br><br>
+      <h3><span class="fa-2x">{{ site.Data.icons.spinner | safeHTML }}</span>ops!</h3>
+      <p class="lead my-4">Seems like you are offline and disconnected from all the awesome things happening on the internet. You might be able to view this page, when you connect to internet!</p>
+    </div>
+  </div>
+</div>
+{{ end }}
+ 

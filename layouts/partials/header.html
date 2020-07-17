@@ -28,14 +28,14 @@
           <div class="col-11">
             {{ if $not_search_page -}}
               <form action="/search/" method="get">
-                <input type="search" class="bg-nav border-0 form-control" name="s" placeholder="Search the Softorage">
+                <input type="search" class="bg-nav border-0 form-control" name="s" placeholder="Search the Softorage" aria-label="Search the Softorage">
               </form>
             {{ else }}
               <!-- 
               wanted to use fuzzy-search, but it does not handle long sentences or paragraphs due to performance reasons
               see: https://github.com/javve/list.js/issues/358
               -->
-              <input type="search" id="search_page_main_search_dskp" class="bg-nav border-0 form-control" name="s" placeholder="Search this page">
+              <input type="search" id="search_page_main_search_dskp" class="bg-nav border-0 form-control" name="s" placeholder="Search this page" aria-label="Search this page">
             {{ end }}
           </div>
         </div>
@@ -63,18 +63,18 @@
           {{ if $not_search_page -}}
           {{ else }}
             <li class="nav-item m-1 my-2">
-              <button type="button" class="btn bg-nav" data-toggle="modal" title="Filter" data-target="#filter-modal">
+              <button type="button" class="btn bg-nav" data-toggle="modal" title="Filter" data-target="#filter-modal" aria-label="Filter">
                 <span class="text-clr2 small">{{ site.Data.icons.filter | safeHTML }}</span>
               </button>
             </li>
             <li class="nav-item m-1 mr-3 my-2">
-              <span class="btn bg-nav sort asc" id="search_page_main_sort" title="Sort" >
+              <span class="btn bg-nav sort asc" id="search_page_main_sort" title="Sort">
                 <span class="text-clr2">{{ site.Data.icons.sort | safeHTML }}</span>
               </span>
             </li>
           {{ end }}
           <li class="nav-item m-1 my-2">
-            <a role="button" class="btn bg-nav shadow-none" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom" data-content="
+            <a role="button" class="btn bg-nav shadow-none" tabindex="0" aria-label="Mini menu" data-toggle="popover" data-trigger="focus" data-html="true" data-placement="bottom" data-content="
             <a class='dropdown-item text-antinav' href='/contribute/'>Contribute!</a><br>
             ">{{ site.Data.icons.dotsVerticle | safeHTML }}</a>
           </li>
@@ -85,10 +85,10 @@
       <div class="mobile-only flex-fill mt-1 bg-nav border-0 shadow-sm rounded">
         {{ if $not_search_page -}}
           <form action='/search/' method='get'>
-            <input type='search' class='bg-nav border-0 form-control' name='s' placeholder='Search the Softorage'>
+            <input type='search' class='bg-nav border-0 form-control' name='s' placeholder='Search the Softorage' aria-label='Search the Softorage'>
           </form>
         {{ else }}
-          <input type='search' id='search_page_main_search_mob' class='bg-nav border-0 form-control' name='s' placeholder='Search this page'>
+          <input type='search' id='search_page_main_search_mob' class='bg-nav border-0 form-control' name='s' placeholder='Search this page' aria-label='Search this page'>
         {{ end }}
       </div>
     </div>

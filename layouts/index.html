@@ -1,31 +1,37 @@
 {{ define "main" -}}
 
 <!-- Jumbotron -->
+
 <!--div class="landing-cover">
   <div class="white-overlay"></div>
 </div-->
 
-<div class="jumbotron jumbotron-fluid text-center d-flex flex-column" style="height:100vh; background: url('https://cdn.statically.io/img/img.softorage.com/background-cover/books-on-shelve.jpg') 50% 5% / cover no-repeat fixed; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.85);">
+<!--
+background is made up of eight other properties:
+  Syntax:
+    background: background-image background-position / background-size background-repeat background-attachment background-origin background-clip background-color;
+-->
+<div class="jumbotron jumbotron-fluid text-center d-flex flex-column" style="height:100vh; background: url('https://cdn.statically.io/img/img.softorage.com/background-cover/just-say-no.jpg') 50% 50% / cover no-repeat fixed; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.85);">
 
   <div style="height:3.5rem;"></div>
   <div class="container my-auto">
     
     <div class="row">
-    
+    <!--https://cdn.statically.io/img/img.softorage.com/background-cover/books-on-shelve.jpg-->
       <div class="col-md-8">
         <div class="text-left tg">
-          <span class="h2">Get the software you want and the information you need.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="display-4">Carefree.</span>
+          <span class="h1">Say <b>'No'</b> to adware software downloads and unwanted toolbars</span>
           <br class="mb-5">
-          <h1 class="d-inline-block lead">Softorage</h1><span class="lead">&nbsp;-&nbsp;Concise &amp; Elegant.</span>
+          <span class="lead">Go</span>&nbsp;<h1 class="d-inline-block lead">Softorage</h1><span class="lead">.&nbsp;&nbsp;Concise &amp; Elegant.</span>
         </div>
       </div>
       
       <div class="col-md-4">
         <br>
         <p class="lead">
-          <a class="btn bg-clr1 mx-3" href="/search/" role="button" data-toggle="tooltip" data-placement="bottom" title="Search"><span class="text-nav">{{ site.Data.icons.search | safeHTML }}</span></a>&nbsp;
-          <a class="btn main-gradient mx-3" href="#explore" role="button" data-toggle="tooltip" data-placement="bottom" title="Explore"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
-          <a class="btn bg-clr2 mx-3" href="/contribute/" role="button" data-toggle="tooltip" data-placement="bottom" title="Contribute"><span class="text-nav">{{ site.Data.icons.help | safeHTML }}</span></a>
+          <a class="btn bg-clr1 mx-3" href="/search/" role="button" data-toggle="tooltip" data-placement="bottom" title="Search" aria-label="Search"><span class="text-nav">{{ site.Data.icons.search | safeHTML }}</span></a>&nbsp;
+          <a class="btn main-gradient mx-3" href="#explore" role="button" data-toggle="tooltip" data-placement="bottom" title="Explore" aria-label="Explore"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
+          <a class="btn bg-clr2 mx-3" href="/contribute/" role="button" data-toggle="tooltip" data-placement="bottom" title="Contribute" aria-label="Contribute"><span class="text-nav">{{ site.Data.icons.help | safeHTML }}</span></a>
         </p>
         <!-- <input type="submit">
         <p class="lead tg">{{ site.Params.tagline }}</p> -->
@@ -36,6 +42,11 @@
     
   </div>
   
+  <!--
+  <span class="lead">Get the software you want and the information you need.</span>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="display-4">Carefree.</span>
+  -->
+  
 </div>
 
 
@@ -44,6 +55,8 @@
   <span class="anchor" id="explore"></span>
   <div class="container py-4 text-center">
     <a href="{{ site.BaseURL }}what-we-do/" style="outline:none;" class="text-reset text-decoration-none" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<span class='small'>that helps you keep away from malware!&nbsp;Click to find out how</span>"><span class="h2 tg">The Software Directory.</span></a>
+    <br class="my-2">
+    <span class="tg">Get the software you want and the information you need. Carefree.</span>
   </div>
   
   <div class="container-fluid py-1">

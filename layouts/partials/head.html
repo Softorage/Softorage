@@ -1,5 +1,3 @@
-<!-- resources.Get creates a new resource object based on a path to a file in the /assets directory. Then, we use resources.ExecuteAsTemplate with the resource type destination as "assets/css/main.scss". The dot (.) passes the context. -->
-{{- $css := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.scss" . | toCSS -}}
 <head>
   <!-- GitLab doesn't automatically redirect users from softorage.gitlab.io to softorage.com. Following script (slightly modified from original source) does that. source: https://www.r-bloggers.com/porting-and-redirecting-a-hugo-based-blogdown-website-to-an-https-enabled-custom-domain-and-how-to-do-it-the-easy-way/#javascript-to-the-rescue -->
   <script>
@@ -40,14 +38,13 @@
     <!-- SEO tag -->
     {{- partial "seo.html" . -}}
     {{ hugo.Generator }}
-    
-    <!-- Run PostCSS on $css, only if on Production Environment, since its builds take considerably more time -->
-    {{- $css = $css | postCSS | fingerprint }}
   {{- else }}
-    {{- $css = $css | fingerprint }}
     {{- partial "seo.html" . -}}
   {{- end }}
   
+  <!--  -->
+  {{- $css := (partial "reusables/css-resource.html" .) -}}
+
   <!-- Minified Aggregated CSS -->
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
   <!-- Prefetch and Preconnect Google Fonts API -->
