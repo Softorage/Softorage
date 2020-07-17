@@ -432,15 +432,15 @@
       <div class="row my-2 ml-1">
         <span class="fa-2x">{{ site.Data.icons.share | safeHTML }}</span>&nbsp;&nbsp;
         <span class="d-inline-block font-weight-bold border-left border-right"></span>&nbsp;&nbsp;
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}&quote=Check%20out%20{{ .Title }}%20on%20Softorage" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="https://twitter.com/intent/tweet?source={{ .Permalink }}&text=Check%20out%20{{ .Title }}%20on%20Softorage:%0A{{ .Permalink }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}&quote=Check%20out%20{{ .Title }}%20on%20Softorage" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook" aria-label="Share on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/intent/tweet?source={{ .Permalink }}&text=Check%20out%20{{ .Title }}%20on%20Softorage:%0A{{ .Permalink }}" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter" aria-label="Share on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>&nbsp;&nbsp;
         <!--{{/* G+ is shutting down
-        <a href="https://plus.google.com/share?url={{ .Permalink }}&text={{ .Title }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa-2x">{{ site.Data.icons.googlePlus | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://plus.google.com/share?url={{ .Permalink }}&text={{ .Title }}" rel="noreferrer nofollow" target="_blank" title="Share on Google+"><span class="fa-2x">{{ site.Data.icons.googlePlus | safeHTML }}</span></a>&nbsp;&nbsp;
         */}}-->
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title=Check%20out%20{{ .Title }}%20on%20Softorage&summary={{ .Params.description }}&source=Softorage" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on LinkedIn"><span class="fa-2x">{{ site.Data.icons.linkedin | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="whatsapp://send?text={{ .Permalink }}%0A%0ACheck%20out%20{{ .Title }}%20on%20Softorage" data-text="{{ .Title }}" data-href="{{ .Permalink }}" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Whatsapp"><span class="fa-2x">{{ site.Data.icons.whatsapp | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="https://reddit.com/submit?url={{ .Permalink }}&title=Check%20out%20{{ .Title }}%20on%20Softorage" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Reddit"><span class="fa-2x">{{ site.Data.icons.reddit | safeHTML }}</span></a>&nbsp;&nbsp;
-        <a href="mailto:?subject=Check%20out%20{{ .Title }}%20on%20Softorage&body={{ .Params.description }}%0A%0A{{ .Permalink }}" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share via email"><span class="fa-2x">{{ site.Data.icons.email | safeHTML }}</span></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title=Check%20out%20{{ .Title }}%20on%20Softorage&summary={{ .Params.description }}&source=Softorage" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fa-2x">{{ site.Data.icons.linkedin | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="whatsapp://send?text={{ .Permalink }}%0A%0ACheck%20out%20{{ .Title }}%20on%20Softorage" data-text="{{ .Title }}" data-href="{{ .Permalink }}" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fa-2x">{{ site.Data.icons.whatsapp | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="https://reddit.com/submit?url={{ .Permalink }}&title=Check%20out%20{{ .Title }}%20on%20Softorage" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Reddit" aria-label="Share on Reddit"><span class="fa-2x">{{ site.Data.icons.reddit | safeHTML }}</span></a>&nbsp;&nbsp;
+        <a href="mailto:?subject=Check%20out%20{{ .Title }}%20on%20Softorage&body={{ .Params.description }}%0A%0A{{ .Permalink }}" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share via email" aria-label="Share via email"><span class="fa-2x">{{ site.Data.icons.email | safeHTML }}</span></a>
       </div>
       <!--
       <a href="https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/{{ .File.Path }}" class="badge small my-2" target="_blank">&#60;/page-source&#62;</a>
@@ -481,13 +481,13 @@
             <div class="col-auto">
               <span class="float-right">
                 {{- if .Params.source.overview -}}
-                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                     {{- range $index, $element := .Params.source.overview }}
                       {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                     {{- end -}}
                   "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                 {{- end -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -513,7 +513,7 @@
             <div class="col-auto">
               <span class="float-right">
                 {{ if .Params.source.platform }}
-                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                     {{- range .Params.source.platform }}
                       {{- if .dskp -}}
                         {{ site.Data.icons.desktop | safeHTMLAttr }} : <br>
@@ -534,7 +534,7 @@
                     {{- end -}}
                   "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                 {{- end -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Which platforms, is the software available on. Orange borders mean unofficial release."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Which platforms, is the software available on. Orange borders mean unofficial release."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -559,7 +559,7 @@
             </div>
             <div class="col-auto">
               <span class="float-right">
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Social presence across the internet."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Social presence across the internet."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -634,7 +634,7 @@
             <div class="col-auto">
               <span class="float-right">
                 {{- if .Params.source.sysreq -}}
-                  <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                     {{- range $nav_name, $nav_element := .Params.source.sysreq }}
                       <span class='small font-weight-bold'>{{ upper $nav_name }}</span> :<br>
                       {{- range $index, $src_element := $nav_element -}}
@@ -643,7 +643,7 @@
                     {{- end -}}
                   "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                 {{- end -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="System configuration you should have to run the software peacefully."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="System configuration you should have to run the software peacefully."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -788,7 +788,7 @@
             </div>
             <div class="col-auto">
               <span class="float-right">
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers. Since ratings change over time, numbers may not be exact."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers. Since ratings change over time, numbers may not be exact."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
               </span>
             </div>
           </div>
@@ -839,11 +839,11 @@
                                   {{- if eq $rt_src.type "user" -}}
                                     {{- if $rt.remarks -}}
                                       {{- if and $rt_src.remarks (eq $rt.remarks $rt_src.remarks) -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end -}}
                                     {{- else -}}
                                       {{- if not $rt_src.remarks -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- end }}
                                   {{- end }}
@@ -852,11 +852,11 @@
                                   {{- if eq $rt_src.type "expert" -}}
                                     {{- if $rt.remarks -}}
                                       {{- if and $rt_src.remarks (eq $rt.remarks $rt_src.remarks) -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- else }}
                                       {{- if not $rt_src.remarks -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- end }}
                                   {{- end }}
@@ -894,13 +894,13 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.developer -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.developer }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
                 "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Get to know who developed the software."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Get to know who developed the software."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -926,13 +926,13 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.written_in -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.written_in }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
                 "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), in which the software is written."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), in which the software is written."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -956,13 +956,13 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.initial_release -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.initial_release }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
                 "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released. Elder the software, more trustworthy it is."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released. Elder the software, more trustworthy it is."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -987,7 +987,7 @@
           </div>
           <div class="col-auto">
             <span class="float-right">
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Here you can find source code of the software. Have a look!"><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Here you can find source code of the software. Have a look!"><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -1015,13 +1015,13 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.license -}}
-                <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.license }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
                 "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>
@@ -1046,7 +1046,7 @@
           </div>
           <div class="col-auto">
             <span class="float-right">
-              <a role="button" class="btn btn-sm" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="What type of software it is. Helps you with classification."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="What type of software it is. Helps you with classification."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>

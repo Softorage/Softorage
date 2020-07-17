@@ -6,38 +6,38 @@
     layouts/software/list.html
 -->
 {{- if .dskp -}}
-  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
+  <a role="button" class="btn" tabindex="0" aria-label="Desktop" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
     <div class='text-center'>
       {{- range (sort .dskp "name" "desc") }}
         {{- if eq .name "Linux" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.linux | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "Windows" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "macOS" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else }}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "Unix(like)" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unix-like OS'>{{ site.Data.icons.unix | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unix-like OS' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unix-like OS'>{{ site.Data.icons.unix | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else }}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Unix-like OS'>{{ site.Data.icons.unix | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Unix-like OS' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Unix-like OS'>{{ site.Data.icons.unix | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "PWA" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else }}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else }}
           {{- if .official -}}
@@ -50,32 +50,32 @@
     </div>
   "><span class="text-clr2">{{ site.Data.icons.desktop | safeHTML }}</span></a>
 {{- else if .smp -}} 
-  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
+  <a role="button" class="btn" tabindex="0" aria-label="Smartphone" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
     <div class='text-center'>
       {{- range (sort .smp "name") }}
         {{- if eq .name "Android" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "iOS" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "Windows" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "PWA" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else }}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else }}
           {{- if .official -}}
@@ -88,32 +88,32 @@
     </div>
   "><span class="text-clr2">{{ site.Data.icons.mobile | safeHTML }}</span></a>
 {{- else if .tab -}} 
-  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+  <a role="button" class="btn" tabindex="0" aria-label="Tablet" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
     <div class='text-center'>
       {{- range (sort .tab "name") }}
         {{- if eq .name "Android" }}
           {{- if .official }}
-          <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+          <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.android | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "iOS" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.apple | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "Windows" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}{{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else -}}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for {{ .name }}'>{{ site.Data.icons.windows | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else if eq .name "PWA" }}
           {{- if .official -}}
-            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- else }}
-            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
+            <span class='fa-2x border border-warning p-1' title='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App' aria-label='{{ if .arch }}{{ delimit .arch "/" }} {{ end }}Unofficial version for Progressive Web App'>{{ site.Data.icons.pwa | safeHTMLAttr }}</span>&nbsp;&nbsp;
           {{- end }}
         {{- else }}
           {{- if .official -}}
@@ -126,7 +126,7 @@
     </div>
   "><span class="text-clr2">{{ site.Data.icons.tab | safeHTML }}</span></a>
 {{- else -}} 
-  <a role="button" class="btn" tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
+  <a role="button" class="btn" tabindex="0" aria-label="Else" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
     <div class='text-center'>
       {{- range .else }}
         {{- if .official -}}
