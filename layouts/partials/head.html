@@ -24,6 +24,11 @@
   
   {{ if eq hugo.Environment "production" -}}
     <!-- Google Analytics shall work only on production website -->
+    <!-- prefetch -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+    <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+    <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src={{ printf "%s%s" "https://www.googletagmanager.com/gtag/js?id=" site.GoogleAnalytics | safeHTMLAttr }}></script>
     <script>
@@ -54,8 +59,14 @@
   <link rel="dns-prefetch" href="https://cdn.statically.io/">
   <link rel="preconnect" href="https://cdn.statically.io/" crossorigin>
   <!-- Request Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+  <!--
+  Since making more connections and request request costs more in time than the savings by reduction of size, we have used:
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+  instead of:
   <link href="https://fonts.googleapis.com/css?family=Roboto&text=Softorage&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  -->
   <!-- AMP, RSS Feed, and other output formats -->
   {{- range .AlternativeOutputFormats -}}
     {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
