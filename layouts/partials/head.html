@@ -43,7 +43,7 @@
   {{- end }}
   
   <!--  -->
-  {{- $css := (partial "reusables/css-resource.html" .) -}}
+  {{- $css := (partialCached "reusables/css-resource.html" .) -}}
 
   <!-- Minified Aggregated CSS -->
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
