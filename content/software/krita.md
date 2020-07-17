@@ -108,13 +108,13 @@ get_it:
 sysreq:
   general:
     -
-      recm: "Windows7 or higher, OSX 10.11, Linux"
+      recm: "OS: Windows 8.1 or higher, OSX 10.12, Linux"
     -
-      recm: "2GB RAM or higher"
+      recm: "RAM: 4GB or higher"
     -
-      recm: "OpenGL 1.3 or higher GPU"
+      recm: "Optional GPU: OpenGL 3.0 or higher"
     -
-      recm: "Wacom, Huion, Yiyinova, Surface Pro Graphics tablet supported"
+      recm: "Graphics tablet supported: Wacom, Huion, Yiyinova, Surface Pro"
 
 developer: ["KDE"]
 
