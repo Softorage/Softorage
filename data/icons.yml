@@ -20,8 +20,8 @@ share: "<span class='fas fa-share-alt'></span>"
 email: "<span class='far fa-envelope'></span>"
 
 # source
-source: "<span class='fas fa-info'></span>" #"<span class='fas fa-shoe-prints fa-rotate-270'></span>"
-info: "<span class='fas fa-question'></span>" #"<span class='fas fa-info'></span>"
+source: "<span class='fas fa-info'></span>" #prev - "<span class='fas fa-shoe-prints fa-rotate-270'></span>"
+info: "<span class='fas fa-question'></span>" #prev - "<span class='fas fa-info'></span>"
 
 # status
 checkmark: "<span class='fas fa-check'></span>"

@@ -20,7 +20,7 @@ No matter how you want to contribute, we welcome new drive, ideas and any contri
 To help us, you can:
 
 0. **Be part of community**  
-   Like us on [Facebook](https://www.facebook.com/Softorage/), and follow [Twitter](https://twitter.com/Softorage/). It inspires us! Looking forward to see you there!
+   Like us on [Facebook](https://www.facebook.com/Softorage/), and follow on [Twitter](https://twitter.com/Softorage/) and [Instagram](https://www.instagram.com/softorage/) for awesome facts! It inspires us! Looking forward to see you there!
 
 1. **Spread the word**  
    This is one of the most appreciated way in which you can help us. Tell your relatives, family, friends and enemies about Softorage. Blog about Softorage and ask your blogger friends to blog about Softorage. Also, every `softpage` has share buttons which allow to share that page's URL in various ways.
