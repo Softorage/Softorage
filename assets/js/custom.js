@@ -90,9 +90,9 @@ window.cookieconsent.initialise({
     }
   },
   "content": {
-    "message": "We use cookies to ensure you get the best user experience on our website. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='{{ site.BaseURL }}legal/cookie-policy/'>Cookie Policy</a>, <a href='{{ site.BaseURL }}legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='{{ site.BaseURL }}legal/terms-and-conditions/'>Terms and Conditions</a>.",
+    "message": "For us, protection of your privacy isn't just a commitment, but passion. To ensure you get the best user experience, and to get an understanding of metrics, we use cookies with privacy protections like 'Anonymizing IP'. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='{{ site.BaseURL }}legal/cookie-policy/'>Cookie Policy</a>, <a href='{{ site.BaseURL }}legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='{{ site.BaseURL }}legal/terms-and-conditions/'>Terms and Conditions</a>.",
     "dismiss": "Okay. Got it!",
-    "link": "Find more about cookies in our Privacy Policy.",
+    "link": "Find more about cookies and how we take privacy very seriously, in our Privacy Policy.",
     "href": "{{ site.BaseURL }}legal/privacy-policy/",
     "allow": "Allow cookies",
     "deny": "Decline",
