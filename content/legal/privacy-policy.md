@@ -23,6 +23,10 @@ This Privacy Terms apply to the main website softorage.com as well as in the sub
 
 ## Scope and Usage of Data
 
+### Third-party hosting and CDN
+
+We use [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/) for website hosting, and [Cloudflare CDN](https://www.cloudflare.com/cdn/) for website's content delivery. By vising Softorage and its affiliated websites, you agree that you have read and understood [GitLab's Privacy Policy](https://about.gitlab.com/privacy/) and  [Cloudflare's Privacy Policy](https://www.cloudflare.com/privacypolicy/). Both these companies take privacy very seriously, which we find in line with the heavy importance we attribute to our users' privacy. They also work diligently to keep up with best practices and processes continuously, to ensure GDPR compliance.
+
 ### Personal information you give to us
 
 Softorage collects data to operate this website. You provide some of this data directly, such as when you submit Investor Subscription form, Internship Application form, Research Application form, Contact us form, download gated assets form and microsite form. Typically, the contact information we collect is used by us to respond to your enquiry, or allow you to access specific account information. We may execute other activities such as marketing campaign, promotional communications for which consent is taken appropriately or another appropriate lawful basis for the processing is identified.
@@ -123,6 +127,8 @@ Softorage is committed to protecting the security of your personal data. We use 
 The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
 
 ## Where We Store and Process Personal Data
+
+
 
 Personal data collected by Softorage may be stored and processed in your region, in India, and in any other country where Softorage or its affiliates, subsidiaries or service providers operate facilities. The storage location(s) are chosen in order to operate efficiently, to improve performance and to create redundancies in order to protect the data in the event of an outage or other problem. We take steps to ensure that the data we collect under this privacy statement is processed according to the provisions of this statement and the requirements of applicable law wherever the data is located.
 
