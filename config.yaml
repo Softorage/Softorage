@@ -5,7 +5,7 @@ baseURL: "https://softorage.com/" # required
 languageCode: "en-us" # recommended
 
 params:
-  description: "Softorage is the software directory, with authentic software downloads and information that makes sense." # The one place for authentic downloads and all your software related information needs # required
+  description: "Softorage is a software directory designed as a secure download service and information resource, with a focus on safety & respecting user privacy." # The one place for authentic downloads and all your software related information needs # required
   tagline: "The Software Directory." # required, recommended for SEO template (partials/seo.html)
   twitter: "@Softorage" # optional, twitter handle; recommended for SEO template (partials/seo.html)
   fb_app_id: "170403084180809" # optional, for SEO template (partials/seo.html)

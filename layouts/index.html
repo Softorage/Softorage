@@ -10,51 +10,62 @@
 background is made up of eight other properties:
   Syntax:
     background: background-image background-position / background-size background-repeat background-attachment background-origin background-clip background-color;
+    
+    
+    https://cdn.statically.io/img/img.softorage.com/background-cover/just-say-no.jpg
+    
+    box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.85);
+    
+    
+    background: url('/land-pg.png') 50% 50% / cover no-repeat fixed;
 -->
-<div class="jumbotron jumbotron-fluid text-center d-flex flex-column" style="height:100vh; background: url('https://cdn.statically.io/img/img.softorage.com/background-cover/just-say-no.jpg') 50% 50% / cover no-repeat fixed; box-shadow: inset 2000px 0 0 0 rgba(255, 255, 255, 0.85);">
+<div class="jumbotron jumbotron-fluid text-center d-flex flex-column bg-nav">
 
   <div style="height:3.5rem;"></div>
+  <div class="mobile-only" style="height:2.5rem;"></div>
   <div class="container my-auto">
     
     <div class="row">
     <!--https://cdn.statically.io/img/img.softorage.com/background-cover/books-on-shelve.jpg-->
-      <div class="col-md-8">
+      <div class="col-md-7 my-auto">
         <div class="text-left tg">
-          <span class="h4">Say 'No' to adware software downloads and unwanted toolbars</span>
+          <span class="h4">A software directory to help you get a fabulous software on your computer, securely.</span>
           <br class="mb-5">
-          <span class="h1">Go&nbsp;<h1 class="d-inline-block">Softorage</h1>.</span> &nbsp;&nbsp;<span class="h2">Concise &amp; Elegant.</span>
+          <div class="text-left"><span class="h1">Go&nbsp;<h1 class="d-inline-block">Softorage</h1>.</span> &nbsp;&nbsp;<span class="h2">Concise &amp; Elegant.</span></div>
         </div>
-      </div>
-      
-      <div class="col-md-4">
-        <br>
-        <p class="lead">
+        <br class="my-3">
+        <div class="text-left lead">
           <a class="btn bg-clr1 mx-3" href="/search/" role="button" data-toggle="tooltip" data-placement="bottom" title="Search" aria-label="Search"><span class="text-nav">{{ site.Data.icons.search | safeHTML }}</span></a>&nbsp;
           <a class="btn main-gradient mx-3" href="#explore" role="button" data-toggle="tooltip" data-placement="bottom" title="Explore" aria-label="Explore"><span class="text-nav">{{ site.Data.icons.down | safeHTML }}</span></a>&nbsp;
           <a class="btn bg-clr2 mx-3" href="/contribute/" role="button" data-toggle="tooltip" data-placement="bottom" title="Contribute" aria-label="Contribute"><span class="text-nav">{{ site.Data.icons.help | safeHTML }}</span></a>
-        </p>
-        <!-- <input type="submit">
-        <p class="lead tg">{{ site.Params.tagline }}</p> -->
+        </div>
+      </div>
+      
+      <div class="col-md-5">
+        <br>
+        <img class="img-fluid mt-3" src="https://cdn.statically.io/img/img.softorage.com/standalone/landing-pg-img.jpg?quality=90">
       </div>
     
     </div>
     <noscript class="alert alert-warning"><b>Warning:</b> Softorage may not work at its best if JavaScript is disabled.</noscript>
     
   </div>
-  
-  <!--
-  <span class="lead">Get the software you want and the information you need.</span>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="display-4">Carefree.</span>
-  -->
-  
 </div>
 
+<hr>
+
+<div class="container text-center py-4">
+  <span class="h3 text-clr1">Visited &amp; loved by 100+ unique users, daily!</span>
+  <img src="https://cdn.statically.io/img/img.softorage.com/standalone/unique-visitors.png?quality=90" class="img-fluid mt-4 px-2 pt-2 shadow rounded-lg">
+</div>
+
+<hr>
 
 <div class="container-fluid">
   <div style="height:3.5rem;"></div>
   <span class="anchor" id="explore"></span>
   <div class="container py-4 text-center">
-    <a href="{{ site.BaseURL }}what-we-do/" style="outline:none;" class="text-reset text-decoration-none" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<span class='small'>that helps you keep away from malware!&nbsp;Click to find out how</span>"><span class="h2 tg">The Software Directory.</span></a>
+    <a href="{{ site.BaseURL }}what-we-do/" style="outline:none;" class="text-reset text-decoration-none" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<span class='small'>that helps you stay away from malware!&nbsp;Click to find out how</span>"><span class="h2 tg">The Software Directory.</span></a>
     <br class="my-2">
     <span class="tg">Get the software you want and the information you need. Carefree.</span>
   </div>
