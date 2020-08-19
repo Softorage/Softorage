@@ -1,7 +1,7 @@
 <p align="center">
 <a href="https://softorage.com"><img src="/source/images/Cover photo-NoBG.png?raw=true" alt="Softorage Banner Image"></a>
   
-The software directory, with authentic software downloads and information that makes sense.  
+A software directory designed as a secure download service and information resource, with a focus on safety & respecting user privacy.  
   
 [Softorage](https://softorage.com) **&#183;** [Purpose](https://softorage.com/what-we-do/)
 </p>
