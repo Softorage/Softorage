@@ -7,7 +7,7 @@ The software directory, with authentic software downloads and information that m
 </p>
 
 ## Core features:
-* Protection from malware injection practices
+* Protection from malware injection practices (ever got a toolbar out of nowhere in your favourite browser, while using another software download service?)
 * Concise and elegant design
 * Objective presentation of related information, facilitating efficient and easy software comparison
 * Ridiculously fast
