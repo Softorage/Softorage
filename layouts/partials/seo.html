@@ -115,7 +115,12 @@
     },
     {{ end -}}
     "logo": {{ site.Params.image }},
-    "description": {{ site.Params.description }}
+    "description": {{ site.Params.description }},
+    "sameAs" : [
+      "https://twitter.com/Softorage",
+      "https://www.facebook.com/Softorage",
+      "https://www.instagram.com/softorage"
+    ]
   }
   </script>
 {{- end }}
@@ -140,7 +145,12 @@
         "author": {
             "@type": "Person",
             "name": {{ site.Author.name }}
-        }
+        },
+        "sameAs" : [
+          "https://twitter.com/Softorage",
+          "https://www.facebook.com/Softorage",
+          "https://www.instagram.com/softorage"
+        ]
       }
     {{ else -}}
       { 
@@ -156,7 +166,12 @@
         {{ if .Params.image -}}
         "image": {{ .Params.image }},
         {{ end -}}
-        "description": {{ .Description | default site.Params.description }}
+        "description": {{ .Description | default site.Params.description }},
+        "sameAs" : [
+          "https://twitter.com/Softorage",
+          "https://www.facebook.com/Softorage",
+          "https://www.instagram.com/softorage"
+        ]
       }
     {{ end -}}
   </script>

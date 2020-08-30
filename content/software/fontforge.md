@@ -111,6 +111,9 @@ rating:
     rate: [4.3, 5]
     num: 7
     remarks: "macOS"
+    
+note: |
+  * Users' tip: [An external font resource/library](https://www.websiteplanet.com/blog/best-free-fonts/)
 ---
   FontForge is a [font editor](/categories/font-editor) which supports many common font formats. To facilitate automated format conversion and other repetitive tasks, FontForge implements two scripting languages: its own language and Python. FontForge can run scripts from its GUI, from the command line, and also offers its features as a Python module so it can be integrated into any Python program.
   
