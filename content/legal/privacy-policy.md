@@ -70,7 +70,7 @@ Examples of Cookies we use:
 
 Softorage uses the data we collect for 2 main purposes, described in more detail below: to operate our business and this website; and to send communications, including promotional communications.
 * Security and Safety: We use data to protect the security and safety of our website.
-* Communications: We use data we collect to communicate with you and personalize our communications with you. Additionally, you can sign up for email subscriptions and choose whether you wish to receive promotional communications from Softorage by email, SMS, post and telephone or other means of communication. For information about managing your contact data, email subscriptions and promotional communications, please submit a request to us using our email: contact@softorage.com.
+* Communications: We use data we collect to communicate with you and personalize our communications with you. Additionally, you can sign up for email subscriptions and choose whether you wish to receive promotional communications from Softorage by email, SMS, post and telephone or other means of communication. For information about managing your contact data, email subscriptions and promotional communications, please submit a request to us using the [contact form](/contact-us/).
 
 Softorage also uses the collected data for various purposes:
 * To provide and maintain the Service
@@ -107,7 +107,7 @@ If you receive promotional email from us and would like to opt out, you can do s
 
 ## ­­­­­­­­­­­­­­­­­­­­­­­­How to Contact Us
 
-If you have a privacy concern, complaint or a question regarding this privacy statement, please direct it to the Chief Privacy Officer of Softorage at contact@softorage.com.
+If you have a privacy concern, complaint or a question regarding this privacy statement, please direct it to the Chief Privacy Officer of Softorage at this [contact form](/contact-us/).
 
 ## European Data Protection Rights - GDPR
 
@@ -161,4 +161,4 @@ We do not knowingly collect personally identifiable information from anyone unde
 We may update this privacy statement from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We encourage you to periodically review this privacy statement to learn how Softorage is protecting your information. Changes to this Privacy Policy are effective when they are posted on this page.
 
 If you have any questions about this Privacy Policy, please contact us:
-* By email: contact@softorage.com
+* Via [contact form](/contact-us/)

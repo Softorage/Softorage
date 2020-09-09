@@ -70,3 +70,6 @@ spinner: "<span class='fas fa-circle-notch'></span>"
 externalLink: "<span class='fas fa-external-link-alt'></span>"
 filter: "<span class='fas fa-filter'></span>"
 sort: "<span class='fas fa-sort'></span>"
+
+# Contact page
+send: "<span class='fas fa-paper-plane'></span>"

@@ -14,4 +14,4 @@ Our Cookies Policy explains what cookies are, how we use cookies, how third-part
 
 We aim to meet high standards and our policies and procedures are, therefore, constantly under review. From time to time we may change how we use and place cookies. Accordingly we recommend that you check this page periodically in order to review our current policies and practices.
 
-Please review our privacy policy for understanding what personal data we collect from you, through our interactions with you on this website, and how we use that data.
+Please review our [privacy policy](/legal/privacy-policy/) for understanding what personal data we collect from you, through our interactions with you on this website, and how we use that data.

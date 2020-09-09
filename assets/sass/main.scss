@@ -217,7 +217,7 @@ box-shadow: none;
 }
 
 //
-input[type="url"]:hover, input[type="url"]:focus, input[type="text"]:hover, input[type="text"]:focus, .type-search:hover, .type-search:focus-within, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
+input[type="url"]:hover, input[type="url"]:focus, input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus, .type-search:hover, .type-search:focus-within, textarea:hover, textarea:focus, select:hover, select:focus, .btn:hover {
 @extend .shadow;
 transition: all 0.3s ease 0s;
 }

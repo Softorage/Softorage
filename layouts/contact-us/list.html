@@ -1,0 +1,46 @@
+{{ define "main" -}}
+
+<div class="container-fluid bg-nav text-clr1 text-center pb-3 pt-4 position-relative shadow-sm">
+  <div>
+    <div style="height:3.5rem;"></div>
+    <div class="mobile-only" style="height:2.5rem;"></div>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </div>
+</div>
+<div class="container-fluid bg-antinav-light py-3">
+  <div class="container">
+    <form action="https://formspree.io/xeqryplj" method="POST">
+      <div class="form-row">
+        <div class="col-md m-2">
+          <input class="form-control border-0 rounded" type="text" placeholder="Name" id="name" aria-describedby="nameHelp" name="name" required>
+          <p id="nameHelp" class="form-text text-muted small">
+            What's your name?
+          </p>
+        </div>
+        
+        <div class="col-md m-2">
+          <input class="form-control border-0 rounded" type="email" placeholder="your@email.com" id="email" aria-describedby="emailHelp" name="_replyto" required>
+          <p id="emailHelp" class="form-text text-muted small">
+            Rest assured! Your email is safe. You will hear from us on this email and we'll never share it with anyone else.
+          </p>
+        </div>
+      </div>
+      
+      <input class="d-none" type="text" name="_gotcha">
+      
+      <div class="form-group m-2">
+        <textarea class="form-control border-0 rounded" rows="5" placeholder="Message:&#10;&#10;Hi -- ,&#10;&#9;Just wanted to let you know, Softorage is awesome!" id="message" required></textarea>
+      </div>
+      
+      <div class="form-group m-2">
+        <div class="g-recaptcha" data-sitekey="6LdxB8oZAAAAAPO2siDiAxDwXZqMJSHWEK2TzDVx"></div>
+      </div>
+      
+      <button type="submit" class="btn bg-nav">{{ site.Data.icons.send | safeHTML }}&nbsp;&nbsp;&nbsp;Send</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{{- end }}
