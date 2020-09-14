@@ -2,8 +2,8 @@
 <a href="https://softorage.com"><img src="/source/images/Cover photo-NoBG.png?raw=true" alt="Softorage Banner Image"></a>
 <br>
 A software directory designed as a secure download service and information resource, with a focus on safety & respecting user privacy.
-<br>
-[Softorage](https://softorage.com) **&#183;** [Purpose](https://softorage.com/what-we-do/)
+<br><br>
+<a href="https://softorage.com">Softorage</a> <b>&#183;</b> <a href="https://softorage.com/what-we-do/">Purpose</a>
 </p>
 
 ## Core features:

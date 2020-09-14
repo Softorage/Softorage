@@ -54,7 +54,7 @@ $("form").submit(function(event) {
    var recaptcha = $("#g-recaptcha-response").val();
    if (recaptcha === "") {
       event.preventDefault();
-      alert("Please complete the reCaptcha by clicking on it, and help us fight spam.");
+      alert("Please help us fight spam by completing the reCaptcha.");
    }
 });
 {{ end }}
