@@ -55,10 +55,10 @@
 " />
 <meta name="twitter:url" content="{{ .Permalink }}" />
 {{ if site.Params.twitter -}}
-  <meta name="twitter:site" content="{{ site.Params.twitter }}" /> <!-- @publisher_handle -->
+  <meta name="twitter:site" content="@{{ site.Params.twitter }}" /> <!-- @publisher_handle -->
 {{- end }}
 {{ if or site.Params.twitter .Params.author_twitter -}}
-  <meta name="twitter:creator" content="{{ if .Params.author_twitter }}{{ .Params.author_twitter }}{{ else }}{{ site.Params.twitter }}{{ end }}" /> <!-- @author_handle -->
+  <meta name="twitter:creator" content="{{ if .Params.author_twitter }}@{{ .Params.author_twitter }}{{ else }}@{{ site.Params.twitter }}{{ end }}" /> <!-- @author_handle -->
 {{- end }}
 {{ if or site.Params.image .Params.image -}}
   <meta name="twitter:image" content="{{ if not .IsHome }}{{ .Params.image }}{{ else }}{{ site.Params.image }}{{ end }}">

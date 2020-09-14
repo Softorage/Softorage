@@ -1,8 +1,8 @@
 <p align="center">
 <a href="https://softorage.com"><img src="/source/images/Cover photo-NoBG.png?raw=true" alt="Softorage Banner Image"></a>
-  
-A software directory designed as a secure download service and information resource, with a focus on safety & respecting user privacy.  
-  
+<br>
+A software directory designed as a secure download service and information resource, with a focus on safety & respecting user privacy.
+<br>
 [Softorage](https://softorage.com) **&#183;** [Purpose](https://softorage.com/what-we-do/)
 </p>
 
@@ -65,6 +65,7 @@ For a quick view, see [Apache license 2.0](https://tldrlegal.com/license/apache-
 * [Cloudflare CDN](https://www.cloudflare.com/cdn/) - Ultra-fast, agile, secure static and dynamic content delivery
 * [CSS Gradient](https://cssgradient.io/) - Fabulous CSS gradients tutorials
 * [GTmetrix](https://gtmetrix.com/) - For one stop page speed recommendations
+* [FormSubmit.co](https://formsubmit.co/) - Easy form endpoints for static HTML forms
 <!-- * [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page) - A hundred thanks for [allowing inline linking](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/technical#Hotlinking) -->
 <!-- * list.js - Super smart searches -->
 <!-- * forwardemail.com - Custom email hosting -->

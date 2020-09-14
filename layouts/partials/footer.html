@@ -1,17 +1,23 @@
 <footer>
   <div class="container bg-nav text-center p-3">
 
-      <a href="https://www.facebook.com/{{ site.Title }}/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Like us on Facebook" aria-label="Like us on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>
-      <a href="https://twitter.com/{{ site.Title }}/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter" aria-label="Follow us on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>
-      <a href="https://instagram.com/{{ lower site.Title }}/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Follow us on Instagram" aria-label="Follow us on Instagram"><span class="fa-2x">{{ site.Data.icons.instagram | safeHTML }}</span></a>
-      <a href="https://gitlab.com/{{ site.Title }}/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Our Open Source Space" aria-label="Our Open Source Space"><span class="fa-2x">{{ site.Data.icons.gitlab | safeHTML }}</span></a>
-   
+    <a href="https://www.facebook.com/{{ site.Title }}/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Like us on Facebook" aria-label="Like us on Facebook"><span class="fa-2x">{{ site.Data.icons.facebook | safeHTML }}</span></a>
+    <a href="https://twitter.com/{{ site.Title }}/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter" aria-label="Follow us on Twitter"><span class="fa-2x">{{ site.Data.icons.twitter | safeHTML }}</span></a>
+    <a href="https://instagram.com/{{ lower site.Title }}/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Follow us on Instagram" aria-label="Follow us on Instagram"><span class="fa-2x">{{ site.Data.icons.instagram | safeHTML }}</span></a>
+    <a href="https://gitlab.com/{{ site.Title }}/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Our Open Source Space" aria-label="Our Open Source Space"><span class="fa-2x">{{ site.Data.icons.gitlab | safeHTML }}</span></a>
+    
+    <div class="mt-3"></div>
+    <span class="tg h4" style="cursor: default;">@<span class="brand ml-1">{{ site.Title }}</span></span>
+  
   </div>
   <div class="container-fluid bg-clr2-light py-3 shadow-sm position-relative">
     <div class="row">
-      <div class="col-md-7">
-        <span class="tg" style="font-size:3.5rem;"><a class="text-reset text-decoration-none brand" href="{{ site.BaseURL }}">{{ site.Title }}</a></span>
-        <p class="lead tg">{{ site.Params.tagline }}</p>
+      <div class="col-md-7 my-auto">
+        <span class="pl-5 desktop-only"></span>
+        <span class="h1 tg text-center mb-4 mt-2 desktop-only">{{ site.Params.tagline }}</span>
+        <div class="text-center mb-3 mt-1">
+          <span class="lead tg mx-auto mobile-only">{{ site.Params.tagline }}</span>
+        </div>
       </div>
       <div class="col-md-5 text-antinav">
         <div class="card-deck">
@@ -40,7 +46,7 @@
                 <a class="text-reset small" href="{{ site.BaseURL }}legal/privacy-policy/">Privacy Policy</a><br>
                 <a class="text-reset small" href="{{ site.BaseURL }}legal/disclaimer/">Disclaimer</a><br>
                 <a class="text-reset small" href="{{ site.BaseURL }}legal/cookie-policy/">Cookie Policy</a><br>
-                <a class="text-reset small" href="{{ site.BaseURL }}contact-us/">Contact Us</a>
+                <a class="text-reset small" href="{{ site.BaseURL }}contact-us/" title="Got a tip? Feedback? Or maybe just want to say 'Hi!'?">Contact Us</a>
               </div>
             </div>
           </div>

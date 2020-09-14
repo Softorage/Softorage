@@ -7,7 +7,7 @@ languageCode: "en-us" # recommended
 params:
   description: "Softorage is a software directory designed as a secure download service and information resource, with a focus on safety & respecting user privacy." # The one place for authentic downloads and all your software related information needs # required
   tagline: "The Software Directory." # required, recommended for SEO template (partials/seo.html)
-  twitter: "@Softorage" # optional, twitter handle; recommended for SEO template (partials/seo.html)
+  twitter: "Softorage" # optional, twitter handle; recommended for SEO template (partials/seo.html)
   fb_app_id: "170403084180809" # optional, for SEO template (partials/seo.html)
   image: "https://softorage.com/assets/favicon/Softorage-Logo-Profile.png" # optional, absolute path to image to be used for social media; resolution 200px x 200px to 1200px x 1200px
   search_target: "https://softorage.com/search?s" # optional, definition: where you wish to direct users with search term; used in SEO template {{ site.Params.search_target | safeHTML | jsonify }}={search_term_string}

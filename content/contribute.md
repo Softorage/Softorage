@@ -3,17 +3,21 @@ title: "Contribute"
 description: "Anyone contributing benefits equally from others' contributions"
 ---
 
-<div class="card">
-<div class="card-body lead">
-<div class="text-center">
+<div class="card my-3">
+<div class="card-body">
+<div class="text-center lead">
 
-Thank you, for considering contribution to Softorage.
+Thank you, for considering contribution to Softorage.&nbsp;&nbsp;🙏
 
 </div>
 
+<div class="text-justify">
+
 We dream to build confidence in our users, that they can get a fantastic software on their computer and be safely protected from malware. We dream to build confidence in software developers, that the fabulous software they build with their precious time and efforts, isn't manipulated till it reaches end users. To achieve the dream, we have built Softorage, the software directory that presents authentic links for downloads pointing to official software website; an information resource to cater software related information needs of people, which people can look up to, and love.
 
-<div class="text-center">
+</div>
+
+<div class="text-center lead">
 
 By contributing, you help us build it!
 
@@ -21,31 +25,30 @@ By contributing, you help us build it!
 </div>
 </div>
 
----
 
-<div class="card">
+<div class="card my-3">
 <div class="card-body">
 
 ## Donate
 
-We are not currently asking for or taking any donations. Still, if you feel generous, [drop us an email](mailto:contact@softorage.com)!
+We are not currently asking for donations. Still, if you like our work or feel generous, [contact us](/contact-us/)!
 
 </div>
 </div>
 
----
 
-<div class="card">
+<div class="card my-3">
 <div class="card-body">
 
-## Sponsor - not available yet
+## Sponsor
+
+Coming soon...
 
 </div>
 </div>
 
----
 
-<div class="card">
+<div class="card my-3">
 <div class="card-body">
 
 ## Get involved

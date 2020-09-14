@@ -372,6 +372,6 @@ background is made up of eight other properties:
 
 {{- end }}
 {{ define "script" }}
-{{- $js_toadjs := resources.Get "js/toad.min.js" }}
+{{- $js_toadjs := resources.Get "js/toad.next.min.js" }}
 {{- $js_toadjs.Content | safeJS }}
 {{ end }}

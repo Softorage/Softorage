@@ -288,5 +288,5 @@ rating:
   
   Books about Scribus are available in several languages, including an official manual for v1.3, published through FLES Books in 2009.
   
-  [Blog](https://rants.scribus.net/)  I  [Forum](http://forums.scribus.net/)  I  [News](https://www.scribus.net/category/news/)  I  [Wiki](https://wiki.scribus.net/canvas/Scribus)  I  [Video Tutorials](https://wiki.scribus.net/canvas/Scribus_Video_Tutorials)  I  [Get Stated](https://wiki.scribus.net/canvas/Get_Started_with_Scribus)  I  [Docs](https://wiki.scribus.net/canvas/Help:TOC)  I  [Mailing list](http://lists.scribus.net/mailman/listinfo)  I  [FAQ](https://wiki.scribus.net/canvas/Category:FAQ)  I  [IRC](https://webchat.freenode.net/?channels=scribus)
+  [Blog](https://rants.scribus.net/)  I  [Forum](https://forums.scribus.net/)  I  [News](https://www.scribus.net/category/news/)  I  [Wiki](https://wiki.scribus.net/canvas/Scribus)  I  [Video Tutorials](https://wiki.scribus.net/canvas/Scribus_Video_Tutorials)  I  [Get Stated](https://wiki.scribus.net/canvas/Get_Started_with_Scribus)  I  [Docs](https://wiki.scribus.net/canvas/Help:TOC)  I  [Mailing list](http://lists.scribus.net/mailman/listinfo)  I  [FAQ](https://wiki.scribus.net/canvas/Category:FAQ)  I  [IRC](https://webchat.freenode.net/?channels=scribus)
   

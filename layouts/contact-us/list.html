@@ -36,11 +36,10 @@
         <textarea class="form-control border-0 rounded" rows="5" placeholder="Message:&#10;&#10;Hi -- ,&#10;&#9;Just wanted to let you know, Softorage is awesome!" id="message" name="message" required></textarea>
       </div>
       
-      <!-- FormSubmit doesn't currently support custom reCaptcha, I guess
+      <!-- FormSubmit.co doesn't currently support custom reCaptcha, so we have used some JS -->
       <div class="form-group m-2">
         <div class="g-recaptcha" data-sitekey="6LdxB8oZAAAAAPO2siDiAxDwXZqMJSHWEK2TzDVx"></div>
       </div>
-      -->
       
       <button type="submit" class="btn bg-nav m-2">{{ site.Data.icons.send | safeHTML }}&nbsp;&nbsp;&nbsp;Send</button>
     </form>
@@ -50,7 +49,7 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 {{- end }}
 {{ define "script" }}
-/* This script makes the reCaptcha required; src: https://stackoverflow.com/a/31019293
+/* This script makes the reCaptcha required; src: https://stackoverflow.com/a/31019293 */
 $("form").submit(function(event) {
    var recaptcha = $("#g-recaptcha-response").val();
    if (recaptcha === "") {
@@ -58,5 +57,4 @@ $("form").submit(function(event) {
       alert("Please complete the reCaptcha by clicking on it, and help us fight spam.");
    }
 });
-*/
 {{ end }}
