@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Publishing System on Softorage</title>
+    <link>https://softorage.com/categories/blog-publishing-system/</link>
+    <description>Recent content in Blog Publishing System on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/blog-publishing-system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://softorage.com/software/hugo/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/hugo/</guid>
+      <description>Hugo is a static site generator written in Go. It takes data files, i18n bundles, configuration, templates for layouts, static files, and content written in Markdown and renders a static website. Some notable features are multilingual support, image processing, custom output formats, and shortcodes.
+News I Forum I Documentation I FAQ I Gitter for Devs</description>
+    </item>
+    
+  </channel>
+</rss>

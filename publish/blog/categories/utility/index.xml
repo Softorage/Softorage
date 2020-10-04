@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Utility on Softorage</title>
+    <link>https://softorage.com/categories/utility/</link>
+    <description>Recent content in Utility on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/utility/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CCleaner</title>
+      <link>https://softorage.com/software/ccleaner/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/ccleaner/</guid>
+      <description>CCleaner is a utility used to clean potentially unwanted files and invalid Windows Registry entries from a computer. It is system optimization, privacy and cleaning tool. It removes unused files from system - temporary files, broken shortcuts, allowing Windows to run faster and freeing up hard disk space, helps you uninstall software and select which programs start with Windows. It cleans traces of online activities such as Internet history. It contains a registry cleaner.</description>
+    </item>
+    
+    <item>
+      <title>f.lux</title>
+      <link>https://softorage.com/software/f.lux/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/f.lux/</guid>
+      <description>f.lux is a utility software that adjusts a display&amp;rsquo;s color temperature according to location and time of day. The program is designed to reduce eye strain during night-time use, helping to reduce disruption of sleep patterns.
+Blog/News I Forum I FAQ</description>
+    </item>
+    
+    <item>
+      <title>IObit Driver Booster</title>
+      <link>https://softorage.com/software/iobit-driver-booster/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/iobit-driver-booster/</guid>
+      <description>Driver Booster is a utility designed to update all the obsolete drivers for audio, video, USB or other devices on a PC that may adversely affect the performance of a computer or cause system errors. It allows to search for and identify outdated drivers and to automatically download the missing updates.
+It is known for &amp;lsquo;Game Mode&amp;rsquo; setting, which optimizes drivers to improve their performance in games so as to enhance the gaming experience.</description>
+    </item>
+    
+    <item>
+      <title>LightBulb</title>
+      <link>https://softorage.com/software/lightbulb/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/lightbulb/</guid>
+      <description>LightBulb is a utility that adjusts screen color temperature based on location and time of the day. It reduces eyestrain which may be produced by staring at a computer screen when working late hours. As the day goes on, it continuously adjusts gamma of the screen display, transitioning the display color temperature from cold blue in the afternoon to warm yellow during the night. Its primary objective is to match the color of the screen to the light sources of your surrounding environment - typically, sunlight during the day and artificial light during the night.</description>
+    </item>
+    
+    <item>
+      <title>Recuva</title>
+      <link>https://softorage.com/software/recuva/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/recuva/</guid>
+      <description>Recuva is a data recovery and an undeletion program for Windows, developed by Piriform. It is able to undelete files that have been marked as deleted (the operating system marks the areas of the disk in which deleted files were stored as free space). It can recover files deleted from internal and external hard disk drives, USB flash drives, memory cards, portable media players or all random-access storage mediums with a supported file system.</description>
+    </item>
+    
+    <item>
+      <title>TeraCopy</title>
+      <link>https://softorage.com/software/teracopy/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/teracopy/</guid>
+      <description>TeraCopy is a file transfer utility developed by Code Sector, designed as an alternative for the built-in Windows Explorer file transfer feature, with focus on data integrity, file transfer reliability and the ability to pause or resume file transfers.
+Blog I User Manual I FAQ</description>
+    </item>
+    
+    <item>
+      <title>TestDisk</title>
+      <link>https://softorage.com/software/testdisk/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/testdisk/</guid>
+      <description>TestDisk is an open source data recovery utility that runs exclusively from the command-line interface and allows users to check and undelete partitions from a given disk drive. It is primarily designed to help recover lost data storage partitions and/or make non-booting disks bootable again; when these symptoms are caused by faulty software, certain types of viruses or human error (such as accidentally erasing a partition table). It can also be used to collect detailed information about a corrupted drive.</description>
+    </item>
+    
+  </channel>
+</rss>

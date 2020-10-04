@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Audio Editor on Softorage</title>
+    <link>https://softorage.com/categories/digital-audio-editor/</link>
+    <description>Recent content in Digital Audio Editor on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/digital-audio-editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Audacity</title>
+      <link>https://softorage.com/software/audacity/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/audacity/</guid>
+      <description>Audacity imports sounds and music, puts sound effects against individual tracks and mixes things like music tracks and podcasts together. Audacity comes with many professional editing and recording functions. It&amp;rsquo;s possible to create both live recordings as well as cut tracks. In addition, Audacity has an audio toolbox with countless effects, an equalizer and frequency analysis on board.
+Audacity is a digital audio editor with 1500+ stars on GitHub and is present in Software Repositories of major Linux distributions.</description>
+    </item>
+    
+  </channel>
+</rss>

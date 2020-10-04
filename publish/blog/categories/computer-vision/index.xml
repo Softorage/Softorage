@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision on Softorage</title>
+    <link>https://softorage.com/categories/computer-vision/</link>
+    <description>Recent content in Computer Vision on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accord.NET</title>
+      <link>https://softorage.com/software/accord.net/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/accord.net/</guid>
+      <description>Accord.NET is a framework for scientific computing in .NET. The framework is comprised of multiple libraries encompassing a wide range of scientific computing applications, such as statistical data processing, machine learning, artificial intelligence, pattern recognition, including but not limited to, computer vision and computer audition. The framework offers a large number of probability distributions, hypothesis tests, kernel functions and support for most popular performance measurements techniques.
+The framework comprises a set of libraries that are available in source code as well as via executable installers and NuGet packages.</description>
+    </item>
+    
+    <item>
+      <title>AForge.NET</title>
+      <link>https://softorage.com/software/aforge.net/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/aforge.net/</guid>
+      <description>AForge.NET is a computer vision and artificial intelligence library originally developed by Andrew Kirillov for the .NET Framework. The source code and binaries of the project are available under the terms of the Lesser GPL and the GPL (GNU General Public License). Another (unaffiliated) project called Accord.NET was created to extend the features of the original AForge.NET library.
+News Archive I Forum I Documentation</description>
+    </item>
+    
+    <item>
+      <title>OpenCV</title>
+      <link>https://softorage.com/software/opencv/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/opencv/</guid>
+      <description>OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products.
+ It has C++, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -51,7 +51,7 @@
   {{- $css := (partialCached "reusables/css-resource.html" .) -}}
 
   <!-- Minified Aggregated CSS -->
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous" type="text/css">
   <!-- Prefetch and Preconnect Google Fonts API -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>

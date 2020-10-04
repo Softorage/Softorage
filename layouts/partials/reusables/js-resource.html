@@ -1,7 +1,11 @@
 <!-- SCRIPTS -->
 <!--{{/*
-util.js must come first; tooltip.js is a dependency for popover.js; index.js shall come at last; others may follow any order 
+https://getbootstrap.com/docs/4.5/getting-started/javascript/#util
+
+util.js must come first; tooltip.js is a dependency for popover.js; index.js must come at last; others may follow any order 
 (resources.Get "js/bootstrap/alert.js")  (resources.Get "js/bootstrap/button.js")
+
+Also, jQuery must come first, then popover.js, then Bootstrap's JS.
 */}}-->
 {{ $js_twbs := slice (resources.Get "js/bootstrap/util.js") (resources.Get "js/bootstrap/collapse.js") (resources.Get "js/bootstrap/tab.js") (resources.Get "js/bootstrap/tooltip.js") (resources.Get "js/bootstrap/popover.js") (resources.Get "js/bootstrap/modal.js") (resources.Get "js/bootstrap/index.js") | resources.Concat "js/bootstrap.slim.js" }}
 {{- $js_jquery := resources.Get "js/jquery.slim.js" }}

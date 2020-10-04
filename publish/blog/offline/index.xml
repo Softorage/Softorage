@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Softorage</title>
+    <link>https://softorage.com/offline/</link>
+    <description>Recent content on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    
+	<atom:link href="https://softorage.com/offline/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

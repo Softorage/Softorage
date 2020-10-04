@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <script>
+    function replacePath(path, old_d, new_d) {
+      if (window.location.hostname != "127.0.0.1" && window.location.hostname != "localhost") {
+        path = path.replace(old_d, new_d);
+        if (path.includes(new_d)) {
+           
+          path = path.replace("http:", "https:");
+        }
+      }
+      return path;
+    }
+    var newpath = replacePath(
+      window.location.href,
+      "://softorage.gitlab.io",
+      "://softorage.com"
+    );
+     
+    if (window.location.href != newpath){
+      window.location.replace(newpath);
+    }
+  </script>
+  
+  
+    
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+    <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+    <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+    
+    <script async src=https://www.googletagmanager.com/gtag/js?id&#61;UA-154890683-1></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "UA-154890683-1", { 'anonymize_ip': true });
+    </script>
+    
+    
+    
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+  Neural Networks | Softorage</title>
+<meta name="title" content="Neural Networks | Softorage">
+<meta name="description" content="Softorage is a software directory designed as a secure download service and information resource, with a focus on safety & respecting user privacy."> 
+
+
+<link rel="canonical" href="https://softorage.com/categories/neural-networks/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="" /> 
+<meta name="twitter:title" content="Neural Networks | Softorage" />
+<meta name="twitter:url" content="https://softorage.com/categories/neural-networks/" />
+<meta name="twitter:site" content="@Softorage" /> 
+<meta name="twitter:creator" content="@Softorage" /> 
+<meta name="twitter:image" content=""> 
+
+
+<meta property="og:title" content="Neural Networks | Softorage">
+<meta property="og:description" content=""> 
+<meta property="og:site_name" content="Softorage" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://softorage.com/categories/neural-networks/" />
+
+<meta property="fb:app_id" content="170403084180809" />
+
+<meta property="og:image" content="" /> 
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.69.1" />
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.9117446ab39f56d294edb01d08869b13543fe309356661a86e06823001ee8e18.css" integrity="sha256-kRdEarOfVtKU7bAdCIabE1Q/4wk1ZmGobgaCMAHujhg=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel="dns-prefetch" href="https://cdn.statically.io/">
+  <link rel="preconnect" href="https://cdn.statically.io/" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+  
+  <link rel="alternate" type="application/rss+xml" href="https://softorage.com/categories/neural-networks/index.xml" title="Softorage" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=0-0-1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=0-0-1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=0-0-1">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest?v=0-0-1">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=0-0-1" color="#525252">
+  <link rel="icon" href="/assets/favicon/favicon.ico?v=0-0-1" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=0-0-1" type="image/x-icon">
+  <meta name="apple-mobile-web-app-title" content="Softorage">
+  <meta name="application-name" content="Softorage">
+  <meta name="msapplication-TileColor" content="#fff6f8">
+  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?v=0-0-1">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+  <meta name="wot-verification" content="ba7941c446d1b0f36207" />
+</head>
+
+  
+  <body>
+    <header>
+  
+  
+  
+  
+  
+  <nav class="navbar navbar-expand navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-nav rounded px-3" href="https://softorage.com/"><span class="tg"><span class="brand">Softorage</span>&nbsp;<sup><span class="small text-clr2">beta</span></sup></span></a>
+      
+      <div class="desktop-only bg-nav border-0 my-2 shadow-sm flex-fill type-search rounded">
+        
+        <div class="row pl-3">
+          <div class="col-1 py-2">
+            <span class=""><span class='fas fa-search'></span></span>
+          </div>
+          <div class="col-11">
+            <form action="/search/" method="get">
+                <input type="search" class="bg-nav border-0 form-control" name="s" placeholder="Search the Softorage" aria-label="Search the Softorage">
+              </form>
+            
+          </div>
+        </div>
+          
+      </div>
+      
+      
+          
+      <a class="navbar-toggler border-0" role="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="text-antinav"><span class='fas fa-bars'></span></span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid type-search" id="search_page_main_search_mob_div">
+      <div class="mobile-only flex-fill mt-1 bg-nav border-0 shadow-sm rounded">
+        <form action='/search/' method='get'>
+            <input type='search' class='bg-nav border-0 form-control' name='s' placeholder='Search the Softorage' aria-label='Search the Softorage'>
+          </form>
+        
+      </div>
+    </div>
+  </nav>
+</header>
+
+    
+    
+    <div style="position: fixed; top: 32rem; right: 0; z-index: 1030;">
+      <div class="alert alert-warning border-right-0 shadow-sm show small" role="alert">
+        Stay home. Stay safe!
+        
+      </div>
+    </div>
+    
+    <div class="container-fluid bg-nav text-clr1 text-center pb-3 pt-4 position-relative shadow-sm">
+  <div style="height:3.5rem;"></div>
+  <div class="mobile-only" style="height:2.5rem;"></div>
+  <h1>Neural Networks</h1>
+  <p></p>
+</div>
+<div class="container-fluid bg-antinav-light py-3">
+  
+  
+    <div class="card mb-3">
+      <div class="card-body text-antinav">
+        <span class="anchor" id="opennn"></span>
+        <h2><img class="bg-nav rounded shadow-sm p-2" style="height:3.5rem;" src="https://cdn.statically.io/img/img.softorage.com/software-logo/opennn.png?h=64" alt="OpenNN logo">&nbsp;&nbsp;<a class="card-title text-reset" href="https://softorage.com/software/opennn/"> OpenNN</a>
+        </h2>
+        <div class="font-weight-bold small post-meta"> 84 Words </div>
+        <p>OpenNN (Open Neural Networks Library) implements neural networks, a main area of deep learning research.
+OpenNN implements data mining methods as a bundle of functions. It allows embedding functions in other software tools using an &lsquo;Application Programming Interface (API)&rsquo; for the interaction between the software tool and the predictive analytics tasks. A graphical user interface (GUI) is still missing, but some functions can support the integration of specific visualization tools.</p>
+        <a class="font-weight-bold text-reset text-decoration-none" href="https://softorage.com/software/opennn/"><nobr>Read more →</nobr></a>
+      </div>
+    </div>
+  
+    <div class="card mb-3">
+      <div class="card-body text-antinav">
+        <span class="anchor" id="pytorch"></span>
+        <h2><img class="bg-nav rounded shadow-sm p-2" style="height:3.5rem;" src="https://cdn.statically.io/img/img.softorage.com/software-logo/pytorch.png?h=64" alt="PyTorch logo">&nbsp;&nbsp;<a class="card-title text-reset" href="https://softorage.com/software/pytorch/"> PyTorch</a>
+        </h2>
+        <div class="font-weight-bold small post-meta"> 160 Words </div>
+        <p>PyTorch is an open-source machine learning library for Python, based on Torch, used for applications such as natural language processing. One can also reuse Python packages such as NumPy, SciPy and Cython to extend PyTorch when needed.
+ PyTorch provides two high-level features:
+ Tensor computation (like NumPy) with strong GPU acceleration Deep neural networks built on a tape-based autodiff system - README.md on GitHub repo    Automatic differentiation is done with a tape-based system at both a functional and neural network layer level.</p>
+        <a class="font-weight-bold text-reset text-decoration-none" href="https://softorage.com/software/pytorch/"><nobr>Read more →</nobr></a>
+      </div>
+    </div>
+  
+</div>
+    <footer>
+  <div class="container bg-nav text-center p-3">
+
+    <a href="https://www.facebook.com/Softorage/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Like us on Facebook" aria-label="Like us on Facebook"><span class="fa-2x"><span class='fab fa-facebook'></span></span></a>
+    <a href="https://twitter.com/Softorage/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter" aria-label="Follow us on Twitter"><span class="fa-2x"><span class='fab fa-twitter'></span></span></a>
+    <a href="https://instagram.com/softorage/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Follow us on Instagram" aria-label="Follow us on Instagram"><span class="fa-2x"><span class='fab fa-instagram'></span></span></a>
+    <a href="https://gitlab.com/Softorage/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Our Open Source Space" aria-label="Our Open Source Space"><span class="fa-2x"><span class='fab fa-gitlab'></span></span></a>
+    
+    <div class="mt-3"></div>
+    <span class="tg h4" style="cursor: default;">@<span class="brand ml-1">Softorage</span></span>
+  
+  </div>
+  <div class="container-fluid bg-clr2-light py-3 shadow-sm position-relative">
+    <div class="row">
+      <div class="col-md-7 my-auto">
+        <span class="pl-5 desktop-only"></span>
+        <span class="h1 tg text-center mb-4 mt-2 desktop-only">The Software Directory.</span>
+        <div class="text-center mb-3 mt-1">
+          <span class="lead tg mx-auto mobile-only">The Software Directory.</span>
+        </div>
+      </div>
+      <div class="col-md-5 text-antinav">
+        <div class="card-deck">
+          
+          
+          <div class="card rounded text-center">
+            <div class="card-body">
+              <a class="text-decoration-none text-reset" href="https://softorage.com/"><div class="card-title h5 m-0">Softorage</div></a>
+              <div class="card-text mt-3">
+                <a class="text-reset small" href="https://softorage.com/what-we-do/" title="Our passion and purpose">What We Do</a><br>
+                <a class="text-reset small" href="https://softorage.com/search/" title="Search through the collection of software">Search</a><br>
+                <a class="text-reset small" href="https://softorage.com/categories/" title="Categorically arranged software">Categories</a><br>
+                <a class="text-reset small" href="https://softorage.com/contribute/" title="Help us create the software directory that everyone would want to love">Contribute</a><br>
+                <a class="text-reset small" href="https://softorage.com/get-involved/" title="Be part of the community and help make Softorage better">Get Involved</a><br>
+                <a class="text-reset small" href="https://softorage.com/sitemap.xml">Sitemap</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="card rounded text-center">
+            <div class="card-body">
+              <a class="text-decoration-none text-reset" href="https://softorage.com/legal/"><div class="card-title h5 m-0">Legal</div></a>
+              <div class="card-text mt-4">
+                <a class="text-reset small" href="https://softorage.com/legal/terms-and-conditions/">Terms and Conditions</a><br>
+                <a class="text-reset small" href="https://softorage.com/legal/privacy-policy/">Privacy Policy</a><br>
+                <a class="text-reset small" href="https://softorage.com/legal/disclaimer/">Disclaimer</a><br>
+                <a class="text-reset small" href="https://softorage.com/legal/cookie-policy/">Cookie Policy</a><br>
+                <a class="text-reset small" href="https://softorage.com/contact-us/" title="Got a tip? Feedback? Or maybe just want to say 'Hi!'?">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid text-center mt-3">
+      <span class="small text-muted">Copyright &#169; 2018-2020 Softorage | Code licensed under <b><a class="text-reset" href="https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/LICENSE">Apache license 2.0</a></b>. Unless otherwise noted, content licensed under <b><a class="text-reset" href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0 license</a></b>. | Site last generated: 20 September, 2020</span>
+    </div>
+  </div>
+  <div class="container-fluid text-center text-antinav bg-mat p-2">
+    From Asia's emerging giant and the country of <span style="color:rgb(255, 69, 122)"><span class='fas fa-heart'></span></span>&nbsp;-&nbsp;&nbsp;<span class="font-weight-bold bg-white rounded px-2"><span style="color:#FF9933;">In</span><span style="color:#000080;">d</span><span style="color:#138808;">ia</span></span>
+  </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    
+    
+    
+    <script src="/assets/js/main.min.aba59169593f6ab627c1c75c9dff530ce7c26b6154500465db7d48dea09587aa.js" integrity="sha256-q6WRaVk/arYnwcdcnf9TDOfCa2FUUARl231I3qCVh6o=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.83fccc41534cc162fc03ce886e4cbe4fea9bf87cf3467a789c8ff9653d995ca2.js" integrity="sha256-g/zMQVNMwWL8A86Ibky&#43;T&#43;qb&#43;HzzRnp4nI/5ZT2ZXKI=" crossorigin="anonymous"></script>
+    
+    <script></script>
+    
+  </body>
+</html>

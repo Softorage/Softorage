@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typesetting on Softorage</title>
+    <link>https://softorage.com/categories/typesetting/</link>
+    <description>Recent content in Typesetting on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/typesetting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LuaTeX</title>
+      <link>https://softorage.com/software/luatex/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/luatex/</guid>
+      <description>LuaTeX is a TeX-based computer typesetting system which is an extended version of pdfTeX using Lua as an embedded scripting language.
+ From the user perspective we have pdfTeX as stable and more or less frozen 8 bit engine, XeTeX as unicode input and font aware engine using libraries for font handling, and LuaTeX as engine that is programmable and delegates as much as possible to Lua, with the objective to keep the core engine lean and mean.</description>
+    </item>
+    
+    <item>
+      <title>XeTeX</title>
+      <link>https://softorage.com/software/xetex/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/xetex/</guid>
+      <description>XeTeX is a TeX typesetting engine using Unicode and supporting modern font technologies such as OpenType, Graphite and Apple Advanced Typography (AAT). - Wikipedia
+  XƎTEX is an extension of TEX that integrates TEX&amp;rsquo;s typesetting capabilities with (a) the Unicode text encoding standard (supporting most of the world’s scripts) and (b) modern font technologies (TrueType and OpenType) and text layout services (AAT, OpenType layout, SIL Graphite) provided by the host operating system and available libraries.</description>
+    </item>
+    
+  </channel>
+</rss>

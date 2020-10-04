@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raster Graphics Editor on Softorage</title>
+    <link>https://softorage.com/categories/raster-graphics-editor/</link>
+    <description>Recent content in Raster Graphics Editor on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Fri, 17 Jul 2020 21:37:23 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/raster-graphics-editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Krita</title>
+      <link>https://softorage.com/software/krita/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/krita/</guid>
+      <description>Krita is a free-software and an open-source raster graphics editor, designed primarily for digital painting and animation purposes. It features a low-distract UI, high-quality OpenGL accelerated canvas, color management support, advanced brush engine, non-destructive layers and masks, group-based layer management, vector artwork support and switchable customization profiles.
+Krita is a FREE and open source painting tool designed for concept artists, illustrators, matte and texture artists, and the VFX industry. Krita has been in development for over 10 years and has had an explosion in growth recently.</description>
+    </item>
+    
+    <item>
+      <title>Adobe Photoshop</title>
+      <link>https://softorage.com/software/adobe-photoshop/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/adobe-photoshop/</guid>
+      <description>Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. It makes use of layering to allow for depth and flexibility in the design and editing process, as well as provide powerful editing tools, that when combined, are capable of just about anything.
+Photoshop&amp;rsquo;s naming scheme was initially based on version numbers. However, in October 2002 (following the introduction of Creative Suite branding), each new version of Photoshop was designated with &amp;ldquo;CS&amp;rdquo; plus a number; e.</description>
+    </item>
+    
+    <item>
+      <title>GIMP</title>
+      <link>https://softorage.com/software/gimp/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/gimp/</guid>
+      <description>GIMP (GNU Image Manipulation Program) is a free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.
+GIMP allows to create images with tools for airbrushing, penciling, cloning, and creating gradients. Power users can create their own brushes and patterns to use later. It also allows users to manipulate images imported into the program, further allowing to crop, add text, resize, and create nested layers.</description>
+    </item>
+    
+  </channel>
+</rss>

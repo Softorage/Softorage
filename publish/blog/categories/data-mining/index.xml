@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Mining on Softorage</title>
+    <link>https://softorage.com/categories/data-mining/</link>
+    <description>Recent content in Data Mining on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 15 Jul 2020 20:01:07 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/data-mining/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange</title>
+      <link>https://softorage.com/software/orange/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/orange/</guid>
+      <description>Orange is a component structured data mining as well as machine learning software suite written in python language. It&amp;rsquo;s a data visualization as well as evaluation software, with regard to novice and experts alike. Data mining can be done via visual programming or even python scripting.
+Orange components are called widgets. Widgets cover a wide variety, ranging from simple data visualization, subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling.</description>
+    </item>
+    
+    <item>
+      <title>ELKI</title>
+      <link>https://softorage.com/software/elki/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/elki/</guid>
+      <description>ELKI is Environment for Developing KDD(Knowledge Discovery in Databases, &amp;ldquo;Data Mining&amp;quot;)-Applications Supported by Index-Structures.
+ ELKI is an open source (AGPLv3) data mining software written in Java. The focus of ELKI is research in algorithms, with an emphasis on unsupervised methods in cluster analysis and outlier detection. In order to achieve high performance and scalability, ELKI offers data index structures such as the R*-tree that can provide major performance gains. ELKI is designed to be easy to extend for researchers and students in this domain, and welcomes contributions of additional methods.</description>
+    </item>
+    
+    <item>
+      <title>Massive Online Analysis (MOA)</title>
+      <link>https://softorage.com/software/massive-online-analysis-moa/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/massive-online-analysis-moa/</guid>
+      <description>MOA (Massive Online Analysis) is an open source framework for data stream mining including machine learning algorithms such as classification, regression, clustering, outlier detection, concept drift detection and recommender systems and tools for evaluation. MOA is written in Java and relates to WEKA project.
+MOA allows to build and run experiments of machine learning or data mining on evolving data streams. It is also possible to use WEKA classifiers from MOA, and MOA classifiers and streams from WEKA.</description>
+    </item>
+    
+    <item>
+      <title>OpenNN</title>
+      <link>https://softorage.com/software/opennn/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/opennn/</guid>
+      <description>OpenNN (Open Neural Networks Library) implements neural networks, a main area of deep learning research.
+OpenNN implements data mining methods as a bundle of functions. It allows embedding functions in other software tools using an &amp;lsquo;Application Programming Interface (API)&amp;rsquo; for the interaction between the software tool and the predictive analytics tasks. A graphical user interface (GUI) is still missing, but some functions can support the integration of specific visualization tools.</description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://softorage.com/software/scikit-learn/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/scikit-learn/</guid>
+      <description>scikit-learn is an open source machine learning library featuring classification, regression, clustering, dimensionality reduction, model selection and preprocessing. It has tools for data mining and data analysis, and is built on NumPy, SciPy, and matplotlib.
+As per official website, it features:
+ Classification : Identifying to which category an object belongs to Regression : Predicting a continuous-valued attribute associated with an object Clustering : Automatic grouping of similar objects into sets Dimensionality reduction : Reducing the number of random variables to consider Model selection : Comparing, validating and choosing parameters and models Preprocessing : Feature extraction and normalization  Documentation I Wiki I Mailing list I Stack Overflow I FAQ I IRC</description>
+    </item>
+    
+    <item>
+      <title>Weka</title>
+      <link>https://softorage.com/software/weka/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/weka/</guid>
+      <description>Weka is a collection of machine learning algorithms for data mining tasks. It contains tools for data preparation, classification, regression, clustering, association rules mining, and visualization. - Official website
+ Weka(Waikato Environment for Knowledge Analysis) provides access to deep learning with WekaDeeplearning4j which uses Deeplearning4j.
+Blog I New Forum I Old Forum I Documentation I Stack Overflow Q&amp;amp;A I Mailing list I Wiki I FAQ I IRC I SourceForge I Package metadata</description>
+    </item>
+    
+    <item>
+      <title>Yooreeka</title>
+      <link>https://softorage.com/software/yooreeka/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/yooreeka/</guid>
+      <description>Yooreeka is a library for data mining, machine learning, soft computing, and mathematical analysis. It also provides examples.
+Google Code I Archive</description>
+    </item>
+    
+  </channel>
+</rss>

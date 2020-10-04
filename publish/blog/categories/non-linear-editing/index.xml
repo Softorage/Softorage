@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Non-Linear Editing on Softorage</title>
+    <link>https://softorage.com/categories/non-linear-editing/</link>
+    <description>Recent content in Non-Linear Editing on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Sat, 11 Jul 2020 18:12:46 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/non-linear-editing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lightworks</title>
+      <link>https://softorage.com/software/lightworks/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/lightworks/</guid>
+      <description>Lightworks is a non-linear editing system (NLE) for editing and mastering digital video. Its features include relatively simple user interface, multiple effects and multiple output formats (Pro version).
+Forum I Documentation I FAQ</description>
+    </item>
+    
+  </channel>
+</rss>

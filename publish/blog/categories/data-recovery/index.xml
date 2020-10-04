@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Recovery on Softorage</title>
+    <link>https://softorage.com/categories/data-recovery/</link>
+    <description>Recent content in Data Recovery on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/data-recovery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recuva</title>
+      <link>https://softorage.com/software/recuva/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/recuva/</guid>
+      <description>Recuva is a data recovery and an undeletion program for Windows, developed by Piriform. It is able to undelete files that have been marked as deleted (the operating system marks the areas of the disk in which deleted files were stored as free space). It can recover files deleted from internal and external hard disk drives, USB flash drives, memory cards, portable media players or all random-access storage mediums with a supported file system.</description>
+    </item>
+    
+    <item>
+      <title>TestDisk</title>
+      <link>https://softorage.com/software/testdisk/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/testdisk/</guid>
+      <description>TestDisk is an open source data recovery utility that runs exclusively from the command-line interface and allows users to check and undelete partitions from a given disk drive. It is primarily designed to help recover lost data storage partitions and/or make non-booting disks bootable again; when these symptoms are caused by faulty software, certain types of viruses or human error (such as accidentally erasing a partition table). It can also be used to collect detailed information about a corrupted drive.</description>
+    </item>
+    
+  </channel>
+</rss>

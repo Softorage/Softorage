@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video Transcoder on Softorage</title>
+    <link>https://softorage.com/categories/video-transcoder/</link>
+    <description>Recent content in Video Transcoder on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/video-transcoder/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HandBrake</title>
+      <link>https://softorage.com/software/handbrake/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/handbrake/</guid>
+      <description>HandBrake is a free and open-source video transcoder to convert video from one format to another, and to rip CD/DVD to popular video formats. It transcodes video and audio from nearly any format to a handful of modern ones, but it does not defeat or circumvent copy protection. Its developers removed libdvdcss (the open-source library responsible for unscrambling DVDs encrypted with the Content Scramble System (CSS)) from the application in version 0.</description>
+    </item>
+    
+  </channel>
+</rss>

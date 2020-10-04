@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Algebra System on Softorage</title>
+    <link>https://softorage.com/categories/computer-algebra-system/</link>
+    <description>Recent content in Computer Algebra System on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/computer-algebra-system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SymPy</title>
+      <link>https://softorage.com/software/sympy/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/sympy/</guid>
+      <description>SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible. SymPy is written entirely in Python. - Official website
+ Documentation I Wiki I Mailing list I Gitter chat I IRC I Planet SymPy I FAQ</description>
+    </item>
+    
+  </channel>
+</rss>

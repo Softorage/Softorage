@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video Editor on Softorage</title>
+    <link>https://softorage.com/categories/video-editor/</link>
+    <description>Recent content in Video Editor on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 15 Jul 2020 20:01:07 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/video-editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HitFilm Express</title>
+      <link>https://softorage.com/software/hitfilm-express/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/hitfilm-express/</guid>
+      <description>HitFilm Express is a video editing software with VFX tools to make content, films or gaming videos. It supports MP4 H.264 import &amp;amp; export, AVCHD import, QuickTime import (QuickTime install required on Windows) and AVI, M2T, M2TS, MTS, MXF (DVCPro HD), DV, HDV, WMV video import.
+Forum I FAQ I Documentation</description>
+    </item>
+    
+    <item>
+      <title>Lightworks</title>
+      <link>https://softorage.com/software/lightworks/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/lightworks/</guid>
+      <description>Lightworks is a non-linear editing system (NLE) for editing and mastering digital video. Its features include relatively simple user interface, multiple effects and multiple output formats (Pro version).
+Forum I Documentation I FAQ</description>
+    </item>
+    
+    <item>
+      <title>Shotcut</title>
+      <link>https://softorage.com/software/shotcut/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/shotcut/</guid>
+      <description>Shotcut is a free and open-source cross-platform video editing application, developed on the MLT Multimedia Framework. It supports video, audio, and image formats via FFmpeg, and uses a timeline for non-linear video editing of multiple tracks that may be composed of various file formats.
+Blog/News I Forum I Tutorials I How-tos I FAQ</description>
+    </item>
+    
+  </channel>
+</rss>

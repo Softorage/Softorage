@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Subdivision Modeler on Softorage</title>
+    <link>https://softorage.com/categories/subdivision-modeler/</link>
+    <description>Recent content in Subdivision Modeler on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/subdivision-modeler/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wings 3D</title>
+      <link>https://softorage.com/software/wings-3d/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/wings-3d/</guid>
+      <description>Wings 3D is a tool specifically designed to import and modify models through subdivision - a polygonal modeling technique that allows very well-defined polygons.
+The program itself does not include tools to create it&amp;rsquo;s own from scratch. Basically, Wings 3D can import models created by other design environments into polygonal meshes and then develop them through subdivision polygons. It also includes a series of tools that will help you allocate materials, textures and UV coordinates to your models, add lights to the scene and perform screenshots among other possibilities.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vector Graphics Editor on Softorage</title>
+    <link>https://softorage.com/categories/vector-graphics-editor/</link>
+    <description>Recent content in Vector Graphics Editor on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/vector-graphics-editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inkscape</title>
+      <link>https://softorage.com/software/inkscape/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/inkscape/</guid>
+      <description>Inkscape is professional quality vector graphics editor software which runs on Windows, Mac OS X and GNU/Linux.
+Inkscape is widely used for both artistic and technical illustrations such as cartoons, clip art, logos, typography, diagramming and flowcharting. It can import and export various file formats, including SVG, AI, EPS, PDF, PS and PNG. It has a comprehensive feature set, a simple interface, multi-lingual support and is designed to be extensible; users can customize Inkscape&amp;rsquo;s functionality with add-ons.</description>
+    </item>
+    
+  </channel>
+</rss>

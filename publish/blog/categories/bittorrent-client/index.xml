@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BitTorrent Client on Softorage</title>
+    <link>https://softorage.com/categories/bittorrent-client/</link>
+    <description>Recent content in BitTorrent Client on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/bittorrent-client/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>qBittorrent</title>
+      <link>https://softorage.com/software/qbittorrent/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/qbittorrent/</guid>
+      <description>qBittorrent is a cross-platform free and open-source BitTorrent client.
+Its features include:
+ Polished µTorrent-like User Interface No Ads Well-integrated and extensible Search Engine  Simultaneous search in many Torrent search sites Category-specific search requests (e.g. Books, Music, Software)   RSS feed support with advanced download filters (incl. regex) Multiple BitTorrent extensions supported:  Magnet links Distributed hash table (DHT), peer exchange protocol (PEX), local peer discovery (LSD) Private torrents Encrypted connections   Remote control through Web user interface, written with AJAX  Nearly identical to the regular GUI   Sequential downloading (Download in order) Advanced control over torrents, trackers and peers  Torrents queueing and prioritizing Torrent content selection and prioritizing   Bandwidth scheduler Torrent creation tool IP Filtering (eMule &amp;amp; PeerGuardian format compatible) IPv6 compliant UPnP / NAT-PMP port forwarding support Cross-platform: Windows, Linux, macOS, FreeBSD, OS/2 Available in ~70 languages  News I Forum I Wiki I FAQ I IRC</description>
+    </item>
+    
+    <item>
+      <title>uTorrent</title>
+      <link>https://softorage.com/software/utorrent/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/utorrent/</guid>
+      <description>uTorrent is an efficient BitTorrent client from the originator of the BitTorrent protocol. Most of the features present in other BitTorrent clients are present in uTorrent, including bandwidth prioritization, scheduling, RSS auto-downloading, and Mainline DHT. Additionally, uTorrent supports the protocol encryption joint specification and peer exchange.
+uTorrent claims to not eat away at valuable system resources; the program typically runs on approx. 6MB of memory.
+Blog I Forum I Help I documentation.</description>
+    </item>
+    
+    <item>
+      <title>WebTorrent</title>
+      <link>https://softorage.com/software/webtorrent/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/webtorrent/</guid>
+      <description>WebTorrent is a peer-to-peer (P2P) streaming torrent client written in JavaScript by Feross Aboukhadijeh. WebTorrent uses the same protocol as BitTorrent but uses a different transport. WebTorrent primarily relies on WebRTC connections, while BitTorrent uses TCP connections and UDP datagrams directly.
+Dev Documentation I FAQ I IRC</description>
+    </item>
+    
+  </channel>
+</rss>

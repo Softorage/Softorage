@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>File Archiver on Softorage</title>
+    <link>https://softorage.com/categories/file-archiver/</link>
+    <description>Recent content in File Archiver on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/file-archiver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>7-Zip</title>
+      <link>https://softorage.com/software/7-zip/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/7-zip/</guid>
+      <description>7-Zip is a file archiver, file manager developed by Igor Pavlov and was first released in 1999. It includes support for:
+ Un/packing: 7z, XZ, BZIP2, GZIP, TAR, ZIP and WIM file formats Unpacking: AR, ARJ, CAB, CHM, CPIO, CramFS, DMG, EXT, FAT, GPT, HFS, IHEX, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, QCOW2, RAR, RPM, SquashFS, UDF, UEFI, VDI, VHD, VMDK, WIM, XAR and Z file formats  Its other features include:</description>
+    </item>
+    
+    <item>
+      <title>Hamster Zip Archiver</title>
+      <link>https://softorage.com/software/hamster-zip-archiver/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/hamster-zip-archiver/</guid>
+      <description>Hamster Zip Archiver is a free file archiver for Windows developed by Hamstersoft, with focus on simplicity and looks. It supports zip, 7z, arj, bz2, tbz, gzip, deb, dmg, img, gz, tgz, hfs, lzh, rmp, pkg, z, taz, cab, iso, rar, tar, wim, swm, jar, along with some other formats.</description>
+    </item>
+    
+    <item>
+      <title>PeaZip</title>
+      <link>https://softorage.com/software/peazip/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/peazip/</guid>
+      <description>PeaZip is free file archiver utility, based on Open Source technologies of 7-Zip, p7zip, Brotli, FreeArc, PAQ, Zstandard, and PEA projects. PeaZip works as a compression and encryption utility. It can open extract 180+ archive formats; full list can be found here.
+News I Forum/Tickets I Wiki I Online Tutorials I FAQ</description>
+    </item>
+    
+    <item>
+      <title>WinRAR</title>
+      <link>https://softorage.com/software/winrar/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/winrar/</guid>
+      <description>WinRAR is an archive manager for backing up data and reducing the size of e-mail attachments. Decompress files downloaded from the internet and create new archives in RAR and ZIP file format. Support is provided for RAR, ZIP, CAB, ARJ, LZH, ACE, TAR, GZip, UUE, ISO, BZIP2, Z and 7-Zip file formats.
+WinRAR recognises and selects the best compression method for decompressing multi-media files; the compression algorithm compresses multi-media files, executables and object libraries.</description>
+    </item>
+    
+  </channel>
+</rss>

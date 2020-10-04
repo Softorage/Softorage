@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Live USB Creator on Softorage</title>
+    <link>https://softorage.com/categories/live-usb-creator/</link>
+    <description>Recent content in Live USB Creator on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/live-usb-creator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>balenaEtcher</title>
+      <link>https://softorage.com/software/balenaetcher/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/balenaetcher/</guid>
+      <description>Etcher is a OS image flasher built with web technologies, a utility used for writing image files such as .iso and .img files, as well as zipped folders onto storage media to create live SD cards and USB flash drives. It protects from accidentally writing to hard-drives and ensures every byte of data was written correctly. It can flash directly Raspberry Pi devices that support the usbboot protocol.
+Etcher was developed using the Electron framework.</description>
+    </item>
+    
+    <item>
+      <title>Rufus</title>
+      <link>https://softorage.com/software/rufus/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/rufus/</guid>
+      <description>Rufus is a free and open-source portable application developed by Pete Batard of Akeo Consulting for Microsoft Windows that can be used to format and create bootable USB flash drives or Live USBs.
+Rufus supports a variety of bootable .iso files, including various Linux distributions and Windows installation .iso files, as well as raw disk image files (including compressed ones). If needed, it can install a bootloader such as SYSLINUX or GRUB onto the flash drive to render it bootable.</description>
+    </item>
+    
+  </channel>
+</rss>

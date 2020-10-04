@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Array Computing on Softorage</title>
+    <link>https://softorage.com/categories/array-computing/</link>
+    <description>Recent content in Array Computing on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/array-computing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NumPy</title>
+      <link>https://softorage.com/software/numpy/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/numpy/</guid>
+      <description>NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+ NumPy is the fundamental package for scientific computing with Python. It contains among other things:
+ a powerful N-dimensional array object sophisticated (broadcasting) functions tools for integrating C/C++ and Fortran code useful linear algebra, Fourier transform, and random number capabilities  Besides its obvious scientific uses, NumPy can also be used as an efficient multi-dimensional container of generic data.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -60,8 +60,8 @@ $(function() {
     navigator.serviceWorker
       .register("{{ $js_sw.RelPermalink }}", { scope: "/" })
       .then(() => {
-        console.info("Service Worker for Softorage Registered!");
-      }, err => console.error("Service Worker Registration for Softorage Failed :( - ", err));
+        console.info("Service Worker for {{ site.Title }} Registered!");
+      }, err => console.error("Service Worker Registration for {{ site.Title }} Failed :( - ", err));
 
     /**
       * Wait if ServiceWorker is ready
@@ -72,7 +72,7 @@ $(function() {
         if(PREFETCH) {
           prefetchCache();
         }
-        console.info("Service Worker for Softorage Ready! :)");
+        console.info("Service Worker for {{ site.Title }} Ready! :)");
     });
   }
 });
@@ -125,7 +125,7 @@ gtag('js', new Date());
 
 window.cookieconsent.initialise({
 
-"palette": {
+  "palette": {
     "popup": {
       "background": "#fafafa",
       "text": "#343434"

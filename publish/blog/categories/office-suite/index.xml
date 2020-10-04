@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office Suite on Softorage</title>
+    <link>https://softorage.com/categories/office-suite/</link>
+    <description>Recent content in Office Suite on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 15 Jul 2020 20:01:07 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/office-suite/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LibreOffice</title>
+      <link>https://softorage.com/software/libreoffice/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/libreoffice/</guid>
+      <description>LibreOffice is a free and open-source office suite, a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice.
+LibreOffice uses the international ISO/IEC standard OpenDocument file format (ODF) as its native format to save documents for all of its applications. LibreOffice also supports the file formats of most other major office suites, including Microsoft Office(.doc, .docx, .xls, .xlsx, .</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Softorage</title>
+    <link>https://softorage.com/categories/machine-learning/</link>
+    <description>Recent content in Machine Learning on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 15 Jul 2020 20:01:07 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange</title>
+      <link>https://softorage.com/software/orange/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/orange/</guid>
+      <description>Orange is a component structured data mining as well as machine learning software suite written in python language. It&amp;rsquo;s a data visualization as well as evaluation software, with regard to novice and experts alike. Data mining can be done via visual programming or even python scripting.
+Orange components are called widgets. Widgets cover a wide variety, ranging from simple data visualization, subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling.</description>
+    </item>
+    
+    <item>
+      <title>Torch</title>
+      <link>https://softorage.com/software/torch/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/torch/</guid>
+      <description>Torch is a scientific computing framework with support for machine learning algorithms. It provides N-dimensional arrays, with support for routines for indexing, slicing, transposing, etc.
+Torch puts GPU first. It has an interface to C via LuaJIT, linear algebra &amp;amp; numeric optimization routines, neural network and energy-based models. It is embeddable, with ports to iOS and Android backends.
+Documentation I Wiki I Mailing list I Gitter chat</description>
+    </item>
+    
+    <item>
+      <title>Apache Mahout</title>
+      <link>https://softorage.com/software/apache-mahout/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/apache-mahout/</guid>
+      <description>Apache Mahout(TM) is an open source project that is primarily used for creating scalable machine learning algorithms. It implements machine learning techniques such as, collaborative filtering, clustering, recommendation and classification.
+It also provides Java libraries for common math operations (focused on linear algebra and statistics) and primitive Java collections.
+A mahout is a word used in South Asian countries to describe one who drives an elephant as its master. The name comes from its close association with Apache Hadoop which uses an elephant as its logo.</description>
+    </item>
+    
+    <item>
+      <title>Apache MXNet (Incubating)</title>
+      <link>https://softorage.com/software/apache-mxnet-incubating/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/apache-mxnet-incubating/</guid>
+      <description>Apache MXNet is an open source multi-language machine learning (ML) library especially to train and deploy deep neural networks, on a wide array of devices. Once embedded in the host language, it blends declarative symbolic expression with imperative tensor computation. It is built on a dynamic dependency scheduler that automatically parallelizes both symbolic and imperative operations on the fly. A graph optimization layer on top of that makes symbolic execution fast and memory efficient.</description>
+    </item>
+    
+    <item>
+      <title>Apache Spark</title>
+      <link>https://softorage.com/software/apache-spark/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/apache-spark/</guid>
+      <description>Apache Spark(TM) is an open-source distributed general-purpose cluster computing framework with (mostly) in-memory data processing engine that can do ETL, analytics, machine learning and graph processing on large volumes of data at rest (batch processing) or in motion (streaming processing) with rich concise high-level APIs for the programming languages: Scala, Python, Java, R, and SQL.
+In contrast to Hadoop’s two-stage disk-based MapReduce computation engine, Spark’s multi-stage (mostly) in-memory computing engine allows for running most computations in memory, and hence most of the time provides better performance for certain applications, e.</description>
+    </item>
+    
+    <item>
+      <title>Apache SystemML</title>
+      <link>https://softorage.com/software/apache-systemml/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/apache-systemml/</guid>
+      <description>Apache SystemML is a machine learning system with support for Java 8+, Scala 2.11+, Python 2.7/3.5+, Hadoop 2.6+, and Spark 2.1+. It provides a workplace for machine learning using big data. As It runs on top of Apache Spark, it automatically scales data, line by line, determining whether the code should be run on the driver or an Apache Spark cluster. Future releases may include additional deep learning with GPU capabilities such as importing and running neural network architectures and pre-trained models for training.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Deeplearning4j</title>
+      <link>https://softorage.com/software/eclipse-deeplearning4j/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/eclipse-deeplearning4j/</guid>
+      <description>Eclipse Deeplearning4j is a deep learning programming library written for Java and Scala and a computing framework with wide support for deep learning algorithms.
+ There are a lot of knobs to turn when you’re training a distributed deep-learning network. We’ve done our best to explain them, so that Eclipse Deeplearning4j can serve as a DIY tool for Java, Scala and Clojure programmers working on Hadoop and other file systems. - Official website</description>
+    </item>
+    
+    <item>
+      <title>MALLET</title>
+      <link>https://softorage.com/software/mallet/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/mallet/</guid>
+      <description>MALLET is MAchine Learning for LanguagE Toolkit.
+ MALLET is a Java-based package for statistical natural language processing, document classification, clustering, topic modeling, information extraction, and other machine learning applications to text. - Official website
+ MALLET includes tools for document classification, sequence tagging, topic modeling.
+ Many of the algorithms in MALLET depend on numerical optimization. MALLET includes an efficient implementation of Limited Memory BFGS, among many other optimization methods.</description>
+    </item>
+    
+    <item>
+      <title>Massive Online Analysis (MOA)</title>
+      <link>https://softorage.com/software/massive-online-analysis-moa/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/massive-online-analysis-moa/</guid>
+      <description>MOA (Massive Online Analysis) is an open source framework for data stream mining including machine learning algorithms such as classification, regression, clustering, outlier detection, concept drift detection and recommender systems and tools for evaluation. MOA is written in Java and relates to WEKA project.
+MOA allows to build and run experiments of machine learning or data mining on evolving data streams. It is also possible to use WEKA classifiers from MOA, and MOA classifiers and streams from WEKA.</description>
+    </item>
+    
+    <item>
+      <title>mlpack</title>
+      <link>https://softorage.com/software/mlpack/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/mlpack/</guid>
+      <description>mlpack is a C++ machine learning library with emphasis on scalability, speed, and ease-of-use. Its aim is to make machine learning possible for novice users by means of a simple, consistent API, while simultaneously exploiting C++ language features to provide maximum performance and maximum flexibility for expert users. This is done by providing a set of command-line executables which can be used as black boxes, and a modular C++ API for expert users and researchers to easily make changes to the internals of the algorithms.</description>
+    </item>
+    
+    <item>
+      <title>OpenCV</title>
+      <link>https://softorage.com/software/opencv/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/opencv/</guid>
+      <description>OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products.
+ It has C++, Python and Java interfaces and supports Windows, Linux, Mac OS, iOS and Android. OpenCV was designed for computational efficiency and with a strong focus on real-time applications.</description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://softorage.com/software/scikit-learn/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/scikit-learn/</guid>
+      <description>scikit-learn is an open source machine learning library featuring classification, regression, clustering, dimensionality reduction, model selection and preprocessing. It has tools for data mining and data analysis, and is built on NumPy, SciPy, and matplotlib.
+As per official website, it features:
+ Classification : Identifying to which category an object belongs to Regression : Predicting a continuous-valued attribute associated with an object Clustering : Automatic grouping of similar objects into sets Dimensionality reduction : Reducing the number of random variables to consider Model selection : Comparing, validating and choosing parameters and models Preprocessing : Feature extraction and normalization  Documentation I Wiki I Mailing list I Stack Overflow I FAQ I IRC</description>
+    </item>
+    
+    <item>
+      <title>TensorFlow</title>
+      <link>https://softorage.com/software/tensorflow/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/tensorflow/</guid>
+      <description>TensorFlow is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices.
+TensorFlow was originally developed by researchers and engineers from the Google Brain team within Google’s AI organization.
+It comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.</description>
+    </item>
+    
+    <item>
+      <title>The Microsoft Cognitive Toolkit</title>
+      <link>https://softorage.com/software/the-microsoft-cognitive-toolkit/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/the-microsoft-cognitive-toolkit/</guid>
+      <description>The Microsoft Cognitive Toolkit—previously known as CNTK—is an open-source toolkit for commercial-grade distributed deep learning. It describes neural networks as a series of computational steps via a directed graph.
+The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through deep learning by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
+News I Documentation I FAQ I Blog</description>
+    </item>
+    
+    <item>
+      <title>Weka</title>
+      <link>https://softorage.com/software/weka/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/weka/</guid>
+      <description>Weka is a collection of machine learning algorithms for data mining tasks. It contains tools for data preparation, classification, regression, clustering, association rules mining, and visualization. - Official website
+ Weka(Waikato Environment for Knowledge Analysis) provides access to deep learning with WekaDeeplearning4j which uses Deeplearning4j.
+Blog I New Forum I Old Forum I Documentation I Stack Overflow Q&amp;amp;A I Mailing list I Wiki I FAQ I IRC I SourceForge I Package metadata</description>
+    </item>
+    
+    <item>
+      <title>Yooreeka</title>
+      <link>https://softorage.com/software/yooreeka/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/yooreeka/</guid>
+      <description>Yooreeka is a library for data mining, machine learning, soft computing, and mathematical analysis. It also provides examples.
+Google Code I Archive</description>
+    </item>
+    
+    <item>
+      <title>PyTorch</title>
+      <link>https://softorage.com/software/pytorch/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/pytorch/</guid>
+      <description>PyTorch is an open-source machine learning library for Python, based on Torch, used for applications such as natural language processing. One can also reuse Python packages such as NumPy, SciPy and Cython to extend PyTorch when needed.
+ PyTorch provides two high-level features:
+ Tensor computation (like NumPy) with strong GPU acceleration Deep neural networks built on a tape-based autodiff system - README.md on GitHub repo    Automatic differentiation is done with a tape-based system at both a functional and neural network layer level.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WebRTC-Torrent Client on Softorage</title>
+    <link>https://softorage.com/categories/webrtc-torrent-client/</link>
+    <description>Recent content in WebRTC-Torrent Client on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/webrtc-torrent-client/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WebTorrent</title>
+      <link>https://softorage.com/software/webtorrent/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/webtorrent/</guid>
+      <description>WebTorrent is a peer-to-peer (P2P) streaming torrent client written in JavaScript by Feross Aboukhadijeh. WebTorrent uses the same protocol as BitTorrent but uses a different transport. WebTorrent primarily relies on WebRTC connections, while BitTorrent uses TCP connections and UDP datagrams directly.
+Dev Documentation I FAQ I IRC</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Color Temperature Adjustment on Softorage</title>
+    <link>https://softorage.com/categories/color-temperature-adjustment/</link>
+    <description>Recent content in Color Temperature Adjustment on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/color-temperature-adjustment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>f.lux</title>
+      <link>https://softorage.com/software/f.lux/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/f.lux/</guid>
+      <description>f.lux is a utility software that adjusts a display&amp;rsquo;s color temperature according to location and time of day. The program is designed to reduce eye strain during night-time use, helping to reduce disruption of sleep patterns.
+Blog/News I Forum I FAQ</description>
+    </item>
+    
+    <item>
+      <title>LightBulb</title>
+      <link>https://softorage.com/software/lightbulb/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/lightbulb/</guid>
+      <description>LightBulb is a utility that adjusts screen color temperature based on location and time of the day. It reduces eyestrain which may be produced by staring at a computer screen when working late hours. As the day goes on, it continuously adjusts gamma of the screen display, transitioning the display color temperature from cold blue in the afternoon to warm yellow during the night. Its primary objective is to match the color of the screen to the light sources of your surrounding environment - typically, sunlight during the day and artificial light during the night.</description>
+    </item>
+    
+  </channel>
+</rss>

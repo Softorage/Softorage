@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D Computing Graphics on Softorage</title>
+    <link>https://softorage.com/categories/3d-computing-graphics/</link>
+    <description>Recent content in 3D Computing Graphics on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/3d-computing-graphics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of Illusion</title>
+      <link>https://softorage.com/software/art-of-illusion/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/art-of-illusion/</guid>
+      <description>Art of Illusion is a 3D-graphics software, with similar intent of use as for example 3DS-Max or Maya of the commercial software packages or Blender or Wings 3D on the freeware side. Though some sources seem to confuse 3D-modeling with CAD, Art of Illusion does not provide any CAD-features.
+Some user reviews describe Art of Illusion as &amp;lsquo;intuitive&amp;rsquo;, &amp;lsquo;straight forward to learn&amp;rsquo; and &amp;lsquo;good candidate for the first 3D modelling tool&amp;rsquo;, while some characterize it as &amp;lsquo;software for experienced CAD users&amp;rsquo; or taking plenty of time to figure out.</description>
+    </item>
+    
+    <item>
+      <title>Blender</title>
+      <link>https://softorage.com/software/blender/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/blender/</guid>
+      <description>Blender is a professional, free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, interactive 3D applications and video games. Blender&amp;rsquo;s features include 3D modeling, UV unwrapping, texturing, raster graphics editing, rigging and skinning, fluid and smoke simulation, particle simulation, soft body simulation, sculpting, animating, match moving, camera tracking, rendering, motion graphics, video editing and compositing. It also features an integrated game engine.</description>
+    </item>
+    
+    <item>
+      <title>Wings 3D</title>
+      <link>https://softorage.com/software/wings-3d/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/wings-3d/</guid>
+      <description>Wings 3D is a tool specifically designed to import and modify models through subdivision - a polygonal modeling technique that allows very well-defined polygons.
+The program itself does not include tools to create it&amp;rsquo;s own from scratch. Basically, Wings 3D can import models created by other design environments into polygonal meshes and then develop them through subdivision polygons. It also includes a series of tools that will help you allocate materials, textures and UV coordinates to your models, add lights to the scene and perform screenshots among other possibilities.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <script>
+    function replacePath(path, old_d, new_d) {
+      if (window.location.hostname != "127.0.0.1" && window.location.hostname != "localhost") {
+        path = path.replace(old_d, new_d);
+        if (path.includes(new_d)) {
+           
+          path = path.replace("http:", "https:");
+        }
+      }
+      return path;
+    }
+    var newpath = replacePath(
+      window.location.href,
+      "://softorage.gitlab.io",
+      "://softorage.com"
+    );
+     
+    if (window.location.href != newpath){
+      window.location.replace(newpath);
+    }
+  </script>
+  
+  
+    
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+    <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+    <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+    
+    <script async src=https://www.googletagmanager.com/gtag/js?id&#61;UA-154890683-1></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "UA-154890683-1", { 'anonymize_ip': true });
+    </script>
+    
+    
+    
+
+
+
+  
+    
+    
+    
+    
+    
+  
+  
+  
+
+  
+  
+    
+    
+    
+    
+  
+  
+
+  
+  
+  
+    
+    
+    
+  
+
+  
+  
+  
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+  VLC Media Player - View and download on Windows, Unix(like), macOS, Linux, iOS and Android Systems | Softorage</title>
+<meta name="title" content="VLC Media Player - View and download on Windows, Unix(like), macOS, Linux, iOS and Android Systems | Softorage">
+<meta name="description" content="VLC Media Player is a free and open-source media player software and streaming media server developed by the VideoLAN project"> 
+
+
+<link rel="canonical" href="https://softorage.com/software/vlc-media-player/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="VLC Media Player is a free and open-source media player software and streaming media server developed by the VideoLAN project" /> 
+<meta name="twitter:title" content="VLC Media Player - View and download on Windows, Unix(like), macOS, Linux, iOS and Android Systems | Softorage" />
+<meta name="twitter:url" content="https://softorage.com/software/vlc-media-player/" />
+<meta name="twitter:site" content="@Softorage" /> 
+<meta name="twitter:creator" content="@Softorage" /> 
+<meta name="twitter:image" content="https://cdn.statically.io/img/img.softorage.com/software-logo/vlc-media-player.png?h=64"> 
+
+
+<meta property="og:title" content="VLC Media Player - View and download on Windows, Unix(like), macOS, Linux, iOS and Android Systems | Softorage">
+<meta property="og:description" content="VLC Media Player is a free and open-source media player software and streaming media server developed by the VideoLAN project"> 
+<meta property="og:site_name" content="Softorage" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://softorage.com/software/vlc-media-player/" />
+
+<meta property="fb:app_id" content="170403084180809" />
+
+<meta property="og:image" content="https://cdn.statically.io/img/img.softorage.com/software-logo/vlc-media-player.png?h=64" /> 
+
+<meta property="article:section" content="Media Player" />
+    
+<meta property="article:published_time" content="2020-06-10 21:10:20 &#43;0530 IST" />
+
+
+
+<script type="application/ld+json">
+    { 
+        "@context": "http://schema.org", 
+        "@type": "WebSite", 
+        "url": "https://softorage.com/", 
+        "name": "VLC Media Player",
+        "author": {
+          "@type": "Person",
+          "name": "Sanmay Joshi and Softorage contributors"
+        },
+        "logo": "https://softorage.com/assets/favicon/Softorage-Logo-Profile.png",
+        "image": "https://cdn.statically.io/img/img.softorage.com/software-logo/vlc-media-player.png?h=64",
+        "description": "VLC Media Player is a free and open-source media player software and streaming media server developed by the VideoLAN project",
+        "sameAs" : [
+          "https://twitter.com/Softorage",
+          "https://www.facebook.com/Softorage",
+          "https://www.instagram.com/softorage"
+        ]
+      }
+    </script>
+
+<meta name="generator" content="Hugo 0.69.1" />
+  
+  
+  <link rel="stylesheet" href="/assets/css/main.9117446ab39f56d294edb01d08869b13543fe309356661a86e06823001ee8e18.css" integrity="sha256-kRdEarOfVtKU7bAdCIabE1Q/4wk1ZmGobgaCMAHujhg=" crossorigin="anonymous">
+  
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel="dns-prefetch" href="https://cdn.statically.io/">
+  <link rel="preconnect" href="https://cdn.statically.io/" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=0-0-1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=0-0-1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=0-0-1">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest?v=0-0-1">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=0-0-1" color="#525252">
+  <link rel="icon" href="/assets/favicon/favicon.ico?v=0-0-1" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=0-0-1" type="image/x-icon">
+  <meta name="apple-mobile-web-app-title" content="Softorage">
+  <meta name="application-name" content="Softorage">
+  <meta name="msapplication-TileColor" content="#fff6f8">
+  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?v=0-0-1">
+  
+  
+  
+  <meta name="theme-color" content="#fff6f8">
+  
+  <meta name="msapplication-navbutton-color" content="#fff6f8">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  
+  <meta name="wot-verification" content="ba7941c446d1b0f36207" />
+</head>
+
+  
+  <body>
+    <header>
+  
+  
+  
+  
+  
+  <nav class="navbar navbar-expand navbar-light fixed-top flex-column">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-nav rounded px-3" href="https://softorage.com/"><span class="tg"><span class="brand">Softorage</span>&nbsp;<sup><span class="small text-clr2">beta</span></sup></span></a>
+      
+      <div class="desktop-only bg-nav border-0 my-2 shadow-sm flex-fill type-search rounded">
+        
+        <div class="row pl-3">
+          <div class="col-1 py-2">
+            <span class=""><span class='fas fa-search'></span></span>
+          </div>
+          <div class="col-11">
+            <form action="/search/" method="get">
+                <input type="search" class="bg-nav border-0 form-control" name="s" placeholder="Search the Softorage" aria-label="Search the Softorage">
+              </form>
+            
+          </div>
+        </div>
+          
+      </div>
+      
+      
+          
+      <a class="navbar-toggler border-0" role="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="text-antinav"><span class='fas fa-bars'></span></span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid type-search" id="search_page_main_search_mob_div">
+      <div class="mobile-only flex-fill mt-1 bg-nav border-0 shadow-sm rounded">
+        <form action='/search/' method='get'>
+            <input type='search' class='bg-nav border-0 form-control' name='s' placeholder='Search the Softorage' aria-label='Search the Softorage'>
+          </form>
+        
+      </div>
+    </div>
+  </nav>
+</header>
+
+    
+    
+    <div style="position: fixed; top: 32rem; right: 0; z-index: 1030;">
+      <div class="alert alert-warning border-right-0 shadow-sm show small" role="alert">
+        Stay home. Stay safe!
+        
+      </div>
+    </div>
+    
+    
+
+
+
+  
+
+
+<div class="container-fluid main-gradient-light text-clr2 pb-3 pt-4 position-relative shadow-sm">
+  <div style="height:3.5rem;"></div>
+  <div class="mobile-only" style="height:2.5rem;"></div>
+  <div class="row px-2">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="align-middle px-auto col-auto">
+            <img class="bg-nav rounded shadow-sm p-2" style="height:5rem;" src="https://cdn.statically.io/img/img.softorage.com/software-logo/vlc-media-player.png?h=64" alt="VLC Media Player logo">  
+            <br> 
+              
+              <div class="rating-stars mt-2" style="--rating: 0.8208571428571432;" aria-label="Rating: 4.10 out of 5"></div></div>
+        <div class="col">
+          <h1 class="display-4 tg" style="overflow-x: auto;">VLC Media Player</h1><p class="small" style="color: #8e0090;/*#fc4aff*/">VLC Media Player is a free and open-source media player software and streaming media server developed by the VideoLAN project</p>
+          
+        </div>
+      </div>
+      
+      
+        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
+          1 <a href='https://www.videolan.org/news.html'>https://www.videolan.org/news.html</a><br>"><span class="small text-success">Status | <span class='fas fa-check'></span></span></a></div>
+    
+    <div class="col-md-4">
+        
+          <button class="btn btn-download btn-hover my-2" data-toggle="modal" data-target="#get-it-modal"><span class="text-nav"><span class='fas fa-arrow-alt-circle-down'></span></span>&nbsp; <span class="text-nav">Download</span></button>
+          
+          
+          <div class="modal fade" id="get-it-modal" tabindex="-1" role="dialog" aria-labelledby="get-it-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content bg-nav text-antinav shadow">
+                <div class="modal-header">
+                  <h2 class="modal-title h5" id="get-it-modal-label">Download VLC Media Player</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-antinav" aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body get-it-modal-body">
+                  
+                  <ul class="nav nav-tabs rounded-lg shadow-sm justify-content-center" role="tablist">
+                    <li class="nav-item" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Downloads usually distributed directly by software developer, ensuring safety and integrity of software">
+                      <a class="nav-link active text-success" data-toggle="tab" href="#download-authentic" role="tab" aria-controls="authentic" aria-selected="true">Recommended</a>
+                    </li>
+                    
+                    <li class="nav-item" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Third-party downloads for 'Desktop Operating Systems'">
+                      <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp" role="tab" aria-label="Third-party downloads for 'Desktop Operating Systems'" aria-controls="desktop" aria-selected="false"><span class='fas fa-desktop'></span></a>
+                    </li>
+                    
+                    <li class="nav-item" data-toggle="tooltip" data-trigger="hover" data-placement="top" title="Third-party downloads for 'Mobile Operating Systems'">
+                      <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb" role="tab" aria-label="Third-party downloads for 'Mobile Operating Systems'" aria-controls="smartphone/tab" aria-selected="false"><span class='fas fa-mobile-alt'></span> / <span class='fas fa-tablet-alt'></span></a>
+                    </li>
+                  </ul>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="tab-content" id="get_it_tab_content">
+                    <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="authentic-tab">
+                          <a href="https://www.videolan.org/vlc/#download" class="btn btn bg-success-light text-success m-2">Official download</a>&nbsp;
+                        
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                          <a href="https://play.google.com/store/apps/details?id=org.videolan.vlc" class="btn btn-sm btn-primary m-2" data-toggle="tooltip" data-placement="top" title="Android">Google Play Store</a>&nbsp;
+                        
+                      
+                      
+                      
+                      
+                      </div>
+                    
+                    <div class="tab-pane fade" id="download-dskp" role="tabpanel" aria-labelledby="desktop-tab">
+                      <div class="row my-2">
+                        <div class="col-3">
+                          <ul class="nav nav-pills flex-column" role="tablist" aria-orientation="vertical">
+                            <li class="nav-item">
+                              <a class="nav-link active text-clr2" data-toggle="tab" href="#download-dskp-windows" role="tab" aria-controls="windows" aria-selected="true">Windows</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-linux" role="tab" aria-controls="linux" aria-selected="false">Linux</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-macOS" role="tab" aria-controls="macOS" aria-selected="false">macOS</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-dskp-other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div class="col-9">
+                          <div class="tab-content">
+                            <div class="tab-pane fade show active" id="download-dskp-windows" role="tabpanel" aria-labelledby="windows-tab">
+                                
+                              
+                                  
+                                    
+                                      <a href="https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html" class="btn btn-sm btn-light text-primary m-2">CNET x64</a>
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://filehippo.com/download_vlc-media-player_32/" class="btn btn-sm btn-light text-primary m-2">FileHippo x32</a>
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://filehippo.com/download_vlc_media_player_64/" class="btn btn-sm btn-light text-primary m-2">FileHippo x64</a>
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://www.filehorse.com/download-vlc-32/" class="btn btn-sm btn-light text-primary m-2">FileHorse x32</a>
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://www.filehorse.com/download-vlc-64/" class="btn btn-sm btn-light text-primary m-2">FileHorse x64</a>
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://www.malavida.com/en/soft/vlc/" class="btn btn-sm btn-light text-primary m-2">Malavida</a>
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://vlc-media-player.en.softonic.com/" class="btn btn-sm btn-light text-primary m-2">Softonic</a>
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://www.techspot.com/downloads/3562-vlc-media-player.html" class="btn btn-sm btn-light text-primary m-2">TechSpot x32/x64</a>
+                                      
+                                    
+                                  
+                                    
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://vlc-media-player.en.uptodown.com/windows" class="btn btn-sm btn-light text-primary m-2">Uptodown x64</a>
+                                      
+                                    
+                                  
+                                
+                                
+                                   
+                                
+                              </div>
+                            <div class="tab-pane fade" id="download-dskp-linux" role="tabpanel" aria-labelledby="linux-tab">
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://linux.softpedia.com/get/Multimedia/Video/VLC-2608.shtml" class="btn btn-sm btn-light text-primary m-2">Softpedia</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                    
+                                  
+                                    
+                                      <a href="https://www.techspot.com/downloads/3562-vlc-media-player.html" class="btn btn-sm btn-light text-primary m-2">TechSpot</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                                   
+                                
+                              </div>
+                            <div class="tab-pane fade" id="download-dskp-macOS" role="tabpanel" aria-labelledby="macOS-tab">
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://filehippo.com/mac/download_vlc_media_player-for_mac/" class="btn btn-sm btn-light text-primary m-2">FileHippo</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://mac.filehorse.com/download-vlc/" class="btn btn-sm btn-light text-primary m-2">FileHorse</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://www.malavida.com/en/soft/vlc/mac/" class="btn btn-sm btn-light text-primary m-2">Malavida</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://vlc-media-player.en.softonic.com/mac" class="btn btn-sm btn-light text-primary m-2">Softonic</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                    
+                                      <a href="https://www.techspot.com/downloads/3562-vlc-media-player.html" class="btn btn-sm btn-light text-primary m-2">TechSpot</a> 
+                                      
+                                    
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                                   
+                                
+                              </div>
+                            <div class="tab-pane fade" id="download-dskp-other" role="tabpanel" aria-labelledby="other-tab">
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                    
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                                  <p class="m-2 text-muted">No download available for others.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
+                                
+                              </div>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                    
+                    <div class="tab-pane fade" id="download-smptb" role="tabpanel" aria-labelledby="smptb-tab">
+                      <div class="row my-2">
+                        <div class="col-3">
+                          <ul class="nav nav-pills flex-column" role="tablist" aria-orientation="vertical">
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2 active" data-toggle="tab" href="#download-smptb-android" role="tab" aria-controls="android" aria-selected="true">Android</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb-ios" role="tab" aria-controls="ios" aria-selected="false">iOS</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-clr2" data-toggle="tab" href="#download-smptb-other" role="tab" aria-controls="other" aria-selected="false">Other</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-9">
+                          
+                          <div class="tab-content">
+                            <div class="tab-pane fade show active" id="download-smptb-android" role="tabpanel" aria-labelledby="android-tab">
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://play.google.com/store/apps/details?id=org.videolan.vlc" class="btn btn-sm btn-light text-primary m-2">Google Play Store</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://www.malavida.com/en/soft/vlc/android/" class="btn btn-sm btn-light text-primary m-2">Malavida</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://vlc-media-player.en.softonic.com/android" class="btn btn-sm btn-light text-primary m-2">Softonic</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                    
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                                   
+                                
+                              </div>
+                            <div class="tab-pane fade" id="download-smptb-ios" role="tabpanel" aria-labelledby="ios-tab">
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://www.malavida.com/en/soft/vlc/iphone/" class="btn btn-sm btn-light text-primary m-2">Malavida</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                      <a href="https://vlc-media-player.en.softonic.com/iphone" class="btn btn-sm btn-light text-primary m-2">Softonic</a> 
+                                      
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                    
+                                  
+                                    
+                                  
+                                
+                                
+                              
+                                  
+                                    
+                                  
+                                
+                                
+                                   
+                                
+                              </div>
+                            <div class="tab-pane fade" id="download-smptb-other" role="tabpanel" aria-labelledby="other-tab">
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                    
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                              
+                                
+                                  
+                                    
+                                  
+                                
+                                
+                                
+                                  <p class="m-2 text-muted">No download available for others.
+                                  <br>
+                                  <span class="small">If you know about a URL that provides a download, you can help us by <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">opening an issue</a> and selecting layout 'Download URL Suggestion'.</span>
+                                  </p>
+                                
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a class="btn bg-nav my-2" href="https://www.videolan.org/vlc/"><span class="text-primary"><span class='fas fa-globe'></span></span>&nbsp; <span class="text-primary">Visit</span></a> <br><div class="row my-2 ml-1">
+        <span class="fa-2x"><span class='fas fa-share-alt'></span></span>&nbsp;&nbsp;
+        <span class="d-inline-block font-weight-bold border-left border-right"></span>&nbsp;&nbsp;
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsoftorage.com%2fsoftware%2fvlc-media-player%2f&quote=Check%20out%20VLC%20Media%20Player%20on%20Softorage" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook" aria-label="Share on Facebook"><span class="fa-2x"><span class='fab fa-facebook'></span></span></a>&nbsp;&nbsp;
+        <a href="https://twitter.com/intent/tweet?source=https%3a%2f%2fsoftorage.com%2fsoftware%2fvlc-media-player%2f&text=Check%20out%20VLC%20Media%20Player%20on%20Softorage:%0Ahttps%3a%2f%2fsoftorage.com%2fsoftware%2fvlc-media-player%2f" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter" aria-label="Share on Twitter"><span class="fa-2x"><span class='fab fa-twitter'></span></span></a>&nbsp;&nbsp;
+        
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsoftorage.com%2fsoftware%2fvlc-media-player%2f&title=Check%20out%20VLC%20Media%20Player%20on%20Softorage&summary=VLC%20Media%20Player%20is%20a%20free%20and%20open-source%20media%20player%20software%20and%20streaming%20media%20server%20developed%20by%20the%20VideoLAN%20project&source=Softorage" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on LinkedIn" aria-label="Share on LinkedIn"><span class="fa-2x"><span class='fab fa-linkedin'></span></span></a>&nbsp;&nbsp;
+        <a href="whatsapp://send?text=https%3a%2f%2fsoftorage.com%2fsoftware%2fvlc-media-player%2f%0A%0ACheck%20out%20VLC%20Media%20Player%20on%20Softorage" data-text="VLC Media Player" data-href="https://softorage.com/software/vlc-media-player/" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Whatsapp" aria-label="Share on Whatsapp"><span class="fa-2x"><span class='fab fa-whatsapp'></span></span></a>&nbsp;&nbsp;
+        <a href="https://reddit.com/submit?url=https%3a%2f%2fsoftorage.com%2fsoftware%2fvlc-media-player%2f&title=Check%20out%20VLC%20Media%20Player%20on%20Softorage" rel="noreferrer nofollow" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share on Reddit" aria-label="Share on Reddit"><span class="fa-2x"><span class='fab fa-reddit'></span></span></a>&nbsp;&nbsp;
+        <a href="mailto:?subject=Check%20out%20VLC%20Media%20Player%20on%20Softorage&body=VLC%20Media%20Player%20is%20a%20free%20and%20open-source%20media%20player%20software%20and%20streaming%20media%20server%20developed%20by%20the%20VideoLAN%20project%0A%0Ahttps%3a%2f%2fsoftorage.com%2fsoftware%2fvlc-media-player%2f" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Share via email" aria-label="Share via email"><span class="fa-2x"><span class='far fa-envelope'></span></span></a>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="container bg-nav text-center small py-2" style="overflow-x: auto;">
+  <nobr>
+  <a class="text-antinav text-decoration-none" href="#overview">Overview</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#platform">Platform</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#social">Social</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#sysreq">System Requirements</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#rating">Ratings</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#developer">Developer</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#written_in">Written in</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#initial_release">Initial Release</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#repository">Repository</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#license">License</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#categories">Categories</a>&nbsp;&nbsp;&nbsp;
+  <a class="text-antinav text-decoration-none" href="#alternatives">Alternatives</a>&nbsp;&nbsp;&nbsp;
+  </nobr>
+</div>
+
+<div class="container-fluid bg-antinav-light py-3">
+  <div class="row">
+    <div class="col-md-8">
+      
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <span class="anchor" id="overview"></span>
+              <h2 class="card-title h4 m-0">Overview</h2>
+            </div>
+            <div class="col-auto">
+              <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="1 <a href='https://www.videolan.org/vlc/'>https://www.videolan.org/vlc/</a><br>2 <a href='https://fileinfo.com/software/videolan/vlc_media_player'>https://fileinfo.com/software/videolan/vlc_media_player</a><br>3 <a href='https://en.wikipedia.org/w/index.php?title=VLC_media_player&amp;oldid=935254875'>https://en.wikipedia.org/w/index.php?title=VLC_media_player&amp;oldid=935254875</a><br>"><span class="small"><span class='fas fa-info'></span></span></a><a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Helps you to quickly get a grasp of how and what the software does."><span class="small"><span class='fas fa-question'></span></span></a>
+              </span>
+            </div>
+          </div>
+          <div class="card-text mt-3"><p>VLC is a free and open source cross-platform <a href="/categories/media-player/">multimedia player</a> and framework, developed by the VideoLAN project, that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols. It can read a large number of popular video and audio formats, such as MPEG, MKV, MP4, MOV, WMV, H.264, WAV, FLV, AVI, etc. It can also convert media into many of the same formats that it is able to read, including the MPEG, ASF, AAC, and MP3 formats. See <a href="https://en.wikipedia.org/wiki/VLC_media_player#Format_support">this Wikipedia page</a> for format support.</p>
+<p><a href="https://www.videolan.org/news.html">News</a> | <a href="https://forum.videolan.org/">Forum</a> | <a href="https://wiki.videolan.org/">Wiki</a> | <a href="https://wiki.videolan.org/Documentation">Documentation</a> | <a href="https://www.videolan.org/support/faq.html">FAQ</a> | <a href="https://webchat.freenode.net/?channels=videolan">IRC</a></p>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <span class="anchor" id="platform"></span>
+              <h2 class="card-title h4 m-0">Platform</h2>
+            </div>
+            <div class="col-auto">
+              <span class="float-right">
+                
+                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="&lt;span class=&#39;fas fa-desktop&#39;&gt;&lt;/span&gt; : <br>1 <a href='https://www.videolan.org/vlc/#download'>https://www.videolan.org/vlc/#download</a><br> <hr>"><span class="small"><span class='fas fa-info'></span></span></a><a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Which platforms, is the software available on. Orange borders mean unofficial release."><span class="small"><span class='fas fa-question'></span></span></a>
+              </span>
+            </div>
+          </div>
+          <p class="card-text mt-3"><a role="button" class="btn" tabindex="0" aria-label="Desktop" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Desktop" data-content="
+    <div class='text-center'><span class='fa-2x' title='x32/x64 Windows' aria-label='x32/x64 Windows'>&lt;span class=&#39;fab fa-windows&#39;&gt;&lt;/span&gt;</span>&nbsp;&nbsp;<span class='fa-2x' title='Unix-like OS' aria-label='Unix-like OS'>&lt;img src=&#39;/assets/webfonts/unix-logo.svg&#39; height=&#39;28&#39;&gt;&lt;/img&gt;</span>&nbsp;&nbsp;<span class='fa-2x' title='macOS' aria-label='macOS'>&lt;span class=&#39;fab fa-apple&#39;&gt;&lt;/span&gt;</span>&nbsp;&nbsp;<span class='fa-2x' title='Linux' aria-label='Linux'>&lt;span class=&#39;fab fa-linux&#39;&gt;&lt;/span&gt;</span>&nbsp;&nbsp;</div>
+  "><span class="text-clr2"><span class='fas fa-desktop'></span></span></a>&nbsp;
+<a role="button" class="btn" tabindex="0" aria-label="Smartphone" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Smartphone" data-content="
+    <div class='text-center'><span class='fa-2x' title='Android' aria-label='Android'>&lt;span class=&#39;fab fa-android&#39;&gt;&lt;/span&gt;</span>&nbsp;&nbsp;<span class='fa-2x' title='iOS' aria-label='iOS'>&lt;span class=&#39;fab fa-apple&#39;&gt;&lt;/span&gt;</span>&nbsp;&nbsp;<span class='fa-2x' title='Windows' aria-label='Windows'>&lt;span class=&#39;fab fa-windows&#39;&gt;&lt;/span&gt;</span>&nbsp;&nbsp;</div>
+  "><span class="text-clr2"><span class='fas fa-mobile-alt'></span></span></a>&nbsp;
+<a role="button" class="btn" tabindex="0" aria-label="Tablet" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Tablet" data-content="
+    <div class='text-center'>
+          <span class='fa-2x' title='Android' aria-label='Android'>&lt;span class=&#39;fab fa-android&#39;&gt;&lt;/span&gt;</span>&nbsp;&nbsp;<span class='fa-2x' title='iOS' aria-label='iOS'>&lt;span class=&#39;fab fa-apple&#39;&gt;&lt;/span&gt;</span>&nbsp;&nbsp;</div>
+  "><span class="text-clr2"><span class='fas fa-tablet-alt'></span></span></a>&nbsp;
+<a role="button" class="btn" tabindex="0" aria-label="Else" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Else" data-content="
+    <div class='text-center'><span class='badge badge-light' title='This software framework/application would possibly run on every platform that can run Apple TV' style='margin-top:-1rem;'>Apple TV</span>&nbsp;&nbsp;</div>
+  "><span class="text-clr2"><span class='fas fa-bars'></span></span></a>&nbsp;
+</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <span class="anchor" id="social"></span>
+              <h2 class="card-title h4 m-0">Social</h2>
+            </div>
+            <div class="col-auto">
+              <span class="float-right">
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Social presence across the internet."><span class="small"><span class='fas fa-question'></span></span></a>
+              </span>
+            </div>
+          </div>
+          <p class="card-text mt-3">
+          
+          
+              
+              <a aria-label="VLC Media Player on Facebook" href="http://www.facebook.com/vlc.media.player"><span class="fa-2x"><span class='fab fa-facebook'></span></span></a>&nbsp; <a aria-label="VLC Media Player on Twitter" href="http://www.twitter.com/videolan"><span class="fa-2x"><span class='fab fa-twitter'></span></span></a>&nbsp; <a aria-label="VLC Media Player on Wikipedia" href="https://en.wikipedia.org/wiki/VLC_media_player"><span class="fa-2x"><span class='fab fa-wikipedia-w'></span></span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-antinav-light py-3">
+  <div class="row">
+    <div class="col-md-8">
+      
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <span class="anchor" id="sysreq"></span>
+              <h2 class="card-title h4 m-0">System Requirements</h2>
+            </div>
+            <div class="col-auto">
+              <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="System configuration you should have to run the software peacefully."><span class="small"><span class='fas fa-question'></span></span></a>
+              </span>
+            </div>
+          </div>
+          <div class="card-text mt-3">
+            
+          
+              
+              
+              
+              
+              
+              
+              
+               
+              
+              
+              <ul class="nav nav-tabs rounded-lg shadow-sm" role="tablist">
+                
+                
+                
+                
+                  <li class="nav-item">
+                    <a class="nav-link active text-clr2 small font-weight-bold" id="sysreq-general-tab" data-toggle="tab" href="#sysreq-tab-general" role="tab" aria-controls="sysreq-tab-general" aria-selected="true">GENERAL</a>
+                  </li>
+                
+                
+                
+              </ul>
+              
+              <div class="tab-content" id="sysreq_tab_content">
+                
+                
+                
+                  
+                  
+                  
+                  <div class="tab-pane fade show active" id="sysreq-tab-general" role="tabpanel" aria-labelledby="sysreq-general-tab">
+                    
+                    <div class="table-responsive-md">
+                      <table class="text-antinav">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th><th scope="col">Minimum</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            
+                              <th scope="row">1</th><td>Primarily vary by video being played, depending upon its quality</td>
+                                
+                            </tr></tbody>
+                      </table>
+                    
+                    </div>
+                  
+                  </div>
+                  
+                  
+                    
+                    
+                  
+              
+              </div></div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <div class="col-md-4">
+      
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <span class="anchor" id="rating"></span>
+              <h2 class="card-title h4 m-0">Ratings</h2>
+            </div>
+            <div class="col-auto">
+              <span class="float-right">
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="An overview of various reviews and ratings by different reviewers. Since ratings change over time, numbers may not be exact."><span class="small"><span class='fas fa-question'></span></span></a>
+              </span>
+            </div>
+          </div>
+          <div class="card-text mt-3">
+              <div class="text-center align-middle small text-muted">
+                Aggregate
+              </div>
+              <div class="d-flex justify-content-center align-middle mb-2">
+                <span class="font-weight-bold h5">4.10</span>&nbsp;
+                
+                <div class="rating-stars" style="--rating: 0.8208571428571432;" aria-label="Rating: 4.10 out of 5"></div>
+                
+                &nbsp;<span class="h5">5</span>
+              </div>
+              <hr class="my-1">
+              <div class="table-responsive-lg" style="max-height: 35.5rem; overflow: auto;">
+                <table class="table-borderless border-0 text-antinav">
+                  <tbody><tr>
+                        <th class="py-2" scope="row">CNET<br><span class="small text-muted">x32 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>3.5</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.7;" aria-label="Rating: 3.5 out of 5"></div>
+                          
+                          &nbsp;<span>5</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on professional's opinion</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://download.cnet.com/VLC-Media-Player-32-bit/3000-13632_4-10267151.html'>https://download.cnet.com/VLC-Media-Player-32-bit/3000-13632_4-10267151.html</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">CNET<br><span class="small text-muted">x64 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>4.5</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.9;" aria-label="Rating: 4.5 out of 5"></div>
+                          
+                          &nbsp;<span>5</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on professional's opinion</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html'>https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">CNET<br><span class="small text-muted">x64 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>4.5</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.9;" aria-label="Rating: 4.5 out of 5"></div>
+                          
+                          &nbsp;<span>5</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 37 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html'>https://download.cnet.com/VLC-Media-Player-64-bit/3000-13632_4-75761094.html</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">CNET<br><span class="small text-muted">x32 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>4</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8;" aria-label="Rating: 4 out of 5"></div>
+                          
+                          &nbsp;<span>5</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 3673 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://download.cnet.com/VLC-Media-Player-32-bit/3000-13632_4-10267151.html'>https://download.cnet.com/VLC-Media-Player-32-bit/3000-13632_4-10267151.html</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">FileHippo<br><span class="small text-muted">macOS</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>8</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8;" aria-label="Rating: 4 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 734 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://filehippo.com/mac/download_vlc_media_player-for_mac/'>https://filehippo.com/mac/download_vlc_media_player-for_mac/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">FileHippo<br><span class="small text-muted">x32 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>9</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.9;" aria-label="Rating: 4.5 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 511 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://filehippo.com/download_vlc-media-player_32/'>https://filehippo.com/download_vlc-media-player_32/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">FileHippo<br><span class="small text-muted">x64 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>7.9</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.79;" aria-label="Rating: 3.95 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 513 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://www.filehorse.com/download-vlc-64/'>https://www.filehorse.com/download-vlc-64/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">FileHorse<br><span class="small text-muted">x32 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>8.2</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.82;" aria-label="Rating: 4.1 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 2768 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://www.filehorse.com/download-vlc-32/'>https://www.filehorse.com/download-vlc-32/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">FileHorse<br><span class="small text-muted">macOS</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>7.88</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.788;" aria-label="Rating: 3.9400000000000004 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 117 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://mac.filehorse.com/download-vlc/'>https://mac.filehorse.com/download-vlc/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">FileHorse<br><span class="small text-muted">x64 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>8</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8;" aria-label="Rating: 4 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 1181 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://www.filehorse.com/download-vlc-64/'>https://www.filehorse.com/download-vlc-64/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Google Play<br><span class="small text-muted">Android</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>4.4</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8800000000000001;" aria-label="Rating: 4.4 out of 5"></div>
+                          
+                          &nbsp;<span>5</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 1279218 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://play.google.com/store/apps/details?id=org.videolan.vlc'>https://play.google.com/store/apps/details?id=org.videolan.vlc</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Malavida<br><span class="small text-muted">macOS</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>8</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8;" aria-label="Rating: 4 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 44 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://www.malavida.com/en/soft/vlc/mac/'>https://www.malavida.com/en/soft/vlc/mac/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Malavida<br><span class="small text-muted">iOS</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>8</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8;" aria-label="Rating: 4 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 91 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://www.malavida.com/en/soft/vlc/iphone/'>https://www.malavida.com/en/soft/vlc/iphone/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Malavida<br><span class="small text-muted">Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>9</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.9;" aria-label="Rating: 4.5 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 1655 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://www.malavida.com/en/soft/vlc/'>https://www.malavida.com/en/soft/vlc/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Softonic<br><span class="small text-muted">macOS</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>8</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8;" aria-label="Rating: 4 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 3621 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://vlc-media-player.en.softonic.com/mac'>https://vlc-media-player.en.softonic.com/mac</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Softonic<br><span class="small text-muted">Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>8</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8;" aria-label="Rating: 4 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 63712 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://vlc-media-player.en.softonic.com/'>https://vlc-media-player.en.softonic.com/</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Softonic<br><span class="small text-muted">Android</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>8</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8;" aria-label="Rating: 4 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 1098 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://vlc-media-player.en.softonic.com/android'>https://vlc-media-player.en.softonic.com/android</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Softonic<br><span class="small text-muted">iOS</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>7</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.7;" aria-label="Rating: 3.5 out of 5"></div>
+                          
+                          &nbsp;<span>10</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 521 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://vlc-media-player.en.softonic.com/iphone'>https://vlc-media-player.en.softonic.com/iphone</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Softpedia<br><span class="small text-muted">Linux</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>4.2</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.8400000000000001;" aria-label="Rating: 4.2 out of 5"></div>
+                          
+                          &nbsp;<span>5</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 640 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://linux.softpedia.com/get/Multimedia/Video/VLC-2608.shtml'>https://linux.softpedia.com/get/Multimedia/Video/VLC-2608.shtml</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">TechSpot</th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>4.5</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.9;" aria-label="Rating: 4.5 out of 5"></div>
+                          
+                          &nbsp;<span>5</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 204 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://www.techspot.com/downloads/3562-vlc-media-player.html'>https://www.techspot.com/downloads/3562-vlc-media-player.html</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr><tr>
+                        <th class="py-2" scope="row">Uptodown<br><span class="small text-muted">x64 bit Windows</span></th>
+                        <td class="py-2 px-auto text-nowrap">
+                          <span>4.1</span>&nbsp;
+                          
+                          <div class="rating-stars mt-2" style="--rating: 0.82;" aria-label="Rating: 4.1 out of 5"></div>
+                          
+                          &nbsp;<span>5</span>
+                        </td>
+                        <td class="py-2"><span class="text-muted small">based on 53 reviews</span></td>
+                        <td class="py-2">
+                          <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='https://vlc-media-player.en.uptodown.com/windows'>https://vlc-media-player.en.uptodown.com/windows</a>"><span class="small"><span class='fas fa-info'></span></span></a></span>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<div class="container-fluid bg-antinav-light pb-3">
+  <div class="card-deck mb-3">
+    
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <span class="anchor" id="developer"></span>
+            <h2 class="card-title h4 m-0">Developer</h2>
+          </div>
+          <div class="col-auto">
+            <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="1 <a href='https://en.wikipedia.org/w/index.php?title=VLC_media_player&amp;oldid=935254875'>https://en.wikipedia.org/w/index.php?title=VLC_media_player&amp;oldid=935254875</a><br>2 <a href='https://www.videolan.org/legal.html'>https://www.videolan.org/legal.html</a><br>"><span class="small"><span class='fas fa-info'></span></span></a><a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Get to know who developed the software."><span class="small"><span class='fas fa-question'></span></span></a>
+            </span>
+          </div>
+        </div>
+        <p class="card-text mt-3">The VideoLAN Project</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <span class="anchor" id="written_in"></span>
+            <h2 class="card-title h4 m-0">Written in</h2>
+          </div>
+          <div class="col-auto">
+            <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="1 <a href='https://code.videolan.org/videolan/vlc'>https://code.videolan.org/videolan/vlc</a><br>2 <a href='https://code.videolan.org/videolan/vlc-android'>https://code.videolan.org/videolan/vlc-android</a><br>3 <a href='https://code.videolan.org/videolan/vlc-ios'>https://code.videolan.org/videolan/vlc-ios</a><br>"><span class="small"><span class='fas fa-info'></span></span></a><a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Computer language(s), in which the software is written."><span class="small"><span class='fas fa-question'></span></span></a>
+            </span>
+          </div>
+        </div>
+        <p class="card-text mt-3">C, C++, Objective-C, Kotlin (Android app only), Java (Android app only), Swift (iOS app only)</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+          <span class="anchor" id="initial_release"></span>
+          <h2 class="card-title h4 m-0">Initial Release</h2>
+          </div>
+          <div class="col-auto">
+            <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="1 <a href='http://www.jbkempf.com/blog/post/2016/15-years-of-VLC'>http://www.jbkempf.com/blog/post/2016/15-years-of-VLC</a><br>2 <a href='https://en.wikipedia.org/w/index.php?title=VLC_media_player&amp;oldid=935254875'>https://en.wikipedia.org/w/index.php?title=VLC_media_player&amp;oldid=935254875</a><br>"><span class="small"><span class='fas fa-info'></span></span></a><a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="When was the software initially released. Elder the software, more trustworthy it is."><span class="small"><span class='fas fa-question'></span></span></a>
+            </span>
+          </div>
+        </div>
+        <p class="card-text mt-3">01 February 2001</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck mb-3">
+    
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <span class="anchor" id="repository"></span>
+            <h2 class="card-title h4 m-0">Repository</h2>
+          </div>
+          <div class="col-auto">
+            <span class="float-right">
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="Here you can find source code of the software. Have a look!"><span class="small"><span class='fas fa-question'></span></span></a>
+            </span>
+          </div>
+        </div>
+        <p class="card-text mt-3"><a href="https://code.videolan.org/videolan/vlc">https://code.videolan.org/videolan/vlc</a>, <a href="https://code.videolan.org/explore/projects">https://code.videolan.org/explore/projects</a>, <a href="https://github.com/videolan/vlc">https://github.com/videolan/vlc</a></p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <span class="anchor" id="license"></span>
+            <h2 class="card-title h4 m-0">License</h2>
+          </div>
+          <div class="col-auto">
+            <span class="float-right"><a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="1 <a href='https://code.videolan.org/videolan/vlc/blob/master/COPYING'>https://code.videolan.org/videolan/vlc/blob/master/COPYING</a><br>2 <a href='https://code.videolan.org/explore/projects'>https://code.videolan.org/explore/projects</a><br>"><span class="small"><span class='fas fa-info'></span></span></a><a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="small"><span class='fas fa-question'></span></span></a>
+            </span>
+          </div>
+        </div>
+        <p class="card-text mt-3"><span>GPL v2</span>, <span>Other open source licenses</span></p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <span class="anchor" id="categories"></span>
+            <h2 class="card-title h4 m-0">Categories</h2>
+          </div>
+          <div class="col-auto">
+            <span class="float-right">
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="What type of software it is. Helps you with classification."><span class="small"><span class='fas fa-question'></span></span></a>
+            </span>
+          </div>
+        </div>
+        <p class="card-text mt-3"><a href="/categories/media-player">Media Player</a></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="card">
+    <div class="card-body">
+      <span class="anchor" id="alternatives"></span>
+      <h2 class="card-title h4 m-0">Alternatives</h2>
+      
+      <div class="card-text mt-3"><span class="h6">Media Player</span><br>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <a class="btn btn-sm btn-light shadow-sm my-2" data-toggle="tooltip" data-placement="top" title="Proprietary" href="https://softorage.com/software/gom-player/">GOM Player</a> &nbsp;
+                
+              
+              
+              
+              
+              
+              
+              
+              
+              <a class="btn btn-sm btn-light shadow-sm my-2" data-toggle="tooltip" data-placement="top" title="Free and Open Source" href="https://softorage.com/software/kodi/">Kodi</a> &nbsp;
+                
+              
+              
+              
+              
+              
+              
+              
+              
+              <a class="btn btn-sm btn-light shadow-sm my-2" data-toggle="tooltip" data-placement="top" title="Proprietary" href="https://softorage.com/software/mediamonkey/">MediaMonkey</a> &nbsp;
+                
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                 
+              </div>
+    </div>
+  </div><br>
+  <p class="bg-nav text-antinav text-center small p-2">This page was last updated with commit: <a class="font-weight-bold" href="https://gitlab.com/Softorage/softorage.gitlab.io/commit/1e763e9cc929435b12608db81e65b8c7bcdd387f">Fixed syntax in software source files (1e763e9)</a></p>
+  </div>
+    <footer>
+  <div class="container bg-nav text-center p-3">
+
+    <a href="https://www.facebook.com/Softorage/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Like us on Facebook" aria-label="Like us on Facebook"><span class="fa-2x"><span class='fab fa-facebook'></span></span></a>
+    <a href="https://twitter.com/Softorage/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Follow us on Twitter" aria-label="Follow us on Twitter"><span class="fa-2x"><span class='fab fa-twitter'></span></span></a>
+    <a href="https://instagram.com/softorage/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Follow us on Instagram" aria-label="Follow us on Instagram"><span class="fa-2x"><span class='fab fa-instagram'></span></span></a>
+    <a href="https://gitlab.com/Softorage/" class="m-3 py-2" data-toggle="tooltip" data-placement="bottom" title="Our Open Source Space" aria-label="Our Open Source Space"><span class="fa-2x"><span class='fab fa-gitlab'></span></span></a>
+    
+    <div class="mt-3"></div>
+    <span class="tg h4" style="cursor: default;">@<span class="brand ml-1">Softorage</span></span>
+  
+  </div>
+  <div class="container-fluid bg-clr2-light py-3 shadow-sm position-relative">
+    <div class="row">
+      <div class="col-md-7 my-auto">
+        <span class="pl-5 desktop-only"></span>
+        <span class="h1 tg text-center mb-4 mt-2 desktop-only">The Software Directory.</span>
+        <div class="text-center mb-3 mt-1">
+          <span class="lead tg mx-auto mobile-only">The Software Directory.</span>
+        </div>
+      </div>
+      <div class="col-md-5 text-antinav">
+        <div class="card-deck">
+          
+          
+          <div class="card rounded text-center">
+            <div class="card-body">
+              <a class="text-decoration-none text-reset" href="https://softorage.com/"><div class="card-title h5 m-0">Softorage</div></a>
+              <div class="card-text mt-3">
+                <a class="text-reset small" href="https://softorage.com/what-we-do/" title="Our passion and purpose">What We Do</a><br>
+                <a class="text-reset small" href="https://softorage.com/search/" title="Search through the collection of software">Search</a><br>
+                <a class="text-reset small" href="https://softorage.com/categories/" title="Categorically arranged software">Categories</a><br>
+                <a class="text-reset small" href="https://softorage.com/contribute/" title="Help us create the software directory that everyone would want to love">Contribute</a><br>
+                <a class="text-reset small" href="https://softorage.com/get-involved/" title="Be part of the community and help make Softorage better">Get Involved</a><br>
+                <a class="text-reset small" href="https://softorage.com/sitemap.xml">Sitemap</a>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="card rounded text-center">
+            <div class="card-body">
+              <a class="text-decoration-none text-reset" href="https://softorage.com/legal/"><div class="card-title h5 m-0">Legal</div></a>
+              <div class="card-text mt-4">
+                <a class="text-reset small" href="https://softorage.com/legal/terms-and-conditions/">Terms and Conditions</a><br>
+                <a class="text-reset small" href="https://softorage.com/legal/privacy-policy/">Privacy Policy</a><br>
+                <a class="text-reset small" href="https://softorage.com/legal/disclaimer/">Disclaimer</a><br>
+                <a class="text-reset small" href="https://softorage.com/legal/cookie-policy/">Cookie Policy</a><br>
+                <a class="text-reset small" href="https://softorage.com/contact-us/" title="Got a tip? Feedback? Or maybe just want to say 'Hi!'?">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid text-center mt-3">
+      <span class="small text-muted">Copyright &#169; 2018-2020 Softorage | Code licensed under <b><a class="text-reset" href="https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/LICENSE">Apache license 2.0</a></b>. Unless otherwise noted, content licensed under <b><a class="text-reset" href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0 license</a></b>. | Site last generated: 20 September, 2020</span>
+    </div>
+  </div>
+  <div class="container-fluid text-center text-antinav bg-mat p-2">
+    From Asia's emerging giant and the country of <span style="color:rgb(255, 69, 122)"><span class='fas fa-heart'></span></span>&nbsp;-&nbsp;&nbsp;<span class="font-weight-bold bg-white rounded px-2"><span style="color:#FF9933;">In</span><span style="color:#000080;">d</span><span style="color:#138808;">ia</span></span>
+  </div>
+</footer>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    
+    
+    
+    <script src="/assets/js/main.min.aba59169593f6ab627c1c75c9dff530ce7c26b6154500465db7d48dea09587aa.js" integrity="sha256-q6WRaVk/arYnwcdcnf9TDOfCa2FUUARl231I3qCVh6o=" crossorigin="anonymous"></script>
+    <script src="/assets/js/custom.min.83fccc41534cc162fc03ce886e4cbe4fea9bf87cf3467a789c8ff9653d995ca2.js" integrity="sha256-g/zMQVNMwWL8A86Ibky&#43;T&#43;qb&#43;HzzRnp4nI/5ZT2ZXKI=" crossorigin="anonymous"></script>
+    
+    <script></script>
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Desktop Sharing on Softorage</title>
+    <link>https://softorage.com/categories/desktop-sharing/</link>
+    <description>Recent content in Desktop Sharing on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/desktop-sharing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TeamViewer</title>
+      <link>https://softorage.com/software/teamviewer/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/teamviewer/</guid>
+      <description>TeamViewer is a proprietary software application for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers. It allows remote access to computers or mobile devices and use them as though user were there. It allows to remotely connect to servers, commercial-grade machines, and IoT devices through TeamViewer&amp;rsquo;s global remote access network. TeamViewer includes encryption based on 2048-bit RSA private/public key exchange and AES (256-bit) session encryption, two-factor authentication, enforced password reset on unusual activity and a listing feature for trusted devices (Whitelisting).</description>
+    </item>
+    
+  </channel>
+</rss>

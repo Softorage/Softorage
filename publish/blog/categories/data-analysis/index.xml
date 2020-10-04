@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Analysis on Softorage</title>
+    <link>https://softorage.com/categories/data-analysis/</link>
+    <description>Recent content in Data Analysis on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 15 Jul 2020 20:01:07 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/data-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Orange</title>
+      <link>https://softorage.com/software/orange/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/orange/</guid>
+      <description>Orange is a component structured data mining as well as machine learning software suite written in python language. It&amp;rsquo;s a data visualization as well as evaluation software, with regard to novice and experts alike. Data mining can be done via visual programming or even python scripting.
+Orange components are called widgets. Widgets cover a wide variety, ranging from simple data visualization, subset selection, and pre-processing, to empirical evaluation of learning algorithms and predictive modeling.</description>
+    </item>
+    
+    <item>
+      <title>pandas</title>
+      <link>https://softorage.com/software/pandas/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/pandas/</guid>
+      <description>pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. - Wikipedia
+ Documentation I Stack Overflow Q&amp;amp;A I Mailing list - Developers I FAQ I IRC</description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://softorage.com/software/scikit-learn/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/scikit-learn/</guid>
+      <description>scikit-learn is an open source machine learning library featuring classification, regression, clustering, dimensionality reduction, model selection and preprocessing. It has tools for data mining and data analysis, and is built on NumPy, SciPy, and matplotlib.
+As per official website, it features:
+ Classification : Identifying to which category an object belongs to Regression : Predicting a continuous-valued attribute associated with an object Clustering : Automatic grouping of similar objects into sets Dimensionality reduction : Reducing the number of random variables to consider Model selection : Comparing, validating and choosing parameters and models Preprocessing : Feature extraction and normalization  Documentation I Wiki I Mailing list I Stack Overflow I FAQ I IRC</description>
+    </item>
+    
+  </channel>
+</rss>

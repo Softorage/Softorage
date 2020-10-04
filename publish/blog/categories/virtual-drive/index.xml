@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtual Drive on Softorage</title>
+    <link>https://softorage.com/categories/virtual-drive/</link>
+    <description>Recent content in Virtual Drive on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Sun, 14 Jun 2020 20:43:07 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/virtual-drive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WinCDEmu</title>
+      <link>https://softorage.com/software/wincdemu/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/wincdemu/</guid>
+      <description>WinCDEmu is an open-source utility for mounting disk image files in Microsoft Windows. It runs on 32-bit and 64-bit Windows versions from XP to Windows 10; has size less than 2MB; does not occupy drive letters when not used.
+Tutorials</description>
+    </item>
+    
+    <item>
+      <title>DAEMON Tools</title>
+      <link>https://softorage.com/software/daemon-tools/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/daemon-tools/</guid>
+      <description>DAEMON Tools is a virtual drive and optical disc authoring program. It was originally a successor of Generic SafeDisc emulator and incorporated all of its features. It supports image compression, image password protection (to .mds and .mdx images), image creation (supported output formats include .iso, .mds/.mdf and .mdx), along with more advanced features for premium versions such as Pro and Ultra.
+Blog I Forum I FAQ</description>
+    </item>
+    
+  </channel>
+</rss>

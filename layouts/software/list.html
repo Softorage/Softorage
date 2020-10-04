@@ -32,19 +32,21 @@
           */}}
           <div class="border rounded p-2">
             <div style="max-height:15rem;overflow-y:auto;">
-              {{/* Previous implementation
+              {{/*
+              Previous implementation
               
               https://gohugo.io/content-management/taxonomies/
               The configuration option preserveTaxonomyNames was removed in Hugo 0.55.
               You can now use .Page.Title on the relevant taxonomy node to get the original value.
               
               
-              - range $key, $value := site.Taxonomies.categories -}}
+              {{- range $key, $value := site.Taxonomies.categories -}}
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="{{ lower (replace $key "-" "_") }}">
                   <label class="form-check-label" for="{{ lower (replace $key "-" "_") }}"> <span class="category-filter">{{ $key | humanize | title }}</span></label>
                 </div>
-              {{- end -*/}}
+              {{- end -}}
+              */}}
               
               {{ $t := sort (site.GetPage "/categories").Pages "Title" }}
               {{- range $t -}}

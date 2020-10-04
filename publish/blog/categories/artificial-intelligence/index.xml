@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial Intelligence on Softorage</title>
+    <link>https://softorage.com/categories/artificial-intelligence/</link>
+    <description>Recent content in Artificial Intelligence on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accord.NET</title>
+      <link>https://softorage.com/software/accord.net/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/accord.net/</guid>
+      <description>Accord.NET is a framework for scientific computing in .NET. The framework is comprised of multiple libraries encompassing a wide range of scientific computing applications, such as statistical data processing, machine learning, artificial intelligence, pattern recognition, including but not limited to, computer vision and computer audition. The framework offers a large number of probability distributions, hypothesis tests, kernel functions and support for most popular performance measurements techniques.
+The framework comprises a set of libraries that are available in source code as well as via executable installers and NuGet packages.</description>
+    </item>
+    
+    <item>
+      <title>AForge.NET</title>
+      <link>https://softorage.com/software/aforge.net/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/aforge.net/</guid>
+      <description>AForge.NET is a computer vision and artificial intelligence library originally developed by Andrew Kirillov for the .NET Framework. The source code and binaries of the project are available under the terms of the Lesser GPL and the GPL (GNU General Public License). Another (unaffiliated) project called Accord.NET was created to extend the features of the original AForge.NET library.
+News Archive I Forum I Documentation</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Deeplearning4j</title>
+      <link>https://softorage.com/software/eclipse-deeplearning4j/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/eclipse-deeplearning4j/</guid>
+      <description>Eclipse Deeplearning4j is a deep learning programming library written for Java and Scala and a computing framework with wide support for deep learning algorithms.
+ There are a lot of knobs to turn when you’re training a distributed deep-learning network. We’ve done our best to explain them, so that Eclipse Deeplearning4j can serve as a DIY tool for Java, Scala and Clojure programmers working on Hadoop and other file systems. - Official website</description>
+    </item>
+    
+    <item>
+      <title>OpenCog</title>
+      <link>https://softorage.com/software/opencog/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/opencog/</guid>
+      <description>OpenCog is a project that aims to build an open source artificial intelligence framework. OpenCog Prime is an architecture for robot and virtual embodied cognition that defines a set of interacting components designed to give rise to human-equivalent artificial general intelligence (AGI) as an emergent phenomenon of the whole system. OpenCog Prime&amp;rsquo;s design is primarily the work of Ben Goertzel while the OpenCog framework is intended as a generic framework for broad-based AGI research.</description>
+    </item>
+    
+    <item>
+      <title>TensorFlow</title>
+      <link>https://softorage.com/software/tensorflow/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/tensorflow/</guid>
+      <description>TensorFlow is an open source software library for high performance numerical computation. Its flexible architecture allows easy deployment of computation across a variety of platforms (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices.
+TensorFlow was originally developed by researchers and engineers from the Google Brain team within Google’s AI organization.
+It comes with strong support for machine learning and deep learning and the flexible numerical computation core is used across many other scientific domains.</description>
+    </item>
+    
+    <item>
+      <title>The Microsoft Cognitive Toolkit</title>
+      <link>https://softorage.com/software/the-microsoft-cognitive-toolkit/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/the-microsoft-cognitive-toolkit/</guid>
+      <description>The Microsoft Cognitive Toolkit—previously known as CNTK—is an open-source toolkit for commercial-grade distributed deep learning. It describes neural networks as a series of computational steps via a directed graph.
+The Microsoft Cognitive Toolkit enables to leverage the information within massive data-sets through deep learning by providing scaling, speed, and accuracy with commercial-grade quality and compatibility with the programming languages and algorithms already in use.
+News I Documentation I FAQ I Blog</description>
+    </item>
+    
+  </channel>
+</rss>

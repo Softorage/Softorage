@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Audio Workstation on Softorage</title>
+    <link>https://softorage.com/categories/digital-audio-workstation/</link>
+    <description>Recent content in Digital Audio Workstation on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/digital-audio-workstation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ardour</title>
+      <link>https://softorage.com/software/ardour/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/ardour/</guid>
+      <description>Ardour is a hard disk recorder and digital audio workstation application. It runs on Linux, macOS, FreeBSD and Microsoft Windows. Its primary author is Paul Davis, who is also responsible for the JACK Audio Connection Kit. Ardour is intended to be digital audio workstation software suitable for professional use.
+Released under the terms of the GNU General Public License (version two or any later version), Ardour is free software. Users who download from the project&amp;rsquo;s website are asked to pay at least $1 for downloading prebuilt binaries of Ardour; those users then have the right to obtain minor updates until the next major release.</description>
+    </item>
+    
+    <item>
+      <title>LMMS</title>
+      <link>https://softorage.com/software/lmms/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/lmms/</guid>
+      <description>LMMS (formerly Linux MultiMedia Studio) is a free and open source digital audio workstation application program, release under GPL v2 license. It allows music to be produced by arranging samples, synthesizing sounds, playing on a MIDI keyboard and combining the features of trackers and sequencers, when run on appropriate hardware.
+It allows users to sequence, compose, mix and automate songs in one interface, note playback via MIDI or typing keyboard, consolidate instrument tracks using Beat+Bassline Editor, fine tune patterns, notes, chords and melodies using Piano Roll Editor.</description>
+    </item>
+    
+  </channel>
+</rss>

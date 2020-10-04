@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Source Code Editor on Softorage</title>
+    <link>https://softorage.com/categories/source-code-editor/</link>
+    <description>Recent content in Source Code Editor on Softorage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>contact@softorage.com (Sanmay Joshi and Softorage contributors)</managingEditor>
+    <webMaster>contact@softorage.com (Sanmay Joshi and Softorage contributors)</webMaster>
+    <copyright>Code licensed under Apache license 2.0. Unless otherwise noted, content licensed under CC-BY-SA-3.0 license.</copyright>
+    <lastBuildDate>Wed, 10 Jun 2020 21:10:20 +0530</lastBuildDate>
+    
+	<atom:link href="https://softorage.com/categories/source-code-editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atom (Text Editor)</title>
+      <link>https://softorage.com/software/atom-text-editor/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/atom-text-editor/</guid>
+      <description>Atom is a text editor and source code editor developed by GitHub, with support for plug-ins written in Node.js, and embedded Git Control. It is built with web technologies like HTML, CSS, JavaScript, specifically CoffeeScript and Less. It is based on Electron framework that enables cross-platform desktop applications using Chromium and Node.js.
+Atom has installable packages that add extra functionality to it. An example is Teletype, which allows collaborating on code right from the editor.</description>
+    </item>
+    
+    <item>
+      <title>Notepad&#43;&#43;</title>
+      <link>https://softorage.com/software/notepad&#43;&#43;/</link>
+      <author>contact@softorage.com (Sanmay Joshi and Softorage contributors)</author>
+      <guid>https://softorage.com/software/notepad&#43;&#43;/</guid>
+      <description>Notepad++ is a free source code editor and Notepad replacement that supports several languages. Based on the editing component Scintilla, it is written in C++ and uses pure Win32 API and STL to provide higher execution speed and smaller program size.
+Its features include:
+ Syntax Highlighting and Folding User Defined Syntax Highlighting and Folding Customizable GUI Word completion, Function completion and Function parameters hint Tab interface Document Map  News I Forum I Gitter Chat I User Manual</description>
+    </item>
+    
+  </channel>
+</rss>
