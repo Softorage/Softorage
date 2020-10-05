@@ -77,29 +77,85 @@ $(function() {
   }
 });
 
+{{ if eq site.Params.cookieConsent.switch "on" }}
 /* OSANO Cookie consent initialisation */
+
+/* for dark mode
+ * 
+var cookieconsent_popup_bg_light = {{ site.Data.themes.light.nav }};
+var cookieconsent_popup_text_light = {{ site.Data.themes.light.antinav }};
+var cookieconsent_button_bg_light = {{ site.Data.themes.light.clr2 }};
+var cookieconsent_button_text_light = {{ site.Data.themes.light.nav }};
+
+var cookieconsent_popup_bg_light = {{ site.Data.themes.dark.nav }};
+var cookieconsent_popup_text_light = {{ site.Data.themes.dark.antinav }};
+var cookieconsent_button_bg_light = {{ site.Data.themes.dark.clr2 }};
+var cookieconsent_button_text_light = {{ site.Data.themes.dark.nav }};
+*/
+
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#fafafa",
-      "text": "#343434"
+      "background": "{{ site.Params.cookieConsent.colors.banner.background }}",
+      "text": "{{ site.Params.cookieConsent.colors.banner.text }}"
     },
     "button": {
-      "background": "#3f5efb",
-      "text": "#fbfbfb"
+      "background": "{{ site.Params.cookieConsent.colors.button.background }}",
+      "text": "{{ site.Params.cookieConsent.colors.button.text }}"
     }
   },
   "content": {
-    "message": "For us, protection of your privacy isn't just a commitment, but passion. To ensure you get the best user experience, and to get an understanding of metrics, we use cookies with privacy protections like 'Anonymizing IP'. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='{{ site.BaseURL }}legal/cookie-policy/'>Cookie Policy</a>, <a href='{{ site.BaseURL }}legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='{{ site.BaseURL }}legal/terms-and-conditions/'>Terms and Conditions</a>.",
-    "dismiss": "Okay. Got it!",
-    "link": "Find more about cookies and how we take privacy very seriously, in our Privacy Policy.",
-    "href": "{{ site.BaseURL }}legal/privacy-policy/",
-    "allow": "Allow cookies",
-    "deny": "Decline",
-    "policy": "Cookie Consent"
+    "message": "{{ site.Params.cookieConsent.content.message | safeHTMLAttr }}",
+    "dismiss": "{{ default `Close` site.Params.cookieConsent.content.dismiss }}",
+    "link": "{{ default `Learn More` site.Params.cookieConsent.content.linkText }}",
+    "href": "{{ site.Params.cookieConsent.content.linkURL }}",
+    "allow": "{{ default `Allow` site.Params.cookieConsent.content.allow }}",
+    "deny": "{{ default `Decline` site.Params.cookieConsent.content.deny }}",
+    "policy": "{{ default `Cookie Policy` site.Params.cookieConsent.content.policy }}"
+  },
+  {{ if site.Params.cookieConsent.revokable }}
+  "revokable": {{ default true site.Params.cookieConsent.revokable }},
+  {{ end }}
+  "type": "{{ site.Params.cookieConsent.type }}",
+  
+  onInitialise: function (status) {
+    var type = this.options.type;
+    var didConsent = this.hasConsented();
+    if (type == 'opt-in' && didConsent) {
+      // enable cookies
+      // https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = false;
+    }
+    if (type == 'opt-out' && !didConsent) {
+      // disable cookies
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = true;
+    }
+  },
+  onStatusChange: function(status, chosenBefore) {
+    var type = this.options.type;
+    var didConsent = this.hasConsented();
+    if (type == 'opt-in' && didConsent) {
+      // enable cookies
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = false;
+    }
+    if (type == 'opt-out' && !didConsent) {
+      // disable cookies
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = true;
+    }
+  },
+  onRevokeChoice: function() {
+    var type = this.options.type;
+    if (type == 'opt-in') {
+      // disable cookies
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = true;
+    }
+    if (type == 'opt-out') {
+      // enable cookies
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = false;
+    }
   }
 });
-
+{{ end }}
 
 {{/*
 
@@ -155,11 +211,11 @@ window.cookieconsent.initialise({
     if (type == 'opt-in' && didConsent) {
       // enable cookies
       // https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out
-      window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = false;
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = false;
     }
     if (type == 'opt-out' && !didConsent) {
       // disable cookies
-      window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = true;
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = true;
     }
   },
   onStatusChange: function(status, chosenBefore) {
@@ -167,22 +223,22 @@ window.cookieconsent.initialise({
     var didConsent = this.hasConsented();
     if (type == 'opt-in' && didConsent) {
       // enable cookies
-      window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = false;
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = false;
     }
     if (type == 'opt-out' && !didConsent) {
       // disable cookies
-      window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = true;
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = true;
     }
   },
   onRevokeChoice: function() {
     var type = this.options.type;
     if (type == 'opt-in') {
       // disable cookies
-      window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = true;
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = true;
     }
     if (type == 'opt-out') {
       // enable cookies
-      window[{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}] = false;
+      window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = false;
     }
   }
 });

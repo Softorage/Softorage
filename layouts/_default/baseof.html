@@ -29,6 +29,9 @@
     {{- $js_custom := resources.Get "js/custom.js" | resources.ExecuteAsTemplate "/assets/js/custom.js" . | minify | fingerprint }}
     <script src="{{ $js_custom.RelPermalink }}" integrity="{{ $js_custom.Data.Integrity }}" crossorigin="anonymous"></script>
     
+    <!-- Request Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+  
     <script>
       {{- block "script" . }}
       {{- end -}}

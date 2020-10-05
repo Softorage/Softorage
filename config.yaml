@@ -4,6 +4,21 @@ baseURL: "https://softorage.com/" # required
 
 languageCode: "en-us" # recommended
 
+# with this, Hugo notes some stats about website, which are then used by CSS processors
+build:
+  writeStats: true
+  
+# All privacy settings: https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings
+# Explanations to all privacy settings: https://gohugo.io/about/hugo-and-gdpr/#the-privacy-settings-explained
+privacy:
+  disqus:
+    disable: "false"
+  googleAnalytics:
+    anonymizeIP: "true" # 'true' makes it so the users' IP addresses are anonymized within Google Analytics
+    disable: "false"
+    respectDoNotTrack: "false" # 'true' makes the GA templates respect the “Do Not Track” HTTP header
+    useSessionStorage: "false" # 'true' disables the use of Cookies and use Session Storage to Store the GA Client ID
+
 params:
   description: "Softorage is a software directory designed as a secure download service and information resource, with a focus on safety & respecting user privacy." # The one place for authentic downloads and all your software related information needs # required
   tagline: "The Software Directory." # required, recommended for SEO template (partials/seo.html)
@@ -11,6 +26,28 @@ params:
   fb_app_id: "170403084180809" # optional, for SEO template (partials/seo.html)
   image: "https://softorage.com/assets/favicon/Softorage-Logo-Profile.png" # optional, absolute path to logo image to be used for social media; resolution 200px x 200px to 1200px x 1200px
   search_target: "https://softorage.com/search?s" # optional, definition: where you wish to direct users with search term; used in SEO template {{ site.Params.search_target | safeHTML | jsonify }}={search_term_string}
+  cookieConsent: # we use OSANO Cookie Consent solution
+    switch: "on" # accepts: on/off | decide whether you want to show a cookie consent dialog to your users | default: "off"
+    type: "opt-out" # accepts: opt-in/opt-out/none | In opt-in, website doesn't employ cookies to user's computer unless user gives cosent to opt in. In opt-out, cookies are employed on user's computer and the user is given the choice to opt out of cookies. In none, cookies are employed on the user's computer and user is not given a choice in that regard. Refrain from using none, unless you have zero customers from EU or similar countries with privacy protecting laws. | no default
+    # revokable: true # a button to revoke cookie consent appears when user hover in bottom area of the screen, regardless whether user's country requires revertable cookie consent | default: true
+    colors:
+      banner:
+        background: "#fafafa" # HEX | default: theme.nav
+        text: "#343434" # HEX | default: theme.antinav
+      button:
+        background: "#3f5efb" # HEX | default: theme.clr2
+        text: "#fbfbfb" # HEX | default: theme.nav
+    content: # change the links below to appropriate url addresses
+      message: | # no default
+        For us, protection of your privacy isn't just a commitment, but passion. To ensure you get the best user experience, and to get an understanding of metrics, we use cookies with privacy protections like 'Anonymizing IP'. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='/legal/cookie-policy/'>Cookie Policy</a>, <a href='/legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='/legal/terms-and-conditions/'>Terms and Conditions</a>.
+      dismiss: "Okay. Got it!" # text on the button that dismisses the popup/banner | default: "Close"
+      linkText: "Find more about cookies and how we take privacy very seriously, in our Privacy Policy." # this text appears after the message and is hyperlinked | default: "Learn more"
+      linkURL: "/legal/privacy-policy/" # url of location where user should be directed when they click "Learn more".
+      allow: "Allow cookies" # text on the button that allows cookies | default: "Allow"
+      deny: "Decline" # text on the button that denies cookies | default: "Decline"
+      policy: "Cookie Consent" # text that appears on the button, when user's country requires revokable cookie consent | default: "Cookie Consent"
+  userExperience:
+    googleAnalyticsLoading: "async" # accepts value: sync/async | determines whether Google Analytics JavaScript file loads 'Synchronously' or 'Asynchronously' | optional | default: "sync"
 
 author: 
   name: "Sanmay Joshi and Softorage contributors" # required

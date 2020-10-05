@@ -23,22 +23,28 @@
   </script>
   
   {{ if eq hugo.Environment "production" -}}
-    <!-- Google Analytics shall work only on production website -->
-    <!-- prefetch -->
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
-    <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
-    <link rel="dns-prefetch" href="https://www.google-analytics.com/">
-    <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src={{ printf "%s%s" "https://www.googletagmanager.com/gtag/js?id=" site.GoogleAnalytics | safeHTMLAttr }}></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag("js", new Date());
-
-      gtag("config", {{ site.GoogleAnalytics }}, { 'anonymize_ip': true });
-    </script>
-    
+    {{ if site.GoogleAnalytics }}
+      <!-- Google Analytics shall work only on production website -->
+      <!-- prefetch -->
+      <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+      <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
+      <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+      <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+      
+      {{ if and (eq site.Params.cookieConsent.switch "on") (eq site.Params.cookieConsent.type "opt-in") }}
+        <script>
+        // Disable tracking by default
+        window['{{ printf "%s%s" "ga-disable-" site.GoogleAnalytics }}'] = true;
+        </script>
+      {{ end }}
+      
+      {{ if ne site.Params.userExperience.googleAnalyticsLoading "async" }}
+          {{ template "_internal/google_analytics.html" . }}
+        {{ else }}
+          {{ template "_internal/google_analytics_async.html" . }}
+      {{ end }}
+    {{ end }}
+        
     <!-- SEO and Hugo's Tag shall work only on production website -->
     <!-- SEO tag -->
     {{- partial "seo.html" . -}}
@@ -48,7 +54,7 @@
   {{- end }}
   
   <!--  -->
-  {{- $css := (partialCached "reusables/css-resource.html" .) -}}
+  {{- $css := (partial "reusables/css-resource.html" .) -}}
 
   <!-- Minified Aggregated CSS -->
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous" type="text/css">
@@ -58,8 +64,7 @@
   <!-- Prefetch and Preconnect Statically.io - image CDN -->
   <link rel="dns-prefetch" href="https://cdn.statically.io/">
   <link rel="preconnect" href="https://cdn.statically.io/" crossorigin>
-  <!-- Request Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">
+  
   <!--
   Since making more connections and request request costs more in time than the savings by reduction of size, we have used:
   <link href="https://fonts.googleapis.com/css?family=Roboto|Lato&display=swap" rel="stylesheet">

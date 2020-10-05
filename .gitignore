@@ -3,3 +3,5 @@ resources
 layouts/test/
 content/test/
 node_modules
+hugo_stats.json
+npm-debug.log

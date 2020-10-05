@@ -556,6 +556,7 @@ color: #000000;
 color: #0078d7;
 }
 
+{{ if eq site.Params.cookieConsent.switch "on" }}
 // Cookie Consent from Osano; url: https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css
 /* purgecss start ignore */
 // osano cookie consent customization
@@ -946,3 +947,4 @@ screen and (max-width:736px) and (orientation:landscape) {
   margin-left: 0
 }
 /* purgecss end ignore */
+{{ end }}

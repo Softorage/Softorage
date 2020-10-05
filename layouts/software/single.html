@@ -722,21 +722,21 @@
                                 {{- if $minimum -}}
                                 <td>
                                   {{- if $rowElement.min }}
-                                    {{- safeHTML (replace (markdownify (replace $rowElement.min " | " "  I  ")) "  I  " " | ") }}
+                                    {{- safeHTML (replace ($.Page.RenderString (replace $rowElement.min " | " "  I  ")) "  I  " " | ") }}
                                   {{- end -}}
                                 </td>
                                 {{- end }}
                                 {{- if $recommended -}}
                                 <td>
                                   {{- if $rowElement.recm }}
-                                    {{- safeHTML (replace (markdownify (replace $rowElement.recm " | " "  I  ")) "  I  " " | ") -}}
+                                    {{- safeHTML (replace ($.Page.RenderString (replace $rowElement.recm " | " "  I  ")) "  I  " " | ") -}}
                                   {{- end -}}
                                 </td>
                                 {{- end }}
                                 {{- if $optimal -}}
                                 <td>
                                   {{- if $rowElement.optm }}
-                                    {{- safeHTML (replace (markdownify (replace $rowElement.optm " | " "  I  ")) "  I  " " | ") }}
+                                    {{- safeHTML (replace ($.Page.RenderString (replace $rowElement.optm " | " "  I  ")) "  I  " " | ") }}
                                   {{- end -}}
                                 </td>
                                 {{- end }}
@@ -1100,7 +1100,7 @@
       <div class="card-body">
         <h2 class="card-title h4 m-0">Notes</h2>
         <div class="card-text mt-3">
-          {{ .Params.note | markdownify }}
+          {{ $.Page.RenderString .Params.note }}
         </div>
       </div>
     </div>
