@@ -5,8 +5,8 @@ baseURL: "https://softorage.com/" # required
 languageCode: "en-us" # recommended
 
 # with this, Hugo notes some stats about website, which are then used by CSS processors
-build:
-  writeStats: true
+# build:
+#   writeStats: true
   
 # All privacy settings: https://gohugo.io/about/hugo-and-gdpr/#all-privacy-settings
 # Explanations to all privacy settings: https://gohugo.io/about/hugo-and-gdpr/#the-privacy-settings-explained

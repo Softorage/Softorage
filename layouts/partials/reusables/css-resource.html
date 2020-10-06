@@ -3,7 +3,7 @@
 
 <!-- Run PostCSS on $css, only if on Production Environment, since its builds take considerably more time -->
 {{ if eq hugo.Environment "production" -}}
-  {{- $css = $css | postCSS | fingerprint | resources.PostProcess }}
+  {{- $css = $css | postCSS | fingerprint }}
 {{- else }}
   {{- $css = $css | fingerprint }}
 {{- end }}
