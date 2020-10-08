@@ -36,6 +36,11 @@ color: $antinav;
 font-family: 'Roboto', sans-serif;
 }
 
+// headings on softpage
+h2.h4 {
+letter-spacing: 0.06rem;
+}
+
 // especially, search bar
 @media (min-width: 650px) {
   .mobile-only {

@@ -27,7 +27,7 @@
 {{- $no_content := printf "%s%s%s" "Not available, but <a href='/contribute/'>we appreciate help!</a> You can help us <a href='https://gitlab.com/Softorage/softorage.gitlab.io/blob/master/content/" .File.Path "'>improve this page</a>." -}}
 <!-- -->
 <div class="container-fluid main-gradient-light text-clr2 pb-3 pt-4 position-relative shadow-sm">
-  <div style="height:3.5rem;"></div>
+  <div style="height:4rem;"></div>
   <div class="mobile-only" style="height:2.5rem;"></div>
   <div class="row px-2">
     <div class="col-md-8">
@@ -161,7 +161,7 @@
                     <div class="tab-pane fade show active text-center" id="download-authentic" role="tabpanel" aria-labelledby="authentic-tab">
                       {{- range .Params.get_it -}}
                         {{ if (in .from "Authentic") | or (in .from "Google Play") | or (in .from "Apple App") }}
-                          <a href="{{ .url }}" class="btn btn{{ if eq .from "Authentic" }} bg-success-light text-success{{ else }}-sm btn-primary{{ end }} m-2"
+                          <a href="{{ .url }}" rel="noopener noreferrer nofollow" class="btn btn{{ if eq .from "Authentic" }} bg-success-light text-success{{ else }}-sm btn-primary{{ end }} m-2"
                           {{- if .platform }} data-toggle="tooltip" data-placement="top" title="
                           
                           {{- range $index, $platform := .platform -}}
@@ -203,7 +203,7 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "Windows") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}"
+                                      <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
                                       {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
                                         {{- if .portable }}Portable {{ end }}
                                         {{- if and (not .official) (.portable) }}, {{ end }}
@@ -230,7 +230,7 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "Linux") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}"
+                                      <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
                                       {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
                                         {{- if .portable }}Portable {{ end }}
                                         {{- if and (not .official) (.portable) }}, {{ end }}
@@ -257,7 +257,7 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "macOS") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}"
+                                      <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
                                       {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
                                         {{- if .portable }}Portable {{ end }}
                                         {{- if and (not .official) (.portable) }}, {{ end }}
@@ -286,13 +286,13 @@
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (not ((eq .name "macOS") | or (eq .name "Linux") | or (eq .name "Windows") | or (in $download_item.from "Authentic"))) }}
                                     {{/* {{ if not (or (or (or (eq .name "macOS") (eq .name "Linux")) (eq .name "Windows")) (in $download_item.from "Authentic")) }} */}}
-                                      <a href="{{ $download_item.url }}" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} ({{- if .arch }}{{ delimit .arch "/" }} {{- end }}{{ .name }})</a>
+                                      <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} ({{- if .arch }}{{ delimit .arch "/" }} {{- end }}{{ .name }})</a>
                                       {{ $download_available = true }}
                                     {{ end }}
                                   {{ end }}
                                 <!-- if the item doesn't have any platform field and it doesn't have 'Authentic' in its name -->
                                 {{ else if not (in $download_item.from "Authentic") }}
-                                  <a href="{{ $download_item.url }}" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }}</a>
+                                  <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }}</a>
                                   {{ $download_available = true }}
                                 {{ end }}
                                 {{ if and (eq $index $download_len) (not $download_available) }}
@@ -335,7 +335,7 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "smptb" | and (eq .name "Android") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}"
+                                      <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
                                       {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
                                         {{- if .portable }}Portable {{ end }}
                                         {{- if and (not .official) (.portable) }}, {{ end }}
@@ -362,7 +362,7 @@
                                 {{ if $download_item.platform }}
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "smptb" | and (eq .name "iOS") | and (not (in $download_item.from "Authentic")) }}
-                                      <a href="{{ $download_item.url }}"
+                                      <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
                                       {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
                                         {{- if .portable }}Portable {{ end }}
                                         {{- if and (not .official) (.portable) }}, {{ end }}
@@ -391,13 +391,13 @@
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "smptb" | and (not ((eq .name "Android") | or (eq .name "iOS") | or (in $download_item.from "Authentic"))) }}
                                     {{/* {{ if not (or (or (or (eq .name "macOS") (eq .name "Linux")) (eq .name "Windows")) (in $download_item.from "Authentic")) }} */}}
-                                      <a href="{{ $download_item.url }}" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} ({{- if .arch }}{{ delimit .arch "/" }} {{- end }}{{ .name }})</a>
+                                      <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }} ({{- if .arch }}{{ delimit .arch "/" }} {{- end }}{{ .name }})</a>
                                       {{ $download_available = true }}
                                     {{ end }}
                                   {{ end }}
                                 <!-- if the item doesn't have any platform field and it doesn't have 'Authentic' in its name -->
                                 {{ else if not (in $download_item.from "Authentic") }}
-                                  <a href="{{ $download_item.url }}" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }}</a>
+                                  <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow" class="btn btn-sm btn-light text-primary m-2">{{ $download_item.from }}</a>
                                   {{ $download_available = true }}
                                 {{ end }}
                                 {{ if and (eq $index $download_len) (not $download_available) }}
@@ -426,7 +426,7 @@
       {{- end }}
       
       {{- if .Params.website -}}
-        &nbsp;&nbsp;&nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}"><span class="text-primary">{{ site.Data.icons.website | safeHTML }}</span>&nbsp; <span class="text-primary">Visit</span></a> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a class="btn bg-nav my-2" href="{{ .Params.website }}" rel="noopener noreferrer nofollow"><span class="text-primary">{{ site.Data.icons.website | safeHTML }}</span>&nbsp; <span class="text-primary">Visit</span></a> <br>
       {{- end -}}
       
       <div class="row my-2 ml-1">
@@ -493,7 +493,7 @@
           </div>
           <div class="card-text mt-3">
             {{- if .Content }}
-              {{- replace .Content ">  I  <" "> | <" | safeHTML }}
+              {{- replace .Content ">  I  <" ">&nbsp;&nbsp;|&nbsp;&nbsp;<" | safeHTML }}
             {{- else -}}
               {{ $no_content | safeHTML }}
             {{- end -}}
@@ -994,7 +994,7 @@
         <p class="card-text mt-3">
           {{- if .Params.repository }}
             {{- range $index, $element := .Params.repository }}
-              {{- if $index }}, {{ end }}<a href="{{ safeURL $element }}">{{ $element }}</a>
+              {{- if $index }}, {{ end }}<a href="{{ safeURL $element }}" rel="noopener noreferrer nofollow">{{ $element }}</a> <span class="small"><span class="fa-xs text-muted">{{ site.Data.icons.externalLink | safeHTML }}</span></span>
             {{- end }}
           {{- else if in .Params.license "Proprietary" -}}
             {{- $.Title }} being a proprietary software, its source code is not publicly hosted.
