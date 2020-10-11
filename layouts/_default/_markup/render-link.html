@@ -3,7 +3,7 @@
 "
 {{- with .Title }} title="{{ . }}" {{- end }}
 {{- if strings.HasPrefix .Destination "http" }} target="_blank" {{- end -}}
-{{- if not (or (strings.HasPrefix .Destination "http://softorage.com") (strings.HasPrefix .Destination "https://softorage.com")) }} rel="noopener noreferrer nofollow" {{- end -}}
+{{- if not (or (strings.HasPrefix .Destination "http://softorage.com") (strings.HasPrefix .Destination "https://softorage.com") (not (strings.HasPrefix .Destination "http") ) ) }} rel="noopener noreferrer nofollow" {{- end -}}
 > {{- .Text -}} </a>
 <!--
 opnr, rfrr, fllw
