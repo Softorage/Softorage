@@ -11,7 +11,7 @@ before_script:
   - apk add nodejs
   - apk add nodejs-npm
   - apk add curl
-  - npm install postcss-cli autoprefixer cssnano @fullhuman/postcss-purgecss
+  - npm install postcss postcss-cli autoprefixer cssnano @fullhuman/postcss-purgecss
 
 test:
   stage: test
