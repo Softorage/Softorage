@@ -1,11 +1,14 @@
 <a href="
-  {{- .Destination | safeURL -}}
+  {{- if and (not (strings.HasPrefix .Destination "http")) (not (strings.HasSuffix .Destination "/")) -}} {{/* an effort to prevent unnecessary redirects due to missing traing slash */}}
+  {{- safeURL (print .Destination "/") }}
+  {{- else }}
+  {{- safeURL .Destination }}
+  {{- end -}}
 "
 {{- with .Title }} title="{{ . }}" {{- end }}
 {{- if strings.HasPrefix .Destination "http" }} target="_blank" {{- end -}}
 {{- if not (or (strings.HasPrefix .Destination "http://softorage.com") (strings.HasPrefix .Destination "https://softorage.com") (not (strings.HasPrefix .Destination "http") ) ) }} rel="noopener noreferrer nofollow" {{- end -}}
-> {{- .Text -}} </a>
-<!--
+> {{- .Text -}} </a><!--
 opnr, rfrr, fllw
 
 these could be tags that we use in anchor text, but filter out when displaying the anchor text with the help of replace. these tags would help in making specific links omit the noopener, noreferrer or nofollow attribute value in rel attribute.

@@ -277,7 +277,7 @@ rating:
   - name: "TechRadar"
     rate: [4, 5]
 ---
-  7-Zip is a [file archiver](/categories/file-archiver), [file manager](/categories/file-manager) developed by Igor Pavlov and was first released in 1999. It includes support for:
+  7-Zip is a [file archiver](/categories/file-archiver/), [file manager](/categories/file-manager/) developed by Igor Pavlov and was first released in 1999. It includes support for:
   * Un/packing: 7z, XZ, BZIP2, GZIP, TAR, ZIP and WIM file formats
   * Unpacking: AR, ARJ, CAB, CHM, CPIO, CramFS, DMG, EXT, FAT, GPT, HFS, IHEX, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, QCOW2, RAR, RPM, SquashFS, UDF, UEFI, VDI, VHD, VMDK, WIM, XAR and Z file formats
   
