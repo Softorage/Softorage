@@ -1053,7 +1053,7 @@
         <p class="card-text mt-3">
           {{- if .Params.categories }}
             {{- range $i, $e := .Params.categories }}
-              {{- if $i }},  {{ end }}<a href="/categories/{{ lower (replace $e " " "-") }}">{{ $e }}</a>
+              {{- if $i }},  {{ end }}<a href="/categories/{{ lower (replace $e " " "-") }}/">{{ $e }}</a>
             {{- end -}}
           {{- else -}}
             {{ $no_content | safeHTML }}
@@ -1064,7 +1064,7 @@
   </div>
   <!-- Alternatives -->
   <!-- total number of software (subtracted 1 since they start from zero) -->
-  {{ $total_soft := sub (len (where site.RegularPages "Section" "==" "software")) 1 }}
+  {{ $total_soft := sub (len (where site.RegularPages "Type" "==" "software")) 1 }}
   <!-- stores availability of software for given category -->
   {{ $categ_available := false }}
   <div class="card">
@@ -1077,7 +1077,7 @@
           {{- if ne $category "Framework" -}}
             {{- if $i }}<br>{{ end -}}
             <span class="h6">{{ $category }}</span><br>
-            {{- range $index, $current := where site.RegularPages "Section" "==" "software" }}
+            {{- range $index, $current := where site.RegularPages "Type" "==" "software" }}
               {{- if and (not (eq $current.Params.title $.Title)) (in $current.Params.categories $category) -}}
                 <a class="btn btn-sm btn-light shadow-sm my-2" {{- if in $current.Params.license "Proprietary" }} data-toggle="tooltip" data-placement="top" title="Proprietary" {{- else }} data-toggle="tooltip" data-placement="top" title="Free and Open Source" {{- end }} href="{{ $current.Permalink }}">{{ replace (replace $current.Params.title "(" "<span class='small' style='font-weight: 400;'>(") ")" ")</span>" | safeHTML }}</a> &nbsp;
                 {{ $categ_available = true }}
