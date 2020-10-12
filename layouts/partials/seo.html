@@ -1,3 +1,10 @@
+{{ $range_counter := 1 }}
+
+{{ $socialProfiles_len := 0 }}
+{{ if site.Params.social.profiles }}
+{{ $socialProfiles_len = len site.Params.social.profiles }}
+{{ end }}
+
 <!-- declare $platform_in_title as an array -->
 {{ $platform_in_title := slice }}
 {{ if .Params.platform }}
@@ -121,10 +128,18 @@
     "logo": {{ site.Params.image }},
     {{ end }}
     "description": {{ site.Params.description }},
+    {{ if site.Params.social.profiles }}
     "sameAs" : [
-      "https://twitter.com/Softorage",
-      "https://www.facebook.com/Softorage",
-      "https://www.instagram.com/softorage"
+      {{ range $name, $url := site.Params.social.profiles }}
+        {{ $url }} {{- if ne $range_counter $socialProfiles_len }}, {{ $range_counter = add $range_counter 1 }} {{ end }}
+      {{ end -}}
+      {{/*
+      since we don't want to show "," when it is the last iteration, we take following approach:
+      1. define a variable $range_counter, assign it value 1 just before range,
+      2. create another variable $elem_len (accessible after the line of definition) which stores length of element we are iterating over,
+      3. compare $range_counter with $elem_len to know whether its last iteration, while simultaneously incrementing $counter by one for each iteration
+      */}}
+    {{ end }}
     ]
   }
   </script>
@@ -153,10 +168,12 @@
             "@type": "Person",
             "name": {{ site.Author.name }}
         },
+        {{ if site.Params.social.profiles }}
         "sameAs" : [
-          "https://twitter.com/Softorage",
-          "https://www.facebook.com/Softorage",
-          "https://www.instagram.com/softorage"
+          {{ range $name, $url := site.Params.social.profiles }}
+            {{ $url }} {{- if ne $range_counter $socialProfiles_len }}, {{ $range_counter = add $range_counter 1 }} {{ end }}
+          {{ end -}}
+        {{ end }}
         ]
       }
     {{ else -}}
@@ -176,10 +193,12 @@
         "image": {{ .Params.image }},
         {{ end -}}
         "description": {{ .Description | default site.Params.description }},
+        {{ if site.Params.social.profiles }}
         "sameAs" : [
-          "https://twitter.com/Softorage",
-          "https://www.facebook.com/Softorage",
-          "https://www.instagram.com/softorage"
+          {{ range $name, $url := site.Params.social.profiles }}
+            {{ $url }} {{- if ne $range_counter $socialProfiles_len }}, {{ $range_counter = add $range_counter 1 }} {{ end }}
+          {{ end -}}
+        {{ end }}
         ]
       }
     {{ end -}}
