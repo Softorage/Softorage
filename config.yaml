@@ -52,7 +52,7 @@ params:
       linkURL: "/legal/privacy-policy/" # url of location where user should be directed when they click "Learn more".
       allow: "Allow cookies" # text on the button that allows cookies | default: "Allow"
       deny: "Decline" # text on the button that denies cookies | default: "Decline"
-      policy: "Cookie Consent" # text that appears on the button, when user's country requires revokable cookie consent | default: "Cookie Consent"
+      policy: "🍪" # text that appears on the button, when user's country requires revokable cookie consent | default: "Cookie Consent"
   userExperience:
     googleAnalyticsLoading: "async" # accepts value: sync/async | determines whether Google Analytics JavaScript file loads 'Synchronously' or 'Asynchronously' | optional | default: "sync"
 

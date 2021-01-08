@@ -572,41 +572,41 @@
               <!-- Range through all elements from the social param and assign (Set) respective value to $scratch -->
               {{- range $index, $element := .Params.social }}
                 {{- if eq $element.name "Wikipedia" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.wikipedia ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.wikipedia ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "YouTube" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.youtube ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.youtube ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Facebook" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.facebook ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.facebook ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Twitter" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.twitter ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.twitter ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Pinterest" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.pinterest ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.pinterest ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Instagram" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.instagram ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.instagram ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "LinkedIn" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.linkedin ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.linkedin ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "VK" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.vk ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.vk ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "DeviantArt" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.deviantart ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.deviantart ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Google+" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.googlePlus ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.googlePlus ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "reddit" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.reddit ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.reddit ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Flickr" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.flickr ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.flickr ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "mastodon" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.mastodon ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.mastodon ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "GitHub" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.github ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.github ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Steam" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.steam ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.steam ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Bandcamp" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.bandcamp ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.bandcamp ) `</span></a>`) "") -}}
                 {{- else if eq $element.name "Medium" -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `"><span class="fa-2x">` ( safeHTML site.Data.icons.medium ) `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a` ` aria-label="` $.Title ` on ` $element.name `"` ` href="` $element.url `" rel="noopener nofollow"><span class="fa-2x">` ( safeHTML site.Data.icons.medium ) `</span></a>`) "") -}}
                 {{- else -}}
-                  {{- $scratch.Set "social_item" (delimit (slice `<a class="border p-1" href="` $element.url `"><span>` $element.name `</span></a>`) "") -}}
+                  {{- $scratch.Set "social_item" (delimit (slice `<a class="border p-1" href="` $element.url `" rel="noopener nofollow"><span>` $element.name `</span></a>`) "") -}}
                 {{- end -}}
                 <!-- Get the value stored in $scratch -->
                 {{- if $index }}&nbsp; {{ end }}{{ $scratch.Get "social_item" }}
