@@ -102,6 +102,8 @@ license: ["LGPL v3"]
 social:
   - name: "Facebook"
     url: "https://www.facebook.com/WinCDEmu/"
+  - name: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/WinCDEmu"
 
 source:
   overview: ["https://wincdemu.sysprogs.org/"]

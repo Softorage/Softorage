@@ -3,7 +3,7 @@ title: "Zoom"
 
 description: "Zoom is a videoconferencing/videotelephony software"
 
-image: "https://cdn.statically.io/img/img.softorage.com/software-logo/zoom.svg?h=64"
+image: "https://cdn.statically.io/img/img.softorage.com/software-logo/zoom.png?h=64"
 
 status: ["Active"]
 
