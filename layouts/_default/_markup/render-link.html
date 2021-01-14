@@ -16,4 +16,5 @@ these could be tags that we use in anchor text, but filter out when displaying t
 eg,
 [A great anhor text (opnr,fllw)](https://link) and then use replace on { .Text } : { replaceRE }
 -->
-{{- if strings.HasPrefix .Destination "http" }} <span class="small"><span class="fa-xs text-muted">{{ site.Data.icons.externalLink | safeHTML }}</span></span>&nbsp;{{ end -}}
+{{- if strings.HasPrefix .Destination "http" }} <span class="small"><span class="fa-xs text-muted">{{ site.Data.icons.externalLink | safeHTML }}</span> </span>
+{{- end -}}
