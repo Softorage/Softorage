@@ -71,7 +71,7 @@
       <div class="h2 text-center pb-3">Hmm... We couldn't find any matches for your search.</div>
       
       Please try searching for a different term, or if you are really sure that you have searched correctly and want the software of your choice to appear here, feel free to open an issue <a href="https://gitlab.com/Softorage/softorage.gitlab.io/issues">here</a>.
-    </div>
+  </div>
   
   <div class="container-fluid bg-antinav-light py-3 list">
     <!-- Defining $proprietary and $rating_stars as a global variable -->
@@ -253,10 +253,9 @@ if (window.matchMedia('(min-width: 650px)').matches) {
 $(searchBarByUserDevice).on("keyup", function() {
   searchString = $(this).val();
   softwareList.search(searchString);
-  console.log(softwareList.visibleItems);
+  /* show an explanatory text, when no results are returned after search */
   if (Array.isArray(softwareList.visibleItems) && (softwareList.visibleItems.length == 0 || softwareList.visibleItems.length == null)) {
     $(".empty_search").removeClass("d-none");
-    console.log(softwareList.visibleItems);
   } else {
     $(".empty_search").addClass("d-none");
   }
