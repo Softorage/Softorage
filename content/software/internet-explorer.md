@@ -18,7 +18,6 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse (IE 8/9/11)"
     url: "https://www.filehorse.com/download-internet-explorer/"
     platform:
@@ -26,56 +25,48 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Softonic (IE 7)"
     url: "https://internet-explorer-7.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (IE 8)"
     url: "https://internet-explorer-8.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (IE 9)"
     url: "https://internet-explorer-9.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (IE 10)"
     url: "https://internet-explorer-10.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (IE 11)"
     url: "https://internet-explorer-11-windows-7.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo (IE 11)"
     url: "https://filehippo.com/download_internet_explorer_windows_7/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://internet-explorer-for-mac.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   general:

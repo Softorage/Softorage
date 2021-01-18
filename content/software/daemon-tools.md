@@ -16,91 +16,78 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot (Pro)"
     url: "https://www.techspot.com/downloads/208-daemon-tools.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (Lite)"
     url: "https://daemon-tools-lite.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (Pro)"
     url: "https://daemon-tools-pro.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (Ultra)"
     url: "https://daemon-tools-ultra.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia (Lite)"
     url: "https://www.softpedia.com/get/CD-DVD-Tools/Virtual-CD-DVD-Rom/DAEMON-Tools.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida (Lite)"
     url: "https://www.malavida.com/en/soft/daemon-tools/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo (Lite)"
     url: "https://filehippo.com/download_daemon_tools/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse (Lite)"
     url: "https://www.filehorse.com/download-daemon-tools/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown (Lite)"
     url: "https://daemon-tools.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET (Pro)"
     url: "https://download.cnet.com/Daemon-Tools-Pro/3000-2242_4-10744439.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida (Lite)"
     url: "https://www.malavida.com/en/soft/daemon-tools/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse (Lite)"
     url: "https://mac.filehorse.com/download-daemon-tools/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   general:
@@ -269,6 +256,7 @@ rating:
 
 note: |
   * See [this page](https://www.daemon-tools.cc/support/faq#system_requirements) to know various Windows versions for which DAEMON Tools is available.
+  
 ---
   DAEMON Tools is a [virtual drive](/categories/virtual-drive/) and [optical disc authoring program](/categories/optical-disc-authoring/). It was originally a successor of Generic SafeDisc emulator and incorporated all of its features. It supports image compression, image password protection (to .mds and .mdx images), image creation (supported output formats include .iso, .mds/.mdf and .mdx), along with more advanced features for premium versions such as Pro and Ultra.
   

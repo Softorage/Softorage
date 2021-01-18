@@ -18,15 +18,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-webtorrent-64/"
     platform:
@@ -34,36 +31,30 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6903-webtorrent-desktop.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-webtorrent/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://mac.softpedia.com/get/Internet-Utilities/WebTorrent.shtml"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["Feross Aboukhadijeh"]
 

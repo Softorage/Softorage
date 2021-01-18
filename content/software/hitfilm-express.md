@@ -18,65 +18,52 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/hitfilm-express/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://hitfilm-express.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-hitfilm-express/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_hitfilm-express/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/62346/hitfilm-express"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-hitfilm-express/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://hitfilm-express.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Free Version | Authentic"
     url: "https://fxhome.com/hitfilm-express/download-for-free"
 
 sysreq:
-  software:
-    -
-      min: "Apple: macOS 10.15 Catalina, macOS 10.14 Mojave, or 10.13 High Sierra"
-    -
-      min: "Windows: Microsoft Windows 10 (64-bit), Microsoft Windows 8 (64-bit)"
   hardware:
     -
       min: "Processor: 4th Generation Intel® Core™ Processors or AMD equivalent"
@@ -87,6 +74,11 @@ sysreq:
     -
       min: "Graphics card:\n* NVIDIA GeForce 600 (Kepler) series (2012)\n* AMD Radeon R5 240 (2013)\n* Intel HD Graphics 5000 (GT3) (2013)\n* Video memory: 1 GB"
       recm: "Video memory: 2GB or more required for 4K UHD"
+  software:
+    -
+      min: "Apple: macOS 10.15 Catalina, macOS 10.14 Mojave, or 10.13 High Sierra"
+    -
+      min: "Windows: Microsoft Windows 10 (64-bit), Microsoft Windows 8 (64-bit)"
 
 developer: ["FXhome Limited"]
 
@@ -109,8 +101,8 @@ source:
   platform:
     - dskp: ["https://fxhome.com/support/hitfilm-express"]
   sysreq:
-    software: ["https://fxhome.com/hitfilm-express#faq1", "https://fxhome.com/support/hitfilm-express"]
     hardware: ["https://fxhome.com/hitfilm-express#faq1", "https://fxhome.com/support/hitfilm-express"]
+    software: ["https://fxhome.com/hitfilm-express#faq1", "https://fxhome.com/support/hitfilm-express"]
   license: ["https://fxhome.com/hitfilm-express/license", "https://fxhome.com/hitfilm-pro/license"]
   rating:
     - name: "Softpedia"
@@ -188,7 +180,6 @@ rating:
     num: 22
   - name: "TechRadar"
     rate: [4.5, 5]
-
 ---
   HitFilm Express is a [video editing](/categories/video-editor/) software with VFX tools to make content, films or gaming videos. It supports MP4 H.264 import & export, AVCHD import, QuickTime import (QuickTime install required on Windows) and AVI, M2T, M2TS, MTS, MXF (DVCPro HD), DV, HDV, WMV video import.
   

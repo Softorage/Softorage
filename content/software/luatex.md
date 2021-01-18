@@ -49,6 +49,7 @@ source:
 
 note: |
   * Username and password for repository are [given on official website](http://www.luatex.org/download.html); both `anonsvn`.
+  
 ---
   LuaTeX is a TeX-based computer [typesetting](/categories/typesetting) system which is an extended version of pdfTeX using Lua as an embedded scripting language.
   

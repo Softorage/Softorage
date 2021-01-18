@@ -54,6 +54,7 @@ source:
 
 note: |
   * Release after thesis-release is counted as initial release.
+  
 ---
   MOA (Massive Online Analysis) is an open source framework for [data stream mining](/categories/data-mining) including [machine learning](/categories/machine-learning) algorithms such as classification, regression, clustering, outlier detection, concept drift detection and recommender systems and tools for evaluation. MOA is written in Java and relates to [WEKA](/software/weka/) project.
   

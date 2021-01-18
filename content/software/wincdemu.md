@@ -18,64 +18,57 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/wincdemu/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FossHub"
     url: "https://www.fosshub.com/WinCDEmu.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-wincdemu/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/WinCDEmu/3000-20432_4-10971940.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://wincd-emu.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/CD-DVD-Tools/Virtual-CD-DVD-Rom/WinCDEmu.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/CD-DVD-Tools/Portable-WinCDEmu.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
 
 sysreq:
   general:
@@ -152,7 +145,6 @@ rating:
     rate: [4.4, 5]
     num: 25
     remarks: "Portable"
-
 ---
   WinCDEmu is an open-source utility for [mounting disk image](/categories/virtual-drive/) files in Microsoft Windows. It runs on 32-bit and 64-bit Windows versions from XP to Windows 10; has size less than 2MB; does not occupy drive letters when not used.
   

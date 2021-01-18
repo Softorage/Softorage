@@ -18,77 +18,66 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_gom_player/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://gom-player.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://gom-player.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-gom-player/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/GOM-Player/3000-13632_4-10551786.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-gom-player/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://gom-player.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.gretech.gomplayerko"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://gom-player.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/gom-player/id672542880"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
 
 developer: ["GOM & Company"]
 

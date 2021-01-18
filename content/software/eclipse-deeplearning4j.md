@@ -95,6 +95,7 @@ note: |
     * Apache Maven (automated build and dependency manager)
     * IntelliJ IDEA or Eclipse
     * Git
+  
 ---
   Eclipse Deeplearning4j is a [deep learning](/categories/deep-learning) programming library written for Java and Scala and a computing framework with wide support for [deep learning](/categories/deep-learning) algorithms.
   

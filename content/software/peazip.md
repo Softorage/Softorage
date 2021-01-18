@@ -19,12 +19,10 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "GitHub Releases | Authentic"
     url: "https://github.com/giorgiotani/PeaZip/releases/"
     platform:
@@ -32,12 +30,10 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "FossHub"
     url: "https://www.fosshub.com/PeaZip.html"
     platform:
@@ -45,7 +41,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5078-peazip-for-linux.html"
     platform:
@@ -53,7 +48,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Compression-Tools/PeaZip-Portable.shtml"
     platform:
@@ -61,14 +55,12 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_peazip/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/PeaZip/3000-2250_4-10602256.html"
     platform:
@@ -76,7 +68,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/PeaZip-64-bit/3000-2250_4-75179694.html"
     platform:
@@ -84,7 +75,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-peazip-32/"
     platform:
@@ -92,7 +82,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-peazip-portable-32/"
     platform:
@@ -100,21 +89,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://peazip.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/System/Archiving/PeaZip-19508.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["Giorgio Tani"]
 

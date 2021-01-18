@@ -20,67 +20,61 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://keepass.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://keepass-password-safe-portable.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/479-keepass.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "CNET"
     url: "https://download.cnet.com/KeePass-Password-Safe/3000-18501_4-75447317.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/KeePass-Password-Safe-Portable/3000-18501_4-75216982.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-keepass/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Security/Password-Managers-Generators/KeePass-Password-Safe.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Security/Password-Managers---Generators/Windows-Portable-Applications-KeePass-Password-Safe-Portable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
 
 developer: ["Dominik Reichl"]
 
@@ -204,7 +198,6 @@ rating:
   - name: "G2CROWD"
     rate: [4.5, 5]
     num: 177
-
 ---
   KeePass is a free and open-source [password manager](/categories/password-manager/) primarily for Windows, with official support for macOS and Linux operating systems through the use of Mono. There are also unofficial ports for Windows Phone, Android, iOS, and BlackBerry devices.
   

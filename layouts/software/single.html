@@ -204,9 +204,9 @@
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "Windows") | and (not (in $download_item.from "Authentic")) }}
                                       <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
-                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
-                                        {{- if .portable }}Portable {{ end }}
-                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                      {{- if or (not .official) (.remarks) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .remarks }}{{ .remarks }} {{ end }}
+                                        {{- if and (not .official) (.remarks) }}, {{ end }}
                                         {{- if not .official }}
                                           {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Windows Unofficial Version
                                         {{- end }}"
@@ -231,9 +231,9 @@
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "Linux") | and (not (in $download_item.from "Authentic")) }}
                                       <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
-                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
-                                        {{- if .portable }}Portable {{ end }}
-                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                      {{- if or (not .official) (.remarks) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .remarks }}{{ .remarks }} {{ end }}
+                                        {{- if and (not .official) (.remarks) }}, {{ end }}
                                         {{- if not .official }}
                                           {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Linux Unofficial Version
                                         {{- end }}"
@@ -258,9 +258,9 @@
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "dskp" | and (eq .name "macOS") | and (not (in $download_item.from "Authentic")) }}
                                       <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
-                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
-                                        {{- if .portable }}Portable {{ end }}
-                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                      {{- if or (not .official) (.remarks) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .remarks }}{{ .remarks }} {{ end }}
+                                        {{- if and (not .official) (.remarks) }}, {{ end }}
                                         {{- if not .official }}
                                           {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} macOS Unofficial Version
                                         {{- end }}"
@@ -336,9 +336,9 @@
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "smptb" | and (eq .name "Android") | and (not (in $download_item.from "Authentic")) }}
                                       <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
-                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
-                                        {{- if .portable }}Portable {{ end }}
-                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                      {{- if or (not .official) (.remarks) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .remarks }}{{ .remarks }} {{ end }}
+                                        {{- if and (not .official) (.remarks) }}, {{ end }}
                                         {{- if not .official }}
                                           {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} Android Unofficial Version
                                         {{- end }}"
@@ -363,9 +363,9 @@
                                   {{ range $download_item.platform }}
                                     {{ if in .hardware "smptb" | and (eq .name "iOS") | and (not (in $download_item.from "Authentic")) }}
                                       <a href="{{ $download_item.url }}" rel="noopener noreferrer nofollow"
-                                      {{- if or (not .official) (.portable) }} data-toggle="tooltip" data-placement="top" title="
-                                        {{- if .portable }}Portable {{ end }}
-                                        {{- if and (not .official) (.portable) }}, {{ end }}
+                                      {{- if or (not .official) (.remarks) }} data-toggle="tooltip" data-placement="top" title="
+                                        {{- if .remarks }}{{ .remarks }} {{ end }}
+                                        {{- if and (not .official) (.remarks) }}, {{ end }}
                                         {{- if not .official }}
                                           {{- $download_item.from }} | {{- if .arch }} {{ delimit .arch "/" }} {{- end }} iOS Unofficial Version
                                         {{- end }}"

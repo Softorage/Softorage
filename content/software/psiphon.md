@@ -18,105 +18,90 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_psiphon/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://psiphon.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-psiphon/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://psiphon.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/psiphon/id1276263909"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store (Browser)"
     url: "https://apps.apple.com/app/psiphon-browser/id1193362444"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.psiphon3"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Pro)"
     url: "https://play.google.com/store/apps/details?id=com.psiphon3.subscription"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://psiphon.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "APKPure (Pro)"
     url: "https://apkpure.com/psiphon-pro-the-internet-freedom-vpn/com.psiphon3.subscription"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/psiphon/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://psiphon.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://psiphon.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "For Win XP and Vista"
     url: "https://psiphon.ca/en/faq.html#windows-xp-eol"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["Psiphon Inc", "the Citizen Lab at the University of Toronto<OD>"]
 

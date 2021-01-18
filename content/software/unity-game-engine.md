@@ -18,64 +18,54 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/3673-unity.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-unity/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://unity.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://unity.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-unity/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://unity.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Unity Download Archive | Authentic"
     url: "https://unity3d.com/get-unity/download/archive"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   linux:

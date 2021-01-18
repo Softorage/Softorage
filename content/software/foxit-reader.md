@@ -18,95 +18,76 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-foxit-reader/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-foxit-reader-portable/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/2713-foxit-reader.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/PDF/Foxit-PDF-Reader.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Office/Calendar-Organizers/PDF/Windows-Portable-Applications-Foxit-Reader-for-U3.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Uptodown"
     url: "https://foxit-reader.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://foxit-reader.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://foxit-reader.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/foxit-pdf-pdf-reader-editor/id507040546"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/55772/foxit-reader"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
-  software:
-    -
-      min: "Microsoft Windows\n* Windows 7\n* Windows 8\n* Windows 10"
-    -
-      min: "macOS: macOS 10.13 or higher"
-    -
-      min: "Linux:\n* Ubuntu Desktop 14.04 ~ 16.10\n* Red Hat Enterprise Linux Server 6.x (64-bit) ~ 7.x\n* SUSE 12 Linux Enterprise Server\n* OpenSUSE 13.2\n* OpenSUSE Leap 42.x\n\n* For users utilizing the Active Directory Rights Management Service, the following systems are supported:\n   * Ubuntu Desktop 14.04 ~ 16.10\n   * Red Hat Enterprise Linux Server 6.x ~ 7.x\n   * OpenSUSE 13.2\n   * OpenSUSE Leap 42.x"
-    -
-      min: "Citrix: Verified as Citrix Ready® with Citrix XenApp® 7.13"
   hardware:
     -
       min: "Processor: 1.3 GHz or faster"
@@ -120,6 +101,15 @@ sysreq:
     -
       min: "Screen Resolution: 1024*768"
       recm: "Supports 4K and other high-resolution displays"
+  software:
+    -
+      min: "Microsoft Windows\n* Windows 7\n* Windows 8\n* Windows 10"
+    -
+      min: "macOS: macOS 10.13 or higher"
+    -
+      min: "Linux:\n* Ubuntu Desktop 14.04 ~ 16.10\n* Red Hat Enterprise Linux Server 6.x (64-bit) ~ 7.x\n* SUSE 12 Linux Enterprise Server\n* OpenSUSE 13.2\n* OpenSUSE Leap 42.x\n\n* For users utilizing the Active Directory Rights Management Service, the following systems are supported:\n   * Ubuntu Desktop 14.04 ~ 16.10\n   * Red Hat Enterprise Linux Server 6.x ~ 7.x\n   * OpenSUSE 13.2\n   * OpenSUSE Leap 42.x"
+    -
+      min: "Citrix: Verified as Citrix Ready® with Citrix XenApp® 7.13"
 
 developer: ["Foxit Software Inc."]
 
@@ -169,8 +159,8 @@ source:
     - dskp: ["https://www.foxitsoftware.com/downloads/"]
     - smptb: ["https://www.foxitsoftware.com/downloads/"]
   sysreq:
-    software: ["https://www.foxitsoftware.com/pdf-reader/"]
     hardware: ["https://www.foxitsoftware.com/pdf-reader/"]
+    software: ["https://www.foxitsoftware.com/pdf-reader/"]
   license: ["https://www.foxitsoftware.com/pdf-reader/eula.html"]
   rating:
     - name: "CNET"
@@ -277,7 +267,6 @@ rating:
   - name: "Capterra"
     rate: [4.6, 5]
     num: 432
-
 ---
   Foxit Reader is a multilingual freemium PDF tool that can view, digitally sign, and print PDF files. Early versions of Foxit Reader were notable for faster startup and small file size. It also integrates with ECMs(Enterprise Content Management) and cloud storage.
   

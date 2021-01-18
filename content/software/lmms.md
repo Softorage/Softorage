@@ -19,21 +19,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_lmms/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://lmms.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-lmms-64/"
     platform:
@@ -41,7 +38,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://lmms.en.uptodown.com/windows"
     platform:
@@ -49,7 +45,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/LMMS-32-bit/3000-2170_4-10967914.html"
     platform:
@@ -57,7 +52,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/LMMS-64-bit/3000-2170_4-75289588.html"
     platform:
@@ -65,21 +59,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/lmms/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/55961/lmms"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   general:

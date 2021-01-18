@@ -20,28 +20,24 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-em-client/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/eM-Client/3000-2367_4-10813093.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/E-mail/E-mail-Clients/eM-Client.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["eM Client Inc."]
 

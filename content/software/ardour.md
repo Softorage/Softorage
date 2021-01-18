@@ -18,14 +18,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/ardour/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   general:
@@ -109,6 +107,7 @@ rating:
 note: |
   * [System Requirements](#sysreq) in detail can be seen [here](https://community.ardour.org/linux_system_requirements) & [here](https://ardour.org/requirements.html)
   * Ardour is an 'unsigned application', so OS X and later might ask for extra confirmation the first time you run it.
+  
 ---
   Ardour is a hard disk recorder and [digital audio workstation](/categories/digital-audio-workstation) application. It runs on Linux, macOS, FreeBSD and Microsoft Windows. Its primary author is Paul Davis, who is also responsible for the JACK Audio Connection Kit. Ardour is intended to be [digital audio workstation](/categories/digital-audio-workstation) software suitable for professional use.
   

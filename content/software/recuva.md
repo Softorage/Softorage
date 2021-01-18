@@ -18,49 +18,44 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/System/Backup-and-Recovery/Portable-Recuva.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/recuva/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://recuva.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://recuva-portable.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Uptodown"
     url: "https://recuva.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_recuva/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   general:

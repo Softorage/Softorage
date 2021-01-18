@@ -18,28 +18,25 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/PDF/PDF-XChange-Editor.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/PDF-XChange-Editor/3000-18497_4-75935420.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/PDF/PDF-XChange-Editor-Portable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
 
 sysreq:
   general:
@@ -121,7 +118,6 @@ rating:
   - name: "CNET"
     rate: [4, 5]
     num: 17
-
 ---
   PDF-XChange Editor is a free PDF viewer/editor and can create, view, edit, annotate, OCR and digitally sign PDF files. Its OCR process identifies text in documents and uses it to create an invisible text layer that is placed on top of the existing text. It can also be used to convert Microsoft Office documents into PDF, which requires source files to be text-based in order to be converted into editable text.
   

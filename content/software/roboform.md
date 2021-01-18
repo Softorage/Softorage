@@ -18,76 +18,66 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-roboform/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Tweak/Browser-Tweak/AI-RoboForm.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Security/Password-Managers---Generators/Windows-Portable-Applications-Pass2Go.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Softonic"
     url: "https://roboform.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_roboform/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/50516/roboform"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-roboform/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.siber.roboform"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
 
 sysreq:
-  windows:
+  android:
     -
-      min: "OS: Windows Vista, 7, 8, and 10 as well as Windows Server"
+      min: "OS: Android 4.1.3 and above"
+  ios:
     -
-      min: "Supported browsers include Internet Explorer 8.0 or later and the latest Google Chrome, Mozilla Firefox, and Opera."
-    -
-      min: "All service packs and security patches must be installed."
+      min: "OS: iOS 8 and above"
   macos:
     -
       min: "OS: macOS 10.12 and up"
@@ -95,12 +85,13 @@ sysreq:
       min: "Supported browsers include Safari, Chrome, and Firefox."
     -
       min: "All service packs and security patches must be installed."
-  ios:
+  windows:
     -
-      min: "OS: iOS 8 and above"
-  android:
+      min: "OS: Windows Vista, 7, 8, and 10 as well as Windows Server"
     -
-      min: "OS: Android 4.1.3 and above"
+      min: "Supported browsers include Internet Explorer 8.0 or later and the latest Google Chrome, Mozilla Firefox, and Opera."
+    -
+      min: "All service packs and security patches must be installed."
 
 developer: ["Siber Systems Inc."]
 
@@ -145,10 +136,10 @@ source:
     - dskp: ["https://www.roboform.com/download"]
     - smptb: ["https://www.roboform.com/download"]
   sysreq:
-    windows: ["https://www.roboform.com/manual"]
-    macos: ["https://www.roboform.com/manual-mac#Installation"]
-    ios: ["https://www.roboform.com/manual-ios#Installation"]
     android: ["https://www.roboform.com/manual-android#Installation"]
+    ios: ["https://www.roboform.com/manual-ios#Installation"]
+    macos: ["https://www.roboform.com/manual-mac#Installation"]
+    windows: ["https://www.roboform.com/manual"]
   license: ["https://www.roboform.com/license"]
   rating:
     - name: "TechSpot"
@@ -263,7 +254,6 @@ rating:
   - name: "PCWorld"
     rate: [3.5, 5]
     remarks: "Roboform Everywhere"
-
 ---
   RoboForm is a [form filler](/categories/form-filler/) and [password manager](/categories/password-manager/). Its free version has features such as multi-platform support, unlimited logins, passwords creation, password audit and form filling. Its paid version(s) include features depending on the  price paid, such as access on all devices, account data backup, share logins functionality and 24/7 support.
   

@@ -18,56 +18,48 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/driver-booster/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://driver-booster.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo (Free)"
     url: "https://filehippo.com/download_driver-booster-free/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse (Free)"
     url: "https://www.filehorse.com/download-driver-booster-free/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse (Pro)"
     url: "https://www.filehorse.com/download-driver-booster-pro/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (Free)"
     url: "https://driver-booster-free.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Driver-Booster/3000-18513_4-75992725.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   general:

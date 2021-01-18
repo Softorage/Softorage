@@ -18,7 +18,6 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_mozilla-firefox/"
     platform:
@@ -26,7 +25,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_mozilla-firefox-64/"
     platform:
@@ -34,14 +32,12 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/mozilla-firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-firefox-32/"
     platform:
@@ -49,7 +45,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/19-mozilla-firefox.html"
     platform:
@@ -57,23 +52,19 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/firefox/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Mozilla-Firefox-Final.shtml"
     platform:
@@ -81,35 +72,30 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://mozilla-firefox.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store (Firefox)"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.firefox"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Firefox Lite)"
     url: "https://play.google.com/store/apps/details?id=org.mozilla.rocket"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://mozilla-firefox.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
 
 sysreq:
   linux:
@@ -297,6 +283,7 @@ rating:
 note: |
   * Please note that GNU/Linux distributors may provide packages for your distribution which have different requirements. [[^]](#sysreq)
   * Modern GNU/Linux distributions may automatically install required minimum and recommended packages. [[^]](#sysreq)
+  
 ---
   Mozilla Firefox (or simply Firefox) is a free and open-source [web browser](/categories/web-browser) developed by The Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox is available for Windows, macOS, Linux, BSD illumos and Solaris operating systems. Its sibling, Firefox for Android, is also available. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards. In 2017, Firefox began incorporating new technology under the code name Quantum to promote parallelism and a more intuitive user interface. An additional version, Firefox for iOS, was released on November 12, 2015. Due to platform restrictions, it uses the WebKit layout engine instead of Gecko, as with all other iOS web browsers.
   

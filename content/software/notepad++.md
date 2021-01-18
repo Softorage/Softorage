@@ -19,7 +19,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_notepad_64/"
     platform:
@@ -27,7 +26,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-notepad-32/"
     platform:
@@ -35,7 +33,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-notepad-64/"
     platform:
@@ -43,14 +40,12 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://notepad.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/Text-editors/Notepad-plus-plus.shtml"
     platform:
@@ -58,28 +53,26 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Office/Suites-editors/Notepad-plusplus-Portable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Softonic"
     url: "https://notepad-plus.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://notepad-portable.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/2010-notepad.html"
     platform:
@@ -87,12 +80,11 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "CNET"
     url: "https://download.cnet.com/Notepad/3000-2352_4-10327521.html"
     platform:
@@ -100,7 +92,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Notepad-64-bit/3000-2352_4-77388575.html"
     platform:
@@ -108,7 +99,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
 
 developer: ["Don Ho"]
 

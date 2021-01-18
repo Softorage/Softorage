@@ -18,14 +18,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Browsers/Opera-for-Windows-without-Java.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/393-opera-browser.html"
     platform:
@@ -33,22 +31,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://opera.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-opera-32/"
     platform:
@@ -56,77 +50,66 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/6297/opera"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-opera/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/mac/download_opera_for_mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://opera.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store (Opera)"
     url: "https://play.google.com/store/apps/details?id=com.opera.browser"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Opera Touch)"
     url: "https://play.google.com/store/apps/details?id=com.opera.touch"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Opera Mini)"
     url: "https://play.google.com/store/apps/details?id=com.opera.mini.native"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://opera.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://opera-browser.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/id1411869974"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
 
 sysreq:
   linux:

@@ -76,6 +76,7 @@ rating:
 
 note: |
   * Apache, Apache Mahout name and logo are trademarks of Apache Software Foundation.
+  
 ---
   Apache Mahout(TM) is an open source project that is primarily used for creating scalable [machine learning](/categories/machine-learning) algorithms. It implements [machine learning](/categories/machine-learning) techniques such as, collaborative filtering, clustering, recommendation and classification.
   

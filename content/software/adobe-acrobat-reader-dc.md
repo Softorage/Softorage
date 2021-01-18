@@ -16,96 +16,81 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-acrobat-reader-dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/PDF/Adobe-Reader.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_adobe-acrobat-reader-dc/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/2083-adobe-reader-dc.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-acrobat-reader-dc/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.adobe.reader"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/adobe-acrobat-reader-for-pdf/id469337564"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://adobe-reader.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
 
 sysreq:
   macos:

@@ -53,10 +53,8 @@ source:
   developer: ["https://gitlab.com/Softorage/softorage.gitlab.io#license", "https://gitlab.com/Softorage/softorage.gitlab.io/-/blob/master/LICENSE"]
   initial_release: ["https://gitlab.com/Softorage/softorage.gitlab.io/-/commits/v0.0.1"]
   written_in: ["https://gitlab.com/Softorage/softorage.gitlab.io/-/graphs/master/charts"]
-  sysreq:
   license: ["https://gitlab.com/Softorage/softorage.gitlab.io/-/blob/master/LICENSE"]
   status: ["https://gitlab.com/Softorage/softorage.gitlab.io/activity", "https://gitlab.com/Softorage/softorage.gitlab.io/-/commits/master"]
-
 ---
   Softorage is a software directory designed as a secure download service and information resource. It contains dedicated pages (often called 'softpages') for software which lists an objective set of information about a software that may assist the user to estimate trustworthiness of the software. The objective set of information includes among other things, overview of the software, platform(s) for which it is available, system requirements, its license, etc.
   

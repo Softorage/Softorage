@@ -19,7 +19,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://internet-download-manager.en.softonic.com/"
     platform:
@@ -27,7 +26,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-internet-download-manager/"
     platform:
@@ -35,7 +33,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/Download-Managers/Internet-Download-Manager.shtml"
     platform:
@@ -43,7 +40,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Internet-Download-Manager/3000-2071_4-10071618.html"
     platform:
@@ -51,7 +47,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://internet-download-manager.en.uptodown.com/windows/download"
     platform:
@@ -59,7 +54,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
 
 sysreq:
   general:
@@ -129,7 +123,6 @@ rating:
   - name: "Uptodown"
     rate: [4.1, 5]
     num: 47
-
 ---
   Internet Download Manager (also called IDM) is a trialware download manager for Microsoft Windows, owned by American company Tonec FZE based in New York City. Its features include managing and scheduling downloads, utilizing full bandwidth, recovery and resume capability to restore/restart broken or interrupted downloads due to lost connections, network problems, computer shutdowns, or unexpected power outages.
   

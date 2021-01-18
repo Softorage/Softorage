@@ -18,14 +18,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/CD-DVD-Tools/CD-DVD-Rip-Other-Tools/HandBrake.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FossHub"
     url: "https://www.fosshub.com/HandBrake.html"
     platform:
@@ -33,16 +31,14 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: true
+        remarks: "Portable"
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4785-handbrake.html"
     platform:
@@ -50,34 +46,29 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: true
+        remarks: "Portable"
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://handbrake.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/HandBrake/3000-2194_4-10808250.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-handbrake-32/"
     platform:
@@ -85,7 +76,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-handbrake-64/"
     platform:
@@ -93,7 +83,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_handbrake_32/"
     platform:
@@ -101,7 +90,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_handbrake_64/"
     platform:
@@ -109,35 +97,30 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/12987/handbrake"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/HandBrake/3000-2140_4-43951.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://handbrake.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-handbrake/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   linux:
@@ -353,6 +336,7 @@ note: |
   HandBrake’s QuickSync and OpenCL features are only supported on Windows. QuickSync requires a 2nd generation (Sandy Bridge) or newer Intel Core series processor with integrated Intel HD Graphics enabled and a directly connected display.1 OpenCL scaling is experimental and requires an AMD or Intel GPU with OpenCL 1.2 or later.
   
   In lieu of a physically connected display, a display emulator adapter such as Headless Ghost will enable GPU functions such as QuickSync when connected to the Intel HD Graphics output port.
+  
 ---
   HandBrake is a free and open-source [video transcoder](/categories/video-transcoder/) to convert video from one format to another, and to rip CD/DVD to popular video formats. It transcodes video and audio from nearly any format to a handful of modern ones, but it does not defeat or circumvent copy protection. Its developers removed libdvdcss (the open-source library responsible for unscrambling DVDs encrypted with the Content Scramble System (CSS)) from the application in version 0.9.2.
   

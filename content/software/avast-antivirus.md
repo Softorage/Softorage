@@ -18,127 +18,108 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_avast_antivirus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Avast-Free-Antivirus/3000-2239_4-10019223.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://avast.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-avast-antivirus/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Antivirus/Avast-Home-Edition.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Passwords)"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.passwordmanager"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (VPN)"
     url: "https://play.google.com/store/apps/details?id=com.avast.android.vpn"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://avast.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/26644/avast"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-avast-mac-security/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://avast-2015.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/avast-security-photo-vault/id1276551855"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store (Passwords)"
     url: "https://apps.apple.com/app/avast-passwords-secure-password/id1114498254"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic (VPN)"
     url: "https://avast.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store (VPN)"
     url: "https://apps.apple.com/app/avast-secureline-vpn-proxy/id793096595"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
 
 sysreq:
   general:

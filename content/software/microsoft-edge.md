@@ -19,14 +19,12 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-microsoft-edge/"
     platform:
@@ -34,67 +32,57 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_edge-browser/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/7158-microsoft-edge.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.microsoft.emmx"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://microsoft-edge.en.uptodown.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/microsoft-edge/id1288723196"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://microsoft-edge.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
 
 sysreq:
   general:
@@ -265,6 +253,7 @@ rating:
 note: |
   * For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](https://docs.microsoft.com/en-us/windows-hardware/design/minimum/minimum-hardware-requirements-overview) topic on Microsoft Docs website.
   * After installation of Microsoft Edge, license terms are viewable in Microsoft Edge at [edge://terms](edge://terms).
+  
 ---
   Microsoft Edge is a [web browser](/categories/web-browser) developed by Microsoft. Edge includes integration with Cortana and has extensions hosted on the Microsoft Store. Unlike [Internet Explorer](/software/internet-explorer/), Edge does not support the legacy ActiveX and BHO technologies. Originally built with Microsoft's own EdgeHTML and Chakra engines, in 2019 Edge was rebuilt as a [Chromium](/software/chromium-web-browser/)-based browser, using the Blink and V8 engines. Though, for iOS, Microsoft Edge is based on WebKit. Microsoft released the first [Chromium](/software/chromium-web-browser/)-based Edge version on January 15, 2020.
   

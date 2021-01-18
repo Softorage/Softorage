@@ -19,35 +19,30 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://wings-3d.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/wings-3d/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Wings-3D/3000-6677_4-10514566.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://wings-3d.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   linux:
@@ -176,6 +171,7 @@ rating:
 
 note: |
   * To run Wing 3D on Unix(like) systems, it needs to built from source code.[[source]](http://www.wings3d.com/?page_id=84)
+  
 ---
   Wings 3D is a tool specifically designed to import and modify models through subdivision - a polygonal modeling technique that allows very well-defined polygons.
   

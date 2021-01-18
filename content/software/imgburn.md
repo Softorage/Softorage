@@ -18,49 +18,43 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/3285-imgburn.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-imgburn/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://imgburn.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/CD-DVD-Tools/Data-CD-DVD-Burning/ImgBurn.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://imgburn.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/CD-DVD-Tools/Windows-Portable-Applications-Portable-ImgBurn.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
 
 sysreq:
   general:
@@ -145,7 +139,6 @@ rating:
     rate: [4.1, 5]
     num: 121
     remarks: "Portable"
-
 ---
   ImgBurn is an optical disc authoring program that allows the recording of many types of CD, DVD and Blu-ray images to recordable media. Supported CD/DVD image formats include BIN, CCD, CDI, CUE, DI, DVD, GI, IMG, ISO, MDS, NRG and PDI. Supported formats for audio CDs include AAC, APE, FLAC, M4A, MP3, MP4, MPC, OGG, PCM, WAV, WMA and WV.
   

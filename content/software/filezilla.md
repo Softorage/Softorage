@@ -21,37 +21,32 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: true
+        remarks: "Portable"
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "CNET (Client)"
     url: "https://download.cnet.com/FileZilla/3000-2160_4-10308966.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET (Server)"
     url: "https://download.cnet.com/FileZilla-Server/3000-2160_4-75123212.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://filezilla.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot (Client/Server)"
     url: "https://www.techspot.com/downloads/612-filezilla.html"
     platform:
@@ -59,21 +54,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: true
+        remarks: "Portable"
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_filezilla/"
     platform:
@@ -81,7 +73,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_filezilla_64/"
     platform:
@@ -89,28 +80,25 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://filezilla.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (Server)"
     url: "https://filezilla-server.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://filezilla-portable.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Download Archives | Authentic"
     url: "https://download.filezilla-project.org/"
 
@@ -237,7 +225,6 @@ rating:
   - name: "G2CROWD"
     rate: [4.5, 5]
     num: 580
-
 ---
   FileZilla is a free and open source software, cross-platform [FTP application](/categories/ftp-client/), consisting of FileZilla Client and FileZilla Server. Client supports FTP, FTP over TLS (FTPS) and SFTP. FileZilla Server is an FTP and FTPS Server.
   

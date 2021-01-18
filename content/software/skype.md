@@ -18,173 +18,141 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-skype/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/Fax-Telephony/Skype.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/Chat/Skype-Portable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Uptodown"
     url: "https://skype.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/50-skype.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Skype/3000-2349_4-77767311.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://skype.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (Win 10)"
     url: "https://skype-windows-10.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_skype/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/15805/skype"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://skype.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-skype/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Google Play Store"
     url: "https://play.google.com/store/apps/details?id=com.skype.raider"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Lite)"
     url: "https://play.google.com/store/apps/details?id=com.skype.m2"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://skype.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/skype-for-iphone/id304878510"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://skype.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/sPortable/3000-2349_4-10972596.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
 
 sysreq:
-  windows:
+  android:
     -
-      recm: "Processor: At least 1 GHz"
+      recm: "OS:\n\nAndroid OS 4.0.4 or higher (Phones and tablets),\nChromeOS version M53 or higher (Chromebooks)"
     -
-      recm: "RAM: At least 512 MB"
+      recm: "Free Space: At least 32 MB"
+  ios:
     -
-      recm: "Additional software: DirectX v9.0 or higher"
-    -
-      recm: "For Windows 10: Skype's version 15 requires Windows 10 (version 1809) or higher"
-  macos:
-    -
-      recm: "OS: Mac OS X 10.10 or higher"
-    -
-      recm: "Processor: At least 1 GHz Intel processor (Core 2 Duo)"
-    -
-      recm: "RAM: At least 1 GB"
-    -
-      recm: "Additional software: The latest version of QuickTime"
+      recm: "OS: iOS 10 or higher"
   linux:
     -
       recm: "OS:\n\n64-bit Ubuntu 14.04+,\n64-bit Debian 8.0+,\n64-bit OpenSUSE 13.3+,\n64-bit Fedora Linux 24+"
@@ -194,14 +162,24 @@ sysreq:
       recm: "RAM: At least 512 MB"
     -
       recm: "Additional software: libappindicator1 or GtkStatusIcon to make the tray icon work (optional)"
-  android:
+  macos:
     -
-      recm: "OS:\n\nAndroid OS 4.0.4 or higher (Phones and tablets),\nChromeOS version M53 or higher (Chromebooks)"
+      recm: "OS: Mac OS X 10.10 or higher"
     -
-      recm: "Free Space: At least 32 MB"
-  ios:
+      recm: "Processor: At least 1 GHz Intel processor (Core 2 Duo)"
     -
-      recm: "OS: iOS 10 or higher"
+      recm: "RAM: At least 1 GB"
+    -
+      recm: "Additional software: The latest version of QuickTime"
+  windows:
+    -
+      recm: "Processor: At least 1 GHz"
+    -
+      recm: "RAM: At least 512 MB"
+    -
+      recm: "Additional software: DirectX v9.0 or higher"
+    -
+      recm: "For Windows 10: Skype's version 15 requires Windows 10 (version 1809) or higher"
 
 developer: ["Priit Kasesalu and Jaan Tallinn <OD>", "Skype Technologies (Microsoft)"]
 
@@ -250,11 +228,11 @@ source:
     - dskp: ["https://www.skype.com/en/get-skype/", "https://www.skype.com/en/features/skype-web/"]
     - smptb: ["https://www.skype.com/en/get-skype/", "https://www.skype.com/en/features/tablet-skype/", "https://www.skype.com/en/get-skype/skype-for-mobile/"]
   sysreq:
-    windows: ["https://support.skype.com/en/faq/fa10328/what-are-the-system-requirements-for-skype"]
-    macos: ["https://support.skype.com/en/faq/fa10328/what-are-the-system-requirements-for-skype"]
-    linux: ["https://support.skype.com/en/faq/fa10328/what-are-the-system-requirements-for-skype"]
     android: ["https://support.skype.com/en/faq/fa10328/what-are-the-system-requirements-for-skype"]
     ios: ["https://support.skype.com/en/faq/fa10328/what-are-the-system-requirements-for-skype"]
+    linux: ["https://support.skype.com/en/faq/fa10328/what-are-the-system-requirements-for-skype"]
+    macos: ["https://support.skype.com/en/faq/fa10328/what-are-the-system-requirements-for-skype"]
+    windows: ["https://support.skype.com/en/faq/fa10328/what-are-the-system-requirements-for-skype"]
   license: ["https://www.microsoft.com/en-us/servicesagreement/"]
   rating:
     - name: "FileHorse"
@@ -421,7 +399,6 @@ rating:
   - name: "TrustPilot"
     rate: [1.7, 5]
     num: 1292
-
 ---
   Skype is a telecommunications application that specializes in providing video chat and voice calls between computers, tablets, mobile devices, the Xbox One console, and smartwatches over the Internet. It also allows video calling for 100 people, mobile screen sharing, Skype Number (allows to get a local phone number in another country or region and answer calls on Skype), use Skype to call phones (allows to call landlines and mobiles from anywhere in the world using Skype).
   

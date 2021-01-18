@@ -19,19 +19,17 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "CNET"
     url: "https://download.cnet.com/Sumatra-PDF/3000-18497_4-10698785.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/4301-sumatra-pdf.html"
     platform:
@@ -39,12 +37,11 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Office/Calendar-Organizers/PDF/Windows-Portable-Applications-Sumatra-PDF-Portable.shtml"
     platform:
@@ -52,7 +49,7 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/PDF/SumatraPDF.shtml"
     platform:
@@ -60,7 +57,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://sumatra-pdf.en.uptodown.com/windows"
     platform:
@@ -68,21 +64,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_sumatrapdf/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://sumatra-pdf.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-sumatra-pdf-64/"
     platform:
@@ -90,7 +83,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
 
 sysreq:
   general:

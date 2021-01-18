@@ -19,22 +19,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Unix(like)"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
 
 developer: ["Bjorn Erik Pedersen", "Steve Francia <OD>", "Community"]
 

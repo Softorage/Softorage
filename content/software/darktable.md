@@ -19,11 +19,9 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/darktable/linux/"
     platform:
@@ -31,7 +29,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-darktable/"
     platform:
@@ -39,7 +36,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/darktable.shtml"
     platform:
@@ -47,21 +43,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Multimedia/Graphics/darktable-51811.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/45193/darktable"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   general:
@@ -168,6 +161,7 @@ rating:
 
 note: |
   * Detailed synopsis regarding [System Requirements](#sysreq) can be found at [this link](https://www.darktable.org/2012/03/darktable-and-memory/).
+  
 ---
   darktable is a free and open-source [photography workflow](/categories/photography-workflow) application and raw developer. Rather than being a [raster graphics editor](/categories/raster-graphics-editor) like Adobe Photoshop or [GIMP](/software/gimp), it comprises a subset of image editing operations specifically aimed at non-destructive raw [photo post-production](/categories/photo-post-production). It is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
   

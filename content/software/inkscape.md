@@ -18,14 +18,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_inkscape/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-inkscape-32/"
     platform:
@@ -33,7 +31,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FossHub"
     url: "https://www.fosshub.com/Inkscape.html"
     platform:
@@ -41,7 +38,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/2306-inkscape.html"
     platform:
@@ -49,29 +45,24 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://inkscape.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/inkscape/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Graphic/Graphic-Editors/Inkscape.shtml"
     platform:
@@ -79,21 +70,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Artistic-Software/Inkscape-61.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://inkscape.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["The Inkscape team"]
 
@@ -261,6 +249,7 @@ rating:
 note: |
   * Although [System Requirements](#sysreq) have not been specifically disclosed on the [official website](https://inkscape.org/), it is recommended to have at least 2GB RAM and a modern CPU. See [here](https://forum.inkscapecommunity.com/index.php?PHPSESSID=iit20pe7v0u5o89lc41bihb216&action=articles;sa=view;article=35) for more info.
   * Most of Inkscape's code is available under GPL v2, but because of license(s) of other softwares used, [license is given as GPL v3 or later](#license). See [here](https://gitlab.com/inkscape/inkscape/blob/master/COPYING).
+  
 ---
   Inkscape is professional quality [vector graphics editor](/categories/vector-graphics-editor) software which runs on Windows, Mac OS X and GNU/Linux. 
   

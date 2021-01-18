@@ -18,14 +18,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://adobe-photoshop.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-adobe-photoshop-64/"
     platform:
@@ -33,133 +31,114 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/photoshop/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://adobe-photoshop.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://mac.filehorse.com/download-adobe-photoshop/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/adobe-photoshop/mac/"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (Touch)"
     url: "https://adobe-photoshop-touch.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic (Express)"
     url: "https://adobe-photoshop-express.en.softonic.com/android"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Malavida (Express)"
     url: "https://www.malavida.com/en/soft/photoshop/android/"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic (Touch)"
     url: "https://adobe-photoshop-touch.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Softonic (Express)"
     url: "https://adobe-photoshop-express.en.softonic.com/iphone"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Malavida (Express)"
     url: "https://www.malavida.com/en/soft/photoshop/iphone/"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Express)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.psmobile"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Mix)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.photoshopmix"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Google Play Store (Fix)"
     url: "https://play.google.com/store/apps/details?id=com.adobe.adobephotoshopfix"
     platform:
       - name: "Android"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store"
     url: "https://apps.apple.com/app/adobe-photoshop/id1457771281"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store (Express)"
     url: "https://apps.apple.com/app/photoshop-express-photo-editor/id331975235"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store (Fix)"
     url: "https://apps.apple.com/app/adobe-photoshop-fix/id1033713849"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store (Sketch)"
     url: "https://apps.apple.com/app/adobe-photoshop-sketch/id839085644"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
   - from: "Apple App Store (Mix)"
     url: "https://apps.apple.com/app/adobe-photoshop-mix-cut-out-combine-create/id885271158"
     platform:
       - name: "iOS"
         hardware: ["smptb"]
         official: true
-        portable: false
 
 sysreq:
   macos:

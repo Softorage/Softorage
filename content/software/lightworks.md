@@ -19,7 +19,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-lightworks-64/"
     platform:
@@ -27,7 +26,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6504-lightworks.html"
     platform:
@@ -35,15 +33,12 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Multimedia/Video/Video-Editors/Lightworks.shtml"
     platform:
@@ -51,53 +46,38 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://lightworks.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_lightworks/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://lightworks.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/52053/lightworks"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://lightworks.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
-  software:
-    -
-      min: "Windows Vista, Windows 7, Windows 8/8.1 and Windows 10"
-    -
-      min: "Linux Supported Debian Distros:\n* Ubuntu/Lubuntu/Xubuntu 14.04 and higher\n* Mint 17 and higher"
-    -
-      min: "Linux Supported RPM Distros:\n* Fedora 20 and higher"
-    -
-      min: "Mac 10.9 and higher"
   hardware:
     -
       min: "Processor: Intel i7 chipset or faster, fast AMD chipset"
@@ -126,6 +106,15 @@ sysreq:
     -
       min: "(Optional) a Lightworks keyboard"
       recm: ""
+  software:
+    -
+      min: "Windows Vista, Windows 7, Windows 8/8.1 and Windows 10"
+    -
+      min: "Linux Supported Debian Distros:\n* Ubuntu/Lubuntu/Xubuntu 14.04 and higher\n* Mint 17 and higher"
+    -
+      min: "Linux Supported RPM Distros:\n* Fedora 20 and higher"
+    -
+      min: "Mac 10.9 and higher"
 
 developer: ["EditShare LLC"]
 
@@ -162,8 +151,8 @@ source:
   platform:
     - dskp: ["https://www.lwks.com/index.php?option=com_lwks&view=download&Itemid=206"]
   sysreq:
-    software: ["https://www.lwks.com/index.php?option=com_content&view=article&id=100&Itemid=211"]
     hardware: ["https://www.lwks.com/index.php?option=com_content&view=article&id=100&Itemid=211"]
+    software: ["https://www.lwks.com/index.php?option=com_content&view=article&id=100&Itemid=211"]
   license: ["https://www.lwks.com/index.php?option=com_docman&task=doc_download&gid=220"]
   rating:
     - name: "FileHorse"
@@ -259,7 +248,6 @@ rating:
     rate: [3.5, 5]
   - name: "Macworld"
     rate: [3, 5]
-
 ---
   Lightworks is a [non-linear editing system](/categories/non-linear-editing/) (NLE) for editing and mastering digital video. Its features include relatively simple user interface, multiple effects and multiple output formats (Pro version).
   

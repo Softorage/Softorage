@@ -19,16 +19,13 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Softpedia (Portable)"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/CD-DVD-Tools/Etcher-Portable.shtml"
     platform:
@@ -36,7 +33,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/CD-DVD-Tools/Data-CD-DVD-Burning/Etcher.shtml"
     platform:
@@ -44,7 +40,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6931-etcher.html"
     platform:
@@ -52,30 +47,25 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Softonic (1)"
     url: "https://etcher.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic (2)"
     url: "https://balenaetcher.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-etcher/"
     platform:
@@ -83,28 +73,24 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "MacUpdate"
     url: "https://www.macupdate.com/app/mac/61189/balenaetcher"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "CNET"
     url: "https://download.cnet.com/Etcher/3000-18511_4-77521842.html"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://etcher.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   linux:
@@ -225,6 +211,7 @@ rating:
 
 note: |
   * Etcher will run on any platform officially supported by [Electron](https://electronjs.org/). Read more in their [documentation](https://electronjs.org/docs/tutorial/support#supported-platforms).
+  
 ---
   Etcher is a OS [image flasher](/categories/live-usb-creator/) built with web technologies, a utility used for writing image files such as .iso and .img files, as well as zipped folders onto storage media to create live SD cards and USB flash drives. It protects from accidentally writing to hard-drives and ensures every byte of data was written correctly. It can flash directly Raspberry Pi devices that support the usbboot protocol.
   

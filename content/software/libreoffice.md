@@ -19,16 +19,13 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/5131-libreoffice-productivity-suite.html"
     platform:
@@ -36,16 +33,13 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-libreoffice-64/"
     platform:
@@ -53,14 +47,12 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://libreoffice.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHippo"
     url: "https://filehippo.com/download_libreoffice_32/"
     platform:
@@ -68,21 +60,18 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Uptodown"
     url: "https://libreoffice.en.uptodown.com/windows"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Malavida"
     url: "https://www.malavida.com/en/soft/libreoffice/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Office-tools/Office-suites/LibreOffice.shtml"
     platform:
@@ -90,7 +79,6 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/Office/Office-Suites/LibreOffice-60713.shtml"
     platform:
@@ -98,14 +86,12 @@ get_it:
         hardware: ["dskp"]
         arch: ["x64"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://libreoffice-mac.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   linux:
@@ -325,6 +311,7 @@ rating:
 
 note: |
   * [LibreOffice website](https://www.libreoffice.org/) mentions twitter handles [@tdforg](https://twitter.com/tdforg), [@libreoffice](https://twitter.com/libreoffice), [@AskLibreOffice](https://twitter.com/AskLibreOffice), [@LibreOfficeBugs](https://twitter.com/LibreOfficeBugs).
+  
 ---
   LibreOffice is a free and open-source [office suite](/categories/office-suite), a project of The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice.
   

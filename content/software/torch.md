@@ -67,6 +67,7 @@ source:
 
 note: |
   * Torch is not in active development. Check out actively maintained [ATen](https://github.com/pytorch/pytorch/tree/master/aten) (which is part of [PyTorch](/software/pytorch)).
+  
 ---
   Torch is a scientific computing framework with support for [machine learning](/categories/machine-learning/) algorithms. It provides N-dimensional arrays, with support for routines for indexing, slicing, transposing, etc.
   

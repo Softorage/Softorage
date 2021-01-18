@@ -18,14 +18,12 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://linux.softpedia.com/get/System/Networking/PuTTY-347.shtml"
     platform:
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Network-Tools/Telnet-SSH-Clients/PuTTY.shtml"
     platform:
@@ -33,14 +31,13 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/Telnet-SSH-Clients/PuTTY-Portable.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/6084-putty.html"
     platform:
@@ -48,25 +45,21 @@ get_it:
         hardware: ["dskp"]
         arch: ["x32", "x64"]
         official: true
-        portable: false
       - name: "Linux"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://putty.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://putty.en.softonic.com/mac"
     platform:
       - name: "macOS"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["Simon Tatham"]
 
@@ -155,7 +148,6 @@ rating:
     rate: [7, 10]
     num: 59
     remarks: "macOS"
-
 ---
   PuTTY is a free and open-source [terminal emulator](/categories/terminal-emulator/), serial console and [network file transfer](/categories/ftp-client/) application. It is an implementation of SSH and Telnet for Windows and Unix platforms, along with an xterm terminal emulator.
   

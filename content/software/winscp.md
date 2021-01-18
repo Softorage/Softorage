@@ -18,74 +18,67 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/Internet/FTP-Clients/WinSCP.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softpedia"
     url: "https://www.softpedia.com/get/PORTABLE-SOFTWARE/Internet/FTP-Clients/Portable-WinSCP.shtml"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-winscp/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "FileHorse"
     url: "https://www.filehorse.com/download-winscp-portable/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "Softonic"
     url: "https://winscp.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "Softonic"
     url: "https://winscp-portable.en.softonic.com/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "FileHippo"
     url: "https://filehippo.com/download_winscp/"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
   - from: "TechSpot"
     url: "https://www.techspot.com/downloads/1487-winscp.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: true
+        remarks: "Portable"
   - from: "CNET"
     url: "https://download.cnet.com/WinSCP/3000-2160_4-10400769.html"
     platform:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 sysreq:
   general:
@@ -216,7 +209,6 @@ rating:
   - name: "SourceForge"
     rate: [4.8, 5]
     num: 192
-
 ---
   WinSCP is a free and open-source SFTP, [FTP](/categories/ftp-client/), WebDAV, Amazon S3 and SCP client for Microsoft Windows. Its main function is file transfer between a local and a remote computer. It uses Secure Shell (SSH) and supports the SCP protocol in addition to SFTP. It also offers scripting and basic file manager functionality.
   

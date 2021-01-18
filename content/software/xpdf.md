@@ -67,6 +67,7 @@ rating:
 
 note: |
   * Repository - https://github.com/tmyroadctfig/xpdf hasn't been updated after 2012, hence not included.
+  
 ---
   Xpdf is a free and open-source PDF [document viewer](/categories/document-viewer) for operating systems supported by the Qt toolkit. Versions prior to 4.00 were written for the X Window System and Motif.
   

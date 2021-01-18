@@ -16,7 +16,6 @@ get_it:
       - name: "Windows"
         hardware: ["dskp"]
         official: true
-        portable: false
 
 developer: ["Alexey Golub", "Other Contributors"]
 
