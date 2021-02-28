@@ -1,4 +1,5 @@
 // Theme specific colors
+// theme needs to be changed in assets/js/custom.js too (for cookie banner)
 {{ $theme := site.Data.themes.light }}
 
 $clr1: {{ $theme.clr1 | default "#fc466b" }};
