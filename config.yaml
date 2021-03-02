@@ -45,8 +45,7 @@ params:
         background: "#3f5efb" # HEX | default: theme.clr2
         text: "#fbfbfb" # HEX | default: theme.nav
     content: # change the links below to appropriate url addresses
-      message: | # no default
-        For us, protection of your privacy isn't just a commitment, but passion. To ensure you get the best user experience, and to get an understanding of metrics, we use cookies with privacy protections like 'Anonymizing IP'. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='/legal/cookie-policy/'>Cookie Policy</a>, <a href='/legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='/legal/terms-and-conditions/'>Terms and Conditions</a>.
+      message: "For us, protection of your privacy isn't just a commitment, but passion. To ensure you get the best user experience, and to get an understanding of metrics, we use cookies with privacy protections like 'Anonymizing IP'. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='/legal/cookie-policy/'>Cookie Policy</a>, <a href='/legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='/legal/terms-and-conditions/'>Terms and Conditions</a>."
       dismiss: "Okay. Got it!" # text on the button that dismisses the popup/banner | default: "Close"
       linkText: "Find more about cookies and how we take privacy very seriously, in our Privacy Policy." # this text appears after the message and is hyperlinked | default: "Learn more"
       linkURL: "/legal/privacy-policy/" # url of location where user should be directed when they click "Learn more".
