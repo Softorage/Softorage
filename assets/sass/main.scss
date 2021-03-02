@@ -136,6 +136,14 @@ Example usage:
 </div>
 */
 
+// a class for system requirements
+.preserve-spaces {
+white-space: pre-wrap;
+}
+.preserve-spaces > p {
+margin: 0;
+}
+
 // Thanks: https://css-tricks.com/five-methods-for-five-star-ratings/
 .rating-stars {
   --star-size: 1rem;

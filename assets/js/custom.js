@@ -10,9 +10,9 @@ $(function() {
   });
   
   /* initialize popovers, used in navbar */
-  $("[data-toggle='popover']").popover({ container: 'body', sanitize: false });
+  $("[data-toggle='popover']").popover({ container: 'body', html: true, sanitize: false });
   /* initialize tooltips */
-  $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
+  $('[data-toggle="tooltip"]').tooltip({ container: 'body', html: true });
   
   // PWA service worker
   // Thanks: 

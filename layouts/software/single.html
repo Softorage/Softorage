@@ -77,7 +77,7 @@
       <!-- As we don't check whether page.status is true, `status` is shown `unknown` when page.status is false. -->
       {{- if in .Params.status "Active" -}}
         <!-- in case of source, as first condition in if statement, we have checked if source is not a text-type(as src.first exists only if it is a text-type source), that is, it is a webpage, because it is more frequent condition -->
-        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Active" data-content="
           {{/* 
             Here, the code iterates through a range, hence even if there is only one value of source for status, it has to be in square brackes([]) in the front matter, so that it is treated as an array. This is to ensure that a source from a book would not be mistaken by our code as two sources from web.
             Example,
@@ -94,7 +94,7 @@
           {{- end -}}
         "><span class="small text-success">Status | {{ site.Data.icons.checkmark | safeHTML }}</span></a>
       {{- else if in .Params.status "Discontinued" -}}
-        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Discontinued" data-content="
           {{- if .Params.source.status }}
             {{- range $index, $element := .Params.source.status }}
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
@@ -104,7 +104,7 @@
           {{- end -}}
         "><span class="small text-danger">Status | {{ site.Data.icons.ban | safeHTML }}</span></a>
       {{- else -}}
-        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-html="true" data-content="
+        <a role="button" class="btn btn-sm bg-nav my-2" tabindex="0" data-toggle="popover" data-trigger="focus" data-original-title="Unknown" data-content="
           {{- if .Params.source.status }}
             {{- range $index, $element := .Params.source.status }}
               {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
@@ -121,10 +121,10 @@
       {{- if .Params.get_it }}
         {{/* since a user expects uniformity in interface, it is decided to keep only modal view, and discard the practise of directing user to 'download website' upon clicking the 'download/get it' button.
         {{- if eq (len .Params.get_it) 1 -}} <!-- if there is just one download link, we assume that it is authentic link and from official website -->
-          <a href="{{ (index .Params.get_it 0).url }}" class="btn btn-success my-2"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">Get it</span></a>
+          <a href="{{ (index .Params.get_it 0).url }}" class="btn btn-success my-2"><span class="text-white">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-white">Get it</span></a>
         {{- else -}}
         */}}
-          <button class="btn btn-download btn-hover my-2" data-toggle="modal" data-target="#get-it-modal"><span class="text-nav">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-nav">{{ if in .Params.categories "Framework" }}Get it{{ else }}Download{{ end }}</span></button>
+          <button class="btn btn-download btn-hover my-2" data-toggle="modal" data-target="#get-it-modal"><span class="text-white">{{ site.Data.icons.download | safeHTML }}</span>&nbsp; <span class="text-white">{{ if in .Params.categories "Framework" }}Get it{{ else }}Download{{ end }}</span></button>
           
           <!-- Modal -->
           <div class="modal fade" id="get-it-modal" tabindex="-1" role="dialog" aria-labelledby="get-it-modal-label" aria-hidden="true">
@@ -481,7 +481,7 @@
             <div class="col-auto">
               <span class="float-right">
                 {{- if .Params.source.overview -}}
-                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="
                     {{- range $index, $element := .Params.source.overview }}
                       {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                     {{- end -}}
@@ -513,7 +513,7 @@
             <div class="col-auto">
               <span class="float-right">
                 {{ if .Params.source.platform }}
-                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="
                     {{- range .Params.source.platform }}
                       {{- if .dskp -}}
                         {{ site.Data.icons.desktop | safeHTMLAttr }} : <br>
@@ -634,7 +634,7 @@
             <div class="col-auto">
               <span class="float-right">
                 {{- if .Params.source.sysreq -}}
-                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                  <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="
                     {{- range $nav_name, $nav_element := .Params.source.sysreq }}
                       <span class='small font-weight-bold'>{{ upper $nav_name }}</span> :<br>
                       {{- range $index, $src_element := $nav_element -}}
@@ -720,21 +720,21 @@
                             
                               <th scope="row">{{ add $index 1 }}</th>
                                 {{- if $minimum -}}
-                                <td>
+                                <td class="preserve-spaces">
                                   {{- if $rowElement.min }}
                                     {{- safeHTML (replace ($.Page.RenderString (replace $rowElement.min " | " "  I  ")) "  I  " " | ") }}
                                   {{- end -}}
                                 </td>
                                 {{- end }}
                                 {{- if $recommended -}}
-                                <td>
+                                <td class="preserve-spaces">
                                   {{- if $rowElement.recm }}
                                     {{- safeHTML (replace ($.Page.RenderString (replace $rowElement.recm " | " "  I  ")) "  I  " " | ") -}}
                                   {{- end -}}
                                 </td>
                                 {{- end }}
                                 {{- if $optimal -}}
-                                <td>
+                                <td class="preserve-spaces">
                                   {{- if $rowElement.optm }}
                                     {{- safeHTML (replace ($.Page.RenderString (replace $rowElement.optm " | " "  I  ")) "  I  " " | ") }}
                                   {{- end -}}
@@ -811,8 +811,7 @@
                     {{- range $index, $rt := sort .Params.rating "name" -}}
                       <tr>
                         <th class="py-2" scope="row">
-                          {{- $rt.name }}
-                          {{- if $rt.remarks }}<br><span class="small text-muted">{{ $rt.remarks }}</span>{{ end -}}
+                          <span{{- if $rt.remarks }} data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="<span class='small'>{{ $rt.remarks }}</span>"{{ end -}}>{{- $rt.name }}</span>
                         </th>
                         <td class="py-2 px-auto text-nowrap">
                           <span>{{ index $rt.rate 0 }}</span>&nbsp;
@@ -839,11 +838,11 @@
                                   {{- if eq $rt_src.type "user" -}}
                                     {{- if $rt.remarks -}}
                                       {{- if and $rt_src.remarks (eq $rt.remarks $rt_src.remarks) -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end -}}
                                     {{- else -}}
                                       {{- if not $rt_src.remarks -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- end }}
                                   {{- end }}
@@ -852,11 +851,11 @@
                                   {{- if eq $rt_src.type "expert" -}}
                                     {{- if $rt.remarks -}}
                                       {{- if and $rt_src.remarks (eq $rt.remarks $rt_src.remarks) -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- else }}
                                       {{- if not $rt_src.remarks -}}
-                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
+                                        <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="<a href='{{ $rt_src.url }}'>{{ $rt_src.url }}</a>"><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
                                       {{- end }}
                                     {{- end }}
                                   {{- end }}
@@ -894,7 +893,7 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.developer -}}
-                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.developer }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
@@ -926,7 +925,7 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.written_in -}}
-                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.written_in }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
@@ -956,7 +955,7 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.initial_release -}}
-                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.initial_release }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
@@ -1015,13 +1014,13 @@
           <div class="col-auto">
             <span class="float-right">
               {{- if .Params.source.license -}}
-                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="Source(s)" data-content="
+                <a role="button" class="btn btn-sm" tabindex="0" aria-label="Source(s)" data-toggle="popover" data-trigger="focus" data-original-title="Source(s)" data-content="
                   {{- range $index, $element := .Params.source.license }}
                     {{- add $index 1 }} {{ if reflect.IsSlice $element }}<a href='{{ index $element 0 }}'>{{ index $element 1 }}</a>{{ else }}<a href='{{ $element }}'>{{ $element }}</a>{{ end }}<br>
                   {{- end -}}
                 "><span class="small">{{ site.Data.icons.source | safeHTML }}</span></a>
               {{- end -}}
-              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-html="true" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
+              <a role="button" class="btn btn-sm" tabindex="0" aria-label="What is this card" data-toggle="popover" data-trigger="focus" data-original-title="What is this card" data-content="License helps you to know the terms by which use of software is allowed. To quickly get a grasp, refer <a href='https://tldrlegal.com/'>tl;drLegal</a>."><span class="small">{{ site.Data.icons.info | safeHTML }}</span></a>
             </span>
           </div>
         </div>

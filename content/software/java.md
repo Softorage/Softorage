@@ -226,11 +226,11 @@ get_it:
 sysreq:
   v8:
     -
-      min: "Windows:\n\nOS:\n    Windows 10 (8u51 and above),\n    Windows 8.x (Desktop),\n    Windows 7 SP1,\n    Windows Vista SP2,\n    Windows Server 2008 R2 SP1 (64-bit),\n    Windows Server 2012 and 2012 R2 (64-bit),\nRAM: 128 MB,\nDisk space: 124 MB for JRE; 2 MB for Java Update,\nProcessor: Minimum Pentium 2 266 MHz processor,\nBrowsers: Internet Explorer 9 and above, Firefox\n"
+      min: "Windows:\n\nOS: Windows 10 (8u51 and above), Windows 8.x (Desktop), Windows 7 SP1, Windows Vista SP2, Windows Server 2008 R2 SP1 (64-bit), Windows Server 2012 and 2012 R2 (64-bit)\nRAM: 128 MB\nDisk space: 124 MB for JRE; 2 MB for Java Update\nProcessor: Minimum Pentium 2 266 MHz processor\nBrowsers: Internet Explorer 9 and above, Firefox\n"
     -
-      min: "macOS:\n\nOS:\n    Intel-based Mac running Mac OS X 10.8.3+, 10.9+,\nPermission: Administrator privileges for installation,\nBrowsers: 64-bit browser"
+      min: "macOS:\n\nOS: Intel-based Mac running Mac OS X 10.8.3+, 10.9+\nPermission: Administrator privileges for installation\nBrowsers: 64-bit browser"
     -
-      min: "Linux:\n\nOS:\n    Oracle Linux 5.5+1,\n    Oracle Linux 6.x (32-bit), 6.x (64-bit)2,\n    Oracle Linux 7.x (64-bit)2 (8u20 and above),\n    Red Hat Enterprise Linux 5.5+1 6.x (32-bit), 6.x (64-bit)2,\n    Red Hat Enterprise Linux 7.x (64-bit)2 (8u20 and above),\n    Suse Linux Enterprise Server 10 SP2+, 11.x,\n    Suse Linux Enterprise Server 12.x (64-bit)2 (8u31 and above),\n    Ubuntu Linux 12.04 LTS, 13.x,\n    Ubuntu Linux 14.x (8u25 and above),\n    Ubuntu Linux 15.04 (8u45 and above),\n    Ubuntu Linux 15.10 (8u65 and above),\nBrowsers: Firefox"
+      min: "Linux:\n\nOS: Oracle Linux 5.5+1, Oracle Linux 6.x (32-bit), 6.x (64-bit)2, Oracle Linux 7.x (64-bit)2 (8u20 and above), Red Hat Enterprise Linux 5.5+1 6.x (32-bit), 6.x (64-bit)2, Red Hat Enterprise Linux 7.x (64-bit)2 (8u20 and above), Suse Linux Enterprise Server 10 SP2+, 11.x, Suse Linux Enterprise Server 12.x (64-bit)2 (8u31 and above), Ubuntu Linux 12.04 LTS, 13.x, Ubuntu Linux 14.x (8u25 and above), Ubuntu Linux 15.04 (8u45 and above), Ubuntu Linux 15.10 (8u65 and above)\nBrowsers: Firefox"
 
 developer: ["James Gosling<OD>", "Sun Microsystems<OD>", "Oracle Corporation"]
 
