@@ -39,11 +39,11 @@ params:
     revokable: false # a button to revoke cookie consent appears when user hover in bottom area of the screen, regardless whether user's country requires revertable cookie consent | default: true
     colors:
       banner:
-        background: "#fafafa" # HEX | default: theme.nav
-        text: "#343434" # HEX | default: theme.antinav
+        background: "#fafafa" # HEX | works as a default in case no theme is specified
+        text: "#343434" # HEX | works as a default in case no theme is specified
       button:
-        background: "#3f5efb" # HEX | default: theme.clr2
-        text: "#fbfbfb" # HEX | default: theme.nav
+        background: "#3f5efb" # HEX | no default
+        text: "#fbfbfb" # HEX | no default
     content: # change the links below to appropriate url addresses
       message: "For us, protection of your privacy isn't just a commitment, but passion. To ensure you get the best user experience, and to get an understanding of metrics, we use cookies with privacy protections like 'Anonymizing IP'. By continuing to use this site, you agree to the use of these cookies and that you have read and understood <a href='/legal/cookie-policy/'>Cookie Policy</a>, <a href='/legal/privacy-policy/'>Privacy Poilcy</a> and our <a href='/legal/terms-and-conditions/'>Terms and Conditions</a>."
       dismiss: "Okay. Got it!" # text on the button that dismisses the popup/banner | default: "Close"
@@ -54,6 +54,7 @@ params:
       policy: "🍪" # text that appears on the button, when user's country requires revokable cookie consent | default: "Cookie Consent"
   userExperience:
     googleAnalyticsLoading: "async" # accepts value: sync/async | determines whether Google Analytics JavaScript file loads 'Synchronously' or 'Asynchronously' | optional | default: "sync"
+    theme: "light" # accepts: string | value has to be a theme specified in data/themes.yml | recommended | no default
 
 author: 
   name: "Sanmay Joshi and Softorage contributors" # required

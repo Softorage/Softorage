@@ -96,8 +96,8 @@ var cookieconsent_button_text_light = {{ site.Data.themes.dark.nav }};
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "{{ default site.Params.cookieConsent.colors.banner.background site.Data.themes.light.nav }}",
-      "text": "{{ default site.Params.cookieConsent.colors.banner.text site.Data.themes.light.antinav }}"
+      "background": "{{ default site.Params.cookieConsent.colors.banner.background (index site.Data.themes site.Params.userExperience.theme).nav }}",
+      "text": "{{ default site.Params.cookieConsent.colors.banner.text (index site.Data.themes site.Params.userExperience.theme).antinav }}"
     },
     "button": {
       "background": "{{ site.Params.cookieConsent.colors.button.background }}",

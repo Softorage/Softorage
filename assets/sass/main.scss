@@ -1,6 +1,6 @@
 // Theme specific colors
-// theme needs to be changed in assets/js/custom.js too (for cookie banner)
-{{ $theme := site.Data.themes.light }}
+// theme is used in assets/js/custom.js too (for cookie banner), which also automatically adjusts as per theme set in config.yaml
+{{ $theme := index site.Data.themes site.Params.userExperience.theme }}
 
 $clr1: {{ $theme.clr1 | default "#fc466b" }};
 $clr2: {{ $theme.clr2 | default "#3f5efb" }};
