@@ -1,7 +1,7 @@
 public/
 resources
-layouts/test/
-content/test/
+layouts/local/
+content/local/
 node_modules
 hugo_stats.json
 npm-debug.log

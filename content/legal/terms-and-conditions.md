@@ -14,7 +14,7 @@ This website does not provide software for download but only provides with a lin
 
 ### Removal
 
-If you are the publisher of a software title and wish to have it removed from Softorage.com, please send us a message via our [contact form](/contact-us/) including, your name, company, job title, the title of the software, and the reason for the takedown request. We will then contact you within 72 hours to verify your identity and your request will be actioned within a further 72 hours.
+If you are the publisher of a software title and wish to have it removed from Softorage.com, please send us a message via our [Contact Us page](/contact-us/) including, your name, company, job title, the title of the software, and the reason for the takedown request. We will then contact you within 72 hours to verify your identity and your request will be actioned within a further 72 hours.
 
 ### Use of Trademarks
 
